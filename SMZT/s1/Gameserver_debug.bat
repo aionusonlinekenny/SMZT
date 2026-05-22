@@ -11,7 +11,11 @@ D:\SMZT\Java\jdk1.8.0_144\bin\java.exe -server -Xmx512m -Xms512m -XX:NewRatio=1 
 
 echo.
 echo ========================================================
-echo Server stopped. Check logs\output.log for errors:
+echo Server stopped. Check logs for errors:
 echo ========================================================
+echo --- logs\output.log ---
 type logs\output.log
+echo.
+echo --- logs\gameserver.log ---
+type logs\gameserver.log 2>nul || echo (gameserver.log not created)
 pause
