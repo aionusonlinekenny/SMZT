@@ -82,7 +82,7 @@ INSERT INTO `t_server_dbsources` (
   `privateKey`, `chargeKey`, `clientUrl`, `beMergeFlag`
 ) VALUES (
   'S', 21, 1, 's1',
-  '127.0.0.1', 8000, '127.0.0.1', 8000,
+  '127.0.0.1', 26101, '127.0.0.1', 26101,
   0, 0,
   0, 0,
   39001, 39001,
