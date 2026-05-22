@@ -14,7 +14,7 @@ $server_id = $_GET['server_id'];
 		$data['status'] = 3; 
 		$data['info'] = "验证失败！请联系管理员！";
 	}else{
-        $conn=@mysql_connect("127.0.0.1","root","");
+        $conn=@mysql_connect("127.0.0.1","root","123456");
 		$sjk='smzt_web';
 		mysql_select_db($sjk,$conn);
 		mysql_query("SET NAMES utf8",$conn); 
