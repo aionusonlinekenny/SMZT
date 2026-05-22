@@ -48,7 +48,7 @@ if($hfinfo<=0)
 	$key="GameServerYx152MiYao19880422";
 	$sign=md5($account.$fm.$time.$game.$server.$backurl.$dwservId.$tocken.$key);
 
-	$login_url = "http://122.51.27.223:81/SMZT/client.html";
+	$login_url = "http://127.0.0.1:81/SMZT/client.html";
 
 	$url="$login_url?account={$account}&fm={$fm}&game={$game}&time={$time}&server={$server}&sign={$sign}&backurl={$backurl}&dwservId={$dwservId}&tocken={$tocken}&deptidz={$deptidz}&bbs={$bbs}&pay={$pay}&gm={$gm}&home={$home}";
 
