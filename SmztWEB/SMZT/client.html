@@ -113,53 +113,10 @@
 				prFile+="?b="+(new Date()).getTime();
 			}
 
-            // Check if native Flash plugin is available
-            var hasFlash = (function(){
-                try {
-                    return !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash'));
-                } catch(e) {
-                    return navigator.plugins && !!navigator.plugins['Shockwave Flash'];
-                }
-            })();
-
-            if (hasFlash) {
-                // Use native Flash plugin via swfobject
-                swfobject.embedSWF(prFile, "flashContent", swfWidth, swfHeight, swfVersionStr, xiSwfUrlStr, flashvars, params, attributes, callFn);
-            } else {
-                // Use Ruffle emulator
-                window.addEventListener("load", function() {
-                    var ruffle = window.RufflePlayer.newest();
-                    if (!ruffle) {
-                        document.getElementById("flashContent").innerHTML =
-                            "<H1 style='color:#fff'>Ruffle 未加载，请检查 ruffle/ruffle.js 文件是否存在。</H1>" +
-                            "<p style='color:#aaa'>请将 Ruffle 文件放入 SMZT/ruffle/ 目录后刷新。</p>";
-                        return;
-                    }
-                    var container = document.createElement("div");
-                    container.id = "ruffleContainer";
-                    document.getElementById("flashContent").replaceWith(container);
-
-                    var player = ruffle.createPlayer();
-                    player.style.width = "100%";
-                    player.style.height = "100%";
-                    container.appendChild(player);
-
-                    // Build flashvars string for Ruffle
-                    var fvParams = {};
-                    for (var k in flashvars) {
-                        if (flashvars.hasOwnProperty(k)) fvParams[k] = flashvars[k];
-                    }
-
-                    player.load({
-                        url: prFile,
-                        parameters: fvParams,
-                        backgroundColor: "#000000",
-                        allowScriptAccess: "always",
-                        quality: "high"
-                    });
-                    swf = player;
-                });
-            }
+            // Always use native Flash via swfobject.
+            // Ruffle does NOT support flash.net.Socket (TCP), which this game requires.
+            // If the Flash plugin is installed (custom Chrome Flash), swfobject will use it.
+            swfobject.embedSWF(prFile, "flashContent", swfWidth, swfHeight, swfVersionStr, xiSwfUrlStr, flashvars, params, attributes, callFn);
 
 			function callASCloseBefore()
 			{
