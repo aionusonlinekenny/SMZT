@@ -1,0 +1,101 @@
+<GUILayout>
+    <Window Name="CampPastKingRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,341},{0,42}}" />
+        <Property Name="UnifiedMaxSize" Value="{{0,341},{0,42}}" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Window Name="CampPastKingRender/bg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,340},{0,42}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:RenderNormalBgLeft" />
+            <Property Name="LeftOffset" Value="46" />
+            <Property Name="RightImage" Value="set:skin image:RenderNormalBgRight" />
+            <Property Name="CenterImage" Value="set:skin image:RenderNormalBgCenter" />
+            <Property Name="RightOffset" Value="46" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="CampPastKingRender/selected" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,340},{0,42}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:textDiLeft" />
+            <Property Name="LeftOffset" Value="46" />
+            <Property Name="RightImage" Value="set:skin image:textDiRight" />
+            <Property Name="CenterImage" Value="set:skin image:textDiCenter" />
+            <Property Name="RightOffset" Value="46" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="CampPastKingRender/vipImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,48},{0,13},{0,72},{0,29}}" />
+            <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="CampPastKingRender/fightTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,261},{0,0},{0,341},{0,42}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="12345678" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFFea00" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="CampPastKingRender/nameUTxt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,91},{0,15},{0,181},{0,41}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="玩家名称六字" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00baff" />
+            <Property Name="VertFormatting" Value="TopAligned" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="CampPastKingRender/sexImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,73},{0,13},{0,89},{0,29}}" />
+            <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="CampPastKingRender/numberTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,47},{0,42}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="【1】" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="CampPastKingRender/gangTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,171},{0,0},{0,261},{0,42}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="临江仙" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="CampPastKingRender/nameTxt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,90},{0,0},{0,180},{0,42}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="玩家名称六字" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00baff" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,250 @@
+<GUILayout>
+    <Window Name="VIPFirstMoney" Type="GuiLook/CommonBg3">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,666},{0,503}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="VIPFirstMoney/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,122},{0,665},{0,502}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="VIPFirstMoney/background/have" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,339},{0,485},{0,379}}" />
+                <Property Name="Image" Value="set:mallgeneral image:money" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="VIPFirstMoney/background/have/smallbackground" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,122},{0,12},{0,225},{0,33}}" />
+                    <Property Name="Image" Value="set:skin image:RenderBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="VIPFirstMoney/background/have/smallbackground/yuanbao" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,20},{0,20}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="VIPFirstMoney/background/have/smallbackground/number1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,1},{0,62},{0,20}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="125" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="VIPFirstMoney/background/have/smallbackground2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,229},{0,12},{0,332},{0,33}}" />
+                    <Property Name="Image" Value="set:skin image:RenderBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="VIPFirstMoney/background/have/smallbackground2/number2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,1},{0,62},{0,20}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="125" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="VIPFirstMoney/background/have/smallbackground2/yuanbaoBD" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,20},{0,20}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:yuanbaoLock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="VIPFirstMoney/background/RedButton" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,484},{0,339},{0,664},{0,379}}" />
+                <Window Name="VIPFirstMoney/background/RedButton/immediately" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    <Property Name="Image" Value="set:mallgeneral image:immediately" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="VIPFirstMoney/background/button1" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,362},{0,316},{0,382},{0,336}}" />
+                <Window Name="VIPFirstMoney/background/button1/right1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,20},{0,20}}" />
+                    <Property Name="Image" Value="set:skin image:NextBtnNormal" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="VIPFirstMoney/background/button" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,292},{0,316},{0,312},{0,336}}" />
+                <Window Name="VIPFirstMoney/background/button/left1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,20},{0,20}}" />
+                    <Property Name="Image" Value="set:skin image:LastBtnNormal" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="VIPFirstMoney/background/pageNumber" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,316},{0,316},{0,358},{0,336}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="1/10" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="VIPFirstMoney/background/button2" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,268},{0,316},{0,288},{0,336}}" />
+                <Window Name="VIPFirstMoney/background/button2/left2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,20},{0,20}}" />
+                    <Property Name="Image" Value="set:skin image:MlastBtnNormal" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="VIPFirstMoney/background/button3" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,387},{0,316},{0,407},{0,336}}" />
+                <Window Name="VIPFirstMoney/background/button3/right2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,20},{0,20}}" />
+                    <Property Name="Image" Value="set:skin image:MnextBtnNormal" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="VIPFirstMoney/money" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,664},{0,121}}" />
+            <Property Name="Image" Value="set:mall image:firstFlush" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="VIPFirstMoney/limitTime" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,437},{0,665},{0,455}}" />
+            <Property Name="Image" Value="set:mallgeneral image:shoppingTime" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="VIPFirstMoney/limitTime/redbackground5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,409},{0,0},{0,427},{0,21}}" />
+                <Property Name="Image" Value="set:mallgeneral image:renBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="VIPFirstMoney/limitTime/redbackground5/number7" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,17},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="VIPFirstMoney/limitTime/redbackground6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,428},{0,0},{0,446},{0,21}}" />
+                <Property Name="Image" Value="set:mallgeneral image:renBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="VIPFirstMoney/limitTime/redbackground6/number6" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,17},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="VIPFirstMoney/limitTime/redbackground4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,364},{0,0},{0,382},{0,21}}" />
+                <Property Name="Image" Value="set:mallgeneral image:renBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="VIPFirstMoney/limitTime/redbackground4/number5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,17},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="VIPFirstMoney/limitTime/redbackground3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,344},{0,0},{0,362},{0,21}}" />
+                <Property Name="Image" Value="set:mallgeneral image:renBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="VIPFirstMoney/limitTime/redbackground3/number4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,17},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="VIPFirstMoney/limitTime/redbackground2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,302},{0,0},{0,320},{0,21}}" />
+                <Property Name="Image" Value="set:mallgeneral image:renBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="VIPFirstMoney/limitTime/redbackground2/number3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,17},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="VIPFirstMoney/limitTime/redbackground1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,283},{0,0},{0,301},{0,21}}" />
+                <Property Name="Image" Value="set:mallgeneral image:renBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="VIPFirstMoney/limitTime/redbackground1/number2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,17},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,140 @@
+<GUILayout>
+    <Window Name="SocialTalkRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,426},{0,127}}" />
+        <Property Name="UnifiedMaxSize" Value="{{0,426},{0,200}}" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="SocialTalkRender/otherSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,403},{0,56}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="SocialTalkRender/otherSp/otherFaceBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,38},{0,38}}" />
+                <Property Name="Image" Value="set:mainUI1 image:teamFaceBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="SocialTalkRender/otherSp/otherFaceBg/otherFace" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,37},{0,37}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="SocialTalkRender/otherSp/otherNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,0},{0,141},{0,18}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="玩家名称六字" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFe1feff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SocialTalkRender/otherSp/otherPaoPaoBg" Type="GlossySerpent/NineStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,40},{0,20},{0,397},{0,220}}" />
+                <Property Name="UnifiedMaxSize" Value="{{0,999},{0,440}}" />
+                <Property Name="TopImage" Value="set:friends image:TopMiddle" />
+                <Property Name="LeftImage" Value="set:friends image:LeftMiddle" />
+                <Property Name="TopOffset" Value="14" />
+                <Property Name="LeftOffset" Value="22" />
+                <Property Name="RightImage" Value="set:friends image:RightMiddle" />
+                <Property Name="BottomImage" Value="set:friends image:EndMiddle" />
+                <Property Name="CenterImage" Value="set:friends image:CenterSelf" />
+                <Property Name="RightOffset" Value="11" />
+                <Property Name="BottomOffset" Value="6" />
+                <Property Name="TopLeftImage" Value="set:friends image:paopaoLeftTop" />
+                <Property Name="TopRightImage" Value="set:friends image:RightTop" />
+                <Property Name="BottomLeftImage" Value="set:friends image:LeftEnd" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BottomRightImage" Value="set:friends image:RightEnd" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="SocialTalkRender/otherSp/otherPaoPaoBg/otherTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,11},{0,4},{0,123},{0,31}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="SocialTalkRender/selfSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,403},{0,56}}" />
+            <Property Name="UnifiedMaxSize" Value="{{0,999},{0,999}}" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="SocialTalkRender/selfSp/selfFaceBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,38},{0,38}}" />
+                <Property Name="Image" Value="set:mainUI1 image:teamFaceBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Right" />
+                <Window Name="SocialTalkRender/selfSp/selfFaceBg/StaticImage" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,37},{0,37}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="SocialTalkRender/selfSp/selfNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,254},{0,0},{0,365},{0,18}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="玩家名称六字" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFe1feff" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SocialTalkRender/selfSp/selfBg" Type="GlossySerpent/NineStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,8},{0,20},{0,365},{0,220}}" />
+                <Property Name="UnifiedMaxSize" Value="{{0,999},{0,440}}" />
+                <Property Name="TopImage" Value="set:friends image:TopMiddleSelf" />
+                <Property Name="LeftImage" Value="set:friends image:LeftMiddleSelf" />
+                <Property Name="TopOffset" Value="14" />
+                <Property Name="LeftOffset" Value="11" />
+                <Property Name="RightImage" Value="set:friends image:RightMiddleSelf" />
+                <Property Name="BottomImage" Value="set:friends image:EndMiddleSelf" />
+                <Property Name="CenterImage" Value="set:friends image:CenterSelf" />
+                <Property Name="RightOffset" Value="22" />
+                <Property Name="BottomOffset" Value="6" />
+                <Property Name="TopLeftImage" Value="set:friends image:LeftTopSelf" />
+                <Property Name="TopRightImage" Value="set:friends image:paopaoRightTopSelf" />
+                <Property Name="BottomLeftImage" Value="set:friends image:LeftEndSelf" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BottomRightImage" Value="set:friends image:RightEndSelf" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="SocialTalkRender/selfSp/selfBg/selfTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,117},{0,31}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="SocialTalkRender/timeTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,166},{0,0},{0,226},{0,16}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="\[11:20]" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00e4ff" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SocialTalkRender/gapEnd" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,139},{0,111},{0,199},{0,127}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00e4ff" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

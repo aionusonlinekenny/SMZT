@@ -1,0 +1,50 @@
+<GUILayout>
+    <Window Name="DanYaoRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,238},{0,66}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="DanYaoRender/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,238},{0,66}}" />
+            <Property Name="Image" Value="set:skin image:RenderBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="DanYaoRender/bg/itemBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,13},{0,9},{0,61},{0,57}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="DanYaoRender/bg/itemBg/item" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+            <Window Name="DanYaoRender/bg/nameTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,70},{0,9},{0,193},{0,29}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="丹药名称(1/4)" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF7200" />
+            </Window>
+            <Window Name="DanYaoRender/bg/attrNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,83},{0,35},{0,112},{0,55}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="攻击" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+            </Window>
+            <Window Name="DanYaoRender/bg/TextBG" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,119},{0,35},{0,223},{0,55}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="DanYaoRender/bg/TextBG/txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,104},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="应该攻击数值" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFe1feff" />
+                </Window>
+            </Window>
+            <Window Name="DanYaoRender/bg/useButton" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,193},{0,8},{0,233},{0,31}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="提升" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

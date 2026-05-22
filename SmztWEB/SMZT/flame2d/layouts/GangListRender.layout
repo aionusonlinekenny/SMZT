@@ -1,0 +1,111 @@
+<GUILayout>
+    <Window Name="GangListRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,11},{0,51},{0,746},{0,82}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="GangListRender/bg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,735},{0,31}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:RenderNormalBgLeft" />
+            <Property Name="LeftOffset" Value="46" />
+            <Property Name="RightImage" Value="set:skin image:RenderNormalBgRight" />
+            <Property Name="CenterImage" Value="set:skin image:RenderNormalBgCenter" />
+            <Property Name="RightOffset" Value="46" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="GangListRender/bg1" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,735},{0,31}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:textDiLeft" />
+            <Property Name="LeftOffset" Value="46" />
+            <Property Name="RightImage" Value="set:skin image:textDiRight" />
+            <Property Name="CenterImage" Value="set:skin image:textDiCenter" />
+            <Property Name="RightOffset" Value="46" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="GangListRender/tigerImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,9},{0,46},{0,29}}" />
+            <Property Name="Image" Value="set:gangGeneral image:tiger" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="GangListRender/tokenImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,48},{0,9},{0,71},{0,30}}" />
+            <Property Name="Image" Value="set:gangGeneral image:token" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="GangListRender/countriesTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,81},{0,0},{0,129},{0,31}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="【亡】" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFF0000" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="GangListRender/sloganTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,129},{0,1},{0,261},{0,32}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="千秋万代一统江湖" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="GangListRender/fightTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,468},{0,0},{0,633},{0,31}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="1234567890" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFFea00" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="GangListRender/waitingImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,643},{0,4},{0,726},{0,27}}" />
+            <Property Name="Image" Value="set:gangGeneral image:waitingApproval" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="GangListRender/memberTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,365},{0,0},{0,467},{0,31}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="50/80" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="GangListRender/levelTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,262},{0,0},{0,364},{0,31}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="Lv.10" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="GangListRender/applyBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,643},{0,4},{0,726},{0,27}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="申请入帮" />
+        </Window>
+    </Window>
+</GUILayout>

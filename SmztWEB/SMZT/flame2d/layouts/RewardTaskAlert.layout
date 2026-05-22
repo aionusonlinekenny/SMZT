@@ -1,0 +1,43 @@
+<GUILayout>
+    <Window Name="RewardTaskAlert" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,360},{0,183}}" />
+        <Property Name="Text" Value="提示" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="RewardTaskAlert/word$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,51},{0,35},{0,301},{0,57}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="RewardTaskAlert/sure" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,62},{0,116},{0,149},{0,139}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="确定" />
+        </Window>
+        <Window Name="RewardTaskAlert/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,110},{0,346},{0,111}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="RewardTaskAlert/no" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,184},{0,116},{0,271},{0,139}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="取消" />
+        </Window>
+        <Window Name="RewardTaskAlert/choose" Type="GuiLook/Checkbox">
+            <Property Name="UnifiedAreaRect" Value="{{0,123},{0,77},{0,194},{0,93}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="不再提示" />
+        </Window>
+    </Window>
+</GUILayout>

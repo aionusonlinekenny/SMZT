@@ -1,0 +1,109 @@
+<GUILayout>
+    <Window Name="CrossServer3V3RewardPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,466},{0,457}}" />
+        <Property Name="Text" Value="排名奖励" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="CrossServer3V3RewardPanel/myRankImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,162},{0,378},{0,217},{0,397}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="CrossServer3V3RewardPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,414},{0,357},{0,415}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="CrossServer3V3RewardPanel/myRewardTitle" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,372},{0,157},{0,399}}" />
+            <Property Name="Image" Value="set:crossServer3V3Reward image:myReward" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="CrossServer3V3RewardPanel/rewardBtn" Type="GlossySerpent/RedButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,232},{0,365},{0,354},{0,405}}" />
+            <Window Name="CrossServer3V3RewardPanel/rewardBtn/rewardImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,122},{0,40}}" />
+                <Property Name="Image" Value="set:skins image:receiveRewardTxt" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="CrossServer3V3RewardPanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,448},{0,357}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CrossServer3V3RewardPanel/bg/HeaderList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,113},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="CrossServer3V3RewardPanel/bg/HeaderList/StaticText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,113},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="排名" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CrossServer3V3RewardPanel/bg/HeaderList2" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,113},{0,0},{0,448},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="CrossServer3V3RewardPanel/bg/HeaderList2/StaticText2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,335},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="排名奖励" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CrossServer3V3RewardPanel/bg/list" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,31},{0,446},{0,350}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="CrossServer3V3RewardPanel/StaticText" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,230},{0,-18},{0,423},{0,-1}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="每日0点后领取奖励" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFF0000" />
+            <Property Name="VertFormatting" Value="" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="HorzTextFormatting" Value="" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

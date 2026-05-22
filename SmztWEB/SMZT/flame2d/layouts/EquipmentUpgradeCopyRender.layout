@@ -1,0 +1,187 @@
+<GUILayout>
+    <Window Name="EquipmentUpgradeRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,230},{0,381}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="EquipmentUpgradeRender/background" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,229},{0,381}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:copyGeneral image:blackNorth" />
+            <Property Name="LeftImage" Value="set:copyGeneral image:blackWest" />
+            <Property Name="TopOffset" Value="20" />
+            <Property Name="LeftOffset" Value="19" />
+            <Property Name="RightImage" Value="set:copyGeneral image:blackEast" />
+            <Property Name="BottomImage" Value="set:copyGeneral image:blackSouth" />
+            <Property Name="CenterImage" Value="set:copyGeneral image:blackCenter" />
+            <Property Name="RightOffset" Value="19" />
+            <Property Name="BottomOffset" Value="20" />
+            <Property Name="TopLeftImage" Value="set:copyGeneral image:blackNorthwest" />
+            <Property Name="TopRightImage" Value="set:copyGeneral image:blackNortheast" />
+            <Property Name="BottomLeftImage" Value="set:copyGeneral image:blackSouthwest" />
+            <Property Name="BottomRightImage" Value="set:copyGeneral image:blackSoutheast" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="EquipmentUpgradeRender/equipImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,223},{0,375}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="" />
+            <Property Name="VertFormatting" Value="" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="EquipmentUpgradeRender/lockImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,50},{0,118},{0,162},{0,230}}" />
+            <Property Name="Image" Value="set:copyGeneral image:lock" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="EquipmentUpgradeRender/grayImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,258},{0,222},{0,305}}" />
+            <Property Name="Image" Value="set:copyGeneral image:gray" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="EquipmentUpgradeRender/grayImg/conditionDesTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,216},{0,47}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="开启等级：50" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baFF" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="EquipmentUpgradeRender/attackDefenseSP" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,258},{0,190},{0,301}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="EquipmentUpgradeRender/attackDefenseSP/attackBtn" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,6},{0,80},{0,37}}" />
+                <Property Name="HoverImage" Value="set:copyGeneral image:attackEquipmentChoose" />
+                <Property Name="SelectedImage" Value="set:copyGeneral image:attackEquipmentChoose" />
+                <Property Name="UnselectedImage" Value="set:copyGeneral image:attackEquipment" />
+            </Window>
+            <Window Name="EquipmentUpgradeRender/attackDefenseSP/defenseBtn" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,82},{0,6},{0,157},{0,37}}" />
+                <Property Name="HoverImage" Value="set:copyGeneral image:defenseEquipmentChoose" />
+                <Property Name="SelectedImage" Value="set:copyGeneral image:defenseEquipmentChoose" />
+                <Property Name="UnselectedImage" Value="set:copyGeneral image:defenseEquipment" />
+            </Window>
+        </Window>
+        <Window Name="EquipmentUpgradeRender/generalEliteSP" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,258},{0,190},{0,301}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="EquipmentUpgradeRender/generalEliteSP/generalBtn" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,6},{0,80},{0,37}}" />
+                <Property Name="HoverImage" Value="set:copyGeneral image:generalChoose" />
+                <Property Name="SelectedImage" Value="set:copyGeneral image:generalChoose" />
+                <Property Name="UnselectedImage" Value="set:copyGeneral image:general" />
+            </Window>
+            <Window Name="EquipmentUpgradeRender/generalEliteSP/eliteBtn" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,82},{0,6},{0,157},{0,37}}" />
+                <Property Name="HoverImage" Value="set:copyGeneral image:eliteChoose" />
+                <Property Name="SelectedImage" Value="set:copyGeneral image:eliteChoose" />
+                <Property Name="UnselectedImage" Value="set:copyGeneral image:elite" />
+            </Window>
+        </Window>
+        <Window Name="EquipmentUpgradeRender/selected" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,223},{0,375}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:copyGeneral image:blueNorth" />
+            <Property Name="LeftImage" Value="set:copyGeneral image:blueWest" />
+            <Property Name="TopOffset" Value="25" />
+            <Property Name="LeftOffset" Value="22" />
+            <Property Name="RightImage" Value="set:copyGeneral image:blueEast" />
+            <Property Name="BottomImage" Value="set:copyGeneral image:bluesouth" />
+            <Property Name="CenterImage" Value="set:copyGeneral image:blueCenter" />
+            <Property Name="RightOffset" Value="22" />
+            <Property Name="BottomOffset" Value="25" />
+            <Property Name="TopLeftImage" Value="set:copyGeneral image:blueNorthwest" />
+            <Property Name="TopRightImage" Value="set:copyGeneral image:blueNortheast" />
+            <Property Name="BottomLeftImage" Value="set:copyGeneral image:blueSouthwest" />
+            <Property Name="BottomRightImage" Value="set:copyGeneral image:blueSoutheast" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="EquipmentUpgradeRender/itemBox" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,-10},{0,8},{0,207},{0,377}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="EquipmentUpgradeRender/itemBox/items0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,314},{0,54},{0,362}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipmentUpgradeRender/itemBox/items3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,162},{0,314},{0,210},{0,362}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipmentUpgradeRender/itemBox/items2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,110},{0,314},{0,158},{0,362}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipmentUpgradeRender/itemBox/items1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,314},{0,106},{0,362}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="EquipmentUpgradeRender/shadowImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,4},{0,223},{0,373}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="EquipmentUpgradeRender/leftEffect" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,33},{0,266},{0,108},{0,296}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="EquipmentUpgradeRender/rightEffect" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,114},{0,267},{0,184},{0,297}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,222 @@
+<GUILayout>
+    <Window Name="FairyInstruction" Type="GuiLook/CommonBg4">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,298},{0,578}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="FairyInstruction/purpleBackground" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,297},{0,34}}" />
+            <Property Name="Image" Value="set:skins image:quality4" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="FairyInstruction/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,34},{0,296},{0,35}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="FairyInstruction/Line2" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,78},{0,296},{0,79}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="FairyInstruction/nameTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,9},{0,101},{0,30}}" />
+            <Property Name="Font" Value="songti_18_strengh" />
+            <Property Name="Text" Value="佳酿仙子" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ffcc43ff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="FairyInstruction/fairyTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,252},{0,9},{0,295},{0,27}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="仙子类" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ff00baff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="FairyInstruction/fightImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,46},{0,74},{0,68}}" />
+            <Property Name="Image" Value="set:mainUI1 image:fightText" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="FairyInstruction/fightNumberImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,75},{0,43},{0,268},{0,68}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="FairyInstruction/yongjiuView" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,81},{0,298},{0,127}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FairyInstruction/yongjiuView/wordTxt8" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,2},{0,108},{0,20}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="永久属性加成：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyInstruction/yongjiuView/yAttribute2$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,255},{0,46}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="攻击" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyInstruction/yongjiuView/yAttribute1$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,28},{0,121},{0,46}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="生命" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="FairyInstruction/xianziView" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,128},{0,298},{0,170}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FairyInstruction/xianziView/attribute2$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,147},{0,24},{0,257},{0,40}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="攻击" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyInstruction/xianziView/wordTxt7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,1},{0,79},{0,19}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="仙子等级：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyInstruction/xianziView/levelTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,80},{0,1},{0,122},{0,19}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="55级" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffffea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyInstruction/xianziView/attribute1$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,24},{0,122},{0,40}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="生命" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="FairyInstruction/skillView" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,172},{0,298},{0,250}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FairyInstruction/skillView/props3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,126},{0,5},{0,174},{0,53}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyInstruction/skillView/props2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,219},{0,5},{0,267},{0,53}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyInstruction/skillView/skillNameTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,13},{0,56},{0,101},{0,74}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="技能名称 Lv.1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyInstruction/skillView/skillNameTxt3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,104},{0,56},{0,192},{0,74}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="技能名称 Lv.1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyInstruction/skillView/skillNameTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,200},{0,56},{0,288},{0,74}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="技能名称 Lv.1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyInstruction/skillView/Line3" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,296},{0,1}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="FairyInstruction/skillView/props1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,33},{0,5},{0,81},{0,53}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="FairyInstruction/texingView" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,252},{0,298},{0,290}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FairyInstruction/texingView/Line4" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,296},{0,1}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="FairyInstruction/texingView/wordTxt72" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,4},{0,80},{0,22}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="仙子特性：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyInstruction/texingView/texing$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,22},{0,291},{0,36}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="可随意" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFe1feff" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="FairyInstruction/jihuoView" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,291},{0,298},{0,336}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FairyInstruction/jihuoView/Line5" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,296},{0,1}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="FairyInstruction/jihuoView/wortTxt5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,2},{0,257},{0,20}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="激活条件：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyInstruction/jihuoView/wortTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,25},{0,287},{0,44}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="激活前一个仙子：散财仙子" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFe1feff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

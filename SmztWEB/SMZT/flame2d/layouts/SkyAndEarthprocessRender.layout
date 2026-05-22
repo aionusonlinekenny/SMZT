@@ -1,0 +1,38 @@
+<GUILayout>
+    <Window Name="SkyAndEarthprocessRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,45},{0,30}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SkyAndEarthprocessRender/blackImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,25},{0,30}}" />
+            <Property Name="Image" Value="set:copyPublic image:blackpoint" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="SkyAndEarthprocessRender/blackImg/purpleImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,23},{0,23}}" />
+                <Property Name="Image" Value="set:copyPublic image:purplepoint" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyAndEarthprocessRender/blackImg/yellowImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,23},{0,23}}" />
+                <Property Name="Image" Value="set:copyPublic image:whitepoint" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SkyAndEarthprocessRender/nextImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,30},{0,10},{0,46},{0,26}}" />
+            <Property Name="Image" Value="set:mainUI1 image:rightBuffNormal" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,109 @@
+<GUILayout>
+    <Window Name="WorldRank" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,885},{0,551}}" />
+        <Window Name="WorldRank/BigWindow" Type="GuiLook/BigWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,1},{0,883},{0,551}}" />
+            <Property Name="RollUpEnabled" Value="false" />
+            <Property Name="SizingEnabled" Value="false" />
+            <Property Name="TitlebarHeight" Value="37" />
+            <Property Name="RiseOnClick" Value="true" />
+            <Property Name="AutoRenderingSurface" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="WorldRank/BigWindow/StaticImage" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,6},{0,863},{0,504}}" />
+                <Property Name="Image" Value="set:worldRank image:bg" />
+              
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WorldRank/BigWindow/waterImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,148},{0,208},{0,359},{0,417}}" />
+                <Property Name="Image" Value="set:worldRank image:expBar" />
+               
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WorldRank/BigWindow/StaticImage2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,200},{0,369},{0,426}}" />
+                <Property Name="Image" Value="set:worldRank image:expKuang" />
+              
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WorldRank/BigWindow/StaticImage3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,89},{0,438},{0,427},{0,489}}" />
+                <Property Name="Image" Value="set:worldRank image:NewImage_3" />
+               
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WorldRank/BigWindow/StaticImage4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,310},{0,302},{0,347},{0,339}}" />
+                <Property Name="Image" Value="set:worldRank image:NewImage_6" />
+               
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WorldRank/BigWindow/taskRewardTxt" Type="GuiLook/StaticTextBox">
+                <Property Name="UnifiedAreaRect" Value="{{0,532},{0,336},{0,864},{0,438}}" />
+                <Property Name="Text" Value="111111111111111111111111111111111111111111111111111111111" />
+                <Property Name="FrameEnabled" Value="False" />
+				<Property Name="BackgroundEnabled" Value="False" />
+				<Property Name="LineSpace" Value="4" />
+				<Property Name="MousePassThroughEnabled" Value="True" />
+                <Property Name="Font" Value="" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="WorldRank/BigWindow/getExpBtn" Type="GuiLook/Button">
+                <Property Name="UnifiedAreaRect" Value="{{0,629},{0,448},{0,754},{0,491}}" />
+                <Property Name="Text" Value="领取经验" />
+            </Window>
+            <Window Name="WorldRank/BigWindow/StaticImage22" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,375},{0,442},{0,418},{0,485}}" />
+                <Property Name="Image" Value="set:worldRank image:NewImage_5" />
+               
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WorldRank/BigWindow/turnImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,182},{0,443},{0,260},{0,486}}" />
+                <Property Name="Image" Value="set:worldRank image:NewImage_5_copy" />
+               
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WorldRank/BigWindow/expNClip" Type="CEGUI/ImageNum" path="tj2common/Yellow1Num">
+                <Property Name="UnifiedAreaRect" Value="{{0,165},{0,298},{0,306},{0,343}}" />
+                <Property Name="Image" Value="set:tj2common image:Yellow1Num3" />
+              
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WorldRank/BigWindow/gradeClip" Type="CEGUI/ImageNum" path="tj2common/Yellow1Num"><!--CEGUI/ImageNum GuiLook/StaticImage-->
+                <Property Name="UnifiedAreaRect" Value="{{0,262},{0,437},{0,372},{0,489}}" />
+                <Property Name="Image" Value="set:tj2common image:Yellow1Num3" />
+               
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="WorldRank/StaticImage" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,84},{0,5},{0,184},{0,32}}" />
+            <Property Name="Image" Value="set:worldRank image:NewImage_4" />
+          
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,79 @@
+<GUILayout>
+    <Window Name="TeamPlayerRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,232},{0,42}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="TeamPlayerRender/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,232},{0,42}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="TeamPlayerRender/bg/line1" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,19},{0,232},{0,20}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:mainUI1 image:lineLeft" />
+                <Property Name="LeftOffset" Value="1" />
+                <Property Name="RightImage" Value="set:mainUI1 image:lineRight" />
+                <Property Name="CenterImage" Value="set:mainUI1 image:lineCenter" />
+                <Property Name="RightOffset" Value="127" />
+            </Window>
+            <Window Name="TeamPlayerRender/bg/line2" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,37},{0,232},{0,38}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:mainUI1 image:lineLeft" />
+                <Property Name="LeftOffset" Value="1" />
+                <Property Name="RightImage" Value="set:mainUI1 image:lineRight" />
+                <Property Name="CenterImage" Value="set:mainUI1 image:lineCenter" />
+                <Property Name="RightOffset" Value="127" />
+            </Window>
+            <Window Name="TeamPlayerRender/bg/name$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,39},{0,0},{0,188},{0,19}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="玩家名称六字" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF4fe4ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TeamPlayerRender/bg/leaderFlag" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,188},{0,0},{0,205},{0,19}}" />
+                <Property Name="Image" Value="set:mainUI1 image:flagImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="TeamPlayerRender/bg/flyBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,212},{0,0},{0,232},{0,19}}" />
+                <Property Name="Image" Value="set:mainUI1 image:transfer" />
+            </Window>
+            <Window Name="TeamPlayerRender/bg/hpBarBg" Type="GuiLook/renderBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,23},{0,228},{0,35}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="TeamPlayerRender/bg/hpBarBg/hp$StretchBar" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,189},{0,11}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:hpBar" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="TeamPlayerRender/bg/damageTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,143},{0,21},{0,227},{0,37}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="伤害：10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TeamPlayerRender/bg/rankImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,38},{0,38}}" />
+                <Property Name="Image" Value="set:ranking image:1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

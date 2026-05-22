@@ -1,0 +1,33 @@
+<GUILayout>
+    <Window Name="SkillKRender" Type="GuiLook/StaticImage">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,136},{0,40}}" />
+        <Property Name="Image" Value="set:skill image:skillBg" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="FrameEnabled" Value="false" />
+        <Property Name="BackgroundEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Window Name="SkillKRender/skillName" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,46},{0,0},{0,108},{0,18}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="昏迷抗性" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFcc43ff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SkillKRender/skillGradeTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,46},{0,20},{0,102},{0,38}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="26/35" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SkillKRender/addBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,102},{0,19},{0,136},{0,40}}" />
+            <Property Name="HoverImage" Value="set:skill image:addHover" />
+            <Property Name="NormalImage" Value="set:skill image:addNormal" />
+            <Property Name="PushedImage" Value="set:skill image:addPushed" />
+        </Window>
+    </Window>
+</GUILayout>

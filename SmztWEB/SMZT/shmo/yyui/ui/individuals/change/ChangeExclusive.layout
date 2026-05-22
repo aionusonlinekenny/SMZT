@@ -1,0 +1,199 @@
+<GUILayout>
+    <Window Name="ChangeExclusive" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,821},{0,578}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="ChangeExclusive/generalBg1" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,820},{0,475}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="ChangeExclusive/generalBg1/attrAllImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,710},{0,0},{0,819},{0,46}}" />
+                <Property Name="Image" Value="set:changeAvatar image:attrAll" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ChangeExclusive/generalBg1/excList" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,40},{0,45},{0,790},{0,465}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="ChangeExclusive/generalBg1/rightExcButton" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,796},{0,0},{0,821},{0,45}}" />
+                <Property Name="HoverImage" Value="set:skin image:turnRHover" />
+                <Property Name="NormalImage" Value="set:skin image:turnRNormal" />
+                <Property Name="PushedImage" Value="set:skin image:turnRPushed" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="ChangeExclusive/generalBg1/leftExcButton" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,25},{0,45}}" />
+                <Property Name="HoverImage" Value="set:skin image:turnLHover" />
+                <Property Name="NormalImage" Value="set:skin image:turnLNormal" />
+                <Property Name="PushedImage" Value="set:skin image:turnLPushed" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="ChangeExclusive/generalBg1/mask" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,819},{0,474}}" />
+                <Property Name="Image" Value="set:changeAvatar image:di" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="ChangeExclusive/generalBg1/mask/StaticImage" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,819},{0,474}}" />
+                    <Property Name="Image" Value="set:changeAvatar image:openRule" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="ChangeExclusive/zsEffect" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,293},{0,437},{0,560},{0,491}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="ChangeExclusive/transformationList1" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,475},{0,821},{0,578}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ChangeExclusive/transformationList1/rightItemButton" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,797},{0,-12},{0,822},{0,33}}" />
+                <Property Name="HoverImage" Value="set:skin image:turnRHover" />
+                <Property Name="NormalImage" Value="set:skin image:turnRNormal" />
+                <Property Name="PushedImage" Value="set:skin image:turnRPushed" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="ChangeExclusive/transformationList1/leftItemButton" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-12},{0,25},{0,33}}" />
+                <Property Name="HoverImage" Value="set:skin image:turnLHover" />
+                <Property Name="NormalImage" Value="set:skin image:turnLNormal" />
+                <Property Name="PushedImage" Value="set:skin image:turnLPushed" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="ChangeExclusive/transformationList1/excBg" Type="GuiLook/CommonBg2">
+                <Property Name="UnifiedAreaRect" Value="{{0,27},{0,5},{0,794},{0,98}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ChangeExclusive/transformationList1/excBg/dragTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,67},{0,767},{0,92}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="直接拖动法宝到相应变身上即可" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00baff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeExclusive/transformationList1/excBg/itemList" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,26},{0,12},{0,746},{0,64}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="ChangeExclusive/transformationList1/excBg/itemList/items3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,180},{0,2},{0,228},{0,50}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeExclusive/transformationList1/excBg/itemList/items5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,300},{0,2},{0,348},{0,50}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeExclusive/transformationList1/excBg/itemList/items0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,50},{0,50}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeExclusive/transformationList1/excBg/itemList/items2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,120},{0,2},{0,168},{0,50}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeExclusive/transformationList1/excBg/itemList/items4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,240},{0,2},{0,288},{0,50}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeExclusive/transformationList1/excBg/itemList/items1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,2},{0,108},{0,50}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeExclusive/transformationList1/excBg/itemList/items10" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,600},{0,2},{0,648},{0,50}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeExclusive/transformationList1/excBg/itemList/items6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,360},{0,2},{0,408},{0,50}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeExclusive/transformationList1/excBg/itemList/items9" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,540},{0,2},{0,588},{0,50}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeExclusive/transformationList1/excBg/itemList/items7" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,420},{0,2},{0,468},{0,50}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeExclusive/transformationList1/excBg/itemList/items8" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,480},{0,2},{0,528},{0,50}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeExclusive/transformationList1/excBg/itemList/items11" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,660},{0,2},{0,708},{0,50}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

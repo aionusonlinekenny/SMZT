@@ -1,0 +1,187 @@
+<GUILayout>
+    <Window Name="ItemTipsPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,299},{0,305}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+        <Window Name="ItemTipsPanel/commonBg4" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,299},{0,305}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+            <Property Name="TopImage" Value="set:skins image:tipTop1" />
+            <Property Name="LeftImage" Value="set:skins image:tipLeft1" />
+            <Property Name="TopOffset" Value="9" />
+            <Property Name="LeftOffset" Value="9" />
+            <Property Name="RightImage" Value="set:skins image:tipRight1" />
+            <Property Name="BottomImage" Value="set:skins image:tipBottom1" />
+            <Property Name="CenterImage" Value="set:skins image:tipCenter1" />
+            <Property Name="RightOffset" Value="9" />
+            <Property Name="BottomOffset" Value="9" />
+            <Property Name="TopLeftImage" Value="set:skins image:tipLeftTop1" />
+            <Property Name="TopRightImage" Value="set:skins image:tipRightTop1" />
+            <Property Name="BottomLeftImage" Value="set:skins image:tipLeftBottom1" />
+            <Property Name="BottomRightImage" Value="set:skins image:tipRightBottom1" />
+            <Window Name="ItemTipsPanel/commonBg4/productBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,298},{0,176}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/line3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,232},{0,298},{0,233}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/timeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10.5},{0,261.5},{0,290.5},{0,277.5}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="倒计时：23小时23分钟23秒" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFff0000" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/isSaleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10.5},{0,284.5},{0,142.5},{0,300.5}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="&lt;不可出售/丢弃&gt;" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFff0000" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/priceTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,144.5},{0,284.5},{0,290.5},{0,300.5}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="系统售价：500铜钱" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFff7200" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/topD3d" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1},{0,1}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/bottomD3d" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1},{0,1}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/rightD3d" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1},{0,1}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/leftD3d" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1},{0,1}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/gridBgEffect" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,17},{0,93},{0,143}}" />
+                <Property Name="Image" Value="set:skins image:qualityItem7" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/raceTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,80},{0,75},{0,120},{0,95}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="职业：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/bindingStateTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,80},{0,40},{0,137},{0,60}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="绑定状态" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/gradeTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,80},{0,58},{0,120},{0,78}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="等级：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/gridBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,20},{0,44},{0,68},{0,92}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="ItemTipsPanel/commonBg4/gridBg/itemQImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ItemTipsPanel/commonBg4/gridBg/itemImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/raceTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,75},{0,165},{0,95}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="幽婵族" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/gradeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,58},{0,157},{0,78}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="20" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFEA00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/descTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,108},{0,289},{0,225}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="攻击力" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="VertFormatting" Value="LeftAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/line2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,100},{0,298},{0,101}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/line1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,35},{0,298},{0,36}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/itemNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,1},{0,208},{0,35}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="高级攻击宝石" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ItemTipsPanel/commonBg4/itemTypeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,200},{0,1},{0,285},{0,31}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="宝石类" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

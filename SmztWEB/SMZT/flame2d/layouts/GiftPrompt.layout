@@ -1,0 +1,171 @@
+<GUILayout>
+    <Window Name="giftPrompt" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,360},{0,229}}" />
+        <Property Name="Text" Value="提示" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="giftPrompt/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,156},{0,346},{0,157}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="giftPrompt/word$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{-0.0107527,13},{0,346},{0,37}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="giftPrompt/no" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{-0.015896,193},{0.00268817,162},{-0.015896,280},{0.00268817,185}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="取消" />
+        </Window>
+        <Window Name="giftPrompt/sure" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{-0.015896,71},{0.00268817,162},{-0.015896,158},{0.00268817,185}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="确定" />
+        </Window>
+        <Window Name="giftPrompt/goodsView" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,67},{0,45},{0,275},{0,144}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="giftPrompt/goodsView/props3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,106},{0,0},{0,154},{0,48}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="giftPrompt/goodsView/props3/itemImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="giftPrompt/goodsView/props7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,106},{0,50},{0,154},{0,98}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="giftPrompt/goodsView/props7/itemImg7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="giftPrompt/goodsView/props1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="giftPrompt/goodsView/props1/itemImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="giftPrompt/goodsView/props6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,53},{0,50},{0,101},{0,98}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="giftPrompt/goodsView/props6/itemImg6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="giftPrompt/goodsView/props5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,50},{0,48},{0,98}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="giftPrompt/goodsView/props5/itemImg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="giftPrompt/goodsView/props2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,53},{0,0},{0,101},{0,48}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="giftPrompt/goodsView/props2/itemImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="giftPrompt/goodsView/props8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,159},{0,50},{0,207},{0,98}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="giftPrompt/goodsView/props8/itemImg8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="giftPrompt/goodsView/props4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,159},{0,0},{0,207},{0,48}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="giftPrompt/goodsView/props4/itemImg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

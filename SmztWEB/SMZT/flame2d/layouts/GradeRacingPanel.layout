@@ -1,0 +1,183 @@
+<GUILayout>
+    <Window Name="GradeRacingPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,599},{0,452}}" />
+        <Property Name="GlyphImage" Value="set:gradeRacing image:grade" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="GradeRacingPanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,409},{0,581},{0,410}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="GradeRacingPanel/selfCommonBg" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,200},{0,404}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GradeRacingPanel/selfCommonBg/selfTitle" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,29}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:ListTitleBgLeft" />
+                <Property Name="LeftOffset" Value="19" />
+                <Property Name="RightImage" Value="set:skin image:ListTitleBgRight" />
+                <Property Name="CenterImage" Value="set:skin image:ListTitleBgCenter" />
+                <Property Name="RightOffset" Value="19" />
+                <Window Name="GradeRacingPanel/selfCommonBg/selfTitle/selfTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,29}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="自己" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GradeRacingPanel/selfCommonBg/selfResultImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,60},{0,364},{0,143},{0,389}}" />
+                <Property Name="Image" Value="set:gradeRacing image:defeat" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GradeRacingPanel/selfCommonBg/D3view" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,61},{0,354},{0,86},{0,359}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="GradeRacingPanel/selfCommonBg/selfSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,50},{0,42},{0,180},{0,62}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GradeRacingPanel/selfCommonBg/selfSp/selfNameTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-1},{0,129},{0,19}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="玩家名称六字" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="GradeRacingPanel/enemyCommonBg" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,380},{0,4},{0,580},{0,404}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GradeRacingPanel/enemyCommonBg/enemyTitle" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,29}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:ListTitleBgLeft" />
+                <Property Name="LeftOffset" Value="19" />
+                <Property Name="RightImage" Value="set:skin image:ListTitleBgRight" />
+                <Property Name="CenterImage" Value="set:skin image:ListTitleBgCenter" />
+                <Property Name="RightOffset" Value="19" />
+                <Window Name="GradeRacingPanel/enemyCommonBg/enemyTitle/enemyTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,29}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="对方" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GradeRacingPanel/enemyCommonBg/enemyResultImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,60},{0,364},{0,143},{0,389}}" />
+                <Property Name="Image" Value="set:gradeRacing image:defeat" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GradeRacingPanel/enemyCommonBg/D3view2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,82},{0,353},{0,98},{0,358}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="GradeRacingPanel/enemyCommonBg/enemySp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,50},{0,42},{0,180},{0,62}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GradeRacingPanel/enemyCommonBg/enemySp/enemyNameTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,129},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="玩家名称六字" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="GradeRacingPanel/vsImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,234},{0,132},{0,347},{0,295}}" />
+            <Property Name="Image" Value="set:gradeRacing image:VS" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="GradeRacingPanel/winConditionsTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,222},{0,307},{0,360},{0,327}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="先达60级胜" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GradeRacingPanel/winDemandTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,222},{0,333},{0,360},{0,353}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="落后9999999经验" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFF0000" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GradeRacingPanel/winImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,236},{0,6},{0,344},{0,43}}" />
+            <Property Name="Image" Value="set:gradeRacing image:winReward" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="GradeRacingPanel/girdBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,265},{0,51},{0,317},{0,103}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="GradeRacingPanel/fightTitleImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,221},{0,107},{0,285},{0,129}}" />
+            <Property Name="Image" Value="set:mainUI1 image:fightText" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="GradeRacingPanel/fightImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,288},{0,107},{0,379},{0,129}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="GradeRacingPanel/receiveBtn" Type="GlossySerpent/RedButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,364},{0,371},{0,404}}" />
+            <Window Name="GradeRacingPanel/receiveBtn/receiveImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                <Property Name="Image" Value="set:skins image:receiveRewardTxt" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

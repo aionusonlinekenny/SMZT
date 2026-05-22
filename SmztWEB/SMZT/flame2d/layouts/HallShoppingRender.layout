@@ -1,0 +1,146 @@
+<GUILayout>
+    <Window Name="HallShoppingRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,620},{0,90}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="HallShoppingRender/background" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,624},{0,90}}" />
+            <Property Name="Image" Value="set:skin image:RenderBg2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="HallShoppingRender/background/giftBgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,20},{0,62},{0,68}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="HallShoppingRender/background/butBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,463},{0,25},{0,588},{0,65}}" />
+                <Window Name="HallShoppingRender/background/butBtn/buy3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,125},{0,40}}" />
+                    <Property Name="Image" Value="set:hallReward image:buy" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="HallShoppingRender/background/itemNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,81},{0,11},{0,276},{0,35}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="黄金VIP" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallShoppingRender/background/timeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,325},{0,38},{0,399},{0,56}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="14:00:25" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF0000" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallShoppingRender/background/nextTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,262},{0,60},{0,323},{0,78}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="剩  余：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallShoppingRender/background/nextTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,262},{0,38},{0,313},{0,56}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="倒计时：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallShoppingRender/background/nPriceTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,147},{0,60},{0,200},{0,78}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="150" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallShoppingRender/background/oPriceTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,147},{0,38},{0,202},{0,56}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="300" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallShoppingRender/background/priceTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,81},{0,60},{0,123},{0,78}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="现价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallShoppingRender/background/priceTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,81},{0,38},{0,123},{0,56}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="原价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallShoppingRender/background/remainTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,325},{0,60},{0,399},{0,78}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="3" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF0000" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallShoppingRender/background/buyimage" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,278},{0,14},{0,350},{0,31}}" />
+                <Property Name="Image" Value="set:hallReward image:snapUpToday" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="HallShoppingRender/background/yuanbao2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,123},{0,37},{0,142},{0,56}}" />
+                <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="HallShoppingRender/background/yuanbao1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,123},{0,59},{0,142},{0,78}}" />
+                <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="HallShoppingRender/background/redline" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,77},{0,46},{0,178},{0,47}}" />
+                <Property Name="Image" Value="set:hallReward image:redline" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="HallShoppingRender/background/hadImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,499},{0,37},{0,553},{0,55}}" />
+                <Property Name="Image" Value="set:skin image:overBuy" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

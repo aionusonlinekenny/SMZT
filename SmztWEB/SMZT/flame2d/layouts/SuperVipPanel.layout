@@ -1,0 +1,71 @@
+<GUILayout>
+    <Window Name="SuperVipPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,726},{0,533}}" />
+        <Property Name="GlyphImage" Value="set:superVip image:title" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="SuperVipPanel/imgBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,4},{0,707},{0,482}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="SuperVipPanel/imgBg/showGirlImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,30},{0,179},{0,301},{0,397}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SuperVipPanel/imgBg/qqTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,37},{0,411},{0,209},{0,429}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SuperVipPanel/imgBg/copyBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,219},{0,409},{0,302},{0,432}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="复制号码" />
+            </Window>
+            <Window Name="SuperVipPanel/imgBg/rule$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,50},{0,439},{0,284},{0,457}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SuperVipPanel/imgBg/topUp$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,581},{0,13},{0,699},{0,31}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SuperVipPanel/imgBg/topUpBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,437},{0,422},{0,573},{0,456}}" />
+                <Property Name="HoverImage" Value="set:superVip image:topUpHover" />
+                <Property Name="NormalImage" Value="set:superVip image:topUpNormal" />
+                <Property Name="PushedImage" Value="set:superVip image:topUpPushed" />
+            </Window>
+        </Window>
+        <Window Name="SuperVipPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,489},{0,708},{0,490}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

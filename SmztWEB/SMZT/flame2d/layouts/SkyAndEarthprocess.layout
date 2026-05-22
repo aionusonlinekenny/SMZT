@@ -1,0 +1,73 @@
+<GUILayout>
+    <Window Name="SkyAndEarthprocess" Type="GlossySerpent/ThreeStretchImage">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,427},{0,60}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="LeftImage" Value="set:copyPublic image:shadowLeft" />
+        <Property Name="LeftOffset" Value="13" />
+        <Property Name="RightImage" Value="set:copyPublic image:shadowRight" />
+        <Property Name="CenterImage" Value="set:copyPublic image:shadowMiddle" />
+        <Property Name="RightOffset" Value="13" />
+        <Window Name="SkyAndEarthprocess/boxlist" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,11},{0,349},{0,41}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="SkyAndEarthprocess/skillImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,366},{0,2},{0,409},{0,42}}" />
+            <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="SkyAndEarthprocess/TextBG" Type="GuiLook/TextBG">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,44},{0,344},{0,56}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SkyAndEarthprocess/TextBG/damageBar$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,340},{0,12}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:BlueProgressBarLeft" />
+                <Property Name="LeftOffset" Value="48" />
+                <Property Name="RightImage" Value="set:skin image:BlueProgressBarRight" />
+                <Property Name="CenterImage" Value="set:skin image:BlueProgressBarCenter" />
+                <Property Name="RightOffset" Value="48" />
+            </Window>
+            <Window Name="SkyAndEarthprocess/TextBG/damageBarText" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,340},{0,12}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="sd" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SkyAndEarthprocess/skillGradeTxt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,345},{0,42},{0,426},{0,60}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SkyAndEarthprocess/descTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,289},{0,18}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="伤害越高、点亮图腾越多、技能效果越高" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="RightAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SkyAndEarthprocess/timeText" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,290},{0,-1},{0,315},{0,18}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFff0000" />
+            <Property Name="HorzTextFormatting" Value="RightAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SkyAndEarthprocess/timeText1" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,316},{0,-1},{0,373},{0,18}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFff0000" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

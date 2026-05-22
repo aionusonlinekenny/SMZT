@@ -1,0 +1,60 @@
+<GUILayout>
+    <Window Name="EquipPrompt" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,319},{0,162}}" />
+        <Property Name="Text" Value="提示" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="EquipPrompt/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,88},{0,305},{0,89}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="EquipPrompt/desc$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,12},{0,290},{0,30}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="EquipPrompt/descTxt2" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,60},{0,215},{0,78}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="2.前往       获得" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="EquipPrompt/descTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,36},{0,178},{0,54}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="1.前往    购买" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="EquipPrompt/path1$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,35},{0,78},{0,53}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="EquipPrompt/path2$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,60},{0,150},{0,78}}" />
+            <Property Name="Font" Value="songti_14" />
+            <Property Name="Text" Value="装备升级副本" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="EquipPrompt/sureBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,109},{0,95},{0,196},{0,118}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="朕知道了" />
+        </Window>
+    </Window>
+</GUILayout>

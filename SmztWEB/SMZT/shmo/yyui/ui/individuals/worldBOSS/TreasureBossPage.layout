@@ -1,0 +1,139 @@
+<GUILayout>
+    <Window Name="TreasureBossPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,845},{0,519}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="TreasureBossPage/Bg" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,845},{0,519}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="TreasureBossPage/Bg/ScrollablePane" Type="GuiLook/ScrollablePane">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,224},{0,514}}" />
+                <AutoWindow NameSuffix="__auto_container__">
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_hscrollbar__">
+                    <Property Name="NonClient" Value="true" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="NonClient" Value="true" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="VerticalScrollbar" Value="true" />
+                </AutoWindow>
+            </Window>
+            <Window Name="TreasureBossPage/Bg/CommonBg3" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,226},{0,0},{0,845},{0,519}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="TreasureBossPage/Bg/CommonBg3/imgBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,618},{0,518}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="TreasureBossPage/Bg/CommonBg3/imgBg/nameImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,565},{0,9},{0,613},{0,192}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasureBossPage/Bg/CommonBg3/imgBg/dropImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,20},{0,424},{0,96},{0,441}}" />
+                        <Property Name="Image" Value="set:WorldBoss image:bestDrop" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasureBossPage/Bg/CommonBg3/imgBg/cengImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,419},{0,429},{0,583},{0,448}}" />
+                        <Property Name="Image" Value="set:WorldBoss image:enter0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasureBossPage/Bg/CommonBg3/imgBg/ridingBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,439},{0,465},{0,551},{0,496}}" />
+                        <Property Name="HoverImage" Value="set:skins image:BlueBtnHover" />
+                        <Property Name="NormalImage" Value="set:skins image:BlueBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skins image:BlueBtnPushed" />
+                        <Window Name="TreasureBossPage/Bg/CommonBg3/imgBg/ridingBtn/ridingImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,112},{0,31}}" />
+                            <Property Name="Image" Value="set:WorldBoss image:join" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                            <Property Name="MouseInputPropagationEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                    <Window Name="TreasureBossPage/Bg/CommonBg3/imgBg/grid0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,21},{0,448},{0,71},{0,498}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasureBossPage/Bg/CommonBg3/imgBg/grid1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,75},{0,448},{0,125},{0,498}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasureBossPage/Bg/CommonBg3/imgBg/grid2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,129},{0,448},{0,179},{0,498}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasureBossPage/Bg/CommonBg3/imgBg/grid3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,183},{0,448},{0,233},{0,498}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasureBossPage/Bg/CommonBg3/imgBg/grid4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,237},{0,448},{0,287},{0,498}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasureBossPage/Bg/CommonBg3/imgBg/grid5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,291},{0,448},{0,341},{0,498}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasureBossPage/Bg/CommonBg3/imgBg/d3DView" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,291},{0,373},{0,341},{0,423}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    </Window>
+                    <Window Name="TreasureBossPage/Bg/CommonBg3/imgBg/txt$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,401},{0,400},{0,603},{0,420}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

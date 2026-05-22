@@ -1,0 +1,91 @@
+<GUILayout>
+    <Window Name="MailFrame" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,30},{0,24},{0,692},{0,470}}" />
+        <Property Name="GlyphImage" Value="set:emailGeneral image:email" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="MailFrame/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,402},{0,644},{0,403}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="MailFrame/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,644},{0,400}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="MailFrame/background/leftbackground" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,258},{0,369}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="MailFrame/background/leftbackground/BgImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,335},{0,257},{0,368}}" />
+                    <Property Name="Image" Value="set:skin image:RenderBg2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MailFrame/background/leftbackground/BgImg/selectAllBtn" Type="GuiLook/Checkbox">
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,9},{0,64},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="全选" />
+                    </Window>
+                    <Window Name="MailFrame/background/leftbackground/BgImg/deleteBtn" Type="GlossySerpent/BlueButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,80},{0,5},{0,161},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="删除" />
+                    </Window>
+                    <Window Name="MailFrame/background/leftbackground/BgImg/writeMsgBtn" Type="GlossySerpent/BlueButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,168},{0,5},{0,249},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="写信" />
+                    </Window>
+                </Window>
+                <Window Name="MailFrame/background/leftbackground/list" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,258},{0,335}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+            <Window Name="MailFrame/background/boxsp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,259},{0,0},{0,644},{0,369}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="MailFrame/systemBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,81},{0,4},{0,156},{0,28}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="系统" />
+        </Window>
+        <Window Name="MailFrame/gangBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,235},{0,4},{0,310},{0,28}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="帮派" />
+        </Window>
+        <Window Name="MailFrame/campBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,158},{0,4},{0,233},{0,28}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="阵营" />
+        </Window>
+        <Window Name="MailFrame/inboxBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,79},{0,28}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="收件箱" />
+        </Window>
+        <Window Name="MailFrame/notreadBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,389},{0,4},{0,464},{0,28}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="未读" />
+        </Window>
+        <Window Name="MailFrame/privateBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,312},{0,4},{0,387},{0,28}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="私人" />
+        </Window>
+    </Window>
+</GUILayout>

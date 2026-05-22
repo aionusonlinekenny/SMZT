@@ -1,0 +1,60 @@
+<GUILayout>
+    <Window Name="BagEveryFightRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,176},{0,194}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="BagEveryFightRender/commonBg" Type="GuiLook/CommonBG">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,172},{0,194}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="BagEveryFightRender/commonBg/getTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,115},{0,95},{0,136}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="每日领取条件" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BagEveryFightRender/commonBg/fightTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,136},{0,172},{0,157}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="今日提升4000战力" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="BagEveryFightRender/commonBg/receiveBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,163},{0,81},{0,186}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="领取奖励" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="BagEveryFightRender/commonBg/lowLevelImg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,163},{0,81},{0,186}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:RedBoxLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:RedBoxRight" />
+                <Property Name="CenterImage" Value="set:skin image:RedBoxMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Window Name="BagEveryFightRender/commonBg/lowLevelImg/txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,81},{0,23}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="提升不足" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="BagEveryFightRender/commonBg/dataGridWin" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,8},{0,148},{0,108}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

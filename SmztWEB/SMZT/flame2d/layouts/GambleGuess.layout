@@ -1,0 +1,103 @@
+<GUILayout>
+    <Window Name="GambleGuess" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,674},{0,82}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GambleGuess/imgBox" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,674},{0,82}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Window Name="GambleGuess/imgBox/smallImg" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,0},{0,173},{0,51}}" />
+                <Property Name="HoverImage" Value="set:wagerShop image:smallHover" />
+                <Property Name="SelectedImage" Value="set:wagerShop image:smallHover" />
+                <Property Name="UnselectedImage" Value="set:wagerShop image:smallNormal" />
+            </Window>
+            <Window Name="GambleGuess/imgBox/bigImg" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,176},{0,0},{0,327},{0,51}}" />
+                <Property Name="HoverImage" Value="set:wagerShop image:bigHover" />
+                <Property Name="SelectedImage" Value="set:wagerShop image:bigHover" />
+                <Property Name="UnselectedImage" Value="set:wagerShop image:bigNormal" />
+            </Window>
+            <Window Name="GambleGuess/imgBox/doubleImg" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,341},{0,0},{0,493},{0,51}}" />
+                <Property Name="HoverImage" Value="set:wagerShop image:pairsHover" />
+                <Property Name="SelectedImage" Value="set:wagerShop image:pairsHover" />
+                <Property Name="UnselectedImage" Value="set:wagerShop image:pairsNormal" />
+            </Window>
+            <Window Name="GambleGuess/imgBox/threeImg" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,498},{0,0},{0,660},{0,51}}" />
+                <Property Name="HoverImage" Value="set:wagerShop image:leopardHover" />
+                <Property Name="SelectedImage" Value="set:wagerShop image:leopardHover" />
+                <Property Name="UnselectedImage" Value="set:wagerShop image:leopardNormal" />
+            </Window>
+            <Window Name="GambleGuess/imgBox/bg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,56},{0,674},{0,79}}" />
+                <Property Name="Image" Value="set:wagerShop image:text" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GambleGuess/imgBox/bg/bignClip" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,36},{0,0},{0,101},{0,23}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GambleGuess/imgBox/bg/smallnClip" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,204},{0,0},{0,269},{0,23}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GambleGuess/imgBox/bg/doublenClip" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,378},{0,0},{0,443},{0,23}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GambleGuess/imgBox/bg/threenClip" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,551},{0,0},{0,616},{0,23}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="GambleGuess/btnBox" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,33},{0,0},{0,638},{0,75}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GambleGuess/btnBox/guessBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,255},{0,56}}" />
+                <Property Name="HoverImage" Value="set:wagerShop image:ordinaryHover" />
+                <Property Name="NormalImage" Value="set:wagerShop image:ordinaryNormal" />
+                <Property Name="PushedImage" Value="set:wagerShop image:ordinaryPushed" />
+            </Window>
+            <Window Name="GambleGuess/btnBox/yanbaoGuessBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,348},{0,0},{0,603},{0,56}}" />
+                <Property Name="HoverImage" Value="set:wagerShop image:cheatHover" />
+                <Property Name="NormalImage" Value="set:wagerShop image:cheatNormal" />
+                <Property Name="PushedImage" Value="set:wagerShop image:cheatPushed" />
+            </Window>
+            <Window Name="GambleGuess/btnBox/guessPriceTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,65},{0,51},{0,165},{0,75}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="花费30000体力" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GambleGuess/btnBox/yaobaoGressPriceTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,403},{0,51},{0,557},{0,75}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="花费10元宝+30000体力" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

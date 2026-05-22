@@ -1,0 +1,39 @@
+<GUILayout>
+    <Window Name="SocialFriendsSetGroupRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,308},{0,29}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SocialFriendsSetGroupRender/deleteBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,259},{0,3},{0,304},{0,26}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="删除" />
+        </Window>
+        <Window Name="SocialFriendsSetGroupRender/txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,0},{0,213},{0,29}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="好友（9/10）" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF64d4d8" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SocialFriendsSetGroupRender/img" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,256},{0,29}}" />
+            <Property Name="Image" Value="set:friends image:zu1" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="SocialFriendsSetGroupRender/img/upBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,229},{0,1},{0,241},{0,12}}" />
+                <Property Name="HoverImage" Value="set:friends image:upHover" />
+                <Property Name="NormalImage" Value="set:friends image:upNormal" />
+                <Property Name="PushedImage" Value="set:friends image:upPushed" />
+            </Window>
+            <Window Name="SocialFriendsSetGroupRender/img/downBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,229},{0,16},{0,241},{0,27}}" />
+                <Property Name="HoverImage" Value="set:friends image:downHover" />
+                <Property Name="NormalImage" Value="set:friends image:downNormal" />
+                <Property Name="PushedImage" Value="set:friends image:downPushed" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

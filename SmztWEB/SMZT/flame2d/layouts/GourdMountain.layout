@@ -1,0 +1,115 @@
+<GUILayout>
+    <Window Name="GourdMountain" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,992},{0,505}}" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="GourdMountain/titleImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,338},{0,-33},{0,636},{0,-6}}" />
+            <Property Name="Image" Value="set:gourdMountain image:please" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="GourdMountain/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,974},{0,457}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GourdMountain/background/topBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,974},{0,371}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GourdMountain/background/topBg/rightBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,949},{0,168},{0,974},{0,213}}" />
+                    <Property Name="HoverImage" Value="set:skin image:turnRHover" />
+                    <Property Name="NormalImage" Value="set:skin image:turnRNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:turnRPushed" />
+                </Window>
+                <Window Name="GourdMountain/background/topBg/leftBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,168},{0,25},{0,213}}" />
+                    <Property Name="HoverImage" Value="set:skin image:turnLHover" />
+                    <Property Name="NormalImage" Value="set:skin image:turnLNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:turnLPushed" />
+                </Window>
+                <Window Name="GourdMountain/background/topBg/descTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,10},{0,974},{0,34}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="今日还可挑战  次" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff00baff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GourdMountain/background/topBg/timesTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,520},{0,9},{0,542},{0,33}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="4" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GourdMountain/background/topBg/boxsp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,33},{0,40},{0,941},{0,368}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+            <Window Name="GourdMountain/background/bgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,371},{0,973},{0,452}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GourdMountain/background/sureBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,276},{0,402},{0,464},{0,442}}" />
+                <Window Name="GourdMountain/background/sureBtn/sureImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,188},{0,40}}" />
+                    <Property Name="Image" Value="set:gourdMountain image:sure" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GourdMountain/background/desc2Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,377},{0,974},{0,395}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="成功击杀BOSS才消耗挑战次数，挑战次数用完后不能进行挑战！" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff85f500" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GourdMountain/background/keyBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,511},{0,402},{0,699},{0,442}}" />
+                <Window Name="GourdMountain/background/keyBtn/keyImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,188},{0,40}}" />
+                    <Property Name="Image" Value="set:gourdMountain image:key" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

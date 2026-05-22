@@ -1,0 +1,41 @@
+<GUILayout>
+    <Window Name="ArenaRecordPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,370},{0,390}}" />
+        <Property Name="Text" Value="挑战记录" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="ArenaRecordPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,348},{0,352},{0,349}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="ArenaRecordPanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,352},{0,346}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ArenaRecordPanel/bg/listbox" Type="GuiLook/Listbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,349},{0,339}}" />
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="VerticalScrollbar" Value="true" />
+                </AutoWindow>
+            </Window>
+            <Window Name="ArenaRecordPanel/bg/txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,139},{0,347},{0,188}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="暂无挑战记录" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFc6dee6" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

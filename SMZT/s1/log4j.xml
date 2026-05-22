@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+	debug="false">
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<param name="Threshold" value="ALL" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- <param name="ConversionPattern" value="[%-5p][%d{yyyy-MM-dd HH:mm:ss,SSS}][%C.%M(%L)] %m%n" /> -->
+			<param name="ConversionPattern" value="[%-5p][%d{HH:mm:ss,SSS}][%F:%L] %m%n" />
+		</layout>
+	</appender>
+	<appender name="FileAppender" class="org.apache.log4j.DailyRollingFileAppender">		
+		<param name="File" value="${user.dir}/logs/gameserver.log" />		
+		<param name="Threshold" value="ALL" />
+		<param name="DatePattern" value="'.'yyyyMMddHH" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<!--param name="ConversionPattern" value="[%d{HH:mm:ss} %p][%c]%m%n" /-->
+			<param name="ConversionPattern" value="[%-5p][%d{HH:mm:ss,SSS}][%F:%L] %m%n" />
+		</layout>
+	</appender>
+	
+	<!-- httpserver日志 -->
+	<appender name="HttpServerFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/http/httpserver.log.%d{yyyyMMddHH}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%-5p][%d{HH:mm:ss,SSS}][%F:%L] %m%n" />
+		</layout>
+	</appender>
+	<logger name="httpServer" additivity="false">
+		<appender-ref ref="HttpServerFileAppender" />
+	</logger>
+		
+	<!-- 登录日志 -->
+	<appender name="LoginFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/login/login.log.%d{yyyyMMddHH}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logLogin" additivity="false">
+		<appender-ref ref="LoginFileAppender" />
+	</logger>
+	
+	<!-- 登录成功 -->
+	<appender name="LoginSuccFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/loginsucc/loginsucc.log.%d{yyyyMMddHH}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logLoginSucc" additivity="false">
+		<appender-ref ref="LoginSuccFileAppender" />
+	</logger>	
+	
+	<!-- 退出日志 -->
+	<appender name="LogoutFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/login/logout.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logLogout" additivity="false">
+		<appender-ref ref="LogoutFileAppender" />
+	</logger>
+	
+	<!-- 聊天日志 -->
+	<appender name="ChatFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/chat/chat.log.%d{yyyyMMddHH}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logChat" additivity="false">
+		<appender-ref ref="ChatFileAppender" />
+	</logger>
+	
+	<!--角色信息-when角色创建-->
+	<appender name="RoleInfoCreateFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/roleinfo/roleinfo_create.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="roleInfoCreate" additivity="false">
+		<appender-ref ref="RoleInfoCreateFileAppender" />
+	</logger>
+	
+	<!-- 角色信息-when角色离开 -->
+	<appender name="RoleInfoLogoutFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/roleinfo/roleinfo_logout.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="roleInfoLogout" additivity="false">
+		<appender-ref ref="RoleInfoLogoutFileAppender" />
+	</logger>	
+	
+	
+	<!-- 角色创建成功 -->
+	<appender name="RoleCreateFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/rolecreate/rolecreate.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="roleCreate" additivity="false">
+		<appender-ref ref="RoleCreateFileAppender" />
+	</logger>
+
+	
+	<!-- 角色升级 -->
+	<appender name="RoleLevelFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/rolelevel/rolelevel.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logRoleLevel" additivity="false">
+		<appender-ref ref="RoleLevelFileAppender" />
+	</logger>
+	
+	<!-- 角色技能升级 -->
+	<appender name="RoleSkillLevelFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/roleskill/roleskilllevel.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logRoleSkillLevel" additivity="false">
+		<appender-ref ref="RoleSkillLevelFileAppender" />
+	</logger>
+		
+	<!-- 角色变身 -->
+	<appender name="RoleShapeFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/roleshape/roleshape.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logRoleShape" additivity="false">
+		<appender-ref ref="RoleShapeFileAppender" />
+	</logger>
+
+	<!-- 获得仙子 -->
+	<appender name="RolePetFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/rolepet/rolepet.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logRolePet" additivity="false">
+		<appender-ref ref="RolePetFileAppender" />
+	</logger>
+
+	<!-- 获得仙子 -->
+	<appender name="RolePetExpFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/rolepet/rolepetexp.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logRolePetExp" additivity="false">
+		<appender-ref ref="RolePetExpFileAppender" />
+	</logger>
+	
+	<!-- 装备升级 -->
+	<appender name="OutfitUpLevelFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/outfit/outfituplevel.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logOutfitUpLevel" additivity="false">
+		<appender-ref ref="OutfitUpLevelFileAppender" />
+	</logger>	
+
+	<!-- 装备洗炼 -->
+	<appender name="OutfitPurityFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/outfit/outfitpurity.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logOutfitPurity" additivity="false">
+		<appender-ref ref="OutfitPurityFileAppender" />
+	</logger>
+		
+	<!-- 宝石升级 -->
+	<appender name="OutfitGemUpLevelFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/outfit/gemuplevel.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logOutfitGemUpLevel" additivity="false">
+		<appender-ref ref="OutfitGemUpLevelFileAppender" />
+	</logger>
+
+	<!-- 装备精炼 -->
+	<appender name="OutfitRefineFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/outfit/outfitrefine.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logOutfitRefine" additivity="false">
+		<appender-ref ref="OutfitRefineFileAppender" />
+	</logger>
+			
+	<!-- 任务接取-->
+	<appender name="QuestAcceptFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/quest/questaccept.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logQuestAccept" additivity="false">
+		<appender-ref ref="QuestAcceptFileAppender" />
+	</logger>
+	
+	<!-- 任务完成-->
+	<appender name="QuestFinishFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/quest/questfinish.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logQuestFinish" additivity="false">
+		<appender-ref ref="QuestFinishFileAppender" />
+	</logger>
+		
+	<!-- 充值-->
+	<appender name="ChargeFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/charge/charge.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logCharge" additivity="false">
+		<appender-ref ref="ChargeFileAppender" />
+	</logger>
+	
+	
+	<!-- 元宝获得-->
+	<appender name="GoldIngotIncomeFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/charge/goldingotincome.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logGoldIngotIncome" additivity="false">
+		<appender-ref ref="GoldIngotIncomeFileAppender" />
+	</logger>	
+	
+	<!-- 坐骑升级-->
+	<appender name="MountUpLevelFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/mount/mountuplevel.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logMountUpLevel" additivity="false">
+		<appender-ref ref="MountUpLevelFileAppender" />
+	</logger>	
+	
+	<!-- 坐骑信息-->	
+	<appender name="MountInfoFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/mount/mountinfo.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logMountInfo" additivity="false">
+		<appender-ref ref="MountInfoFileAppender" />
+	</logger>
+
+	<!-- 背饰升级-->	
+	<appender name="WingUpLevelFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/wing/winguplevel.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logWingUpLevel" additivity="false">
+		<appender-ref ref="WingUpLevelFileAppender" />
+	</logger>	
+
+	<!-- 背饰信息-->	
+	<appender name="WingInfoFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/wing/winginfo.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logWingInfo" additivity="false">
+		<appender-ref ref="WingInfoFileAppender" />
+	</logger>	
+
+
+	<!-- 神器升级-->	
+	<appender name="ArtifactsUpLevelFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/artifacts/artifactsuplevel.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logArtifactsUpLevel" additivity="false">
+		<appender-ref ref="ArtifactsUpLevelFileAppender" />
+	</logger>	
+
+	<!-- 神器信息-->	
+	<appender name="ArtifactsInfoFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/artifacts/artifactsinfo.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logArtifactsInfo" additivity="false">
+		<appender-ref ref="ArtifactsInfoFileAppender" />
+	</logger>
+	
+	<!-- 角色在线数量-->	
+	<appender name="RoleOnlineNumFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/onlinenum/roleonlinenum.log.%d{yyyyMMddHH}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logRoleOnlineNum" additivity="false">
+		<appender-ref ref="RoleOnlineNumFileAppender" />
+	</logger>
+
+	<!-- 角色活动记录-->	
+	<appender name="RoleHuodongFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/huodong/rolehuodong.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logRoleHuodong" additivity="false">
+		<appender-ref ref="RoleHuodongFileAppender" />
+	</logger>
+	
+	
+	<!-- 绑定铜币收入-->	
+	<appender name="BindcoppercoinIncomeFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/bindcoppercoin/bindcoppercoinincome.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logBindcoppercoinIncome" additivity="false">
+		<appender-ref ref="BindcoppercoinIncomeFileAppender" />
+	</logger>
+	
+	
+	<!-- 绑定铜币支出-->	
+	<appender name="BindcoppercoinUsedFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/bindcoppercoin/bindcoppercoinused.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logBindcoppercoinUsed" additivity="false">
+		<appender-ref ref="BindcoppercoinUsedFileAppender" />
+	</logger>
+	
+	<!-- 非绑定铜币收入-->	
+	<appender name="CoppercoinIncomeFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/coppercoin/coppercoinincome.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logCoppercoinIncome" additivity="false">
+		<appender-ref ref="CoppercoinIncomeFileAppender" />
+	</logger>
+	
+	
+	<!-- 非绑定铜币支出-->	
+	<appender name="CoppercoinUsedFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/coppercoin/coppercoinused.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logCoppercoinUsed" additivity="false">
+		<appender-ref ref="CoppercoinUsedFileAppender" />
+	</logger>	
+	
+
+	<!-- 元宝收入-->	
+	<appender name="GoldingotIncomeFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/goldingot/goldingotincome.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logGoldingotIncome" additivity="false">
+		<appender-ref ref="GoldingotIncomeFileAppender" />
+	</logger>
+	
+	
+	<!-- 元宝支出-->	
+	<appender name="GoldingotUsedFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/goldingot/goldingotused.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logGoldingotUsed" additivity="false">
+		<appender-ref ref="GoldingotUsedFileAppender" />
+	</logger>
+
+
+
+	<!-- 绑定元宝收入-->	
+	<appender name="SilveringotIncomeFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/silveringot/silveringotincome.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logSilveringotIncome" additivity="false">
+		<appender-ref ref="SilveringotIncomeFileAppender" />
+	</logger>
+	
+	
+	<!-- 绑定元宝支出-->	
+	<appender name="SilveringotUsedFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/silveringot/silveringotused.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logSilveringotUsed" additivity="false">
+		<appender-ref ref="SilveringotUsedFileAppender" />
+	</logger>
+	
+	<!-- 玩家交易日志 -->
+	<appender name="RoleDealFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/deal/roledeal.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logRoleDeal" additivity="false">
+		<appender-ref ref="RoleDealFileAppender" />
+	</logger>
+	
+	<!-- 商城帮派购买 -->
+	<appender name="RoleShopFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/shop/roleshop.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logRoleShop" additivity="false">
+		<appender-ref ref="RoleShopFileAppender" />
+	</logger>
+		
+
+	<!-- 收费道具-收入 -->
+	<appender name="ChargeGoodsItemIncomeFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/chargegoodsitem/goodsitemincome.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logChargeGoodsItemIncome" additivity="false">
+		<appender-ref ref="ChargeGoodsItemIncomeFileAppender" />
+	</logger>
+	
+	<!-- 收费道具-支出 -->
+	<appender name="ChargeGoodsItemUsedFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/chargegoodsitem/goodsitemused.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logChargeGoodsItemUsed" additivity="false">
+		<appender-ref ref="ChargeGoodsItemUsedFileAppender" />
+	</logger>
+	
+	<!-- 其它物品日志 -->
+	<appender name="StuffGoodsItemFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/stuffgoodsitem/stuffgoodsitem.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logStuffGoodsItem" additivity="false">
+		<appender-ref ref="StuffGoodsItemFileAppender" />
+	</logger>
+
+	<!-- 玩家战力跟踪日志 -->
+	<appender name="roleFFFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/roleFF/roleFF.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logRoleFF" additivity="false">
+		<appender-ref ref="roleFFFileAppender" />
+	</logger>
+	
+	<!-- GM 与 Game 交互日志 -->
+	<appender name="GM2GameFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/GM2Game/GM2Game.log.%d{yyyyMMdd}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logGM2Game" additivity="false">
+		<appender-ref ref="GM2GameFileAppender" />
+	</logger>
+	<!-- 腾讯登陆日志 -->
+	<appender name="TencentLoginFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/tencentStatistics/tencentStatistics.log.%d{yyyyMMddHH}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="tencentStatistics" additivity="false">
+		<appender-ref ref="TencentLoginFileAppender" />
+	</logger>
+	<!-- 腾讯任务集市日志 -->
+	<appender name="TencentMarketFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${user.dir}/logs/logTaskMarket/logTaskMarket.log.%d{yyyyMMddHH}" />
+		</rollingPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	<logger name="logTaskMarket" additivity="false">
+		<appender-ref ref="TencentMarketFileAppender" />
+	</logger>	
+	
+	<!-- 
+	<logger name="com.ibatis" additivity="true">
+		<level value="ERROR" />
+	</logger>
+	
+	<logger name="java.sql.Connection" additivity="true">
+		<level value="ERROR" />
+	</logger>
+ 	<logger name="java.sql">
+		<level value="ERROR" />
+	</logger>
+	<logger name="java.sql.Statement" additivity="true">
+		<level value="ERROR" />
+	</logger>
+
+	<logger name="java.sql.PreparedStatement" additivity="true">
+		<level value="ERROR" />
+	</logger>
+	<logger name="java.sql.ResultSet" additivity="true">
+		<level value="ERROR" />
+	</logger>
+ 	-->
+ 	
+ 	
+	<logger name="org.apache">
+		<level value="ERROR" />
+	</logger>
+	<logger name="org.quartz">
+		<level value="ERROR" />
+	</logger>
+	
+	<!-- 游戏内的信息 -->
+	<logger name="com.luoshenfu">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.core">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.io">
+		<level value="ERROR" />
+	</logger>
+	<logger name = "com.luoshenfu.io.base.adapter">
+		<level value="ERROR" />
+	</logger>
+	
+	<logger name="com.luoshenfu.domain.role.property">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.io.message.sprite">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.domain.ai">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.domain.view">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.domain.sprite">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.domain.monster">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.domain.combat">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.util">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.io.message.sprite">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.io.message.drop.gather">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.domain.logic">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.domain.drop">
+		<level value="ERROR" />
+	</logger>	
+	<logger name="com.luoshenfu.domain.bulletin">
+		<level value="ERROR" />
+	</logger>	
+	<logger name="com.luoshenfu.domain.huodong">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.domain.sprite.move">
+		<level value="ERROR" />
+	</logger>
+	<logger name ="com.luoshenfu.io.action.sprite">
+		<level value="ERROR"/>
+	</logger>
+
+
+	<logger name="com.luoshenfu.domain.skill">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.domain.common.BottleService">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.domain.common.JadeSealService">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.domain.gang">
+		<level value="ERROR" />
+	</logger>
+	<logger name="com.luoshenfu.domain.role.move">
+		<level value ="ERROR"/>
+	</logger>
+	<logger name="com.luoshenfu.support.log">
+		<level value ="ERROR"/>
+	</logger>
+	<logger name="com.luoshenfu.bolt.common">
+		<level value ="ERROR"/>
+	</logger>
+	<logger name="com.luoshenfu.domain.role.time">
+		<level value ="ERROR"/>
+	</logger>
+
+	<logger name="org.apache.mina">
+		<level value ="ERROR"/>
+	</logger>
+	
+
+	<root>
+		<level value="ERROR" />
+		<!-- 注:部署时,只用 FileAppender 开发时只用Console -->
+		 
+		<!--appender-ref ref="CONSOLE" /-->
+		
+		<appender-ref ref="FileAppender" />
+		
+	</root>
+</log4j:configuration>

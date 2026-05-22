@@ -1,0 +1,34 @@
+<GUILayout>
+    <Window Name="Loading" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,211},{0,162}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="Loading/processBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,211},{0,139}}" />
+            <Property Name="Image" Value="set:skins image:smztIcon" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="Loading/process$NormalBar" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,211},{0,139}}" />
+            <Property Name="Image" Value="set:skins image:smztIcon" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="Loading/closeBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,154},{0,4},{0,177},{0,27}}" />
+            <Property Name="Image" Value="set:skins image:close" />
+        </Window>
+        <Window Name="Loading/loadingTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,139},{0,211},{0,157}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="正在加载中…59%" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

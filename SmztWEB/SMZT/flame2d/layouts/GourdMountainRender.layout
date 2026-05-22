@@ -1,0 +1,175 @@
+<GUILayout>
+    <Window Name="GourdMountainRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,227},{0,312}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="GourdMountainRender/blackBg" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,227},{0,312}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:gourdMountain image:blackNorth" />
+            <Property Name="LeftImage" Value="set:gourdMountain image:blackWest" />
+            <Property Name="TopOffset" Value="20" />
+            <Property Name="LeftOffset" Value="19" />
+            <Property Name="RightImage" Value="set:gourdMountain image:blackEast" />
+            <Property Name="BottomImage" Value="set:gourdMountain image:blackSouth" />
+            <Property Name="CenterImage" Value="set:gourdMountain image:blackCentre" />
+            <Property Name="RightOffset" Value="19" />
+            <Property Name="BottomOffset" Value="20" />
+            <Property Name="TopLeftImage" Value="set:gourdMountain image:blackNorthwest" />
+            <Property Name="TopRightImage" Value="set:gourdMountain image:blackNortheast" />
+            <Property Name="BottomLeftImage" Value="set:gourdMountain image:blackSouthwest" />
+            <Property Name="BottomRightImage" Value="set:gourdMountain image:blackSoutheast" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="GourdMountainRender/blackBg/bgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,221},{0,306}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="GourdMountainRender/blackBg/bgImg/lockImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,46},{0,74},{0,166},{0,194}}" />
+                    <Property Name="Image" Value="set:gourdMountain image:lock" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="GourdMountainRender/blackBg/bgImg/openTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,208},{0,215},{0,232}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="开启条件：通关上一关" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GourdMountainRender/blackBg/shadowBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,254},{0,221},{0,306}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="GourdMountainRender/blackBg/shadowBg/descTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,9},{0,71},{0,27}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="难度系数：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="GourdMountainRender/blackBg/shadowBg/descTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,30},{0,71},{0,48}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="掉落数量：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="GourdMountainRender/blackBg/shadowBg/goodTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,210},{0,48}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="翅膀道具*11" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffcc43ff" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="GourdMountainRender/blackBg/shadowBg/starImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,72},{0,3},{0,98},{0,28}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="GourdMountainRender/blackBg/shadowBg/starImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,98},{0,3},{0,124},{0,28}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="GourdMountainRender/blackBg/shadowBg/starImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,124},{0,3},{0,150},{0,28}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="GourdMountainRender/blackBg/shadowBg/starImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,150},{0,3},{0,176},{0,28}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="GourdMountainRender/blackBg/shadowBg/starImg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,176},{0,3},{0,202},{0,28}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GourdMountainRender/blackBg/killedImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,56},{0,82},{0,170},{0,196}}" />
+                <Property Name="Image" Value="set:gourdMountain image:killed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="GourdMountainRender/blackBg/selected" Type="GlossySerpent/NineStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,221},{0,306}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TopImage" Value="set:gourdMountain image:blueNorth" />
+                <Property Name="LeftImage" Value="set:gourdMountain image:blueWest" />
+                <Property Name="TopOffset" Value="25" />
+                <Property Name="LeftOffset" Value="22" />
+                <Property Name="RightImage" Value="set:gourdMountain image:blueEast" />
+                <Property Name="BottomImage" Value="set:gourdMountain image:bluesouth" />
+                <Property Name="CenterImage" Value="set:gourdMountain image:blueCentre" />
+                <Property Name="RightOffset" Value="22" />
+                <Property Name="BottomOffset" Value="25" />
+                <Property Name="TopLeftImage" Value="set:gourdMountain image:blueNorthwest" />
+                <Property Name="TopRightImage" Value="set:gourdMountain image:blueNortheast" />
+                <Property Name="BottomLeftImage" Value="set:gourdMountain image:blueSouthwest" />
+                <Property Name="BottomRightImage" Value="set:gourdMountain image:blueSoutheast" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

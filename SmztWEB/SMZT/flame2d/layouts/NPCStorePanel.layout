@@ -1,0 +1,61 @@
+<GUILayout>
+    <Window Name="NPCStorePanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,360},{0,568}}" />
+        <Property Name="GlyphImage" Value="set:store image:store" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="NPCStorePanel/usuallyBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,80},{0,28}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="常用道具" />
+        </Window>
+        <Window Name="NPCStorePanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,29},{0,341},{0,480}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="NPCStorePanel/repoBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,83},{0,4},{0,158},{0,28}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="回购" />
+        </Window>
+        <Window Name="NPCStorePanel/bg2" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,479},{0,341},{0,520}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="NPCStorePanel/bg2/check" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,172},{0,13},{0,334},{0,29}}" />
+                <Property Name="Text" Value="隐藏使用等级不足的商品" />
+            </Window>
+            <Window Name="NPCStorePanel/bg2/checkIsBuyDirect" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,13},{0,170},{0,29}}" />
+                <Property Name="Text" Value="单击可直接购买一组物品" />
+            </Window>
+        </Window>
+        <Window Name="NPCStorePanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,525},{0,335},{0,526}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="NPCStorePanel/boxlist" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,32},{0,338},{0,477}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="NPCStorePanel/promtText" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,171},{0,4},{0,340},{0,26}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="单击背包内物品可出售" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00baff" />
+            <Property Name="HorzTextFormatting" Value="RightAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

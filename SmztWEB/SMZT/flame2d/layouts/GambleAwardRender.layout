@@ -1,0 +1,43 @@
+<GUILayout>
+    <Window Name="GambleAwardRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,66},{0,51}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GambleAwardRender/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,45},{0,35}}" />
+            <Property Name="Image" Value="set:wagerShop image:bg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="GambleAwardRender/rewardTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,7},{0,42},{0,31}}" />
+            <Property Name="Font" Value="songti_18_strengh" />
+            <Property Name="Text" Value="2000" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="GambleAwardRender/typeImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,40},{0,5},{0,66},{0,32}}" />
+            <Property Name="Image" Value="set:wagerShop image:honor" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="GambleAwardRender/winTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,7},{0,30},{0,59},{0,51}}" />
+            <Property Name="Font" Value="songti_12" />
+            <Property Name="Text" Value="4连胜" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

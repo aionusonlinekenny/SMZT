@@ -1,0 +1,356 @@
+<GUILayout>
+    <Window Name="LockDTCopyBlessing" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,651},{0,395}}" />
+        <Property Name="GlyphImage" Value="set:LockDemonTowerGeneral image:copyBlessing" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="CloseButtonEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="LockDTCopyBlessing/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,633},{0,349}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="LockDTCopyBlessing/background/smallBG" Type="GuiLook/CommonBg2">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,50},{0,628},{0,280}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,36},{0,41},{0,110},{0,115}}" />
+                    <Property Name="Image" Value="set:LockDemonTowerGeneral image:skill1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,36},{0,20},{0,110},{0,38}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="随机" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeTxt5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,500},{0,20},{0,574},{0,38}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="怒心诀" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,384},{0,20},{0,458},{0,38}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="幻影闪" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,270},{0,20},{0,344},{0,38}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="降龙闪" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,153},{0,20},{0,227},{0,38}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="火神护盾" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,153},{0,41},{0,227},{0,115}}" />
+                    <Property Name="Image" Value="set:LockDemonTowerGeneral image:skill2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,269},{0,41},{0,343},{0,115}}" />
+                    <Property Name="Image" Value="set:LockDemonTowerGeneral image:skill3" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeImg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,384},{0,41},{0,458},{0,115}}" />
+                    <Property Name="Image" Value="set:LockDemonTowerGeneral image:outbreak" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeImg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,500},{0,41},{0,574},{0,115}}" />
+                    <Property Name="Image" Value="set:LockDemonTowerGeneral image:skill4" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeAddTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,11},{0,129},{0,134},{0,147}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/btn_0" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,31},{0,154},{0,114},{0,177}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Window Name="LockDTCopyBlessing/background/smallBG/btn_0/box0" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,23}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Window Name="LockDTCopyBlessing/background/smallBG/btn_0/box0/yuanbaoImg0" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,25},{0,23}}" />
+                            <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                        <Window Name="LockDTCopyBlessing/background/smallBG/btn_0/box0/yuanbaoTxt0" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,0},{0,82},{0,23}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="10元宝" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/desc1Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,35},{0,185},{0,96},{0,203}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="剩余次数：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/refreshCountTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,97},{0,185},{0,112},{0,203}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="4" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/BgImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,194},{0,194},{0,435},{0,223}}" />
+                    <Property Name="Image" Value="set:LockDemonTowerGeneral image:gray" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="LockDTCopyBlessing/background/smallBG/BgImg/desc2Txt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,0},{0,137},{0,29}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="当前随机效果：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="LockDTCopyBlessing/background/smallBG/BgImg/randomBuffNameTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,133},{0,0},{0,231},{0,29}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="全属性+5%" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeAddTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,481},{0,126},{0,584},{0,144}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="怒气恢复+15%" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeAddTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,366},{0,127},{0,470},{0,145}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="闪避+20%" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeAddTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,248},{0,128},{0,363},{0,146}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="生命5%全屏伤害" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/attributeAddTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,138},{0,127},{0,241},{0,145}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="献祭伤害效果" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/btn_1" Type="GlossySerpent/BlueButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,148},{0,154},{0,231},{0,177}}" />
+                    <Window Name="LockDTCopyBlessing/background/smallBG/btn_1/box1" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,23}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Window Name="LockDTCopyBlessing/background/smallBG/btn_1/box1/yuanbaoImg1" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,25},{0,23}}" />
+                            <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                        <Window Name="LockDTCopyBlessing/background/smallBG/btn_1/box1/yuanbaoTxt1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,0},{0,82},{0,23}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="10元宝" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/btn_4" Type="GlossySerpent/BlueButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,495},{0,154},{0,578},{0,177}}" />
+                    <Window Name="LockDTCopyBlessing/background/smallBG/btn_4/box4" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,23}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Window Name="LockDTCopyBlessing/background/smallBG/btn_4/box4/yuanbaoImg4" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,25},{0,23}}" />
+                            <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                        <Window Name="LockDTCopyBlessing/background/smallBG/btn_4/box4/yuanbaoTxt4" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,0},{0,82},{0,23}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="10元宝" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/btn_3" Type="GlossySerpent/BlueButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,379},{0,154},{0,462},{0,177}}" />
+                    <Window Name="LockDTCopyBlessing/background/smallBG/btn_3/box3" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,23}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Window Name="LockDTCopyBlessing/background/smallBG/btn_3/box3/yuanbaoImg3" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,25},{0,23}}" />
+                            <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                        <Window Name="LockDTCopyBlessing/background/smallBG/btn_3/box3/yuanbaoTxt3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,0},{0,82},{0,23}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="10元宝" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="LockDTCopyBlessing/background/smallBG/btn_2" Type="GlossySerpent/BlueButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,264},{0,154},{0,347},{0,177}}" />
+                    <Window Name="LockDTCopyBlessing/background/smallBG/btn_2/box2" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,23}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Window Name="LockDTCopyBlessing/background/smallBG/btn_2/box2/yuanbaoImg2" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,25},{0,23}}" />
+                            <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                        <Window Name="LockDTCopyBlessing/background/smallBG/btn_2/box2/yuanbaoTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,0},{0,82},{0,23}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="10元宝" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="LockDTCopyBlessing/background/titleImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,13},{0,633},{0,36}}" />
+                <Property Name="Image" Value="set:LockDemonTowerGeneral image:descripition" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="LockDTCopyBlessing/background/gameStartBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,223},{0,290},{0,411},{0,330}}" />
+                <Window Name="LockDTCopyBlessing/background/gameStartBtn/beginImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,188},{0,40}}" />
+                    <Property Name="Image" Value="set:LockDemonTowerGeneral image:strange" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

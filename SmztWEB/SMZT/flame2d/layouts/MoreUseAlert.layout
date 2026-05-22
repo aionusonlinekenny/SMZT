@@ -1,0 +1,66 @@
+<GUILayout>
+    <Window Name="MoreUseAlert" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,360},{0,183}}" />
+        <Property Name="Text" Value="批量使用" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="MoreUseAlert/girdBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,65},{0,31},{0,113},{0,79}}" />
+            <Property Name="Image" Value="set:skin image:GridBG" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="MoreUseAlert/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,111},{0,346},{0,112}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="MoreUseAlert/sureBtn" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,61},{0,116},{0,148},{0,139}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="确定" />
+        </Window>
+        <Window Name="MoreUseAlert/cancelBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,202},{0,116},{0,289},{0,139}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="取消" />
+        </Window>
+        <Window Name="MoreUseAlert/titleTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,124},{0,29},{0,255},{0,49}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="输入要使用的数量" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="MoreUseAlert/decBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,122},{0,59},{0,143},{0,80}}" />
+            <Property Name="Image" Value="set:skin image:reductionBtn" />
+        </Window>
+        <Window Name="MoreUseAlert/maxBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,246},{0,59},{0,287},{0,80}}" />
+            <Property Name="Image" Value="set:skin image:maxBtn" />
+        </Window>
+        <Window Name="MoreUseAlert/addBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,223},{0,59},{0,244},{0,80}}" />
+            <Property Name="Image" Value="set:skin image:addBtn" />
+        </Window>
+        <Window Name="MoreUseAlert/inputBg" Type="GuiLook/inputBg">
+            <Property Name="UnifiedAreaRect" Value="{{0,144},{0,59},{0,222},{0,80}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="MoreUseAlert/inputBg/inputTxt" Type="GuiLook/Editbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,78},{0,21}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

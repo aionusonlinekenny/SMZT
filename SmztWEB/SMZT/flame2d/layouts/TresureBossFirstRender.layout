@@ -1,0 +1,48 @@
+<GUILayout>
+    <Window Name="TresureBossFirstRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,203},{0,38}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="TresureBossFirstRender/btn" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,203},{0,38}}" />
+            <Property Name="HoverImage" Value="set:WorldBoss image:selected" />
+            <Property Name="SelectedImage" Value="set:WorldBoss image:selected" />
+            <Property Name="UnselectedImage" Value="set:WorldBoss image:unselected" />
+        </Window>
+        <Window Name="TresureBossFirstRender/numFlag" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,186},{0,-1},{0,204},{0,17}}" />
+            <Property Name="Image" Value="set:skin image:promptBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="TresureBossFirstRender/numFlag/numTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,18},{0,18}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="!" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="TresureBossFirstRender/btnImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,178},{0,38}}" />
+            <Property Name="Image" Value="set:WorldBoss image:enter3" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="TresureBossFirstRender/treeBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,178},{0,12},{0,197},{0,26}}" />
+            <Property Name="Image" Value="set:skins image:down" />
+            <Property Name="VertImageFormatting" Value="CentreAligned" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

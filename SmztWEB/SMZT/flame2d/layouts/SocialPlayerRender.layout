@@ -1,0 +1,142 @@
+<GUILayout>
+    <Window Name="SocialPlayerRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,256},{0,46}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SocialPlayerRender/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,256},{0,46}}" />
+            <Property Name="Image" Value="set:skin image:RenderBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="SocialPlayerRender/faceBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,42},{0,42}}" />
+            <Property Name="Image" Value="set:mainUI1 image:teamFaceBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Property Name="MouseInputPropagationEnabled" Value="true" />
+            <Window Name="SocialPlayerRender/faceBg/faceImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,37},{0,37}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="SocialPlayerRender/vipImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,61},{0,4},{0,85},{0,20}}" />
+            <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Property Name="MouseInputPropagationEnabled" Value="true" />
+        </Window>
+        <Window Name="SocialPlayerRender/sexImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,45},{0,4},{0,61},{0,20}}" />
+            <Property Name="Image" Value="set:mainUI1 image:SexGril" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Property Name="MouseInputPropagationEnabled" Value="true" />
+        </Window>
+        <Window Name="SocialPlayerRender/nameTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,106},{0,2},{0,205},{0,24}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="玩家名称六字" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFe1feff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Property Name="MouseInputPropagationEnabled" Value="true" />
+        </Window>
+        <Window Name="SocialPlayerRender/levelTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,183},{0,2},{0,234},{0,24}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="Lv.150" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFe1feff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Property Name="MouseInputPropagationEnabled" Value="true" />
+        </Window>
+        <Window Name="SocialPlayerRender/transferBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,235},{0,3},{0,255},{0,22}}" />
+            <Property Name="Image" Value="set:mainUI1 image:transfer" />
+            <Property Name="HorzImageFormatting" Value="CentreAligned" />
+            <Property Name="VertImageFormatting" Value="CentreAligned" />
+        </Window>
+        <Window Name="SocialPlayerRender/qianmingTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,45},{0,26},{0,256},{0,44}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF65b3e9" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Property Name="MouseInputPropagationEnabled" Value="true" />
+        </Window>
+        <Window Name="SocialPlayerRender/promptBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,18},{0,18}}" />
+            <Property Name="Image" Value="set:skin image:promptBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Property Name="MouseInputPropagationEnabled" Value="true" />
+            <Window Name="SocialPlayerRender/promptBg/promptTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,16},{0,17}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="9" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="SocialPlayerRender/drillImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,85},{0,-7},{0,106},{0,31}}" />
+            <Property Name="Image" Value="set:skins image:Idrill" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="SocialPlayerRender/yearImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,106},{0,4},{0,122},{0,20}}" />
+            <Property Name="Image" Value="set:skins image:Idrill" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

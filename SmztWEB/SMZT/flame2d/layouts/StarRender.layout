@@ -1,0 +1,42 @@
+<GUILayout>
+    <Window Name="StarRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,74},{0,75}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="StarRender/di" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,-20},{0,-20},{0,22},{0,22}}" />
+            <Property Name="Image" Value="set:star image:ballDark" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="StarRender/di/ball" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,41},{0,41}}" />
+                <Property Name="Image" Value="set:star image:ball" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="StarRender/di/effectImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,42}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="StarRender/starName" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,-28},{0,-44},{0,34},{0,-24}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

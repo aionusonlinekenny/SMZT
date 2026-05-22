@@ -1,0 +1,42 @@
+<GUILayout>
+    <Window Name="ConsignmentPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,240},{0,-3},{0,1050},{0,526}}" />
+        <Property Name="GlyphImage" Value="set:consignment image:consignment" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="ConsignmentPanel/sellBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,5},{0,81},{0,29}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="出售市场" />
+        </Window>
+        <Window Name="ConsignmentPanel/buyBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,82},{0,5},{0,157},{0,29}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="代购市场" />
+        </Window>
+        <Window Name="ConsignmentPanel/mySellBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,158},{0,5},{0,233},{0,29}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="我的出售" />
+        </Window>
+        <Window Name="ConsignmentPanel/myBuyBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,234},{0,5},{0,309},{0,29}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="我的代购" />
+        </Window>
+        <Window Name="ConsignmentPanel/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,792},{0,483}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

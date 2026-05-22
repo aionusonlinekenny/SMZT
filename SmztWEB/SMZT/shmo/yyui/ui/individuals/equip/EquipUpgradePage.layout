@@ -1,0 +1,750 @@
+<GUILayout>
+    <Window Name="EquipUpgradePage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,587},{0,452}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="EquipUpgradePage/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,586},{0,371}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="EquipUpgradePage/bgImg/successEffect" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,87},{0,300},{0,507},{0,363}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/p0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,325},{0,67},{0,343}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/equip4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,159},{0,57},{0,207}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/equip4/a100" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/equip9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,530},{0,59},{0,578},{0,107}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/equip9/a33" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/t1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,460},{0,11},{0,519},{0,59}}" />
+                <Property Name="Image" Value="set:equip image:update" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/equip6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,259},{0,57},{0,307}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/equip6/a122" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/t5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,460},{0,211},{0,519},{0,259}}" />
+                <Property Name="Image" Value="set:equip image:update" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/equip11" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,530},{0,159},{0,578},{0,207}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/equip11/a44" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/p9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,125},{0,67},{0,143}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/equip8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,530},{0,9},{0,578},{0,57}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/equip8/a110" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/equip7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,309},{0,57},{0,357}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/equip7/a00" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="EquipUpgradePage/bgImg/equip7/lockImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="Image" Value="set:skin image:NewImage_103" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/t2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,460},{0,61},{0,519},{0,109}}" />
+                <Property Name="Image" Value="set:equip image:update" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/p3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,520},{0,127},{0,529},{0,145}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/t10" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,159},{0,127},{0,207}}" />
+                <Property Name="Image" Value="set:equip image:update" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/equip5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,209},{0,57},{0,257}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/equip5/a111" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/upImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,271},{0,20},{0,315},{0,50}}" />
+                <Property Name="Image" Value="set:skins image:rightArrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/p4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,520},{0,177},{0,529},{0,195}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/equip" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,9},{0,57},{0,57}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/equip/a77" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/t9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,109},{0,127},{0,157}}" />
+                <Property Name="Image" Value="set:equip image:update" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/p2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,520},{0,77},{0,529},{0,95}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/p10" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,175},{0,67},{0,193}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/equip3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,109},{0,57},{0,157}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/equip3/a99" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/equip2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,59},{0,57},{0,107}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/equip2/a88" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/p1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,520},{0,27},{0,529},{0,45}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/nextNameTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,320},{0,23},{0,519},{0,47}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="装备名称[60级]" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/purplebgImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,290},{0,198},{0,469},{0,238}}" />
+                <Property Name="Image" Value="set:equip image:purpleborder" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/purplebgImg1/propNextName0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,19},{0,1},{0,49},{0,19}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="攻击" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipUpgradePage/bgImg/purplebgImg1/propNextName1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,19},{0,21},{0,49},{0,39}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暴击" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipUpgradePage/bgImg/purplebgImg1/propNextValue0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,109},{0,19}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="12000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipUpgradePage/bgImg/purplebgImg1/propNextValue1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,60},{0,21},{0,109},{0,39}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="21" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipUpgradePage/bgImg/purplebgImg1/nextPropValue1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,123},{0,21},{0,176},{0,39}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="21" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipUpgradePage/bgImg/purplebgImg1/nextPropValue0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,123},{0,1},{0,176},{0,19}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="12" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipUpgradePage/bgImg/purplebgImg1/nextPropArrow0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,109},{0,3},{0,123},{0,19}}" />
+                    <Property Name="Image" Value="set:skin image:upArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipUpgradePage/bgImg/purplebgImg1/nextPropArrow1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,109},{0,23},{0,123},{0,39}}" />
+                    <Property Name="Image" Value="set:skin image:upArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/t3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,460},{0,111},{0,519},{0,159}}" />
+                <Property Name="Image" Value="set:equip image:update" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/equip12" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,530},{0,209},{0,578},{0,257}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/equip12/a55" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/t8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,59},{0,127},{0,107}}" />
+                <Property Name="Image" Value="set:equip image:update" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/p11" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,225},{0,67},{0,243}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/t11" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,209},{0,127},{0,257}}" />
+                <Property Name="Image" Value="set:equip image:update" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/p6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,520},{0,277},{0,529},{0,295}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/t12" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,259},{0,127},{0,307}}" />
+                <Property Name="Image" Value="set:equip image:update" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/p7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,25},{0,67},{0,43}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/p8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,75},{0,67},{0,93}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/equip14" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,530},{0,309},{0,578},{0,357}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/equip14/a133" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="EquipUpgradePage/bgImg/equip14/lockImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="Image" Value="set:skin image:NewImage_103" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/t0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,309},{0,127},{0,357}}" />
+                <Property Name="Image" Value="set:equip image:update" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/equip10" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,530},{0,109},{0,578},{0,157}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/equip10/a22" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/p12" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,275},{0,67},{0,293}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/t6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,460},{0,261},{0,519},{0,309}}" />
+                <Property Name="Image" Value="set:equip image:update" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/nameTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,60},{0,23},{0,260},{0,47}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="装备名称[50级]" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/t7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,9},{0,127},{0,57}}" />
+                <Property Name="Image" Value="set:equip image:update" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/t4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,460},{0,161},{0,519},{0,209}}" />
+                <Property Name="Image" Value="set:equip image:update" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/p5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,520},{0,227},{0,529},{0,245}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/equip13" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,530},{0,259},{0,578},{0,307}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/equip13/a66" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,49},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/grid0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,176},{0,99},{0,224},{0,147}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/grid1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,351},{0,99},{0,399},{0,147}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/purplebgImg0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,198},{0,294},{0,238}}" />
+                <Property Name="Image" Value="set:equip image:purpleborder" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipUpgradePage/bgImg/purplebgImg0/propBeforeName0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,19},{0,1},{0,49},{0,19}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="攻击" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipUpgradePage/bgImg/purplebgImg0/propBeforeName1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,19},{0,21},{0,49},{0,39}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暴击" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipUpgradePage/bgImg/purplebgImg0/propBeforeValue0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,109},{0,19}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="12000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipUpgradePage/bgImg/purplebgImg0/propBeforeValue1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,60},{0,21},{0,109},{0,39}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="21" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/depleteTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,224},{0,299},{0,366},{0,317}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/depleteIGrid" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,271},{0,245},{0,319},{0,293}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/material$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,304},{0,323},{0,418},{0,341}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/materialTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,242},{0,321},{0,303},{0,339}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="材料来源：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bgImg/demandTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,277},{0,277},{0,319},{0,293}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="1/2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="EquipUpgradePage/bottomBg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,373},{0,587},{0,452}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="EquipUpgradePage/bottomBg/BbgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,586},{0,78}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipUpgradePage/bottomBg/refineBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,213},{0,20},{0,376},{0,60}}" />
+                <Window Name="EquipUpgradePage/bottomBg/refineBtn/strongImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                    <Property Name="Image" Value="set:equip image:beginUpdate" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipUpgradePage/bottomBg/redImg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,213},{0,27},{0,376},{0,52}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:RedBoxLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:RedBoxRight" />
+                <Property Name="CenterImage" Value="set:skin image:RedBoxMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="EquipUpgradePage/bottomBg/redImg/redTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,25}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

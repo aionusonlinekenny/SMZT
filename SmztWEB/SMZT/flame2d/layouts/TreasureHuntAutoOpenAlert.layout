@@ -1,0 +1,49 @@
+<GUILayout>
+    <Window Name="TreasureHuntAutoOpenAlert" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,334},{0,183}}" />
+        <Property Name="Text" Value="温馨提示" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="TreasureHuntAutoOpenAlert/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,110},{0,320},{0,111}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="TreasureHuntAutoOpenAlert/desc1Txt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,94},{0,16},{0,309},{0,79}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="突破是否自动弹出" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ffffffff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="TreasureHuntAutoOpenAlert/openNowBtn" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,115},{0,116},{0,202},{0,139}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="立即寻宝" />
+        </Window>
+        <Window Name="TreasureHuntAutoOpenAlert/logo" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,7},{0,17},{0,77},{0,87}}" />
+            <Property Name="Image" Value="set:treasureHunt image:btn" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="TopAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="TreasureHuntAutoOpenAlert/isAuto" Type="GuiLook/Checkbox">
+            <Property Name="UnifiedAreaRect" Value="{{0,100},{0,88},{0,304},{0,105}}" />
+            <Property Name="Text" Value="下次自动弹出" />
+        </Window>
+    </Window>
+</GUILayout>

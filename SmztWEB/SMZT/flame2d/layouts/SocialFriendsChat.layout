@@ -1,0 +1,145 @@
+<GUILayout>
+    <Window Name="SocialFriendsChat" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,686},{0,568}}" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="SocialFriendsChat/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,525},{0,668},{0,526}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="SocialFriendsChat/titleTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,-38},{0,636},{0,-2}}" />
+            <Property Name="Font" Value="songti_18_strengh" />
+            <Property Name="Text" Value="安静的小程序" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFe1feff" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Property Name="MouseInputPropagationEnabled" Value="true" />
+            <Window Name="SocialFriendsChat/titleTxt/minBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,610},{0,-1},{0,639},{0,28}}" />
+                <Property Name="HoverImage" Value="set:skins image:smallHover" />
+                <Property Name="NormalImage" Value="set:skins image:smallNormal" />
+                <Property Name="PushedImage" Value="set:skins image:smallPushed" />
+            </Window>
+        </Window>
+        <Window Name="SocialFriendsChat/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,434},{0,405}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SocialFriendsChat/bg/chatSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,430},{0,397}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="SocialFriendsChat/rightBg" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,433},{0,4},{0,668},{0,520}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="SocialFriendsChat/sendBg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,433},{0,430},{0,489}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SocialFriendsChat/sendBg/sendTxt" Type="GuiLook/MultiLineEditbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,429},{0,53}}" />
+                <Property Name="Text">
+</Property>
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="VerticalScrollbar" Value="true" />
+                </AutoWindow>
+            </Window>
+        </Window>
+        <Window Name="SocialFriendsChat/faceBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,311},{0,494},{0,346},{0,517}}" />
+            <Property Name="HoverImage" Value="set:friends image:faceHover" />
+            <Property Name="NormalImage" Value="set:friends image:faceNormal" />
+            <Property Name="PushedImage" Value="set:friends image:facePushed" />
+        </Window>
+        <Window Name="SocialFriendsChat/posBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,38},{0,408},{0,73},{0,431}}" />
+            <Property Name="HoverImage" Value="set:friends image:posHover" />
+            <Property Name="NormalImage" Value="set:friends image:posNormal" />
+            <Property Name="PushedImage" Value="set:friends image:posPushed" />
+        </Window>
+        <Window Name="SocialFriendsChat/playerBtnSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,408},{0,187},{0,431}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="SocialFriendsChat/playerBtnSp/diceBtnPlayer" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,152},{0,0},{0,187},{0,23}}" />
+                <Property Name="HoverImage" Value="set:friends image:diceHover" />
+                <Property Name="NormalImage" Value="set:friends image:diceNormal" />
+                <Property Name="PushedImage" Value="set:friends image:dicePushed" />
+            </Window>
+            <Window Name="SocialFriendsChat/playerBtnSp/checkBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,76},{0,0},{0,111},{0,23}}" />
+                <Property Name="HoverImage" Value="set:friends image:lookHover" />
+                <Property Name="NormalImage" Value="set:friends image:lookNormal" />
+                <Property Name="PushedImage" Value="set:friends image:lookPushed" />
+            </Window>
+            <Window Name="SocialFriendsChat/playerBtnSp/invitationBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,114},{0,0},{0,149},{0,23}}" />
+                <Property Name="HoverImage" Value="set:friends image:teamHover" />
+                <Property Name="NormalImage" Value="set:friends image:teamNormal" />
+                <Property Name="PushedImage" Value="set:friends image:teamPushed" />
+            </Window>
+            <Window Name="SocialFriendsChat/playerBtnSp/checkBtn2" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,35},{0,23}}" />
+                <Property Name="HoverImage" Value="set:friends image:addHover" />
+                <Property Name="NormalImage" Value="set:friends image:addNormal" />
+                <Property Name="PushedImage" Value="set:friends image:addPushed" />
+            </Window>
+        </Window>
+        <Window Name="SocialFriendsChat/recordBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,349},{0,408},{0,429},{0,431}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="聊天记录" />
+        </Window>
+        <Window Name="SocialFriendsChat/sendBtn" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,350},{0,495},{0,430},{0,518}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="发送" />
+        </Window>
+        <Window Name="SocialFriendsChat/numTitleTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,497},{0,95},{0,517}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="回车键发送消息" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00e4ff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SocialFriendsChat/numTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,96},{0,497},{0,169},{0,517}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="（0/99）" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00e4ff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SocialFriendsChat/gangBtnSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,76},{0,408},{0,344},{0,431}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SocialFriendsChat/gangBtnSp/yuanBaoBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,188},{0,0},{0,268},{0,23}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="帮派元宝" />
+            </Window>
+            <Window Name="SocialFriendsChat/gangBtnSp/diceBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,35},{0,23}}" />
+                <Property Name="HoverImage" Value="set:friends image:diceHover" />
+                <Property Name="NormalImage" Value="set:friends image:diceNormal" />
+                <Property Name="PushedImage" Value="set:friends image:dicePushed" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

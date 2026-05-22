@@ -1,0 +1,339 @@
+<GUILayout>
+    <Window Name="EquipAppraisePage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,587},{0,452}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="EquipAppraisePage/leftBg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,370},{0,452}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="EquipAppraisePage/leftBg/imgBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,370},{0,451}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipAppraisePage/leftBg/imgBg/giftBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,19},{0,10},{0,69},{0,60}}" />
+                    <Property Name="Image" Value="set:skin image:YellowGrid" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                    <Window Name="EquipAppraisePage/leftBg/imgBg/giftBg/gridImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,49}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/itemImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,35},{0,7},{0,74},{0,45}}" />
+                    <Property Name="Image" Value="set:skin image:bestMark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/name1Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,2},{0,63},{0,85},{0,83}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="极品预览" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFFea00" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/operateGrid" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,199},{0,197}}" />
+                    <Property Name="Image" Value="set:equipSmelter image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="EquipAppraisePage/leftBg/imgBg/operateGrid/nameTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,27},{0,28},{0,170},{0,50}}" />
+                        <Property Name="Font" Value="songti_18_strengh" />
+                        <Property Name="Text" Value="装备名称" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFFea00" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="EquipAppraisePage/leftBg/imgBg/operateGrid/grid" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,76},{0,77},{0,124},{0,125}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipAppraisePage/leftBg/imgBg/operateGrid/fightTxtImgTitle" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,50},{0,155},{0,112},{0,174}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:fightText" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipAppraisePage/leftBg/imgBg/operateGrid/fightTxtImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,113},{0,155},{0,210},{0,174}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/tipTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,101},{0,174},{0,262},{0,194}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="半神神器最多可鉴定出15星" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/diSp" Type="GuiLook/CommonBg2">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,389},{0,360},{0,447}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="EquipAppraisePage/leftBg/imgBg/diSp/linkBtn0$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,32.5},{0,61},{0,52.5}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="熔炉熔炼" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="EquipAppraisePage/leftBg/imgBg/diSp/linkBtn1$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,62},{0,32.5},{0,127},{0,52.5}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="世界BOSS" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="EquipAppraisePage/leftBg/imgBg/diSp/linkBtn2$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,128},{0,32.5},{0,187},{0,52.5}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="装备吞噬" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="EquipAppraisePage/leftBg/imgBg/diSp/instructionsTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,188},{0,31},{0,343},{0,51}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="野外掉落 击杀其他玩家掉落" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="EquipAppraisePage/leftBg/imgBg/diSp/selfAppraise" Type="GuiLook/Checkbox">
+                        <Property Name="UnifiedAreaRect" Value="{{0,136.5},{0,4},{0,210.5},{0,20}}" />
+                        <Property Name="Text" Value="自动鉴定" />
+                    </Window>
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/barSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,350},{0,367},{0,376}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="EquipAppraisePage/leftBg/imgBg/barSp/barBg" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,340},{0,12}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Window Name="EquipAppraisePage/leftBg/imgBg/barSp/barBg/bar$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,339},{0,11}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="LeftImage" Value="set:skin image:BlueProgressBarLeft" />
+                            <Property Name="LeftOffset" Value="48" />
+                            <Property Name="RightImage" Value="set:skin image:BlueProgressBarRight" />
+                            <Property Name="CenterImage" Value="set:skin image:BlueProgressBarCenter" />
+                            <Property Name="RightOffset" Value="48" />
+                        </Window>
+                    </Window>
+                    <Window Name="EquipAppraisePage/leftBg/imgBg/barSp/barTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,80},{0,16}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="鉴定中···" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/appraiseBtn" Type="GlossySerpent/RedButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,98},{0,341},{0,261},{0,381}}" />
+                    <Window Name="EquipAppraisePage/leftBg/imgBg/appraiseBtn/appraiseImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                        <Property Name="Image" Value="set:equipSmelter image:beginJD" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/wearBtn" Type="GlossySerpent/RedButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,98},{0,341},{0,261},{0,381}}" />
+                    <Window Name="EquipAppraisePage/leftBg/imgBg/wearBtn/wearImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                        <Property Name="Image" Value="set:equipSmelter image:wear" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/effectSp0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,197},{0,360},{0,223}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/effectSp1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,223},{0,360},{0,249}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/effectSp2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,249},{0,360},{0,275}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/effectSp3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,275},{0,360},{0,301}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/effectSp4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,301},{0,360},{0,327}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/article0" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,197},{0,360},{0,223}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:equipSmelter image:left" />
+                    <Property Name="LeftOffset" Value="105" />
+                    <Property Name="RightImage" Value="set:equipSmelter image:right" />
+                    <Property Name="CenterImage" Value="set:equipSmelter image:middle" />
+                    <Property Name="RightOffset" Value="105" />
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/article2" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,249},{0,360},{0,275}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:equipSmelter image:left" />
+                    <Property Name="LeftOffset" Value="105" />
+                    <Property Name="RightImage" Value="set:equipSmelter image:right" />
+                    <Property Name="CenterImage" Value="set:equipSmelter image:middle" />
+                    <Property Name="RightOffset" Value="105" />
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/article3" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,275},{0,360},{0,301}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:equipSmelter image:left" />
+                    <Property Name="LeftOffset" Value="105" />
+                    <Property Name="RightImage" Value="set:equipSmelter image:right" />
+                    <Property Name="CenterImage" Value="set:equipSmelter image:middle" />
+                    <Property Name="RightOffset" Value="105" />
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/article4" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,301},{0,360},{0,327}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:equipSmelter image:left" />
+                    <Property Name="LeftOffset" Value="105" />
+                    <Property Name="RightImage" Value="set:equipSmelter image:right" />
+                    <Property Name="CenterImage" Value="set:equipSmelter image:middle" />
+                    <Property Name="RightOffset" Value="105" />
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/article1" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,223},{0,360},{0,249}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:equipSmelter image:left" />
+                    <Property Name="LeftOffset" Value="105" />
+                    <Property Name="RightImage" Value="set:equipSmelter image:right" />
+                    <Property Name="CenterImage" Value="set:equipSmelter image:middle" />
+                    <Property Name="RightOffset" Value="105" />
+                </Window>
+                <Window Name="EquipAppraisePage/leftBg/imgBg/list" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,196},{0,350},{0,332}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="EquipAppraisePage/rightBg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,369},{0,0},{0,587},{0,452}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="EquipAppraisePage/rightBg/titleImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,217},{0,30}}" />
+                <Property Name="Image" Value="set:equipSmelter image:warehouse" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipAppraisePage/rightBg/rightSp" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,35},{0,213},{0,426}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipAppraisePage/rightBg/rightSp/pagePreBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,64},{0,367},{0,84},{0,387}}" />
+                    <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                    <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+                </Window>
+                <Window Name="EquipAppraisePage/rightBg/rightSp/pageNextBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,134},{0,367},{0,154},{0,387}}" />
+                    <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                    <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+                </Window>
+                <Window Name="EquipAppraisePage/rightBg/rightSp/pageSp" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,88},{0,368},{0,130},{0,386}}" />
+                    <Property Name="Image" Value="set:skin image:pageBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="EquipAppraisePage/rightBg/rightSp/pageSp/pageTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,1},{0,40},{0,17}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="1/2" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="EquipAppraisePage/rightBg/showTianJieCb" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,431},{0,215},{0,447}}" />
+                <Property Name="Text" Value="只显示橙色及以上未鉴定魔兵法宝" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

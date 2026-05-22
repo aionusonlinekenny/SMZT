@@ -1,0 +1,598 @@
+<GUILayout>
+    <Window Name="GangSkillPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,613},{0,463}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GangSkillPage/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,453},{0,462}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="GangSkillPage/bgImg/desc2Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,1},{0,74},{0,22}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="剩余帮贡：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/numberTxt104" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,75},{0,1},{0,205},{0,22}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="20" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/blueSkillBoxImg5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,193},{0,355},{0,259},{0,413}}" />
+                <Property Name="Image" Value="set:gangGeneral image:bigBluePolygon" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg5/skillImg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,69},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg5/chooseImg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,63},{0,55}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:yelllowPolygon" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/bgImg/blueSkillBoxImg8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,80},{0,88},{0,146},{0,146}}" />
+                <Property Name="Image" Value="set:gangGeneral image:bigBluePolygon" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg8/skillImg8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,69},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg8/chooseImg8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,63},{0,55}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:yelllowPolygon" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/bgImg/blueSkillBoxImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,305},{0,88},{0,371},{0,146}}" />
+                <Property Name="Image" Value="set:gangGeneral image:bigBluePolygon" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg2/skillImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,69},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg2/chooseImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,63},{0,55}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:yelllowPolygon" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/bgImg/blueSkillBoxImg7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,35},{0,198},{0,101},{0,256}}" />
+                <Property Name="Image" Value="set:gangGeneral image:bigBluePolygon" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg7/skillImg7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,69},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg7/chooseImg7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,63},{0,55}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:yelllowPolygon" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/bgImg/blueSkillBoxImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,352},{0,198},{0,418},{0,256}}" />
+                <Property Name="Image" Value="set:gangGeneral image:bigBluePolygon" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg3/skillImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,69},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg3/chooseImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,63},{0,55}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:yelllowPolygon" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/bgImg/blueSkillBoxImg6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,80},{0,317},{0,146},{0,375}}" />
+                <Property Name="Image" Value="set:gangGeneral image:bigBluePolygon" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg6/skillImg6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,69},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg6/chooseImg6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,63},{0,55}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:yelllowPolygon" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/bgImg/blueSkillBoxImg4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,305},{0,317},{0,371},{0,375}}" />
+                <Property Name="Image" Value="set:gangGeneral image:bigBluePolygon" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg4/skillImg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,69},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg4/chooseImg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,63},{0,55}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:yelllowPolygon" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/bgImg/blueSkillBoxImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,193},{0,44},{0,259},{0,102}}" />
+                <Property Name="Image" Value="set:gangGeneral image:bigBluePolygon" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg1/skillImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,69},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangSkillPage/bgImg/blueSkillBoxImg1/chooseImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,63},{0,55}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:yelllowPolygon" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/bgImg/bigblueSkillBoxImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,177},{0,185},{0,274},{0,273}}" />
+                <Property Name="Image" Value="set:gangGeneral image:bigBluePolygon" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangSkillPage/bgImg/bigblueSkillBoxImg/skillImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,103},{0,94}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/bgImg/attributeLineImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,256},{0,179},{0,329},{0,195}}" />
+                <Property Name="Image" Value="set:gangGeneral image:brokenLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/numberTxt114" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,307},{0,189},{0,337},{0,210}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/contributeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,272},{0,189},{0,306},{0,210}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="帮贡" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffffffff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/attackTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,272},{0,157},{0,306},{0,178}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="攻击" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffffffff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/numberTxt124" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,307},{0,157},{0,337},{0,178}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="+3" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/attributeAgainTxt5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,415},{0,275},{0,436}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="命中Lv.4" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/attributeAgainTxt6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,71},{0,374},{0,155},{0,395}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="坚韧Lv.4" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/attributeAgainTxt7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,16},{0,258},{0,119},{0,279}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="暴击Lv.4" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/attributeAgainTxt8" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,69},{0,146},{0,159},{0,167}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="防御Lv.4" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/attributeAgainTxt4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,294},{0,377},{0,383},{0,398}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="闪避Lv.4" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/attributeAgainTxt3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,343},{0,257},{0,426},{0,278}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="必杀Lv.4" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/attributeAgainTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,297},{0,145},{0,379},{0,166}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="生命Lv.4" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/attributeAgainTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,182},{0,102},{0,270},{0,123}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="攻击Lv.400" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/bgImg/mall" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,192},{0,276},{0,258},{0,299}}" />
+                <Property Name="Text" Value="升 级" />
+                <Property Name="AlwaysOnTop" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="GangSkillPage/rightBackground" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,453},{0,0},{0,613},{0,463}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangSkillPage/rightBackground/addImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,159},{0,30}}" />
+                <Property Name="Image" Value="set:gangGeneral image:accumulative" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/line1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,95},{0,159},{0,96}}" />
+                <Property Name="Image" Value="set:gangGeneral image:line" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/line2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,370},{0,159},{0,371}}" />
+                <Property Name="Image" Value="set:gangGeneral image:line" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/attributeTxt19" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,109},{0,40},{0,127}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="力量" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/TextBG" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0,109},{0,151},{0,130}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangSkillPage/rightBackground/TextBG/numberTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,109},{0,21}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/attributeTxt29" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,141},{0,40},{0,159}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="敏捷" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/attributeTxt39" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,174},{0,40},{0,192}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="智力" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/attributeTxt49" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,206},{0,40},{0,224}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="攻击" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/attributeTxt59" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,238},{0,40},{0,256}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="防御" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/attributeTxt69" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,272},{0,40},{0,290}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="暴击" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/attributeTxt79" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,305},{0,40},{0,323}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="坚韧 " />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/attributeTxt89" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,336},{0,40},{0,354}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="生命" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/TextBG2" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0,141},{0,151},{0,162}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangSkillPage/rightBackground/TextBG2/numberTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,110},{0,21}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/TextBG3" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0,174},{0,151},{0,195}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangSkillPage/rightBackground/TextBG3/numberTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,109},{0,21}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/TextBG4" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0,206},{0,151},{0,227}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangSkillPage/rightBackground/TextBG4/numberTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,109},{0,21}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/TextBG5" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0,238},{0,151},{0,259}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangSkillPage/rightBackground/TextBG5/numberTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,109},{0,21}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/TextBG6" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0,272},{0,151},{0,293}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangSkillPage/rightBackground/TextBG6/numberTxt7" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,109},{0,21}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/TextBG7" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0,305},{0,151},{0,326}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangSkillPage/rightBackground/TextBG7/numberTxt9" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,109},{0,21}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/TextBG8" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0,336},{0,151},{0,357}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangSkillPage/rightBackground/TextBG8/numberTxt12" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,109},{0,21}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/descTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,13},{0,384},{0,118},{0,405}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="当前技能上限：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/numberTxt99" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,119},{0,384},{0,149},{0,405}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="20" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/descTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,411},{0,157},{0,429}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="升级帮派图腾可增加帮派" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/fightTitleImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,51},{0,35},{0,105},{0,57}}" />
+                <Property Name="Image" Value="set:mainUI1 image:fightText" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/desc$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,12},{0,63},{0,148},{0,85}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffffffff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangSkillPage/rightBackground/descTxt3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,434},{0,157},{0,452}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="技能等级上限。" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

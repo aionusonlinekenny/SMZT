@@ -1,0 +1,284 @@
+<GUILayout>
+    <Window Name="MinuteProperty" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,38},{0,292},{0,606}}" />
+        <Property Name="Text" Value="详细属性" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="MinuteProperty/CommonBG" Type="GuiLook/CommonBG">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,207},{0,521}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="MinuteProperty/CommonBG/StaticText" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,12},{0,60},{0,32}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="生 命：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/s1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,131},{0,60},{0,156}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="敏 捷：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/s2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,157},{0,60},{0,182}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="智 力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/s3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,205},{0,60},{0,230}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="攻 击：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/s4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,231},{0,60},{0,256}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="防 御：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/s5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,257},{0,60},{0,282}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="暴 击：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/s6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,283},{0,60},{0,308}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="坚 韧：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/s7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,309},{0,60},{0,334}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="命 中：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/s8" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,335},{0,60},{0,360}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="闪 避：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/s9" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,361},{0,60},{0,386}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="必 杀：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/s10" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,387},{0,60},{0,412}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="善 恶：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/s11" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,435},{0,72},{0,460}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="移动速度：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/s12" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,460},{0,71},{0,485}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="江湖威望：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/s13" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,485},{0,80},{0,510}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="竞技排行：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/s0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,105},{0,60},{0,130}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="力 量：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/StaticText4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,38},{0,60},{0,58}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="经 验：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/StaticText5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,64},{0,60},{0,84}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="元 气：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/hp" Type="GlossySerpent/NineStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,56},{0,20},{0,196},{0,34}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TopImage" Value="set:skin image:StaticTop" />
+                <Property Name="LeftImage" Value="set:skin image:StaticLeft" />
+                <Property Name="TopOffset" Value="3" />
+                <Property Name="LeftOffset" Value="3" />
+                <Property Name="RightImage" Value="set:skin image:StaticRight" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="BottomImage" Value="set:skin image:StaticBottom" />
+                <Property Name="CenterImage" Value="set:skin image:StaticCenter" />
+                <Property Name="RightOffset" Value="3" />
+                <Property Name="BottomOffset" Value="3" />
+                <Property Name="TopLeftImage" Value="set:skin image:StaticTopLeft" />
+                <Property Name="TopRightImage" Value="set:skin image:StaticTopRight" />
+                <Property Name="BottomLeftImage" Value="set:skin image:StaticBottomLeft" />
+                <Property Name="BottomRightImage" Value="set:skin image:StaticBottomRight" />
+                <Window Name="MinuteProperty/CommonBG/hp/hpBar" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,139},{0,13}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:hpBar" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MinuteProperty/CommonBG/hp/hpBarText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,7},{0,-1},{0,132},{0,15}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="1234567/1234567" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/exp" Type="GlossySerpent/NineStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,56},{0,46},{0,196},{0,60}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TopImage" Value="set:skin image:StaticTop" />
+                <Property Name="LeftImage" Value="set:skin image:StaticLeft" />
+                <Property Name="TopOffset" Value="3" />
+                <Property Name="LeftOffset" Value="3" />
+                <Property Name="RightImage" Value="set:skin image:StaticRight" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="BottomImage" Value="set:skin image:StaticBottom" />
+                <Property Name="CenterImage" Value="set:skin image:StaticCenter" />
+                <Property Name="RightOffset" Value="3" />
+                <Property Name="BottomOffset" Value="3" />
+                <Property Name="TopLeftImage" Value="set:skin image:StaticTopLeft" />
+                <Property Name="TopRightImage" Value="set:skin image:StaticTopRight" />
+                <Property Name="BottomLeftImage" Value="set:skin image:StaticBottomLeft" />
+                <Property Name="BottomRightImage" Value="set:skin image:StaticBottomRight" />
+                <Window Name="MinuteProperty/CommonBG/exp/expBar" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,139},{0,13}}" />
+                    <Property Name="Image" Value="set:skins image:greenBar" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MinuteProperty/CommonBG/exp/expBarText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,7},{0,-1},{0,132},{0,15}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="1234567/1234567" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/yuan" Type="GlossySerpent/NineStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,56},{0,72},{0,196},{0,86}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TopImage" Value="set:skin image:StaticTop" />
+                <Property Name="LeftImage" Value="set:skin image:StaticLeft" />
+                <Property Name="TopOffset" Value="3" />
+                <Property Name="LeftOffset" Value="3" />
+                <Property Name="RightImage" Value="set:skin image:StaticRight" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="BottomImage" Value="set:skin image:StaticBottom" />
+                <Property Name="CenterImage" Value="set:skin image:StaticCenter" />
+                <Property Name="RightOffset" Value="3" />
+                <Property Name="BottomOffset" Value="3" />
+                <Property Name="TopLeftImage" Value="set:skin image:StaticTopLeft" />
+                <Property Name="TopRightImage" Value="set:skin image:StaticTopRight" />
+                <Property Name="BottomLeftImage" Value="set:skin image:StaticBottomLeft" />
+                <Property Name="BottomRightImage" Value="set:skin image:StaticBottomRight" />
+                <Window Name="MinuteProperty/CommonBG/yuan/yuanBar" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,139},{0,13}}" />
+                    <Property Name="Image" Value="set:skins image:purpleBar" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MinuteProperty/CommonBG/yuan/yuanBarText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,7},{0,-1},{0,132},{0,15}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="1234567/1234567" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/line1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,97},{0,206},{0,98}}" />
+                <Property Name="Image" Value="set:role2 image:line" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/line2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,194},{0,206},{0,195}}" />
+                <Property Name="Image" Value="set:role2 image:line" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MinuteProperty/CommonBG/line3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,424},{0,206},{0,425}}" />
+                <Property Name="Image" Value="set:role2 image:line" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

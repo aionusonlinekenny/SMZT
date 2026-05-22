@@ -1,0 +1,48 @@
+<GUILayout>
+    <Window Name="LoopTaskTrackRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,210},{0,50}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+        <Window Name="LoopTaskTrackRender/contect" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,210},{0,50}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+            <Window Name="LoopTaskTrackRender/contect/line$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,26},{0,210},{0,45}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="击杀王祖贤（0/12）" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="LoopTaskTrackRender/contect/nameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,202},{0,23}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="封杀林志玲" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="LoopTaskTrackRender/contect/typeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,51},{0,23}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="【主线】" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="LoopTaskTrackRender/effWin" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,45},{0,45}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="LoopTaskTrackRender/rewardFilter" Type="GuiLook/ButtonFilter">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,40},{0,86},{0,67}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Tooltip" Value="16301" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,312 @@
+<GUILayout>
+    <Window Name="CampCross_serverPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,984},{0,571}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CampCross_serverPage/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,983},{0,495}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="CampCross_serverPage/bgImg/boxsp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,13},{0,96},{0,975},{0,484}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="CampCross_serverPage/bgImg/kingSixImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,566},{0,19},{0,703},{0,59}}" />
+                <Property Name="Image" Value="set:crossServer image:godKing" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="CampCross_serverPage/bottomBG" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,496},{0,983},{0,570}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CampCross_serverPage/bottomBG/BlueButton" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,75},{0,25},{0,177},{0,48}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="跨服战说明" />
+            </Window>
+            <Window Name="CampCross_serverPage/bottomBG/RedButton" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,312},{0,69}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Window Name="CampCross_serverPage/bottomBG/RedButton/nextTimeImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,312},{0,32}}" />
+                    <Property Name="Image" Value="set:crossServer image:nextTime" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="CampCross_serverPage/bottomBG/RedButton/timeTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,32},{0,312},{0,64}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="04月19日20时00分" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="CampCross_serverPage/bottomBG/RedButton/killImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,312},{0,64}}" />
+                    <Property Name="Image" Value="set:crossServer image:kill" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="CampCross_serverPage/bottomBG/OrangeButton" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,750},{0,25},{0,852},{0,48}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="统一奖励" />
+            </Window>
+            <Window Name="CampCross_serverPage/bottomBG/BlueButton2" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,859},{0,25},{0,961},{0,48}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="查看排行" />
+            </Window>
+            <Window Name="CampCross_serverPage/bottomBG/levelImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,0},{0,71},{0,66}}" />
+                <Property Name="Image" Value="set:crossServer image:three" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampCross_serverPage/bottomBG/levelTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,54},{0,71},{0,72}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="一级天子" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="CampCross_serverPage/shadowBgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,982},{0,494}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="CampCross_serverPage/shadowBgImg/returnBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,914},{0,446},{0,970},{0,478}}" />
+                <Property Name="Image" Value="set:crossServer image:return" />
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/redbgImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,698},{0,12},{0,966},{0,41}}" />
+                <Property Name="Image" Value="set:crossServer image:redshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampCross_serverPage/shadowBgImg/redbgImg3/promptImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,268},{0,29}}" />
+                    <Property Name="Image" Value="set:crossServer image:prompt" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/redbgImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,357},{0,11},{0,625},{0,40}}" />
+                <Property Name="Image" Value="set:crossServer image:redshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampCross_serverPage/shadowBgImg/redbgImg2/rewardImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,268},{0,29}}" />
+                    <Property Name="Image" Value="set:crossServer image:reward" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/redbgImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,12},{0,268},{0,41}}" />
+                <Property Name="Image" Value="set:crossServer image:redshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampCross_serverPage/shadowBgImg/redbgImg1/ruleImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,268},{0,29}}" />
+                    <Property Name="Image" Value="set:crossServer image:rules" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/desc$RI8" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,703},{0,79},{0,954},{0,293}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/desc$RI7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,353},{0,306},{0,620},{0,376}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/desc$RI6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,353},{0,207},{0,620},{0,268}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/desc$RI4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,353},{0,75},{0,620},{0,159}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/desc$RI3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,302},{0,278},{0,405}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/desc$RI2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,177},{0,278},{0,266}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/desc$RI1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,77},{0,278},{0,145}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/bluebgImg8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,703},{0,47},{0,909},{0,74}}" />
+                <Property Name="Image" Value="set:crossServer image:blackshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampCross_serverPage/shadowBgImg/bluebgImg8/descTxt8" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,207},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="温馨提示：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/bluebgImg7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,353},{0,275},{0,559},{0,302}}" />
+                <Property Name="Image" Value="set:crossServer image:blackshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampCross_serverPage/shadowBgImg/bluebgImg7/descTxt7" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,207},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="统一奖励：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/bluebgImg6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,353},{0,175},{0,559},{0,202}}" />
+                <Property Name="Image" Value="set:crossServer image:blackshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampCross_serverPage/shadowBgImg/bluebgImg6/descTxt6" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,207},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="胜方奖励：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/bluebgImg4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,353},{0,46},{0,559},{0,73}}" />
+                <Property Name="Image" Value="set:crossServer image:blackshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampCross_serverPage/shadowBgImg/bluebgImg4/descTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,207},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="战斗奖励：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/bluebgImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,270},{0,217},{0,297}}" />
+                <Property Name="Image" Value="set:crossServer image:blackshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampCross_serverPage/shadowBgImg/bluebgImg3/descTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,207},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="胜负判断：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/bluebgImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,148},{0,217},{0,175}}" />
+                <Property Name="Image" Value="set:crossServer image:blackshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampCross_serverPage/shadowBgImg/bluebgImg2/descTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,207},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="开启时间：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampCross_serverPage/shadowBgImg/bluebgImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,47},{0,217},{0,74}}" />
+                <Property Name="Image" Value="set:crossServer image:blackshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampCross_serverPage/shadowBgImg/bluebgImg1/descTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,207},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="入场条件：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

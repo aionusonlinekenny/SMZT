@@ -1,0 +1,72 @@
+<GUILayout>
+    <Window Name="TCKActivityRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,60}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="TCKActivityRender/bg" Type="GlossySerpent/ThreeVStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,36},{0,3},{0,228},{0,57}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:threeCountryKill image:shadowUp" />
+            <Property Name="TopOffset" Value="5" />
+            <Property Name="BottomImage" Value="set:threeCountryKill image:shadowDown" />
+            <Property Name="CenterImage" Value="set:threeCountryKill image:shadowMiddle" />
+            <Property Name="BottomOffset" Value="3" />
+            <Window Name="TCKActivityRender/bg/TextBG" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,33},{0,37},{0,189},{0,49}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="TCKActivityRender/bg/TextBG/life$NormalBar" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,155},{0,11}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:hpBar" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TCKActivityRender/bg/TextBG/lifeTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-2},{0,156},{0,16}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="曹操生命值：45%" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="TCKActivityRender/bg/descTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,0},{0,94},{0,18}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="大魏天子：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TCKActivityRender/bg/descTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,17},{0,94},{0,35}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="阵营守护：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TCKActivityRender/bg/nameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,95},{0,0},{0,176},{0,18}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="玩家名称六字" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TCKActivityRender/bg/nameTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,95},{0,17},{0,176},{0,35}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="玩家名称六字" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="TCKActivityRender/countryImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,0},{0,68},{0,60}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

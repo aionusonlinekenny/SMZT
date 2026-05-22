@@ -1,0 +1,29 @@
+<GUILayout>
+    <Window Name="ConsignmentCellFirstRender" Type="GuiLook/RadioTab">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+        <Property Name="UnifiedMaxSize" Value="{{0,130},{0,500}}" />
+        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+        <Property Name="HorzFormatting" Value="CentreAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+        <Window Name="ConsignmentCellFirstRender/radioTxtImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,105},{0,38}}" />
+            <Property Name="Image" Value="set:consignment image:change" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="ConsignmentCellFirstRender/openBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,107},{0,1},{0,128},{0,36}}" />
+            <Property Name="Image" Value="set:skins image:line" />
+            <Property Name="HorzImageFormatting" Value="CentreAligned" />
+            <Property Name="VertImageFormatting" Value="CentreAligned" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

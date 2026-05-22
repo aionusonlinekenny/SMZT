@@ -1,0 +1,53 @@
+<GUILayout>
+    <Window Name="SocialFriendsSetReply" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,312},{0,276}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SocialFriendsSetReply/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,312},{0,249}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SocialFriendsSetReply/bg/checkbox" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,19},{0,103},{0,35}}" />
+                <Property Name="Text" Value="开启自动回复" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="SocialFriendsSetReply/bg/radioBg" Type="GuiLook/CommonBg2">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,44},{0,307},{0,244}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SocialFriendsSetReply/bg/radioBg/radioButton0" Type="GuiLook/RadioButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,32},{0,26},{0,178},{0,42}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="挂机中，稍后回复" />
+                    <Property Name="HoverTextColour" Value="FF00baff" />
+                    <Property Name="NormalTextColour" Value="FF00baff" />
+                    <Property Name="PushedTextColour" Value="FF00baff" />
+                </Window>
+                <Window Name="SocialFriendsSetReply/bg/radioBg/radioButton1" Type="GuiLook/RadioButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,32},{0,60},{0,178},{0,76}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="练级中，请勿打扰" />
+                    <Property Name="HoverTextColour" Value="FF00baff" />
+                    <Property Name="NormalTextColour" Value="FF00baff" />
+                    <Property Name="PushedTextColour" Value="FF00baff" />
+                </Window>
+                <Window Name="SocialFriendsSetReply/bg/radioBg/radioButton2" Type="GuiLook/RadioButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,32},{0,95},{0,262},{0,111}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="您好，我现在有事一会儿和您联系" />
+                    <Property Name="HoverTextColour" Value="FF00baff" />
+                    <Property Name="NormalTextColour" Value="FF00baff" />
+                    <Property Name="PushedTextColour" Value="FF00baff" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="SocialFriendsSetReply/sureBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,45},{0,251},{0,125},{0,274}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="确定" />
+        </Window>
+        <Window Name="SocialFriendsSetReply/cancelBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,187},{0,251},{0,267},{0,274}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="取消" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,295 @@
+<GUILayout>
+    <Window Name="ShenBingRefinement" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,327},{0,568}}" />
+        <Property Name="Font" Value="songti_18_strengh" />
+        <Property Name="Text" Value="神器淬炼" />
+        <Property Name="CaptionColour" Value="ffc6dee6" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="ShenBingRefinement/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,525},{0,309},{0,526}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="ShenBingRefinement/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,309},{0,522}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="ShenBingRefinement/bg/nameImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,19},{0,141},{0,58}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="ShenBingRefinement/bg/d3DView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,124},{0,724},{0,186},{0,774}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="ShenBingRefinement/bg/orderEtc" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,272},{0,10},{0,300},{0,62}}" />
+                <Property Name="Image" Value="set:skins image:order1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ShenBingRefinement/bg/progressBarBg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,411},{0,303},{0,423}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:ProgressBarBgLeft" />
+                <Property Name="LeftOffset" Value="3" />
+                <Property Name="RightImage" Value="set:skin image:ProgressBarBgRight" />
+                <Property Name="CenterImage" Value="set:skin image:ProgressBarBgCenter" />
+                <Property Name="RightOffset" Value="3" />
+                <Window Name="ShenBingRefinement/bg/progressBarBg/progressBar$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,296},{0,11}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:BlueProgressBarLeft" />
+                    <Property Name="LeftOffset" Value="48" />
+                    <Property Name="RightImage" Value="set:skin image:BlueProgressBarRight" />
+                    <Property Name="CenterImage" Value="set:skin image:BlueProgressBarCenter" />
+                    <Property Name="RightOffset" Value="48" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ShenBingRefinement/bg/progressBarTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,49},{0,407},{0,241},{0,427}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="当前摧毁度：1000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFe1FeFF" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="ShenBingRefinement/bg/gridBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,30},{0,430},{0,78},{0,478}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="ShenBingRefinement/bg/gridBg/item" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ShenBingRefinement/bg/sp1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,82},{0,432},{0,198},{0,452}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ShenBingRefinement/bg/sp1/markImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,15},{0,14}}" />
+                    <Property Name="Image" Value="set:skin image:MarkImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ShenBingRefinement/bg/sp1/txt1$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,4},{0,116},{0,22}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="淬炼道具*200" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ShenBingRefinement/bg/starAdvancedBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,29},{0,490},{0,137},{0,513}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="开始淬炼" />
+            </Window>
+            <Window Name="ShenBingRefinement/bg/selfAdvancedBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,181},{0,490},{0,289},{0,513}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="自动淬炼" />
+            </Window>
+            <Window Name="ShenBingRefinement/bg/checkbox" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,86},{0,461},{0,249},{0,477}}" />
+                <Property Name="Text" Value="材料不足时自动商城购买" />
+            </Window>
+            <Window Name="ShenBingRefinement/bg/refinementRuleTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,203},{0,436},{0,268},{0,456}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="淬炼规则" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ShenBingRefinement/bg/tView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,-5},{0,406},{0,187},{0,429}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="ShenBingRefinement/bg/clip" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,52},{0,338},{0,92},{0,378}}" />
+                <Property Name="Image" Value="set:artifact image:quality4" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="ShenBingRefinement/bg/clip/itemClip" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,39},{0,39}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ShenBingRefinement/bg/skillTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,102},{0,339},{0,295},{0,363}}" />
+                <Property Name="Font" Value="songti_16_strengh" />
+                <Property Name="Text" Value="三阶激活技能：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ShenBingRefinement/bg/skillDescribeTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,102},{0,365},{0,308},{0,382}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="技能描述" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ShenBingRefinement/bg/starBg" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,3},{0,383},{0,293},{0,406}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Window Name="ShenBingRefinement/bg/starBg/star0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,24},{0,23}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ShenBingRefinement/bg/starBg/star1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,29},{0,0},{0,53},{0,23}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ShenBingRefinement/bg/starBg/star2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,58},{0,0},{0,82},{0,23}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ShenBingRefinement/bg/starBg/star3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,87},{0,0},{0,111},{0,23}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ShenBingRefinement/bg/starBg/star4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,116},{0,0},{0,140},{0,23}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ShenBingRefinement/bg/starBg/star5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,145},{0,0},{0,169},{0,23}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ShenBingRefinement/bg/starBg/star6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,174},{0,0},{0,198},{0,23}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ShenBingRefinement/bg/starBg/star7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,203},{0,0},{0,227},{0,23}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ShenBingRefinement/bg/starBg/star8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,232},{0,0},{0,256},{0,23}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ShenBingRefinement/bg/starBg/star9" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,262},{0,0},{0,286},{0,23}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="ShenBingRefinement/tipView" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,-0.5},{0,61},{0,270.5},{0,265}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+    </Window>
+</GUILayout>

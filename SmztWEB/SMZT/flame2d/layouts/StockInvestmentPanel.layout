@@ -1,0 +1,53 @@
+<GUILayout>
+    <Window Name="StockInvestmentPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,964},{0,566}}" />
+        <Property Name="GlyphImage" Value="set:bullySuitInvestment image:title" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="StockInvestmentPanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,524},{0,946},{0,525}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="StockInvestmentPanel/sp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,84},{0,4},{0,945},{0,518}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="StockInvestmentPanel/radioTab2" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,90},{0,86},{0,131}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="升级投资" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover4" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover4" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal4" />
+            <Property Name="NormalTextColour" Value="FF65b3e9" />
+        </Window>
+        <Window Name="StockInvestmentPanel/radioTab1" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,48},{0,86},{0,89}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="天天返利" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover4" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover4" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal4" />
+            <Property Name="NormalTextColour" Value="FF65b3e9" />
+        </Window>
+        <Window Name="StockInvestmentPanel/radioTab" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,86},{0,47}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="元宝翻倍" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover4" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover4" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal4" />
+            <Property Name="NormalTextColour" Value="FF65b3e9" />
+        </Window>
+    </Window>
+</GUILayout>

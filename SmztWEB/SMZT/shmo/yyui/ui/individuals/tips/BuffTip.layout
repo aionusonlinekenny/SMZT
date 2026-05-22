@@ -1,0 +1,31 @@
+<GUILayout>
+    <Window Name="BuffTip" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,234},{0,186}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+        <Window Name="BuffTip/bg" Type="GuiLook/CommonBg4">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,234},{0,186}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+            <Window Name="BuffTip/bg/Line" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,36},{0,234},{0,37}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="BuffTip/bg/descTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,40},{0,221},{0,104}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BuffTip/bg/nameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,0},{0,221},{0,34}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,149 @@
+<GUILayout>
+    <Window Name="GangListPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,753},{0,463}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GangListPage/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,753},{0,463}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangListPage/background/levelBtn" Type="GuiLook/RankRadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,260},{0,0},{0,362},{0,28}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="旗帜等级" />
+                <Property Name="HoverTextColour" Value="FF65b3e9" />
+                <Property Name="PushedTextColour" Value="FF65b3e9" />
+                <Window Name="GangListPage/background/levelBtn/img0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,86},{0,9},{0,99},{0,20}}" />
+                    <Property Name="Image" Value="set:skin image:arrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangListPage/background/memberBtn" Type="GuiLook/RankRadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,362},{0,0},{0,464},{0,28}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="成员数量" />
+                <Property Name="HoverTextColour" Value="FF65b3e9" />
+                <Property Name="PushedTextColour" Value="FF65b3e9" />
+                <Window Name="GangListPage/background/memberBtn/img1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,83},{0,9},{0,96},{0,20}}" />
+                    <Property Name="Image" Value="set:skin image:arrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangListPage/background/fightBtn" Type="GuiLook/RankRadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,464},{0,0},{0,632},{0,28}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="成员战斗力总和" />
+                <Property Name="HoverTextColour" Value="FF65b3e9" />
+                <Property Name="PushedTextColour" Value="FF65b3e9" />
+                <Window Name="GangListPage/background/fightBtn/img2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,148},{0,9},{0,161},{0,20}}" />
+                    <Property Name="Image" Value="set:skin image:arrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangListPage/background/powerList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="GangListPage/background/powerList/powerTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,26}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="权利" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangListPage/background/gangNameList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,83},{0,0},{0,260},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="GangListPage/background/gangNameList/gangNameTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,178},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="帮派名称" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangListPage/background/operationList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,632},{0,0},{0,753},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="GangListPage/background/operationList/operationTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,121},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="操作" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangListPage/background/boxSP" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,29},{0,752},{0,399}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="GangListPage/background/bottomBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,400},{0,753},{0,463}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangListPage/background/bottomBg/bg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,752},{0,62}}" />
+                    <Property Name="Image" Value="set:skin image:RenderBg2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GangListPage/background/bottomBg/bg/btn" Type="GlossySerpent/OrangeButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,640},{0,20},{0,721},{0,43}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="一键申请" />
+                    </Window>
+                    <Window Name="GangListPage/background/bottomBg/bg/choose3" Type="GuiLook/Checkbox">
+                        <Property Name="UnifiedAreaRect" Value="{{0,404},{0,22},{0,579},{0,38}}" />
+                        <Property Name="Text" Value="显示帮主或副帮主在线帮派" />
+                        <Property Name="HoverTextColour" Value="FF64d4d8" />
+                    </Window>
+                    <Window Name="GangListPage/background/bottomBg/bg/choose2" Type="GuiLook/Checkbox">
+                        <Property Name="UnifiedAreaRect" Value="{{0,156},{0,22},{0,280},{0,38}}" />
+                        <Property Name="Text" Value="显示自动加入帮派" />
+                        <Property Name="HoverTextColour" Value="FF64d4d8" />
+                    </Window>
+                    <Window Name="GangListPage/background/bottomBg/bg/choose1" Type="GuiLook/Checkbox">
+                        <Property Name="UnifiedAreaRect" Value="{{0,43},{0,23},{0,153},{0,39}}" />
+                        <Property Name="Text" Value="显示本阵营帮派" />
+                        <Property Name="Visible" Value="false" />
+                        <Property Name="HoverTextColour" Value="FF64d4d8" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

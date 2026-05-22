@@ -1,0 +1,640 @@
+<GUILayout>
+    <Window Name="PersonalDartPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1022},{0,602}}" />
+        <Property Name="GlyphImage" Value="set:activitiesGeneral image:title_10021" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="PersonalDartPanel/Bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,1004},{0,554}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="PersonalDartPanel/Bg/dartBgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,1003},{0,416}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,54},{0,17},{0,211},{0,99}}" />
+                    <Property Name="Image" Value="set:personalDart image:downBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg1/whitecarImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,0},{0,134},{0,33}}" />
+                        <Property Name="Image" Value="set:personalDart image:white" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg1/s1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,66},{0,30},{0,92},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,237},{0,17},{0,394},{0,99}}" />
+                    <Property Name="Image" Value="set:personalDart image:downBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg2/s3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,81},{0,30},{0,107},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg2/greencarImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,0},{0,134},{0,33}}" />
+                        <Property Name="Image" Value="set:personalDart image:green" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg2/s2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,79},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,420},{0,17},{0,577},{0,99}}" />
+                    <Property Name="Image" Value="set:personalDart image:downBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg3/s5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,68},{0,30},{0,94},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg3/bluecarImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,0},{0,134},{0,33}}" />
+                        <Property Name="Image" Value="set:personalDart image:blue" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg3/s4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,41},{0,30},{0,67},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg3/s6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,94},{0,30},{0,120},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,603},{0,17},{0,760},{0,99}}" />
+                    <Property Name="Image" Value="set:personalDart image:downBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg4/s9" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,80},{0,30},{0,106},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg4/purplecarImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,0},{0,134},{0,33}}" />
+                        <Property Name="Image" Value="set:personalDart image:purple" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg4/s7" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,24},{0,30},{0,50},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg4/s10" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,107},{0,30},{0,133},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg4/s8" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,52},{0,30},{0,78},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,786},{0,17},{0,943},{0,99}}" />
+                    <Property Name="Image" Value="set:personalDart image:downBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg5/s13" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,66},{0,30},{0,92},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg5/orangecarImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,0},{0,134},{0,33}}" />
+                        <Property Name="Image" Value="set:personalDart image:orange" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg5/s12" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,42},{0,30},{0,68},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg5/s11" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,19},{0,30},{0,45},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg5/s14" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,89},{0,30},{0,115},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/carbg5/s15" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,110},{0,30},{0,136},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/dartBgImg/car1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,43},{0,100},{0,219},{0,362}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/dartBgImg/car2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,233},{0,100},{0,398},{0,362}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/dartBgImg/car3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,418},{0,101},{0,577},{0,363}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/dartBgImg/car4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,592},{0,101},{0,770},{0,363}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/dartBgImg/car5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,770},{0,100},{0,960},{0,362}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/dartBgImg/shadowBg" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,118},{0,362},{0,875},{0,401}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:personalDart image:grayLeft" />
+                    <Property Name="LeftOffset" Value="12" />
+                    <Property Name="RightImage" Value="set:personalDart image:grayRight" />
+                    <Property Name="CenterImage" Value="set:personalDart image:grayMiddle" />
+                    <Property Name="RightOffset" Value="12" />
+                    <Window Name="PersonalDartPanel/Bg/dartBgImg/shadowBg/changeBtn" Type="GlossySerpent/OrangeButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,300},{0,9},{0,458},{0,32}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="换镖车(5万帮派铜币)" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="PersonalDartPanel/Bg/bottomBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,416},{0,1004},{0,550}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="PersonalDartPanel/Bg/bottomBg/line1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,278},{0,9},{0,279},{0,125}}" />
+                    <Property Name="Image" Value="set:personalDart image:dottedLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/line2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,692},{0,9},{0,693},{0,125}}" />
+                    <Property Name="Image" Value="set:personalDart image:dottedLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/allImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,298},{0,10},{0,374},{0,32}}" />
+                    <Property Name="Image" Value="set:personalDart image:starLevel" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/rewardImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,298},{0,75},{0,374},{0,97}}" />
+                    <Property Name="Image" Value="set:personalDart image:reward" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/props1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,394},{0,79},{0,442},{0,127}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="PersonalDartPanel/Bg/bottomBg/props1/propsImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/bottomBg/props1/StaticText1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,30},{0,52},{0,50}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value=" " />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/props2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,452},{0,79},{0,500},{0,127}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="PersonalDartPanel/Bg/bottomBg/props2/propsImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/bottomBg/props2/StaticText2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,30},{0,52},{0,50}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value=" " />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/props3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,510},{0,79},{0,558},{0,127}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="PersonalDartPanel/Bg/bottomBg/props3/propsImg3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/bottomBg/props3/StaticText3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,30},{0,52},{0,50}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value=" " />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/props4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,568},{0,79},{0,616},{0,127}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="PersonalDartPanel/Bg/bottomBg/props4/propsImg4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/bottomBg/props4/StaticText4" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,30},{0,52},{0,50}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value=" " />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/props5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,626},{0,79},{0,674},{0,127}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="PersonalDartPanel/Bg/bottomBg/props5/propsImg5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/bottomBg/props5/StaticText5" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,30},{0,52},{0,50}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/star1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,442},{0,8},{0,467},{0,33}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/star2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,476},{0,8},{0,501},{0,33}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/star3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,510},{0,8},{0,535},{0,33}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/star4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,544},{0,8},{0,569},{0,33}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/star5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,578},{0,8},{0,603},{0,33}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/descTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,384},{0,37},{0,664},{0,55}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="(1颗星=200000血，每增加一颗星奖励增加1倍)" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff00baff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/descTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,384},{0,57},{0,664},{0,75}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="(任命左侧职位可以加星)" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff00baff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/doubleImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,918},{0,1},{0,1003},{0,83}}" />
+                    <Property Name="Image" Value="set:personalDart image:double" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/descTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,754},{0,94},{0,942},{0,112}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="每日19:00-19:30奖励翻倍" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/beginBtn" Type="GlossySerpent/RedButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,749},{0,39},{0,950},{0,79}}" />
+                    <Window Name="PersonalDartPanel/Bg/bottomBg/beginBtn/beginImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,122},{0,0},{0,171},{0,40}}" />
+                        <Property Name="Image" Value="set:personalDart image:num0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="PersonalDartPanel/Bg/bottomBg/beginBtn/beginImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,27},{0,1},{0,121},{0,41}}" />
+                        <Property Name="Image" Value="set:personalDart image:begindart2" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/descTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,15},{0,25},{0,85},{0,43}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="护送目标" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/descTxt12" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,15},{0,51},{0,85},{0,69}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="护送目标" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/descTxt13" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,15},{0,99},{0,139},{0,118}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="每10秒护送经验：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/descTxt14" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,15},{0,77},{0,85},{0,95}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="护送目标" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/cheName" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,83},{0,25},{0,153},{0,43}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/cheStar" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,83},{0,51},{0,153},{0,69}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/cheHp" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,83},{0,77},{0,153},{0,95}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PersonalDartPanel/Bg/bottomBg/cheExp" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,136},{0,99},{0,206},{0,117}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,38 @@
+<GUILayout>
+    <Window Name="TeamPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,900},{0,529}}" />
+        <Property Name="GlyphImage" Value="set:team image:teamTitleTxt" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="TeamPanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,486},{0,882},{0,487}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="TeamPanel/sp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,29},{0,882},{0,481}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="TeamPanel/radioBtn0" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,4},{0,83},{0,27}}" />
+            <Property Name="Text" Value="我的队伍" />
+        </Window>
+        <Window Name="TeamPanel/radioBtn1" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,84},{0,4},{0,159},{0,27}}" />
+            <Property Name="Text" Value="附近队伍" />
+        </Window>
+        <Window Name="TeamPanel/radioBtn2" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,160},{0,4},{0,235},{0,27}}" />
+            <Property Name="Text" Value="附近玩家" />
+        </Window>
+    </Window>
+</GUILayout>

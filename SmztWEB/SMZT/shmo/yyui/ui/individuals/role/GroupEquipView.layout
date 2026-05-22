@@ -1,0 +1,977 @@
+<GUILayout>
+    <Window Name="GroupEquipView" Type="GuiLook/CommonBg3">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,816},{0,517}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GroupEquipView/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,815},{0,516}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="GroupEquipView/bg/d3DView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,359},{0,422},{0,409},{0,439}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="GroupEquipView/bg/d3DView2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,350},{0,424},{0,409},{0,441}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="GroupEquipView/bg/logo" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,15},{0,57},{0,58}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="Disabled" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GroupEquipView/bg/logo1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,70},{0,57},{0,113}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="Disabled" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GroupEquipView/bg/nameImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,174},{0,25},{0,460},{0,64}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GroupEquipView/bg/orderSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,120},{0,608},{0,375}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="GroupEquipView/bg/orderSp/orderBeforeBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-3},{0,22},{0,62},{0,191}}" />
+                    <Property Name="Image" Value="set:role image:advancedBefore" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GroupEquipView/bg/orderSp/orderBeforeBg/orderBeforeTxt$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,32},{0,74},{0,54},{0,205}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="VertFormatting" Value="LeftAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GroupEquipView/bg/orderSp/orderLastBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,548},{0,24},{0,613},{0,193}}" />
+                    <Property Name="Image" Value="set:role image:advancedAfter" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GroupEquipView/bg/orderSp/orderLastBg/orderLastTxt$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,32},{0,74},{0,54},{0,205}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="1111" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF00FFFF" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="VertFormatting" Value="LeftAligned" />
+                        <Property Name="ClippedByParent" Value="false" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GroupEquipView/bg/orderSp/arrowImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,287},{0,102},{0,331},{0,132}}" />
+                    <Property Name="Image" Value="set:skins image:rightArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/skillImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,271},{0,418},{0,336},{0,436}}" />
+                <Property Name="Image" Value="set:role image:equipSkill" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GroupEquipView/bg/skill0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,91},{0,446},{0,141},{0,496}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/skill0/lock0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:lockDark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/skill1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,145},{0,446},{0,195},{0,496}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/skill1/lock1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:lockDark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/skill2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,199},{0,446},{0,249},{0,496}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/skill2/lock2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:lockDark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/skill3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,253},{0,446},{0,303},{0,496}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/skill3/lock3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:lockDark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/skill4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,307},{0,446},{0,357},{0,496}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/skill4/lock4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:lockDark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/skill5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,361},{0,446},{0,411},{0,496}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/skill5/lock5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:lockDark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/skill6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,415},{0,446},{0,465},{0,496}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/skill6/lock6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:lockDark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/skill7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,469},{0,446},{0,519},{0,496}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/skill7/lock7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:lockDark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/skill8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,431},{0,88},{0,507}}" />
+                <Property Name="Image" Value="set:role image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/skill8/lock8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,11},{0,10},{0,61},{0,60}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:lockDark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/skill9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,523},{0,432},{0,596},{0,508}}" />
+                <Property Name="Image" Value="set:role image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/skill9/lock9" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,11},{0,10},{0,61},{0,60}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:lockDark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/a1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,31},{0,155},{0,81},{0,205}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/a1/aa1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="Text" Value="头盔" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFaaaaaa" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/a2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,526},{0,155},{0,576},{0,205}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/a2/aa2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="Text" Value="头盔" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFaaaaaa" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/a3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,526},{0,218},{0,576},{0,268}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/a3/aa3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="Text" Value="头盔" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFaaaaaa" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/a4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,31},{0,218},{0,81},{0,268}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/a4/aa4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="Text" Value="头盔" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFaaaaaa" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/a5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,31},{0,281},{0,81},{0,331}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/a5/aa5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="Text" Value="头盔" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFaaaaaa" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/a6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,526},{0,281},{0,576},{0,331}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GroupEquipView/bg/a6/aa6" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="Text" Value="头盔" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFaaaaaa" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/bg/DefaultImageButton" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,0},{0,46},{0,37}}" />
+                <Property Name="Image" Value="set:skins image:leftImgBtn" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="GroupEquipView/bg/DefaultImageButton2" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,562},{0,0},{0,598},{0,37}}" />
+                <Property Name="Image" Value="set:skins image:rightImgBtn" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="GroupEquipView/bg/d3DView1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,350},{0,423},{0,409},{0,440}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="GroupEquipView/bg/checkActivityBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,531},{0,365},{0,600},{0,392}}" />
+                <Property Name="Image" Value="set:role image:checkActivityBtn" />
+            </Window>
+            <Window Name="GroupEquipView/bg/wardrobeBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,26},{0,486},{0,76},{0,509}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="衣橱" />
+            </Window>
+            <Window Name="GroupEquipView/bg/Checkbox" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,499},{0,400},{0,600},{0,416}}" />
+                <Property Name="Text" Value="保留原有外观" />
+            </Window>
+            <Window Name="GroupEquipView/bg/rankText" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,461},{0,28},{0,605},{0,66}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFEA00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GroupEquipView/rightBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,609},{0,1},{0,815},{0,516}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="GroupEquipView/rightBg/toughSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,21},{0,241},{0,171},{0,261}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GroupEquipView/rightBg/toughSp/toughTxtBg" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,40},{0,0},{0,150},{0,20}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="GroupEquipView/rightBg/toughSp/toughTxtBg/toughTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,54},{0,20}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="12504" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFe1feff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GroupEquipView/rightBg/toughSp/toughTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,39},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="坚韧：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFeF9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/rightBg/titleImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,21},{0,24},{0,181},{0,42}}" />
+                <Property Name="Image" Value="set:role image:equipAscensionFight" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GroupEquipView/rightBg/lifeSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,21},{0,295},{0,171},{0,315}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GroupEquipView/rightBg/lifeSp/lifeTxtBg" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,40},{0,0},{0,150},{0,20}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="GroupEquipView/rightBg/lifeSp/lifeTxtBg/lifeTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,54},{0,20}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="12504" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFe1feff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GroupEquipView/rightBg/lifeSp/lifeTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,39},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="生命：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFeF9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/rightBg/killSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,21},{0,215},{0,171},{0,235}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GroupEquipView/rightBg/killSp/killTxtBg" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,40},{0,0},{0,150},{0,20}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="GroupEquipView/rightBg/killSp/killTxtBg/killTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,54},{0,20}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="12504" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFe1feff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GroupEquipView/rightBg/killSp/killTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,39},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="必杀：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFeF9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/rightBg/hitSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,21},{0,160},{0,171},{0,180}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GroupEquipView/rightBg/hitSp/hitTxtBg" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,40},{0,0},{0,150},{0,20}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="GroupEquipView/rightBg/hitSp/hitTxtBg/hitTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,54},{0,20}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="12504" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFe1feff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GroupEquipView/rightBg/hitSp/hitTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,39},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="命中：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFeF9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/rightBg/heavenSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,21},{0,267},{0,171},{0,287}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GroupEquipView/rightBg/heavenSp/heavenTxtBg" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,40},{0,0},{0,150},{0,20}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="GroupEquipView/rightBg/heavenSp/heavenTxtBg/heavenTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,54},{0,20}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="12504" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFe1feff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GroupEquipView/rightBg/heavenSp/heavenTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,39},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="天命：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFeF9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/rightBg/fightImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0,55},{0,160},{0,81}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GroupEquipView/rightBg/defenseSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,21},{0,133},{0,171},{0,153}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GroupEquipView/rightBg/defenseSp/defenseTxtBg" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,40},{0,0},{0,150},{0,20}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="GroupEquipView/rightBg/defenseSp/defenseTxtBg/defenseTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,54},{0,20}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="12504" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFe1feff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GroupEquipView/rightBg/defenseSp/defenseTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,39},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="防御：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFeF9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/rightBg/critSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,21},{0,187},{0,171},{0,207}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GroupEquipView/rightBg/critSp/critTxtBg" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,40},{0,0},{0,150},{0,20}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="GroupEquipView/rightBg/critSp/critTxtBg/critTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,54},{0,20}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="12504" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFe1feff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GroupEquipView/rightBg/critSp/critTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,39},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暴击：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFeF9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/rightBg/attackSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,21},{0,106},{0,171},{0,126}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GroupEquipView/rightBg/attackSp/attackTxtBg" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,40},{0,0},{0,150},{0,20}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="GroupEquipView/rightBg/attackSp/attackTxtBg/attackTx" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,54},{0,20}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="12504" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFe1feff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GroupEquipView/rightBg/attackSp/attackTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,39},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="攻击：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFeF9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/rightBg/destroyTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,338},{0,108},{0,354}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="清空祝福值：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="VertFormatting" Value="LeftAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GroupEquipView/rightBg/timeTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,108},{0,336},{0,205},{0,352}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="当前不清零" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GroupEquipView/rightBg/progressBarBg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,362},{0,194},{0,374}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:ProgressBarBgLeft" />
+                <Property Name="LeftOffset" Value="3" />
+                <Property Name="RightImage" Value="set:skin image:ProgressBarBgRight" />
+                <Property Name="CenterImage" Value="set:skin image:ProgressBarBgCenter" />
+                <Property Name="RightOffset" Value="3" />
+                <Window Name="GroupEquipView/rightBg/progressBarBg/progressBar$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,179},{0,11}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:BlueProgressBarLeft" />
+                    <Property Name="LeftOffset" Value="48" />
+                    <Property Name="RightImage" Value="set:skin image:BlueProgressBarRight" />
+                    <Property Name="CenterImage" Value="set:skin image:BlueProgressBarCenter" />
+                    <Property Name="RightOffset" Value="48" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/progressBarBg/effView" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,3},{0,12}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/rightBg/checkbox" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,33},{0,491},{0,200},{0,507}}" />
+                <Property Name="Text" Value="材料不足时使用元宝补足" />
+            </Window>
+            <Window Name="GroupEquipView/rightBg/tView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,357},{0,181},{0,379}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="GroupEquipView/rightBg/progressBarTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,358},{0,193},{0,378}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="当前摧毁度：1000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFe1FeFF" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="GroupEquipView/rightBg/btnSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,13},{0,446},{0,197},{0,470}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GroupEquipView/rightBg/btnSp/selfAdvancedBtn" Type="GlossySerpent/BlueButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,97},{0,0},{0,184},{0,23}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="自动进阶" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/btnSp/starAdvancedBtn" Type="GlossySerpent/BlueButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,88},{0,23}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="开始进阶" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/rightBg/jinjieBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,446},{0,87},{0,469}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="免费进阶" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="GroupEquipView/rightBg/rules$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,8},{0,403},{0,199},{0,443}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GroupEquipView/rightBg/bonusSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,114},{0,106},{0,171},{0,316}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GroupEquipView/rightBg/bonusSp/toughUpTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,15},{0,135},{0,54},{0,155}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="00000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/toughUpImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,137},{0,14},{0,153}}" />
+                    <Property Name="Image" Value="set:skin image:upArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/liftUpTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,15},{0,189},{0,54},{0,209}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="00000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/lifeUpImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,191},{0,14},{0,207}}" />
+                    <Property Name="Image" Value="set:skin image:upArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/killUpTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,15},{0,109},{0,54},{0,129}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="00000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/killUpImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,111},{0,14},{0,127}}" />
+                    <Property Name="Image" Value="set:skin image:upArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/hitUpTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,15},{0,54},{0,54},{0,74}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="00000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/hitUpImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,56},{0,14},{0,72}}" />
+                    <Property Name="Image" Value="set:skin image:upArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/heavenUpTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,15},{0,161},{0,54},{0,181}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="00000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/heavenUpImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,163},{0,14},{0,179}}" />
+                    <Property Name="Image" Value="set:skin image:upArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/defenseUpTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,15},{0,27},{0,54},{0,47}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="00000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/defenseUpImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,29},{0,14},{0,45}}" />
+                    <Property Name="Image" Value="set:skin image:upArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/critUpTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,15},{0,81},{0,54},{0,101}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="00000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/critUpImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,83},{0,14},{0,99}}" />
+                    <Property Name="Image" Value="set:skin image:upArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/attackUpTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,54},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="00000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/attackUpImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,2},{0,14},{0,18}}" />
+                    <Property Name="Image" Value="set:skin image:upArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/upFightTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,50},{0,-32},{0,89},{0,-12}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="00000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GroupEquipView/rightBg/bonusSp/upFightImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,35},{0,-30},{0,49},{0,-14}}" />
+                    <Property Name="Image" Value="set:skin image:upArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GroupEquipView/rightBg/itemSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,21},{0,384},{0,206},{0,437}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Window Name="GroupEquipView/rightBg/itemSp/sp2" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,52},{0,31},{0,185},{0,51}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="GroupEquipView/rightBg/itemSp/sp2/material$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,35},{0,1},{0,126},{0,19}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="GroupEquipView/rightBg/itemSp/sp2/materialTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,1},{0,34},{0,19}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="来源：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF00baff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GroupEquipView/rightBg/itemSp/gridBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,2},{0,51},{0,50}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GroupEquipView/rightBg/itemSp/gridBg/item" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GroupEquipView/rightBg/itemSp/sp1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,52},{0,3},{0,185},{0,23}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="GroupEquipView/rightBg/itemSp/sp1/txt1$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,21},{0,0},{0,133},{0,20}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="坐骑进阶丹*200" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFcc43ff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="GroupEquipView/rightBg/itemSp/sp1/markImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,15},{0,14}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="GroupEquipView/swfImage" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,830},{0,434},{0,968},{0,483}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="GroupEquipView/swfImage/StaticText" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,138},{0,49}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="点击进阶" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

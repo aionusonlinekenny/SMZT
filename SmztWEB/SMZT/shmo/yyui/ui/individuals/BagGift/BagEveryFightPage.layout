@@ -1,0 +1,146 @@
+<GUILayout>
+    <Window Name="BagEveryFightPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,532},{0,384}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="BagEveryFightPage/staticImage" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,532},{0,183}}" />
+            <Property Name="Image" Value="set:bagGift2 image:EveryFight" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="BagEveryFightPage/staticImage/fightTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,253},{0,103},{0,381},{0,123}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="今日已提升战斗力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="TextColour" Value="FFffffff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BagEveryFightPage/staticImage/fightTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,382},{0,103},{0,449},{0,123}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="2500" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BagEveryFightPage/staticImage/fightBarBg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,181},{0,151},{0,519},{0,165}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="RightImage" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="CenterImage" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="BagEveryFightPage/staticImage/fightBarBg/fight$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,336},{0,12}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:BlueProgressBarLeft" />
+                    <Property Name="LeftOffset" Value="48" />
+                    <Property Name="RightImage" Value="set:skin image:BlueProgressBarRight" />
+                    <Property Name="CenterImage" Value="set:skin image:BlueProgressBarCenter" />
+                    <Property Name="RightOffset" Value="48" />
+                </Window>
+            </Window>
+            <Window Name="BagEveryFightPage/staticImage/paoPaoImg0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,239},{0,125},{0,274},{0,165}}" />
+                <Property Name="Image" Value="set:bagGift image:PaoPao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="BagEveryFightPage/staticImage/paoPaoImg0/paoPaoTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,38},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="1000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="BagEveryFightPage/staticImage/paoPaoImg0/line0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,27},{0,28},{0,28},{0,38}}" />
+                    <Property Name="Image" Value="set:bagGift image:GreenLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="BagEveryFightPage/staticImage/paoPaoImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,282},{0,125},{0,317},{0,165}}" />
+                <Property Name="Image" Value="set:bagGift image:PaoPao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="BagEveryFightPage/staticImage/paoPaoImg1/paoPaoTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,38},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="1500" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="BagEveryFightPage/staticImage/paoPaoImg1/line1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,27},{0,28},{0,28},{0,38}}" />
+                    <Property Name="Image" Value="set:bagGift image:GreenLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="BagEveryFightPage/staticImage/paoPaoImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,489},{0,125},{0,524},{0,165}}" />
+                <Property Name="Image" Value="set:bagGift image:PaoPao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="BagEveryFightPage/staticImage/paoPaoImg2/paoPaoTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,38},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="4000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="BagEveryFightPage/staticImage/paoPaoImg2/line2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,27},{0,28},{0,28},{0,38}}" />
+                    <Property Name="Image" Value="set:bagGift image:GreenLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="BagEveryFightPage/staticImage/fightTitleTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,252},{0,80},{0,380},{0,100}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="历史最高战斗力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="TextColour" Value="FFffffff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BagEveryFightPage/staticImage/fightTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,381},{0,80},{0,448},{0,100}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="2500" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="BagEveryFightPage/dataGroupWin" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,186},{0,529},{0,381}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

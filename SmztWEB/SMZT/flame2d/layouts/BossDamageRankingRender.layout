@@ -1,0 +1,26 @@
+<GUILayout>
+    <Window Name="BossDamageRankingRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,261},{0,32}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="BossDamageRankingRender/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,261},{0,32}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="BossDamageRankingRender/nameTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,110},{0,32}}" />
+            <Property Name="Font" Value="songti_12" />
+            <Property Name="Text" Value="1.玩家名称六字" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ffffea00" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="BossDamageRankingRender/damageTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,111},{0,0},{0,251},{0,32}}" />
+            <Property Name="Font" Value="songti_12" />
+            <Property Name="Text" Value="伤害：5.1万（14.3%）" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ffffea00" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,43 @@
+<GUILayout>
+    <Window Name="CrossServerPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1002},{0,648}}" />
+        <Property Name="GlyphImage" Value="set:crossServer image:title" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="CrossServerPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,606},{0,984},{0,607}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="CrossServerPanel/radioBtn0" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,80},{0,27}}" />
+            <Property Name="Text" Value="跨服竞技" />
+        </Window>
+        <Window Name="CrossServerPanel/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,28},{0,984},{0,599}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="CrossServerPanel/timeTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,200},{0,0},{0,765},{0,25}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="跨服竞技目前只开放了部分区服，如有发现进不去，下周4更新全部区服 敬请期待！" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="TextColour" Value="FF85F500" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

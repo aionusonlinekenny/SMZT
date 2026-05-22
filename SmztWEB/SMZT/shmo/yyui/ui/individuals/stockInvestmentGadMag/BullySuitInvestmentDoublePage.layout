@@ -1,0 +1,196 @@
+<GUILayout>
+    <Window Name="BullySuitInvestmentDoublePage" Type="GuiLook/CommonBg3">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,861},{0,514}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="BullySuitInvestmentDoublePage/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,860},{0,513}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="BullySuitInvestmentDoublePage/bg/redBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,212},{0,208},{0,304},{0,300}}" />
+                <Property Name="HoverImage" Value="set:bullySuitInvestment image:redHover" />
+                <Property Name="NormalImage" Value="set:bullySuitInvestment image:redNormal" />
+                <Property Name="PushedImage" Value="set:bullySuitInvestment image:redPushed" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/gold4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,155},{0,330},{0,273},{0,448}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/gold5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,69},{0,255},{0,187},{0,373}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/gold0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,258},{0,68},{0,376},{0,186}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/list" Type="GuiLook/Listbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,507},{0,75},{0,859},{0,450}}" />
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="VerticalScrollbar" Value="true" />
+                </AutoWindow>
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/gold1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,338},{0,148},{0,456},{0,266}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/gold6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,69},{0,137},{0,187},{0,255}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/residueTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,214},{0,474},{0,283},{0,489}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="剩余次数：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF7200" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/activityTimeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,790},{0,491},{0,855},{0,506}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFff0000" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/activityTimeTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,693},{0,491},{0,790},{0,506}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="活动剩余时间：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/gold2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,335},{0,254},{0,453},{0,372}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/gold7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,157},{0,60},{0,275},{0,178}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/gold3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,253},{0,333},{0,371},{0,451}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/residueTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,284},{0,474},{0,301},{0,489}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/select" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,46},{0,337},{0,466}}" />
+                <Property Name="Image" Value="set:bullySuitInvestment image:selecte" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/arrowImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,240},{0,151},{0,276},{0,361}}" />
+                <Property Name="Image" Value="set:bullySuitInvestment image:arrowImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/yuanBaoTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,233},{0,269},{0,265},{0,284}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="8888" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/yuanbaoImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,264},{0,267},{0,283},{0,286}}" />
+                <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/betImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,226},{0,230},{0,292},{0,262}}" />
+                <Property Name="Image" Value="set:bullySuitInvestment image:bet" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="BullySuitInvestmentDoublePage/bg/smallBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,182},{0,296},{0,339},{0,321}}" />
+                <Property Name="Image" Value="set:bullySuitInvestment image:di" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="BullySuitInvestmentDoublePage/bg/smallBg/topUpTitleTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,25},{0,3},{0,126},{0,18}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="还需充值" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF7200" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

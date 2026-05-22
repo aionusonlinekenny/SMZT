@@ -1,0 +1,131 @@
+<GUILayout>
+    <Window Name="AlertFriendsVotice" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,360},{0,180}}" />
+        <Property Name="Text" Value="社交消息" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="AlertFriendsVotice/campTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,187},{0,3},{0,217},{0,34}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="魏·" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="AlertFriendsVotice/nameTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,217},{0,3},{0,319},{0,34}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="玩家名称六字" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFe1feff" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="AlertFriendsVotice/sexImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,171},{0,10},{0,187},{0,26}}" />
+            <Property Name="Image" Value="set:mainUI1 image:SexGril" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="AlertFriendsVotice/vipImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,10},{0,171},{0,26}}" />
+            <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="AlertFriendsVotice/faceBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,67},{0,20},{0,115},{0,68}}" />
+            <Property Name="Image" Value="set:skin image:GridBG" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="AlertFriendsVotice/faceBg/faceImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="AlertFriendsVotice/fightTitleTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,146},{0,56},{0,202},{0,78}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="战斗力：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFe1feff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="AlertFriendsVotice/fightTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,202},{0,56},{0,283},{0,78}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="1234567" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFffea00" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="AlertFriendsVotice/gradeTitleTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,146},{0,34},{0,202},{0,56}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="等  级：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFe1feff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="AlertFriendsVotice/gradeTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,202},{0,34},{0,263},{0,56}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="85" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFffea00" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="AlertFriendsVotice/instructionsTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,85},{0,272},{0,107}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="该玩家申请加入您的帮派，您同意吗？" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="AlertFriendsVotice/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,110},{0,346},{0,111}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="AlertFriendsVotice/checkBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,114},{0,107},{0,137}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="查看资料" />
+        </Window>
+        <Window Name="AlertFriendsVotice/agreeBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,114},{0,87},{0,137}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="同意加入" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Name="AlertFriendsVotice/cancelBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,238},{0,114},{0,325},{0,137}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="取消" />
+        </Window>
+    </Window>
+</GUILayout>

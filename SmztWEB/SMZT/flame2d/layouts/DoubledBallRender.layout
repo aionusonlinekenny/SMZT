@@ -1,0 +1,48 @@
+<GUILayout>
+    <Window Name="DoubledBallRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,266},{0,31}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="DoubledBallRender/bg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,266},{0,31}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:RenderNormalBgLeft" />
+            <Property Name="LeftOffset" Value="46" />
+            <Property Name="RightImage" Value="set:skin image:RenderNormalBgRight" />
+            <Property Name="CenterImage" Value="set:skin image:RenderNormalBgCenter" />
+            <Property Name="RightOffset" Value="46" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="DoubledBallRender/selected" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,266},{0,31}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:textDiLeft" />
+            <Property Name="LeftOffset" Value="46" />
+            <Property Name="RightImage" Value="set:skin image:textDiRight" />
+            <Property Name="CenterImage" Value="set:skin image:textDiCenter" />
+            <Property Name="RightOffset" Value="46" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="DoubledBallRender/txtTitle$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,175},{0,31}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="DoubledBallRender/txt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,175},{0,9},{0,265},{0,40}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="DoubledBallRender/StaticImage" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,235},{0,2},{0,261},{0,28}}" />
+            <Property Name="Image" Value="set:doubleBall image:gou" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

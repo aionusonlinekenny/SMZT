@@ -1,0 +1,198 @@
+<GUILayout>
+    <Window Name="GangTip" Type="GuiLook/CommonBg3">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,340},{0,480}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GangTip/gangnameTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,4},{0,78},{0,22}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="帮派名称：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangTip/wang1Txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,34},{0,78},{0,52}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="帮    主：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangTip/wang2Txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,64},{0,78},{0,82}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="副 帮 主：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangTip/gangmessageTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,94},{0,78},{0,112}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="帮派简介：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangTip/desc1" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,107},{0,4},{0,217},{0,22}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangTip/vipImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,80},{0,36},{0,104},{0,52}}" />
+            <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="GangTip/sexImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,105},{0,36},{0,121},{0,52}}" />
+            <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="GangTip/vipImg2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,80},{0,66},{0,104},{0,82}}" />
+            <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="GangTip/sexImg2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,105},{0,66},{0,121},{0,82}}" />
+            <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="GangTip/playernameTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,122},{0,34},{0,205},{0,52}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="临江仙·逍遥" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangTip/playername2Txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,122},{0,64},{0,205},{0,82}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="临江仙·逍遥" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangTip/descTxt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,80},{0,94},{0,339},{0,112}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="临江仙·逍遥临江仙·逍遥临江仙·逍遥" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangTip/playerlevelTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,214},{0,34},{0,257},{0,52}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="Lv.128" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangTip/playerlevel2Txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,214},{0,64},{0,257},{0,82}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="Lv.128" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangTip/stateTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,258},{0,34},{0,339},{0,52}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="[当前在线]" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ff85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangTip/state2Txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,258},{0,64},{0,340},{0,82}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="[当前不在线]" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ffaaaaaa" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangTip/wuTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,80},{0,63},{0,103},{0,82}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="无" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangTip/downView" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,126},{0,339},{0,442}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangTip/downView/nullImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,16},{0,339},{0,195},{0,360}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangTip/downView/yearTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,81},{0,29},{0,251},{0,47}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="2014.3.25" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangTip/downView/creatTimeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,29},{0,80},{0,47}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="创建时间：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangTip/downView/Line" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,52},{0,341},{0,53}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangTip/downView/flaglevelTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,-1},{0,80},{0,17}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="旗帜等级：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangTip/downView/desc2$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,206},{0,72},{0,331},{0,263}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangTip/downView/levelnumberTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,81},{0,-1},{0,121},{0,17}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="5级" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GangTip/desc12" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,78},{0,4},{0,106},{0,22}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="蜀丶" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

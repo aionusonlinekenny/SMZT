@@ -1,0 +1,215 @@
+<GUILayout>
+    <Window Name="MapCurrentPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,780},{0,432}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="MapCurrentPage/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,585},{0,432}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="MapCurrentPage/background/borderImg" Type="GlossySerpent/NineStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,586},{0,432}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TopImage" Value="set:mapGeneral image:north" />
+                <Property Name="LeftImage" Value="set:mapGeneral image:east" />
+                <Property Name="TopOffset" Value="20" />
+                <Property Name="LeftOffset" Value="19" />
+                <Property Name="RightImage" Value="set:mapGeneral image:west" />
+                <Property Name="BottomImage" Value="set:mapGeneral image:south" />
+                <Property Name="CenterImage" Value="set:mapGeneral image:centre" />
+                <Property Name="RightOffset" Value="19" />
+                <Property Name="BottomOffset" Value="20" />
+                <Property Name="TopLeftImage" Value="set:mapGeneral image:northWest" />
+                <Property Name="TopRightImage" Value="set:mapGeneral image:northEast" />
+                <Property Name="BottomLeftImage" Value="set:mapGeneral image:southWest" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BottomRightImage" Value="set:mapGeneral image:southEast" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="MapCurrentPage/background/borderImg/mapView" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,577},{0,424}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{0,5000},{0,5000}}" />
+                    <Window Name="MapCurrentPage/background/borderImg/mapView/mapBgImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,569},{0,416}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{0,5000},{0,5000}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="VertFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="MapCurrentPage/background/borderImg/mapView/mapBgImg/mapBgImg1" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,576},{0,0},{0,1145},{0,416}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{0,5000},{0,5000}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="LeftAligned" />
+                            <Property Name="VertFormatting" Value="LeftAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                        <Window Name="MapCurrentPage/background/borderImg/mapView/mapBgImg/pathView" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,569},{0,416}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{0,5000},{0,5000}}" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                        <Window Name="MapCurrentPage/background/borderImg/mapView/mapBgImg/iconView" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,569},{0,416}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{0,5000},{0,5000}}" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                            <Window Name="MapCurrentPage/background/borderImg/mapView/mapBgImg/iconView/ownImg" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,247},{0,215},{0,272},{0,267}}" />
+                                <Property Name="Image" Value="set:mainUI1 image:self" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="LeftAligned" />
+                                <Property Name="VertFormatting" Value="TopAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="MapCurrentPage/background/borderImg/namebg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,122},{0,-8},{0,448},{0,17}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Bottom" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Window Name="MapCurrentPage/background/borderImg/namebg/nameTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,326},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="官渡（111,323）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="MapCurrentPage/background/borderImg/leftBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,159},{0,45},{0,256}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:left" />
+                </Window>
+                <Window Name="MapCurrentPage/background/borderImg/downBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,235},{0,364},{0,331},{0,399}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:down" />
+                </Window>
+                <Window Name="MapCurrentPage/background/borderImg/upBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,236},{0,10},{0,332},{0,45}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:up" />
+                </Window>
+                <Window Name="MapCurrentPage/background/borderImg/rightBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,544},{0,159},{0,579},{0,256}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:right" />
+                </Window>
+            </Window>
+            <Window Name="MapCurrentPage/background/NPCView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,174},{0,29}}" />
+                <Property Name="UnifiedMaxSize" Value="{{0,5000},{0,500000}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="MapCurrentPage/background/NPCView/NPCBtn" Type="GuiLook/CommonCheckbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,174},{0,29}}" />
+                    <Property Name="checkNormal" Value="set:mapGeneral image:strip1" />
+                    <Property Name="checkSelected" Value="set:mapGeneral image:strip2" />
+                    <Window Name="MapCurrentPage/background/NPCView/NPCBtn/NPCTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,34},{0,0},{0,107},{0,29}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="NPC" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ff64d4d8" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="MapCurrentPage/background/NPCView/NPCBtn/rightImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,14},{0,9},{0,25},{0,20}}" />
+                        <Property Name="Image" Value="set:mapGeneral image:smallRight" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="MapCurrentPage/background/monsterView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,29},{0,174},{0,58}}" />
+                <Property Name="UnifiedMaxSize" Value="{{0,5000},{0,5000}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="MapCurrentPage/background/monsterView/monsterBtn" Type="GuiLook/CommonCheckbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,174},{0,29}}" />
+                    <Property Name="checkNormal" Value="set:mapGeneral image:strip1" />
+                    <Property Name="checkSelected" Value="set:mapGeneral image:strip2" />
+                    <Window Name="MapCurrentPage/background/monsterView/monsterBtn/monsterTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,34},{0,0},{0,107},{0,29}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="怪物" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ff64d4d8" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="MapCurrentPage/background/monsterView/monsterBtn/rightImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,14},{0,9},{0,25},{0,20}}" />
+                        <Property Name="Image" Value="set:mapGeneral image:smallRight" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="MapCurrentPage/background/transferView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,174},{0,87}}" />
+                <Property Name="UnifiedMaxSize" Value="{{0,5000},{0,5000}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="MapCurrentPage/background/transferView/transferBtn" Type="GuiLook/CommonCheckbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,174},{0,29}}" />
+                    <Property Name="checkNormal" Value="set:mapGeneral image:strip1" />
+                    <Property Name="checkSelected" Value="set:mapGeneral image:strip2" />
+                    <Window Name="MapCurrentPage/background/transferView/transferBtn/transferTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,34},{0,0},{0,107},{0,29}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="传送点" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ff64d4d8" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="MapCurrentPage/background/transferView/transferBtn/rightImg3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,14},{0,9},{0,25},{0,20}}" />
+                        <Property Name="Image" Value="set:mapGeneral image:smallRight" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="MapCurrentPage/ScrollablePane" Type="GuiLook/ScrollablePane">
+            <Property Name="UnifiedAreaRect" Value="{{0,589},{0,3},{0,779},{0,431}}" />
+            <AutoWindow NameSuffix="__auto_container__">
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+            </AutoWindow>
+            <AutoWindow NameSuffix="__auto_hscrollbar__">
+                <Property Name="NonClient" Value="true" />
+                <Property Name="AlwaysOnTop" Value="true" />
+            </AutoWindow>
+            <AutoWindow NameSuffix="__auto_vscrollbar__">
+                <Property Name="NonClient" Value="true" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="VerticalScrollbar" Value="true" />
+            </AutoWindow>
+        </Window>
+    </Window>
+</GUILayout>

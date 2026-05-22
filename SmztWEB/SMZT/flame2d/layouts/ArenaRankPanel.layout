@@ -1,0 +1,102 @@
+<GUILayout>
+    <Window Name="ArenaRankPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,371},{0,391}}" />
+        <Property Name="Text" Value="天下第一榜" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="ArenaRankPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,348},{0,353},{0,349}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="ArenaRankPanel/CommonBg3" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,353},{0,345}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ArenaRankPanel/CommonBg3/HeaderList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,57},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="ArenaRankPanel/CommonBg3/HeaderList/StaticText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,57},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="排名" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ArenaRankPanel/CommonBg3/HeaderList2" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,57},{0,0},{0,206},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="ArenaRankPanel/CommonBg3/HeaderList2/StaticText2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,149},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="玩家名称" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ArenaRankPanel/CommonBg3/HeaderList3" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,206},{0,0},{0,270},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="ArenaRankPanel/CommonBg3/HeaderList3/StaticText3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="等级" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ArenaRankPanel/CommonBg3/HeaderList4" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,270},{0,0},{0,353},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="ArenaRankPanel/CommonBg3/HeaderList4/StaticText4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="战力" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ArenaRankPanel/CommonBg3/list" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,28},{0,352},{0,340}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

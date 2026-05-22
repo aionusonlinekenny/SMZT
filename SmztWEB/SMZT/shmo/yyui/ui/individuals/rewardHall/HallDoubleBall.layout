@@ -1,0 +1,196 @@
+<GUILayout>
+    <Window Name="HallDoubleBall" Type="GuiLook/CommonBg3">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,645},{0,516}}" />
+        <Property Name="Text" Value="8" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="HallDoubleBall/boxSP" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,269},{0,644},{0,515}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="HallDoubleBall/middleBackground" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,240},{0,644},{0,268}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+            <Property Name="RightImage" Value="set:skin image:HeadRight" />
+            <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+            <Window Name="HallDoubleBall/middleBackground/project" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,643},{0,23}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="今日待完成项目" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="HallDoubleBall/background" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,644},{0,239}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="HallDoubleBall/background/arrouNormal" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,520},{0,2},{0,641},{0,42}}" />
+                <Property Name="Image" Value="set:skins image:arrowNormal" />
+                <Window Name="HallDoubleBall/background/arrouNormal/lookTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,121},{0,40}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value=" 查看奖励" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="HallDoubleBall/background/wordTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,123},{0,196},{0,211},{0,214}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="下一双色球：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallDoubleBall/background/countTimeTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,137},{0,8},{0,153},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="8" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallDoubleBall/background/smallbackground" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,21},{0,139},{0,625},{0,151}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="HallDoubleBall/background/smallbackground/blueBackground$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,604},{0,12}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:BlueProgressBarLeft" />
+                    <Property Name="RightImage" Value="set:skin image:BlueProgressBarRignt" />
+                    <Property Name="CenterImage" Value="set:skin image:BlueProgressBarCenter" />
+                </Window>
+                <Window Name="HallDoubleBall/background/smallbackground/blueLine1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,75},{0,0},{0,76},{0,10}}" />
+                    <Property Name="Image" Value="set:hallReward image:blueLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="HallDoubleBall/background/smallbackground/blueLine2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,150},{0,0},{0,151},{0,10}}" />
+                    <Property Name="Image" Value="set:hallReward image:blueLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="HallDoubleBall/background/smallbackground/blueLine3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,525},{0,0},{0,526},{0,10}}" />
+                    <Property Name="Image" Value="set:hallReward image:blueLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="HallDoubleBall/background/smallbackground/blueLine4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,225},{0,0},{0,226},{0,10}}" />
+                    <Property Name="Image" Value="set:hallReward image:blueLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="HallDoubleBall/background/smallbackground/blueLine5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,450},{0,0},{0,451},{0,10}}" />
+                    <Property Name="Image" Value="set:hallReward image:blueLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="HallDoubleBall/background/smallbackground/blueLine6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,375},{0,0},{0,376},{0,10}}" />
+                    <Property Name="Image" Value="set:hallReward image:blueLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="HallDoubleBall/background/smallbackground/blueLine7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,300},{0,0},{0,301},{0,10}}" />
+                    <Property Name="Image" Value="set:hallReward image:blueLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="HallDoubleBall/background/wordTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,212},{0,198},{0,617},{0,216}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallDoubleBall/background/winRewardNumTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,137},{0,38},{0,347},{0,56}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="12" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFEA00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallDoubleBall/background/rwdGrade" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,348},{0,37},{0,423},{0,55}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="（未中奖）" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF0000" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallDoubleBall/background/ballListSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,53},{0,64},{0,620},{0,179}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="HallDoubleBall/background/countTimeTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,156},{0,8},{0,172},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="8" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallDoubleBall/background/countTimeTxt3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,202},{0,8},{0,218},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="8" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallDoubleBall/background/countTimeTxt4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,221},{0,8},{0,237},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="8" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallDoubleBall/background/countTimeTxt5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,264},{0,8},{0,280},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="8" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallDoubleBall/background/countTimeTxt6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,283},{0,8},{0,299},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="8" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

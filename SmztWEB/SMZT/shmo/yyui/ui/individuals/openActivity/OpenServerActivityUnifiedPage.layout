@@ -1,0 +1,394 @@
+<GUILayout>
+    <Window Name="OpenServerActivityUnifiedPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,647},{0,517}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="OpenServerActivityUnifiedPage/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,646},{0,190}}" />
+            <Property Name="Image" Value="set:openActivityBg2 image:unifiedWorld" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="OpenServerActivityUnifiedPage/bg/timeImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,163},{0,242},{0,184}}" />
+                <Property Name="Image" Value="set:openActivity image:remaining" />
+                <Property Name="UnifiedMaxSize" Value="{{0,400},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="OpenServerActivityUnifiedPage/bg/timeImg/dayImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,110},{0,0},{0,129},{0,21}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="OpenServerActivityUnifiedPage/bg/timeImg/hourImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,146},{0,0},{0,171},{0,21}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="OpenServerActivityUnifiedPage/bg/timeImg/pointsImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,192},{0,0},{0,217},{0,21}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/bg/arrowBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,522},{0,3},{0,643},{0,43}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="三国杀" />
+                <Property Name="HoverImage" Value="set:skins image:arrowHover" />
+                <Property Name="NormalImage" Value="set:skins image:arrowNormal" />
+                <Property Name="PushedImage" Value="set:skins image:arrowPushed" />
+                <Property Name="HoverTextColour" Value="FFFFea00" />
+                <Property Name="NormalTextColour" Value="FFFFea00" />
+                <Property Name="PushedTextColour" Value="FFFFea00" />
+            </Window>
+        </Window>
+        <Window Name="OpenServerActivityUnifiedPage/line" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,190},{0,647},{0,191}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:Line2Left" />
+            <Property Name="LeftOffset" Value="93" />
+            <Property Name="RightImage" Value="set:skin image:Line2Right" />
+            <Property Name="CenterImage" Value="set:skin image:Line1Center2" />
+            <Property Name="RightOffset" Value="93" />
+        </Window>
+        <Window Name="OpenServerActivityUnifiedPage/bg2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,226},{0,405},{0,510}}" />
+            <Property Name="Image" Value="set:openActivity image:bg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="OpenServerActivityUnifiedPage/bg2/rolePos" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,200},{0,260},{0,210},{0,270}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/bg2/receiveBtn3" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,245},{0,241},{0,268}}" />
+                <Property Name="Text" Value="领取奖励" />
+                <Property Name="Visible" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/bg2/gridBg31" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,290},{0,227},{0,338},{0,275}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="OpenServerActivityUnifiedPage/bg2/gridBg31/itemImg31" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/bg2/gridBg32" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,340},{0,227},{0,388},{0,275}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="OpenServerActivityUnifiedPage/bg2/gridBg32/itemImg32" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/bg2/redBox" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,245},{0,241},{0,268}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="LeftImage" Value="set:skin image:RedBoxLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:RedBoxRight" />
+                <Property Name="CenterImage" Value="set:skin image:RedBoxMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="OpenServerActivityUnifiedPage/bg2/redBox/redTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,80},{0,23}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="等级不足" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/bg2/playerBox" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,400},{0,86}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="OpenServerActivityUnifiedPage/bg2/playerBox/titleImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,80},{0,-2},{0,343},{0,64}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="OpenServerActivityUnifiedPage/bg2/playerBox/playerDataSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,126},{0,62},{0,279},{0,82}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="OpenServerActivityUnifiedPage/bg2/playerBox/playerDataSp/sexImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,14},{0,2},{0,30},{0,18}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="OpenServerActivityUnifiedPage/bg2/playerBox/playerDataSp/vipImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,36},{0,2},{0,60},{0,18}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:GoldVip7" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="OpenServerActivityUnifiedPage/bg2/playerBox/playerDataSp/nameTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,152},{0,20}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="玩家名字六子" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="OpenServerActivityUnifiedPage/titleImg3" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,195},{0,405},{0,225}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:ListTitleBgLeft" />
+            <Property Name="LeftOffset" Value="19" />
+            <Property Name="RightImage" Value="set:skin image:ListTitleBgRight" />
+            <Property Name="CenterImage" Value="set:skin image:ListTitleBgCenter" />
+            <Property Name="RightOffset" Value="19" />
+            <Window Name="OpenServerActivityUnifiedPage/titleImg3/titleTxt3$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,8},{0,400},{0,30}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="统一三国的阵营之主" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="OpenServerActivityUnifiedPage/commonBg1" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,408},{0,196},{0,643},{0,338}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="OpenServerActivityUnifiedPage/commonBg1/titleImg1" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,235},{0,30}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:ListTitleBgLeft" />
+                <Property Name="LeftOffset" Value="19" />
+                <Property Name="RightImage" Value="set:skin image:ListTitleBgRight" />
+                <Property Name="CenterImage" Value="set:skin image:ListTitleBgCenter" />
+                <Property Name="RightOffset" Value="19" />
+                <Window Name="OpenServerActivityUnifiedPage/commonBg1/titleImg1/titleTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,235},{0,30}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="征服者" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/commonBg1/campWarTxt1$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,37},{0,235},{0,57}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="阵营战积分50以上的胜利阵营玩家" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/commonBg1/gridBg11" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,40},{0,60},{0,88},{0,108}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="OpenServerActivityUnifiedPage/commonBg1/gridBg11/itemImg11" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/commonBg1/gridBg12" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,90},{0,60},{0,138},{0,108}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="OpenServerActivityUnifiedPage/commonBg1/gridBg12/itemImg12" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/commonBg1/activityTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,115},{0,223},{0,135}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="活动结束即可领取" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/commonBg1/gridBg13" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,140},{0,60},{0,188},{0,108}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="OpenServerActivityUnifiedPage/commonBg1/gridBg13/itemImg13" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/commonBg1/receiveBtn1" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,75},{0,112},{0,156},{0,135}}" />
+                <Property Name="Text" Value="领取奖励" />
+                <Property Name="Visible" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="OpenServerActivityUnifiedPage/commonBg2" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,408},{0,342},{0,643},{0,510}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="OpenServerActivityUnifiedPage/commonBg2/titleImg2" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,235},{0,30}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:ListTitleBgLeft" />
+                <Property Name="LeftOffset" Value="19" />
+                <Property Name="RightImage" Value="set:skin image:ListTitleBgRight" />
+                <Property Name="CenterImage" Value="set:skin image:ListTitleBgCenter" />
+                <Property Name="RightOffset" Value="19" />
+                <Window Name="OpenServerActivityUnifiedPage/commonBg2/titleImg2/titleTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,235},{0,30}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="参与者" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/commonBg2/campWarTxt2$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,37},{0,235},{0,57}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="阵营战积分达到50分的玩家" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/commonBg2/gridBg21" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0,85},{0,90},{0,133}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="OpenServerActivityUnifiedPage/commonBg2/gridBg21/itemImg21" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/commonBg2/gridBg22" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,92},{0,85},{0,140},{0,133}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="OpenServerActivityUnifiedPage/commonBg2/gridBg22/itemImg22" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/commonBg2/gridBg23" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,85},{0,190},{0,133}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="OpenServerActivityUnifiedPage/commonBg2/gridBg23/itemImg23" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/commonBg2/progressBg" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,23},{0,62},{0,208},{0,74}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="OpenServerActivityUnifiedPage/commonBg2/progressBg/progressBar" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,184},{0,11}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:BlueProgressBarLeft" />
+                    <Property Name="LeftOffset" Value="48" />
+                    <Property Name="RightImage" Value="set:skin image:BlueProgressBarRight" />
+                    <Property Name="CenterImage" Value="set:skin image:BlueProgressBarCenter" />
+                    <Property Name="RightOffset" Value="48" />
+                </Window>
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/commonBg2/receiveBtn2" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,75},{0,138},{0,156},{0,161}}" />
+                <Property Name="Text" Value="领取奖励" />
+                <Property Name="Visible" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityUnifiedPage/commonBg2/redBox2" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,75},{0,138},{0,156},{0,161}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="LeftImage" Value="set:skin image:RedBoxLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:RedBoxRight" />
+                <Property Name="CenterImage" Value="set:skin image:RedBoxMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="OpenServerActivityUnifiedPage/commonBg2/redBox2/redTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,80},{0,23}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="等级不足" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

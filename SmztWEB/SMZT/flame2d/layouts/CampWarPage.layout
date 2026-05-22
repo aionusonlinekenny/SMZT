@@ -1,0 +1,433 @@
+<GUILayout>
+    <Window Name="CampWarPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,866},{0,485}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CampWarPage/bottomBG" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,410},{0,866},{0,484}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CampWarPage/bottomBG/BlueButton" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,21},{0,25},{0,123},{0,48}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="阵营战说明" />
+            </Window>
+            <Window Name="CampWarPage/bottomBG/RedButton" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,276},{0,5},{0,588},{0,69}}" />
+                <Window Name="CampWarPage/bottomBG/RedButton/nextTimeImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,312},{0,32}}" />
+                    <Property Name="Image" Value="set:warCampGeneral image:nextTime2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+                <Window Name="CampWarPage/bottomBG/RedButton/timeTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,32},{0,312},{0,64}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="04月19日20时00分" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+                <Window Name="CampWarPage/bottomBG/RedButton/killImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,312},{0,64}}" />
+                    <Property Name="Image" Value="set:warCampGeneral image:kill" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="CampWarPage/bottomBG/OrangeButton" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,738},{0,25},{0,840},{0,48}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="统一奖励" />
+            </Window>
+        </Window>
+        <Window Name="CampWarPage/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,865},{0,410}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="CampWarPage/bgImg/shadowImg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,66},{0,14},{0,800},{0,54}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:warCampGeneral image:BgLeft" />
+                <Property Name="LeftOffset" Value="219" />
+                <Property Name="RightImage" Value="set:warCampGeneral image:BgRight" />
+                <Property Name="CenterImage" Value="set:warCampGeneral image:BgMiddle" />
+                <Property Name="RightOffset" Value="219" />
+                <Window Name="CampWarPage/bgImg/shadowImg/unifiedImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,80},{0,0},{0,474},{0,40}}" />
+                    <Property Name="Image" Value="set:warCampGeneral image:unified" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="CampWarPage/bgImg/shadowImg/kingThreeImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,474},{0,0},{0,611},{0,40}}" />
+                    <Property Name="Image" Value="set:warCampGeneral image:kingThreeWord" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampWarPage/bgImg/boxsp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,13},{0,60},{0,853},{0,398}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="CampWarPage/shadowBgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,865},{0,410}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="CampWarPage/shadowBgImg/StaticImage411" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,603},{0,79},{0,854},{0,293}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/StaticImage511" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,295},{0,76},{0,562},{0,160}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/StaticImage811" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,295},{0,208},{0,562},{0,269}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/StaticImage111" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,77},{0,278},{0,145}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/StaticImage711" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,295},{0,307},{0,562},{0,377}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/StaticImage311" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,302},{0,278},{0,405}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/StaticImage211" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,177},{0,278},{0,266}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/shadowBgImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,864},{0,409}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/StaticImage5112" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,295},{0,76},{0,562},{0,160}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/StaticImage2112" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,177},{0,278},{0,266}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/StaticImage1112" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,77},{0,278},{0,145}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/StaticImage7112" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,295},{0,307},{0,562},{0,377}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/StaticImage8112" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,295},{0,208},{0,562},{0,269}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/StaticImage4112" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,603},{0,79},{0,854},{0,293}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/StaticImage3112" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,302},{0,278},{0,405}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/bluebgImg8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,603},{0,47},{0,809},{0,74}}" />
+                <Property Name="Image" Value="set:cityGeneral image:blackshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampWarPage/shadowBgImg/bluebgImg8/descTxt8" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,207},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="温馨提示：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/redbgImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,299},{0,12},{0,567},{0,41}}" />
+                <Property Name="Image" Value="set:cityGeneral image:redshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampWarPage/shadowBgImg/redbgImg2/rewardImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,268},{0,29}}" />
+                    <Property Name="Image" Value="set:cityGeneral image:reward" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/bluebgImg6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,295},{0,176},{0,501},{0,203}}" />
+                <Property Name="Image" Value="set:cityGeneral image:blackshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampWarPage/shadowBgImg/bluebgImg6/descTxt6" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,207},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="胜方奖励：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/desc$RI6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,295},{0,208},{0,562},{0,269}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/desc$RI3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,302},{0,278},{0,405}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/bluebgImg4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,295},{0,47},{0,501},{0,74}}" />
+                <Property Name="Image" Value="set:cityGeneral image:blackshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampWarPage/shadowBgImg/bluebgImg4/descTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,207},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="战斗奖励：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/returnBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,795},{0,358},{0,851},{0,390}}" />
+                <Property Name="Image" Value="set:cityGeneral image:return" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/bluebgImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,270},{0,217},{0,297}}" />
+                <Property Name="Image" Value="set:cityGeneral image:blackshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampWarPage/shadowBgImg/bluebgImg3/descTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,207},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="胜负判断：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/bluebgImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,148},{0,217},{0,175}}" />
+                <Property Name="Image" Value="set:cityGeneral image:blackshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampWarPage/shadowBgImg/bluebgImg2/descTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,207},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="开启时间：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/desc$RI8" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,603},{0,79},{0,854},{0,293}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/desc$RI7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,295},{0,307},{0,562},{0,377}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/desc$RI2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,177},{0,278},{0,266}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/bluebgImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,47},{0,217},{0,74}}" />
+                <Property Name="Image" Value="set:cityGeneral image:blackshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampWarPage/shadowBgImg/bluebgImg1/descTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,207},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="入场条件：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/desc$RI4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,295},{0,76},{0,562},{0,160}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/redbgImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,598},{0,12},{0,866},{0,41}}" />
+                <Property Name="Image" Value="set:cityGeneral image:redshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampWarPage/shadowBgImg/redbgImg3/promptImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,268},{0,29}}" />
+                    <Property Name="Image" Value="set:cityGeneral image:prompt" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/redbgImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,12},{0,268},{0,41}}" />
+                <Property Name="Image" Value="set:cityGeneral image:redshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampWarPage/shadowBgImg/redbgImg1/ruleImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,268},{0,29}}" />
+                    <Property Name="Image" Value="set:cityGeneral image:rules" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/bluebgImg7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,295},{0,276},{0,501},{0,303}}" />
+                <Property Name="Image" Value="set:cityGeneral image:blackshadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampWarPage/shadowBgImg/bluebgImg7/descTxt7" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,207},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="统一奖励：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CampWarPage/shadowBgImg/desc$RI1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,77},{0,278},{0,145}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

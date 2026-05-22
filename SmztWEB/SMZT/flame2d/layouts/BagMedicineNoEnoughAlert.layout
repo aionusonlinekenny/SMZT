@@ -1,0 +1,77 @@
+<GUILayout>
+    <Window Name="BagMedicineNoEnoughAlert" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,451},{0,214}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="BagMedicineNoEnoughAlert/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,451},{0,214}}" />
+            <Property Name="Image" Value="set:activities image:bg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="BagMedicineNoEnoughAlert/bg/closeBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,428},{0,61},{0,445},{0,78}}" />
+                <Property Name="Image" Value="set:mainUI1 image:closeBtn" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+            </Window>
+            <Window Name="BagMedicineNoEnoughAlert/bg/descTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,221},{0,103},{0,381},{0,121}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="通过以下途径可解决：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BagMedicineNoEnoughAlert/bg/promptImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,221},{0,72},{0,376},{0,91}}" />
+                <Property Name="Image" Value="set:bagNoEnough image:noenough" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="BagMedicineNoEnoughAlert/bg/check" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,220},{0,193},{0,344},{0,209}}" />
+                <Property Name="Text" Value="本次登录不再提示" />
+                <Property Name="HoverTextColour" Value="FF64d4d8" />
+            </Window>
+            <Window Name="BagMedicineNoEnoughAlert/bg/wayImgBtn1" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,238},{0,128},{0,292},{0,182}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Image" Value="set:bagNoEnough image:bag" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="TopAligned" />
+                <Property Name="VertLabelFormatting" Value="BottomAligned" />
+                <Window Name="BagMedicineNoEnoughAlert/bg/wayImgBtn1/StaticText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,36},{0,54},{0,54}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="血包" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFfcd78a" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="BagMedicineNoEnoughAlert/bg/wayImgBtn2" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,326},{0,128},{0,380},{0,182}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Image" Value="set:bagNoEnough image:medicine" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="TopAligned" />
+                <Property Name="VertLabelFormatting" Value="BottomAligned" />
+                <Window Name="BagMedicineNoEnoughAlert/bg/wayImgBtn2/StaticText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,36},{0,54},{0,54}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="药店" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFfcd78a" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

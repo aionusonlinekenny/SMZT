@@ -1,0 +1,361 @@
+<GUILayout>
+    <Window Name="Title" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,810},{0,529}}" />
+        <Property Name="GlyphImage" Value="set:title image:title" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="Title/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,794},{0,482}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="Title/background/rightBackground" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,156},{0,0},{0,792},{0,478}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="Title/background/rightBackground/bgImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,635},{0,477}}" />
+                    <Property Name="Image" Value="set:titlebackground image:titlebackground" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="LeftAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="Title/background/rightBackground/bgImg/point10" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,418},{0,49},{0,426},{0,57}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="Title/background/rightBackground/bgImg/desc$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,433},{0,43},{0,627},{0,143}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="Title/background/rightBackground/bgImg/desc1Txt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,430},{0,314},{0,492},{0,332}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="需求等级：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="Title/background/rightBackground/bgImg/point11" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,419},{0,318},{0,427},{0,326}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="Title/background/rightBackground/bgImg/point12" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,419},{0,345},{0,427},{0,353}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="Title/background/rightBackground/bgImg/desc2Txt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,430},{0,340},{0,492},{0,358}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="激活条件：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="Title/background/rightBackground/bgImg/leveTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,493},{0,314},{0,578},{0,332}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFaaaaaa" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="Title/background/rightBackground/bgImg/funBtn" Type="GlossySerpent/RedButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,439},{0,422},{0,602},{0,462}}" />
+                        <Window Name="Title/background/rightBackground/bgImg/funBtn/funImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                            <Property Name="Image" Value="set:title image:wear" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                    <Window Name="Title/background/rightBackground/bgImg/d3DView" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,180},{0,430},{0,213},{0,453}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    </Window>
+                    <Window Name="Title/background/rightBackground/bgImg/title1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,5},{0,365},{0,105}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="Title/background/rightBackground/bgImg/title0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,60},{0,365},{0,160}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="Title/background/rightBackground/bgImg/infoWin" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,415},{0,183},{0,619},{0,264}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox0" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,102},{0,27}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox0/point0" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,9},{0,12},{0,17}}" />
+                                <Property Name="Image" Value="set:skin image:MarkImg" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox0/attackTxt0" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,5},{0,45},{0,23}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="Text" Value="攻击" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox0/numTxt0" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,96},{0,23}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF85f500" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox1" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,102},{0,0},{0,204},{0,27}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox1/point1" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,9},{0,12},{0,17}}" />
+                                <Property Name="Image" Value="set:skin image:MarkImg" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox1/attackTxt1" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,5},{0,45},{0,23}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="Text" Value="生命" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox1/numTxt1" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,96},{0,23}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF85f500" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox2" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,102},{0,54}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox2/point2" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,9},{0,12},{0,17}}" />
+                                <Property Name="Image" Value="set:skin image:MarkImg" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox2/attackTxt2" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,5},{0,45},{0,23}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="Text" Value="防御" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox2/numTxt2" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,96},{0,23}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF85f500" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox3" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,102},{0,27},{0,204},{0,54}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox3/point3" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,9},{0,12},{0,17}}" />
+                                <Property Name="Image" Value="set:skin image:MarkImg" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox3/attackTxt3" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,5},{0,45},{0,23}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="Text" Value="命中" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox3/numTxt3" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,96},{0,23}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF85f500" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox4" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,54},{0,102},{0,81}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox4/point4" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,9},{0,12},{0,17}}" />
+                                <Property Name="Image" Value="set:skin image:MarkImg" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox4/attackTxt4" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,5},{0,45},{0,23}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="Text" Value="坚韧" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox4/numTxt4" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,96},{0,23}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF85f500" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox5" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,102},{0,54},{0,204},{0,81}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox5/point6" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,9},{0,12},{0,17}}" />
+                                <Property Name="Image" Value="set:skin image:MarkImg" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox5/attackTxt5" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,5},{0,45},{0,23}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="Text" Value="天命" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                            <Window Name="Title/background/rightBackground/bgImg/infoWin/infoBox5/numTxt5" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,96},{0,23}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF85f500" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                    </Window>
+                    <Window Name="Title/background/rightBackground/bgImg/conditionDesTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,430},{0,363},{0,601},{0,381}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="Title/background/radioTab0" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,134},{0,42}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+                <Window Name="Title/background/radioTab0/radioTxtImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,105},{0,38}}" />
+                    <Property Name="Image" Value="set:title image:generalTitle" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="Title/background/radioTab0/openBtn0" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,107},{0,1},{0,128},{0,36}}" />
+                    <Property Name="Image" Value="set:skins image:line" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                </Window>
+            </Window>
+            <Window Name="Title/background/radioTab1" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,43},{0,134},{0,81}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+                <Window Name="Title/background/radioTab1/radioTxtImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,105},{0,38}}" />
+                    <Property Name="Image" Value="set:title image:specialTitle" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="Title/background/radioTab1/openBtn1" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,107},{0,1},{0,128},{0,36}}" />
+                    <Property Name="Image" Value="set:skins image:line" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                </Window>
+            </Window>
+            <Window Name="Title/background/secondList" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,200},{0,130},{0,400}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{0,2000}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="Title/list" Type="GuiLook/ScrollablePane">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,8},{0,153},{0,478}}" />
+            <AutoWindow NameSuffix="__auto_container__">
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+            </AutoWindow>
+            <AutoWindow NameSuffix="__auto_hscrollbar__">
+                <Property Name="NonClient" Value="true" />
+                <Property Name="AlwaysOnTop" Value="true" />
+            </AutoWindow>
+            <AutoWindow NameSuffix="__auto_vscrollbar__">
+                <Property Name="NonClient" Value="true" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="VerticalScrollbar" Value="true" />
+            </AutoWindow>
+        </Window>
+    </Window>
+</GUILayout>

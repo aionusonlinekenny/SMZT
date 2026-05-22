@@ -1,0 +1,82 @@
+<GUILayout>
+    <Window Name="FestivalActivityPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,859},{0,566}}" />
+        <Property Name="GlyphImage" Value="set:festivalActivity image:title" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="FestivalActivityPanel/radioTab1" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,45},{0,120},{0,85}}" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover3" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover3" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal3" />
+            <Window Name="FestivalActivityPanel/radioTab1/leijiImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,120},{0,40}}" />
+                <Property Name="Image" Value="set:festivalActivity image:radioTab2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="FestivalActivityPanel/radioTab2" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,86},{0,120},{0,126}}" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover3" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover3" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal3" />
+            <Window Name="FestivalActivityPanel/radioTab2/xiaoFeiImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,120},{0,40}}" />
+                <Property Name="Image" Value="set:festivalActivity image:radioTab3" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="FestivalActivityPanel/radioTab0" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,120},{0,44}}" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover3" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover3" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal3" />
+            <Window Name="FestivalActivityPanel/radioTab0/danbiImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,120},{0,40}}" />
+                <Property Name="Image" Value="set:festivalActivity image:radioTab1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="FestivalActivityPanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,124},{0,4},{0,841},{0,518}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

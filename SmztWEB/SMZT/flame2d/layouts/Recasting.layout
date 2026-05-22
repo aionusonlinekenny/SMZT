@@ -1,0 +1,244 @@
+<GUILayout>
+    <Window Name="Recasting" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,884},{0,618}}" />
+        <Property Name="GlyphImage" Value="set:recasting image:again" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="Recasting/Bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,866},{0,570}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="Recasting/Bg/bgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,865},{0,565}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="Recasting/Bg/bgImg/leftBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,35},{0,25},{0,80}}" />
+                    <Property Name="HoverImage" Value="set:skin image:turnLHover" />
+                    <Property Name="NormalImage" Value="set:skin image:turnLNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:turnLPushed" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/rightBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,839},{0,35},{0,864},{0,80}}" />
+                    <Property Name="HoverImage" Value="set:skin image:turnRHover" />
+                    <Property Name="NormalImage" Value="set:skin image:turnRNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:turnRPushed" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/process$NormalBar" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,205},{0,496},{0,650},{0,516}}" />
+                    <Property Name="Image" Value="set:recasting image:level" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/processEffect" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,207},{0,497},{0,654},{0,517}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/processTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,205},{0,496},{0,650},{0,516}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="Lv.20(100/100)" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/descTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,4},{0,521},{0,868},{0,539}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="说明：每次击杀怪物天荒剑魂将增加该          ，经验值满后         。" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/descTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,413},{0,521},{0,502},{0,539}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="怪物20%的经验" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/descTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,574},{0,521},{0,663},{0,539}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="自动修复升级" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/descTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,327},{0,542},{0,473},{0,560}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="强化、洗练、精炼、镶嵌" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/descTxt5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,471},{0,542},{0,527},{0,560}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="均会保留" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/d3view" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,394},{0,542},{0,524},{0,559}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/fightImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,327},{0,448},{0,391},{0,470}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:fightText" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/fightNumberImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,388},{0,436},{0,458},{0,463}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/boxSP" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,24},{0,3},{0,841},{0,113}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/equipPromt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,204},{0,473},{0,645},{0,501}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/fightUpValueCon" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,460},{0,447},{0,571},{0,478}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="Recasting/Bg/bgImg/fightUpValueCon/plusImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,3},{0,25},{0,30}}" />
+                        <Property Name="Image" Value="set:skin image:add" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="Recasting/Bg/bgImg/fightUpValueCon/fightUpValueImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,27},{0,2},{0,108},{0,33}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/weaponNameImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,287},{0,125},{0,446},{0,159}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/LvImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,446},{0,133},{0,482},{0,156}}" />
+                    <Property Name="Image" Value="set:recasting image:Lv" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/curGradeImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,482},{0,132},{0,528},{0,162}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/topGradeImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,548},{0,132},{0,606},{0,162}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/LineImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,529},{0,132},{0,547},{0,158}}" />
+                    <Property Name="Image" Value="set:recasting image:line" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/d3viewTip" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,281},{0,164},{0,607},{0,447}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/bgEffectWin" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,435},{0,396},{0,455},{0,416}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/d3view2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,542},{0,133},{0,559}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Recasting/Bg/bgImg/d3view3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,734},{0,542},{0,864},{0,559}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="Recasting/Bg/paopaoImg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,574},{0,267},{0,722},{0,304}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skins image:paopaoLeft" />
+                <Property Name="LeftOffset" Value="18" />
+                <Property Name="RightImage" Value="set:skins image:paopaoRigh" />
+                <Property Name="CenterImage" Value="set:skins image:paopaoMiddle" />
+                <Property Name="RightOffset" Value="9" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="Recasting/Bg/paopaoImg/paopaoTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,2},{0,134},{0,35}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

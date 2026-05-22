@@ -1,0 +1,151 @@
+<GUILayout>
+    <Window Name="GodWarFightRewardPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,780},{0,565}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GodWarFightRewardPanel/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,780},{0,565}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="GodWarFightRewardPanel/bg/smallBgImg" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,780},{0,565}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="GodWarFightRewardPanel/bg/smallBgImg/rewardBtn" Type="GlossySerpent/RedButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,496},{0,458},{0,659},{0,498}}" />
+                    <Window Name="GodWarFightRewardPanel/bg/smallBgImg/rewardBtn/rewardImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                        <Property Name="Image" Value="set:skins image:receiveRewardTxt" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="GodWarFightRewardPanel/bg/smallBgImg/cityrankTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,591},{0,416},{0,658},{0,441}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="100" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffea00" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GodWarFightRewardPanel/bg/smallBgImg/citypoint3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,61},{0,466},{0,71},{0,475}}" />
+                    <Property Name="Image" Value="set:activitiesGeneral image:point" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GodWarFightRewardPanel/bg/smallBgImg/citypoint2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,61},{0,486},{0,71},{0,495}}" />
+                    <Property Name="Image" Value="set:activitiesGeneral image:point" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GodWarFightRewardPanel/bg/smallBgImg/citypoint" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,61},{0,425},{0,71},{0,434}}" />
+                    <Property Name="Image" Value="set:activitiesGeneral image:point" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GodWarFightRewardPanel/bg/smallBgImg/citydescTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,74},{0,480},{0,149},{0,498}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="本周总积分：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GodWarFightRewardPanel/bg/smallBgImg/citydesc4Txt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,74},{0,459},{0,343},{0,477}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GodWarFightRewardPanel/bg/smallBgImg/citydesc3Txt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,74},{0,440},{0,404},{0,458}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="其他奖励：（此部分奖励已在活动中获取，仅作统计）" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffea00" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GodWarFightRewardPanel/bg/smallBgImg/citydesc2Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,74},{0,397},{0,177},{0,415}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="排名奖励：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffea00" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GodWarFightRewardPanel/bg/smallBgImg/cityMyrankTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,515},{0,419},{0,590},{0,437}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="我的排名：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GodWarFightRewardPanel/bg/smallBgImg/cityActionRewardTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,74},{0,420},{0,343},{0,438}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="声望+8888888888        帮贡+8888888" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GodWarFightRewardPanel/bg/smallBgImg/citydescTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,149},{0,480},{0,224},{0,498}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GodWarFightRewardPanel/bg/smallBgImg/linkBtn$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,274},{0,482},{0,395},{0,498}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="5000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GodWarFightRewardPanel/bg/closeBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,722},{0,115},{0,745},{0,138}}" />
+                <Property Name="HoverImage" Value="set:activitiesGeneral image:closeHover" />
+                <Property Name="NormalImage" Value="set:activitiesGeneral image:closeNormal" />
+                <Property Name="PushedImage" Value="set:activitiesGeneral image:closePushed" />
+            </Window>
+            <Window Name="GodWarFightRewardPanel/bg/cityOpenTimeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,516},{0,644},{0,534}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="下届王城争霸战活动开启时间：2014年8月8日 20:00" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffffea00" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GodWarFightRewardPanel/bg/rewardBgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,134},{0,630},{0,373}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

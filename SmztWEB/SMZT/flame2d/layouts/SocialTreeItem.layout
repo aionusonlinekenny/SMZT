@@ -1,0 +1,51 @@
+<GUILayout>
+    <Window Name="SocialTreeItem" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,256},{0,99}}" />
+        <Property Name="UnifiedMaxSize" Value="{{0,256},{0,9999}}" />
+        <Window Name="SocialTreeItem/radioTab" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,256},{0,29}}" />
+            <Property Name="HoverImage" Value="set:friends image:zu" />
+            <Property Name="SelectedImage" Value="set:friends image:zu1" />
+            <Property Name="UnselectedImage" Value="set:friends image:zu1" />
+            <Window Name="SocialTreeItem/radioTab/titleImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,16},{0,8},{0,28},{0,20}}" />
+                <Property Name="Image" Value="set:friends image:add" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SocialTreeItem/radioTab/txtTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,35},{0,0},{0,138},{0,29}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="点击添加分组" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00e4ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SocialTreeItem/radioTab/redBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,217},{0,0},{0,255},{0,28}}" />
+                <Property Name="Image" Value="set:friends image:redBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="SocialTreeItem/radioTab/redBg/numTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,38},{0,28}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="99+" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

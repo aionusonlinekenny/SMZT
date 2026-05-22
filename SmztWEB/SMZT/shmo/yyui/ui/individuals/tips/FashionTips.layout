@@ -1,0 +1,273 @@
+<GUILayout>
+    <Window Name="FashionTips" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,320},{0,764}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{2,0}}" />
+        <Window Name="FashionTips/commonBg4" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,319},{0,766}}" />
+            <Property Name="UnifiedMaxSize" Value="{{2,0},{2,0}}" />
+            <Property Name="TopImage" Value="set:skins image:tipTop1" />
+            <Property Name="LeftImage" Value="set:skins image:tipLeft1" />
+            <Property Name="TopOffset" Value="9" />
+            <Property Name="LeftOffset" Value="9" />
+            <Property Name="RightImage" Value="set:skins image:tipRight1" />
+            <Property Name="BottomImage" Value="set:skins image:tipBottom1" />
+            <Property Name="CenterImage" Value="set:skins image:tipCenter1" />
+            <Property Name="RightOffset" Value="9" />
+            <Property Name="BottomOffset" Value="9" />
+            <Property Name="TopLeftImage" Value="set:skins image:tipLeftTop1" />
+            <Property Name="TopRightImage" Value="set:skins image:tipRightTop1" />
+            <Property Name="BottomLeftImage" Value="set:skins image:tipLeftBottom1" />
+            <Property Name="BottomRightImage" Value="set:skins image:tipRightBottom1" />
+            <Window Name="FashionTips/commonBg4/productBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,317},{0,176}}" />
+                <Property Name="Image" Value="set:skins image:quality6" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FashionTips/commonBg4/avatarView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,60},{0,358},{0,246},{0,375}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="FashionTips/commonBg4/gridBgEffect" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,17},{0,93},{0,143}}" />
+                <Property Name="Image" Value="set:skins image:qualityItem7" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FashionTips/commonBg4/gridBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,20},{0,43},{0,68},{0,91}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FashionTips/commonBg4/gridBg/itemImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="FashionTips/commonBg4/line2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,35},{0,318},{0,36}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FashionTips/commonBg4/line1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,120},{0,318},{0,121}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FashionTips/commonBg4/equipNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,12},{0,1},{0,257},{0,35}}" />
+                <Property Name="Font" Value="songti_16_strengh" />
+                <Property Name="Text">【时装】1阶踏春无痕(时效)
+</Property>
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FashionTips/commonBg4/qualityImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,262},{0,3},{0,316},{0,34}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FashionTips/commonBg4/bindingStateTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,12},{0,92},{0,74},{0,112}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="未绑定" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFaaaaaa" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FashionTips/commonBg4/fightImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,149},{0,41},{0,248},{0,64}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FashionTips/commonBg4/partsTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,152},{0,83},{0,192},{0,101}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="装备" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FashionTips/commonBg4/equipTypeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,184},{0,83},{0,226},{0,101}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="法宝" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FashionTips/commonBg4/partsTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,83},{0,149},{0,101}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="部位需求：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffffff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FashionTips/commonBg4/gradeTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,65},{0,149},{0,83}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="佩戴需求：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FashionTips/commonBg4/gradeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,152},{0,65},{0,246},{0,83}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="60级" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FashionTips/commonBg4/timeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,102},{0,259},{0,120}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="角色装备" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="FashionTips/diSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,696},{0,318},{0,766}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FashionTips/diSp/line3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,318},{0,2}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FashionTips/diSp/instructionsTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,6},{0,312},{0,34}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="         物品说明：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffd0f8fe" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FashionTips/diSp/DefaultWindow" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,318},{0,68}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="FashionTips/diSp/DefaultWindow/isSaleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,12},{0,43},{0,115},{0,63}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="&lt;不可出售&gt;" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="FashionTips/diSp/DefaultWindow/lineDi" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,39},{0,318},{0,40}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="FashionTips/diSp/DefaultWindow/priceTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,191},{0,44},{0,251},{0,64}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="系统售价：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF7200" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="FashionTips/diSp/DefaultWindow/priceTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,254},{0,44},{0,314},{0,64}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="500铜钱" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF7200" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="FashionTips/permanentAttrSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,382},{0,318},{0,464}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FashionTips/permanentAttrSp/line4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,318},{0,1}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FashionTips/permanentAttrSp/permanentAttrTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,0},{0,121},{0,20}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="基础属性：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FashionTips/permanentAttrSp/permanentAttrTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,21},{0,149},{0,76}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="生命+1000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FashionTips/permanentAttrSp/permanentAttrTxt2$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,168},{0,21},{0,303},{0,76}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="生命+1000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="FashionTips/skillSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,463},{0,318},{0,696}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FashionTips/skillSp/additionalTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,0},{0,121},{0,20}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="额外属性：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FashionTips/skillSp/additionalTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,21},{0,316},{0,233}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="FashionTips/fightTitleImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,70},{0,37},{0,160},{0,67}}" />
+            <Property Name="Image" Value="set:mainUI1 image:fightText" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

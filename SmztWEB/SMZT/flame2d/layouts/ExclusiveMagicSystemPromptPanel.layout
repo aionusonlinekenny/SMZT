@@ -1,0 +1,91 @@
+<GUILayout>
+    <Window Name="ExclusiveMagicSystemPromptPanel" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,360},{0,183}}" />
+        <Property Name="Font" Value="songti_18_strengh" />
+        <Property Name="Text" Value="提示" />
+        <Property Name="CaptionColour" Value="FFffffff" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="ExclusiveMagicSystemPromptPanel/promptTxt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,26},{0,4},{0,318},{0,73}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="你已复制当前专属法宝及变身链接，您可以" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="VertFormatting" Value="TopAligned" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="ExclusiveMagicSystemPromptPanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,110},{0,342},{0,111}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="ExclusiveMagicSystemPromptPanel/staticText2" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,77},{0,64},{0,102}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="分享到：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00baff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="ExclusiveMagicSystemPromptPanel/qqSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,65},{0,77},{0,131.125},{0,102}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ExclusiveMagicSystemPromptPanel/qqSp/qqBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,3.5},{0,19},{0,21.5}}" />
+                <Property Name="Image" Value="exclusiveMagic/qq" />
+            </Window>
+            <Window Name="ExclusiveMagicSystemPromptPanel/qqSp/qqFriend$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,20},{0,0},{0,66},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="QQ好友" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="ExclusiveMagicSystemPromptPanel/sinaSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,152},{0,77},{0,228.75},{0,102}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ExclusiveMagicSystemPromptPanel/sinaSp/sinaBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,3.5},{0,19},{0,21.5}}" />
+                <Property Name="Image" Value="exclusiveMagic/sina" />
+            </Window>
+            <Window Name="ExclusiveMagicSystemPromptPanel/sinaSp/sina$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,20},{0,0},{0,77},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="新浪微博" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="ExclusiveMagicSystemPromptPanel/qqZoneSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,247},{0,77},{0,314.5},{0,102}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ExclusiveMagicSystemPromptPanel/qqZoneSp/qqZoneBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,3.5},{0,19},{0,21.5}}" />
+                <Property Name="Image" Value="exclusiveMagic/qqz" />
+            </Window>
+            <Window Name="ExclusiveMagicSystemPromptPanel/qqZoneSp/qqZone$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,20},{0,0},{0,66},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="QQ空间" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="ExclusiveMagicSystemPromptPanel/sureButton" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,125},{0,114},{0,221},{0,137}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="朕知道了" />
+        </Window>
+    </Window>
+</GUILayout>

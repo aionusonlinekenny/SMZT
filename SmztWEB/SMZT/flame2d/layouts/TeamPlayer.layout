@@ -1,0 +1,70 @@
+<GUILayout>
+    <Window Name="TeamPlayer" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,232},{0,239}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="TeamPlayer/shadowBGImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,232},{0,239}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="TeamPlayer/shadowBGImg/bottomImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,232},{0,32}}" />
+                <Property Name="Image" Value="set:mainUI1 image:taskTitleBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="TeamPlayer/shadowBGImg/bottomImg/nextBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,7},{0,9},{0,23},{0,25}}" />
+                    <Property Name="HoverImage" Value="set:mainUI1 image:leftBuffHover" />
+                    <Property Name="NormalImage" Value="set:mainUI1 image:leftBuffNormal" />
+                    <Property Name="PushedImage" Value="set:mainUI1 image:leftBuffPushed" />
+                </Window>
+                <Window Name="TeamPlayer/shadowBGImg/bottomImg/teamImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,138},{0,6},{0,177},{0,27}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:teamTextImg1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TeamPlayer/shadowBGImg/bottomImg/buff1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,209},{0,5},{0,231},{0,27}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:buffBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="TeamPlayer/shadowBGImg/bottomImg/buff1/buffImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,22},{0,22}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="TeamPlayer/shadowBGImg/bottomImg/buff2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,185},{0,5},{0,207},{0,27}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:buffBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="TeamPlayer/shadowBGImg/bottomImg/buff2/buffImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,22},{0,22}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="TeamPlayer/shadowBGImg/boxlist" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,32},{0,232},{0,239}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,50 @@
+<GUILayout>
+    <Window Name="SkillUpPrompt" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,334},{0,183}}" />
+        <Property Name="Text" Value="技能升级" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="SkillUpPrompt/prop" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,39},{0,29},{0,87},{0,77}}" />
+            <Property Name="Image" Value="set:skin image:GridBG" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="SkillUpPrompt/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,110},{0,320},{0,111}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="SkillUpPrompt/OrangeButton" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,113},{0,117},{0,200},{0,140}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="开始进阶" />
+        </Window>
+        <Window Name="SkillUpPrompt/txt1$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,106},{0,41},{0,301},{0,61}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="技能书*200" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFcc43ff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SkillUpPrompt/propNumTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,47},{0,62},{0,87},{0,78}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="RightAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

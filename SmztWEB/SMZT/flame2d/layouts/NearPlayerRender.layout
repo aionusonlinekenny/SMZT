@@ -1,0 +1,112 @@
+<GUILayout>
+    <Window Name="NearPlayerRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,859},{0,31}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="NearPlayerRender/bg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,859},{0,31}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:RenderNormalBgLeft" />
+            <Property Name="LeftOffset" Value="46" />
+            <Property Name="RightImage" Value="set:skin image:RenderNormalBgRight" />
+            <Property Name="CenterImage" Value="set:skin image:RenderNormalBgCenter" />
+            <Property Name="RightOffset" Value="46" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="NearPlayerRender/bg1" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,859},{0,31}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:textDiLeft" />
+            <Property Name="LeftOffset" Value="46" />
+            <Property Name="RightImage" Value="set:skin image:textDiRight" />
+            <Property Name="CenterImage" Value="set:skin image:textDiCenter" />
+            <Property Name="RightOffset" Value="46" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="NearPlayerRender/vipImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,33},{0,8},{0,57},{0,24}}" />
+            <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="NearPlayerRender/fightTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,420},{0,0},{0,485},{0,31}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="999999" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFFea00" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="NearPlayerRender/campTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,310},{0,0},{0,342},{0,31}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="魏" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="NearPlayerRender/sexImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0,8},{0,32},{0,24}}" />
+            <Property Name="Image" Value="set:mainUI1 image:SexGril" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="NearPlayerRender/nameTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,80},{0,0},{0,180},{0,31}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="玩家名称六字" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="NearPlayerRender/gradeTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,200},{0,0},{0,260},{0,31}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="150级" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="NearPlayerRender/gangTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,560},{0,0},{0,680},{0,31}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="帮派名称" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="NearPlayerRender/img" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,740},{0,0},{0,826},{0,25}}" />
+            <Property Name="Image" Value="set:team image:unTeam" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="VerticalAlignment" Value="Centre" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="NearPlayerRender/drillImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,56},{0,0},{0,94},{0,26}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

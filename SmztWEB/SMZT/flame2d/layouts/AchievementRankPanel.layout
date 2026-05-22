@@ -1,0 +1,567 @@
+<GUILayout>
+    <Window Name="AchievementRankPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,903},{0,510}}" />
+        <Property Name="GlyphImage" Value="set:achievementGeneral image:achievementranking" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="AchievementRankPanel/otherSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,886},{0,460}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="AchievementRankPanel/otherSp/viewBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,520},{0,0},{0,884},{0,460}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="AchievementRankPanel/otherSp/viewBg/changeView" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,363},{0,460}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,363},{0,460}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,363},{0,459}}" />
+                        <Property Name="Image" Value="set:achievementBG image:achievementBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/campImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,19},{0,14},{0,40},{0,35}}" />
+                            <Property Name="Image" Value="set:mainUI1 image:camp1" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/roleName" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,9},{0,148},{0,39}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="玩家名称六字" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a7" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,55},{0,57},{0,103}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a7/b7" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                <Property Name="Image" Value="set:skin image:necklace" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a8" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,113},{0,57},{0,161}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a8/b8" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                <Property Name="Image" Value="set:skin image:stateMind" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a9" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,171},{0,57},{0,219}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a9/b9" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                <Property Name="Image" Value="set:skin image:roller" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a10" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,229},{0,57},{0,277}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a10/b10" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                <Property Name="Image" Value="set:skin image:ring" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a11" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,287},{0,57},{0,335}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a11/b11" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                <Property Name="Image" Value="set:skin image:print" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a12" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,345},{0,57},{0,393}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a12/b12" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                <Property Name="Image" Value="set:skin image:wekJin" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a0" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,64},{0,345},{0,112},{0,393}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a0/b0" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                <Property Name="Image" Value="set:skin image:weapons" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a13" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,254},{0,345},{0,302},{0,393}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a13/b13" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                <Property Name="Image" Value="set:skin image:wedding" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a6" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,309},{0,345},{0,357},{0,393}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a6/b6" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                <Property Name="Image" Value="set:skin image:combatBoots" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a1" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,309},{0,55},{0,357},{0,103}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a1/b1" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                <Property Name="Image" Value="set:skin image:helmet" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a3" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,309},{0,113},{0,357},{0,161}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a3/b3" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                <Property Name="Image" Value="set:skin image:armor" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a2" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,309},{0,171},{0,357},{0,219}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a2/b2" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                <Property Name="Image" Value="set:skin image:scapula" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a4" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,309},{0,229},{0,357},{0,277}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a4/b4" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                <Property Name="Image" Value="set:skin image:dragon" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a5" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,309},{0,287},{0,357},{0,335}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a5/b5" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                <Property Name="Image" Value="set:skin image:legArmor" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a15" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,403},{0,57},{0,451}}" />
+                            <Property Name="Image" Value="set:role2 image:yin" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a16" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,84},{0,403},{0,132},{0,451}}" />
+                            <Property Name="Image" Value="set:role2 image:yin" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a14" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,159},{0,403},{0,207},{0,451}}" />
+                            <Property Name="Image" Value="set:role2 image:normal" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a17" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,234},{0,403},{0,282},{0,451}}" />
+                            <Property Name="Image" Value="set:role2 image:yang" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/a18" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,309},{0,403},{0,357},{0,451}}" />
+                            <Property Name="Image" Value="set:role2 image:yang" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/gangTitleTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,167},{0,9},{0,213},{0,39}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="帮派：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00baff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/gangTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,213},{0,9},{0,312},{0,39}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="帮派名称六字" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00baff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/otherVipImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,314},{0,14},{0,351},{0,34}}" />
+                            <Property Name="Image" Value="set:mainUI1 image:yellowVipHover" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="AchievementRankPanel/otherSp/viewBg/gradeView/grade3DViewSp/d3DView" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,172},{0,346},{0,205},{0,369}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="AchievementRankPanel/otherSp/pageBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,522},{0,460}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="AchievementRankPanel/otherSp/pageBg/pageSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,411},{0,522},{0,458}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="AchievementRankPanel/otherSp/pageBg/pageSp/rightBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,286},{0,13},{0,306},{0,33}}" />
+                        <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                        <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+                        <Property Name="DisabledImage" Value="set:skin image:NextBtnDisable" />
+                    </Window>
+                    <Window Name="AchievementRankPanel/otherSp/pageBg/pageSp/leftBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,216},{0,13},{0,236},{0,33}}" />
+                        <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                        <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+                        <Property Name="DisabledImage" Value="set:skin image:LastBtnDisable" />
+                    </Window>
+                    <Window Name="AchievementRankPanel/otherSp/pageBg/pageSp/backEndBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,311},{0,13},{0,331},{0,33}}" />
+                        <Property Name="HoverImage" Value="set:skin image:MnextBtnHover" />
+                        <Property Name="NormalImage" Value="set:skin image:MnextBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skin image:MnextBtnPushed" />
+                        <Property Name="DisabledImage" Value="set:skin image:MnextBtnDisable" />
+                    </Window>
+                    <Window Name="AchievementRankPanel/otherSp/pageBg/pageSp/backBeginBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,190},{0,13},{0,210},{0,33}}" />
+                        <Property Name="HoverImage" Value="set:skin image:MlastBtnHover" />
+                        <Property Name="NormalImage" Value="set:skin image:MlastBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skin image:MlastBtnPushed" />
+                        <Property Name="DisabledImage" Value="set:skin image:MlastBtnDisable" />
+                    </Window>
+                    <Window Name="AchievementRankPanel/otherSp/pageBg/pageSp/laPageBg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,240},{0,14},{0,282},{0,32}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="AchievementRankPanel/otherSp/pageBg/pageSp/laPageBg/pageTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,18}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="250" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF64d4d8" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="AchievementRankPanel/otherSp/pageBg/myRankSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,338},{0,522},{0,411}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="AchievementRankPanel/otherSp/pageBg/myRankSp/myRankBarSp" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,42},{0,521},{0,73}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:skin image:RenderNormalBgLeft" />
+                        <Property Name="LeftOffset" Value="46" />
+                        <Property Name="RightImage" Value="set:skin image:RenderNormalBgRight" />
+                        <Property Name="CenterImage" Value="set:skin image:RenderNormalBgCenter" />
+                        <Property Name="RightOffset" Value="46" />
+                    </Window>
+                    <Window Name="AchievementRankPanel/otherSp/pageBg/myRankSp/noRankTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,43},{0,521},{0,73}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="您还没有上榜,要多多努力" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="AchievementRankPanel/otherSp/pageBg/myRankSp/myRankImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,210},{0,10},{0,308},{0,37}}" />
+                        <Property Name="Image" Value="set:achievementGeneral image:rank" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="AchievementRankPanel/otherSp/pageBg/list" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,28},{0,521},{0,338}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="AchievementRankPanel/otherSp/pageBg/nameTitle" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,193},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="AchievementRankPanel/otherSp/pageBg/nameTitle/nameTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,129},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="玩家名称" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="AchievementRankPanel/otherSp/pageBg/rankTitle" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="AchievementRankPanel/otherSp/pageBg/rankTitle/rankTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="排名" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="AchievementRankPanel/otherSp/pageBg/completeTitle" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,406},{0,0},{0,521},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="AchievementRankPanel/otherSp/pageBg/completeTitle/completeTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,115},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="已达成成就" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="AchievementRankPanel/otherSp/pageBg/campBtn" Type="GuiLook/RankRadioButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,192},{0,0},{0,282},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="阵营" />
+                    <Property Name="HoverTextColour" Value="FF65b3e9" />
+                    <Property Name="PushedTextColour" Value="FF65b3e9" />
+                    <Window Name="AchievementRankPanel/otherSp/pageBg/campBtn/campFlagImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,73},{0,9},{0,86},{0,20}}" />
+                        <Property Name="Image" Value="set:skin image:arrow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="AchievementRankPanel/otherSp/pageBg/pointTitle" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,282},{0,0},{0,406},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="AchievementRankPanel/otherSp/pageBg/pointTitle/pointTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,124},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="成就点数" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

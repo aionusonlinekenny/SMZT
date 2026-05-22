@@ -1,0 +1,923 @@
+<GUILayout>
+    <Window Name="GangDart" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1022},{0,602}}" />
+        <Property Name="GlyphImage" Value="set:activitiesGeneral image:title_10021" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="GangDart/Bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,1004},{0,554}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangDart/Bg/dartBgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,1003},{0,416}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangDart/Bg/dartBgImg/carbg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,54},{0,17},{0,211},{0,99}}" />
+                    <Property Name="Image" Value="set:gangDart1 image:downBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GangDart/Bg/dartBgImg/carbg1/whitecarImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,0},{0,134},{0,33}}" />
+                        <Property Name="Image" Value="set:gangDart1 image:white" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg1/s1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,66},{0,30},{0,92},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GangDart/Bg/dartBgImg/carbg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,237},{0,17},{0,394},{0,99}}" />
+                    <Property Name="Image" Value="set:gangDart1 image:downBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GangDart/Bg/dartBgImg/carbg2/s3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,81},{0,30},{0,107},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg2/greencarImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,0},{0,134},{0,33}}" />
+                        <Property Name="Image" Value="set:gangDart1 image:green" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg2/s2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,79},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GangDart/Bg/dartBgImg/carbg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,420},{0,17},{0,577},{0,99}}" />
+                    <Property Name="Image" Value="set:gangDart1 image:downBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GangDart/Bg/dartBgImg/carbg3/s5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,68},{0,30},{0,94},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg3/bluecarImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,0},{0,134},{0,33}}" />
+                        <Property Name="Image" Value="set:gangDart1 image:blue" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg3/s4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,41},{0,30},{0,67},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg3/s6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,94},{0,30},{0,120},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GangDart/Bg/dartBgImg/carbg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,603},{0,17},{0,760},{0,99}}" />
+                    <Property Name="Image" Value="set:gangDart1 image:downBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GangDart/Bg/dartBgImg/carbg4/s9" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,80},{0,30},{0,106},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg4/purplecarImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,0},{0,134},{0,33}}" />
+                        <Property Name="Image" Value="set:gangDart1 image:purple" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg4/s7" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,24},{0,30},{0,50},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg4/s10" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,107},{0,30},{0,133},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg4/s8" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,52},{0,30},{0,78},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GangDart/Bg/dartBgImg/carbg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,786},{0,17},{0,943},{0,99}}" />
+                    <Property Name="Image" Value="set:gangDart1 image:downBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GangDart/Bg/dartBgImg/carbg5/s13" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,66},{0,30},{0,92},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg5/orangecarImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,0},{0,134},{0,33}}" />
+                        <Property Name="Image" Value="set:gangDart1 image:orange" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg5/s12" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,42},{0,30},{0,68},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg5/s11" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,19},{0,30},{0,45},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg5/s14" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,89},{0,30},{0,115},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/carbg5/s15" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,110},{0,30},{0,136},{0,55}}" />
+                        <Property Name="Image" Value="set:skins image:star" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GangDart/Bg/dartBgImg/shadowBg" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,118},{0,362},{0,875},{0,401}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:gangDart1 image:grayLeft" />
+                    <Property Name="LeftOffset" Value="12" />
+                    <Property Name="RightImage" Value="set:gangDart1 image:grayRight" />
+                    <Property Name="CenterImage" Value="set:gangDart1 image:grayMiddle" />
+                    <Property Name="RightOffset" Value="12" />
+                    <Window Name="GangDart/Bg/dartBgImg/shadowBg/ligeImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,126},{0,39}}" />
+                        <Property Name="Image" Value="set:gangDart1 image:dartLife" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/shadowBg/lifeBg" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,135},{0,10},{0,582},{0,32}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:gangDart1 image:redLeft" />
+                        <Property Name="LeftOffset" Value="13" />
+                        <Property Name="RightImage" Value="set:gangDart1 image:redRight" />
+                        <Property Name="CenterImage" Value="set:gangDart1 image:redMiddle" />
+                        <Property Name="RightOffset" Value="13" />
+                        <Window Name="GangDart/Bg/dartBgImg/shadowBg/lifeBg/life$NormalBar1" Type="GlossySerpent/ThreeStretchImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,447},{0,22}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="LeftImage" Value="set:gangDart1 image:yellowLeft" />
+                            <Property Name="LeftOffset" Value="15" />
+                            <Property Name="RightImage" Value="set:gangDart1 image:yellowRight" />
+                            <Property Name="CenterImage" Value="set:gangDart1 image:yellowMiddle" />
+                            <Property Name="RightOffset" Value="15" />
+                        </Window>
+                        <Window Name="GangDart/Bg/dartBgImg/shadowBg/lifeBg/life$NormalBar2" Type="GlossySerpent/ThreeStretchImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,447},{0,22}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="LeftImage" Value="set:gangDart1 image:bloodLeft" />
+                            <Property Name="LeftOffset" Value="15" />
+                            <Property Name="RightImage" Value="set:gangDart1 image:bloodRight" />
+                            <Property Name="CenterImage" Value="set:gangDart1 image:bloodMiddle" />
+                            <Property Name="RightOffset" Value="15" />
+                        </Window>
+                        <Window Name="GangDart/Bg/dartBgImg/shadowBg/lifeBg/life$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,447},{0,22}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="GangDart/Bg/dartBgImg/shadowBg/changeBtn" Type="GlossySerpent/OrangeButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,587},{0,10},{0,745},{0,33}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="换镖车(5万帮派铜币)" />
+                    </Window>
+                </Window>
+                <Window Name="GangDart/Bg/dartBgImg/car1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,43},{0,100},{0,219},{0,362}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/dartBgImg/car2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,233},{0,100},{0,398},{0,362}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/dartBgImg/car3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,418},{0,101},{0,577},{0,363}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/dartBgImg/car4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,592},{0,101},{0,770},{0,363}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/dartBgImg/car5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,770},{0,100},{0,960},{0,362}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/dartBgImg/hpText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,252},{0,371},{0,700},{0,395}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="5000/10000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangDart/Bg/bottomBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,416},{0,1004},{0,550}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangDart/Bg/bottomBg/line1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,278},{0,9},{0,279},{0,125}}" />
+                    <Property Name="Image" Value="set:gangDart1 image:dottedLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/line2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,692},{0,9},{0,693},{0,125}}" />
+                    <Property Name="Image" Value="set:gangDart1 image:dottedLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/darter1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,42},{0,8},{0,92},{0,26}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="Text" Value="总镖头" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffff7200" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/darter2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,42},{0,33},{0,92},{0,51}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="Text" Value="镖头" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/darter3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,42},{0,58},{0,92},{0,76}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="Text" Value="镖师" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff00baff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/darter4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,42},{0,83},{0,92},{0,101}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="Text" Value="趟子手" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/TextBG" Type="GuiLook/TextBG">
+                    <Property Name="UnifiedAreaRect" Value="{{0,117},{0,8},{0,262},{0,29}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="GangDart/Bg/bottomBg/TextBG/nameTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,149},{0,21}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="帮主" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ffe1feff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/Combobox1" Type="GuiLook/Combobox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,117},{0,31},{0,262},{0,211}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暂未任命" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="NormalEditTextColour" Value="ffe1feff" />
+                    <Property Name="SelectedEditTextColour" Value="ffe1feff" />
+                    <AutoWindow NameSuffix="__auto_editbox__">
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="暂未任命" />
+                        <Property Name="NormalTextColour" Value="ffe1feff" />
+                        <Property Name="SelectedTextColour" Value="ffe1feff" />
+                        <Property Name="ActiveSelectionColour" Value="FFFFB080" />
+                        <Property Name="InactiveSelectionColour" Value="FFB18A50" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_droplist__">
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <AutoWindow NameSuffix="__auto_hscrollbar__">
+                            <AutoWindow NameSuffix="__auto_incbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_decbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_thumb__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_vscrollbar__">
+                            <Property Name="VerticalScrollbar" Value="true" />
+                            <AutoWindow NameSuffix="__auto_incbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_decbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_thumb__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_button__">
+                        <Property Name="AlwaysOnTop" Value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/Combobox2" Type="GuiLook/Combobox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,117},{0,56},{0,262},{0,236}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暂未任命" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="NormalEditTextColour" Value="ffe1feff" />
+                    <Property Name="SelectedEditTextColour" Value="ffe1feff" />
+                    <AutoWindow NameSuffix="__auto_editbox__">
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="暂未任命" />
+                        <Property Name="NormalTextColour" Value="ffe1feff" />
+                        <Property Name="SelectedTextColour" Value="ffe1feff" />
+                        <Property Name="ActiveSelectionColour" Value="FFFFB080" />
+                        <Property Name="InactiveSelectionColour" Value="FFB18A50" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_droplist__">
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <AutoWindow NameSuffix="__auto_hscrollbar__">
+                            <AutoWindow NameSuffix="__auto_incbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_decbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_thumb__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_vscrollbar__">
+                            <Property Name="VerticalScrollbar" Value="true" />
+                            <AutoWindow NameSuffix="__auto_incbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_decbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_thumb__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_button__">
+                        <Property Name="AlwaysOnTop" Value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/Combobox3" Type="GuiLook/Combobox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,117},{0,81},{0,262},{0,261}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暂未任命" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="NormalEditTextColour" Value="ffe1feff" />
+                    <Property Name="SelectedEditTextColour" Value="ffe1feff" />
+                    <AutoWindow NameSuffix="__auto_editbox__">
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="暂未任命" />
+                        <Property Name="NormalTextColour" Value="ffe1feff" />
+                        <Property Name="SelectedTextColour" Value="ffe1feff" />
+                        <Property Name="ActiveSelectionColour" Value="FFFFB080" />
+                        <Property Name="InactiveSelectionColour" Value="FFB18A50" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_droplist__">
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <AutoWindow NameSuffix="__auto_hscrollbar__">
+                            <AutoWindow NameSuffix="__auto_incbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_decbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_thumb__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_vscrollbar__">
+                            <Property Name="VerticalScrollbar" Value="true" />
+                            <AutoWindow NameSuffix="__auto_incbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_decbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_thumb__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_button__">
+                        <Property Name="AlwaysOnTop" Value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/starImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,92},{0,6},{0,117},{0,31}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/starImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,92},{0,31},{0,117},{0,56}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/starImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,92},{0,56},{0,117},{0,81}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/starImg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,92},{0,81},{0,117},{0,106}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/descTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,108},{0,278},{0,126}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="注：以上人员死亡镖车将减少一颗星和20W血" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/allImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,298},{0,10},{0,374},{0,32}}" />
+                    <Property Name="Image" Value="set:gangDart1 image:starLevel" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/rewardImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,298},{0,75},{0,374},{0,97}}" />
+                    <Property Name="Image" Value="set:gangDart1 image:reward" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/props1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,394},{0,79},{0,442},{0,127}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GangDart/Bg/bottomBg/props1/propsImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/bottomBg/props1/StaticText1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,30},{0,52},{0,50}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value=" " />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/props2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,452},{0,79},{0,500},{0,127}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GangDart/Bg/bottomBg/props2/propsImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/bottomBg/props2/StaticText2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,30},{0,52},{0,50}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value=" " />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/props3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,510},{0,79},{0,558},{0,127}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GangDart/Bg/bottomBg/props3/propsImg3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/bottomBg/props3/StaticText3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,30},{0,52},{0,50}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value=" " />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/props4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,568},{0,79},{0,616},{0,127}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GangDart/Bg/bottomBg/props4/propsImg4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/bottomBg/props4/StaticText4" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,30},{0,52},{0,50}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value=" " />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/props5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,626},{0,79},{0,674},{0,127}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GangDart/Bg/bottomBg/props5/propsImg5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="GangDart/Bg/bottomBg/props5/StaticText5" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,30},{0,52},{0,50}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/star1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,385},{0,9},{0,410},{0,34}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/star2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,419},{0,9},{0,444},{0,34}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/star3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,453},{0,9},{0,478},{0,34}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/star4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,487},{0,9},{0,512},{0,34}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/star5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,521},{0,9},{0,546},{0,34}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/star6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,555},{0,9},{0,580},{0,34}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/star7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,589},{0,9},{0,614},{0,34}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/star8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,623},{0,9},{0,648},{0,34}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/descTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,384},{0,37},{0,664},{0,55}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="(1颗星=200000血，每增加一颗星奖励增加1倍)" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff00baff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/descTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,384},{0,57},{0,664},{0,75}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="(任命左侧职位可以加星)" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff00baff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/doubleImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,918},{0,1},{0,1003},{0,83}}" />
+                    <Property Name="Image" Value="set:gangDart1 image:double" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/descTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,754},{0,94},{0,942},{0,112}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="每日19:00-19:30奖励翻倍" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/flagImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,5},{0,34},{0,28}}" />
+                    <Property Name="Image" Value="set:gangDart1 image:redflag" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/flagImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,30},{0,34},{0,53}}" />
+                    <Property Name="Image" Value="set:gangDart1 image:purpleflag" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/flagImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,55},{0,34},{0,78}}" />
+                    <Property Name="Image" Value="set:gangDart1 image:blueflag" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/flagImg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,80},{0,34},{0,103}}" />
+                    <Property Name="Image" Value="set:gangDart1 image:greenflag" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/star9" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,656},{0,9},{0,681},{0,34}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangDart/Bg/bottomBg/beginBtn" Type="GlossySerpent/RedButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,749},{0,39},{0,950},{0,79}}" />
+                    <Window Name="GangDart/Bg/bottomBg/beginBtn/beginImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,122},{0,0},{0,171},{0,40}}" />
+                        <Property Name="Image" Value="set:gangDart1 image:num0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="GangDart/Bg/bottomBg/beginBtn/beginImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,27},{0,1},{0,121},{0,41}}" />
+                        <Property Name="Image" Value="set:gangDart1 image:begindart2" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,82 @@
+<GUILayout>
+    <Window Name="CopyMyTeamRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,141},{0,343}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CopyMyTeamRender/d3DView" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,57},{0,272},{0,90},{0,295}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="CopyMyTeamRender/teamMonster" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,6},{0,55},{0,65}}" />
+            <Property Name="Image" Value="set:team image:teamMonster" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="CopyMyTeamRender/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,141},{0,67}}" />
+            <Property Name="Image" Value="set:copyrecruiting image:brown" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Name="CopyMyTeamRender/state" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,238},{0,138},{0,265}}" />
+            <Property Name="Image" Value="set:copyrecruiting image:inteamState1" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="CopyMyTeamRender/addMemberBtn" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,33},{0,240},{0,114},{0,263}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="招募队员" />
+        </Window>
+        <Window Name="CopyMyTeamRender/infoWin" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,141},{0,67}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="CopyMyTeamRender/infoWin/fightTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,18},{0,32},{0,66},{0,48}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="战斗力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CopyMyTeamRender/infoWin/fightTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,66},{0,32},{0,123},{0,48}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="8888888" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CopyMyTeamRender/infoWin/levelTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,35},{0,50},{0,107},{0,66}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="等级：150" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CopyMyTeamRender/infoWin/nameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,31},{0,16},{0,115},{0,32}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="玩家名称六字" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

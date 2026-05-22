@@ -1,0 +1,202 @@
+<GUILayout>
+    <Window Name="OnlineSettings" Type="GuiLook/CommonBg3">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,645},{0,516}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="OnlineSettings/smallbackground" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,510},{0,28}}" />
+            <Property Name="Image" Value="set:hallReward image:background" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="OnlineSettings/smallbackground/online" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,5},{0,109},{0,23}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="每日上线设置" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfeF9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="OnlineSettings/smallbackground2" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,208},{0,644},{0,236}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+            <Property Name="RightImage" Value="set:skin image:HeadRight" />
+            <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+            <Window Name="OnlineSettings/smallbackground2/threeday" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,643},{0,23}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="三天补偿计划" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfeF9d0" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="OnlineSettings/choose0" Type="GuiLook/RadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,52},{0,68},{0,67}}" />
+        </Window>
+        <Window Name="OnlineSettings/choose2" Type="GuiLook/RadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,488},{0,52},{0,503},{0,67}}" />
+        </Window>
+        <Window Name="OnlineSettings/choose1" Type="GuiLook/RadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,259},{0,52},{0,274},{0,67}}" />
+        </Window>
+        <Window Name="OnlineSettings/wordTxt8" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,70},{0,48},{0,163},{0,69}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="13点前" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00baff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="OnlineSettings/wordTxt9" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,505},{0,48},{0,598},{0,69}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="21点以后" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00baff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="OnlineSettings/wordTxt10" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,276},{0,48},{0,369},{0,69}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="13点—21点" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00baff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="OnlineSettings/background" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,96},{0,639},{0,154}}" />
+            <Property Name="Image" Value="set:skin image:RenderBg2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="OnlineSettings/background/wordTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,7},{0,114},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="昨日设定时间：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfeF9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OnlineSettings/background/wordTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,35},{0,114},{0,53}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="今日上线时间：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfeF9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OnlineSettings/background/setOnlineTimeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,7},{0,223},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="00：00-13:00" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OnlineSettings/background/todayOnlineTimeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,35},{0,229},{0,53}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="11:20（可领取）" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OnlineSettings/background/items1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,279},{0,7},{0,327},{0,55}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="OnlineSettings/background/items3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,383},{0,7},{0,431},{0,55}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="OnlineSettings/background/items2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,331},{0,7},{0,379},{0,55}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="OnlineSettings/background/getBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,475},{0,10},{0,621},{0,50}}" />
+                <Window Name="OnlineSettings/background/getBtn/receive" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,146},{0,40}}" />
+                    <Property Name="Image" Value="set:skins image:receiveRewardTxt" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="OnlineSettings/background2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,157},{0,639},{0,205}}" />
+            <Property Name="Image" Value="set:skin image:RenderBg2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="OnlineSettings/background2/wordTxt5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,15},{0,114},{0,33}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="累计离线时间：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfeF9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OnlineSettings/background2/leaveTimeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,15},{0,366},{0,33}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="11小时50分钟" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OnlineSettings/background2/freeBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,370},{0,12},{0,451},{0,35}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="免费领取" />
+            </Window>
+            <Window Name="OnlineSettings/background2/threeBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,540},{0,12},{0,621},{0,35}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="V5三倍" />
+                <Property Name="Tooltip" Value="消耗50元宝领取双倍奖励" />
+            </Window>
+            <Window Name="OnlineSettings/background2/doubleBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,455},{0,12},{0,536},{0,35}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="黄金两倍" />
+                <Property Name="HoverImage" Value="set:hallReward image:purpleRectangle2" />
+                <Property Name="NormalImage" Value="set:hallReward image:purpleRectangle3" />
+                <Property Name="PushedImage" Value="set:hallReward image:purpleRectangle1" />
+                <Property Name="Tooltip" Value="消耗20元宝领取双倍奖励" />
+                <Property Name="DisabledImage" Value="set:hallReward image:purpleRectangle4" />
+                <Property Name="NormalTextColour" Value="FFFcd0fe" />
+                <Property Name="PushedTextColour" Value="ff9a5a9c" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+            </Window>
+        </Window>
+        <Window Name="OnlineSettings/boxSP" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,237},{0,644},{0,515}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

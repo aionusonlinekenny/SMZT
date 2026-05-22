@@ -1,0 +1,182 @@
+<GUILayout>
+    <Window Name="RadarPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,255},{0,93}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="RadarPanel/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,255},{0,93}}" />
+            <Property Name="Image" Value="set:skins image:mapKuang" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="RadarPanel/bg/miniImgWin" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,334},{0,104},{0,561},{0,221}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="LeftAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="RadarPanel/bg/miniImgWin/mainRoleDirWinImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,102},{0,38},{0,127},{0,72}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:self" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="RadarPanel/bg/gmBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,70},{0,13},{0,86},{0,27}}" />
+                <Property Name="Image" Value="set:mainUI1 image:GMBtn" />
+                <Property Name="HoverTextColour" Value="FFd0f8fe" />
+                <Property Name="NormalTextColour" Value="FFd0f8fe" />
+                <Property Name="PushedTextColour" Value="FFd0f8fe" />
+            </Window>
+            <Window Name="RadarPanel/bg/eyeBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,128},{0,66},{0,148},{0,84}}" />
+                <Property Name="Image" Value="set:mainUI1 image:eyeBtn" />
+            </Window>
+            <Window Name="RadarPanel/bg/teamBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,23},{0,66},{0,43},{0,84}}" />
+                <Property Name="Image" Value="set:mainUI1 image:teamBtn" />
+                <Property Name="HoverTextColour" Value="FFd0f8fe" />
+                <Property Name="NormalTextColour" Value="FFd0f8fe" />
+                <Property Name="PushedTextColour" Value="FFd0f8fe" />
+            </Window>
+            <Window Name="RadarPanel/bg/unEyeImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,128},{0,66},{0,147},{0,84}}" />
+                <Property Name="Image" Value="set:mainUI1 image:disableFlag" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="RadarPanel/bg/bbsBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,91},{0,11},{0,121},{0,27}}" />
+                <Property Name="Image" Value="set:mainUI1 image:lunBtn" />
+                <Property Name="HoverTextColour" Value="FFd0f8fe" />
+                <Property Name="NormalTextColour" Value="FFd0f8fe" />
+                <Property Name="PushedTextColour" Value="FFd0f8fe" />
+            </Window>
+            <Window Name="RadarPanel/bg/mailBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,65},{0,66},{0,85},{0,84}}" />
+                <Property Name="Image" Value="set:mainUI1 image:emailBtn" />
+            </Window>
+            <Window Name="RadarPanel/bg/homeBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,126},{0,11},{0,156},{0,27}}" />
+                <Property Name="Image" Value="set:mainUI1 image:guanBtn" />
+                <Property Name="HoverTextColour" Value="FFd0f8fe" />
+                <Property Name="NormalTextColour" Value="FFd0f8fe" />
+                <Property Name="PushedTextColour" Value="FFd0f8fe" />
+            </Window>
+            <Window Name="RadarPanel/bg/soundBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,107},{0,66},{0,127},{0,84}}" />
+                <Property Name="Image" Value="set:mainUI1 image:soundBtn" />
+            </Window>
+            <Window Name="RadarPanel/bg/rankBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,93},{0,33},{0,162},{0,60}}" />
+                <Property Name="Image" Value="set:mainUI1 image:rankBtn" />
+                <Property Name="ZOrderChangeEnabled" Value="false" />
+            </Window>
+            <Window Name="RadarPanel/bg/sysBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,149},{0,66},{0,169},{0,84}}" />
+                <Property Name="Image" Value="set:mainUI1 image:setBtn" />
+            </Window>
+            <Window Name="RadarPanel/bg/unSoundImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,107},{0,66},{0,126},{0,84}}" />
+                <Property Name="Image" Value="set:mainUI1 image:disableFlag" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="RadarPanel/bg/saleBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,44},{0,66},{0,64},{0,84}}" />
+                <Property Name="Image" Value="set:mainUI1 image:saleBtn" />
+            </Window>
+            <Window Name="RadarPanel/bg/shopBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,23},{0,33},{0,92},{0,60}}" />
+                <Property Name="Image" Value="set:mainUI1 image:shopBtn" />
+            </Window>
+            <Window Name="RadarPanel/bg/allFullBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,23},{0,11},{0,61},{0,29}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Image" Value="set:mainUI1 image:mapBtn" />
+            </Window>
+            <Window Name="RadarPanel/bg/friendsBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,86},{0,66},{0,106},{0,84}}" />
+                <Property Name="Image" Value="set:mainUI1 image:socialBtn" />
+            </Window>
+        </Window>
+        <Window Name="RadarPanel/inputBg2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,26},{0,-39},{0,257},{0,-16}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="RadarPanel/inputBg2/pointTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,327},{0,52},{0,418},{0,75}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="(100,250)" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="RadarPanel/inputBg2/line" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,22},{0,231},{0,23}}" />
+                <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="RadarPanel/mapBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,170},{0,8},{0,248},{0,86}}" />
+            <Property Name="Image" Value="set:skins image:map1" />
+            <Property Name="HorzImageFormatting" Value="CentreAligned" />
+            <Property Name="VertImageFormatting" Value="CentreAligned" />
+            <Window Name="RadarPanel/mapBtn/nameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,78},{0,78}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="无双城" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="RadarPanel/swfArrowBox" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,23},{0,84},{0,154},{0,123}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="RadarPanel/swfArrowBox/swfArrow" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,131},{0,39}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="RadarPanel/swfArrow1" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,23},{0,84},{0,154},{0,123}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

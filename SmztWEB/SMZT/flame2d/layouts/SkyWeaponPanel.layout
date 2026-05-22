@@ -1,0 +1,1017 @@
+<GUILayout>
+    <Window Name="SkyWeaponPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,762},{0,545}}" />
+        <Property Name="GlyphImage" Value="set:skyWeapon image:skyweapon" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="SkyWeaponPanel/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,744},{0,498}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SkyWeaponPanel/background/leftBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,494}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkyWeaponPanel/background/leftBg/attackImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,149},{0,48}}" />
+                    <Property Name="Image" Value="set:skyWeapon image:attack" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkyWeaponPanel/background/leftBg/magicImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,318},{0,149},{0,366}}" />
+                    <Property Name="Image" Value="set:skyWeapon image:magic" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkyWeaponPanel/background/leftBg/levelBgImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,2},{0,47},{0,148},{0,70}}" />
+                    <Property Name="Image" Value="set:skyWeapon image:black" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="SkyWeaponPanel/background/leftBg/levelBgImg1/levelTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,146},{0,23}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="45级  5/7" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ffcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="SkyWeaponPanel/background/rightBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,594},{0,0},{0,744},{0,494}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkyWeaponPanel/background/rightBg/defenseImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,149},{0,48}}" />
+                    <Property Name="Image" Value="set:skyWeapon image:defense" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkyWeaponPanel/background/rightBg/decreeIMg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,318},{0,149},{0,366}}" />
+                    <Property Name="Image" Value="set:skyWeapon image:decree" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkyWeaponPanel/background/rightBg/levelBgImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,2},{0,47},{0,148},{0,70}}" />
+                    <Property Name="Image" Value="set:skyWeapon image:black" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="SkyWeaponPanel/background/rightBg/levelBgImg2/levelTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,146},{0,23}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="45级  5/7" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ffcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="SkyWeaponPanel/background/middleBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,149},{0,0},{0,595},{0,494}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkyWeaponPanel/background/middleBg/bgImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,445},{0,367}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="true" />
+                    <Window Name="SkyWeaponPanel/background/middleBg/bgImg/descTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,339},{0,444},{0,365}}" />
+                        <Property Name="Font" Value="songti_18_strengh" />
+                        <Property Name="Text" Value="集齐    套装附加属性" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ff00baff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/bgImg/showImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,183},{0,6},{0,259},{0,31}}" />
+                        <Property Name="Image" Value="set:skyWeapon image:show" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/bgImg/equipNameTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,139},{0,39},{0,306},{0,63}}" />
+                        <Property Name="Font" Value="songti_18_strengh" />
+                        <Property Name="Text" Value="装备名称" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ffcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/bgImg/roleBox" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,37},{0,159},{0,93}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkyWeaponPanel/background/middleBg/bgImg/roleBox/roleBgImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,9},{0,46},{0,47}}" />
+                            <Property Name="Image" Value="set:mainUI1 image:teamFaceBg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="SkyWeaponPanel/background/middleBg/bgImg/roleBox/roleBgImg/roleImg" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,37},{0,37}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="SkyWeaponPanel/background/middleBg/bgImg/roleBox/hadImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,47},{0,6},{0,138},{0,27}}" />
+                            <Property Name="Image" Value="set:skyWeapon image:had" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="SkyWeaponPanel/background/middleBg/bgImg/roleBox/nameTxt$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,47},{0,28},{0,153},{0,46}}" />
+                            <Property Name="Font" Value="songti_12" />
+                            <Property Name="Text" Value="吴·玩家名称六字" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="ff85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/bgImg/IconImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,405},{0,45},{0,435},{0,73}}" />
+                        <Property Name="Image" Value="set:skyWeapon image:Icon1" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/bgImg/fightBox1" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,162},{0,444},{0,187}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkyWeaponPanel/background/middleBg/bgImg/fightBox1/highestImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,120},{0,0},{0,241},{0,25}}" />
+                            <Property Name="Image" Value="set:skyWeapon image:highest" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="SkyWeaponPanel/background/middleBg/bgImg/fightBox1/numberImg1" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,241},{0,0},{0,385},{0,25}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/bgImg/fightBox2" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,162},{0,444},{0,187}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkyWeaponPanel/background/middleBg/bgImg/fightBox2/basisImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,148},{0,0},{0,234},{0,25}}" />
+                            <Property Name="Image" Value="set:skyWeapon image:basis" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="SkyWeaponPanel/background/middleBg/bgImg/fightBox2/numberImg2" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,235},{0,0},{0,379},{0,25}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/bgImg/getBox" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,310},{0,445},{0,335}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkyWeaponPanel/background/middleBg/bgImg/getBox/getWayTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,108},{0,0},{0,196},{0,25}}" />
+                            <Property Name="Font" Value="songti_16" />
+                            <Property Name="Text" Value="获得途径：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="ff00baff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkyWeaponPanel/background/middleBg/bgImg/getBox/desc$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,294},{0,2},{0,366},{0,27}}" />
+                            <Property Name="Font" Value="songti_14" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="ff85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkyWeaponPanel/background/middleBg/bgImg/getBox/desc$RI1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,199},{0,2},{0,239},{0,27}}" />
+                            <Property Name="Font" Value="songti_14" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="ff85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkyWeaponPanel/background/middleBg/bgImg/getBox/desc$RI2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,253},{0,2},{0,293},{0,27}}" />
+                            <Property Name="Font" Value="songti_14" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="ff85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/bgImg/descTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,161},{0,339},{0,205},{0,365}}" />
+                        <Property Name="Font" Value="songti_18_strengh" />
+                        <Property Name="Text" Value="40级" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ff85f500" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,195},{0,382},{0,306}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,318},{0,111}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="Visible" Value="false" />
+                            <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,318},{0,111}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/attrTxt3" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,44},{0,86},{0,78},{0,106}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="精炼" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff00baff" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/equipAddNumberTxt1" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,125},{0,33},{0,171},{0,53}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="+1999" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff85f500" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/fightTxt2" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,174},{0,59},{0,208},{0,79}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="战力" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff85f500" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/upBtn0" Type="GuiLook/DefaultButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,272},{0,5},{0,309},{0,25}}" />
+                                    <Property Name="HoverImage" Value="set:skyWeapon image:upHover" />
+                                    <Property Name="NormalImage" Value="set:skyWeapon image:upNormal" />
+                                    <Property Name="PushedImage" Value="set:skyWeapon image:upPushed" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/upBtn1" Type="GuiLook/DefaultButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,272},{0,31},{0,309},{0,51}}" />
+                                    <Property Name="HoverImage" Value="set:skyWeapon image:upHover" />
+                                    <Property Name="NormalImage" Value="set:skyWeapon image:upNormal" />
+                                    <Property Name="PushedImage" Value="set:skyWeapon image:upPushed" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/equipBoxImg" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,38},{0,111}}" />
+                                    <Property Name="Image" Value="set:skyWeapon image:box" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/equipBoxImg/equipImg" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,8},{0,18},{0,31},{0,95}}" />
+                                        <Property Name="Image" Value="set:skyWeapon image:myEquip" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/werponLine2" Type="GuiLook/Line">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,59},{0,81},{0,309},{0,82}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/attrTxt2" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,44},{0,60},{0,78},{0,80}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="洗练" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff00baff" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/equipAddNumberTxt2" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,125},{0,59},{0,171},{0,79}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="+1999" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff85f500" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/fightTxt0" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,174},{0,8},{0,208},{0,28}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="战力" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff85f500" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/werponLine1" Type="GuiLook/Line">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,59},{0,53},{0,309},{0,54}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/fightTxt3" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,174},{0,86},{0,208},{0,106}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="战力" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff85f500" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/upBtn2" Type="GuiLook/DefaultButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,272},{0,58},{0,309},{0,78}}" />
+                                    <Property Name="HoverImage" Value="set:skyWeapon image:upHover" />
+                                    <Property Name="NormalImage" Value="set:skyWeapon image:upNormal" />
+                                    <Property Name="PushedImage" Value="set:skyWeapon image:upPushed" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/attrTxt0" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,44},{0,8},{0,78},{0,28}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="基础" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff00baff" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/attrTxt1" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,44},{0,33},{0,78},{0,53}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="强化" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff00baff" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/equipAddNumberTxt0" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,125},{0,8},{0,171},{0,28}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="+1999" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff85f500" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/equipAddNumberTxt3" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,125},{0,86},{0,171},{0,106}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="+1999" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff85f500" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/fightTxt1" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,174},{0,33},{0,208},{0,53}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="战力" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff85f500" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/upBtn3" Type="GuiLook/DefaultButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,272},{0,86},{0,309},{0,106}}" />
+                                    <Property Name="HoverImage" Value="set:skyWeapon image:upHover" />
+                                    <Property Name="NormalImage" Value="set:skyWeapon image:upNormal" />
+                                    <Property Name="PushedImage" Value="set:skyWeapon image:upPushed" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWerponEquipPage/werponLine0" Type="GuiLook/Line">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,59},{0,28},{0,309},{0,29}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                </Window>
+                            </Window>
+                            <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponMagicPage" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,318},{0,111}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponMagicPage/weaponAttributeTxt$RI0" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,39},{0,16},{0,132},{0,36}}" />
+                                    <Property Name="Font" Value="songti_12" />
+                                    <Property Name="Text" Value="攻击" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ffffffff" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponMagicPage/weaponAttributeTxt$RI3" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,38},{0,61},{0,318},{0,81}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="回春之力：受到伤害时有5%回复自身100" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff85f500" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponMagicPage/Line" Type="GuiLook/Line">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,59},{0,44},{0,309},{0,45}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponMagicPage/weaponAttributeTxt$RI2" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,225},{0,16},{0,318},{0,36}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="生命" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ffffffff" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponMagicPage/weaponAttributeTxt$RI1" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,131},{0,16},{0,224},{0,36}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="防御" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ffffffff" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponMagicPage/weaponAttributeTxt$RI4" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,38},{0,88},{0,318},{0,108}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="Text" Value="金色魔兵开启技能2" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ffaaaaaa" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponMagicPage/boxImg" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,38},{0,111}}" />
+                                    <Property Name="Image" Value="set:skyWeapon image:box" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponMagicPage/boxImg/skyMagicImg" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,8},{0,18},{0,31},{0,95}}" />
+                                        <Property Name="Image" Value="set:skyWeapon image:myMagic" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                </Window>
+                            </Window>
+                            <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponDecreePage" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,318},{0,111}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponDecreePage/decreeBox" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,38},{0,111}}" />
+                                    <Property Name="Image" Value="set:skyWeapon image:box" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponDecreePage/decreeBox/decreeImg" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,8},{0,18},{0,31},{0,95}}" />
+                                        <Property Name="Image" Value="set:skyWeapon image:myDecree" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponDecreePage/decreeLine" Type="GuiLook/Line">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,59},{0,29},{0,309},{0,30}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponDecreePage/decreeAttributeTxt1" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,133},{0,6},{0,167},{0,24}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ffffea00" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponDecreePage/decreeAddNumberTxt1" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,169},{0,6},{0,231},{0,24}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff85f500" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/propBox/SkyWeaponDecreePage/decreeDesc$RI" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,51},{0,35},{0,312},{0,105}}" />
+                                    <Property Name="Font" Value="songti_14" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="ff85f500" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                            </Window>
+                        </Window>
+                        <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/noGetbox" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,318},{0,111}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/noGetbox/SkyWeaponGetPage" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,318},{0,111}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/noGetbox/SkyWeaponGetPage/flyBtn" Type="GuiLook/DefaultImageButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,232},{0,67},{0,252},{0,87}}" />
+                                    <Property Name="Image" Value="set:mainUI1 image:transfer" />
+                                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/noGetbox/SkyWeaponGetPage/getImg" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,86},{0,18},{0,230},{0,49}}" />
+                                    <Property Name="Image" Value="set:skyWeapon image:equipway" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/noGetbox/SkyWeaponGetPage/weaponDesc$RI" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,158},{0,66},{0,219},{0,90}}" />
+                                    <Property Name="Font" Value="" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/noGetbox/SkyWeaponGetPage/weaponDescTxt" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,72},{0,69},{0,133},{0,93}}" />
+                                    <Property Name="Font" Value="songti_16" />
+                                    <Property Name="Text" Value="击杀：" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="FF00baff" />
+                                    <Property Name="VertFormatting" Value="TopAligned" />
+                                    <Property Name="HorzTextFormatting" Value="RightAligned" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/noGetbox/SkyWeaponGetPage/weaponDesc$RI1" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,114},{0,66},{0,154},{0,90}}" />
+                                    <Property Name="Font" Value="" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="SkyWeaponPanel/background/middleBg/bgImg/boxsp/noGetbox/SkyWeaponGetPage/weaponDesc$RI2" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,70},{0,66},{0,110},{0,90}}" />
+                                    <Property Name="Font" Value="" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                            </Window>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="SkyWeaponPanel/background/middleBg/box2" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,24},{0,401},{0,208},{0,431}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkyWeaponPanel/background/middleBg/box2/attributeTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,44},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="攻击力" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box2/beforeTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,44},{0,0},{0,88},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box2/addImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,92},{0,0},{0,136},{0,30}}" />
+                        <Property Name="Image" Value="set:skins image:rightArrow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box2/afterTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,140},{0,0},{0,184},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ff85f500" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SkyWeaponPanel/background/middleBg/box4" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,24},{0,431},{0,208},{0,461}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkyWeaponPanel/background/middleBg/box4/attributeTxt4" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,44},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="攻击力" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box4/beforeTxt4" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,44},{0,0},{0,88},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box4/addImg4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,92},{0,0},{0,136},{0,30}}" />
+                        <Property Name="Image" Value="set:skins image:rightArrow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box4/afterTxt4" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,140},{0,0},{0,184},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ff85f500" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SkyWeaponPanel/background/middleBg/box6" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,24},{0,461},{0,208},{0,491}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkyWeaponPanel/background/middleBg/box6/attributeTxt6" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,44},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="攻击力" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box6/beforeTxt6" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,44},{0,0},{0,88},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box6/addImg6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,92},{0,0},{0,136},{0,30}}" />
+                        <Property Name="Image" Value="set:skins image:rightArrow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box6/afterTxt6" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,140},{0,0},{0,184},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ff85f500" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SkyWeaponPanel/background/middleBg/box1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,230},{0,371},{0,414},{0,401}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkyWeaponPanel/background/middleBg/box1/attributeTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,44},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="攻击力" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box1/beforeTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,44},{0,0},{0,88},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box1/addImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,92},{0,0},{0,136},{0,30}}" />
+                        <Property Name="Image" Value="set:skins image:rightArrow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box1/afterTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,140},{0,0},{0,184},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ff85f500" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SkyWeaponPanel/background/middleBg/box3" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,230},{0,401},{0,414},{0,431}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkyWeaponPanel/background/middleBg/box3/attributeTxt3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,44},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="攻击力" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box3/beforeTxt3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,44},{0,0},{0,88},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box3/addImg3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,92},{0,0},{0,136},{0,30}}" />
+                        <Property Name="Image" Value="set:skins image:rightArrow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box3/afterTxt3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,140},{0,0},{0,184},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ff85f500" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SkyWeaponPanel/background/middleBg/box5" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,230},{0,431},{0,414},{0,461}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkyWeaponPanel/background/middleBg/box5/attributeTxt5" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,44},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="攻击力" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box5/beforeTxt5" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,44},{0,0},{0,88},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box5/addImg5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,92},{0,0},{0,136},{0,30}}" />
+                        <Property Name="Image" Value="set:skins image:rightArrow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box5/afterTxt5" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,140},{0,0},{0,184},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ff85f500" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SkyWeaponPanel/background/middleBg/box0" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,24},{0,371},{0,208},{0,401}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkyWeaponPanel/background/middleBg/box0/attributeTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,44},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="攻击力" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box0/beforeTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,44},{0,0},{0,88},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box0/addImg0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,92},{0,0},{0,136},{0,30}}" />
+                        <Property Name="Image" Value="set:skins image:rightArrow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box0/afterTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,140},{0,0},{0,184},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ff85f500" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SkyWeaponPanel/background/middleBg/box7" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,230},{0,461},{0,414},{0,491}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkyWeaponPanel/background/middleBg/box7/attributeTxt7" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,44},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="攻击力" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box7/beforeTxt7" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,44},{0,0},{0,88},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box7/addImg7" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,92},{0,0},{0,136},{0,30}}" />
+                        <Property Name="Image" Value="set:skins image:rightArrow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="SkyWeaponPanel/background/middleBg/box7/afterTxt7" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,140},{0,0},{0,184},{0,22}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="+12345" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ff85f500" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="SkyWeaponPanel/background/grid1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,675},{0,78},{0,723},{0,126}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/grid2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,619},{0,78},{0,667},{0,126}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/grid4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,675},{0,134},{0,723},{0,182}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/grid3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,619},{0,134},{0,667},{0,182}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/grid6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,675},{0,190},{0,723},{0,238}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/grid5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,619},{0,190},{0,667},{0,238}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/moBing0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,22},{0,375},{0,70},{0,423}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/moBing1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,78},{0,375},{0,126},{0,423}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/moBing2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,22},{0,431},{0,70},{0,479}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/moBing3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,78},{0,431},{0,126},{0,479}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/grid" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,349},{0,88},{0,397},{0,136}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/grid10" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,78},{0,134},{0,126},{0,182}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/grid12" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,78},{0,190},{0,126},{0,238}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/grid14" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,648},{0,405},{0,696},{0,453}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/grid9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,22},{0,134},{0,70},{0,182}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/grid8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,78},{0,78},{0,126},{0,126}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/grid11" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,22},{0,190},{0,70},{0,238}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyWeaponPanel/background/grid7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,22},{0,78},{0,70},{0,126}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

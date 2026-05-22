@@ -1,0 +1,22 @@
+<GUILayout>
+    <Window Name="NPAutoHang" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,261},{0,355}}" />
+        <Property Name="AutoRenderingSurface" Value="False" />
+        <Window Name="NPAutoHang/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,243},{0,309}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="NPAutoHang/bgImg/knowBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,78},{0,277},{0,161},{0,300}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="朕知道了" />
+            </Window>
+        </Window>
+        <Window Name="NPAutoHang/titleImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,70},{0,-32},{0,171},{0,-5}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+    </Window>
+</GUILayout>

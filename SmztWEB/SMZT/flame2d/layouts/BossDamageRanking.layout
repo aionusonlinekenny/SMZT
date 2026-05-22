@@ -1,0 +1,80 @@
+<GUILayout>
+    <Window Name="BossDamageRanking" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,261},{0,239}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="BossDamageRanking/shadowBGImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,261},{0,239}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="BossDamageRanking/shadowBGImg/topImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,261},{0,32}}" />
+                <Property Name="Image" Value="set:mainUI1 image:taskTitleBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="BossDamageRanking/shadowBGImg/topImg/nextBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,7},{0,9},{0,23},{0,25}}" />
+                    <Property Name="HoverImage" Value="set:mainUI1 image:leftBuffHover" />
+                    <Property Name="NormalImage" Value="set:mainUI1 image:leftBuffNormal" />
+                    <Property Name="PushedImage" Value="set:mainUI1 image:leftBuffPushed" />
+                </Window>
+                <Window Name="BossDamageRanking/shadowBGImg/topImg/rankImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,55},{0,5},{0,206},{0,27}}" />
+                    <Property Name="Image" Value="set:ranking image:boss" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="BossDamageRanking/shadowBGImg/boxlist" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,32},{0,261},{0,194}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="BossDamageRanking/shadowBGImg/bgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,195},{0,261},{0,239}}" />
+                <Property Name="Image" Value="set:ranking image:shadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="BossDamageRanking/shadowBGImg/bgImg/myRankingTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,110},{0,44}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="我的排名：4" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="BossDamageRanking/shadowBGImg/bgImg/damageTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,111},{0,4},{0,148},{0,22}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="伤害：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="BossDamageRanking/shadowBGImg/bgImg/damagenumberTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,111},{0,22},{0,251},{0,40}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="BossDamageRanking/shadowBGImg/bgImg/desc$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,149},{0,4},{0,251},{0,22}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="5.1万（14.3%）" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

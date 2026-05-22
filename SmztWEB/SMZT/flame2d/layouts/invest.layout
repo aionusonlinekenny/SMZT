@@ -1,0 +1,229 @@
+<GUILayout>
+    <Window Name="Invest" Type="GuiLook/FrameWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,180},{0,31},{0,889},{0,540}}" />
+        <Property Name="GlyphImage" Value="set:tj2uititles1 image:TitleInvest" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+       
+        <Window Name="Invest/Bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,-6},{0,-1},{0,697},{0,476}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="Invest/Tab" Type="GuiLook/TabControl">
+            <Property Name="UnifiedAreaRect" Value="{{0,211},{0,4},{0,694},{0,451}}" />
+            <Property Name="ClippedByParent" Value="false" />
+           
+            <Window Name="Invest/Tab/Tab 1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,479},{0,416}}" />
+                <Property Name="Text" Value="【月卡投资】八倍返还欢乐无边" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Window Name="Invest/Tab/Tab 1/LBG" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,90},{0,296},{0,211}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 1/RBG" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,18},{0,169},{0,306},{0,290}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 1/IconBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,19},{0,20},{0,85},{0,86}}" />
+                    <Property Name="Image" Value="set:tj2common image:TaskGridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 1/T0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,89},{0,34},{0,319},{0,51}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="礼金可以在礼金商城购买各种商城道具" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="99FFFFFF" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 1/T1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,89},{0,54},{0,319},{0,71}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="投资的元宝，将全部转换为高额的礼金" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="fffcd78a" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 1/T2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,29},{0,114},{0,228},{0,131}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="现存入500元宝" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff00ff3c" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 1/T3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,29},{0,134},{0,299},{0,151}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="存入立即返回10000礼金，马上翻倍！开服比购" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff00ff3c" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 1/DepositBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,320},{0,120},{0,471},{0,186}}" />
+                    <Property Name="Image" Value="tj2invest/MothInvestBtn" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 1/TxtInfoGroup" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,418},{0,474},{0,447}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Window Name="Invest/Tab/Tab 1/TxtInfoGroup/TxtBg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,464},{0,26}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="Invest/Tab/Tab 1/TxtInfoGroup/TotalDay" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,68},{0,5},{0,87},{0,24}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="30" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="Invest/Tab/Tab 1/TxtInfoGroup/LeftDay" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,170},{0,5},{0,189},{0,24}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="30" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="Invest/Tab/Tab 1/TxtInfoGroup/LeftMoney" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,326},{0,5},{0,378},{0,24}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="30" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="Invest/Tab/Tab 2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,482},{0,419}}" />
+                <Property Name="Text" Value="【升级投资】十倍返还乐无边" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Window Name="Invest/Tab/Tab 2/LBG" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,90},{0,296},{0,211}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 2/RBG" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,192},{0,90},{0,480},{0,211}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 2/IconBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,19},{0,20},{0,85},{0,86}}" />
+                    <Property Name="Image" Value="set:tj2common image:TaskGridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 2/InfoBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,20},{0,186},{0,326},{0,204}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 2/T0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,89},{0,34},{0,319},{0,51}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="礼金可以在礼金商城购买各种商城道具" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff00ff3c" />
+                    <Property Name="DropTextColour" Value="FFFF0000" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 2/T1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,89},{0,54},{0,319},{0,71}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="投资的元宝，将全部转换为高额的礼金" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="fffcd78a" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 2/DepositBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,320},{0,119},{0,471},{0,185}}" />
+                    <Property Name="Image" Value="set:tj2invest image:LevelInvestBtn" />
+                </Window>
+                <Window Name="Invest/Tab/Tab 2/TxtInfoGroup" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,418},{0,474},{0,447}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Window Name="Invest/Tab/Tab 2/TxtInfoGroup/TxtBg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,450},{0,25}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="Invest/Tab/Tab 3" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,484},{0,420}}" />
+                <Property Name="Text" Value="存取公示" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Window Name="Invest/Tab/Tab 3/OptGroup" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,7},{0,384},{0,471},{0,410}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="Invest/Tab/Tab 3/OptGroup/AllOpt" Type="GuiLook/RadioButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,50},{0,0},{0,114},{0,18}}" />
+                        <Property Name="Text" Value="全部" />
+                    </Window>
+                    <Window Name="Invest/Tab/Tab 3/OptGroup/SaveOpt" Type="GuiLook/RadioButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,130},{0,0},{0,194},{0,18}}" />
+                        <Property Name="Text" Value="存入" />
+                    </Window>
+                    <Window Name="Invest/Tab/Tab 3/OptGroup/GetOpt" Type="GuiLook/RadioButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,220},{0,0},{0,284},{0,18}}" />
+                        <Property Name="Text" Value="取出" />
+                    </Window>
+                    <Window Name="Invest/Tab/Tab 3/OptGroup/PerBtn" Type="GuiLook/DefaultImageButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,341},{0,0},{0,358},{0,18}}" />
+                        <Property Name="Image" Value="set:tj2invest image:PerPageBtn" />
+                    </Window>
+                    <Window Name="Invest/Tab/Tab 3/OptGroup/NextBtn" Type="GuiLook/DefaultImageButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,401},{0,0},{0,418},{0,18}}" />
+                        <Property Name="Image" Value="set:tj2invest image:NextPageBtn" />
+                    </Window>
+                    <Window Name="Invest/Tab/Tab 3/OptGroup/PageInfo" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,359},{0,0},{0,401},{0,19}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="1/1" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

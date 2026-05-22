@@ -1,0 +1,65 @@
+<GUILayout>
+    <Window Name="ConsignmentLook" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,283},{0,529}}" />
+        <Property Name="Text" Value="查看摊位" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="ConsignmentLook/bg" Type="GuiLook/CommonBG">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,265},{0,483}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ConsignmentLook/bg/line" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,44},{0,265},{0,54}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="ConsignmentLook/bg/bgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,264},{0,53}}" />
+                <Property Name="Image" Value="set:consignment image:bg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="ConsignmentLook/bg/bgImg/playerTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,86},{0,28},{0,123},{0,46}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="摊主：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ConsignmentLook/bg/bgImg/nameTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,123},{0,28},{0,230},{0,46}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="吴·玩家名称六字" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ConsignmentLook/bg/bgImg/chatImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,235},{0,25},{0,257},{0,47}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:buffBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ConsignmentLook/bg/bgImg/chatImg/chatBtn" Type="GuiLook/DefaultImageButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,21},{0,21}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:chatImg" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="ConsignmentLook/bg/boxList" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,57},{0,265},{0,475}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

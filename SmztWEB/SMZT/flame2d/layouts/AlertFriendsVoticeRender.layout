@@ -1,0 +1,54 @@
+<GUILayout>
+    <Window Name="AlertFriendsVoticeRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,345},{0,31}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="AlertFriendsVoticeRender/bg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,345},{0,31}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:RenderNormalBgLeft" />
+            <Property Name="LeftOffset" Value="46" />
+            <Property Name="RightImage" Value="set:skin image:RenderNormalBgRight" />
+            <Property Name="CenterImage" Value="set:skin image:RenderNormalBgCenter" />
+            <Property Name="RightOffset" Value="46" />
+        </Window>
+        <Window Name="AlertFriendsVoticeRender/selected" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,345},{0,31}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:textDiLeft" />
+            <Property Name="LeftOffset" Value="46" />
+            <Property Name="RightImage" Value="set:skin image:textDiRight" />
+            <Property Name="CenterImage" Value="set:skin image:textDiCenter" />
+            <Property Name="RightOffset" Value="46" />
+        </Window>
+        <Window Name="AlertFriendsVoticeRender/name$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,266},{0,23}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="玩家名称六字" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFe1feff" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="AlertFriendsVoticeRender/accept$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,275},{0,5},{0,304},{0,23}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="接受" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="AlertFriendsVoticeRender/refused$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,310},{0,5},{0,339},{0,23}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="拒绝" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFF0000" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

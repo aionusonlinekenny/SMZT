@@ -1,0 +1,162 @@
+<GUILayout>
+    <Window Name="ActivityEnterPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,739},{0,475}}" />
+        <Property Name="GlyphImage" Value="set:activitiesGeneral image:title_10025" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="ActivityEnterPanel/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,721},{0,429}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ActivityEnterPanel/background/bottombackground" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,332},{0,721},{0,425}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ActivityEnterPanel/background/bottombackground/joinBtn" Type="GlossySerpent/RedButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,526},{0,28},{0,689},{0,68}}" />
+                    <Window Name="ActivityEnterPanel/background/bottombackground/joinBtn/joinImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                        <Property Name="Image" Value="set:activitiesGeneral image:join" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="ActivityEnterPanel/background/bottombackground/titleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,14},{0,9},{0,75},{0,27}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="活动规则：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFfef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ActivityEnterPanel/background/bottombackground/timeTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,14},{0,67},{0,75},{0,85}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="活动时间：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFfef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ActivityEnterPanel/background/bottombackground/desc$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,14},{0,28},{0,510},{0,65}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="等级达到40级即可参与，每天可参加一次，一共30道题。" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFffffff" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ActivityEnterPanel/background/bottombackground/timeTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,76},{0,67},{0,316},{0,85}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="12:00-12:15/18:00-18:15（任选一场）" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ActivityEnterPanel/background/topbackground" Type="GlossySerpent/NineStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,720},{0,332}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TopImage" Value="set:activitiesGeneral image:blackNorth" />
+                <Property Name="LeftImage" Value="set:activitiesGeneral image:blackWest" />
+                <Property Name="TopOffset" Value="17" />
+                <Property Name="LeftOffset" Value="19" />
+                <Property Name="RightImage" Value="set:activitiesGeneral image:blackEast" />
+                <Property Name="BottomImage" Value="set:activitiesGeneral image:blackSouth" />
+                <Property Name="CenterImage" Value="set:activitiesGeneral image:blackCentre" />
+                <Property Name="RightOffset" Value="19" />
+                <Property Name="BottomOffset" Value="17" />
+                <Property Name="TopLeftImage" Value="set:activitiesGeneral image:blackNorthwest" />
+                <Property Name="TopRightImage" Value="set:activitiesGeneral image:blackNortheast" />
+                <Property Name="BottomLeftImage" Value="set:activitiesGeneral image:blackSouthwest" />
+                <Property Name="BottomRightImage" Value="set:activitiesGeneral image:blackSoutheast" />
+                <Window Name="ActivityEnterPanel/background/topbackground/backgroundImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,713},{0,326}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ActivityEnterPanel/background/topbackground/backgroundImg/shadowImg" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,138},{0,0},{0,573},{0,319}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="ActivityEnterPanel/background/topbackground/backgroundImg/shadowImg/shadowImgBG" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,435},{0,319}}" />
+                            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="ActivityEnterPanel/background/topbackground/backgroundImg/shadowImg/itemWin" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,260},{0,215},{0,308}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorizontalAlignment" Value="Centre" />
+                        </Window>
+                        <Window Name="ActivityEnterPanel/background/topbackground/backgroundImg/shadowImg/activityTimeImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,225},{0,408},{0,248}}" />
+                            <Property Name="Image" Value="set:activitiesGeneral image:activityTime" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="ActivityEnterPanel/background/topbackground/backgroundImg/shadowImg/activityTimeImg/time1Txt" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,181},{0,0},{0,403},{0,23}}" />
+                                <Property Name="Font" Value="songti_14_strengh" />
+                                <Property Name="Text" Value="12:00-12:15" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="ActivityEnterPanel/background/topbackground/backgroundImg/shadowImg/desc1$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,40},{0,60},{0,400},{0,205}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="ActivityEnterPanel/background/topbackground/backgroundImg/shadowImg/grayshadowImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,145},{0,0},{0,289},{0,23}}" />
+                            <Property Name="Image" Value="set:activitiesGeneral image:grayShadow" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MouseInputPropagationEnabled" Value="true" />
+                            <Window Name="ActivityEnterPanel/background/topbackground/backgroundImg/shadowImg/grayshadowImg/desc5Txt" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,144},{0,23}}" />
+                                <Property Name="Font" Value="songti_14_strengh" />
+                                <Property Name="Text" Value="活动说明" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF00baff" />
+                                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                                <Window Name="ActivityEnterPanel/background/topbackground/backgroundImg/shadowImg/grayshadowImg/desc5Txt/desc5TxtBG" Type="GuiLook/DefaultImageButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,144},{0,23}}" />
+                                </Window>
+                                <Window Name="ActivityEnterPanel/background/topbackground/backgroundImg/shadowImg/grayshadowImg/desc5Txt/upAndDownBtn" Type="GuiLook/DefaultImageButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,119},{0,6},{0,130},{0,17}}" />
+                                    <Property Name="Image" Value="set:activitiesGeneral image:down" />
+                                </Window>
+                            </Window>
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

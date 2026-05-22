@@ -1,0 +1,192 @@
+<GUILayout>
+    <Window Name="GangWarehouse" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,613},{0,463}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GangWarehouse/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,613},{0,463}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangWarehouse/background/boxSP0" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,27},{0,262},{0,390}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="GangWarehouse/background/boxSP1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,352},{0,27},{0,609},{0,390}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="GangWarehouse/background/myBagTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,3},{0,72},{0,25}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="我的背包" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangWarehouse/background/gangBagTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,352},{0,3},{0,419},{0,25}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="帮派仓库" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangWarehouse/background/dragTxt0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,3},{0,234},{0,25}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="向右拖拽物品可捐献" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF64d4d8" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangWarehouse/background/dragNextTxt0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,224},{0,3},{0,252},{0,25}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="道具" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangWarehouse/background/dragNextTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,571},{0,3},{0,599},{0,25}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="道具" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangWarehouse/background/dragTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,462},{0,3},{0,581},{0,25}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="向左拖拽物品可兑换" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF64d4d8" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangWarehouse/background/diSp" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,427},{0,612},{0,462}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangWarehouse/background/diSp/donationBtn" Type="GlossySerpent/BlueButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,93},{0,0},{0,176},{0,24}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="捐献道具" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="GangWarehouse/background/diSp/changeBtn" Type="GlossySerpent/BlueButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,440},{0,0},{0,523},{0,24}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="兑换道具" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="GangWarehouse/background/diSp/contributionTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,258},{0,6},{0,309},{0,28}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="贡献点：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangWarehouse/background/diSp/contributionTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,310},{0,6},{0,363},{0,28}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFffffff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangWarehouse/background/diSp/destructionBtn" Type="GlossySerpent/BlueButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,545},{0,0},{0,587},{0,24}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="销毁" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                </Window>
+            </Window>
+            <Window Name="GangWarehouse/background/checkbox0" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,525},{0,392},{0,609},{0,408}}" />
+                <Property Name="Text" Value="显示可兑换" />
+            </Window>
+            <Window Name="GangWarehouse/background/checkbox1" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,525},{0,409},{0,609},{0,425}}" />
+                <Property Name="Text" Value="显示本职业" />
+            </Window>
+            <Window Name="GangWarehouse/background/laPageBg0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,114},{0,400},{0,156},{0,418}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangWarehouse/background/laPageBg0/pageTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,18}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="1/5" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF64d4d8" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangWarehouse/background/pageLastBtn0" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,90},{0,399},{0,110},{0,419}}" />
+                <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+                <Property Name="DisabledImage" Value="set:skin image:LastBtnDisable" />
+            </Window>
+            <Window Name="GangWarehouse/background/pageNextBtn0" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,399},{0,180},{0,419}}" />
+                <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+                <Property Name="DisabledImage" Value="set:skin image:NextBtnDisable" />
+            </Window>
+            <Window Name="GangWarehouse/background/laPageBg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,458},{0,400},{0,500},{0,418}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangWarehouse/background/laPageBg1/pageTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,18}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="1/5" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF64d4d8" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangWarehouse/background/pageNextBtn1" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,504},{0,399},{0,524},{0,419}}" />
+                <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+                <Property Name="DisabledImage" Value="set:skin image:NextBtnDisable" />
+            </Window>
+            <Window Name="GangWarehouse/background/pageLastBtn1" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,434},{0,399},{0,454},{0,419}}" />
+                <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+                <Property Name="DisabledImage" Value="set:skin image:LastBtnDisable" />
+            </Window>
+            <Window Name="GangWarehouse/background/arrow0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,276},{0,71},{0,339},{0,183}}" />
+                <Property Name="Image" Value="set:gangGeneral image:arrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangWarehouse/background/arrow1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,276},{0,188},{0,339},{0,300}}" />
+                <Property Name="Image" Value="set:gangGeneral image:arrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Rotation" Value="w:1e-016 x:0 y:0 z:1" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="AutoRenderingSurface" Value="true" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

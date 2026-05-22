@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="usualRemind" >
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1024},{-0.136095,829}}" />
+        <Window Type="DefaultWindow" Name="usualRemind/MousePointRemind" >
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,300},{0,22}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+            <Window Type="GuiLook/StaticImage" Name="usualRemind/MousePointRemind/Icon" >
+                <Property Name="Image" Value="set:tj2special1 image:UsualRemindIcon1" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,23},{0,24}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+            <Window Type="GuiLook/StaticText" Name="usualRemind/MousePointRemind/MsgTxt" >
+                <Property Name="Font" Value="宋体1" />
+                <Property Name="UnifiedAreaRect" Value="{{0,22},{0,2},{0,290},{0,22}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+        </Window>
+        <Window Type="GuiLook/StaticText" Name="usualRemind/BottomCenter" >
+            <Property Name="Font" Value="宋体3" />
+            <Property Name="UnifiedAreaRect" Value="{{0,574},{0,663},{0,986},{0,685}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="GuiLook/FrameWindow2" Name="usualRemind/BottomRight" >
+            <Property Name="TitlebarFont" Value="宋体" />
+            <Property Name="TitlebarEnabled" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,621},{0,376},{0,878},{0,529}}" />
+            <Property Name="CloseButtonEnabled" Value="False" />
+            <Property Name="AutoRenderingSurface" Value="0" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+            <Window Type="GuiLook/StaticImage" Name="usualRemind/BottomRight/IconBg" >
+                <Property Name="Image" Value="set:tj2common image:TaskGridBG" />
+                <Property Name="UnifiedAreaRect" Value="{{0,12},{0,20},{0,78},{0,86}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/BottomRight/IconBg/Img" >
+                    <Property Name="Image" Value="set:tj2common image:GridBG" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,13},{0,9},{0,57},{0,53}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+            </Window>
+            <Window Type="GuiLook/StaticText" Name="usualRemind/BottomRight/MsgTxt" >
+                <Property Name="Font" Value="宋体" />
+                <Property Name="UnifiedAreaRect" Value="{{0,83},{0,42},{0,226},{0,64}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="usualRemind/TopCenter" >
+            <Property Name="UnifiedAreaRect" Value="{{0,259},{0,155},{0,766},{0,186}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+            <Window Type="GuiLook/RichTextBox" Name="usualRemind/TopCenter/TopCenterMsg" >
+                <Property Name="Font" Value="宋体3" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="UnifiedAreaRect" Value="{{0,31},{0,4},{0,429},{0,30}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="usualRemind/AwardRemind" >
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,577},{0,239},{0,837},{0,622}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+            <Window Type="GlossySerpent/GrayPanel" Name="usualRemind/AwardRemind/Bg" >
+                <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,15},{0,260},{0,381}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+            <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/TopLeft" >
+                <Property Name="Image" Value="set:tj2special image:BoardTopLeft" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,19},{0,18},{0,31}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+            <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/TopLeft1" >
+                <Property Name="Image" Value="set:tj2special image:BoardTopRight" />
+                <Property Name="UnifiedAreaRect" Value="{{0,242},{0,19},{0,255},{0,31}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+            <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/TopLeft2" >
+                <Property Name="Image" Value="set:tj2special image:BoardBottomLeft" />
+                <Property Name="ClippedByParent" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,352},{0,17},{0,364}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+            <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/TopLeft11" >
+                <Property Name="Image" Value="set:tj2special image:BoardBottomRight" />
+                <Property Name="ClippedByParent" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,242},{0,352},{0,255},{0,364}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+            <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/TitleImg" >
+                <Property Name="Image" Value="set:tj2special3 image:RemindGetAwardTitle" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,3},{0,103},{0,31}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+            <Window Type="DefaultWindow" Name="usualRemind/AwardRemind/ExpGroup" >
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,45},{0,214},{0,72}}" />
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/ExpGroup/TitleImg" >
+                    <Property Name="Image" Value="set:tj2special3 image:RemindExpTitle" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,3},{0,45},{0,23}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/ExpGroup/IconImg" >
+                    <Property Name="Image" Value="set:tj2special3 image:ExpIcon" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,47},{0,7},{0,76},{0,20}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="CEGUI/ImageNum" Name="usualRemind/AwardRemind/ExpGroup/Num" >
+                    <Property Name="Font" Value="宋体" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,112},{0,6},{0,182},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/Line" Name="usualRemind/AwardRemind/ExpGroup/Line" >
+                    <Property Name="UnifiedAreaRect" Value="{{0,-10},{0,24},{0,180},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/ExpGroup/AddMark" >
+                    <Property Name="Image" Value="set:tj2special image:AddMark" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,94},{0,8},{0,105},{0,20}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="usualRemind/AwardRemind/SilverGroup" >
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,74},{0,214},{0,101}}" />
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/SilverGroup/TitleImg" >
+                    <Property Name="Image" Value="set:tj2special3 image:RemindSilverTitle" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,3},{0,44},{0,24}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/SilverGroup/IconImg" >
+                    <Property Name="Image" Value="set:tj2special image:Money" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,47},{0,3},{0,68},{0,24}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="CEGUI/ImageNum" Name="usualRemind/AwardRemind/SilverGroup/Num" >
+                    <Property Name="Font" Value="宋体" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,112},{0,6},{0,182},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/Line" Name="usualRemind/AwardRemind/SilverGroup/Line" >
+                    <Property Name="UnifiedAreaRect" Value="{{0,-10},{0,24},{0,180},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/SilverGroup/AddMark" >
+                    <Property Name="Image" Value="set:tj2special image:AddMark" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,94},{0,8},{0,105},{0,20}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="usualRemind/AwardRemind/ReikiGroup" >
+                <Property Name="UnifiedAreaRect" Value="{{0,35},{0,104},{0,215},{0,131}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/ReikiGroup/TitleImg" >
+                    <Property Name="Image" Value="set:tj2special3 image:RemindReikiTitle" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,3},{0,44},{0,23}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/ReikiGroup/IconImg" >
+                    <Property Name="Image" Value="set:tj2special3 image:NimbusIcon" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,47},{0,-1},{0,68},{0,23}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="CEGUI/ImageNum" Name="usualRemind/AwardRemind/ReikiGroup/Num" >
+                    <Property Name="Font" Value="宋体" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,112},{0,6},{0,182},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/Line" Name="usualRemind/AwardRemind/ReikiGroup/Line" >
+                    <Property Name="UnifiedAreaRect" Value="{{0,-10},{0,24},{0,180},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/ReikiGroup/AddMark" >
+                    <Property Name="Image" Value="set:tj2special image:AddMark" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,94},{0,8},{0,105},{0,20}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="usualRemind/AwardRemind/GoldTicketGroup" >
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,134},{0,214},{0,161}}" />
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/GoldTicketGroup/TitleImg" >
+                    <Property Name="Image" Value="set:tj2special3 image:RemindGoldTicketTitle" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,3},{0,46},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/GoldTicketGroup/IconImg" >
+                    <Property Name="Image" Value="set:tj2special image:MoneyBindGold" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,47},{0,0},{0,68},{0,21}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="CEGUI/ImageNum" Name="usualRemind/AwardRemind/GoldTicketGroup/Num" >
+                    <Property Name="Font" Value="宋体" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,112},{0,6},{0,182},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/Line" Name="usualRemind/AwardRemind/GoldTicketGroup/Line" >
+                    <Property Name="UnifiedAreaRect" Value="{{0,-10},{0,24},{0,180},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/GoldTicketGroup/AddMark" >
+                    <Property Name="Image" Value="set:tj2special image:AddMark" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,94},{0,8},{0,105},{0,20}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="usualRemind/AwardRemind/GoldGroup" >
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,165},{0,214},{0,192}}" />
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/GoldGroup/TitleImg" >
+                    <Property Name="Image" Value="set:tj2special3 image:RemindGoldTitle" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,3},{0,46},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/GoldGroup/IconImg" >
+                    <Property Name="Image" Value="set:tj2special image:MoneyGold" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,47},{0,5},{0,68},{0,26}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="CEGUI/ImageNum" Name="usualRemind/AwardRemind/GoldGroup/Num" >
+                    <Property Name="Font" Value="宋体" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,112},{0,6},{0,182},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/Line" Name="usualRemind/AwardRemind/GoldGroup/Line" >
+                    <Property Name="UnifiedAreaRect" Value="{{0,-10},{0,24},{0,180},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/GoldGroup/AddMark" >
+                    <Property Name="Image" Value="set:tj2special image:AddMark" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,94},{0,8},{0,105},{0,20}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="usualRemind/AwardRemind/SilverTicketGroup" >
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,195},{0,214},{0,222}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/SilverTicketGroup/TitleImg" >
+                    <Property Name="Image" Value="set:tj2special3 image:RemindSilverTicketTitle" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,3},{0,45},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/SilverTicketGroup/IconImg" >
+                    <Property Name="Image" Value="set:tj2special image:MoneyBind" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,47},{0,4},{0,68},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="CEGUI/ImageNum" Name="usualRemind/AwardRemind/SilverTicketGroup/Num" >
+                    <Property Name="Font" Value="宋体" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,112},{0,6},{0,182},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/Line" Name="usualRemind/AwardRemind/SilverTicketGroup/Line" >
+                    <Property Name="UnifiedAreaRect" Value="{{0,-10},{0,24},{0,180},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/SilverTicketGroup/AddMark" >
+                    <Property Name="Image" Value="set:tj2special image:AddMark" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,94},{0,8},{0,105},{0,20}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="usualRemind/AwardRemind/DungeonScoreGroup" >
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,225},{0,214},{0,252}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/DungeonScoreGroup/TitleImg" >
+                    <Property Name="Image" Value="set:tj2special2 image:ScoreTxt" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,3},{0,46},{0,26}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/DungeonScoreGroup/IconImg" >
+                    <Property Name="Image" Value="set:tj2special2 image:ScoreIcon" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,47},{0,0},{0,73},{0,27}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="CEGUI/ImageNum" Name="usualRemind/AwardRemind/DungeonScoreGroup/Num" >
+                    <Property Name="Font" Value="宋体" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,112},{0,6},{0,182},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/Line" Name="usualRemind/AwardRemind/DungeonScoreGroup/Line" >
+                    <Property Name="UnifiedAreaRect" Value="{{0,-10},{0,24},{0,180},{0,25}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticImage" Name="usualRemind/AwardRemind/DungeonScoreGroup/AddMark" >
+                    <Property Name="Image" Value="set:tj2special image:AddMark" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,94},{0,8},{0,105},{0,20}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="usualRemind/AwardRemind/ItemGroup" >
+                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,261},{0,247},{0,366}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+                <Window Type="GuiLook/TitleText" Name="usualRemind/AwardRemind/ItemGroup/TitleBg" >
+                    <Property Name="Font" Value="宋体" />
+                    <Property Name="Text" Value="获 得 道 具" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,31},{0,9},{0,194},{0,30}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/DataGrid" Name="usualRemind/AwardRemind/ItemGroup/ItemDG" >
+                    <Property Name="Font" Value="宋体" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,38},{0,223},{0,121}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Type="GlossySerpent/ThreeStretchImage" Name="usualRemind/TaskRemind" >
+            <Property Name="LeftImage" Value="set:tj2common image:TaskRemindBG_L" />
+            <Property Name="LeftOffset" Value="42" />
+            <Property Name="RightImage" Value="set:tj2common image:TaskRemindBG_R" />
+            <Property Name="CenterImage" Value="set:tj2common image:TaskRemindBG_M" />
+            <Property Name="RightOffset" Value="42" />
+            <Property Name="UnifiedAreaRect" Value="{{0,339},{0,655},{0,685},{0,684}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+            <Window Type="GuiLook/StaticText" Name="usualRemind/TaskRemind/MsgTxt" >
+                <Property Name="Font" Value="宋体1" />
+                <Property Name="TextColour" Value="ffffff80" />
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,6},{0,340},{0,23}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+        </Window>
+        <Window Type="GuiLook/StaticImage" Name="usualRemind/TopCenterImg" >
+            <Property Name="UnifiedAreaRect" Value="{{0,337},{0,139},{0,687},{0,227}}" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,44 @@
+<GUILayout>
+    <Window Name="SocialAddGroupAlert" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,360},{0,183}}" />
+        <Property Name="Text" Value="添加分组" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="SocialAddGroupAlert/sureBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,74},{0,116},{0,161},{0,139}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="确定" />
+        </Window>
+        <Window Name="SocialAddGroupAlert/cancelBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,196},{0,116},{0,283},{0,139}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="取消" />
+        </Window>
+        <Window Name="SocialAddGroupAlert/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,110},{0,346},{0,111}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="SocialAddGroupAlert/bg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,74},{0,36},{0,273},{0,57}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:EditBox_L" />
+            <Property Name="LeftOffset" Value="4" />
+            <Property Name="RightImage" Value="set:skin image:EditBox_R" />
+            <Property Name="CenterImage" Value="set:skin image:EditBox_M" />
+            <Property Name="RightOffset" Value="4" />
+            <Window Name="SocialAddGroupAlert/bg/inputTxt" Type="GuiLook/Editbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,198},{0,21}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

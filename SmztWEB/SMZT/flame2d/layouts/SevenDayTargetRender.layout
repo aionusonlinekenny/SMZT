@@ -1,0 +1,154 @@
+<GUILayout>
+    <Window Name="dayTargetRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,766},{0,60}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="dayTargetRender/listBG" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,766},{0,60}}" />
+            <Property Name="Image" Value="set:skin image:RenderBg2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="dayTargetRender/chooseImg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,766},{0,59}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skins image:selectedLeft" />
+            <Property Name="LeftOffset" Value="127" />
+            <Property Name="RightImage" Value="set:skins image:selectedRight" />
+            <Property Name="CenterImage" Value="set:skins image:selectedCenter" />
+            <Property Name="RightOffset" Value="127" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="dayTargetRender/operHandelCon" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,655},{0,10},{0,755},{0,51}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="dayTargetRender/operHandelCon/getRewardBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,7},{0,94},{0,32}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="领取奖励" />
+                <Property Name="AlwaysOnTop" Value="true" />
+            </Window>
+            <Window Name="dayTargetRender/operHandelCon/linkBut$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,19},{0,13},{0,104},{0,41}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="dayTargetRender/targetNameImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,140},{0,60}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="dayTargetRender/pointImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,140},{0,0},{0,156},{0,60}}" />
+            <Property Name="Image" Value="set:skin image:TriangleImg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="dayTargetRender/targetDes$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,190},{0,14},{0,461},{0,35}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="角色等级提升至\[60/45]级即可以领取" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF0000FF" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="DropTextColour" Value="FF0000FF" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="dayTargetRender/grid1" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,466},{0,6},{0,514},{0,54}}" />
+            <Property Name="Image" Value="set:skin image:GridBG" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="dayTargetRender/grid2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,520},{0,6},{0,568},{0,54}}" />
+            <Property Name="Image" Value="set:skin image:GridBG" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="dayTargetRender/grid3" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,575},{0,6},{0,623},{0,54}}" />
+            <Property Name="Image" Value="set:skin image:GridBG" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="dayTargetRender/progressBg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,190},{0,34},{0,416},{0,45}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:mainUI1 image:ProgressBarBgLeft" />
+            <Property Name="LeftOffset" Value="3" />
+            <Property Name="RightImage" Value="set:mainUI1 image:ProgressBarBgRight" />
+            <Property Name="CenterImage" Value="set:mainUI1 image:ProgressBarBgCenter" />
+            <Property Name="RightOffset" Value="3" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="dayTargetRender/progressBg/progressLine" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,226},{0,11}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:BlueProgressBarLeft" />
+                <Property Name="LeftOffset" Value="48" />
+                <Property Name="RightImage" Value="set:skin image:BlueProgressBarRight" />
+                <Property Name="CenterImage" Value="set:skin image:BlueProgressBarCenter" />
+                <Property Name="RightOffset" Value="48" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="dayTargetRender/finishImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,679},{0,20},{0,735},{0,39}}" />
+            <Property Name="Image" Value="set:skins image:beOver" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="dayTargetRender/redImg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,664},{0,18},{0,761},{0,43}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:RedBoxLeft" />
+            <Property Name="LeftOffset" Value="10" />
+            <Property Name="RightImage" Value="set:skin image:RedBoxRight" />
+            <Property Name="CenterImage" Value="set:skin image:RedBoxMiddle" />
+            <Property Name="RightOffset" Value="10" />
+            <Window Name="dayTargetRender/redImg/redTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,97},{0,25}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="未达到登录天数" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF0000" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

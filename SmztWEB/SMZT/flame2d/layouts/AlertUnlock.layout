@@ -1,0 +1,114 @@
+<GUILayout>
+    <Window Name="AlertUnlock" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,303},{0,305}}" />
+        <Property Name="Text" Value="立即开启" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="AlertUnlock/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,262},{0,285},{0,263}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="AlertUnlock/sureBtn" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,44},{0,231},{0,124},{0,254}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="立即开启" />
+        </Window>
+        <Window Name="AlertUnlock/bg" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,285},{0,223}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="AlertUnlock/bg/titleBg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,285},{0,29}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:ListTitleBgLeft" />
+                <Property Name="LeftOffset" Value="19" />
+                <Property Name="RightImage" Value="set:skin image:ListTitleBgRight" />
+                <Property Name="CenterImage" Value="set:skin image:ListTitleBgCenter" />
+                <Property Name="RightOffset" Value="19" />
+                <Window Name="AlertUnlock/bg/titleBg/titleTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,285},{0,29}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="AlertUnlock/cancelBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,157},{0,231},{0,237},{0,254}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="稍后再说" />
+        </Window>
+        <Window Name="AlertUnlock/openObtainTitleTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,53},{0,110},{0,73}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="开启可获得：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFef9d0" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="AlertUnlock/expendTitleTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,134},{0,110},{0,154}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="开启需消耗：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFef9d0" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="AlertUnlock/bagGridTitleTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,70},{0,81},{0,133},{0,101}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="背包空格：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFef9d0" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="AlertUnlock/bindTitleTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,70},{0,106},{0,133},{0,126}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="绑定铜钱：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFef9d0" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="AlertUnlock/expendTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,70},{0,160},{0,275},{0,180}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="738绑定元宝" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFfea00" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="AlertUnlock/bindTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,135},{0,106},{0,198},{0,126}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="AlertUnlock/bagGridTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,135},{0,81},{0,198},{0,101}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="AlertUnlock/expendYbTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,70},{0,186},{0,275},{0,206}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="77元宝（绑元不足，补足元宝）" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFfea00" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

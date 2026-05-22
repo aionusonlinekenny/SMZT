@@ -1,0 +1,157 @@
+<GUILayout>
+    <Window Name="TroubledBeautyBar" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,400},{0,69}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="TroubledBeautyBar/sp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,400},{0,69}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="TroubledBeautyBar/sp/bg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,19},{0,0},{0,399},{0,69}}" />
+                <Property Name="Image" Value="set:beauty image:strip2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="TroubledBeautyBar/sp/dragImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,313},{0,-31},{0,468},{0,101}}" />
+                <Property Name="Image" Value="set:beauty image:dragBtn" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="TroubledBeautyBar/sp/txt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,19},{0,0},{0,399},{0,16}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="第一步：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="TroubledBeautyBar/sp/shouQiBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,57},{0,65}}" />
+                <Property Name="Image" Value="set:beauty image:packUpBtn" />
+            </Window>
+            <Window Name="TroubledBeautyBar/sp/bar$NormalBar2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,298},{0,18},{0,360},{0,48}}" />
+                <Property Name="Image" Value="set:beauty image:bar3" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="TroubledBeautyBar/sp/bar$NormalBar1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,249},{0,18},{0,300},{0,48}}" />
+                <Property Name="Image" Value="set:beauty image:bar2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="TroubledBeautyBar/sp/bar$NormalBar0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,64},{0,18},{0,250},{0,48}}" />
+                <Property Name="Image" Value="set:beauty image:bar1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="TroubledBeautyBar/sp/point4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,332},{0,23},{0,353},{0,44}}" />
+                <Property Name="Image" Value="set:beauty image:star2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="TroubledBeautyBar/sp/point1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,234},{0,25},{0,250},{0,41}}" />
+                <Property Name="Image" Value="set:beauty image:point" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="TroubledBeautyBar/sp/point1/txt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,16},{0,16}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00e4ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="TroubledBeautyBar/sp/point2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,284},{0,25},{0,300},{0,41}}" />
+                <Property Name="Image" Value="set:beauty image:point" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="TroubledBeautyBar/sp/point2/txt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,16},{0,16}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00e4ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="TroubledBeautyBar/sp/point0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,69},{0,25},{0,85},{0,41}}" />
+                <Property Name="Image" Value="set:beauty image:point" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="TroubledBeautyBar/sp/point0/txt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,16},{0,16}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="!" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00e4ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="TroubledBeautyBar/sp/point3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,332},{0,23},{0,353},{0,44}}" />
+                <Property Name="Image" Value="set:beauty image:star1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="TroubledBeautyBar/zhanKaiBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,57},{0,65}}" />
+            <Property Name="Image" Value="set:beauty image:anBtn" />
+        </Window>
+    </Window>
+</GUILayout>

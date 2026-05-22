@@ -1,0 +1,403 @@
+<GUILayout>
+    <Window Name="RefinementTipsPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,345},{0,558}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="RefinementTipsPanel/commonBg4" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,345},{0,554}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:skins image:tipTop1" />
+            <Property Name="LeftImage" Value="set:skins image:tipLeft1" />
+            <Property Name="TopOffset" Value="9" />
+            <Property Name="LeftOffset" Value="9" />
+            <Property Name="RightImage" Value="set:skins image:tipRight1" />
+            <Property Name="BottomImage" Value="set:skins image:tipBottom1" />
+            <Property Name="CenterImage" Value="set:skins image:tipCenter1" />
+            <Property Name="RightOffset" Value="9" />
+            <Property Name="BottomOffset" Value="9" />
+            <Property Name="TopLeftImage" Value="set:skins image:tipLeftTop1" />
+            <Property Name="TopRightImage" Value="set:skins image:tipRightTop1" />
+            <Property Name="BottomLeftImage" Value="set:skins image:tipLeftBottom1" />
+            <Property Name="BottomRightImage" Value="set:skins image:tipRightBottom1" />
+            <Window Name="RefinementTipsPanel/commonBg4/productBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,345},{0,176}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="RefinementTipsPanel/commonBg4/line2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,35},{0,345},{0,36}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="RefinementTipsPanel/commonBg4/equipNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,109},{0,1},{0,323},{0,35}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="xxx魔兵" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFf9f5d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="RefinementTipsPanel/commonBg4/equipNameTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,0},{0,108},{0,34}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="当前神器：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFf9f5d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="RefinementTipsPanel/refinementBg" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,254},{0,345},{0,488}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="RefinementTipsPanel/refinementBg/line3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,345},{0,1}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="RefinementTipsPanel/refinementBg/refinementTitleTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,5},{0,331},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="淬炼到满星，最多可提升：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="RefinementTipsPanel/refinementBg/refinementSp0" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,25},{0,170},{0,45}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp0/refinementAttrTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,45},{0,0},{0,104},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+562314" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp0/fightTrendImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,104},{0,1},{0,115},{0,20}}" />
+                    <Property Name="Image" Value="set:skins image:arrowUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp0/fightTrendTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,117},{0,0},{0,159},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="566" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp0/refinementAttrTitleTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,45},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暴击率" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="RefinementTipsPanel/refinementBg/refinementSp1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,47},{0,170},{0,67}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp1/refinementAttrTitleTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,45},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暴击率" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp1/refinementAttrTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,45},{0,0},{0,104},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+562314" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp1/fightTrendImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,104},{0,1},{0,115},{0,20}}" />
+                    <Property Name="Image" Value="set:skins image:arrowUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp1/fightTrendTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,117},{0,0},{0,159},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="566" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="RefinementTipsPanel/refinementBg/refinementSp2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,69},{0,170},{0,89}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp2/refinementAttrTitleTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,45},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暴击率" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp2/refinementAttrTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,45},{0,0},{0,104},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+562314" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp2/fightTrendImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,104},{0,1},{0,115},{0,20}}" />
+                    <Property Name="Image" Value="set:skins image:arrowUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp2/fightTrendTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,117},{0,0},{0,159},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="566" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="RefinementTipsPanel/refinementBg/refinementSp3" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,90},{0,170},{0,110}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp3/refinementAttrTitleTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,45},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暴击率" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp3/refinementAttrTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,45},{0,0},{0,104},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+562314" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp3/fightTrendImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,104},{0,2},{0,115},{0,21}}" />
+                    <Property Name="Image" Value="set:skins image:arrowUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp3/fightTrendTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,117},{0,0},{0,159},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="566" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="RefinementTipsPanel/refinementBg/refinementTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,12},{0,111},{0,334},{0,131}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="二阶神罚：怒气上限增加100%" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="RefinementTipsPanel/refinementBg/refinementSp5" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,170},{0,48},{0,329},{0,68}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp5/refinementAttrTitleTxt5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,45},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暴击率" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp5/refinementAttrTxt5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,45},{0,0},{0,104},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+562314" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp5/fightTrendImg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,104},{0,1},{0,115},{0,20}}" />
+                    <Property Name="Image" Value="set:skins image:arrowUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp5/fightTrendTxt5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,117},{0,0},{0,159},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="566" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="RefinementTipsPanel/refinementBg/refinementSp6" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,170},{0,70},{0,329},{0,90}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp6/refinementAttrTitleTxt6" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,45},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暴击率" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp6/refinementAttrTxt6" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,45},{0,0},{0,104},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+562314" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp6/fightTrendImg6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,104},{0,1},{0,115},{0,20}}" />
+                    <Property Name="Image" Value="set:skins image:arrowUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp6/fightTrendTxt6" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,117},{0,0},{0,159},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="566" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="RefinementTipsPanel/refinementBg/refinementSp7" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,170},{0,91},{0,329},{0,111}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp7/refinementAttrTitleTxt7" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,45},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暴击率" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp7/refinementAttrTxt7" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,45},{0,0},{0,104},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+562314" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp7/fightTrendImg7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,104},{0,2},{0,115},{0,21}}" />
+                    <Property Name="Image" Value="set:skins image:arrowUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp7/fightTrendTxt7" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,117},{0,0},{0,159},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="566" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="RefinementTipsPanel/refinementBg/refinementSp4" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,170},{0,26},{0,329},{0,46}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp4/refinementAttrTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,45},{0,0},{0,104},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+562314" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp4/fightTrendImg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,104},{0,1},{0,115},{0,20}}" />
+                    <Property Name="Image" Value="set:skins image:arrowUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp4/fightTrendTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,117},{0,0},{0,159},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="566" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="RefinementTipsPanel/refinementBg/refinementSp4/refinementAttrTitleTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,45},{0,20}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暴击率" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="RefinementTipsPanel/fightBg" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,520},{0,345},{0,558}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="RefinementTipsPanel/fightBg/line1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,6},{0,345},{0,7}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="RefinementTipsPanel/fightBg/fightTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,8},{0,147},{0,28}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="累计可提升战斗力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="RefinementTipsPanel/fightBg/fightTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,147.5},{0,8},{0,329.5},{0,28}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="258800" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="RefinementTipsPanel/Artifacts3DView" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,17},{0,281},{0,163},{0,386}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="RefinementTipsPanel/Artifacts3DView2" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,127},{0,146},{0,273},{0,356}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,394 @@
+<GUILayout>
+    <Window Name="TaskTrackView" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,420}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="TaskTrackView/task" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,233},{0,172}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{800,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="TaskTrackView/task/tbg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,32},{0,233},{0,172}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{800,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="TaskTrackView/task/tbg/tcontentBox" Type="GuiLook/MainScrollablePane">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,236},{0,137}}" />
+                    <AutoWindow NameSuffix="__auto_container__">
+                        <Property Name="MouseInputPropagationEnabled" Value="true" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_hscrollbar__">
+                        <Property Name="NonClient" Value="true" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_vscrollbar__">
+                        <Property Name="NonClient" Value="true" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="VerticalScrollbar" Value="true" />
+                    </AutoWindow>
+                </Window>
+            </Window>
+            <Window Name="TaskTrackView/task/tzoomNBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,128},{0,0},{0,233},{0,32}}" />
+                <Window Name="TaskTrackView/task/tzoomNBtn/tzoomNBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,105},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="TaskTrackView/task/tzoomNBtn/tnameImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,78},{0,29}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:taskTextImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+                <Window Name="TaskTrackView/task/tzoomNBtn/tzoomNImgBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,86},{0,8},{0,102.25},{0,23.75}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:zoomLeftBtn" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="TaskTrackView/task/tzoomNBtn/tzoomLine" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,105},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="TaskTrackView/task/ttitleBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,233},{0,32}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="TaskTrackView/task/ttitleBg/ttaskTitleBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,233},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TaskTrackView/task/ttitleBg/taskLine" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,233},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TaskTrackView/task/ttitleBg/taskBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,3},{0,81},{0,28}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:taskTextImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TaskTrackView/task/ttitleBg/tzoomBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,214},{0,8},{0,230},{0,24}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:zoomRightBtn" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                </Window>
+            </Window>
+            <Window Name="TaskTrackView/task/taskDownBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,8},{0,8}}" />
+                <Property Name="HoverImage" Value="set:mainUI1 image:arrowLeftHover" />
+                <Property Name="NormalImage" Value="set:mainUI1 image:arrowLeftNormal" />
+                <Property Name="PushedImage" Value="set:mainUI1 image:arrowLeftPushed" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+            </Window>
+            <Window Name="TaskTrackView/task/swfArrowBox1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,-188},{0,107},{0,-1},{0,157}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="TaskTrackView/task/swfArrowBox1/swfArrow1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,187},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TaskTrackView/task/swfArrowBox1/StaticText1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,165},{0,25}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="每日任务" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="TaskTrackView/task/swfArrowBox1/StaticText2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,25},{0,165},{0,45}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="获取海量经验" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85ff00" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="TaskTrackView/streng" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,173},{0,233},{0,325}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="TaskTrackView/streng/sbg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,32},{0,233},{0,152}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="TaskTrackView/streng/sbg/scontentBox" Type="GuiLook/MainScrollablePane">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,236},{0,117}}" />
+                    <AutoWindow NameSuffix="__auto_container__">
+                        <Property Name="MouseInputPropagationEnabled" Value="true" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_hscrollbar__">
+                        <Property Name="NonClient" Value="true" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_vscrollbar__">
+                        <Property Name="NonClient" Value="true" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="VerticalScrollbar" Value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window Name="TaskTrackView/streng/sbg/strengLine" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,233},{0,1}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="TaskTrackView/streng/szoomNBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,127.75},{0,0},{0,232.75},{0,32}}" />
+                <Property Name="HoverImage" Value="set:mainUI1 image:zoomLeftBtnHover" />
+                <Property Name="NormalImage" Value="set:mainUI1 image:zoomLeftBtnNormal" />
+                <Property Name="PushedImage" Value="set:mainUI1 image:zoomLeftBtnPushed" />
+                <Window Name="TaskTrackView/streng/szoomNBtn/szoomNBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,104.5},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="TaskTrackView/streng/szoomNBtn/snameImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,4.75},{0,73},{0,27.75}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:strongerTextImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+                <Window Name="TaskTrackView/streng/szoomNBtn/szoomNImgBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,86},{0,8},{0,102.25},{0,23.75}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:zoomLeftBtn" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="TaskTrackView/streng/szoomNBtn/szoomLine" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,105},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="TaskTrackView/streng/stitleBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,233},{0,32}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="TaskTrackView/streng/stitleBg/staskTitleBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,233},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TaskTrackView/streng/stitleBg/strongBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,3},{0,71},{0,28}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:strongerTextImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                </Window>
+                <Window Name="TaskTrackView/streng/stitleBg/szoomBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,214},{0,8},{0,230},{0,24}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:zoomRightBtn" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="TaskTrackView/goal" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,32},{0,233},{0,250}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="TaskTrackView/goal/bottomImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-32},{0,232},{0,0}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="TaskTrackView/goal/bottomImg/bottomTitleBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,233},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TaskTrackView/goal/bottomImg/chapterImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,232},{0,32}}" />
+                    <Property Name="Image" Value="set:againstSkyName image:chapter1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="TaskTrackView/goal/line" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,71},{0,231},{0,72}}" />
+                <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="TaskTrackView/goal/smallBgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,72},{0,232.5},{0,102}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="TaskTrackView/goal/smallBgImg/taskNameTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,216},{0,27}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="不知道写什么：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="TaskTrackView/goal/gotoBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,19},{0,166},{0,206},{0,206}}" />
+                <Window Name="TaskTrackView/goal/gotoBtn/gotoBtnImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,187},{0,40}}" />
+                    <Property Name="Image" Value="set:againstSkyGeneral image:continue" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="TaskTrackView/goal/taskDesc$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,106},{0,216},{0,140}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TaskTrackView/goal/line$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,142},{0,207},{0,160}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="击杀王祖贤（0/12）" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TaskTrackView/goal/chapterIkon" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,232},{0,71}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="TaskTrackView/goal/goalLine" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,233},{0,1}}" />
+                <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="TaskTrackView/goal/smallLine" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,103},{0,233},{0,104}}" />
+                <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="TaskTrackView/goal/swfArrowBox" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,19},{0,215},{0,206},{0,290}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="TaskTrackView/goal/swfArrowBox/swfArrow" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,187},{0,75}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TaskTrackView/goal/swfArrowBox/StaticText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,25},{0,187},{0,75}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="点击继续" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

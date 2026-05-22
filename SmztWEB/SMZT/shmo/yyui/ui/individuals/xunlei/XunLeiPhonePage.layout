@@ -1,0 +1,47 @@
+<GUILayout>
+    <Window Name="XunLeiPhonePage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,595},{0,480}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="XunLeiPhonePage/imgBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,594},{0,479}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="XunLeiPhonePage/imgBg/inPutTxt" Type="GuiLook/Editbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,145},{0,380},{0,400},{0,402}}" />
+            </Window>
+            <Window Name="XunLeiPhonePage/imgBg/rule$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,437},{0,593},{0,462}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="XunLeiPhonePage/imgBg/rewardBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,417},{0,376},{0,553},{0,410}}" />
+                <Property Name="HoverImage" Value="set:xunlei image:rewardHover" />
+                <Property Name="NormalImage" Value="set:xunlei image:rewardNormal" />
+                <Property Name="PushedImage" Value="set:xunlei image:rewardPushed" />
+            </Window>
+            <Window Name="XunLeiPhonePage/imgBg/bindBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,415},{0,95},{0,551},{0,129}}" />
+                <Property Name="HoverImage" Value="set:xunlei image:bingHover" />
+                <Property Name="NormalImage" Value="set:xunlei image:bingNormal" />
+                <Property Name="PushedImage" Value="set:xunlei image:bingPushed" />
+            </Window>
+            <Window Name="XunLeiPhonePage/imgBg/rewardCodeBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,415},{0,95},{0,551},{0,129}}" />
+                <Property Name="HoverImage" Value="set:xunlei image:codeHover" />
+                <Property Name="NormalImage" Value="set:xunlei image:codeNormal" />
+                <Property Name="PushedImage" Value="set:xunlei image:codePushed" />
+            </Window>
+            <Window Name="XunLeiPhonePage/imgBg/dataGridWin" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,232},{0,233},{0,512},{0,281}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

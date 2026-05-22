@@ -1,0 +1,442 @@
+<GUILayout>
+    <Window Name="WorshipDukePanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,692},{0,479}}" />
+        <Property Name="GlyphImage" Value="set:worship image:title" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="WorshipDukePanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,436},{0,674},{0,437}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="WorshipDukePanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,674},{0,433}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="WorshipDukePanel/bg/imgBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,673},{0,428}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="WorshipDukePanel/bg/imgBg/articleSp0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,337},{0,18},{0,543},{0,45}}" />
+                    <Property Name="Image" Value="set:worship image:di" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="WorshipDukePanel/bg/imgBg/articleSp0/dayTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,107},{0,27}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="至尊已登基：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/articleSp0/dayTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,108},{0,0},{0,168},{0,27}}" />
+                        <Property Name="Font" Value="songti_18_strengh" />
+                        <Property Name="Text" Value="85天" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorshipDukePanel/bg/imgBg/dukeBtn$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,553},{0,25},{0,668},{0,52}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFfef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WorshipDukePanel/bg/imgBg/article1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,337},{0,53},{0,657},{0,80}}" />
+                    <Property Name="Image" Value="set:worship image:di" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="WorshipDukePanel/bg/imgBg/article1/taxTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,107},{0,27}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="今日至尊税收：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/article1/taxTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,109},{0,0},{0,320},{0,27}}" />
+                        <Property Name="Font" Value="songti_18_strengh" />
+                        <Property Name="Text" Value="85天ddddddddddddddd" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffea00" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,334},{0,89},{0,669},{0,424}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/article2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,206},{0,28}}" />
+                        <Property Name="Image" Value="set:worship image:di" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/article2/declarationTitleTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,107},{0,27}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="至尊宣言：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFfef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/article3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,100},{0,206},{0,127}}" />
+                        <Property Name="Image" Value="set:worship image:di" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/article3/worshipTitleTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,107},{0,27}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="膜拜至尊：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFfef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/activityTimeTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,215},{0,335},{0,235}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/grid0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,92},{0,150},{0,140},{0,198}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/grid1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,184},{0,150},{0,232},{0,198}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/amnestyBtn" Type="GlossySerpent/RedButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,272},{0,140},{0,312}}" />
+                        <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/amnestyBtn/amnestyImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,40}}" />
+                            <Property Name="Image" Value="set:worship image:amnestyTxt" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="ImageDisabledColour" Value="FFFFFFFF" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/changeBtn" Type="GlossySerpent/RedButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,182},{0,272},{0,312},{0,312}}" />
+                        <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/changeBtn/changeImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,40}}" />
+                            <Property Name="Image" Value="set:worship image:changeTxt" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="ImageDisabledColour" Value="FFFFFFFF" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/inputBg" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,35},{0,325},{0,93}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:worship image:left" />
+                        <Property Name="LeftOffset" Value="7" />
+                        <Property Name="RightImage" Value="set:worship image:right" />
+                        <Property Name="CenterImage" Value="set:worship image:center" />
+                        <Property Name="RightOffset" Value="7" />
+                        <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/inputBg/inputTxt" Type="GuiLook/MultiLineEditbox">
+                            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,321},{0,54}}" />
+                            <Property Name="Text">
+</Property>
+                            <AutoWindow NameSuffix="__auto_vscrollbar__">
+                                <Property Name="VerticalScrollbar" Value="true" />
+                            </AutoWindow>
+                        </Window>
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/itemTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,92},{0,181},{0,140},{0,197}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="膜拜至尊：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukePage/itemTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,184},{0,181},{0,232},{0,197}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="膜拜至尊：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,334},{0,89},{0,669},{0,424}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/article4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,231},{0,28}}" />
+                        <Property Name="Image" Value="set:worship image:di" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/article4/rateTitleTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,74},{0,27}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="当前税率：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFfef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/article4/rateTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,74},{0,0},{0,114},{0,27}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="30%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/article4/clipTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,115},{0,0},{0,238},{0,27}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="(下次趋势   )" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFfef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/article4/clipImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,187},{0,0},{0,198},{0,19}}" />
+                            <Property Name="Image" Value="set:skins image:arrowDown" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="VerticalAlignment" Value="Centre" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/refreshBtn$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,232},{0,7},{0,339},{0,20}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="至尊已登基：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/article5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,38},{0,308},{0,65}}" />
+                        <Property Name="Image" Value="set:worship image:di" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/article5/residueTimeTitleTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,107},{0,27}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="税率自动刷新：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFfef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/article5/residueTimeTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,108},{0,0},{0,305},{0,27}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="30%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/changeInstructions" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,128},{0,335},{0,148}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/numGoldTxtTitle" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,168},{0,107},{0,195}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="拥 有 金 砖:" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/tongBiTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,207},{0,107},{0,234}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="今日已获得:" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/StaticImage" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,243},{0,14},{0,271},{0,31}}" />
+                        <Property Name="Image" Value="set:worship image:brics" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/StaticImage2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,247},{0,54},{0,266},{0,73}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:goldCoin" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/numGoldTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,110},{0,168},{0,242},{0,195}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="30%" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffea00" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/tongBiTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,110},{0,207},{0,242},{0,234}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="30%" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="ffffea00" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/changeOneBtn" Type="GlossySerpent/BlueButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,56},{0,247},{0,136},{0,270}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="兑换1个" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/changeAllBtn" Type="GlossySerpent/OrangeButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,170},{0,247},{0,250},{0,270}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="兑换所有" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/worshipDukeChangePage/returnBtn" Type="GuiLook/DefaultImageButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,259},{0,294},{0,315},{0,326}}" />
+                        <Property Name="Image" Value="set:worship image:btn_fanhui" />
+                    </Window>
+                </Window>
+                <Window Name="WorshipDukePanel/bg/imgBg/d3DView0" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,143},{0,350},{0,188},{0,397}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="WorshipDukePanel/bg/imgBg/playerSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,85},{0,70},{0,253},{0,88}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="WorshipDukePanel/bg/imgBg/playerSp/vipImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,24},{0,17}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/playerSp/setImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,24},{0,1},{0,40},{0,17}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/playerSp/campTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,40},{0,0},{0,67},{0,18}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="魏·" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="Visible" Value="false" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/playerSp/playerNameTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,66},{0,0},{0,151},{0,18}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="玩家名称六字" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorshipDukePanel/bg/imgBg/otherTitleSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,44},{0,4},{0,295},{0,69}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="WorshipDukePanel/bg/imgBg/otherTitleSp/otherTitle0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,30},{0,37}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/otherTitleSp/otherTitle1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,30},{0,0},{0,250},{0,65}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorshipDukePanel/bg/imgBg/otherTitleSp/otherTitleSing" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,249},{0,65}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

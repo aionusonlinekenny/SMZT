@@ -1,0 +1,581 @@
+<GUILayout>
+    <Window Name="SkillPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,569},{0,414}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SkillPage/cBg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,359},{0,415}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SkillPage/cBg/cZhiYeBg" Type="GuiLook/CommonBg2">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,354},{0,109}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeImgBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,2},{0,52},{0,102}}" />
+                    <Property Name="Image" Value="set:skill image:tabBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeImgBg/cZhiYeImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,100}}" />
+                        <Property Name="Image" Value="set:skill image:professional" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp0" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,66},{0,10},{0,122},{0,91}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp0/cZhiYeSkillNameTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,45},{0,56},{0,63}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="技能名称" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp0/cZhiYeSkillBg0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp0/cZhiYeSkillGradeTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,63},{0,56},{0,81}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="Lv.100" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFc6dee6" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp0/cZhiYeUpBtn0" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,33},{0,20},{0,48},{0,40}}" />
+                        <Property Name="HoverImage" Value="set:skill image:upHover" />
+                        <Property Name="NormalImage" Value="set:skill image:upNormal" />
+                        <Property Name="PushedImage" Value="set:skill image:upPushed" />
+                    </Window>
+                </Window>
+                <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,138},{0,10},{0,194},{0,91}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp1/cZhiYeSkillNameTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,45},{0,56},{0,63}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="技能名称" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp1/cZhiYeSkillBg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp1/cZhiYeSkillGradeTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,63},{0,56},{0,81}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="Lv.100" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFc6dee6" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp1/cZhiYeUpBtn1" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,33},{0,20},{0,48},{0,40}}" />
+                        <Property Name="HoverImage" Value="set:skill image:upHover" />
+                        <Property Name="NormalImage" Value="set:skill image:upNormal" />
+                        <Property Name="PushedImage" Value="set:skill image:upPushed" />
+                    </Window>
+                </Window>
+                <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp2" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,210},{0,10},{0,266},{0,91}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp2/cZhiYeSkillNameTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,45},{0,56},{0,63}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="技能名称" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp2/cZhiYeSkillBg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp2/cZhiYeSkillGradeTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,63},{0,56},{0,81}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="Lv.100" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFc6dee6" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp2/cZhiYeUpBtn2" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,33},{0,20},{0,48},{0,40}}" />
+                        <Property Name="HoverImage" Value="set:skill image:upHover" />
+                        <Property Name="NormalImage" Value="set:skill image:upNormal" />
+                        <Property Name="PushedImage" Value="set:skill image:upPushed" />
+                    </Window>
+                </Window>
+                <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp3" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,282},{0,10},{0,338},{0,91}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp3/cZhiYeSkillNameTxt3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,45},{0,56},{0,63}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="技能名称" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp3/cZhiYeSkillBg3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp3/cZhiYeSkillGradeTxt3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,63},{0,56},{0,81}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="Lv.100" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFc6dee6" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhiYeBg/cZhiYeSkillSp3/cZhiYeUpBtn3" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,33},{0,20},{0,48},{0,40}}" />
+                        <Property Name="HoverImage" Value="set:skill image:upHover" />
+                        <Property Name="NormalImage" Value="set:skill image:upNormal" />
+                        <Property Name="PushedImage" Value="set:skill image:upPushed" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="SkillPage/cBg/cZhaoShiBg" Type="GuiLook/CommonBg2">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,113},{0,354},{0,226}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiImgBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,6},{0,52},{0,106}}" />
+                    <Property Name="Image" Value="set:skill image:tabBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiImgBg/cZhaoShiImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,100}}" />
+                        <Property Name="Image" Value="set:skill image:moves" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp0" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,66},{0,10},{0,122},{0,98}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp0/cZhaoShiSkillNameTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,52},{0,56},{0,70}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="技能名称" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp0/cZhaoShiSkillBg0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp0/cZhaoShiSkillGradeTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,70},{0,56},{0,88}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="Lv.100" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFc6dee6" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp0/cZhaoShiQuickBg0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,37},{0,24},{0,52}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp0/cZhaoShiQuickBg0/cZhaoShiQuickTxt0" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,24},{0,15}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="Q" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp0/cZhaoShiUpBtn0" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,33},{0,20},{0,48},{0,40}}" />
+                        <Property Name="HoverImage" Value="set:skill image:upHover" />
+                        <Property Name="NormalImage" Value="set:skill image:upNormal" />
+                        <Property Name="PushedImage" Value="set:skill image:upPushed" />
+                    </Window>
+                </Window>
+                <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,138},{0,10},{0,194},{0,98}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp1/cZhaoShiSkillNameTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,52},{0,56},{0,70}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="技能名称" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp1/cZhaoShiSkillBg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp1/cZhaoShiSkillGradeTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,70},{0,56},{0,88}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="Lv.100" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFc6dee6" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp1/cZhaoShiQuickBg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,37},{0,24},{0,52}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp1/cZhaoShiQuickBg1/cZhaoShiQuickTxt1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,24},{0,15}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="W" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp1/cZhaoShiUpBtn1" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,33},{0,20},{0,48},{0,40}}" />
+                        <Property Name="HoverImage" Value="set:skill image:upHover" />
+                        <Property Name="NormalImage" Value="set:skill image:upNormal" />
+                        <Property Name="PushedImage" Value="set:skill image:upPushed" />
+                    </Window>
+                </Window>
+                <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp2" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,210},{0,10},{0,266},{0,98}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp2/cZhaoShiSkillNameTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,52},{0,56},{0,70}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="技能名称" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp2/cZhaoShiSkillBg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp2/cZhaoShiSkillGradeTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,70},{0,56},{0,88}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="Lv.100" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFc6dee6" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp2/cZhaoShiQuick2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,37},{0,24},{0,52}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp2/cZhaoShiQuick2/cZhaoShiQuickTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,24},{0,15}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="E" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="SkillPage/cBg/cZhaoShiBg/cZhaoShiSkillSp2/cZhaoShiUpBtn2" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,33},{0,20},{0,48},{0,40}}" />
+                        <Property Name="HoverImage" Value="set:skill image:upHover" />
+                        <Property Name="NormalImage" Value="set:skill image:upNormal" />
+                        <Property Name="PushedImage" Value="set:skill image:upPushed" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="SkillPage/cBg/cYuLanBg" Type="GuiLook/CommonBg2">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,230},{0,354},{0,410}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillPage/cBg/cYuLanBg/cYuLanImgBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,37},{0,52},{0,137}}" />
+                    <Property Name="Image" Value="set:skill image:tabBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="SkillPage/cBg/cYuLanBg/cYuLanImgBg/cYuLanImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,100}}" />
+                        <Property Name="Image" Value="set:skill image:preview" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SkillPage/cBg/cYuLanBg/cYuLanView" Type="GlossySerpent/NineStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,59},{0,7},{0,343},{0,173}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TopImage" Value="set:skill image:bgTopMiddle" />
+                    <Property Name="LeftImage" Value="set:skill image:bgLeftMiddle" />
+                    <Property Name="TopOffset" Value="8" />
+                    <Property Name="LeftOffset" Value="12" />
+                    <Property Name="RightImage" Value="set:skill image:bgRightMiddle" />
+                    <Property Name="BottomImage" Value="set:skill image:bgEndMiddle" />
+                    <Property Name="CenterImage" Value="set:skill image:bgCenter" />
+                    <Property Name="RightOffset" Value="15" />
+                    <Property Name="BottomOffset" Value="11" />
+                    <Property Name="TopLeftImage" Value="set:skill image:bgTopLeft" />
+                    <Property Name="TopRightImage" Value="set:skill image:bgTopRight" />
+                    <Property Name="BottomLeftImage" Value="set:skill image:bgLeftEnd" />
+                    <Property Name="BottomRightImage" Value="set:skill image:bgRightEnd" />
+                    <Window Name="SkillPage/cBg/cYuLanBg/cYuLanView/yulianBg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,282},{0,164}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cYuLanBg/cYuLanView/yulianD3d" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,34},{0,122},{0,39},{0,127}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    </Window>
+                    <Window Name="SkillPage/cBg/cYuLanBg/cYuLanView/videoPlayBtn" Type="GuiLook/DefaultImageButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,60},{0,60}}" />
+                        <Property Name="Image" Value="set:skill image:videoPlayBtn" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="SkillPage/cMiaoShuSp" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,358},{0,0},{0,569},{0,415}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SkillPage/cMiaoShuSp/cMiaoShuTitleNameBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,210},{0,30}}" />
+                <Property Name="Image" Value="set:skill image:titleBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="SkillPage/cMiaoShuSp/cMiaoShuTitleNameBg/cMiaoShuTitleName" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,209},{0,29}}" />
+                    <Property Name="Image" Value="set:skill image:skillName" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkillPage/cMiaoShuSp/cMiaoShuNameTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,38},{0,74},{0,56}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="技能名称：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillPage/cMiaoShuSp/cMiaoShuNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,74},{0,38},{0,204},{0,56}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="技能名称：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillPage/cMiaoShuSp/cMiaoShuTypeTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,66},{0,74},{0,84}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="技能类型：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillPage/cMiaoShuSp/cMiaoShuTypeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,74},{0,66},{0,204},{0,84}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="主动技能" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillPage/cMiaoShuSp/cMiaoShuTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,94},{0,203},{0,220}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="技能描述：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillPage/cMiaoShuSp/cShengJiSp" Type="GuiLook/CommonBg2">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,230},{0,206},{0,410}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillPage/cMiaoShuSp/cShengJiSp/cShengJiTitleBg" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,202},{0,29}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:ListTitleBgLeft" />
+                    <Property Name="LeftOffset" Value="19" />
+                    <Property Name="RightImage" Value="set:skin image:ListTitleBgRight" />
+                    <Property Name="CenterImage" Value="set:skin image:ListTitleBgCenter" />
+                    <Property Name="RightOffset" Value="19" />
+                    <Window Name="SkillPage/cMiaoShuSp/cShengJiSp/cShengJiTitleBg/cShengJiTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,202},{0,29}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="技能升级" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFef9d0" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SkillPage/cMiaoShuSp/cShengJiSp/cShengJiGradeTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,40},{0,74},{0,58}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="角色等级：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillPage/cMiaoShuSp/cShengJiSp/cShengJiGasTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,65},{0,74},{0,83}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="消耗元气：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillPage/cMiaoShuSp/cShengJiSp/cShengJiTongBiTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,90},{0,74},{0,108}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="消耗铜币：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillPage/cMiaoShuSp/cShengJiSp/cShengJiGradeTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,75},{0,40},{0,199},{0,58}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="60" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFc6dee6" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillPage/cMiaoShuSp/cShengJiSp/cShengJiGasTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,75},{0,65},{0,172},{0,83}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="100" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillPage/cMiaoShuSp/cShengJiSp/cShengJiTongBiTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,75},{0,90},{0,172},{0,108}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="200" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFfea00" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillPage/cMiaoShuSp/cShengJiSp/cShengJiBtn" Type="GlossySerpent/BlueButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,147},{0,94},{0,170}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="升级" />
+                </Window>
+                <Window Name="SkillPage/cMiaoShuSp/cShengJiSp/cOneShengJiBtn" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,107},{0,147},{0,191},{0,170}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="一键升级" />
+                </Window>
+                <Window Name="SkillPage/cMiaoShuSp/cShengJiSp/cShengJiFightTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,74.75},{0,115},{0,171.75},{0,133}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="200" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFfea00" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillPage/cMiaoShuSp/cShengJiSp/cShengJiFightTitleTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,115},{0,74},{0,133}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="战 斗 力：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

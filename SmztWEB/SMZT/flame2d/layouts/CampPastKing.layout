@@ -1,0 +1,166 @@
+<GUILayout>
+    <Window Name="CampPastKing" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,359},{0,561}}" />
+        <Property Name="Font" Value="songti_18_strengh" />
+        <Property Name="Text" Value="历届阵营之主" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="CampPastKing/btn_1" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,5},{0,81},{0,29}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="大魏天子" />
+        </Window>
+        <Window Name="CampPastKing/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,30},{0,341},{0,515}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CampPastKing/background/bgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,341},{0,485}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CampPastKing/background/bgImg/nameList" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,47},{0,0},{0,171},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="CampPastKing/background/bgImg/nameList/nameTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,124},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="玩家名称" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CampPastKing/background/bgImg/gangList" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,171},{0,0},{0,261},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="CampPastKing/background/bgImg/gangList/gangTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,90},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="所在帮派" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CampPastKing/background/bgImg/fightList" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,261},{0,0},{0,340},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="CampPastKing/background/bgImg/fightList/fightTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,79},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="战斗力" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CampPastKing/background/bgImg/numberList" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,47},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="CampPastKing/background/bgImg/numberList/numberTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,47},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="届数" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CampPastKing/background/bgImg/pageNextBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,197},{0,453},{0,217},{0,473}}" />
+                    <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                    <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+                    <Property Name="DisabledImage" Value="set:skin image:NextBtnDisable" />
+                </Window>
+                <Window Name="CampPastKing/background/bgImg/pageLastBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,127},{0,453},{0,147},{0,473}}" />
+                    <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                    <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+                    <Property Name="DisabledImage" Value="set:skin image:LastBtnDisable" />
+                </Window>
+                <Window Name="CampPastKing/background/bgImg/mLastBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,101},{0,453},{0,121},{0,473}}" />
+                    <Property Name="HoverImage" Value="set:skin image:MlastBtnHover" />
+                    <Property Name="NormalImage" Value="set:skin image:MlastBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:MlastBtnPushed" />
+                    <Property Name="DisabledImage" Value="set:skin image:MlastBtnDisable" />
+                </Window>
+                <Window Name="CampPastKing/background/bgImg/mNextBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,222},{0,453},{0,242},{0,473}}" />
+                    <Property Name="HoverImage" Value="set:skin image:MnextBtnHover" />
+                    <Property Name="NormalImage" Value="set:skin image:MnextBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:MnextBtnPushed" />
+                    <Property Name="DisabledImage" Value="set:skin image:MnextBtnDisable" />
+                </Window>
+                <Window Name="CampPastKing/background/bgImg/laPageBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,151},{0,454},{0,193},{0,472}}" />
+                    <Property Name="Image" Value="set:skin image:RenderBg2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="CampPastKing/background/bgImg/laPageBg/pageTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,18}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="250" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF64d4d8" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CampPastKing/background/bgImg/boxList" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,28},{0,341},{0,443}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="CampPastKing/btn_3" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,158},{0,5},{0,233},{0,29}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="东吴天子" />
+        </Window>
+        <Window Name="CampPastKing/btn_2" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,82},{0,5},{0,157},{0,29}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="蜀汉天子" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,42 @@
+<GUILayout>
+    <Window Name="ReLiveRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,103},{0,105}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="ReLiveRender/circleBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,78},{0,78}}" />
+            <Property Name="Image" Value="set:relive image:circle" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="ReLiveRender/circleBg/strongTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,60},{0,78},{0,78}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="宝石镶嵌" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="ReLiveRender/circleBg/strongImg" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,78},{0,78}}" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+            </Window>
+        </Window>
+        <Window Name="ReLiveRender/starBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,79},{0,103},{0,104}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,552 @@
+<GUILayout>
+    <Window Name="ExclusiveMagicPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1400},{0,800}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Window Name="ExclusiveMagicPanel/bg12" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,3000},{0,3000}}" />
+            <Property Name="Image" Value="set:skin image:CommonBg3Center" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="VerticalAlignment" Value="Centre" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Name="ExclusiveMagicPanel/bg" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1400},{0,720}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="VerticalAlignment" Value="Centre" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Name="ExclusiveMagicPanel/bg/bg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,700},{0,0},{0,1400},{0,400}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ExclusiveMagicPanel/bg/bg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,700},{0,400}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ExclusiveMagicPanel/bg/bg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,400},{0,700},{0,800}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ExclusiveMagicPanel/bg/bg4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,700},{0,400},{0,1400},{0,800}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="ExclusiveMagicPanel/changeSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,300},{0,300}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="ExclusiveMagicPanel/rightBox" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-15},{0,250},{0,667}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="VerticalAlignment" Value="Centre" />
+            <Property Name="HorizontalAlignment" Value="Right" />
+            <Window Name="ExclusiveMagicPanel/rightBox/nameImgBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,0},{0,245},{0,121}}" />
+                <Property Name="Image" Value="set:exclusiveMagic image:magicBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="ExclusiveMagicPanel/rightBox/nameImgBg/nameImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,241},{0,121}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ExclusiveMagicPanel/rightBox/fightImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,17},{0,133},{0,236},{0,219}}" />
+                <Property Name="Image" Value="set:exclusiveMagic image:fightBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="ExclusiveMagicPanel/rightBox/fightImg/fightNClit" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,115},{0,33},{0,268},{0,76}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,224},{0,250},{0,314}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrBg" Type="GlossySerpent/ThreeVStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,250},{0,90}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TopImage" Value="set:exclusiveMagic image:top" />
+                    <Property Name="TopOffset" Value="27" />
+                    <Property Name="BottomImage" Value="set:exclusiveMagic image:end" />
+                    <Property Name="CenterImage" Value="set:exclusiveMagic image:middle" />
+                    <Property Name="BottomOffset" Value="" />
+                </Window>
+                <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrTitleImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,249},{0,26}}" />
+                    <Property Name="Image" Value="set:exclusiveMagic image:attrBonusTxt" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="ImageDisabledColour" Value="CentreAligned" />
+                </Window>
+                <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,26},{0,250},{0,90}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/attackSp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,114},{0,31}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/attackSp/attackImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,11},{0,12},{0,20}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/attackSp/title0" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,55},{0,30}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="攻击：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/attackSp/text0" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,56},{0,0},{0,114},{0,30}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+99999" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/defenseSp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,32},{0,114},{0,62}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/defenseSp/defenseImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,11},{0,12},{0,20}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/defenseSp/title2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,55},{0,30}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="防御：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/defenseSp/text2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,56},{0,0},{0,114},{0,30}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+99999" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/dodgeSp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,124},{0,32},{0,238},{0,62}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/dodgeSp/dodgeImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,11},{0,12},{0,20}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/dodgeSp/title3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,55},{0,30}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="闪避：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/dodgeSp/text3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,56},{0,0},{0,114},{0,30}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+99999" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/lifeSp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,124},{0,1},{0,238},{0,31}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/lifeSp/liftImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,11},{0,12},{0,20}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/lifeSp/title1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,55},{0,30}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="生命：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="ExclusiveMagicPanel/rightBox/attrTitleSp/attrSp/lifeSp/text1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,56},{0,0},{0,114},{0,30}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+99999" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="ExclusiveMagicPanel/rightBox/exclusiveEffectTitleSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,318},{0,250},{0,477}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ExclusiveMagicPanel/rightBox/exclusiveEffectTitleSp/exclusiveEffectBg" Type="GlossySerpent/ThreeVStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,250},{0,159}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TopImage" Value="set:exclusiveMagic image:top" />
+                    <Property Name="TopOffset" Value="27" />
+                    <Property Name="BottomImage" Value="set:exclusiveMagic image:end" />
+                    <Property Name="CenterImage" Value="set:exclusiveMagic image:middle" />
+                    <Property Name="BottomOffset" Value="" />
+                </Window>
+                <Window Name="ExclusiveMagicPanel/rightBox/exclusiveEffectTitleSp/exclusiveEffectSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,26},{0,250},{0,159}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="ExclusiveMagicPanel/rightBox/exclusiveEffectTitleSp/exclusiveEffectSp/markImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,3},{0,11},{0,12},{0,20}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/rightBox/exclusiveEffectTitleSp/exclusiveEffectSp/exclusiveEffectTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,4},{0,82},{0,29}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="专属激活：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/rightBox/exclusiveEffectTitleSp/exclusiveEffectSp/exclusiveEffectTxt1$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,29.5},{0,242},{0,54.5}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="增加40力量，增加300生命" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/rightBox/exclusiveEffectTitleSp/exclusiveEffectSp/markImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,3},{0,87.0001},{0,12},{0,96.0001}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/rightBox/exclusiveEffectTitleSp/exclusiveEffectSp/exclusiveChangeTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,80.5},{0,82},{0,105.5}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="专属变身：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/rightBox/exclusiveEffectTitleSp/exclusiveEffectSp/exclusiveChangeTxt$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,106.5},{0,242},{0,131.5}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="齐天大圣  帝释天  哪吒" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ExclusiveMagicPanel/rightBox/exclusiveEffectTitleSp/exclusiveEffectTitleImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,249},{0,26}}" />
+                    <Property Name="Image" Value="set:exclusiveMagic image:exclusiveEffectTxt" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="ImageDisabledColour" Value="CentreAligned" />
+                </Window>
+            </Window>
+            <Window Name="ExclusiveMagicPanel/rightBox/magicShowTitleSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,481},{0,250},{0,621}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ExclusiveMagicPanel/rightBox/magicShowTitleSp/magicShowBg" Type="GlossySerpent/ThreeVStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,250},{0,140}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TopImage" Value="set:exclusiveMagic image:top" />
+                    <Property Name="TopOffset" Value="27" />
+                    <Property Name="BottomImage" Value="set:exclusiveMagic image:end" />
+                    <Property Name="CenterImage" Value="set:exclusiveMagic image:middle" />
+                    <Property Name="BottomOffset" Value="" />
+                </Window>
+                <Window Name="ExclusiveMagicPanel/rightBox/magicShowTitleSp/magicShowSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,26},{0,250},{0,140}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="ExclusiveMagicPanel/rightBox/magicShowTitleSp/magicShowSp/magicShowImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,3},{0,11},{0,12},{0,20}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/rightBox/magicShowTitleSp/magicShowSp/magicShowNameTxt$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,10},{0,243},{0,108}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="恐鳌之心（in English）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ExclusiveMagicPanel/rightBox/magicShowTitleSp/magicShowTitleImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,250},{0,26}}" />
+                    <Property Name="Image" Value="set:exclusiveMagic image:magicShowTxt" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="ImageDisabledColour" Value="CentreAligned" />
+                </Window>
+            </Window>
+            <Window Name="ExclusiveMagicPanel/rightBox/shareSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,625},{0,250},{0,682}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ExclusiveMagicPanel/rightBox/shareSp/shareBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,250},{0,57}}" />
+                    <Property Name="Image" Value="set:exclusiveMagic image:blank" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ExclusiveMagicPanel/rightBox/shareSp/shareBg/shareTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,4},{0,100},{0,29}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="今日炫耀次数" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/rightBox/shareSp/shareBg/shareImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,3},{0,11},{0,12},{0,20}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/rightBox/shareSp/shareBg/shareTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,110},{0,4},{0,158},{0,29}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="5/10" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/rightBox/shareSp/shareBg/shareBtn" Type="GlossySerpent/OrangeButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,163},{0,5.5},{0,244},{0,28.5}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="炫耀一下" />
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/rightBox/shareSp/shareBg/linkBtn$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,174},{0,30.5},{0,233},{0,55.5}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="炫耀奖励" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="ExclusiveMagicPanel/downBox" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-100},{0,196},{0,-16}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Name="ExclusiveMagicPanel/downBox/activationBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,21},{0,32},{0,184},{0,72}}" />
+                <Window Name="ExclusiveMagicPanel/downBox/activationBtn/activationImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                    <Property Name="Image" Value="set:exclusiveMagic image:magicActivate" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ExclusiveMagicPanel/downBox/activationTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,9},{0,237},{0,29}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="激活签到：签到1、45次" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="ExclusiveMagicPanel/fabaoBox" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,254},{0,154}}" />
+            <Property Name="Image" Value="set:exclusiveMagic image:itemBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Name="ExclusiveMagicPanel/fabaoBox/lineView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,91},{0,233},{0,136}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ExclusiveMagicPanel/fabaoBox/lineView/StaticImage1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,7},{0,42}}" />
+                    <Property Name="Image" Value="set:exclusiveMagic image:line2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="ExclusiveMagicPanel/fabaoBox/lineView/duoView" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-3},{0,219},{0,47}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="ExclusiveMagicPanel/fabaoBox/lineView/duoView/StaticImage" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,3},{0,15},{0,45}}" />
+                        <Property Name="Image" Value="set:exclusiveMagic image:line1" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="Visible" Value="false" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/fabaoBox/lineView/duoView/StaticImage31" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,17},{0,22},{0,45}}" />
+                        <Property Name="Image" Value="set:exclusiveMagic image:line3" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/fabaoBox/lineView/duoView/StaticImage4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,196},{0,17},{0,218},{0,45}}" />
+                        <Property Name="Image" Value="set:exclusiveMagic image:line4" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ExclusiveMagicPanel/fabaoBox/lineView/duoView/StaticImage3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,17},{0,196},{0,24}}" />
+                        <Property Name="Image" Value="set:exclusiveMagic image:line5" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ExclusiveMagicPanel/fabaoBox/lineView/StaticImage121" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,7},{0,17}}" />
+                    <Property Name="Image" Value="set:exclusiveMagic image:line2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+            </Window>
+            <Window Name="ExclusiveMagicPanel/fabaoBox/fabao2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,91},{0,26},{0,155},{0,90}}" />
+                <Property Name="Image" Value="set:exclusiveMagic image:goodsSelect" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ExclusiveMagicPanel/fabaoBox/fabao" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,100},{0,35},{0,146},{0,81}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="ExclusiveMagicPanel/returnBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,-15},{0,-14},{0,41},{0,18}}" />
+            <Property Name="Image" Value="set:exclusiveMagic image:return" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="HorizontalAlignment" Value="Right" />
+        </Window>
+        <Window Name="ExclusiveMagicPanel/liftBox" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,35},{0,43},{0,362},{0,793}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Window Name="ExclusiveMagicPanel/liftBox/groupView" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,327},{0,660}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ExclusiveMagicPanel/liftBox/topBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,10},{0,149},{0,44}}" />
+                <Property Name="Image" Value="image:exclusiveMagic image:lastBtn" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="ExclusiveMagicPanel/liftBox/downBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-10},{0,124},{0,24}}" />
+                <Property Name="Image" Value="set:exclusiveMagic image:nextBtn" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

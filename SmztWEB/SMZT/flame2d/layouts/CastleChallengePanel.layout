@@ -1,0 +1,47 @@
+<GUILayout>
+    <Window Name="CastleChallengePanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,399},{0,188}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CastleChallengePanel/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,399},{0,188}}" />
+            <Property Name="Image" Value="set:castle1 image:bg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="CastleChallengePanel/bg/Checkbox" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,141},{0,128},{0,157},{0,146}}" />
+                <Property Name="NormalTextColour" Value="FF00e4ff" />
+            </Window>
+            <Window Name="CastleChallengePanel/bg/goBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,164},{0,149},{0,246},{0,172}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="立即前往" />
+            </Window>
+            <Window Name="CastleChallengePanel/bg/StaticText" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,159},{0,129},{0,276},{0,147}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="十分钟内不再提示" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00e4ff" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleChallengePanel/bg/titleImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,67},{0,61},{0,355},{0,128}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="CastleChallengePanel/closeBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,365},{0,0},{0,399},{0,34}}" />
+            <Property Name="HoverImage" Value="set:castle1 image:closeHover" />
+            <Property Name="NormalImage" Value="set:castle1 image:closeNormal" />
+            <Property Name="PushedImage" Value="set:castle1 image:closePushed" />
+        </Window>
+    </Window>
+</GUILayout>

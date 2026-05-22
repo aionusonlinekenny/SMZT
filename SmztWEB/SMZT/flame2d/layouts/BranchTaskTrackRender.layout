@@ -1,0 +1,34 @@
+<GUILayout>
+    <Window Name="BranchTaskTrackRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,217},{0,42}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{800,0}}" />
+        <Window Name="BranchTaskTrackRender/effWin" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,18},{0,121},{0,47}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="BranchTaskTrackRender/contect" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,217},{0,42}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{800,0}}" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="BranchTaskTrackRender/contect/line$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,212},{0,22}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="击杀王祖贤（0/12）" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BranchTaskTrackRender/contect/getReward$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,125},{0,55},{0,212},{0,73}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="点击领取奖励" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

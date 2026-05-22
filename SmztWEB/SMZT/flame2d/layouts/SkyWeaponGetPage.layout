@@ -1,0 +1,24 @@
+<GUILayout>
+    <Window Name="SkyWeaponGetPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,318},{0,111}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SkyWeaponGetPage/getImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,86},{0,18},{0,230},{0,49}}" />
+            <Property Name="Image" Value="set:skyWeapon image:equipway" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="SkyWeaponGetPage/desc$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,96},{0,65},{0,188},{0,89}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SkyWeaponGetPage/flyBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,195},{0,67},{0,215},{0,87}}" />
+            <Property Name="Image" Value="set:mainUI1 image:transfer" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,79 @@
+<GUILayout>
+    <Window Name="ObtainAlert2" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,334},{0,522}}" />
+        <Property Name="Text" Value="获得更强装备" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="ObtainAlert2/prop" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,39},{0,29},{0,87},{0,77}}" />
+            <Property Name="Image" Value="set:skin image:GridBG" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="ObtainAlert2/descTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,111},{0,11},{0,217},{0,35}}" />
+            <Property Name="Font" Value="songti_18_strengh" />
+            <Property Name="Text" Value="幽州幻铠" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFffea00" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="ObtainAlert2/godEquipImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,254},{0,7},{0,309},{0,38}}" />
+            <Property Name="Image" Value="set:skins image:godProduct" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="ObtainAlert2/di" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,61},{0,318},{0,122}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ObtainAlert2/di/upImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,275},{0,4},{0,286},{0,23}}" />
+                <Property Name="Image" Value="set:skins image:arrowUp" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ObtainAlert2/di/fightNumberImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,182},{0,2},{0,273},{0,24}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ObtainAlert2/di/fightImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,118},{0,2},{0,182},{0,24}}" />
+                <Property Name="Image" Value="set:mainUI1 image:fightText" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ObtainAlert2/di/OrangeButton" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,113},{0,34},{0,200},{0,57}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="立即装备" />
+            </Window>
+            <Window Name="ObtainAlert2/di/Line" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,320},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

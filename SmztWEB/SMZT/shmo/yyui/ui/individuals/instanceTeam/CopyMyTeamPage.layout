@@ -1,0 +1,26 @@
+<GUILayout>
+    <Window Name="CopyMyTeamPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{-0.00234375,715},{-0.00416667,349}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CopyMyTeamPage/background" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,714},{0,350}}" />
+            <Property Name="Image" Value="set:CopyBackground image:NewImage" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="CopyMyTeamPage/background/boxSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{0,710},{0,343}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CopyMyTeamPage/background/boxSp/copyNameTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,708},{0,24}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

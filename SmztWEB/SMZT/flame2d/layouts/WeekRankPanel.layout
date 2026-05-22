@@ -1,0 +1,401 @@
+<GUILayout>
+    <Window Name="WeekRankPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,904},{0,510}}" />
+        <Property Name="Text" Value="本周积分榜" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="WeekRankPanel/curService" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,886},{0,464}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="本服排行" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="WeekRankPanel/curService/curServiceBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,886},{0,460}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,885},{0,460}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/viewBg" Type="GuiLook/CommonBg3">
+                        <Property Name="UnifiedAreaRect" Value="{{0,521},{0,0},{0,886},{0,460}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/viewBg/gradeView" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,365},{0,460}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,364},{0,457}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/grade3DView" Type="DefaultWindow">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,182},{0,379},{0,192},{0,389}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/campImg" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,19},{0,14},{0,40},{0,35}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/roleName" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,49},{0,9},{0,148},{0,39}}" />
+                                    <Property Name="Font" Value="songti_14_strengh" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/gangTitleTxt" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,167},{0,9},{0,213},{0,39}}" />
+                                    <Property Name="Font" Value="songti_14_strengh" />
+                                    <Property Name="Text" Value="帮派：" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="Visible" Value="false" />
+                                    <Property Name="TextColour" Value="FF00baff" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/gangTxt" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,213},{0,9},{0,312},{0,39}}" />
+                                    <Property Name="Font" Value="songti_14_strengh" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="Visible" Value="false" />
+                                    <Property Name="TextColour" Value="FF00baff" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/otherVipImg" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,314},{0,14},{0,351},{0,34}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                                    <Property Name="VertFormatting" Value="CentreAligned" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Property Name="MousePassThroughEnabled" Value="true" />
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/otherVipNumImg" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,338},{0,14},{0,351},{0,34}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                                    <Property Name="VertFormatting" Value="CentreAligned" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Property Name="MousePassThroughEnabled" Value="true" />
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/otherVip" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,314},{0,14},{0,338},{0,34}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                                    <Property Name="VertFormatting" Value="CentreAligned" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Property Name="MousePassThroughEnabled" Value="true" />
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/otherTitleSp" Type="DefaultWindow">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,59},{0,42},{0,310},{0,107}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/otherTitleSp/otherTitleSing" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,250},{0,66}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                </Window>
+                            </Window>
+                        </Window>
+                        <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/viewBg/tipsImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,87},{0,308},{0,344}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg" Type="GuiLook/CommonBg3">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,522},{0,460}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/pageSp" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,412},{0,522},{0,459}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/pageSp/pageNextBtn" Type="GuiLook/DefaultButton">
+                                <Property Name="UnifiedAreaRect" Value="{{0,286},{0,13},{0,306},{0,33}}" />
+                                <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                                <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                                <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+                                <Property Name="DisabledImage" Value="set:skin image:NextBtnDisable" />
+                            </Window>
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/pageSp/pageLastBtn" Type="GuiLook/DefaultButton">
+                                <Property Name="UnifiedAreaRect" Value="{{0,216},{0,13},{0,236},{0,33}}" />
+                                <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                                <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                                <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+                                <Property Name="DisabledImage" Value="set:skin image:LastBtnDisable" />
+                            </Window>
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/pageSp/mNextBtn" Type="GuiLook/DefaultButton">
+                                <Property Name="UnifiedAreaRect" Value="{{0,311},{0,13},{0,331},{0,33}}" />
+                                <Property Name="HoverImage" Value="set:skin image:MnextBtnHover" />
+                                <Property Name="NormalImage" Value="set:skin image:MnextBtnNormal" />
+                                <Property Name="PushedImage" Value="set:skin image:MnextBtnPushed" />
+                                <Property Name="DisabledImage" Value="set:skin image:MnextBtnDisable" />
+                            </Window>
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/pageSp/mLastBtn" Type="GuiLook/DefaultButton">
+                                <Property Name="UnifiedAreaRect" Value="{{0,190},{0,13},{0,210},{0,33}}" />
+                                <Property Name="HoverImage" Value="set:skin image:MlastBtnHover" />
+                                <Property Name="NormalImage" Value="set:skin image:MlastBtnNormal" />
+                                <Property Name="PushedImage" Value="set:skin image:MlastBtnPushed" />
+                                <Property Name="DisabledImage" Value="set:skin image:MlastBtnDisable" />
+                            </Window>
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/pageSp/laPageBg" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,240},{0,14},{0,282},{0,32}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/pageSp/laPageBg/pageTxt" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,18}}" />
+                                    <Property Name="Font" Value="songti_14_strengh" />
+                                    <Property Name="Text" Value="250" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="FF64d4d8" />
+                                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                            </Window>
+                        </Window>
+                        <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,338},{0,522},{0,411}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankImg" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,210},{0,10},{0,308},{0,37}}" />
+                                <Property Name="Image" Value="set:rank image:myRank" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBarSp" Type="GlossySerpent/ThreeStretchImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,42},{0,521},{0,73}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="LeftImage" Value="set:skin image:RenderNormalBgLeft" />
+                                <Property Name="LeftOffset" Value="46" />
+                                <Property Name="RightImage" Value="set:skin image:RenderNormalBgRight" />
+                                <Property Name="CenterImage" Value="set:skin image:RenderNormalBgCenter" />
+                                <Property Name="RightOffset" Value="46" />
+                            </Window>
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/noRankTxt" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,43},{0,522},{0,73}}" />
+                                <Property Name="Font" Value="" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,43},{0,520},{0,74}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/trendTxt" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,439},{0,0},{0,519},{0,31}}" />
+                                    <Property Name="Font" Value="" />
+                                    <Property Name="Text" Value="250" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="Visible" Value="false" />
+                                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/thingsTxt$RI" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,223},{0,7},{0,308},{0,29}}" />
+                                    <Property Name="Font" Value="" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/numTxt" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,0},{0,65},{0,31}}" />
+                                    <Property Name="Font" Value="" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/numImg" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,27}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/nameTxt$RI" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,80},{0,7},{0,200},{0,29}}" />
+                                    <Property Name="Font" Value="" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/grid0" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,317},{0,0},{0,347},{0,30}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="VerticalAlignment" Value="Centre" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Property Name="MousePassThroughEnabled" Value="true" />
+                                    <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/grid0/item0" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,29},{0,29}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Property Name="MousePassThroughEnabled" Value="true" />
+                                    </Window>
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/grid1" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0.110577,298.5},{0,0},{0.110577,328.5},{0,30}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="VerticalAlignment" Value="Centre" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Property Name="MousePassThroughEnabled" Value="true" />
+                                    <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/grid1/item1" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,29},{0,29}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Property Name="MousePassThroughEnabled" Value="true" />
+                                    </Window>
+                                </Window>
+                                <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/grid2" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,394},{0,0},{0,424},{0,30}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="VerticalAlignment" Value="Centre" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Property Name="MousePassThroughEnabled" Value="true" />
+                                    <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/grid2/item2" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,29},{0,29}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Property Name="MousePassThroughEnabled" Value="true" />
+                                    </Window>
+                                </Window>
+                            </Window>
+                        </Window>
+                        <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/list" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,29},{0,521},{0,339}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        </Window>
+                        <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/headerList5" Type="GlossySerpent/ThreeStretchImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,439},{0,0},{0,522},{0,28}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                            <Property Name="LeftOffset" Value="10" />
+                            <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                            <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                            <Property Name="RightOffset" Value="10" />
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/headerList5/headerTxt5" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,28}}" />
+                                <Property Name="Font" Value="songti_14_strengh" />
+                                <Property Name="Text" Value="排名称号" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF65b3e9" />
+                                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/headerList4" Type="GlossySerpent/ThreeStretchImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,278},{0,0},{0,439},{0,28}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                            <Property Name="LeftOffset" Value="10" />
+                            <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                            <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                            <Property Name="RightOffset" Value="10" />
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/headerList4/headerTxt4" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,161},{0,28}}" />
+                                <Property Name="Font" Value="songti_14_strengh" />
+                                <Property Name="Text" Value="排名奖励" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF65b3e9" />
+                                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/headerList3" Type="GlossySerpent/ThreeStretchImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,193},{0,0},{0,278},{0,28}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                            <Property Name="LeftOffset" Value="10" />
+                            <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                            <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                            <Property Name="RightOffset" Value="10" />
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/headerList3/headerTxt3" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,85},{0,28}}" />
+                                <Property Name="Font" Value="songti_14_strengh" />
+                                <Property Name="Text" Value="本周积分" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF65b3e9" />
+                                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/headerList2" Type="GlossySerpent/ThreeStretchImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,193},{0,28}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                            <Property Name="LeftOffset" Value="10" />
+                            <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                            <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                            <Property Name="RightOffset" Value="10" />
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/headerList2/headerTxt2" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,129},{0,28}}" />
+                                <Property Name="Font" Value="songti_14_strengh" />
+                                <Property Name="Text" Value="玩家名称" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF65b3e9" />
+                                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/headerList" Type="GlossySerpent/ThreeStretchImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,28}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                            <Property Name="LeftOffset" Value="10" />
+                            <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                            <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                            <Property Name="RightOffset" Value="10" />
+                            <Window Name="WeekRankPanel/curService/curServiceBg/otherSp/pageBg/headerList/headerTxt" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,28}}" />
+                                <Property Name="Font" Value="songti_14_strengh" />
+                                <Property Name="Text" Value="排名" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF65b3e9" />
+                                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="WeekRankPanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,468},{0,886},{0,469}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

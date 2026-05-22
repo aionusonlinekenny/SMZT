@@ -1,0 +1,373 @@
+<GUILayout>
+    <Window Name="EquipSoulPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,922},{0,543}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="EquipSoulPage/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,2},{0,678},{0,541}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="EquipSoulPage/bg/levelNum0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,45},{0,457},{0,94},{0,484}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/levelNum1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,613},{0,457},{0,655},{0,484}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/grid0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,556},{0,389},{0,604},{0,437}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/grid1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,607},{0,389},{0,655},{0,437}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/progressBar$NormalBar" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,451},{0,575},{0,479}}" />
+                <Property Name="Image" Value="set:dailyFinishGeneral image:arrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/progressBarTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,461},{0,580},{0,479}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/unrealBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,260},{0,491},{0,423},{0,531}}" />
+                <Window Name="EquipSoulPage/bg/unrealBtn/unrealImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,162},{0,40}}" />
+                    <Property Name="Image" Value="set:dailyFinishGeneral image:upgrade" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipSoulPage/bg/wenHao" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,659},{0,380},{0,675},{0,396}}" />
+                <Property Name="Image" Value="set:dailyFinishGeneral image:wenHao" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/fightNum" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,50},{0,342},{0,159},{0,367}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/nameImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,623},{0,16},{0,675},{0,203}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/txtTitle$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,386},{0,136},{0,447}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="生 命" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/rich0$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,236},{0,396},{0,433},{0,412}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="TextColour" Value="FFFf7200" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/rich1$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,236},{0,418},{0,433},{0,434}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="TextColour" Value="FFFf7200" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/roleView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,287},{0,276},{0,387},{0,376}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/ridingBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,282},{0,337},{0,394},{0,368}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="HoverImage" Value="set:skins image:BlueBtnHover" />
+                <Property Name="NormalImage" Value="set:skins image:BlueBtnNormal" />
+                <Property Name="PushedImage" Value="set:skins image:BlueBtnPushed" />
+                <Window Name="EquipSoulPage/bg/ridingBtn/ridingImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,112},{0,31}}" />
+                    <Property Name="Image" Value="set:dailyFinishGeneral image:unrealBtn" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipSoulPage/bg/nextBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,596},{0,178},{0,632},{0,215}}" />
+                <Property Name="Image" Value="set:skins image:rightImgBtn" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/lastBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,52},{0,178},{0,88},{0,215}}" />
+                <Property Name="Image" Value="set:skins image:leftImgBtn" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/unrealSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,272},{0,315},{0,402},{0,375}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="EquipSoulPage/bg/unrealSp/activityImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,16},{0,21},{0,35},{0,37}}" />
+                    <Property Name="Image" Value="set:dailyFinishGeneral image:level" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipSoulPage/bg/unrealSp/activityLevel" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,36},{0,11},{0,56},{0,35}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipSoulPage/bg/unrealSp/activityTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,38},{0,122},{0,54}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="EquipSoulPage/bg/arrowImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,137},{0,427},{0,148},{0,446}}" />
+                <Property Name="Image" Value="set:skins image:arrowUp" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/arrowImg0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,137},{0,387},{0,148},{0,406}}" />
+                <Property Name="Image" Value="set:skins image:arrowUp" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/arrowImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,137},{0,407},{0,148},{0,426}}" />
+                <Property Name="Image" Value="set:skins image:arrowUp" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/upTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,149},{0,386},{0,236},{0,447}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/upFightTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,149},{0,353},{0,188},{0,373}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="00000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipSoulPage/bg/upFightImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,134},{0,355},{0,148},{0,371}}" />
+                <Property Name="Image" Value="set:skin image:upArrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="EquipSoulPage/rightBg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,678},{0,0},{0,922},{0,543}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="EquipSoulPage/rightBg/headerList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,94},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="EquipSoulPage/rightBg/headerList/headerTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,94},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="途径" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="EquipSoulPage/rightBg/headerList5" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,144},{0,0},{0,244},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="EquipSoulPage/rightBg/headerList5/headerTxt5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,100},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="总次经验" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="EquipSoulPage/rightBg/headerList2" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,94},{0,0},{0,144},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="EquipSoulPage/rightBg/headerList2/headerTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="次数" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="EquipSoulPage/rightBg/getImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,451},{0,244},{0,542}}" />
+                <Property Name="Image" Value="set:dailyFinishGeneral image:todayGet" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipSoulPage/rightBg/getImg/getBtn" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,87},{0,24}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="找回" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="EquipSoulPage/rightBg/getImg/gridSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,244},{0,90}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="EquipSoulPage/rightBg/getImg/gridSp/notGoods" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,244},{0,90}}" />
+                        <Property Name="Image" Value="set:dailyFinishGeneral image:allGet" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="Visible" Value="false" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipSoulPage/rightBg/getImg/gridSp/hasGoods" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,244},{0,90}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="EquipSoulPage/rightBg/getImg/gridSp/hasGoods/item3" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,188},{0,32},{0,236},{0,80}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="EquipSoulPage/rightBg/getImg/gridSp/hasGoods/item2" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,129},{0,32},{0,177},{0,80}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="EquipSoulPage/rightBg/getImg/gridSp/hasGoods/item1" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,71},{0,32},{0,119},{0,80}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="EquipSoulPage/rightBg/getImg/gridSp/hasGoods/item0" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,12},{0,32},{0,60},{0,80}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="EquipSoulPage/rightBg/getImg/gridSp/hasGoods/todayGetImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,87},{0,9},{0,157},{0,23}}" />
+                            <Property Name="Image" Value="set:dailyFinishGeneral image:todayGetName" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="EquipSoulPage/rightBg/list" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,3},{0,30},{0,244},{0,450}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

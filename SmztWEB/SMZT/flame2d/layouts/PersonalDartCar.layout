@@ -1,0 +1,57 @@
+<GUILayout>
+    <Window Name="PersonalDartCar" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,233},{0,119}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="PersonalDartCar/carBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,233},{0,119}}" />
+            <Property Name="Image" Value="set:personalDart image:car" />
+            <Window Name="PersonalDartCar/carBtn/box1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,94},{0,233},{0,119}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="PersonalDartCar/carBtn/box1/willdartImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,230},{0,25}}" />
+                    <Property Name="Image" Value="set:personalDart image:wiidart" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PersonalDartCar/carBtn/box1/timeImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,132},{0,0},{0,170},{0,25}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="PersonalDartCar/carBtn/box2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,94},{0,233},{0,119}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="PersonalDartCar/carBtn/box2/clickImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,47},{0,0},{0,162},{0,25}}" />
+                    <Property Name="Image" Value="set:personalDart image:click" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="PersonalDartCar/dragImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,20},{0,30},{0,46}}" />
+            <Property Name="Image" Value="set:skins image:biaoDrag" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,184 @@
+<GUILayout>
+    <Window Name="HallMainInterface" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,26},{0,15},{0,855},{0,583}}" />
+        <Property Name="GlyphImage" Value="set:hallReward image:hall" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="HallMainInterface/experience" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,163},{0,45}}" />
+            <Property Name="HoverImage" Value="set:hallReward image:redStrip" />
+            <Property Name="SelectedImage" Value="set:hallReward image:redStrip" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnselectedImage" Value="set:hallReward image:blueStrip" />
+            <Window Name="HallMainInterface/experience/experienceImage" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,45},{0,11},{0,116},{0,28}}" />
+                <Property Name="Image" Value="set:hallReward image:experience" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="HallMainInterface/sign" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,45},{0,163},{0,86}}" />
+            <Property Name="HoverImage" Value="set:hallReward image:redStrip" />
+            <Property Name="SelectedImage" Value="set:hallReward image:redStrip" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnselectedImage" Value="set:hallReward image:blueStrip" />
+            <Window Name="HallMainInterface/sign/signImage" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,45},{0,11},{0,116},{0,28}}" />
+                <Property Name="Image" Value="set:hallReward image:sign" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="HallMainInterface/sign/txView1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,-4},{0,164},{0,37}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="HallMainInterface/sign/lingImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,26},{0,26}}" />
+                <Property Name="Image" Value="set:skin image:LingImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="HallMainInterface/sign/qianImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,26},{0,26}}" />
+                <Property Name="Image" Value="set:hallReward image:qian" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="HallMainInterface/online" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,86},{0,163},{0,127}}" />
+            <Property Name="HoverImage" Value="set:hallReward image:redStrip" />
+            <Property Name="SelectedImage" Value="set:hallReward image:redStrip" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnselectedImage" Value="set:hallReward image:blueStrip" />
+            <Window Name="HallMainInterface/online/onlineImage" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,45},{0,11},{0,116},{0,28}}" />
+                <Property Name="Image" Value="set:hallReward image:online" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="HallMainInterface/online/txView2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,-7},{0,164},{0,34}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="HallMainInterface/online/lingImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,26},{0,26}}" />
+                <Property Name="Image" Value="set:skin image:LingImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="HallMainInterface/resource" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,168},{0,163},{0,209}}" />
+            <Property Name="HoverImage" Value="set:hallReward image:redStrip" />
+            <Property Name="SelectedImage" Value="set:hallReward image:redStrip" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnselectedImage" Value="set:hallReward image:blueStrip" />
+            <Window Name="HallMainInterface/resource/resoureImage" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,45},{0,11},{0,116},{0,28}}" />
+                <Property Name="Image" Value="set:hallReward image:resourceBack" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="HallMainInterface/resource/txView4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,-7},{0,164},{0,34}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="HallMainInterface/resource/lingImg4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,26},{0,26}}" />
+                <Property Name="Image" Value="set:skin image:LingImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="HallMainInterface/activation" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,127},{0,163},{0,168}}" />
+            <Property Name="HoverImage" Value="set:hallReward image:redStrip" />
+            <Property Name="SelectedImage" Value="set:hallReward image:redStrip" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnselectedImage" Value="set:hallReward image:blueStrip" />
+            <Window Name="HallMainInterface/activation/activationImage" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,36},{0,11},{0,125},{0,28}}" />
+                <Property Name="Image" Value="set:hallReward image:activationCode" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="HallMainInterface/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,163},{0,5},{0,808},{0,521}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="HallMainInterface/weiXinBtn" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,210},{0,163},{0,251}}" />
+            <Property Name="HoverImage" Value="set:hallReward image:redStrip" />
+            <Property Name="SelectedImage" Value="set:hallReward image:redStrip" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnselectedImage" Value="set:hallReward image:blueStrip" />
+            <Window Name="HallMainInterface/weiXinBtn/experienceImage" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,45},{0,11},{0,116},{0,28}}" />
+                <Property Name="Image" Value="set:hallReward image:weixin" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

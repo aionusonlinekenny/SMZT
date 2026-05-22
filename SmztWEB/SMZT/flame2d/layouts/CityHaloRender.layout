@@ -1,0 +1,110 @@
+<GUILayout>
+    <Window Name="CityHaloRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,252},{0,421}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CityHaloRender/rolePos" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,126},{0,276},{0,136},{0,286}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="CityHaloRender/numberTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,13},{0,310},{0,50},{0,328}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="数量：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="CityHaloRender/tokenBtn" Type="GuiLook/RadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,56},{0,340},{0,141},{0,355}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="白虎令牌*1" />
+            <Property Name="HoverTextColour" Value="ffcc43ff" />
+            <Property Name="NormalTextColour" Value="ffcc43ff" />
+            <Property Name="PushedTextColour" Value="ffcc43ff" />
+        </Window>
+        <Window Name="CityHaloRender/moneyBtn" Type="GuiLook/RadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,150},{0,340},{0,218},{0,355}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="6000000" />
+            <Property Name="HoverTextColour" Value="ffff7200" />
+            <Property Name="NormalTextColour" Value="ffff7200" />
+            <Property Name="PushedTextColour" Value="ffff7200" />
+        </Window>
+        <Window Name="CityHaloRender/shadowBgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,58},{0,231},{0,87}}" />
+            <Property Name="Image" Value="set:cityGodBeast image:shadow" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="CityHaloRender/shadowBgImg/haloTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,211},{0,29}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="减速光环" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff85f500" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="CityHaloRender/moneyImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,223},{0,336},{0,242},{0,355}}" />
+            <Property Name="Image" Value="set:mainUI1 image:goldCoinLock" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="CityHaloRender/priceTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,13},{0,337},{0,50},{0,355}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="售价：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="CityHaloRender/RedButton" Type="GlossySerpent/RedButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,34},{0,370},{0,221},{0,410}}" />
+            <Window Name="CityHaloRender/RedButton/buyImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,187},{0,40}}" />
+                <Property Name="Image" Value="set:cityGodBeast image:buy" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="CityHaloRender/digitalTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,51},{0,310},{0,93},{0,328}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="10/10" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ff85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="CityHaloRender/tigerImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,10},{0,196},{0,49}}" />
+            <Property Name="Image" Value="set:cityGodBeast image:tiger" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="CityHaloRender/nullImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,97},{0,252},{0,300}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

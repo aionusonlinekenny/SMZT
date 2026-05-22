@@ -1,0 +1,42 @@
+<GUILayout>
+    <Window Name="EquipAppraiseItem" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,350},{0,26}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="EquipAppraiseItem/prop$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,6},{0,220},{0,24}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="100" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="VerticalAlignment" Value="Centre" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="EquipAppraiseItem/starTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,258},{0,0},{0,292},{0,26}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="asdf" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFcc43ff" />
+            <Property Name="HorzTextFormatting" Value="RightAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="EquipAppraiseItem/starMc" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,293},{0,1},{0,318},{0,26}}" />
+            <Property Name="Image" Value="set:skins image:star" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="EquipAppraiseItem/openTxt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,1},{0,348},{0,27}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="洗炼出一条5星攻击后开启" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,99 @@
+<GUILayout>
+    <Window Name="DamageRankInfoView" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,265},{0,200}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+        <Window Name="DamageRankInfoView/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,265},{0,200}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="DamageRankInfoView/bg/di" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,265},{0,44}}" />
+                <Property Name="Image" Value="set:damageRank image:shadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="DamageRankInfoView/bg/di/myRankTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,13},{0,13},{0,87},{0,31}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="我的排名：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="DamageRankInfoView/bg/di/myRankTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,87},{0,13},{0,110},{0,31}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="DamageRankInfoView/bg/di/damageTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,111},{0,14},{0,147},{0,30}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="伤害：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="DamageRankInfoView/bg/di/damageTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,147},{0,14},{0,259},{0,30}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="DamageRankInfoView/bg/contentBox" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,32},{0,265},{0,152}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+            </Window>
+            <Window Name="DamageRankInfoView/bg/bottomImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,265},{0,32}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="DamageRankInfoView/bg/bottomImg/StaticImage" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,265},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="DamageRankInfoView/bg/bottomImg/chapterImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,265},{0,32}}" />
+                    <Property Name="Image" Value="set:damageRank image:crossBoss" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="DamageRankInfoView/bg/bottomImg/StaticImage2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,265},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="DamageRankInfoView/bg/bottomImg/zoomBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,11},{0,12},{0,23},{0,23}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:zoomLeftBtn" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="DamageRankInfoView/zoomNBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,22},{0,91}}" />
+            <Property Name="HoverImage" Value="set:damageRank image:rankingHover" />
+            <Property Name="NormalImage" Value="set:damageRank image:rankingNormal" />
+            <Property Name="PushedImage" Value="set:damageRank image:rankingPushed" />
+        </Window>
+    </Window>
+</GUILayout>

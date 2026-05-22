@@ -1,0 +1,64 @@
+<GUILayout>
+    <Window Name="EquipFuseBagPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,330},{0,224}}" />
+        <Property Name="Text" Value="可放入的装备" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="EquipFuseBagPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,181},{0,312},{0,182}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="EquipFuseBagPanel/radioBtn0" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,79},{0,27}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="已装备" />
+        </Window>
+        <Window Name="EquipFuseBagPanel/radioBtn1" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,81},{0,4},{0,156},{0,27}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="背包" />
+        </Window>
+        <Window Name="EquipFuseBagPanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,28},{0,312},{0,137}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="EquipFuseBagPanel/lastBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,113},{0,149},{0,133},{0,169}}" />
+            <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+            <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+            <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+        </Window>
+        <Window Name="EquipFuseBagPanel/nextBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,183},{0,149},{0,203},{0,169}}" />
+            <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+            <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+            <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+        </Window>
+        <Window Name="EquipFuseBagPanel/pageBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,137},{0,150},{0,179},{0,168}}" />
+            <Property Name="Image" Value="set:skin image:pageBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="EquipFuseBagPanel/pageBg/pageTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,18}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10/100" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

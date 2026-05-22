@@ -1,0 +1,123 @@
+<GUILayout>
+    <Window Name="EquipMeltChangePanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,713},{0,490}}" />
+        <Property Name="Text" Value="兑换" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="EquipMeltChangePanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,447},{0,695},{0,448}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="EquipMeltChangePanel/radioBtn0" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,84},{0,28}}" />
+            <Property Name="Text" Value="魔兵兑换" />
+        </Window>
+        <Window Name="EquipMeltChangePanel/radioBtn1" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,85},{0,4},{0,165},{0,28}}" />
+            <Property Name="Text" Value="法宝兑换" />
+        </Window>
+        <Window Name="EquipMeltChangePanel/bg" Type="GuiLook/CommonBG">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,29},{0,695},{0,407}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="EquipMeltChangePanel/bg/leftBg" Type="GuiLook/CommonBg2">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,225},{0,373}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="EquipMeltChangePanel/bg/leftBg/titleBg" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,220},{0,29}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:ListTitleBgLeft" />
+                    <Property Name="LeftOffset" Value="19" />
+                    <Property Name="RightImage" Value="set:skin image:ListTitleBgRight" />
+                    <Property Name="CenterImage" Value="set:skin image:ListTitleBgCenter" />
+                    <Property Name="RightOffset" Value="19" />
+                    <Window Name="EquipMeltChangePanel/bg/leftBg/titleBg/titleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,220},{0,29}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="极品展示" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFef9d0" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="EquipMeltChangePanel/bg/leftBg/gridBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,29},{0,199},{0,226}}" />
+                    <Property Name="Image" Value="set:equipSmelter image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="EquipMeltChangePanel/bg/leftBg/gridBg/nameTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,22},{0,199},{0,47}}" />
+                        <Property Name="Font" Value="songti_18_strengh" />
+                        <Property Name="Text" Value="超神腰带" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFFea00" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="EquipMeltChangePanel/bg/leftBg/gridBg/giftBg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,75},{0,76},{0,125},{0,126}}" />
+                        <Property Name="Image" Value="set:skin image:YellowGrid" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipMeltChangePanel/bg/leftBg/gridBg/stateImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,90},{0,73},{0,129},{0,111}}" />
+                        <Property Name="Image" Value="set:skin image:bestMark" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Property Name="MouseInputPropagationEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="EquipMeltChangePanel/bg/leftBg/listProp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,200},{0,220},{0,349}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+            <Window Name="EquipMeltChangePanel/bg/list" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,227},{0,6},{0,693},{0,374}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="EquipMeltChangePanel/diBg" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,411},{0,695},{0,443}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="EquipMeltChangePanel/diBg/valueTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,95},{0,22}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="当前吞噬值：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00e4ff" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipMeltChangePanel/diBg/valueTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,95},{0,0},{0,245},{0,22}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="100" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffffff" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

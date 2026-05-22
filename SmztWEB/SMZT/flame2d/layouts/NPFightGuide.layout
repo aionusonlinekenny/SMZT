@@ -1,0 +1,26 @@
+<GUILayout>
+    <Window Name="NPFightGuide" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,543},{0,411}}" />
+        <Property Name="AutoRenderingSurface" Value="False" />
+        <Window Name="NPFightGuide/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,525},{0,326}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="NPFightGuide/bg/bgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,524},{0,321}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="NPFightGuide/titleImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,212},{0,-32},{0,313},{0,-5}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Name="NPFightGuide/knowBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,336},{0,291},{0,359}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="朕知道了" />
+        </Window>
+    </Window>
+</GUILayout>

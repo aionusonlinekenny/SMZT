@@ -1,0 +1,198 @@
+<GUILayout>
+    <Window Name="PrestigePanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,303},{0,568}}" />
+        <Property Name="Text" Value="声望" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="PrestigePanel/bg" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,285},{0,351}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="PrestigePanel/bg/IconImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,16},{0,97},{0,78}}" />
+                <Property Name="Image" Value="set:prestige2 image:Level5" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="PrestigePanel/bg/LevelTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,99},{0,22},{0,239},{0,46}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="初出茅庐 Lv.4" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PrestigePanel/bg/TextBG" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,86},{0,55},{0,261},{0,67}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="PrestigePanel/bg/TextBG/process$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,174},{0,11}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:PurpleProgressBarLeft" />
+                    <Property Name="LeftOffset" Value="48" />
+                    <Property Name="RightImage" Value="set:skin image:PurpleProgressBarRight" />
+                    <Property Name="CenterImage" Value="set:skin image:PurpleProgressBarCenter" />
+                    <Property Name="RightOffset" Value="48" />
+                </Window>
+                <Window Name="PrestigePanel/bg/TextBG/processTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,175},{0,14}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="1540/5000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="PrestigePanel/bg/line2" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,123},{0,285},{0,124}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="PrestigePanel/bg/line22" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,260},{0,285},{0,261}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="PrestigePanel/bg/numTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,141},{0,97},{0,161}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="累计属性：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PrestigePanel/bg/gradChangeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,52},{0,270},{0,155},{0,290}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="当前可消耗声望：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PrestigePanel/bg/changeTxtName" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,159},{0,270},{0,281},{0,290}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="0" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PrestigePanel/bg/instructions$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,90},{0,308},{0,193},{0,333}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="前往声望商店" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PrestigePanel/bg/attTxt5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,147},{0,229},{0,273},{0,246}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="累计属性：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PrestigePanel/bg/attTxt4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,13},{0,229},{0,139},{0,246}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="累计属性：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PrestigePanel/bg/attTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,13},{0,200},{0,139},{0,217}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="累计属性：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PrestigePanel/bg/attTxt3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,147},{0,200},{0,273},{0,217}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="累计属性：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PrestigePanel/bg/attTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,147},{0,170},{0,273},{0,187}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="累计属性：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PrestigePanel/bg/linkBtn$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,192},{0,142},{0,274},{0,162}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="累计属性：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PrestigePanel/bg/attTxt0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,13},{0,170},{0,139},{0,187}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="累计属性：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="PrestigePanel/bg2" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,356},{0,285},{0,522}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="PrestigePanel/bg2/fromBg2" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,285},{0,29}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:ListTitleBgLeft" />
+                <Property Name="LeftOffset" Value="19" />
+                <Property Name="RightImage" Value="set:skin image:ListTitleBgRight" />
+                <Property Name="CenterImage" Value="set:skin image:ListTitleBgCenter" />
+                <Property Name="RightOffset" Value="19" />
+                <Window Name="PrestigePanel/bg2/fromBg2/fromeTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,285},{0,29}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="声望获得途径" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFfef9d0" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="PrestigePanel/bg2/list" Type="GuiLook/Listbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,37},{0,277},{0,162}}" />
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="VerticalScrollbar" Value="true" />
+                </AutoWindow>
+            </Window>
+        </Window>
+        <Window Name="PrestigePanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,525},{0,285},{0,526}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

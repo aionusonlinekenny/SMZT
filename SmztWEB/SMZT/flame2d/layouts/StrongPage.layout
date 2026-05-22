@@ -1,0 +1,148 @@
+<GUILayout>
+    <Window Name="StrongPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,923},{0,543}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="StrongPage/rightBg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,460},{0,0},{0,923},{0,543}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="StrongPage/rightBg/topBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,462},{0,54}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="StrongPage/rightBg/topBg/threekindsImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,462},{0,53}}" />
+                    <Property Name="Image" Value="set:dailyFinishGeneral image:threeKinds" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="StrongPage/rightBg/listBox" Type="GuiLook/ScrollablePane">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,56},{0,463},{0,543}}" />
+                <AutoWindow NameSuffix="__auto_container__">
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_hscrollbar__">
+                    <Property Name="NonClient" Value="true" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="NonClient" Value="true" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="VerticalScrollbar" Value="true" />
+                </AutoWindow>
+            </Window>
+        </Window>
+        <Window Name="StrongPage/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,459},{0,543}}" />
+            <Property Name="Image" Value="set:dailyFinishStrongBg image:strongBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="StrongPage/bgImg/TextBG" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,63},{0,463},{0,376},{0,475}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="StrongPage/bgImg/TextBG/purpleImg" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,312},{0,11}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{0,314},{0,12}}" />
+                    <Property Name="LeftImage" Value="set:skin image:PurpleProgressBarLeft" />
+                    <Property Name="RightImage" Value="set:skin image:PurpleProgressBarRight" />
+                    <Property Name="CenterImage" Value="set:skin image:PurpleProgressBarCenter" />
+                </Window>
+            </Window>
+            <Window Name="StrongPage/bgImg/desc2$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,74},{0,442},{0,384},{0,460}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StrongPage/bgImg/fightImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,145},{0,488},{0,327},{0,536}}" />
+                <Property Name="Image" Value="set:mainUI1 image:fightText" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="StrongPage/bgImg/desc3$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,209},{0,501},{0,321},{0,523}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+            </Window>
+            <Window Name="StrongPage/bgImg/rolePos" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,223},{0,375},{0,233},{0,385}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="StrongPage/bgImg/titleImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,71},{0,4},{0,387},{0,61}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="StrongPage/bgImg/desc1$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,63},{0,461},{0,376},{0,481}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StrongPage/bgImg/titleSp1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,141},{0,63},{0,303},{0,93}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="StrongPage/bgImg/titleSp1/sexImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,7},{0,25},{0,23}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:SexGril" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="StrongPage/bgImg/titleSp1/vipImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,25},{0,7},{0,49},{0,23}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:silverVip4" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="StrongPage/bgImg/titleSp1/campTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,49},{0,5},{0,69},{0,25}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="魏·" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="TextColour" Value="FF00baff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="StrongPage/bgImg/titleSp1/nameTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,70},{0,5},{0,150},{0,25}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="玩家名称六字" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFffffff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,67 @@
+<GUILayout>
+    <Window Name="StockInvestmentUpInvestmentRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,109},{0,105}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="StockInvestmentUpInvestmentRender/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,109},{0,105}}" />
+            <Property Name="Image" Value="set:bullySuitInvestment image:bg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="StockInvestmentUpInvestmentRender/bg/titleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,6},{0,92},{0,31}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="3.5倍收益" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentUpInvestmentRender/bg/yuanbaoImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,34},{0,19},{0,53}}" />
+                <Property Name="Image" Value="set:mainUI1 image:yuanbaoLock" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="StockInvestmentUpInvestmentRender/bg/yuanbaoTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,51},{0,105},{0,71}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="500" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFfea00" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentUpInvestmentRender/bg/noGetBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,76},{0,98},{0,100}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="领取" />
+            </Window>
+            <Window Name="StockInvestmentUpInvestmentRender/bg/metempsychosisBg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,76},{0,98},{0,99}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:RedBoxLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:RedBoxRight" />
+                <Property Name="CenterImage" Value="set:skin image:RedBoxMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="StockInvestmentUpInvestmentRender/bg/metempsychosisBg/metempsychosisTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,88},{0,23}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="150级领取" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,136 @@
+<GUILayout>
+    <Window Name="BagEveryVipPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,532},{0,384}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="BagEveryVipPage/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,532},{0,228}}" />
+            <Property Name="Image" Value="set:bagGift2 image:EveryDayVIP" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="BagEveryVipPage/bgImg/vipBarBg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,126},{0,79},{0,404},{0,123}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:bagGift image:ArrowLeft" />
+                <Property Name="LeftOffset" Value="14" />
+                <Property Name="RightImage" Value="set:bagGift image:ArrowRight" />
+                <Property Name="CenterImage" Value="set:bagGift image:ArrowMiddleCross" />
+                <Property Name="RightOffset" Value="53" />
+                <Window Name="BagEveryVipPage/bgImg/vipBarBg/vip$NormalBar" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,277},{0,43}}" />
+                    <Property Name="Image" Value="set:bagGift image:ArrowYellow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="BagEveryVipPage/bgImg/vipBarBg/vipBarTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,17},{0,266},{0,43}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="孟轲呀/小梦呀" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="BagEveryVipPage/bgImg/vipBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,411},{0,72},{0,439},{0,132}}" />
+                <Property Name="Image" Value="set:bagGift image:VipDi" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="BagEveryVipPage/bgImg/topUpTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,126},{0,135},{0,398},{0,160}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="在充值50元宝你将成为VIP" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BagEveryVipPage/bgImg/topUpBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,400},{0,138},{0,437},{0,158}}" />
+                <Property Name="HoverImage" Value="set:mainUI1 image:topUpHover" />
+                <Property Name="NormalImage" Value="set:mainUI1 image:topUpNormal" />
+                <Property Name="PushedImage" Value="set:mainUI1 image:topUpPushed" />
+            </Window>
+            <Window Name="BagEveryVipPage/bgImg/linkBtn$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,435},{0,198},{0,527},{0,224}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="查看详细福利" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BagEveryVipPage/bgImg/vipImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,439},{0,81},{0,528},{0,123}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="BagEveryVipPage/commonBg2" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,37},{0,232},{0,497},{0,381}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="BagEveryVipPage/commonBg2/line" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,125},{0,38},{0,336},{0,39}}" />
+                <Property Name="Image" Value="set:bagGift image:Line" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="BagEveryVipPage/commonBg2/giftNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,7},{0,126},{0,35}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="每日VIP1福利" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BagEveryVipPage/commonBg2/receiveBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,173},{0,114},{0,287},{0,137}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="单倍领取" />
+                <Property Name="HoverTextColour" Value="FFFef9d0" />
+                <Property Name="NormalTextColour" Value="FFFef9d0" />
+                <Property Name="DisabledTextColour" Value="FFFef9d0" />
+            </Window>
+            <Window Name="BagEveryVipPage/commonBg2/linksBtn$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,294},{0,114},{0,454},{0,136}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BagEveryVipPage/commonBg2/getTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,294},{0,114},{0,454},{0,136}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="您是黄金Vip可双倍领取" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="BagEveryVipPage/leftBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,285},{0,24},{0,330}}" />
+            <Property Name="HoverImage" Value="set:skin image:turnLHover" />
+            <Property Name="NormalImage" Value="set:skin image:turnLNormal" />
+            <Property Name="PushedImage" Value="set:skin image:turnLPushed" />
+        </Window>
+        <Window Name="BagEveryVipPage/rightBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,508},{0,286},{0,532},{0,331}}" />
+            <Property Name="HoverImage" Value="set:skin image:turnRHover" />
+            <Property Name="NormalImage" Value="set:skin image:turnRNormal" />
+            <Property Name="PushedImage" Value="set:skin image:turnRPushed" />
+        </Window>
+    </Window>
+</GUILayout>

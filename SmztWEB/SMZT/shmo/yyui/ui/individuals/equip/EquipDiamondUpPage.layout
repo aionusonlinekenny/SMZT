@@ -1,0 +1,876 @@
+<GUILayout>
+    <Window Name="EquipDiamondUpPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,587},{0,452}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="EquipDiamondUpPage/bottomBg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,373},{0,585},{0,452}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="EquipDiamondUpPage/bottomBg/BbgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,586},{0,78}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/leftItemButton" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,65},{0,0},{0,90},{0,45}}" />
+                    <Property Name="HoverImage" Value="set:skin image:turnLHover" />
+                    <Property Name="NormalImage" Value="set:skin image:turnLNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:turnLPushed" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/rightItemButton" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,559},{0,-1},{0,584},{0,44}}" />
+                    <Property Name="HoverImage" Value="set:skin image:turnRHover" />
+                    <Property Name="NormalImage" Value="set:skin image:turnRNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:turnRPushed" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/line" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,65},{0,77}}" />
+                    <Property Name="Image" Value="set:skin image:VerticalLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/getGemImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,51},{0,35}}" />
+                    <Property Name="Image" Value="set:equip image:getGem" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/itemListWin" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,90},{0,12},{0,550},{0,64}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/itemListWin/itemList" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,460},{0,52}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/itemListWin/itemList/items3" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,156},{0,2},{0,204},{0,50}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/itemListWin/itemList/items5" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,258},{0,2},{0,306},{0,50}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/itemListWin/itemList/items0" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,50},{0,50}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/itemListWin/itemList/items2" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,104},{0,2},{0,152},{0,50}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/itemListWin/itemList/items4" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,206},{0,2},{0,254},{0,50}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/itemListWin/itemList/items1" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,2},{0,102},{0,50}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/itemListWin/itemList/items6" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,308},{0,2},{0,356},{0,50}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/itemListWin/itemList/items7" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,360},{0,2},{0,408},{0,50}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="EquipDiamondUpPage/bottomBg/BbgImg/itemListWin/itemList/items8" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,410},{0,2},{0,458},{0,50}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="EquipDiamondUpPage/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,586},{0,373}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="EquipDiamondUpPage/bgImg/t9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,109},{0,128},{0,157}}" />
+                <Property Name="Image" Value="set:equip image:mosaic" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/t8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,59},{0,128},{0,107}}" />
+                <Property Name="Image" Value="set:equip image:mosaic" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/t7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,9},{0,128},{0,57}}" />
+                <Property Name="Image" Value="set:equip image:mosaic" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/t6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,456},{0,258},{0,516},{0,306}}" />
+                <Property Name="Image" Value="set:equip image:mosaic" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/t5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,456},{0,208},{0,516},{0,256}}" />
+                <Property Name="Image" Value="set:equip image:mosaic" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/t4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,456},{0,158},{0,516},{0,206}}" />
+                <Property Name="Image" Value="set:equip image:mosaic" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/t3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,456},{0,108},{0,516},{0,156}}" />
+                <Property Name="Image" Value="set:equip image:mosaic" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/t2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,456},{0,58},{0,516},{0,106}}" />
+                <Property Name="Image" Value="set:equip image:mosaic" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/t12" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,259},{0,128},{0,307}}" />
+                <Property Name="Image" Value="set:equip image:mosaic" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/t11" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,209},{0,128},{0,257}}" />
+                <Property Name="Image" Value="set:equip image:mosaic" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/t10" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,159},{0,128},{0,207}}" />
+                <Property Name="Image" Value="set:equip image:mosaic" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/t1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,456},{0,8},{0,516},{0,56}}" />
+                <Property Name="Image" Value="set:equip image:mosaic" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/t0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,309},{0,128},{0,357}}" />
+                <Property Name="Image" Value="set:equip image:mosaic" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/p9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,126},{0,67},{0,144}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/p8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,76},{0,67},{0,94}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/p7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,26},{0,67},{0,44}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/p6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,518},{0,275},{0,527},{0,293}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/p5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,518},{0,225},{0,527},{0,243}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/p4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,518},{0,175},{0,527},{0,193}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/p3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,518},{0,125},{0,527},{0,143}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/p2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,518},{0,75},{0,527},{0,93}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/p12" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,276},{0,67},{0,294}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/p11" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,226},{0,67},{0,244}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/p10" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,176},{0,67},{0,194}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/p1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,518},{0,25},{0,527},{0,43}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/p0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,326},{0,67},{0,344}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/nextJewelGrid" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,267},{0,164},{0,315},{0,212}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/nextJewelGrid/allLv" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="Font" Value="songti_24_strengh" />
+                    <Property Name="Text" Value="as" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFFEA00" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="DropTextColour" Value="CentreAligned" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="EquipDiamondUpPage/bgImg/nextJewelGrid/addSImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/equip9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,528},{0,58},{0,576},{0,106}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/equip9/a33" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/equip8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,528},{0,8},{0,576},{0,56}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/equip8/a110" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/equip7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,309},{0,57},{0,357}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/equip7/a00" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/equip6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,259},{0,57},{0,307}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/equip6/a122" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/equip5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,209},{0,57},{0,257}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/equip5/a111" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/equip4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,159},{0,57},{0,207}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/equip4/a100" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/equip3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,109},{0,57},{0,157}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/equip3/a99" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/equip2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,59},{0,57},{0,107}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/equip2/a88" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/equip14" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,528},{0,308},{0,576},{0,356}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/equip14/lockImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="Image" Value="set:skin image:NewImage_103" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDiamondUpPage/bgImg/equip14/a133" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/equip13" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,528},{0,258},{0,576},{0,306}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/equip13/a66" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,49},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/equip12" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,528},{0,208},{0,576},{0,256}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/equip12/a55" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/equip11" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,528},{0,158},{0,576},{0,206}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/equip11/a44" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/equip10" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,528},{0,108},{0,576},{0,156}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/equip10/a22" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/equip" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,9},{0,57},{0,57}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDiamondUpPage/bgImg/equip/a77" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/box" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,131},{0,23},{0,451},{0,319}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="EquipDiamondUpPage/bgImg/box/boxsp3" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,6},{0,201},{0,96},{0,295}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="EquipDiamondUpPage/bgImg/box/boxsp3/gemBgImg3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,18},{0,0},{0,72},{0,54}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="EquipDiamondUpPage/bgImg/box/boxsp3/gemBgImg3/gemHadImg3" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,53},{0,53}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="EquipDiamondUpPage/bgImg/box/boxsp3/addTxt3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,54},{0,90},{0,70}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="防御+150" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="EquipDiamondUpPage/bgImg/box/boxsp3/mosaicBtn3" Type="GlossySerpent/OrangeButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,3},{0,70},{0,86},{0,94}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="镶嵌" />
+                    </Window>
+                </Window>
+                <Window Name="EquipDiamondUpPage/bgImg/box/boxsp2" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,117},{0,3},{0,207},{0,97}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="EquipDiamondUpPage/bgImg/box/boxsp2/gemBgImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,18},{0,0},{0,72},{0,54}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="EquipDiamondUpPage/bgImg/box/boxsp2/gemBgImg2/gemHadImg2" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,53},{0,53}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="AlwaysOnTop" Value="true" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                    <Window Name="EquipDiamondUpPage/bgImg/box/boxsp2/addTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,54},{0,88},{0,70}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="防御+150" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="EquipDiamondUpPage/bgImg/box/boxsp2/mosaicBtn2" Type="GlossySerpent/OrangeButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,3},{0,70},{0,86},{0,94}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="镶嵌" />
+                    </Window>
+                </Window>
+                <Window Name="EquipDiamondUpPage/bgImg/box/boxsp1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,228},{0,201},{0,318},{0,295}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="EquipDiamondUpPage/bgImg/box/boxsp1/gemBgImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,18},{0,0},{0,72},{0,54}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="EquipDiamondUpPage/bgImg/box/boxsp1/gemBgImg1/gemHadImg1" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,53},{0,53}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="AlwaysOnTop" Value="true" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                    <Window Name="EquipDiamondUpPage/bgImg/box/boxsp1/addTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,54},{0,89},{0,70}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="Text" Value="防御+150" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="EquipDiamondUpPage/bgImg/box/boxsp1/mosaicBtn1" Type="GlossySerpent/OrangeButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,3},{0,70},{0,86},{0,94}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="镶嵌" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/autoBuy" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,210},{0,332},{0,371},{0,348}}" />
+                <Property Name="Text" Value="材料不足时使用元宝补足" />
+                <Property Name="HoverTextColour" Value="FF64d4d8" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/jewelImage0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,437},{0,197},{0,465},{0,258}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/jewelImage1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,325},{0,10},{0,353},{0,71}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/bgImg/jewelImage2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,211},{0,202},{0,239},{0,263}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="EquipDiamondUpPage/tipsSp" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,225},{0,240},{0,475},{0,340}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:skin image:NewTitlebarBorder_TC" />
+            <Property Name="LeftImage" Value="set:skin image:WindowLeftEdge" />
+            <Property Name="TopOffset" Value="38" />
+            <Property Name="LeftOffset" Value="9" />
+            <Property Name="RightImage" Value="set:skin image:WindowRightEdge" />
+            <Property Name="BottomImage" Value="set:skin image:WindowBottomEdge" />
+            <Property Name="CenterImage" Value="set:skin image:WindowMid" />
+            <Property Name="RightOffset" Value="9" />
+            <Property Name="BottomOffset" Value="8" />
+            <Property Name="TopLeftImage" Value="set:skin image:NewTitlebarBorder_TL" />
+            <Property Name="TopRightImage" Value="set:skin image:NewTitlebarBorder_TR" />
+            <Property Name="BottomLeftImage" Value="set:skin image:WindowBottomLeft" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BottomRightImage" Value="set:skin image:WindowBottomRight" />
+            <Window Name="EquipDiamondUpPage/tipsSp/winLine" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,95},{0,241},{0,96}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/tipsSp/titleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,7},{0,119},{0,32}}" />
+                <Property Name="Font" Value="songti_18" />
+                <Property Name="Text" Value="请选择宝石" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFc6dee6" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/tipsSp/closeBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,216},{0,1},{0,245},{0,30}}" />
+                <Property Name="HoverImage" Value="set:skin image:CloseButtonHover" />
+                <Property Name="NormalImage" Value="set:skin image:CloseButtonNormal" />
+                <Property Name="PushedImage" Value="set:skin image:CloseButtonPushed" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/tipsSp/itemsWare2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,132},{0,43},{0,180},{0,91}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/tipsSp/itemsWare0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,43},{0,63},{0,91}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/tipsSp/itemsWare3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,190},{0,43},{0,238},{0,91}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipDiamondUpPage/tipsSp/itemsWare1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,74},{0,43},{0,122},{0,91}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="EquipDiamondUpPage/successEffect" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,164},{0,320},{0,443},{0,373}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

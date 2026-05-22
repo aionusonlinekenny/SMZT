@@ -1,0 +1,309 @@
+<GUILayout>
+    <Window Name="FirstTopUpPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1022},{0,600}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="FirstTopUpPanel/Bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1022},{0,600}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="FirstTopUpPanel/Bg/topUpBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,443},{0,363},{0,512}}" />
+                <Property Name="HoverImage" Value="set:FirstTopUp image:btnHover" />
+                <Property Name="NormalImage" Value="set:FirstTopUp image:btnNormal" />
+                <Property Name="PushedImage" Value="set:FirstTopUp image:btnPushed" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Window Name="FirstTopUpPanel/Bg/topUpBtn/TopUpImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,338},{0,69}}" />
+                    <Property Name="Image" Value="set:FirstTopUp image:3" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/d3DView0" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,100},{0,586},{0,110},{0,596}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/receiveBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,443},{0,363},{0,512}}" />
+                <Property Name="HoverImage" Value="set:FirstTopUp image:btnHover" />
+                <Property Name="NormalImage" Value="set:FirstTopUp image:btnNormal" />
+                <Property Name="PushedImage" Value="set:FirstTopUp image:btnPushed" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Window Name="FirstTopUpPanel/Bg/receiveBtn/receiveImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,338},{0,70}}" />
+                    <Property Name="Image" Value="set:FirstTopUp image:2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/TopUpImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,443},{0,363},{0,512}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/d3DImg0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,76},{0,504},{0,126},{0,554}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/d3DImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,901},{0,503},{0,951},{0,553}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/d3DImgFight" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,484},{0,321},{0,534},{0,371}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/d3DImglight" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,394},{0,185},{0,444},{0,235}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/d3DImglight2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,168},{0,112},{0,218},{0,162}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/item0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,353},{0,366},{0,403},{0,416}}" />
+                <Property Name="Image" Value="set:skin image:RedGrid" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/item1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,416},{0,366},{0,466},{0,416}}" />
+                <Property Name="Image" Value="set:skin image:RedGrid" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/item2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,479},{0,366},{0,529},{0,416}}" />
+                <Property Name="Image" Value="set:skin image:RedGrid" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/item3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,542},{0,366},{0,592},{0,416}}" />
+                <Property Name="Image" Value="set:skin image:RedGrid" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/item4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,605},{0,366},{0,655},{0,416}}" />
+                <Property Name="Image" Value="set:skin image:RedGrid" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/item5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,668},{0,366},{0,718},{0,416}}" />
+                <Property Name="Image" Value="set:skin image:RedGrid" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/d3viewTip" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,167},{0,229},{0,599}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/fightSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,540},{0,333},{0,624},{0,362}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/d3DImglight3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,266},{0,184},{0,316},{0,234}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/StaticImage" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,465},{0,260},{0,537}}" />
+                <Property Name="Image" Value="set:FirstTopUp image:bg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FirstTopUpPanel/Bg/StaticImage/leftImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-19},{0,5},{0,243},{0,77}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/upImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,100},{0,143},{0,714},{0,320}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/RadioTab0" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,302},{0,84},{0,454},{0,134}}" />
+                <Property Name="HoverImage" Value="set:FirstTopUp image:radioNormal" />
+                <Property Name="SelectedImage" Value="set:FirstTopUp image:radioNormal" />
+                <Property Name="UnselectedImage" Value="set:FirstTopUp image:radioHover" />
+                <Window Name="FirstTopUpPanel/Bg/RadioTab0/radioImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,140},{0,32}}" />
+                    <Property Name="Image" Value="set:FirstTopUp image:first1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="FirstTopUpPanel/Bg/RadioTab0/radioTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,30},{0,152},{0,50}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="坐骑暴增" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF7200" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/RadioTab1" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,454},{0,84},{0,606},{0,134}}" />
+                <Property Name="HoverImage" Value="set:FirstTopUp image:radioNormal" />
+                <Property Name="SelectedImage" Value="set:FirstTopUp image:radioNormal" />
+                <Property Name="UnselectedImage" Value="set:FirstTopUp image:radioHover" />
+                <Window Name="FirstTopUpPanel/Bg/RadioTab1/radioImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,140},{0,32}}" />
+                    <Property Name="Image" Value="set:FirstTopUp image:first10" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="FirstTopUpPanel/Bg/RadioTab1/radioTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,30},{0,152},{0,50}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="三阶武器" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF7200" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/RadioTab2" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,607},{0,84},{0,759},{0,134}}" />
+                <Property Name="HoverImage" Value="set:FirstTopUp image:radioNormal" />
+                <Property Name="SelectedImage" Value="set:FirstTopUp image:radioNormal" />
+                <Property Name="UnselectedImage" Value="set:FirstTopUp image:radioHover" />
+                <Window Name="FirstTopUpPanel/Bg/RadioTab2/radioImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,140},{0,32}}" />
+                    <Property Name="Image" Value="set:FirstTopUp image:first100" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="FirstTopUpPanel/Bg/RadioTab2/radioTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,30},{0,152},{0,50}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="战力飙升" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF7200" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/d3DView1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,923},{0,586},{0,933},{0,596}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/StaticImage2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,758},{0,466},{0,1020},{0,538}}" />
+                <Property Name="Image" Value="set:FirstTopUp image:bg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FirstTopUpPanel/Bg/StaticImage2/rightImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-19},{0,5},{0,243},{0,77}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="FirstTopUpPanel/Bg/d3viewTip1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,793},{0,168},{0,1021},{0,600}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="FirstTopUpPanel/closeBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,852},{0,72},{0,909},{0,129}}" />
+            <Property Name="Image" Value="set:FirstTopUp image:CloseBtn" />
+        </Window>
+    </Window>
+</GUILayout>

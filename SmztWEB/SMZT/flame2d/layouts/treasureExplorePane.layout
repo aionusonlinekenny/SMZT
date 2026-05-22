@@ -1,0 +1,909 @@
+<GUILayout>
+    <Window Name="treasureExplorePane" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,903},{0,573}}" />
+        <Property Name="GlyphImage" Value="set:treasureExplore image:xunbaotxt" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="treasureExplorePane/CommonBg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,885},{0,525}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="treasureExplorePane/CommonBg/bg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,884},{0,520}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="treasureExplorePane/CommonBg/bg/txt2$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,664},{0,471},{0,864},{0,501}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="(兑换次数每日0点重置)" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="treasureExplorePane/CommonBg/bg/txt1$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,280},{0,233},{0,380},{0,258}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="每日0点清空" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="treasureExplorePane/CommonBg/bg/DefaultWindow2" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,883},{0,519}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="treasureExplorePane/CommonBg/bg/DefaultWindow2/Checkbox" Type="GuiLook/Checkbox">
+                        <Property Name="UnifiedAreaRect" Value="{{0,20},{0,7},{0,110},{0,24}}" />
+                        <Property Name="Text" Value="跳过动画" />
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/DefaultWindow2/startButton" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,265},{0,115},{0,389},{0,225}}" />
+                        <Property Name="HoverImage" Value="set:treasureExplore image:z1c" />
+                        <Property Name="NormalImage" Value="set:treasureExplore image:z1" />
+                        <Property Name="PushedImage" Value="set:treasureExplore image:z1c2" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/DefaultWindow2/startButton/txt3$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,12},{0,73},{0,112},{0,103}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="剩余**次" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/DefaultWindow2/moneyImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,173},{0,462},{0,248},{0,502}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/DefaultWindow2/jifenImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,756},{0,75},{0,831},{0,115}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/DefaultWindow2/shaizi" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,299},{0,37},{0,363},{0,111}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="treasureExplorePane/CommonBg/bg/itemPane" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,648},{0,520}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item9" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,32},{0,254},{0,82},{0,304}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item9/txt_9_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item9/txt_9_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item8" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,32},{0,194},{0,82},{0,244}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item8/txt_8_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item8/txt_8_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item7" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,91},{0,194},{0,141},{0,244}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item7/txt_7_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item7/txt_7_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,152},{0,194},{0,202},{0,244}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item6/txt_6_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item6/txt_6_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,211},{0,194},{0,261},{0,244}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item5/txt_5_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item5/txt_5_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,212},{0,136},{0,262},{0,186}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item4/txt_4_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item4/txt_4_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item31" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,570},{0,76},{0,620},{0,126}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item31/txt_31_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item31/txt_31_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item30" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,511},{0,76},{0,561},{0,126}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item30/txt_30_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item30/txt_30_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,211},{0,76},{0,261},{0,126}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item3/txt_3_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item3/txt_3_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item29" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,451},{0,76},{0,501},{0,126}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item29/txt_29_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item29/txt_29_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item28" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,392},{0,76},{0,442},{0,126}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item28/txt_28_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item28/txt_28_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item27" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,392},{0,134},{0,442},{0,184}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item27/txt_27_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item27/txt_27_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item26" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,391},{0,194},{0,441},{0,244}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item26/txt_26_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item26/txt_26_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item25" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,451},{0,194},{0,501},{0,244}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item25/txt_25_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item25/txt_25_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item24" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,511},{0,194},{0,561},{0,244}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item24/txt_24_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item24/txt_24_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item23" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,570},{0,194},{0,620},{0,244}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item23/txt_23_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item23/txt_23_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item22" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,570},{0,255},{0,620},{0,305}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item22/txt_22_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item22/txt_22_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item21" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,570},{0,314},{0,620},{0,364}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item21/txt_21_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item21/txt_21_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item20" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,572},{0,374},{0,622},{0,424}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item20/txt_20_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item20/txt_20_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,151},{0,76},{0,201},{0,126}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item2/txt_2_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item2/txt_2_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item19" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,511},{0,375},{0,561},{0,425}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item19/txt_19_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item19/txt_19_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item18" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,454},{0,375},{0,504},{0,425}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item18/txt_18_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item18/txt_18_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item17" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,394},{0,374},{0,444},{0,424}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item17/txt_17_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item17/txt_17_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item16" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,333},{0,375},{0,383},{0,425}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item16/txt_16_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item16/txt_16_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item15" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,274},{0,375},{0,324},{0,425}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item15/txt_15_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item15/txt_15_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item14" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,214},{0,375},{0,264},{0,425}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item14/txt_14_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item14/txt_14_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item13" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,154},{0,375},{0,204},{0,425}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item13/txt_13_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item13/txt_13_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item12" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,94},{0,374},{0,144},{0,424}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item12/txt_12_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item12/txt_12_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item11" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,33},{0,374},{0,83},{0,424}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item11/txt_11_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item11/txt_11_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item10" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,32},{0,315},{0,82},{0,365}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item10/txt_10_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item10/txt_10_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,92},{0,76},{0,142},{0,126}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item1/txt_1_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item1/txt_1_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,30},{0,76},{0,80},{0,126}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item0/txt_0_numItem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,50},{0,47}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="1234" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00FF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="treasureExplorePane/CommonBg/bg/itemPane/item0/txt_0_jitem$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,50},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="积分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFFF00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="treasureExplorePane/list" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,676},{0,184},{0,885},{0,474}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="treasureExplorePane/currentItem" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,40},{0,90},{0,76},{0,126}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

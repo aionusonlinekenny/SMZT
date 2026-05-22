@@ -1,0 +1,34 @@
+<GUILayout>
+    <Window Name="StarBarActionTip" Type="GuiLook/CommonBg4">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,280},{0,180}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="StarBarActionTip/descTxt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,45},{0,275},{0,172}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text">使用奖励
+冷却时间
+剩余次数：5（可购买，VIP可提升免费次数）</Property>
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="VertFormatting" Value="TopAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="StarBarActionTip/titleTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,280},{0,30}}" />
+            <Property Name="Font" Value="songti_16_strengh" />
+            <Property Name="Text" Value="喝酒" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF46ccff" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="StarBarActionTip/line" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,30},{0,280},{0,31}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:Line2Left" />
+            <Property Name="LeftOffset" Value="90" />
+            <Property Name="RightImage" Value="set:skin image:Line2Right" />
+            <Property Name="CenterImage" Value="set:skin image:Line1Center2" />
+            <Property Name="RightOffset" Value="90" />
+        </Window>
+    </Window>
+</GUILayout>

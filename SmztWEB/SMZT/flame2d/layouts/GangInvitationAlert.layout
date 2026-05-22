@@ -1,0 +1,100 @@
+<GUILayout>
+    <Window Name="GangInvitationAlert" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,360},{0,183}}" />
+        <Property Name="Text" Value="入帮邀请" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="GangInvitationAlert/number1Txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,201},{0,33},{0,286},{0,51}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="1" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFFea00" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangInvitationAlert/btn_2" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,199},{0,116},{0,286},{0,139}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="取消" />
+        </Window>
+        <Window Name="GangInvitationAlert/number2Txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,201},{0,61},{0,332},{0,79}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="1245630" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFFea00" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangInvitationAlert/gangTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,126},{0,6},{0,198},{0,24}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="帮    派：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangInvitationAlert/descTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,124},{0,87},{0,348},{0,105}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="邀请您加入该帮派，您同意吗？" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangInvitationAlert/props" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,83},{0,87},{0,101}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="GangInvitationAlert/fightTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,126},{0,61},{0,198},{0,79}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="总战斗力：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangInvitationAlert/levelTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,126},{0,33},{0,198},{0,51}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="旗帜等级：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangInvitationAlert/btn_1" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,67},{0,116},{0,154},{0,139}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="同意加入" />
+        </Window>
+        <Window Name="GangInvitationAlert/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,110},{0,346},{0,111}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="GangInvitationAlert/gangnameTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,198},{0,6},{0,339},{0,24}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="临江仙" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangInvitationAlert/playernameTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,87},{0,122},{0,105}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="高富帅" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="RightAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,59 @@
+<GUILayout>
+    <Window Name="EquipDevourWarehousePanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,331},{0,529}}" />
+        <Property Name="Text" Value="可放入的装备" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="EquipDevourWarehousePanel/radioBtn0" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,79},{0,27}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="全部" />
+        </Window>
+        <Window Name="EquipDevourWarehousePanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,28},{0,313},{0,443}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="EquipDevourWarehousePanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,487},{0,313},{0,488}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="EquipDevourWarehousePanel/pageBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,144},{0,456},{0,186},{0,474}}" />
+            <Property Name="Image" Value="set:skin image:pageBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="EquipDevourWarehousePanel/pageBg/pageTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,18}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10/100" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="EquipDevourWarehousePanel/nextBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,190},{0,455},{0,210},{0,475}}" />
+            <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+            <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+            <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+        </Window>
+        <Window Name="EquipDevourWarehousePanel/lastBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,120},{0,455},{0,140},{0,475}}" />
+            <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+            <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+            <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+        </Window>
+    </Window>
+</GUILayout>

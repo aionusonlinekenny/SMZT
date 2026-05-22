@@ -1,0 +1,30 @@
+<GUILayout>
+    <Window Name="CopyRankingRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,224},{0,45}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CopyRankingRender/rankingNumberImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,10},{0,34},{0,35}}" />
+            <Property Name="Image" Value="set:copyGeneral image:first" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="CopyRankingRender/descTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,35},{0,9},{0,222},{0,35}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="玩家名称示例：9999" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ffcc43ff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="CopyRankingRender/rankingNunberTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,10},{0,35},{0,35}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="4." />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

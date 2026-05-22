@@ -1,0 +1,228 @@
+<GUILayout>
+    <Window Name="NoticeWin" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1280},{0,720}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="NoticeWin/levelUpWin" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,200},{0,264},{0,252}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="VertFormatting" Value="BottomAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="NoticeWin/levelUpWin/levelNumImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,138},{0,33}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="NoticeWin/fightUpWin" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,294},{0,62}}" />
+            <Property Name="Image" Value="set:skins image:shadow" />
+            <Property Name="UnifiedMaxSize" Value="{{0,800},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="VertFormatting" Value="BottomAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="NoticeWin/fightUpWin/fightTitleImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,22},{0,115},{0,58}}" />
+                <Property Name="Image" Value="set:skins image:fight" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="NoticeWin/fightUpWin/fightFaceImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,-10},{0,24},{0,25},{0,59}}" />
+                <Property Name="Image" Value="set:skins image:smile" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Right" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="NoticeWin/fightUpWin/fightNumImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,17},{0,250},{0,59}}" />
+                <Property Name="UnifiedMaxSize" Value="{{0,800},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="NoticeWin/fightUpWin/fightUpTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,-10},{0,0},{0,94},{0,24}}" />
+                <Property Name="Font" Value="songti_24_strengh" />
+                <Property Name="Text" Value="+1024" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00FF00" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Right" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="NoticeWin/dramaPromptTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-177},{0,1280},{0,-134}}" />
+            <Property Name="Font" Value="heiti_30_strengh" />
+            <Property Name="Text" Value="啊沙发发生的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFFEA00" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="NoticeWin/bottomCenterTip" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-100},{0,310},{0,-75}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:mainUI1 image:NoticeBgLeft" />
+            <Property Name="LeftOffset" Value="6" />
+            <Property Name="RightImage" Value="set:mainUI1 image:NoticeBgRight" />
+            <Property Name="CenterImage" Value="set:mainUI1 image:NoticeBgCenter" />
+            <Property Name="RightOffset" Value="6" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="NoticeWin/bottomCenterTip/bottomCenter$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,23},{0,5},{0,305},{0,23}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="NoticeWin/bottomCenterTip/bottomCenterClipImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,-8},{0,-5},{0,26},{0,29}}" />
+                <Property Name="Image" Value="set:skin image:bigExclamationMark" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="NoticeWin/fairFightUpWin" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,294},{0,62}}" />
+            <Property Name="Image" Value="set:skins image:shadow" />
+            <Property Name="UnifiedMaxSize" Value="{{0,800},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="VertFormatting" Value="BottomAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="NoticeWin/fairFightUpWin/fairFightTitleImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,22},{0,125},{0,58}}" />
+                <Property Name="Image" Value="set:skins image:fairFight" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="NoticeWin/fairFightUpWin/fairFightFaceImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,-10},{0,24},{0,25},{0,59}}" />
+                <Property Name="Image" Value="set:skins image:smile" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Right" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="NoticeWin/fairFightUpWin/fairFightNumImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,126},{0,17},{0,250},{0,59}}" />
+                <Property Name="UnifiedMaxSize" Value="{{0,800},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="NoticeWin/fairFightUpWin/fairFightUpTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,-10},{0,0},{0,94},{0,24}}" />
+                <Property Name="Font" Value="songti_24_strengh" />
+                <Property Name="Text" Value="+1024" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00FF00" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Right" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="NoticeWin/noticeCenterTop" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,600},{0,29}}" />
+            <Property Name="UnifiedMaxSize" Value="{{0,2000},{1,0}}" />
+            <Property Name="LeftImage" Value="set:mainUI1 image:edgeLeft" />
+            <Property Name="LeftOffset" Value="94" />
+            <Property Name="RightImage" Value="set:mainUI1 image:edgeRight" />
+            <Property Name="CenterImage" Value="set:mainUI1 image:edgeMiddle" />
+            <Property Name="RightOffset" Value="94" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="NoticeWin/noticeCenterTop/noticeCenterTopClipImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,-2},{0,31},{0,30}}" />
+                <Property Name="Image" Value="set:mainUI1 image:laba" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="NoticeWin/noticeCenterTop/noticeCenterTop$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,35},{0,3},{0,577},{0,26}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="NoticeWin/noticeCenterTop/noticeCenterTopCloseBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,579},{0,6},{0,596},{0,23}}" />
+                <Property Name="HoverImage" Value="set:mainUI1 image:closeHover" />
+                <Property Name="NormalImage" Value="set:mainUI1 image:closeNormal" />
+                <Property Name="PushedImage" Value="set:mainUI1 image:closePushed" />
+            </Window>
+        </Window>
+        <Window Name="NoticeWin/instanceDownTime" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,107},{0,424},{0,136}}" />
+            <Property Name="UnifiedMaxSize" Value="{{0,2000},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="NoticeWin/instanceDownTime/instanceDownTimeNum" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,150},{0,0},{0,211},{0,29}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

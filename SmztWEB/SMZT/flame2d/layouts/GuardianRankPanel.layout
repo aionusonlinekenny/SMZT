@@ -1,0 +1,80 @@
+<GUILayout>
+    <Window Name="GuardianRankPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-1},{0,381},{0,647}}" />
+        <Property Name="Text" Value="排名奖励" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="GuardianRankPanel/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,6},{0,363},{0,602}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="GuardianRankPanel/bgImg/diBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,564},{0,362},{0,595}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GuardianRankPanel/bgImg/diBg/txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{-0.00311634,1},{-0.0241935,1},{-0.00311634,362},{-0.0241935,32}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="Text" Value="排名结算时系统会自动发放奖励.请注意查收!" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GuardianRankPanel/bgImg/line2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0.75},{0,562.5},{0,361.75},{0,563.5}}" />
+                <Property Name="Image" Value="set:skin image:VerticalLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GuardianRankPanel/bgImg/cityRanklist" Type="GuiLook/ScrollablePane">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,362},{0,561}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <AutoWindow NameSuffix="__auto_container__">
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_hscrollbar__">
+                    <Property Name="NonClient" Value="true" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="NonClient" Value="true" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="VerticalScrollbar" Value="true" />
+                </AutoWindow>
+            </Window>
+        </Window>
+        <Window Name="GuardianRankPanel/radioBtn0" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,5},{0,81},{0,29}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="单场奖励" />
+            <Property Name="Visible" Value="false" />
+        </Window>
+        <Window Name="GuardianRankPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,606},{0,363},{0,607}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,223 @@
+<GUILayout>
+    <Window Name="AchievementPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,897},{0,588}}" />
+        <Property Name="GlyphImage" Value="set:achievementGeneral image:achievement" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="AchievementPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,544},{0,879},{0,545}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="AchievementPanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,879},{0,540}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="AchievementPanel/bg/winBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,155},{0,0},{0,879},{0,536}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="AchievementPanel/bg/winBg/sp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,724},{0,536}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+            <Window Name="AchievementPanel/bg/radioTab0" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,135},{0,43}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+                <Window Name="AchievementPanel/bg/radioTab0/radioImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:achievementGeneral image:overview" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="AchievementPanel/bg/radioTab2" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,83},{0,135},{0,121}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+                <Window Name="AchievementPanel/bg/radioTab2/radioImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:achievementGeneral image:role" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="AchievementPanel/bg/radioTab1" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,44},{0,135},{0,82}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+                <Window Name="AchievementPanel/bg/radioTab1/radioImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:achievementGeneral image:finish" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="AchievementPanel/bg/radioTab8" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,317},{0,135},{0,355}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+                <Window Name="AchievementPanel/bg/radioTab8/radioImg8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:achievementGeneral image:other" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="AchievementPanel/bg/radioTab7" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,278},{0,135},{0,316}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+                <Window Name="AchievementPanel/bg/radioTab7/radioImg7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:achievementGeneral image:social" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="AchievementPanel/bg/radioTab6" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,239},{0,135},{0,277}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+                <Window Name="AchievementPanel/bg/radioTab6/radioImg6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:achievementGeneral image:activity" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="AchievementPanel/bg/radioTab5" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,200},{0,135},{0,238}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+                <Window Name="AchievementPanel/bg/radioTab5/radioImg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:achievementGeneral image:cross-server" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="AchievementPanel/bg/radioTab4" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,161},{0,135},{0,199}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+                <Window Name="AchievementPanel/bg/radioTab4/radioImg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:achievementGeneral image:copy" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="AchievementPanel/bg/radioTab3" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,122},{0,135},{0,160}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+                <Window Name="AchievementPanel/bg/radioTab3/radioImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:achievementGeneral image:equipment" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="AchievementPanel/bg/rankBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,500},{0,155},{0,535}}" />
+                <Property Name="Image" Value="set:achievementGeneral image:clickToView" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+            </Window>
+            <Window Name="AchievementPanel/bg/list" Type="GuiLook/ScrollablePane">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,155},{0,493}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <AutoWindow NameSuffix="__auto_container__">
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_hscrollbar__">
+                    <Property Name="NonClient" Value="true" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="NonClient" Value="true" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="VerticalScrollbar" Value="true" />
+                </AutoWindow>
+            </Window>
+            <Window Name="AchievementPanel/bg/secondList" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,200}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

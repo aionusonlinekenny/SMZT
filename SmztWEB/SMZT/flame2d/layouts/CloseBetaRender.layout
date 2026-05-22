@@ -1,0 +1,75 @@
+<GUILayout>
+    <Window Name="CloseBetaRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,509},{0,64}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CloseBetaRender/imgBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,509},{0,60}}" />
+            <Property Name="Image" Value="set:skin image:RenderBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="CloseBetaRender/giftNameTxt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,20},{0,130},{0,40}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="CloseBetaRender/gridBg1" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,183},{0,6},{0,231},{0,54}}" />
+            <Property Name="Image" Value="set:skin image:GridBG" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="CloseBetaRender/gridBg2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,234},{0,6},{0,282},{0,54}}" />
+            <Property Name="Image" Value="set:skin image:GridBG" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="CloseBetaRender/redImg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,407},{0,19},{0,490},{0,44}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:RedBoxLeft" />
+            <Property Name="LeftOffset" Value="10" />
+            <Property Name="RightImage" Value="set:skin image:RedBoxRight" />
+            <Property Name="CenterImage" Value="set:skin image:RedBoxMiddle" />
+            <Property Name="RightOffset" Value="10" />
+            <Window Name="CloseBetaRender/redImg/gradeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,25}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="等级不足" />
+                <Property Name="UnifiedMaxSize" Value="{{0,83},{0,25}}" />
+                <Property Name="TextColour" Value="FFFF0000" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="CloseBetaRender/triangleImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,128},{0,23},{0,139},{0,36}}" />
+            <Property Name="Image" Value="set:skin image:TriangleImg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="CloseBetaRender/receivedBtn" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,407},{0,19},{0,488},{0,42}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="领取奖励" />
+        </Window>
+        <Window Name="CloseBetaRender/linkBtn$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,295},{0,21},{0,395},{0,41}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="提升等级" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

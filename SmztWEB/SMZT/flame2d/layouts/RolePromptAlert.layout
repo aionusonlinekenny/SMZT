@@ -1,0 +1,57 @@
+<GUILayout>
+    <Window Name="RolePromptAlert" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,319},{0,162}}" />
+        <Property Name="Text" Value="提示" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="RolePromptAlert/desc1Txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,21},{0,44},{0,82},{0,62}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="掉落副本：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="RolePromptAlert/desc2Txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,21},{0,74},{0,82},{0,92}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="获得途径：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="RolePromptAlert/desc1$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,82},{0,45},{0,243},{0,69}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="RolePromptAlert/desc2$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,82},{0,74},{0,158},{0,92}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="天下神兵" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="RolePromptAlert/flyBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,249},{0,48},{0,270},{0,61}}" />
+            <Property Name="Image" Value="set:mainUI1 image:transfer" />
+        </Window>
+        <Window Name="RolePromptAlert/desc3Txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,106},{0,9},{0,194},{0,33}}" />
+            <Property Name="Font" Value="songti_18_strengh" />
+            <Property Name="Text" Value="获得装备" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00eaff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

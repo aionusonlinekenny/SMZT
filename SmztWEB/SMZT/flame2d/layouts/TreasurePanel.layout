@@ -1,0 +1,761 @@
+<GUILayout>
+    <Window Name="TreasurePanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,884},{0,562}}" />
+        <Property Name="GlyphImage" Value="set:treasure image:title" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="TreasurePanel/Bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,866},{0,514}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="TreasurePanel/Bg/bgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,867},{0,511}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="TreasurePanel/Bg/bgImg/timeTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,140},{0,24}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="活动时间：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/instructionTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,65},{0,140},{0,89}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="活动说明：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/dropTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,150},{0,140},{0,174}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="当前层掉落：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/timeTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,30},{0,140},{0,54}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="每日24:00-8:00" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/descTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,94},{0,287},{0,146}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="皇陵中挂机可获得大量经验和宝物" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/props1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,6},{0,182},{0,54},{0,230}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/props2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,59},{0,182},{0,107},{0,230}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/props3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,112},{0,182},{0,160},{0,230}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/props4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,165},{0,182},{0,213},{0,230}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/numberImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,96},{0,456},{0,182},{0,506}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/vipBgImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,302},{0,421},{0,504},{0,504}}" />
+                    <Property Name="Image" Value="set:treasure image:disc" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/vipBgSp1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,481},{0,364},{0,843},{0,466}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp1/vipBgImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,202},{0,83}}" />
+                        <Property Name="Image" Value="set:treasure image:disc" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Right" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp1/vip1Way0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,63},{0,56},{0,102}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp1/vip1Way1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,29},{0,57},{0,85},{0,96}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp1/vip1Way2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,58},{0,51},{0,114},{0,90}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp1/vip1Way3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,86},{0,44},{0,142},{0,83}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp1/vip1Way4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,115},{0,38},{0,171},{0,77}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp1/nameSp1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,217},{0,58},{0,334},{0,83}}" />
+                        <Property Name="Image" Value="set:treasure image:shadow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Window Name="TreasurePanel/Bg/bgImg/vipBgSp1/nameSp1/nameTxt1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,117},{0,25}}" />
+                            <Property Name="Font" Value="songti_14" />
+                            <Property Name="Text" Value="黄陵二层[V1]" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFea00" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/vipBgSp2" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,301},{0,298},{0,663},{0,400}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp2/vipBgImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,202},{0,83}}" />
+                        <Property Name="Image" Value="set:treasure image:disc" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp2/vip2Way0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,194},{0,41},{0,250},{0,80}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp2/vip2Way1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,220},{0,48},{0,276},{0,87}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp2/vip2Way2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,250},{0,54},{0,306},{0,93}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp2/vip2Way3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,279},{0,60},{0,335},{0,99}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp2/vip2Way4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,307},{0,65},{0,363},{0,104}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp2/nameSp2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,57},{0,58},{0,174},{0,83}}" />
+                        <Property Name="Image" Value="set:treasure image:shadow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Window Name="TreasurePanel/Bg/bgImg/vipBgSp2/nameSp2/nameTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,117},{0,25}}" />
+                            <Property Name="Font" Value="songti_14" />
+                            <Property Name="Text" Value="黄陵三层[V4]" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFea00" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/vipBgSp3" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,479},{0,238},{0,841},{0,340}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp3/vipBgImg3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,202},{0,83}}" />
+                        <Property Name="Image" Value="set:treasure image:disc" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Right" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp3/vip3Way0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,70},{0,54},{0,109}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp3/vip3Way1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,27},{0,64},{0,83},{0,103}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp3/vip3Way2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,56},{0,58},{0,112},{0,97}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp3/vip3Way3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,84},{0,51},{0,140},{0,90}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp3/vip3Way4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,113},{0,45},{0,169},{0,84}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp3/nameSp3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,217},{0,58},{0,334},{0,83}}" />
+                        <Property Name="Image" Value="set:treasure image:shadow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Window Name="TreasurePanel/Bg/bgImg/vipBgSp3/nameSp3/nameTxt3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,117},{0,25}}" />
+                            <Property Name="Font" Value="songti_14" />
+                            <Property Name="Text" Value="黄陵四层[V6]" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFea00" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/vipBgSp4" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,302},{0,169},{0,664},{0,271}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp4/vipBgImg4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,202},{0,83}}" />
+                        <Property Name="Image" Value="set:treasure image:disc" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp4/vip4Way0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,185},{0,51},{0,241},{0,90}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp4/vip4Way1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,211},{0,58},{0,267},{0,97}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp4/vip4Way2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,241},{0,64},{0,297},{0,103}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp4/vip4Way3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,270},{0,70},{0,326},{0,109}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp4/vip4Way4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,298},{0,75},{0,354},{0,114}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp4/nameSp4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,57},{0,58},{0,174},{0,83}}" />
+                        <Property Name="Image" Value="set:treasure image:shadow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Window Name="TreasurePanel/Bg/bgImg/vipBgSp4/nameSp4/nameTxt4" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,117},{0,25}}" />
+                            <Property Name="Font" Value="songti_14" />
+                            <Property Name="Text" Value="黄陵五层[V8]" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFea00" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/vipBgSp5" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,480},{0,109},{0,842},{0,211}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp5/vipBgImg5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,202},{0,83}}" />
+                        <Property Name="Image" Value="set:treasure image:disc" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Right" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp5/vip5Way0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,72},{0,55},{0,111}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp5/vip5Way1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,28},{0,66},{0,84},{0,105}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp5/vip5Way2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,57},{0,60},{0,113},{0,99}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp5/vip5Way3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,85},{0,53},{0,141},{0,92}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp5/vip5Way4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,114},{0,47},{0,170},{0,86}}" />
+                        <Property Name="Image" Value="set:treasure image:way" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp5/nameSp5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,217},{0,58},{0,334},{0,83}}" />
+                        <Property Name="Image" Value="set:treasure image:shadow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Window Name="TreasurePanel/Bg/bgImg/vipBgSp5/nameSp5/nameTxt5" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,117},{0,25}}" />
+                            <Property Name="Font" Value="songti_14" />
+                            <Property Name="Text" Value="黄陵六层[V9]" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFea00" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/vipBgSp6" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,302},{0,47},{0,664},{0,149}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp6/vipBgImg6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,202},{0,83}}" />
+                        <Property Name="Image" Value="set:treasure image:disc" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp6/vip6Way0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,186},{0,44},{0,242},{0,83}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp6/vip6Way1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,212},{0,51},{0,268},{0,90}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp6/vip6Way2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,242},{0,57},{0,298},{0,96}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp6/vip6Way3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,271},{0,63},{0,327},{0,102}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp6/vip6Way4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,299},{0,68},{0,355},{0,107}}" />
+                        <Property Name="Image" Value="set:treasure image:wayTurn" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/vipBgSp6/nameSp6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,57},{0,58},{0,174},{0,83}}" />
+                        <Property Name="Image" Value="set:treasure image:shadow" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Window Name="TreasurePanel/Bg/bgImg/vipBgSp6/nameSp6/nameTxt6" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,117},{0,25}}" />
+                            <Property Name="Font" Value="songti_14" />
+                            <Property Name="Text" Value="黄陵七层[V10]" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFea00" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/deblockingSp1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,641},{0,342},{0,843},{0,447}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Window Name="TreasurePanel/Bg/bgImg/deblockingSp1/vipTitleImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,43},{0,0},{0,148},{0,33}}" />
+                        <Property Name="Image" Value="set:treasure image:V1" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/deblockingSp1/vipLock1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,55},{0,32},{0,145},{0,88}}" />
+                        <Property Name="Image" Value="set:treasure image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/deblockingSp2" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,301},{0,276},{0,503},{0,381}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Window Name="TreasurePanel/Bg/bgImg/deblockingSp2/vipTitleImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,43},{0,0},{0,148},{0,33}}" />
+                        <Property Name="Image" Value="set:treasure image:V4" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/deblockingSp2/vipLock2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,55},{0,32},{0,145},{0,88}}" />
+                        <Property Name="Image" Value="set:treasure image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/deblockingSp3" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,639},{0,216},{0,841},{0,321}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Window Name="TreasurePanel/Bg/bgImg/deblockingSp3/vipTitleImg3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,43},{0,0},{0,148},{0,33}}" />
+                        <Property Name="Image" Value="set:treasure image:V6" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/deblockingSp3/vipLock3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,55},{0,32},{0,145},{0,88}}" />
+                        <Property Name="Image" Value="set:treasure image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/deblockingSp4" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,302},{0,147},{0,504},{0,252}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Window Name="TreasurePanel/Bg/bgImg/deblockingSp4/vipTitleImg4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,43},{0,0},{0,148},{0,33}}" />
+                        <Property Name="Image" Value="set:treasure image:V8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/deblockingSp4/vipLock4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,55},{0,32},{0,145},{0,88}}" />
+                        <Property Name="Image" Value="set:treasure image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/deblockingSp5" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,640},{0,87},{0,842},{0,192}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Window Name="TreasurePanel/Bg/bgImg/deblockingSp5/vipTitleImg5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,43},{0,0},{0,148},{0,33}}" />
+                        <Property Name="Image" Value="set:treasure image:V9" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/deblockingSp5/vipLock5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,55},{0,32},{0,145},{0,88}}" />
+                        <Property Name="Image" Value="set:treasure image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/deblockingSp6" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,302},{0,25},{0,504},{0,130}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Window Name="TreasurePanel/Bg/bgImg/deblockingSp6/vipTitleImg6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,43},{0,0},{0,148},{0,33}}" />
+                        <Property Name="Image" Value="set:treasure image:V10" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="TreasurePanel/Bg/bgImg/deblockingSp6/vipLock6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,55},{0,32},{0,145},{0,88}}" />
+                        <Property Name="Image" Value="set:treasure image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/nameSp0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,359},{0,479},{0,476},{0,504}}" />
+                    <Property Name="Image" Value="set:treasure image:shadow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Window Name="TreasurePanel/Bg/bgImg/nameSp0/nameTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,117},{0,25}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="Text" Value="黄陵一层[V0]" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFFea00" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/d3DView4" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,302},{0,169},{0,504},{0,252}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/d3DView6" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,302},{0,47},{0,504},{0,130}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/d3DView2" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,302},{0,298},{0,504},{0,381}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/d3DView5" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,640},{0,109},{0,842},{0,192}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/d3DView0" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,302},{0,421},{0,504},{0,504}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Window Name="TreasurePanel/Bg/bgImg/d3DView0/d3DView" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,202},{0,83}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/d3DView3" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,639},{0,238},{0,841},{0,321}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="TreasurePanel/Bg/bgImg/d3DView1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,641},{0,364},{0,843},{0,447}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

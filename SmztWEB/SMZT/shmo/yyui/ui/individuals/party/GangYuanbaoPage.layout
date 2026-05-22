@@ -1,0 +1,309 @@
+<GUILayout>
+    <Window Name="GangYuanbaoPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,753},{0,463}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GangYuanbaoPage/bottombackground" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,395},{0,504},{0,463}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangYuanbaoPage/bottombackground/bgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,503},{0,67}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangYuanbaoPage/bottombackground/bgImg/desc1Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,37},{0,7},{0,317},{0,25}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="达到3级帮派（未达成）" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangYuanbaoPage/bottombackground/bgImg/desc2Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,37},{0,26},{0,317},{0,44}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="需要本帮有10个黄金VIP（1/10）" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangYuanbaoPage/bottombackground/bgImg/desc3Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,37},{0,45},{0,318},{0,63}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="需要本帮战力排名至少在本服前六名（当前排名：4）" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangYuanbaoPage/bottombackground/bgImg/desct0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,5},{0,23},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="开" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangYuanbaoPage/bottombackground/bgImg/desct1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,20},{0,23},{0,35}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="启" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangYuanbaoPage/bottombackground/bgImg/desct3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,35},{0,23},{0,50}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="条" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangYuanbaoPage/bottombackground/bgImg/desct4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,50},{0,23},{0,65}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="件" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangYuanbaoPage/bottombackground/bgImg/point1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,23},{0,10},{0,34},{0,21}}" />
+                    <Property Name="Image" Value="set:skin image:MarkImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangYuanbaoPage/bottombackground/bgImg/point2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,23},{0,30},{0,34},{0,41}}" />
+                    <Property Name="Image" Value="set:skin image:MarkImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangYuanbaoPage/bottombackground/bgImg/point3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,25},{0,50},{0,33},{0,58}}" />
+                    <Property Name="Image" Value="set:skin image:MarkImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="GangYuanbaoPage/bottombackground/bgImg/receiveBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,433},{0,8},{0,486},{0,61}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:receiveYuanbao" />
+                </Window>
+                <Window Name="GangYuanbaoPage/bottombackground/bgImg/openQiHun$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,320},{0,46},{0,400},{0,64}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="捐献好处" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Tooltip" Value="10103" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="GangYuanbaoPage/backgroundImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,502},{0,394}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="GangYuanbaoPage/backgroundImg/texiaoWin" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,-37},{0,343},{0,211}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/desc4Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,122},{0,375},{0,209},{0,393}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="累计领取元宝：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/donateBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,433},{0,312},{0,486},{0,365}}" />
+                <Property Name="Image" Value="set:gangGeneral image:donationYuanbao" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/desc6Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,174},{0,347},{0,262},{0,371}}" />
+                <Property Name="Font" Value="songti_16_strengh" />
+                <Property Name="Text" Value="今日可领：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/number1Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,210},{0,375},{0,264},{0,393}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="1010" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/desc3$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,306},{0,8},{0,386},{0,26}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="计算方法" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Tooltip" Value="10102" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/desc8Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,147},{0,5},{0,207},{0,23}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="产出速度：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/desc5Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,265},{0,375},{0,352},{0,393}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="今日领取元宝：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/desc9Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,209},{0,5},{0,290},{0,23}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10元宝/小时" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/desc7Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,263},{0,347},{0,425},{0,371}}" />
+                <Property Name="Font" Value="songti_16_strengh" />
+                <Property Name="Text" Value=" 10元宝" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/desc2$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,434},{0,368},{0,514},{0,386}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="捐献好处" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Tooltip" Value="10103" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/number2Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,353},{0,375},{0,392},{0,393}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/jbpImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,181},{0,253},{0,328},{0,321}}" />
+                <Property Name="Image" Value="set:gangGeneral image:jbp" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/currentImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,204},{0,263},{0,303},{0,283}}" />
+                <Property Name="Image" Value="set:gangGeneral image:dqyuanbao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/desc0yb" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,185},{0,286},{0,321},{0,310}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="100000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangYuanbaoPage/backgroundImg/yuanbaoImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,133},{0,63},{0,369},{0,207}}" />
+                <Property Name="Image" Value="set:gangGeneral image:wing3" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GangYuanbaoPage/rightBackground" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,503},{0,0},{0,753},{0,463}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangYuanbaoPage/rightBackground/smallbackground2" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,242},{0,250},{0,270}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangYuanbaoPage/rightBackground/smallbackground2/BGImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,249},{0,28}}" />
+                    <Property Name="Image" Value="set:skin image:HeadMiddle" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GangYuanbaoPage/rightBackground/smallbackground2/BGImg2/recordTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,249},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="捐献记录" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="GangYuanbaoPage/rightBackground/boxList1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,29},{0,250},{0,244}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="GangYuanbaoPage/rightBackground/smallbackground1" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,250},{0,29}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangYuanbaoPage/rightBackground/smallbackground1/BGImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,249},{0,28}}" />
+                    <Property Name="Image" Value="set:skin image:HeadMiddle" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GangYuanbaoPage/rightBackground/smallbackground1/BGImg1/recordTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,249},{0,29}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="提取记录" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="GangYuanbaoPage/rightBackground/bosList2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,271},{0,250},{0,463}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="GangYuanbaoPage/maxText1" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,5},{0,67},{0,23}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="元宝上限：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFef9d0" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangYuanbaoPage/maxText" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,66},{0,5},{0,129},{0,23}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="0" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFef9d0" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

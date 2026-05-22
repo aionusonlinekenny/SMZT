@@ -1,0 +1,58 @@
+<GUILayout>
+    <Window Name="CityStarcraftTitleChangeAlert" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,256},{0,183}}" />
+        <Property Name="Text" Value="王朝年号" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="CityStarcraftTitleChangeAlert/sure" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,64},{0,115},{0,151},{0,138}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="确定" />
+        </Window>
+        <Window Name="CityStarcraftTitleChangeAlert/wordTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,19},{0,228},{0,41}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="请输入您的王朝年号" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="CityStarcraftTitleChangeAlert/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,110},{0,237},{0,111}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="CityStarcraftTitleChangeAlert/inputImg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,58},{0,51},{0,177},{0,72}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="111" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:EditBox_L" />
+            <Property Name="LeftOffset" Value="4" />
+            <Property Name="RightImage" Value="set:skin image:EditBox_R" />
+            <Property Name="CenterImage" Value="set:skin image:EditBox_M" />
+            <Property Name="RightOffset" Value="4" />
+            <Window Name="CityStarcraftTitleChangeAlert/inputImg/sayTxt" Type="GuiLook/Editbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,119},{0,21}}" />
+                <Property Name="MaxTextLength" Value="10" />
+            </Window>
+        </Window>
+        <Window Name="CityStarcraftTitleChangeAlert/wordTxt2" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,79},{0,228},{0,101}}" />
+            <Property Name="Font" Value="songti_12" />
+            <Property Name="Text" Value="(每次10元宝)" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

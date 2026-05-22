@@ -1,0 +1,464 @@
+<GUILayout>
+    <Window Name="ThreeCountryKill" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,801},{0,538}}" />
+        <Property Name="GlyphImage" Value="set:copyGeneral image:12" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="ThreeCountryKill/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,783},{0,490}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ThreeCountryKill/background/rewardBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,782},{0,110}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="ThreeCountryKill/background/rewardBg/countryImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,298},{0,-3},{0,379},{0,70}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/countryImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,501},{0,7},{0,582},{0,80}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/countryImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,110},{0,6},{0,191},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star02" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,397},{0,20},{0,422},{0,45}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star01" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,375},{0,20},{0,400},{0,45}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star03" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,419},{0,20},{0,444},{0,45}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star21" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,580},{0,37},{0,605},{0,62}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/numberTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,223},{0,12},{0,277},{0,43}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="X500" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFFea00" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/tigerImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,193},{0,13},{0,222},{0,42}}" />
+                    <Property Name="Image" Value="set:skins image:decreeImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/numberTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,408},{0,1},{0,462},{0,32}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="X1000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFFea00" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/tigerImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,378},{0,2},{0,407},{0,31}}" />
+                    <Property Name="Image" Value="set:skins image:decreeImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/numberTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,615},{0,17},{0,664},{0,48}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="X500" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFFea00" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/tigerImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,585},{0,18},{0,614},{0,47}}" />
+                    <Property Name="Image" Value="set:skins image:decreeImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star13" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,233},{0,32},{0,258},{0,57}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star22" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,601},{0,37},{0,626},{0,62}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star23" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,622},{0,37},{0,647},{0,62}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star11" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,191},{0,32},{0,216},{0,57}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star12" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,212},{0,32},{0,237},{0,57}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star24" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,643},{0,37},{0,668},{0,62}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star04" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,440},{0,20},{0,465},{0,45}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star05" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,461},{0,20},{0,486},{0,45}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star14" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,254},{0,32},{0,279},{0,57}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star25" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,664},{0,37},{0,689},{0,62}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ThreeCountryKill/background/rewardBg/star15" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,275},{0,32},{0,300},{0,57}}" />
+                    <Property Name="Image" Value="set:skins image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ThreeCountryKill/background/ranklist" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,111},{0,90},{0,139}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="ThreeCountryKill/background/ranklist/rankTxt_name" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,89},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="排名" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ThreeCountryKill/background/nameList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,90},{0,111},{0,291},{0,139}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="ThreeCountryKill/background/nameList/nameTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,201},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="玩家名称" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ThreeCountryKill/background/killList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,291},{0,111},{0,385},{0,139}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="ThreeCountryKill/background/killList/killTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,94},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="杀敌数" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ThreeCountryKill/background/deathList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,478},{0,111},{0,571},{0,139}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="ThreeCountryKill/background/deathList/deathTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,93},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="死亡" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ThreeCountryKill/background/continuousList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,385},{0,111},{0,478},{0,139}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="ThreeCountryKill/background/continuousList/continuousTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,93},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="连斩" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ThreeCountryKill/background/integralList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,571},{0,111},{0,670},{0,139}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="ThreeCountryKill/background/integralList/integralTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,99},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="积分值" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ThreeCountryKill/background/rewardList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,670},{0,111},{0,782},{0,139}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="ThreeCountryKill/background/rewardList/rewardTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,112},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="奖励" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ThreeCountryKill/background/boxList" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,140},{0,782},{0,450}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="ThreeCountryKill/background/pageLastBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,341},{0,457},{0,361},{0,477}}" />
+                <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+                <Property Name="DisabledImage" Value="set:skin image:LastBtnDisable" />
+            </Window>
+            <Window Name="ThreeCountryKill/background/mLastBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,315},{0,457},{0,335},{0,477}}" />
+                <Property Name="HoverImage" Value="set:skin image:MlastBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:MlastBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:MlastBtnPushed" />
+                <Property Name="DisabledImage" Value="set:skin image:MlastBtnDisable" />
+            </Window>
+            <Window Name="ThreeCountryKill/background/mNextBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,436},{0,457},{0,456},{0,477}}" />
+                <Property Name="HoverImage" Value="set:skin image:MnextBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:MnextBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:MnextBtnPushed" />
+                <Property Name="DisabledImage" Value="set:skin image:MnextBtnDisable" />
+            </Window>
+            <Window Name="ThreeCountryKill/background/laPageBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,365},{0,458},{0,407},{0,476}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="ThreeCountryKill/background/laPageBg/pageTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,18}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="250" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF64d4d8" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ThreeCountryKill/background/pageNextBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,411},{0,457},{0,431},{0,477}}" />
+                <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+                <Property Name="DisabledImage" Value="set:skin image:NextBtnDisable" />
+            </Window>
+            <Window Name="ThreeCountryKill/background/TextBG" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,575},{0,456},{0,719},{0,477}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ThreeCountryKill/background/TextBG/input" Type="GuiLook/Editbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,142},{0,23}}" />
+                </Window>
+            </Window>
+            <Window Name="ThreeCountryKill/background/btn_2" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,721},{0,455},{0,775},{0,478}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="查询" />
+            </Window>
+            <Window Name="ThreeCountryKill/background/btn_1" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,127},{0,455},{0,181},{0,478}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="查看" />
+            </Window>
+            <Window Name="ThreeCountryKill/background/descTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,453},{0,76},{0,484}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="您当前排名：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ThreeCountryKill/background/rankTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,78},{0,453},{0,122},{0,484}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="第20名" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,123 @@
+<GUILayout>
+    <Window Name="ActivityRewardPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,780},{0,565}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="ActivityRewardPanel/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,780},{0,565}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="ActivityRewardPanel/bg/rewardBgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,134},{0,630},{0,373}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="ActivityRewardPanel/bg/starbarActionRewardTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,75},{0,408},{0,459},{0,426}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="经验+888888" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffffffff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ActivityRewardPanel/bg/starbarOtherRewardTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,141},{0,449},{0,459},{0,467}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="经验+5000、声望+5000、红包*5" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffffffff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ActivityRewardPanel/bg/starbardesc2Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,75},{0,387},{0,135},{0,405}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="互动奖励：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffffea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ActivityRewardPanel/bg/starbardesc5Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,75},{0,469},{0,459},{0,487}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="举办宴会者会获得声望、红包奖励，可向其讨要红包" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffffffff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ActivityRewardPanel/bg/starbarpoint2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,60},{0,474},{0,70},{0,483}}" />
+                <Property Name="Image" Value="set:activitiesGeneral image:point" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ActivityRewardPanel/bg/starbarpoint" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,60},{0,413},{0,70},{0,422}}" />
+                <Property Name="Image" Value="set:activitiesGeneral image:point" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ActivityRewardPanel/bg/starbardesc3Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,75},{0,429},{0,135},{0,447}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="其他奖励：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffffea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ActivityRewardPanel/bg/starbarpoint3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,60},{0,454},{0,70},{0,463}}" />
+                <Property Name="Image" Value="set:activitiesGeneral image:point" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ActivityRewardPanel/bg/starbardesc4Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,75},{0,449},{0,141},{0,467}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="宴会奖励：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffffffff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ActivityRewardPanel/bg/openTimeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,517},{0,642},{0,535}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="下届星空酒吧活动开启时间：2014年8月1日 20:30" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffffea00" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ActivityRewardPanel/bg/okBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,517},{0,427},{0,680},{0,467}}" />
+                <Window Name="ActivityRewardPanel/bg/okBtn/knowImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                    <Property Name="Image" Value="set:activitiesGeneral image:know" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ActivityRewardPanel/bg/DefaultButton" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,722},{0,115},{0,745},{0,138}}" />
+                <Property Name="HoverImage" Value="set:activitiesGeneral image:closeHover" />
+                <Property Name="NormalImage" Value="set:activitiesGeneral image:closeNormal" />
+                <Property Name="PushedImage" Value="set:activitiesGeneral image:closePushed" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

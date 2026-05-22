@@ -1,0 +1,54 @@
+<GUILayout>
+    <Window Name="ChangeNameAlert" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,334},{0,183}}" />
+        <Property Name="Text" Value="改名卡" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="ChangeNameAlert/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,110},{0,320},{0,111}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="ChangeNameAlert/StaticText" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,44},{0,291},{0,66}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="请输入您想修改的名字" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="ChangeNameAlert/name" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,21},{0,291},{0,43}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="ChangeNameAlert/sureBtn" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,178},{0,116},{0,265},{0,139}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="确定" />
+        </Window>
+        <Window Name="ChangeNameAlert/cancelBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,116},{0,136},{0,139}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="取 消" />
+        </Window>
+        <Window Name="ChangeNameAlert/buyNumTxtBg" Type="GuiLook/inputBg">
+            <Property Name="UnifiedAreaRect" Value="{{0,62},{0,70},{0,265},{0,90}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="ChangeNameAlert/inputTxt" Type="GuiLook/Editbox">
+            <Property Name="UnifiedAreaRect" Value="{{0,63},{0,71},{0,263},{0,89}}" />
+        </Window>
+    </Window>
+</GUILayout>

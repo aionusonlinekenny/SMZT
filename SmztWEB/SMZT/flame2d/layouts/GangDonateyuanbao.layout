@@ -1,0 +1,109 @@
+<GUILayout>
+    <Window Name="GangDonateyuanbao" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,431},{0,262}}" />
+        <Property Name="Text" Value="捐献元宝" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="GangDonateyuanbao/smallBg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,413},{0,141}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangDonateyuanbao/smallBg/desc1$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,199},{0,26},{0,403},{0,134}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangDonateyuanbao/smallBg/descTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,105},{0,173},{0,123}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="可使用24小时" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff85f500" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangDonateyuanbao/smallBg/nullImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,15},{0,180},{0,90}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GangDonateyuanbao/sayTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,149},{0,73},{0,167}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="对帮派说：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFef9d0" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangDonateyuanbao/donateTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,179},{0,73},{0,197}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="捐献数量：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFef9d0" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangDonateyuanbao/TextBG2" Type="GuiLook/TextBG">
+            <Property Name="UnifiedAreaRect" Value="{{0,74},{0,146},{0,411},{0,167}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangDonateyuanbao/TextBG2/input" Type="GuiLook/Editbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,336},{0,22}}" />
+            </Window>
+        </Window>
+        <Window Name="GangDonateyuanbao/btn_1" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,325},{0,178},{0,412},{0,202}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="捐献" />
+        </Window>
+        <Window Name="GangDonateyuanbao/comboBox2" Type="GuiLook/Combobox">
+            <Property Name="UnifiedAreaRect" Value="{{0,73},{0,179},{0,310},{0,319}}" />
+            <Property Name="ClippedByParent" Value="false" />
+            <AutoWindow NameSuffix="__auto_editbox__">
+                <Property Name="SelectedTextColour" Value="FFFFFFDD" />
+                <Property Name="ActiveSelectionColour" Value="FFFFB080" />
+                <Property Name="InactiveSelectionColour" Value="FFB18A50" />
+            </AutoWindow>
+            <AutoWindow NameSuffix="__auto_droplist__">
+                <AutoWindow NameSuffix="__auto_hscrollbar__">
+                    <AutoWindow NameSuffix="__auto_incbtn__">
+                        <Property Name="RestoreOldCapture" Value="true" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_decbtn__">
+                        <Property Name="RestoreOldCapture" Value="true" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_thumb__">
+                        <Property Name="RestoreOldCapture" Value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="VerticalScrollbar" Value="true" />
+                    <AutoWindow NameSuffix="__auto_incbtn__">
+                        <Property Name="RestoreOldCapture" Value="true" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_decbtn__">
+                        <Property Name="RestoreOldCapture" Value="true" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_thumb__">
+                        <Property Name="RestoreOldCapture" Value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </AutoWindow>
+            <AutoWindow NameSuffix="__auto_button__">
+                <Property Name="AlwaysOnTop" Value="true" />
+            </AutoWindow>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,486 @@
+<GUILayout>
+    <Window Name="ArenaPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,984},{0,571}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="ArenaPage/imgBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,983},{0,570}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="ArenaPage/imgBg/firstRandBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,3},{0,5},{0,120},{0,103}}" />
+                <Property Name="Image" Value="set:cityGeneral image:firstRank" />
+            </Window>
+            <Window Name="ArenaPage/imgBg/bottomBg" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,146.5},{0,-12},{0,346.5},{0,48}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Window Name="ArenaPage/imgBg/bottomBg/ThreeStretchImage" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:edgeLeft" />
+                    <Property Name="LeftOffset" Value="94" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:edgeRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:edgeMiddle" />
+                    <Property Name="RightOffset" Value="94" />
+                    <Window Name="ArenaPage/imgBg/bottomBg/ThreeStretchImage/countTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,36},{0,5},{0,111},{0,25}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="Text" Value="剩余次数：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ArenaPage/imgBg/bottomBg/ThreeStretchImage/addCountBtn" Type="GuiLook/DefaultImageButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,161},{0,0},{0,182},{0,21}}" />
+                        <Property Name="Image" Value="set:skin image:addBtn" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                        <Property Name="VertImageFormatting" Value="CentreAligned" />
+                    </Window>
+                    <Window Name="ArenaPage/imgBg/bottomBg/ThreeStretchImage/countTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,110},{0,5},{0,160},{0,25}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="Text" Value="19/20" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ArenaPage/imgBg/bottomBg/fightCDTimeBox" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,30},{0,200},{0,58}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:edgeLeft" />
+                    <Property Name="LeftOffset" Value="94" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:edgeRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:edgeMiddle" />
+                    <Property Name="RightOffset" Value="94" />
+                    <Window Name="ArenaPage/imgBg/bottomBg/fightCDTimeBox/cdTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,36},{0,5},{0,112},{0,25}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="Text" Value="挑战冷却：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ArenaPage/imgBg/bottomBg/fightCDTimeBox/clearCDBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,161},{0,0},{0,183},{0,22}}" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:moreHover" />
+                        <Property Name="NormalImage" Value="set:mainUI1 image:moreNormal" />
+                        <Property Name="PushedImage" Value="set:mainUI1 image:morePushed" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                        <Property Name="VertImageFormatting" Value="CentreAligned" />
+                    </Window>
+                    <Window Name="ArenaPage/imgBg/bottomBg/fightCDTimeBox/cdTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,110},{0,5},{0,160},{0,25}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="Text" Value="00:30" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFF0000" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="ArenaPage/imgBg/playerBgMe" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,41},{0,131},{0,241},{0,497}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ArenaPage/imgBg/playerBgMe/d3DViewMe" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,-90},{0,51},{0,-50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VerticalAlignment" Value="Bottom" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBgMe/titleImgMe" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBgMe/diSpMe" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,271},{0,192},{0,366}}" />
+                    <Property Name="Image" Value="set:cityGeneral image:nameBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ArenaPage/imgBg/playerBgMe/diSpMe/nameTxtMe" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,42},{0,184},{0,62}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="Text" Value="名字只能六字" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFF0000" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ArenaPage/imgBg/playerBgMe/diSpMe/fightTxtMe" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,60},{0,184},{0,80}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="战斗力：1000000" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85F500" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ArenaPage/imgBg/playerBgMe/diSpMe/meIconMe" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,30},{0,-25},{0,66},{0,10}}" />
+                        <Property Name="Image" Value="set:cityGeneral image:meIcon" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ArenaPage/imgBg/playerBgMe/diSpMe/rankImgMe" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,16},{0,184},{0,41}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBgMe/drillImgMe" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,309},{0,36},{0,335}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBgMe/yearImgMe" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,32},{0,316},{0,48},{0,332}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ArenaPage/imgBg/challengeRecordBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,793},{0,525},{0,873},{0,548}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="挑战记录" />
+            </Window>
+            <Window Name="ArenaPage/imgBg/changeBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,882},{0,525},{0,962},{0,548}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="藏宝阁兑换" />
+            </Window>
+            <Window Name="ArenaPage/imgBg/playerBg0" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,255},{0,9},{0,455},{0,416}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ArenaPage/imgBg/playerBg0/d3DView0" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-90},{0,41},{0,-50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VerticalAlignment" Value="Bottom" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBg0/titleImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-9},{0,220},{0,56}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBg0/diSp0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,312},{0,192},{0,407}}" />
+                    <Property Name="Image" Value="set:cityGeneral image:nameBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ArenaPage/imgBg/playerBg0/diSp0/rankImg0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,16},{0,184},{0,41}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ArenaPage/imgBg/playerBg0/diSp0/fightTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,60},{0,184},{0,80}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="战斗力：1000000" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85F500" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ArenaPage/imgBg/playerBg0/diSp0/nameTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,42},{0,184},{0,62}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="Text" Value="名字只能六字" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFF7200" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBg0/effView0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,128},{0,128}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBg0/drillImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,350},{0,38},{0,376}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ArenaPage/imgBg/playerBg1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,480},{0,8},{0,680},{0,415}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ArenaPage/imgBg/playerBg1/d3DView1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-90},{0,41},{0,-50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VerticalAlignment" Value="Bottom" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBg1/diSp1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,312},{0,192},{0,407}}" />
+                    <Property Name="Image" Value="set:cityGeneral image:nameBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ArenaPage/imgBg/playerBg1/diSp1/rankImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,16},{0,184},{0,41}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ArenaPage/imgBg/playerBg1/diSp1/nameTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,42},{0,184},{0,62}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="Text" Value="名字只能六字" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFF7200" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ArenaPage/imgBg/playerBg1/diSp1/fightTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,60},{0,184},{0,80}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="战斗力：1000000" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85F500" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBg1/effView1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,128},{0,128}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBg1/titleImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,220},{0,56}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBg1/drillImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,350},{0,38},{0,376}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ArenaPage/imgBg/playerBg2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,710},{0,9},{0,910},{0,416}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ArenaPage/imgBg/playerBg2/d3DView2" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-90},{0,41},{0,-50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VerticalAlignment" Value="Bottom" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBg2/titleImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBg2/diSp2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,312},{0,192},{0,407}}" />
+                    <Property Name="Image" Value="set:cityGeneral image:nameBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ArenaPage/imgBg/playerBg2/diSp2/rankImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,16},{0,184},{0,41}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ArenaPage/imgBg/playerBg2/diSp2/nameTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,42},{0,184},{0,62}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="Text" Value="名字只能六字" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFF7200" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ArenaPage/imgBg/playerBg2/diSp2/fightTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,60},{0,184},{0,80}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="战斗力：1000000" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85F500" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBg2/effView2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,128},{0,128}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ArenaPage/imgBg/playerBg2/drillImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,350},{0,38},{0,376}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ArenaPage/imgBg/topThreeBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,905},{0,121},{0,969},{0,311}}" />
+                <Property Name="Image" Value="set:cityGeneral image:rankingBtn" />
+            </Window>
+            <Window Name="ArenaPage/imgBg/returnBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,905},{0,121},{0,969},{0,311}}" />
+                <Property Name="Image" Value="set:cityGeneral image:returnImg" />
+            </Window>
+            <Window Name="ArenaPage/imgBg/everyRewardTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,20},{0,504},{0,116},{0,524}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="每日排名奖励：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ArenaPage/imgBg/everyHoverTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,20},{0,528},{0,116},{0,548}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="每小时可获得：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ArenaPage/imgBg/everyRewardTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,116},{0,508},{0,397},{0,524}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ArenaPage/imgBg/everyHoverTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,116},{0,532},{0,212},{0,548}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ArenaPage/imgBg/myRandTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,245},{0,528},{0,311},{0,548}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="我的排名：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ArenaPage/imgBg/myRandTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,311},{0,528},{0,382},{0,548}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ArenaPage/imgBg/inRowNum" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,932},{0,454},{0,964},{0,473}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ArenaPage/imgBg/inRowImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,854},{0,448},{0,931},{0,479}}" />
+                <Property Name="Image" Value="set:cityGeneral image:row" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ArenaPage/imgBg/boxBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,438},{0,484},{0,538},{0,556}}" />
+                <Property Name="Image" Value="set:cityGeneral image:box" />
+            </Window>
+            <Window Name="ArenaPage/imgBg/rewardImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,437},{0,540},{0,538},{0,567}}" />
+                <Property Name="Image" Value="set:cityGeneral image:rankReward" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

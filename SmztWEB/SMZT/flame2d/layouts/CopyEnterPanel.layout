@@ -1,0 +1,48 @@
+<GUILayout>
+    <Window Name="CopyEnterPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,125},{0,46},{0,886},{0,551}}" />
+        <Property Name="GlyphImage" Value="set:copyGeneral image:copyList" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="CopyEnterPanel/chooseBtn1" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-86},{0,7},{0,0},{0,48}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="当前副本" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnLongHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnLongHover" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnLongNormal" />
+        </Window>
+        <Window Name="CopyEnterPanel/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,743},{0,457}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CopyEnterPanel/background/boxSP" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,743},{0,453}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="CopyEnterPanel/choooseBtn2" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-86},{0,51},{0,0},{0,92}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="其他副本" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnLongHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnLongHover" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnLongNormal" />
+        </Window>
+        <Window Name="CopyEnterPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,459},{0,743},{0,460}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

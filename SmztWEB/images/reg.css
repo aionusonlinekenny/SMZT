@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+.hide{display:none;}
+.button, input{vertical-align:middle;}
+.textpng{text-indent:-999em;overflow:hidden;display:block;}
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.f12{font-size:12px;}
+
+.pop-ico{display:inline-block;background:url(../images/pop_ico.png) no-repeat;vertical-align:middle;overflow:hidden;}
+.pop-ico-01{width:16px;height:16px;background-position:0 0;margin-right:0.5em;}
+.pop-ico-02{width:16px;height:16px;background-position:-26px 0;margin-right:0.5em;}
+.pop-ico-03{width:16px;height:16px;background-position:-52px 0;margin-right:0.5em;}
+
+#popup_overlay{width:100%;height:100%;background:#000;filter:alpha(opacity=50);opacity:0.5;position:absolute;top:0;left:0;z-index:998;}
+#popup_container{color:#5b5a5a;overflow:hidden;position:absolute;top:0px;z-index:999;-webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);-moz-box-shadow:0 0 10px rgba(0,0,0,0.4);box-shadow:0 0 10px rgba(0,0,0,0.4);}
+#popup_container a{color:#005cc5;text-decoration:none;}
+#popup_container .close{background:url(../images/pop_close.jpg) no-repeat 0 0;width:24px;height:24px;text-indent:-999em;display:block;overflow:hidden;position:absolute;z-index:1;cursor:pointer}
+#popup_container .contents{position:relative}
+#popup_container .contents strong{font-weight:bold;color:#f00}
+#popup_container .font14{font-size:14px}
+.popbox{background:#fff;width:400px;font:24px/1.7em verdana,arial,"宋体"; color:#5b5a5a;}
+.popbox .close{right:10px;top:10px}
+.popbox .popbox_tit{background:url(../images/pop_title_bg.jpg) repeat 0 0;color:#fff;font-family:"Microsoft yahei","Microsoft JhengHei","SimHei";font-size:22px;height:38px;line-height:38px;overflow:hidden;padding:0 10px;text-align:center;}
+.popbox .contents{height:290px;}
+.popbox-2{width:450px;border:#ff5d0b solid 1px; border-top:none;}
+.popbox-2 .contents{height:355px;}
+.popbox-2 .pop_form{width:477px;}
+.pop_form ul{margin-top:10px;}
+.pop_form ul:after{content:'';display:block;height:0;overflow:hidden;visibility:hidden;clear:both}
+.pop_form li{position:relative;margin-top:5px; float:left;height:42px; }
+.pop_form .t_l{ width:90px; height:35px; line-height:35px; text-align:right; float:left; font-family:"Microsoft yahei"; font-size:14px; }
+.pop_form .t_r{ padding-left:8px; float:left; }
+.pop_form .t_r .inputText{ width:250px; height:28px; border:1px solid #9d9797; padding:0 4px; font-size:14px; line-height:28px; border-radius:4px; }
+.pop_form .t_btn1{ padding-left:12px; float:left;}
+.rl_bg{display:block; width:128px; height:37px;margin:auto; background:url(../images/pop_btn.jpg) 0 0 no-repeat;cursor:pointer; }
+.login_btn{background-position:0 0;}
+.login_btn:hover{ background-position:0 bottom; }
+.regist_btn{background-position:right 0;}
+.regist_btn:hover{ background-position:right bottom; }
+
+.popbox-2 .pop_form li{padding-bottom:20px;margin-top:0px;}
+.pop_form .tip{position:absolute;top:45px;left:100px;*top:47px;line-height:16px;height:16px;font-size:12px;vertical-align:middle;color:#ec770d;margin:0px;}
+
+.popbox .pop_tab{ width:100%; height:39px; background:url(../images/pop_tab_bg.jpg) 0 bottom repeat-x #edeef0;}
+.popbox .pop_tab ul{float:left;margin-left:-1px; }
+.popbox .pop_tab li{ width:107px; float:left; height:39px; text-align:center; line-height:38px; color:#575757; font-family:"Microsoft yahei"; font-size:16px; cursor:pointer; }
+.popbox .pop_tab .act{ width:105px;  border-right:1px solid #ccc;border-left:1px solid #ccc; background:#fff; }
+.popbox .pop_form{}
+.popbox .popbox_footer{width:100%;text-align:center;*zoom:1;margin:0px;}
+.popbox .popbox_footer:after{content:'';display:block;height:0;overflow:hidden;visibility:hidden;clear:both}

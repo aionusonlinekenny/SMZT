@@ -1,0 +1,103 @@
+<GUILayout>
+    <Window Name="FightPetSkillTipsPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,258},{0,230}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="FightPetSkillTipsPanel/commonBg4" Type="GuiLook/CommonBg4">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,258},{0,230}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{800,0}}" />
+            <Window Name="FightPetSkillTipsPanel/commonBg4/skillNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,8},{0,151},{0,30}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="技能名称：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FightPetSkillTipsPanel/commonBg4/skillTypeImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,226},{0,3},{0,255},{0,32}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FightPetSkillTipsPanel/commonBg4/openSkillTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,34},{0,244},{0,69}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF0000" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="FightPetSkillTipsPanel/skillInfoWin" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,73},{0,258},{0,230}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FightPetSkillTipsPanel/skillInfoWin/descTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,98},{0,86},{0,118}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="技能描述：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FightPetSkillTipsPanel/skillInfoWin/descTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,13},{0,121},{0,245},{0,139}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="小孟轲你自己配去吧，我只能帮你到这了" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFd0f8fe" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FightPetSkillTipsPanel/skillInfoWin/attrShowWin" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,10},{0,226},{0,91}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="FightPetSkillTipsPanel/skillInfoWin/line" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,258},{0,1}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="FightPetSkillTipsPanel/skillAttrWin" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,56},{0,81}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FightPetSkillTipsPanel/skillAttrWin/showImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,56},{0,24}}" />
+                <Property Name="Image" Value="set:skins image:attriBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FightPetSkillTipsPanel/skillAttrWin/showImg1/showTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,24}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="攻击" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00baff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="FightPetSkillTipsPanel/skillAttrWin/showImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,26},{0,56},{0,81}}" />
+                <Property Name="Image" Value="set:skins image:skillAttrBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FightPetSkillTipsPanel/skillAttrWin/showImg2/showTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,55}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="120%" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00baff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

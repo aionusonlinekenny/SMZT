@@ -1,0 +1,397 @@
+<GUILayout>
+    <Window Name="EquipDevourPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,1},{0,586},{0,453}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="EquipDevourPage/sp" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,587},{0,452}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="EquipDevourPage/sp/imgBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,586},{0,451}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipDevourPage/sp/imgBg/boxSP" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,35},{0,21},{0,549},{0,83}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/leftBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,29},{0,25},{0,74}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="HoverImage" Value="set:skin image:turnLHover" />
+                    <Property Name="NormalImage" Value="set:skin image:turnLNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:turnLPushed" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/rightBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,560},{0,29},{0,585},{0,74}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="HoverImage" Value="set:skin image:turnRHover" />
+                    <Property Name="NormalImage" Value="set:skin image:turnRNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:turnRPushed" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/devourBtn" Type="GlossySerpent/RedButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,228},{0,399},{0,363},{0,439}}" />
+                    <Window Name="EquipDevourPage/sp/imgBg/devourBtn/devourImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,135},{0,40}}" />
+                        <Property Name="Image" Value="set:equipSmelter image:devour" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/allDevourBtn" Type="GlossySerpent/RedButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,307},{0,307},{0,442},{0,347}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Window Name="EquipDevourPage/sp/imgBg/allDevourBtn/allDevourImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,135},{0,40}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/getBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,536},{0,2},{0,573},{0,50}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="HoverImage" Value="set:equipSmelter image:exchangeHover" />
+                    <Property Name="NormalImage" Value="set:equipSmelter image:exchangeNormal" />
+                    <Property Name="PushedImage" Value="set:equipSmelter image:exchangePushed" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/barBg1" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,12},{0,193},{0,530},{0,223}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="LeftImage" Value="set:equipSmelter image:bar1BgLeft" />
+                    <Property Name="LeftOffset" Value="12" />
+                    <Property Name="RightImage" Value="set:equipSmelter image:bar1BgRight" />
+                    <Property Name="CenterImage" Value="set:equipSmelter image:bar1BgMiddle" />
+                    <Property Name="RightOffset" Value="12" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Window Name="EquipDevourPage/sp/imgBg/barBg1/bar1$NormalBar" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,517},{0,29}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipDevourPage/sp/imgBg/barBg1/bar1Txt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,516},{0,30}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="吞噬值：450/500" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,367},{0,20},{0,413},{0,66}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,301},{0,20},{0,347},{0,66}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,236},{0,20},{0,282},{0,66}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,171},{0,20},{0,217},{0,66}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,106},{0,20},{0,152},{0,66}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,40},{0,20},{0,86},{0,66}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/selected" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,39},{0,19},{0,87},{0,67}}" />
+                    <Property Name="Image" Value="set:skin image:selectedGridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/fireBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,215},{0,248},{0,378},{0,288}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/devourBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,210},{0,331},{0,373},{0,371}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/devourValueBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,216},{0,248},{0,379},{0,288}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/list" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,35},{0,21},{0,549},{0,83}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/chooseBox" Type="GuiLook/Combobox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,307},{0,355},{0,443},{0,532}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="ReadOnly" Value="true" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <AutoWindow NameSuffix="__auto_editbox__">
+                        <Property Name="ReadOnly" Value="true" />
+                        <Property Name="SelectedTextColour" Value="FFFFFFDD" />
+                        <Property Name="ActiveSelectionColour" Value="FFFFB080" />
+                        <Property Name="InactiveSelectionColour" Value="FFB18A50" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_droplist__">
+                        <AutoWindow NameSuffix="__auto_hscrollbar__">
+                            <AutoWindow NameSuffix="__auto_incbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_decbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_thumb__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_vscrollbar__">
+                            <Property Name="VerticalScrollbar" Value="true" />
+                            <AutoWindow NameSuffix="__auto_incbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_decbtn__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                            <AutoWindow NameSuffix="__auto_thumb__">
+                                <Property Name="RestoreOldCapture" Value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_button__">
+                        <Property Name="AlwaysOnTop" Value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/putOnBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,534},{0,150},{0,573},{0,189}}" />
+                    <Property Name="Image" Value="set:equipSmelter image:keyInBtn" />
+                    <Property Name="Tooltip" Value="90199" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/devourValue" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,276},{0,13},{0,367},{0,38}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/StaticImage" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,154},{0,246},{0,434},{0,275}}" />
+                    <Property Name="Image" Value="set:equipSmelter image:newImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,432},{0,20},{0,478},{0,66}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,498},{0,20},{0,544},{0,66}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,40},{0,74},{0,86},{0,120}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid9" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,106},{0,74},{0,152},{0,120}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid10" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,171},{0,74},{0,217},{0,120}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid11" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,237},{0,74},{0,283},{0,120}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid12" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,302},{0,74},{0,348},{0,120}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid13" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,367},{0,74},{0,413},{0,120}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid14" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,432},{0,74},{0,478},{0,120}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/grid15" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,499},{0,74},{0,545},{0,120}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/item2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,171},{0,328},{0,217},{0,374}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/item6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,432},{0,328},{0,478},{0,374}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/item1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,106},{0,328},{0,152},{0,374}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/item4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,302},{0,328},{0,348},{0,374}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/item5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,367},{0,327},{0,413},{0,373}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/item3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,237},{0,328},{0,283},{0,374}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/item0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,40},{0,328},{0,86},{0,374}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/item7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,498},{0,327},{0,544},{0,373}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/upFightTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,386},{0,15},{0,447},{0,35}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipDevourPage/sp/imgBg/upFightImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,371},{0,17},{0,385},{0,33}}" />
+                    <Property Name="Image" Value="set:skin image:upArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

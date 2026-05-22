@@ -1,0 +1,569 @@
+<GUILayout>
+    <Window Name="AllPeopleRob" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,795},{0,628}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="AllPeopleRob/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,794},{0,628}}" />
+            <Property Name="Text" Value="您已购买3次，还可购买7次" />
+            <Property Name="Image" Value="set:allPeopleRob image:bg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="AllPeopleRob/bgImg/money$NormalBar" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0,164},{0,468},{0,192}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:yellow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/moneyTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0,164},{0,468},{0,192}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="成功购买金额：500/600" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/robBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,157},{0,320},{0,353},{0,373}}" />
+                <Property Name="HoverImage" Value="set:allPeopleRob image:robHover" />
+                <Property Name="NormalImage" Value="set:allPeopleRob image:robNormal" />
+                <Property Name="PushedImage" Value="set:allPeopleRob image:robPushed" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/closeBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,743},{0,113},{0,777},{0,149}}" />
+                <Property Name="HoverImage" Value="set:allPeopleRob image:closeHover" />
+                <Property Name="NormalImage" Value="set:allPeopleRob image:closeNormal" />
+                <Property Name="PushedImage" Value="set:allPeopleRob image:closePushed" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/DtimesImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,510},{0,188},{0,763},{0,207}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:time" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/DtimesImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,128},{0,401},{0,381},{0,420}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:time" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/redImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,196},{0,400},{0,214},{0,421}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:red" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/redImg1/n1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,13},{0,21}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/redImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,216},{0,400},{0,234},{0,421}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:red" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/redImg2/n2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,13},{0,21}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/redImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,259},{0,400},{0,277},{0,421}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:red" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/redImg3/n3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,13},{0,21}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/redImg4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,279},{0,400},{0,297},{0,421}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:red" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/redImg4/n4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,13},{0,21}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/redImg5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,321},{0,400},{0,339},{0,421}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:red" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/redImg5/n5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,13},{0,21}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/redImg6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,341},{0,400},{0,359},{0,421}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:red" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/redImg6/n6" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,13},{0,21}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/redImg7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,578},{0,187},{0,596},{0,208}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:red" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/redImg7/n7" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,13},{0,21}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/redImg11" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,703},{0,187},{0,721},{0,208}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:red" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/redImg11/n11" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,13},{0,21}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/redImg12" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,723},{0,187},{0,741},{0,208}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:red" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/redImg12/n12" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,13},{0,21}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/redImg8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,598},{0,187},{0,616},{0,208}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:red" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/redImg8/n8" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,13},{0,21}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/redImg10" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,661},{0,187},{0,679},{0,208}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:red" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/redImg10/n10" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,13},{0,21}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/redImg9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,641},{0,187},{0,659},{0,208}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:red" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/redImg9/n9" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,13},{0,21}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/descTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,22},{0,377},{0,489},{0,395}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="您已购买3次，还可购买7次" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff85f500" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/goldVIPTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,135},{0,206},{0,377},{0,230}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="黄金VIP(永久)" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/props" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,165},{0,238},{0,231},{0,304}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:box" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/props/propsImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,66},{0,68}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/curN1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,239},{0,238},{0,279},{0,256}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="原价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/curN2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,239},{0,263},{0,279},{0,281}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="现价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/curN3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,239},{0,287},{0,312},{0,305}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="剩余次数：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/yuanbao2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,282},{0,262},{0,301},{0,281}}" />
+                <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/oPriceTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,306},{0,238},{0,358},{0,256}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="300" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/nPriceTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,306},{0,263},{0,359},{0,281}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="150" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/yuanbao1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,282},{0,238},{0,301},{0,257}}" />
+                <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/redline" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,236},{0,248},{0,337},{0,249}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:redline" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/timesTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,316},{0,287},{0,369},{0,305}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="100" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/curN4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,622},{0,266},{0,662},{0,284}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="原价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/nPriceTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,689},{0,291},{0,742},{0,309}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="150" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/yuanbao4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,665},{0,290},{0,684},{0,309}}" />
+                <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/curN5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,622},{0,291},{0,662},{0,309}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="现价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/goldVIPTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,518},{0,222},{0,760},{0,246}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="黄金VIP(永久)" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/yuanbao3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,665},{0,266},{0,684},{0,285}}" />
+                <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/oPriceTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,689},{0,266},{0,741},{0,284}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="300" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/props2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,547},{0,255},{0,613},{0,321}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:box" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/props2/propsImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,66},{0,66}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/redline2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,619},{0,276},{0,720},{0,277}}" />
+                <Property Name="Image" Value="set:allPeopleRob image:redline" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/OrangeButton" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,526},{0,340},{0,620},{0,363}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="支持(998)" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/OrangeButton2" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,648},{0,340},{0,742},{0,363}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="反对(998)" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/descTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,501},{0,369},{0,772},{0,387}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="Ps.若反对数量大于支持数量则下轮随机重选" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff85f500" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/myyuanbaoTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,503},{0,581},{0,670},{0,605}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="我的元宝：123456" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/bcTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,53},{0,446},{0,157},{0,471}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="成功补偿奖励：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffff7200" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/bcTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,229},{0,446},{0,333},{0,471}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="失败补偿奖励：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffaaaaaa" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/props3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,164},{0,435},{0,214},{0,485}}" />
+                <Property Name="Image" Value="set:skin image:RedGrid" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/props3/propsImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,49}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/props4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,341},{0,435},{0,391},{0,485}}" />
+                <Property Name="Image" Value="set:skin image:RedGrid" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="AllPeopleRob/bgImg/props4/propsImg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,49}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/desc$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,24},{0,494},{0,484},{0,604}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffff7200" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/playerSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,60},{0,319},{0,447},{0,377}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="AllPeopleRob/bgImg/playerSp/playerTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,90},{0,16},{0,197},{0,41}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="成功抢购玩家：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFfef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="AllPeopleRob/bgImg/playerSp/playerTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,198},{0,22},{0,305},{0,38}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="成功抢购玩家：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFfef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/chargeBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,673},{0,580},{0,772},{0,607}}" />
+                <Property Name="HoverImage" Value="set:allPeopleRob image:chargeHover" />
+                <Property Name="NormalImage" Value="set:allPeopleRob image:chargeNormal" />
+                <Property Name="PushedImage" Value="set:allPeopleRob image:chargePushed" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/boxList" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,501},{0,438},{0,772},{0,578}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/propsNumTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,195},{0,286},{0,228},{0,301}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="AllPeopleRob/bgImg/propsNum2Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,577},{0,303},{0,610},{0,318}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="AllPeopleRob/dragRect" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,6},{0,739},{0,148}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

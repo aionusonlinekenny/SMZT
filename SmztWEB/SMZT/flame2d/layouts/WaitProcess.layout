@@ -1,0 +1,31 @@
+<GUILayout>
+    <Window Name="waitProcess" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,565},{0,40}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="waitProcess/waitView" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,-33},{0,0},{0,421},{0,40}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Right" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="waitProcess/zoomBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,100},{0,12},{0,119},{0,31}}" />
+            <Property Name="HoverImage" Value="set:mainUI1 image:lastBtnHover" />
+            <Property Name="NormalImage" Value="set:mainUI1 image:lastBtnNormal" />
+            <Property Name="PushedImage" Value="set:mainUI1 image:lastBtnPushed" />
+        </Window>
+        <Window Name="waitProcess/zoomEffect" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,100},{0,12},{0,119},{0,31}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

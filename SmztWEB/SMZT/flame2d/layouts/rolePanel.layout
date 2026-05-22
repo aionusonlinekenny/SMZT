@@ -1,0 +1,373 @@
+<GUILayout>
+    <Window Name="rolePanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,257},{0,60},{0,1091},{0,629}}" />
+        <Property Name="GlyphImage" Value="set:role image:titleImg" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="rolePanel/CommonBG" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,816},{0,521}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="rolePanel/RadioTab0" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-61},{0,11},{0,2},{0,52}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="角色" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="DropTextColour" Value="FFc6dee6" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="HoverTextColour" Value="FFc6dee6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            <Property Name="NormalTextColour" Value="FF65b3e9" />
+            <Property Name="PushedTextColour" Value="FFc6dee6" />
+            <Property Name="DisabledTextColour" Value="FFc6dee6" />
+        </Window>
+        <Window Name="rolePanel/RadioTab1" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-61},{0,52},{0,2},{0,93}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="坐骑" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="HoverTextColour" Value="FFc6dee6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            <Property Name="NormalTextColour" Value="FF65b3e9" />
+            <Property Name="PushedTextColour" Value="FFc6dee6" />
+            <Property Name="DisabledTextColour" Value="FFffffff" />
+            <Window Name="rolePanel/RadioTab1/img1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,40},{0,33}}" />
+                <Property Name="Image" Value="set:skins image:activityImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="rolePanel/RadioTab3" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-61},{0,216},{0,2},{0,257}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="战宠" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            <Property Name="NormalTextColour" Value="FF65b3e9" />
+            <Window Name="rolePanel/RadioTab3/img3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,40},{0,33}}" />
+                <Property Name="Image" Value="set:skins image:activityImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="rolePanel/RadioTab2" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-61},{0,93},{0,2},{0,134}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="武器" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            <Property Name="NormalTextColour" Value="FF65b3e9" />
+            <Window Name="rolePanel/RadioTab2/img2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,40},{0,33}}" />
+                <Property Name="Image" Value="set:skins image:activityImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="rolePanel/RadioTab4" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-61},{0,339},{0,2},{0,380}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="神器" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="DropTextColour" Value="FF34B9EA" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="HoverTextColour" Value="FFC6DEE6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            <Property Name="NormalTextColour" Value="FF65B3E9" />
+            <Property Name="PushedTextColour" Value="FFC6DEE6" />
+            <Window Name="rolePanel/RadioTab4/img4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,40},{0,33}}" />
+                <Property Name="Image" Value="set:skins image:activityImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="rolePanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,527},{0,816},{0,528}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="rolePanel/RadioTab5" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-61},{0,257},{0,2},{0,298}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="背饰" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="DropTextColour" Value="FF34B9EA" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="HoverTextColour" Value="FFC6DEE6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            <Property Name="NormalTextColour" Value="FF65B3E9" />
+            <Property Name="PushedTextColour" Value="FFC6DEE6" />
+            <Window Name="rolePanel/RadioTab5/img5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,40},{0,33}}" />
+                <Property Name="Image" Value="set:skins image:activityImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="rolePanel/RadioTab6" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-61},{0,175},{0,2},{0,216}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="进阶" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="DropTextColour" Value="FF34B9EA" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="HoverTextColour" Value="FFC6DEE6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            <Property Name="NormalTextColour" Value="FF65B3E9" />
+            <Property Name="PushedTextColour" Value="FFC6DEE6" />
+            <Window Name="rolePanel/RadioTab6/img6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,40},{0,33}}" />
+                <Property Name="Image" Value="set:skins image:activityImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="rolePanel/queding" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,-61},{0,-37},{0,825},{0,532}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Window Name="rolePanel/queding/BlessTips" Type="GuiLook/CommonBg4">
+                <Property Name="UnifiedAreaRect" Value="{{0,290},{0,109},{0,613},{0,479}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="rolePanel/queding/BlessTips/titleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,113},{0,12},{0,210},{0,37}}" />
+                    <Property Name="Font" Value="songti_16_strengh" />
+                    <Property Name="Text" Value="进阶祝福值" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF7200" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/bossHpBarBg" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,50},{0,316},{0,71}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="rolePanel/queding/BlessTips/bossHpBarBg/hpBar$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,307},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg1Left" />
+                        <Property Name="LeftOffset" Value="8" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg1Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg1Center" />
+                        <Property Name="RightOffset" Value="8" />
+                    </Window>
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/Line3" Type="GuiLook/Line">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,125},{0,323},{0,126}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/Line2" Type="GuiLook/Line">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,309},{0,323},{0,310}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/goOnBtn" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,31},{0,327},{0,157},{0,350}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="抢时间继续进阶" />
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/cacleBtn" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,199},{0,327},{0,280},{0,350}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="稍后再说" />
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/emptyTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,35},{0,84},{0,199},{0,104}}" />
+                    <Property Name="Font" Value="songti_16" />
+                    <Property Name="Text" Value="祝福值清空倒计时：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/emptyTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,199},{0,84},{0,287},{0,104}}" />
+                    <Property Name="Font" Value="songti_16" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFff0000" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/txt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,49},{0,135},{0,284},{0,183}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/img0111" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,7},{0,194},{0,17},{0,203}}" />
+                    <Property Name="Image" Value="set:skin image:MarkImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/img111" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,7},{0,245},{0,17},{0,254}}" />
+                    <Property Name="Image" Value="set:skin image:MarkImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/blessingTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,20},{0,190},{0,109},{0,208}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="什么是祝福值：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/blessingClearTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,20},{0,240},{0,137},{0,258}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="祝福值清空时间：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/txt1$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,20},{0,206},{0,314},{0,225}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/txt2$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,19},{0,256},{0,313},{0,299}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="rolePanel/queding/BlessTips/barTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,113},{0,51},{0,210},{0,70}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF7200" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="rolePanel/RadioTab7" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-61},{0,298},{0,2},{0,339}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="星轮" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="DropTextColour" Value="FF34B9EA" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="HoverTextColour" Value="FFC6DEE6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            <Property Name="NormalTextColour" Value="FF65B3E9" />
+            <Property Name="PushedTextColour" Value="FFC6DEE6" />
+            <Window Name="rolePanel/RadioTab7/img7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,40},{0,33}}" />
+                <Property Name="Image" Value="set:skins image:activityImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="rolePanel/RadioTab8" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-61},{0,134},{0,2},{0,175}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="天罡" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="DropTextColour" Value="FF34B9EA" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="HoverTextColour" Value="FFC6DEE6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            <Property Name="NormalTextColour" Value="FF65B3E9" />
+            <Property Name="PushedTextColour" Value="FFC6DEE6" />
+            <Window Name="rolePanel/RadioTab8/img8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,40},{0,33}}" />
+                <Property Name="Image" Value="set:skins image:activityImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="rolePanel/RadioTab9" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-61},{0,380},{0,2},{0,421}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="婚戒" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="DropTextColour" Value="FF34B9EA" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="HoverTextColour" Value="FFC6DEE6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            <Property Name="NormalTextColour" Value="FF65B3E9" />
+            <Property Name="PushedTextColour" Value="FFC6DEE6" />
+            <Window Name="rolePanel/RadioTab9/img9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,40},{0,33}}" />
+                <Property Name="Image" Value="set:skins image:activityImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

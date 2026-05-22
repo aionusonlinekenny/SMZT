@@ -1,0 +1,122 @@
+<GUILayout>
+    <Window Name="BagTopUpGiftPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,532},{0,384}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="BagTopUpGiftPage/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,532},{0,125}}" />
+            <Property Name="Image" Value="set:bagGift2 image:AgainstGift" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="BagTopUpGiftPage/bg/hourTxt" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,98},{0,141},{0,120}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BagTopUpGiftPage/bg/secondsTxt" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,203},{0,98},{0,229},{0,120}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BagTopUpGiftPage/bg/minuteTxt" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,158},{0,98},{0,184},{0,120}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="BagTopUpGiftPage/yuanbaoTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,6},{0,96},{0,24}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFFea00" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="BagTopUpGiftPage/topUpBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,99},{0,6},{0,136},{0,24}}" />
+            <Property Name="HoverImage" Value="set:mainUI1 image:topUpHover" />
+            <Property Name="NormalImage" Value="set:mainUI1 image:topUpNormal" />
+            <Property Name="PushedImage" Value="set:mainUI1 image:topUpPushed" />
+        </Window>
+        <Window Name="BagTopUpGiftPage/link$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,449},{0,3},{0,530},{0,23}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="查看每日礼包" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="BagTopUpGiftPage/line" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,296},{0,532},{0,297}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:Line2Left" />
+            <Property Name="RightImage" Value="set:skin image:Line2Right" />
+            <Property Name="CenterImage" Value="set:skin image:Line1Center2" />
+        </Window>
+        <Window Name="BagTopUpGiftPage/aommonBg2" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,36},{0,130},{0,496},{0,292}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="BagTopUpGiftPage/aommonBg2/giftNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,9},{0,231},{0,40}}" />
+                <Property Name="Font" Value="songti_16_strengh" />
+                <Property Name="Text" Value="一阶·逆天礼包" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BagTopUpGiftPage/aommonBg2/receiveBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,124},{0,127},{0,145}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="200元宝领取" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="BagTopUpGiftPage/aommonBg2/mallImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,371},{0,1},{0,459},{0,92}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="BagTopUpGiftPage/aommonBg2/gridBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,50},{0,43},{0,116},{0,109}}" />
+                <Property Name="Image" Value="set:bagGift image:yellowBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="BagTopUpGiftPage/leftBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,180},{0,24},{0,225}}" />
+            <Property Name="HoverImage" Value="set:skin image:turnLHover" />
+            <Property Name="NormalImage" Value="set:skin image:turnLNormal" />
+            <Property Name="PushedImage" Value="set:skin image:turnLPushed" />
+        </Window>
+        <Window Name="BagTopUpGiftPage/rightBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,508},{0,180},{0,532},{0,225}}" />
+            <Property Name="HoverImage" Value="set:skin image:turnRHover" />
+            <Property Name="NormalImage" Value="set:skin image:turnRNormal" />
+            <Property Name="PushedImage" Value="set:skin image:turnRPushed" />
+        </Window>
+        <Window Name="BagTopUpGiftPage/rich$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,301},{0,527},{0,381}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

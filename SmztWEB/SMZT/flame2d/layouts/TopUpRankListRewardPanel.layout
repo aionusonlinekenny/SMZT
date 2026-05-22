@@ -1,0 +1,49 @@
+<GUILayout>
+    <Window Name="TopUpRankListRewardPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,546},{0,611}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="VerticalAlignment" Value="Centre" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Name="TopUpRankListRewardPanel/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,546},{0,611}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="TopUpRankListRewardPanel/bgImg/list" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,100},{0,483},{0,475}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="TopUpRankListRewardPanel/bgImg/rankImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,291},{0,487},{0,476},{0,518}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="TopUpRankListRewardPanel/bgImg/ruleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,61},{0,522},{0,481},{0,542}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="每日23点50分自动发送奖励到邮箱" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TopUpRankListRewardPanel/bgImg/closeBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,439},{0,5},{0,496},{0,62}}" />
+                <Property Name="Image" Value="set:topUpRankList image:CloseBtn" />
+            </Window>
+            <Window Name="TopUpRankListRewardPanel/bgImg/noRankTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,346},{0,493},{0,426},{0,513}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="未上榜" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFaaaaaa" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

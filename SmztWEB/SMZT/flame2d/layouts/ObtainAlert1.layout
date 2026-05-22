@@ -1,0 +1,88 @@
+<GUILayout>
+    <Window Name="ObtainAlert1" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,334},{0,183}}" />
+        <Property Name="Text" Value="获得新道具" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="ObtainAlert1/prop" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,39},{0,29},{0,87},{0,77}}" />
+            <Property Name="Image" Value="set:skin image:GridBG" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="ObtainAlert1/desc1Txt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,116},{0,87},{0,323},{0,104}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="使用后立刻获得1000元气" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ffffffff" />
+            <Property Name="VertFormatting" Value="" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="ObtainAlert1/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,110},{0,320},{0,111}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="ObtainAlert1/descTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,117},{0,29},{0,271},{0,53}}" />
+            <Property Name="Font" Value="songti_18_strengh" />
+            <Property Name="Text" Value="九转还魂丹" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFcc43ff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="ObtainAlert1/OrangeButton" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,113},{0,117},{0,200},{0,140}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="立即使用" />
+        </Window>
+        <Window Name="ObtainAlert1/DefaultWindow11" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="ObtainAlert1/DefaultWindow11/reduction" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,118},{0,50},{0,139},{0,71}}" />
+                <Property Name="Image" Value="set:skin image:reductionBtn" />
+            </Window>
+            <Window Name="ObtainAlert1/DefaultWindow11/smallbackground" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,140},{0,51},{0,210},{0,69}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="ObtainAlert1/DefaultWindow11/smallbackground/number" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,0},{0,61},{0,18}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="20" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ObtainAlert1/DefaultWindow11/max" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,232},{0,50},{0,273},{0,71}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ObtainAlert1/DefaultWindow11/add" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,211},{0,50},{0,232},{0,71}}" />
+                <Property Name="Image" Value="set:skin image:addBtn" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

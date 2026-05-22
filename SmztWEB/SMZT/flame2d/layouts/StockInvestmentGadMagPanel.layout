@@ -1,0 +1,453 @@
+<GUILayout>
+    <Window Name="StockInvestmentGadMagPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,692},{0,505}}" />
+        <Property Name="GlyphImage" Value="set:stockInvestment image:title" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="StockInvestmentGadMagPanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,674},{0,454}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="StockInvestmentGadMagPanel/bg/diSp" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,344},{0,673},{0,454}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,671},{0,80}}" />
+                    <Property Name="Image" Value="set:skin image:RenderBg2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/stockNameSp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,6},{0,199},{0,29}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/stockNameSp/stockNameMarkImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,7},{0,14},{0,16}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/stockNameSp/stockNameTitleTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,21},{0,0},{0,91},{0,23}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="股票名称" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/stockNameSp/stockNameTxtBg" Type="GuiLook/TextBG">
+                            <Property Name="UnifiedAreaRect" Value="{{0,91},{0,0},{0,195},{0,23}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/stockNameSp/stockNameTxtBg/stockNameTxt" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,0},{0,103},{0,23}}" />
+                                <Property Name="Font" Value="songti_14_strengh" />
+                                <Property Name="Text" Value="天上人间" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FFcc43ff" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/tradingPriceSp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,29},{0,199},{0,52}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/tradingPriceSp/tradingPriceMarkImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,7},{0,14},{0,16}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/tradingPriceSp/tradingPriceTitleTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,21},{0,0},{0,91},{0,23}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="成交价格" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/tradingPriceSp/tradingPriceTxtBg" Type="GuiLook/TextBG">
+                            <Property Name="UnifiedAreaRect" Value="{{0,91},{0,0},{0,194},{0,23}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/tradingPriceSp/tradingPriceTxtBg/tradingPriceTxt" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,0},{0,103},{0,23}}" />
+                                <Property Name="Font" Value="songti_14_strengh" />
+                                <Property Name="Text" Value="540" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF85f500" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/saleNumSp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,52},{0,199},{0,75}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/saleNumSp/saleMarkImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,7},{0,14},{0,16}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/saleNumSp/saleTitleTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,21},{0,0},{0,91},{0,23}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="卖出数量" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/saleNumSp/saleTxtBg" Type="GuiLook/TextBG">
+                            <Property Name="UnifiedAreaRect" Value="{{0,91},{0,0},{0,194},{0,23}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/saleNumSp/saleTxtBg/saleTxt" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,0},{0,103},{0,23}}" />
+                                <Property Name="Font" Value="songti_14_strengh" />
+                                <Property Name="Text" Value="54" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF85f500" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/holdSp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,217},{0,52},{0,412},{0,75}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/holdSp/holdMarkImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,7},{0,14},{0,16}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/holdSp/holdTitleTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,21},{0,0},{0,91},{0,23}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="持有股数" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/holdSp/holdTxtBg" Type="GuiLook/TextBG">
+                            <Property Name="UnifiedAreaRect" Value="{{0,91},{0,0},{0,194},{0,23}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/holdSp/holdTxtBg/holdTxt" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,0},{0,102},{0,23}}" />
+                                <Property Name="Font" Value="songti_14_strengh" />
+                                <Property Name="Text" Value="400" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF85f500" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/amplitudeSp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,217},{0,29},{0,412},{0,52}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/amplitudeSp/amplitudeMarkImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,7},{0,14},{0,16}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/amplitudeSp/amplitudeTitleTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,21},{0,0},{0,91},{0,23}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="涨跌幅度" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/amplitudeSp/amplitudeTxtBg" Type="GuiLook/TextBG">
+                            <Property Name="UnifiedAreaRect" Value="{{0,91},{0,0},{0,194},{0,23}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/amplitudeSp/amplitudeTxtBg/amplitudeTxt" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,0},{0,102},{0,23}}" />
+                                <Property Name="Font" Value="songti_14_strengh" />
+                                <Property Name="Text" Value="30%" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FFff0000" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/buyBtn" Type="GlossySerpent/OrangeButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,437},{0,17},{0,518},{0,40}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="买入" />
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/saleBtn" Type="GlossySerpent/BlueButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,437},{0,49},{0,518},{0,72}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="卖出" />
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/checkBtnBtn" Type="GuiLook/DefaultImageButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,537},{0,16},{0,659},{0,73}}" />
+                        <Property Name="Image" Value="set:stockInvestment image:trend" />
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/returnBtn" Type="GuiLook/DefaultImageButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,537},{0,16},{0,659},{0,73}}" />
+                        <Property Name="Image" Value="set:stockInvestment image:return" />
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/stockInformationSp/gangLinkBtn$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,217},{0,6},{0,311},{0,29}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="StockInvestmentGadMagPanel/bg/diSp/footerSp" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,79},{0,671},{0,108}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:RenderNormalBgLeft" />
+                    <Property Name="LeftOffset" Value="46" />
+                    <Property Name="RightImage" Value="set:skin image:RenderNormalBgRight" />
+                    <Property Name="CenterImage" Value="set:skin image:RenderNormalBgCenter" />
+                    <Property Name="RightOffset" Value="46" />
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/footerSp/cumulativeTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,24},{0,5},{0,94},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="累计盈利：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF00baff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/footerSp/cumulativeTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,116},{0,5},{0,217},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="10000" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/footerSp/stockFaceTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,364},{0,5},{0,470},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="10000" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/footerSp/stockFaceTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,272},{0,5},{0,342},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="股票面值：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF00baff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/footerSp/availableTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,504},{0,5},{0,574},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="绑定元宝：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF00baff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/footerSp/availableTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,574},{0,5},{0,670},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="10000" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/footerSp/tongQianImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,342},{0,6},{0,363},{0,22}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:yuanbaoLock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="StockInvestmentGadMagPanel/bg/diSp/footerSp/tongQianImg0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,94},{0,6},{0,115},{0,22}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:yuanbaoLock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,674},{0,344}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList/StaticText" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="股票代码" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList2" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,83},{0,0},{0,166},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList2/StaticText2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="股票名称" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList3" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,166},{0,0},{0,233},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList3/StaticText3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,67},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="上轮价格" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList4" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,233},{0,0},{0,300},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList4/StaticText4" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,67},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="现价" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList5" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,300},{0,0},{0,367},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList5/StaticText5" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,67},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="涨跌" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList6" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,367},{0,0},{0,434},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList6/StaticText6" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,67},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="成本价" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList7" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,434},{0,0},{0,501},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList7/StaticText7" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,67},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="持有数量" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList8" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,501},{0,0},{0,673},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/HeaderList8/StaticText8" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,172},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="董事长" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="StockInvestmentGadMagPanel/bg/listTitleSp/listSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,28},{0,673},{0,343}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="StockInvestmentGadMagPanel/bg/chartsSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,674},{0,343}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

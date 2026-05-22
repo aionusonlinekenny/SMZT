@@ -1,0 +1,2003 @@
+<root>
+	<!--世界地图角色所在位置-->
+	<worldMap>
+		<nowmap fileName="xinshoucun" mapid="101" x="214" y="58"/>
+		<nowmap fileName="panlongshandao" mapid="102" x="215" y="129"/>
+		<nowmap fileName="tianmuding" mapid="103" x="430" y="100"/>
+		<nowmap fileName="mihuanxianjing" mapid="104" x="105" y="96"/>
+		<nowmap fileName="shenloucheng" mapid="105" x="337" y="111"/>
+		<nowmap fileName="yunmengze" mapid="106" x="194" y="177"/>
+		<nowmap fileName="buzhoushan" mapid="107" x="344" y="307"/>
+		<nowmap fileName="liuboshan" mapid="108" x="132" y="311"/>
+		<nowmap fileName="niaoyulin" mapid="109" x="397" y="60"/>
+		<nowmap fileName="fengyutai" mapid="110" x="277" y="326"/>
+		<nowmap fileName="kuafumu" mapid="111" x="246" y="376"/>
+		<nowmap fileName="guanaixiadao" mapid="112" x="529" y="327"/>
+		<nowmap fileName="bianjingluanyu" mapid="113" x="591" y="257"/>
+	</worldMap>
+	<!--不同阵营显示红名的地图-->
+	<redNameMap>
+		<map fileName="duodingzhan" showRedName="true"/>
+		<map fileName="yuehecun" showRedName="false"/>
+		<map fileName="shenloucheng" showRedName="false"/>
+		<map fileName="shenshouhuanjing" showRedName="false"/>
+		<map fileName="panlongshandao" showRedName="false"/>
+		<map fileName="mixianhuanjing" showRedName="false"/>
+		<map fileName="shenyihuanjing" showRedName="false"/>
+		<map fileName="tianmuding" showRedName="false"/>
+		<map fileName="niaoyulin" showRedName="false"/>
+		<map fileName="yunmengze" showRedName="false"/>
+		<map fileName="guanaixiadao" showRedName="true"/>
+		<map fileName="buzhoushan" showRedName="true"/>
+		<map fileName="bianjingluanyu" showRedName="true"/>
+		<map fileName="heifengdong" showRedName="true"/>
+		<map fileName="shendicheng" showRedName="false"/>
+		<map fileName="liuboshan" showRedName="true"/>
+		<map fileName="nanmanbuluo" showRedName="true"/>
+		<map fileName="gonggongtai" showRedName="true"/>
+		<map fileName="shennuxingtai" showRedName="true"/>
+		<map fileName="shuijingtian" showRedName="true"/>
+		<map fileName="ceshi" showRedName="true"/>
+		<map fileName="yingchoujian" showRedName="true"/>
+		<map fileName="yijianting" showRedName="true"/>
+		<map fileName="daji" showRedName="false"/>
+		<map fileName="dizangwang" showRedName="false"/>
+		<map fileName="yanyumengjing" showRedName="false"/>
+		<map fileName="zhenyingsai" showRedName="true"/>
+		<map fileName="xianlingdao" showRedName="true"/>
+		<map fileName="qunxianhui" showRedName="true"/>
+		<map fileName="zyzdz" showRedName="true"/>
+	</redNameMap>
+	<!--技能客户端统一延时300毫秒-->
+	<skillTimeout time="300"/>
+	<!--1 大喇叭ID,2 昊天星盘ID-->
+	<propId id1="1000201" id2="1000063"/>
+	
+ 	<face>
+		<faceItem id="1" tip="爱心"/>
+		<faceItem id="2" tip="傲慢"/>
+		<faceItem id="3" tip="鄙视"/>
+		<faceItem id="4" tip="闭嘴"/>
+		<faceItem id="5" tip="便便"/>
+		<faceItem id="6" tip="吃饭"/>
+		<faceItem id="7" tip="大哭"/>
+		<faceItem id="8" tip="得意"/>
+		<faceItem id="9" tip="凋谢"/>
+		<faceItem id="10" tip="发怒"/>
+		<faceItem id="11" tip="惊恐"/>
+		<faceItem id="12" tip="惊讶"/>
+		<faceItem id="13" tip="可爱"/>
+		<faceItem id="14" tip="困了"/>
+		<faceItem id="15" tip="冷汗"/>
+		<faceItem id="16" tip="玫瑰"/>
+		<faceItem id="17" tip="呕吐"/>
+		<faceItem id="18" tip="撇嘴"/>
+		<faceItem id="19" tip="钱袋"/>
+		<faceItem id="20" tip="强"/>
+		<faceItem id="21" tip="糗大了"/>
+		<faceItem id="22" tip="鸡蛋"/>
+		<faceItem id="23" tip="弱"/>
+		<faceItem id="24" tip="色"/>
+		<faceItem id="25" tip="衰"/>
+		<faceItem id="26" tip="太阳"/>
+		<faceItem id="27" tip="微笑"/>
+		<faceItem id="28" tip="委屈"/>
+		<faceItem id="29" tip="吻"/>
+		<faceItem id="30" tip="星星"/>
+		<faceItem id="31" tip="疑问"/>
+		<faceItem id="32" tip="月亮"/>
+		<faceItem id="33" tip="晕"/>
+		<faceItem id="34" tip="再见"/>
+		<faceItem id="35" tip="龇牙"/>
+		<faceItem id="36" tip="鬼脸"/>
+	</face>
+	<!-- 聊天显示时间 3000毫秒-->
+	<chatTimeout time="1000"/>
+	<!-- 猪脚动作混合时间 300毫秒-->
+	<roleAniCrossTime time="300"/>
+	<!-- id:关联模块Id funcnaem:功能名称 funcTipsText:功能tips 描述-->
+	<wrpPearl>
+		<item>
+			<table id="66" fncname="翅膀修炼" funcTipsText="提升翅膀的等级" isRelevanceFunc="close" relevanceId="0"/>
+			<table id="30" fncname="器灵启灵" funcTipsText="器灵启灵" isRelevanceFunc="close" relevanceId="0"/>
+		</item>
+	</wrpPearl>
+	<sitDown sit="180000" sitPlusPropId="1000367" sitPlusLevel="0" vipSitLevel="4">
+		<!--name对应sceneinfo.xml配的地图name，addRate为增益百分比，打坐区域为256-->
+		<map name="yuehecun" addRate="120"/>
+		<map name="shenloucheng" addRate="130"/>
+		<map name="shendicheng" addRate="130"/>
+	</sitDown>
+	<Viptranscript>
+		<!--每日副本增加次数-->
+		<info level="0" time="0"/>
+		<info level="1" time="0"/>
+		<info level="2" time="1"/>
+		<info level="3" time="1"/>
+		<info level="4" time="2"/>
+		<info level="5" time="2"/>
+		<info level="6" time="3"/>
+		<info level="7" time="3"/>
+		<info level="8" time="0"/>
+		<info level="9" time="0"/>
+		<info level="10" time="0"/>
+	</Viptranscript>
+	<!--采集怪关联任务配置-->
+	<!--npcid: 采集怪npcid-->
+	<!--attachtask: 关联任务 ";"隔开任务 ","隔开主任务id与子任务id-->
+	<gathernpc>
+	    <item npcid="100021" alive="1" attachtask="11023,1,1"/>
+	    <item npcid="100060" alive="1" attachtask="11013,3,1"/>
+		<item npcid="100064" alive="1" attachtask="11033,3,1"/>
+		<item npcid="100072" alive="1" attachtask="11035,1,1;11054,3,1"/>
+		<item npcid="100086" alive="1" attachtask="11046,1,1"/>
+		<item npcid="100095" alive="1" attachtask="11051,2,1;19004,4,1"/>
+		<item npcid="100112" alive="1" attachtask="19006,3,1"/>
+		<item npcid="100127" alive="1" attachtask="11054,3,1"/>
+		<item npcid="100120" alive="1" attachtask="11056,2,1"/>
+		<item npcid="100124" alive="1" attachtask="11062,3,1"/>
+		<item npcid="100126" alive="1" attachtask="11065,3,1"/>
+		<item npcid="100131" alive="1" attachtask="11070,4,1"/>
+		<item npcid="100137" alive="1" attachtask="11074,2,1"/>
+		<item npcid="100138" alive="1" attachtask="11074,3,1"/>
+		<item npcid="100139" alive="1" attachtask="11075,3,1"/>
+		<item npcid="100147" alive="1" attachtask="11084,3,1"/>
+		<item npcid="100148" alive="1" attachtask="11085,3,1"/>
+		<item npcid="100152" alive="1" attachtask="11088,2,1"/>
+		<item npcid="100153" alive="1" attachtask="11088,4,1"/>
+		<item npcid="100179" alive="1" attachtask="11098,2,1"/>
+		<item npcid="100184" alive="1" attachtask="11102,3,1"/>
+		<item npcid="100186" alive="1" attachtask="11104,4,1"/>
+		<item npcid="100187" alive="1" attachtask="11104,5,1"/>
+		<item npcid="100192" alive="1" attachtask="11110,2,1"/>
+		<item npcid="100197" alive="1" attachtask="11112,2,1"/>
+		<item npcid="100198" alive="1" attachtask="11112,3,1"/>
+		<item npcid="100213" alive="1" attachtask="11121,4,1"/>
+		<item npcid="100227" alive="1" attachtask="11129,4,1"/>
+		<item npcid="100229" alive="1" attachtask="11130,4,1"/>
+		<item npcid="100235" alive="1" attachtask="11133,3,1"/>
+        <item npcid="100253" alive="1" attachtask="11146,4,1;11151,4,1"/>
+        <item npcid="100260" alive="1" attachtask="11151,5,1"/>
+        <item npcid="100265" alive="1" attachtask="11155,2,1"/>
+		<item npcid="100267" alive="1" attachtask="11050,2,1"/>
+		<item npcid="100283" alive="1" attachtask="11165,5,1"/>
+
+		<!--龙宫宝藏采集-->
+		<item npcid="110013" alive="1" teamshare="0" attachtask=""/>
+		<item npcid="110014" alive="1" teamshare="0" attachtask=""/>
+		<item npcid="110015" alive="1" teamshare="0" attachtask=""/>		
+		<!--封神降临采集-->
+		<item npcid="80010" alive="1" teamshare="0" attachtask=""/>
+		<item npcid="80011" alive="1" teamshare="0" attachtask=""/>
+	</gathernpc>
+	<!-- 物品品质颜色-->
+	<PropColor color0="0xFFEEEEEE" color1="0xFF00FF33" color2="0xFF00DFFF" color3="0xFFFF00FF" color4="0xFFF17916"/>
+	<!-- TIPS框的品质混合颜色-->
+	<PropTipsBoardColor color0="0x88DDDDDD" color1="0x8800DD00" color2="0xFF00AFFF" color3="0xDDFF33FF" color4="0xddFF9C00"/>
+	<!-- 任务状态 颜色 0 未接 1 进行中 2 可交付 3 完成-->
+	<taskStateColor color0="0xFFa5f2f8" color1="0xFFa5f2f8" color2="0xFFa5f2f8" color3="0xFFa5f2f8"/>
+	<!-- 任务名称 颜色  0 主线 1 活动 2 支线 3 每日 4 英雄-->
+	<taskTraceStateColor color0="0xFFF3FF00" color1="0xFFF3FF00" color2="0xFFF3FF00" color3="0xFFF3FF00" color4="0xFFF3FF00"/>
+	<!-- 头顶信息颜色  0 部族职位 1 帮派名称 2 帮派职位 3 玩家称号 4玩家名称 5 NPC名称 6 怪物名称 7 精英怪物  8 黄金类型  9 大Boss类型 10 紫色BOSS 11 宠物名字颜色 12 宠物玩家名字颜色 13 队友名字颜色
+			 14 召唤出来的任务怪 15 区服名称-->
+	<!--beauty:美人头顶名字配置 (每一阶的颜色)-->
+	<headColor color0="0xFF3399" color1="0x00FF33" color2="0x3980F4" color3="0xFFFF00" color4="0xFF00FF" color5="0x00FF00" color6="0xFFFF00" color7="0x7FFF00" color8="0x00FFF6" color9="0xFF00FF" color10="0xff0000" color11="0xC601C8" color12="0xFF66CC" color13="0x80EA6E" color14="0xFF0000" color15="0xABF0FF">
+		<car color="0xFFFFFF" label="花车"/>
+		<car color="0x00FF33" label="花车"/>
+		<car color="0x3980F4" label="花车"/>
+		<car color="0xA020F0" label="花车"/>
+		<car color="0xFFE384" label="花车"/>
+		<beauty color="0xFFc8f8e2" label="美人一阶"/>
+		<beauty color="0xFFc8f8e2" label="美人一阶"/>
+		<beauty color="0xFF03fb83" label="美人二阶"/>
+		<beauty color="0xFF7fa8fb" label="美人三阶"/>
+		<beauty color="0xFFfb0afe" label="美人四阶"/>
+		<beauty color="0xFFe5ed01" label="美人五阶"/>
+		<beauty color="0xFFe5ed01" label="美人六阶"/>
+		<beauty color="0xFFdab904" label="美人七阶"/>
+		<beauty color="0xFFdab904" label="美人八阶"/>
+	</headColor>
+	<!-- 部族颜色   -->
+	<raceColor color0="0xFF9900" color1="0x0BB2FF" color2="0x00FF00"/>
+	
+	<!-- 电视颜色 字体大小  0 电视默认颜色 1 玩家名称 2 装备 3 种族 4帮派 5 器灵 6 NPC 7 等级 8称号 9境界 14绿钻VIP 15蓝钻VIP 16紫钻VIP-->	
+	<!-- <TVColor timeout="5000" fontSize="16" color0="65331" color1="0xF9C378" color2="0xF9C378" color3="0xFF00FFFF" color4="0x00F3FF" color5="0x00F3FF" color6="0xF9C378" color7="0xF9C378" color8="0xF9C378" color9="0xF9C378" color10="0xF9C378" color11="0xF9C378" color12="0xF9C378" color13="0xF9C378" color14="0xF9C378" color15="0xF9C378" color16="0xF9C378" color17="0xF9C378"/>-->
+	
+	
+	<!-- C：阵营 U：玩家 P:官职 A:活动 N:数字 M：怪物 S：特殊（VIP或坐骑等） I：道具(P0-P5,0为白板品质)  D:地图   G:通用色  -->
+	<TVColor label="C" colour="0xFF9097fb"/>
+	<TVColor label="U" colour="0xFF9097fb"/>
+	<TVColor label="P" colour="0xFFfa0410"/>
+	<TVColor label="A" colour="0xFFfa0410"/>
+	<TVColor label="N" colour="0xFFfa0410"/>
+	<TVColor label="M" colour="0xFFc308c1"/>
+	<TVColor label="S" colour="0xFFf0ff02"/>
+	<TVColor label="Q0" colour="0xFFFFFFFF"/>
+	<TVColor label="Q1" colour="0xFF00ff33"/>
+	<TVColor label="Q2" colour="0xFF00dfff"/>
+	<TVColor label="Q3" colour="0xFFff00ff"/>
+	<TVColor label="Q4" colour="0xFFff7300"/>	
+	<TVColor label="Q5" colour="0xFFfa0410"/>	
+	<TVColor label="D" colour="0xFFfcc063"/>
+	<TVColor label="G" colour="0xFF6bfa82"/>
+
+	<!-- C：阵营 U：玩家 P:官职 A:活动 N:数字 M：怪物 S ：特殊（VIP或坐骑等）  D:地图   G:通用色 L:连接 SYS：系统-->
+	<SysColor label="C" colour="0xFFc1e0cb"/>
+	<SysColor label="MZ" colour="0xFF6d9ff2"/>
+	<SysColor label="SZ" colour="0xFFc5cc56"/>
+	<SysColor label="LZ" colour="0xFF53c4dc"/>
+	<SysColor label="U" colour="0xFF08ff59"/>
+	<SysColor label="P" colour="0xFFfa0410"/>
+	<SysColor label="A" colour="0xFFfa0410"/>
+	<SysColor label="N" colour="0xFFfa0410"/>
+	<SysColor label="M" colour="0xFFc308c1"/>
+	<SysColor label="S" colour="0xFFc1e0cb"/>	
+	<SysColor label="D" colour="0xFF65e790"/>
+	<SysColor label="G" colour="0xFFc1e0cb"/>
+	<SysColor label="L" colour="0xFF69c8fa"/>
+	<SysColor label="Q0" colour="0xFFFFFFFF"/>
+	<SysColor label="Q1" colour="0xFF00ff33"/>
+	<SysColor label="Q2" colour="0xFF00dfff"/>
+	<SysColor label="Q3" colour="0xFFff00ff"/>
+	<SysColor label="Q4" colour="0xFFff7300"/>	
+	<SysColor label="Q5" colour="0xFFfa0410"/>	
+	<SysColor label="SYS" colour="0xFFc0c61e"/>
+	<SysColor label="Q6" colour="0xFFee4055"/>
+	
+	
+	<!-- 聊天设置 欢迎语 最大道具展示数量 privateChatLv 私聊等级 winChatLv 窗口聊天等级 -->
+	<chat welcome="欢迎进入游戏" maxChatShowItem="5" privateChatLv="25" winChatLv="25" speakerId ="1000201" testURL="http://bbs.37.com/index.php?gid=2579" myURL="http://hdzy.37.com/"/>
+	<!-- 物品特效设置 物品品质特帧速（1-30越大越快） X速度 初始Y速度  上升加速度   下降加速度  上升缩放增量  下降缩放增量 -->
+	<propEffect frameRate="2" speed_x="5.2" speed_y="-13" upSS="0.8" downSS="1.4" upScale="0.1" downScale="0.08" offsetX="-67" offsetY="186"/>
+	<!-- 关闭特效 透明和缩放每帧增量   特效持续时间（毫秒）  特效运动曲线函数-->
+	<!-- 曲线函数: -->
+	<closeEffect alpha="0.16" scale="0.01" timeout="1000" timeout1="400" transition="easeincircle" transition1="easeinoutback" transition2="easeincircle" scaleNum="1.2" offset="6"/>
+	<tips>
+		<tipItem tip="M键可以打开大地图。"/>
+		<tipItem tip="L键可以打开任务列表。"/>
+		<tipItem tip="双击星力技图标，可以设置自动使用此星力技。"/>
+		<tipItem tip="打坐中使用悟道，可以获得更多收益。"/>
+		<tipItem tip="成为VIP可以增加更多的收益。"/>
+		<tipItem tip="使用越高等的翅膀修炼方式，翅膀等级提升的越快。"/>
+		<tipItem tip="进入练功校场副本，可以获得更多的经验奖励。"/>
+		<tipItem tip="通关财神秘境，可以获得大量的银子奖励。"/>
+		<tipItem tip="多余的装备可用于提高魂甲修为。"/>
+		<tipItem tip="帮派中可以学习到强力的被动技能。"/>
+		<tipItem tip="封印器灵可以给人物带来大量的属性奖励。"/>
+		<tipItem tip="扩充背包空间，可容纳更多的道具。"/>
+		<tipItem tip="进化宠物，可使宠物具有更强的属性和更酷的外形。"/>
+		<tipItem tip="卓越品质以上的武器会有绚丽的光焰表现。"/>
+	</tips>
+	<!-- 右下角提示信息配置 -->
+	<notifies color0="0xFFFFFF" color1="0xFFFF00" color2="0xFF00FF">
+		<notify id="0" title="测试提示" name="" desc="测试提示测试提示1" icon="100000.jpg" script="0" btn1="确定" btn2="取消"/>
+		<notify id="1" title="邀请组队" name="" desc="邀请你加入队伍" icon="10010.jpg" script="0" btn1="同意" btn2="拒绝"/>
+		<notify id="2" title="申请入队" name="" desc="申请加入你的队伍" icon="10010.jpg" script="0" btn1="同意" btn2="拒绝"/>
+		<notify id="3" title="宠物技能领悟" name="" desc="获得技能" icon="100000.jpg" script="0" btn1="同意" btn2="拒绝"/>
+		<notify id="4" title="交易申请" name="" desc="邀请你进行交易" icon="10010.jpg" script="0" btn1="同意" btn2="拒绝"/>
+		<notify id="5" title="PK消息" name="" desc="" icon="10010.jpg" script="0" btn1="确定" btn2="取消"/>
+		<notify id="6" title="温馨提示" name="" desc="你的包裹不堪重负，请尽快清理背包" icon="999123.jpg" script="0" btn1="整理" btn2="魂甲"/>
+		<notify id="7" title="生命补给耗尽" name="" desc="生命补给耗尽" icon="10010.jpg" script="0" btn1="购买" btn2="拒绝"/>
+		<notify id="8" title="法力补给耗尽" name="" desc="生命补给耗尽" icon="10010.jpg" script="0" btn1="购买" btn2="拒绝"/>
+		<notify id="9" title="帮派申请" name="" desc="生命补给耗尽" icon="10010.jpg" script="0" btn1="同意" btn2="拒绝"/>
+		<notify id="10" title="帮派邀请" name="" desc="生命补给耗尽" icon="10010.jpg" script="0" btn1="同意" btn2="拒绝"/>
+		<notify id="11" title="天魔降临（活动）" name="" desc="七大天魔降临边境乱域，均携有重宝，请前往绞杀！" icon="112.jpg" script="0" btn1="自动前往" btn2="取消"/>
+		<notify id="12" title="群仙会（活动）" name="" desc="群仙会活动开启，热血PK，超爽对战！" icon="111.jpg" script="0" btn1="自动前往" btn2="取消"/>
+		<notify id="13" title="乱战（活动）" name="" desc="每天两次的大量玩家无组队乱斗，参加有奖！连斩有奖！三甲有奖！" icon="111.jpg" script="0" btn1="现在查看" btn2="关闭"/>
+		<notify id="14" title="地榜任务" name="" desc="您刚刚完成了一个地榜任务，现在可以去地榜仙尊处领取任务奖励了！是否立即前往？" icon="116.jpg" script="0" btn1="现在就去" btn2="取消"/>
+	</notifies>
+	<!-- 延时： 打坐30秒  人物和NPC创建延时-->
+	<timeout createTimeout="300"/>
+	<!-- 国家职权名称 -->
+	<countryJobAbilities>
+		<item id="1" name="职位任命"/>
+		<item id="2" name="禁言族员"/>
+		<item id="3" name="召集族员"/>
+		<item id="4" name="双倍经验"/>
+		<item id="5" name="万妖之乱"/>
+		<item id="6" name="阵营公告"/>
+	</countryJobAbilities>
+	<!-- name 国家职位名称 abilitys 对应上面的职权 color 官职颜色 money 工资 buffid 对应BUFF的id propdesc 属性加成描述-->
+	<countryJobs>
+		<item id="1" name="族长" abilities="1,2,3,4,5,6" color="0xFF9C00" money="100000" buffid="100001" propdesc="攻击+2000"/>
+		<item id="2" name="统领" abilities="3,4,5,6" color="0xCE58FF" money="50000" buffid="100002" propdesc="攻击+1500"/>
+		<item id="3" name="军师" abilities="3,4,5,6" color="0xCE58FF" money="50000" buffid="100005" propdesc="防御+1500"/>
+		<item id="4" name="参将" abilities="6" color="0x00AEFF" money="30000" buffid="100003" propdesc="攻击+1000"/>
+		<item id="5" name="谋士" abilities="6" color="0x00AEFF" money="30000" buffid="100006" propdesc="防御+1000"/>
+		<item id="6" name="偏将" abilities="6" color="0x00C503" money="20000" buffid="100004" propdesc="攻击+500"/>
+		<item id="7" name="参赞" abilities="6" color="0x00C503" money="20000" buffid="100007" propdesc="防御+500"/>
+	</countryJobs>
+	<!-- 补气补血设置   最小HP补给值  最小MP补给值 -->
+	<hpmap minHp="1000" minMp="1000"/>
+	<!-- 贩卖系数 鉴定价格 当背包已开启格子剩余格数不足N时弹出提示界面 多少间隔时间内不再弹 -->
+	<prop sealK="0.4" testMoney="100" bagnotenoughtips="3" bagnotenoughtipstime="30">
+		<!-- 道具品质动画的配置 size 动画的尺寸 offsetx 中心x偏移值 负值表示向左偏移 offsety 中心y偏移值 speed 播放速度每秒多少帧-->
+		<anismall size="60" offsetx="-1" offsety="-1" speed="11"/><!--绿-->
+		<anismall size="60" offsetx="-1" offsety="-1" speed="11"/><!--蓝-->
+		<anismall size="60" offsetx="-1" offsety="-1" speed="11"/><!--紫-->
+		<anismall size="60" offsetx="-1" offsety="-1" speed="11"/><!--橙-->
+		<anibig size="100" offsetx="-2" offsety="-1" speed="15"/>
+		<anibig size="100" offsetx="-2" offsety="-1" speed="15"/>
+		<anibig size="100" offsetx="-2" offsety="-1" speed="15"/>
+		<anibig size="100" offsetx="-2" offsety="-1" speed="15"/>
+		<!-- 物品分类 -->
+		<type label="装备">1,20,29,24</type>
+		<type label="药品">2,3,4,5,10,11,16</type>
+		<type label="材料">9</type>
+		<type label="道具">6,7,8,12,13,14,15,17,18,19,21,22,23,24,25,26,28,30,31,32,33,34,35,38,39,40,41,42,43</type>
+		<typeLabel>无,装备,药水,药水,药水,药水,任务道具,传送道具,增值道具,材料,宠物持续回血,宠物瞬间回血,宠物捕捉道具,器灵,法器,礼包,自动瞬间恢复,非拾取类道具,藏宝图,金钱,宠物装备,礼包类道具,经验道具,奇珍异宝,坐骑道具,天赐奇珍,幻宠道具,无,宠物道具,时装,战纹材料,竞技礼包,法宝,绝版宝物,待定,宝石,三六,三七,特殊道具,待定,超值礼包,限时钻石,技能书,美人钻石</typeLabel>
+	</prop>
+	<!--组队加成配置-->
+	<teamMemberAddExp>5</teamMemberAddExp>
+	<teamMemberAddHp>3</teamMemberAddHp>
+	<!-- 新功能提示 -->
+	<modulesTips>
+		<item id="42" level="8" name="修为" guideId="10001"/>
+		<item id="1020" level="8" name="肉身修炼" guideId="10002"/>
+		<item id="101" level="10" name="打坐修炼" guideId="10024"/>
+		<item id="20" level="12" name="宠物" guideId="10003"/>
+		<item id="66" level="13" name="翅膀" guideId="10004"/>
+		<item id="1021" level="1" name="魂甲修炼" guideId="10005"/>
+		<item id="43" level="27" name="仙人指路" guideId="10006"/>
+		<item id="39" level="40" name="世界BOSS" guideId="10025"/>
+		<item id="22" level="1" name="帮派" guideId="10008"/>
+		<item id="40" level="25" name="悬赏" guideId="10007"/>
+		<item id="1022" level="1" name="境界修炼" guideId="10009"/>
+		<item id="16" level="30" name="装备铸造" guideId="10010"/>
+		<!--item id="1001" level="31" name="道具合成" guideId="10011"/-->
+		<item id="48" level="29" name="祭天" guideId="10012"/>
+		<item id="41" level="150" name="法器" guideId="10013"/>
+		<item id="1023" level="1" name="星辰修炼" guideId="10014"/>
+		<item id="30" level="20" name="器灵" guideId="10015"/>
+		<item id="1001" level="30" name="装备精炼" guideId="10016"/>
+		<item id="1002" level="30" name="装备强化" guideId="10017"/>
+		<item id="1003" level="30" name="装备品阶" guideId="10018"/>
+		<item id="1004" level="30" name="装备洗炼" guideId="10019"/>
+		<item id="1005" level="50" name="装备升级" guideId="10020"/>
+		<item id="1006" level="40" name="装备打孔" guideId="10021"/>
+		<item id="1007" level="40" name="宝石镶嵌" guideId="10022"/>
+		<item id="1008" level="40" name="宝石摘除" guideId="10023"/>
+		<item id="71" level="1" name="请神" guideId="10026"/>
+		<item id="64" level="50" name="五行" guideId="10027"/>
+		<item id="92" level="25" name="天榜" guideId="10028"/>
+		<item id="56" level="35" name="搜神谱" guideId="10029"/>
+		<item id="122" level="25" name="帮派聊天" guideId="10030"/>
+		<item id="123" level="45" name="坐骑" guideId="10031"/>
+		<item id="158" level="50" name="法宝" guideId="10032"/>
+		<item id="174" level="40" name="鲜花" guideId="10033"/>
+	</modulesTips>
+	<!-- 功能开启配置 
+		id 模块id
+		openid 功能模块索引(见下面定义)
+	-->
+	<!-- 功能模块索引定义
+	enum
+	{
+		FT_EQUIPSOUL = 0,                       // 器灵
+		FT_BODYIMMORTAL = 1,                    // 肉身修为
+		FT_EQUIPIMMORTAL = 2,                   // 魂甲修为
+		FT_STARIMMORTAL = 3,                    // 星辰修为
+		FT_IMMORTAL = 4,                        // 境界修为
+		FT_JITIAN   = 5,                        // 祭天
+		FT_GUILD    = 6,                        // 帮派
+		FT_INVITEGOD = 7,                       // 请神
+		FT_EQUIPREBUILD = 8,                    // 装备铸造
+		FT_AUTOADDPOINT = 9,                    // 开启自动加点
+		FT_FIVEIMMORTAL = 10,                   // 五行修炼
+		FT_TREASUREHUNT = 11,                   // 仙人指路
+		FT_PET = 12,                            // 宠物
+		FT_SWING = 13,                          // 翅膀
+	};
+	 -->
+	<functionOpens>
+		<item id="30" openid="0" name="器灵"/>
+		<item id="57" openid="0" name="启灵"/>
+		<item id="58" openid="0" name="封灵"/>
+		<item id="82" openid="1" name="肉身修为"/>
+		<item id="83" openid="2" name="魂甲修为"/>
+		<item id="84" openid="4" name="境界修为"/>
+		<item id="85" openid="3" name="星辰修为"/>
+		<item id="48" openid="5" name="祭天模块"/>
+		<item id="22" openid="6" name="帮派"/>
+		<item id="71" openid="7" name="请神"/>
+		<item id="16" openid="8" name="锻造"/>
+		<item id="64" openid="10" name="五行修炼"/>
+		<item id="43" openid="11" name="仙人指路"/>
+		<item id="20" openid="12" name="宠物"/>
+		<item id="66" openid="13" name="翅膀"/>
+		<item id="183" openid="35" name="剑阵"/>
+	</functionOpens>
+	<activityTimes>
+		<!-- 活动双倍 fromday 开始日期 today 结束日期 needshowdoubleexp 是否需要显示双倍经验(如果为false，后面填的参数不生效) times 时间段(持续时间必须一致) lasttime 持续时间 needRankResetSuccess 是否需要洗练重置100%成功-->
+		<doubleexp startTime="20130910 00:00:00" endTime="20130910 23:59:59" zoneTimeDelay="0" zoneTime="false" repeatType="0" needshowdoubleexp="true" times="12:30-14:30,18:00-20:00" lasttime="7200" needRankResetSuccess="false" name="等级冲冲冲" tips="9月10号中午12：30-14:30 晚上18：00-20:00，经验翻倍"/>
+		<doubleexp startTime="20130913 00:00:00" endTime="20130913 23:59:59" zoneTimeDelay="0" zoneTime="false" repeatType="0" needshowdoubleexp="false" times="12:30-14:30,18:00-20:00" lasttime="7200" needRankResetSuccess="true" name="庆五一佳节" tips="5月1～5月2号中午12：30-14:30 晚上18：00-20:00，经验翻倍"/>
+		<doubleexp startTime="20130629 00:00:00" endTime="20130629 23:59:59" zoneTimeDelay="0" zoneTime="false" repeatType="0" needshowdoubleexp="false" times="12:30-14:30,18:00-20:00" lasttime="7200" needRankResetSuccess="true" name="庆五一佳节" tips="5月1～5月2号中午12：30-14:30 晚上18：00-20:00，经验翻倍"/>
+		<doubleexp startTime="20130720 00:00:00" endTime="20130720 23:59:59" zoneTimeDelay="0" zoneTime="false" repeatType="0" needshowdoubleexp="true" times="12:30-14:30,18:00-20:00" lasttime="7200" needRankResetSuccess="false" name="等级冲冲冲" tips="7月20～7月20号中午12：30-14:30 晚上18：00-20:00，经验翻倍"/>
+	</activityTimes>
+	<!-- 夜间挂机保护 times 开启挂机保护的时间 autowaittime 挂机后等待的时间 -->
+	<nightAutoProtect times="00:00-8:00" autowaittime="300"/>
+	<!-- 小界面上隐藏主界面上功能 -->
+	<!--limitwidth : 限制宽度
+		limitheight: 限制高度
+		winName: ui名字，在UI编辑器查看
+		direct ：方向 0 - 向上移出 1 - 向右移出 2 - 向下移出 3 - 向左移出
+		subui ：是否子ui
+		onlyvisible ：直接消失或者出现，不播动画
+		layout : 请参考module.ini-->
+	<modulesHideInfo limitwidth="1000" limitheight="650">
+		<item winName="TaskTrace" name="任务追踪" direct="1" subui="false" moduleid="9" onlyvisible="false"/>
+		<item winName="WindowsLook/Console" name="聊天" direct="3" subui="false" moduleid="8" onlyvisible="false"/>
+		<item winName="MiniMapRoot" name="小地图" direct="0" subui="false" moduleid="11" onlyvisible="false"/>
+		<item winName="Console" name="控制台" direct="2" subui="false" moduleid="6" onlyvisible="false"/>
+		<item winName="selfHead" name="头像" direct="3" subui="true" moduleid="7" onlyvisible="false"/>
+		<item winName="head/TargetHealth" name="头像" direct="0" subui="true" moduleid="7" onlyvisible="false"/>
+		<item winName="topFunction" name="顶部按钮组" direct="0" subui="false" moduleid="39" onlyvisible="false"/>
+		<item winName="MagicWeaponQuickBar" name="法器快捷栏" direct="2" subui="false" moduleid="75" onlyvisible="false"/>
+		<item winName="CombatPowerWindow" name="战力" direct="3" subui="false" moduleid="63" onlyvisible="false"/>
+		<item winName="beautyHead" name="美人头像" direct="3" subui="false" moduleid="96" onlyvisible="false"/>
+		<item winName="Login7Guide" name="7日登陆引导" direct="0" subui="false" moduleid="92" onlyvisible="false"/>
+		<item winName="PhaseTarget" name="阶段目标" direct="1" subui="false" moduleid="91" onlyvisible="false"/>
+
+	</modulesHideInfo>
+	<!-- 头顶排行榜称号 -->
+	<!--id：
+		10001 , /// 特殊的，神帝
+		10002 , /// 特殊的，灵皇
+		10003 , /// 特殊的，魔尊
+		
+		USTATE_SORT_POWER_1		:int=112,		///	战力排行第一
+		USTATE_SORT_POWER_10	:int=113,		///	战力怕行10
+		USTATE_SORT_SWING_1		:int=116,		///	翅膀排行
+		USTATE_SORT_SWING_10	:int=117,		///	翅膀排行
+		USTATE_SORT_LEVEL_1		:int=120,		///	等级排行第一
+		USTATE_SORT_LEVEL_10	:int=121,		///	等级排行前10
+		USTATE_SORT_MONEY_1		:int=122,		///	财富排行
+		USTATE_SORT_MONEY_10	:int=123,		///	财富排行
+		USTATE_SORT_EQUIP_1		:int=130,		///	装备战力排行第一
+		USTATE_SORT_EQUIP_10	:int=131,		///	装备战力排行前10
+		USTATE_SORT_EQUIP_GEM_1	:int=132,		///	宝石总阶数排行第一
+		USTATE_SORT_EQUIP_GEM_10:int=133,		///	宝石总阶数前10
+		USTATE_TIANTINGFIGHT_1 		:int = 166,	///斗战天庭第一名
+		USTATE_TIANTINGFIGHT_2To5 	:int = 167,	///斗战天庭2-5名
+		USTATE_SORT_HORSE_1		:int=136,		///	坐骑排行第一
+		USTATE_SORT_HORSE_10	:int=137,		///	坐骑排行前10
+		USTATE_SORT_RING_1		:int=138,		///	婚戒排行第一
+		USTATE_SORT_RING_10		:int=139,		///	婚戒排行前10
+		priority 优先级，值越小优先级越高，最多显示4个头衔，优先级值大的被抛弃掉(官员称号不被过滤)，优先级越高称号头顶位置越靠下，相同优先级是替换关系
+		imgid 图片编号
+		imgwidth 图片宽度，大于128就填256，否则就填128
+		imgheight 图片高度，不能超过64
+		imgnum 图片帧数 imgfps 动画播放速度，一秒播放几帧
+		※注:动态称号每帧的高度不能高于32像素
+		
+		斗争天庭:30001-30008
+		封神降魔:40001-40008
+		-->
+	<topTitles>
+		<!-- 官职称号优先级特殊处理 priority别修改 -->
+		<!--神帝-->
+		<item id="10001" priority="1000" imgid="601" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--灵皇-->
+		<item id="10002" priority="1000" imgid="603" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--魔尊-->
+		
+		<item id="10003" priority="1000" imgid="602" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--神族族长-->
+		<item id="10004" priority="1000" imgid="611" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--灵族族长-->
+		<item id="10014" priority="1000" imgid="631" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--魔族族长-->
+		<item id="10024" priority="1000" imgid="621" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		
+		<!--神族统领-->
+		<item id="10005" priority="1000" imgid="612" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--灵族统领-->
+		<item id="10015" priority="1000" imgid="632" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--魔族统领-->
+		<item id="10025" priority="1000" imgid="622" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		
+		<!--神族将军-->
+		<item id="10006" priority="1000" imgid="613" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--灵族将军-->
+		<item id="10016" priority="1000" imgid="633" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--魔族将军-->
+		<item id="10026" priority="1000" imgid="623" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		
+		<!--神族御林军-->
+		<item id="10007" priority="1000" imgid="614" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--灵族御林军-->
+		<item id="10017" priority="1000" imgid="634" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--神族御林军-->
+		<item id="10027" priority="1000" imgid="624" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		
+				<!--斗争天庭-->
+		<!--5人斩-->
+		<item id="30001" priority="1" imgid="30009" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--10人斩-->
+		<item id="30002" priority="1" imgid="30000" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--20人斩-->
+		<item id="30003" priority="1" imgid="30001" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--30人斩-->
+		<item id="30004" priority="1" imgid="30002" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--40人斩-->
+		<item id="30005" priority="1" imgid="30003" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--50人斩-->
+		<item id="30006" priority="1" imgid="30004" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--一骑当千-->
+		<item id="30007" priority="1" imgid="30005" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--混沌战神-->
+		<item id="30008" priority="1" imgid="30006" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		
+		<!--封神降魔-->
+		<!--5人斩-->
+		<item id="40001" priority="1" imgid="30009" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--10人斩-->
+		<item id="40002" priority="1" imgid="30000" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--20人斩-->
+		<item id="40003" priority="1" imgid="30001" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--30人斩-->
+		<item id="40004" priority="1" imgid="30002" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--40人斩-->
+		<item id="40005" priority="1" imgid="30003" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--50人斩-->
+		<item id="40006" priority="1" imgid="30004" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--一骑当千-->
+		<item id="40007" priority="1" imgid="30008" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--混沌战神-->
+		<item id="40008" priority="1" imgid="30007" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		
+		<!--资源争夺战-->
+		<!--5人斩-->
+		<item id="50001" priority="1" imgid="30009" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--10人斩-->
+		<item id="50002" priority="1" imgid="30000" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--20人斩-->
+		<item id="50003" priority="1" imgid="30001" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--30人斩-->
+		<item id="50004" priority="1" imgid="30002" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--40人斩-->
+		<item id="50005" priority="1" imgid="30003" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--50人斩-->
+		<item id="50006" priority="1" imgid="30004" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--一骑当千-->
+		<item id="50007" priority="1" imgid="30007" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--混沌战神-->
+		<item id="50008" priority="1" imgid="30008" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		
+		<!--围剿通天活动-->
+		<!--5人斩-->
+		<item id="60001" priority="1" imgid="30009" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--10人斩-->
+		<item id="60002" priority="1" imgid="30000" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--20人斩-->
+		<item id="60003" priority="1" imgid="30001" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--30人斩-->
+		<item id="60004" priority="1" imgid="30002" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--40人斩-->
+		<item id="60005" priority="1" imgid="30003" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--50人斩-->
+		<item id="60006" priority="1" imgid="30004" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--一骑当千-->
+		<item id="60007" priority="1" imgid="30007" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--混沌战神-->
+		<item id="60008" priority="1" imgid="30008" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		
+		<!--斗战天庭 天庭战神称号-->
+		<item id="166" priority="20" imgid="20001" imgwidth="256" imgheight="64" imgnum="8" imgfps="8"/>
+		<!--斗战天庭 天庭豪杰称号-->
+		<item id="167" priority="30" imgid="20011" imgwidth="256" imgheight="59" imgnum="1" imgfps="0"/>
+		
+		<!--对酒当歌 至尊杜康酒称号-->
+		<item id="149" priority="40" imgid="20102" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/>
+		<!--对酒当歌 极品女儿红称号-->
+		<item id="150" priority="50" imgid="20101" imgwidth="256" imgheight="32" imgnum="8" imgfps="8"/>
+
+		<!--资源争夺-->
+		<!--矿场主宰-->
+		<item id="160" priority="60" imgid="20201" imgwidth="210" imgheight="64" imgnum="8" imgfps="8"/>
+		<!--矿场小霸王-->
+		<item id="161" priority="70" imgid="20202" imgwidth="152" imgheight="34" imgnum="1" imgfps="0"/>
+		
+
+		
+		
+		
+		
+		<!--等级1-->
+		<item id="120" priority="80" imgid="10001" imgwidth="256" imgheight="64" imgnum="8" imgfps="8"/>
+		<!--等级10-->
+		<item id="121" priority="90" imgid="10011" imgwidth="256" imgheight="54" imgnum="1" imgfps="0"/>
+
+
+		<!--战力1-->
+		<item id="112" priority="100" imgid="10002" imgwidth="256" imgheight="64" imgnum="8" imgfps="8"/>	
+		<!--战力10-->
+		<item id="113" priority="110" imgid="10012" imgwidth="256" imgheight="43" imgnum="1" imgfps="0"/>
+		
+
+		<!--装备1-->
+		<item id="130" priority="120" imgid="10004" imgwidth="256" imgheight="64" imgnum="8" imgfps="8"/>
+		<!--装备10-->
+		<item id="131" priority="130" imgid="10014" imgwidth="256" imgheight="59" imgnum="1" imgfps="0"/>
+		<!--宝石1-->
+		<item id="132" priority="140" imgid="10005" imgwidth="256" imgheight="64" imgnum="8" imgfps="8"/>
+		<!--宝石10-->
+		<item id="133" priority="150" imgid="10015" imgwidth="256" imgheight="50" imgnum="1" imgfps="0"/>		
+		
+		<!--坐骑1-->
+		<item id="136" priority="160" imgid="10008" imgwidth="256" imgheight="64" imgnum="8" imgfps="8"/>
+		<!--坐骑10-->
+		<item id="137" priority="170" imgid="10018" imgwidth="256" imgheight="58" imgnum="1" imgfps="0"/>		
+
+		<!--翅膀1-->
+		<item id="116" priority="180" imgid="10006" imgwidth="256" imgheight="64" imgnum="8" imgfps="8"/>
+		<!--翅膀10-->
+		<item id="117" priority="190" imgid="10016" imgwidth="256" imgheight="51" imgnum="1" imgfps="0"/>
+
+
+		
+		<!--绝世美人 -->
+		<item id="172" priority="200" imgid="10010" imgwidth="256" imgheight="64" imgnum="8" imgfps="8"/>
+		<!--十大美人 -->
+		<item id="173" priority="210" imgid="10020" imgwidth="256" imgheight="64" imgnum="1" imgfps="0"/>		
+		
+
+
+		<!--成就之王-->
+		<!-- <item id="118" priority="9" imgid="10007" imgwidth="256" imgheight="32" imgnum="8" imgfps="8"/> -->
+		<!--成就之星-->
+		<!-- <item id="119" priority="9" imgid="10017" imgwidth="256" imgheight="32" imgnum="1" imgfps="0"/> -->
+		
+
+		
+		<!--戒指1-->
+		<item id="138" priority="220" imgid="10009" imgwidth="256" imgheight="64" imgnum="8" imgfps="8"/>
+		<!--戒指10-->
+		<item id="139" priority="230" imgid="10019" imgwidth="256" imgheight="46" imgnum="1" imgfps="0"/>
+		
+		
+		<!--神兵1-->
+		<item id="174" priority="240" imgid="10021" imgwidth="256" imgheight="64" imgnum="8" imgfps="8"/>
+		<!--神兵10-->
+		<item id="175" priority="250" imgid="10022" imgwidth="256" imgheight="64" imgnum="1" imgfps="0"/>
+		
+		<!--财富1-->
+		<item id="122" priority="260" imgid="10003" imgwidth="256" imgheight="64" imgnum="8" imgfps="8"/>
+		<!--财富10-->
+		<item id="123" priority="270" imgid="10013" imgwidth="256" imgheight="48" imgnum="1" imgfps="0"/>
+
+		<!--混沌炼狱活动称号-炼狱大大王 -->
+		<item id="168" priority="500" imgid="20002" imgwidth="256" imgheight="64" imgnum="8" imgfps="8"/>
+		<!--混沌炼狱活动称号-炼狱清道夫 -->
+		<item id="170" priority="500" imgid="20003" imgwidth="256" imgheight="59" imgnum="1" imgfps="0"/>
+		<!--混沌炼狱活动称号-炼狱小头目 -->
+		<item id="169" priority="500" imgid="20004" imgwidth="256" imgheight="59" imgnum="1" imgfps="0"/>
+		
+
+		<!--37玩特殊称号-->
+		<item id="158" priority="2000" imgid="158" imgwidth="256" imgheight="55" imgnum="1" imgfps="0"/>
+		
+	</topTitles>
+	<!-- 总战力称号 -->
+	<TitlePower>
+		<!--总战力称号配置: id战力称号等级 imgid 图片编号-->
+		<level id="0" imgid="501"/>
+		<level id="1" imgid="502"/>
+		<level id="2" imgid="503"/>
+		<level id="3" imgid="504"/>
+		<level id="4" imgid="505"/>
+		<level id="5" imgid="506"/>
+		<level id="6" imgid="507"/>
+		<level id="7" imgid="508"/>
+		<level id="8" imgid="509"/>
+		<level id="9" imgid="510"/>
+		<level id="10" imgid="511"/>
+		<level id="11" imgid="512"/>
+		<level id="12" imgid="513"/>
+		<level id="13" imgid="514"/>
+		<level id="14" imgid="515"/>
+		<level id="15" imgid="516"/>
+	</TitlePower>
+	<!-- 好友祝贺-->
+	<buddyCon a="5" b="20" c="0" maxValue="350000"/>
+	<!--背包格子激活配置(按行开启):maxNum开放最大格子数 goldaddefftime充值后背包中金子特效显示时间-->
+	<bag width="7" maxnum="147" freenum="35" goldaddefftime="180">
+		<line id="1" needItem="0" needNum="0"/>
+		<line id="2" needItem="0" needNum="0"/>
+		<line id="3" needItem="0" needNum="0"/>
+		<line id="4" needItem="0" needNum="0"/>
+		<line id="5" needItem="0" needNum="0"/>
+		<line id="6" needItem="1000300" needNum="1"/>
+		<line id="7" needItem="1000300" needNum="2"/>
+		<line id="8" needItem="1000300" needNum="2"/>
+		<line id="9" needItem="1000300" needNum="2"/>
+		<line id="10" needItem="1000300" needNum="3"/>
+		<line id="11" needItem="1000300" needNum="3"/>
+		<line id="12" needItem="1000300" needNum="3"/>
+		<line id="13" needItem="1000301" needNum="1"/>
+		<line id="14" needItem="1000301" needNum="1"/>
+		<line id="15" needItem="1000301" needNum="1"/>
+		<line id="16" needItem="1000301" needNum="2"/>
+		<line id="17" needItem="1000301" needNum="2"/>
+		<line id="18" needItem="1000301" needNum="2"/>
+		<line id="19" needItem="1000301" needNum="3"/>
+		<line id="20" needItem="1000301" needNum="3"/>
+		<line id="21" needItem="1000301" needNum="3"/>
+	</bag>
+	<!--仓库格子激活配置(按行开启):maxNum开放最大格子数-->
+	<cang width="7" maxnum="168" freenum="28">
+		<line id="1" needItem="0" needNum="0"/>
+		<line id="2" needItem="0" needNum="0"/>
+		<line id="3" needItem="0" needNum="0"/>
+		<line id="4" needItem="0" needNum="0"/>
+		<line id="5" needItem="2200060" needNum="1"/>
+		<line id="6" needItem="2200060" needNum="1"/>
+		<line id="7" needItem="2200060" needNum="2"/>
+		<line id="8" needItem="2200060" needNum="2"/>
+		<line id="9" needItem="2200060" needNum="2"/>
+		<line id="10" needItem="2200060" needNum="3"/>
+		<line id="11" needItem="2200060" needNum="3"/>
+		<line id="12" needItem="2200060" needNum="3"/>
+		<line id="13" needItem="2200060" needNum="3"/>
+		<line id="14" needItem="2200060" needNum="3"/>
+		<line id="15" needItem="2200060" needNum="3"/>
+		<line id="16" needItem="2200060" needNum="3"/>
+		<line id="17" needItem="2200060" needNum="3"/>
+		<line id="18" needItem="2200060" needNum="3"/>
+		<line id="19" needItem="2200060" needNum="3"/>
+		<line id="20" needItem="2200060" needNum="3"/>
+		<line id="21" needItem="2200060" needNum="3"/>
+		<line id="22" needItem="2200060" needNum="3"/>
+		<line id="23" needItem="2200060" needNum="3"/>
+		<line id="24" needItem="2200060" needNum="3"/>
+	</cang>
+	<!--自动显示无操作提示的最大等级和时间间隔-->
+	<autoShowNoOptPromptLv lvmax="10" time="60000"/>
+	<worldScale scale="0.8"/>
+	<!--UI界面上3D对象的俯视角度 界面中摄像机的角度-->
+	<UIActorOverLook degrees="10"/>
+	<!--法器配置 跟随的橡皮筋效果 moveStep 法器移动速度 值越大 速度越慢  maxActiveDist 人物移动后最大的距离 超过这个距离 法宝会瞬移
+	minActiveDist:法宝和人保持的移动的最小距离 surroundRadius 环绕半径 surroundSpeed 环绕的速度越小越慢 startMoveRoundSpeed 开始做环绕运动的调整到起点的速度 --> 
+	<MagicWeapon moveStep="30" maxActiveDist="30" minActiveDist="2" surroundRadius="120" surroundSpeed="0.045" startMoveRoundSpeed="7"/>
+	
+	<!-- 自动挂机设置:attackRadius定点攻击半径 补给物品ID设置 pickUpRate:多少帧拾取一次  autoDieUsePropId:死亡后自动使用的复活道具 goHomeSit：自动回城打坐地图配置 tipA:提示文字的波动幅度 tipSpeed:提示文字的波动速度秒 tipWave:一次移动的间隔时间毫秒-->
+	<autoConfig attackRadius0="7"  attackRadius1="50" autoFps="30" pickUpRate="1" autoDieUsePropId="10000" tipA="-13" tipSpeed="0.08" tipWave="1000">
+		<!-- 默认从右往左（等级高到低）使用 -->
+		<hp>1000100,1000101,1000102,1000103,1000104,1000105</hp>
+		<mp>1001100,1001101,1001102,1001103,1001104,1001105</mp>
+		<autoRect>
+				<!-- 特殊区域，在此地图挂机，只能在指定区域内挂机 -->
+				<!-- 	<rect map="shouhuguozhu" x="63" y="11" width="30" height="30"/> -->
+		</autoRect>
+		<!-- 地图默认挂机范围类型配置：
+		 * 0：定点
+		 * 1：当前九屏
+		 * 2：全地图
+		 canEdit true 表示可以自行选择  false 表示不能自行选择-->
+		<autoTypeMap>
+		<!--剧情副本地图-->	
+			<item map="yuegongfuben" attackRectType="2"  canEdit="false" />
+			<item map="longgongfuben" attackRectType="2"  canEdit="false"/>
+			<item map="chentangguanfuben" attackRectType="2"  canEdit="false"/>
+			<item map="xiqishanfuben" attackRectType="2"  canEdit="false"/>
+			<item map="wanguchengshilian" attackRectType="2"  canEdit="false"/>
+			<item map="juelonglingfuben" attackRectType="2"  canEdit="false"/>
+		<!--多人副本地图-->		
+			<item map="duorenfuben1" attackRectType="2"  canEdit="false"/>
+			<item map="duorenfuben2" attackRectType="2"  canEdit="false"/>
+			<item map="duorenfuben3" attackRectType="2"  canEdit="false"/>
+			<item map="duorenfuben4" attackRectType="2"  canEdit="false"/>
+			<item map="duorenfuben5" attackRectType="2"  canEdit="false"/>
+			<item map="duorenfuben6" attackRectType="2"  canEdit="false"/>
+			<item map="duorenfuben7" attackRectType="2"  canEdit="false"/>
+		<!--艳遇副本地图-->
+			<item map="longgong" attackRectType="2"  canEdit="false"/>
+			<item map="yuegong" attackRectType="2"  canEdit="false"/>
+			<item map="huanggong" attackRectType="2"  canEdit="false"/>
+			<item map="tiangong" attackRectType="2"  canEdit="false"/>
+			<item map="yanyu80" attackRectType="2"  canEdit="false"/>
+			<item map="yanyu90" attackRectType="2"  canEdit="false"/>
+			<item map="yanyu95" attackRectType="2"  canEdit="false"/>
+		<!--普通/装备副本地图-->
+            <item map="30equipFB" attackRectType="2"  canEdit="false"/>		
+			<item map="40equipFB" attackRectType="2"  canEdit="false"/>
+			<item map="50equipFB" attackRectType="2"  canEdit="false"/>
+			<item map="60equipFB" attackRectType="2"  canEdit="false"/>
+		    <item map="70equipFB" attackRectType="2"  canEdit="false"/>
+			<item map="80equipFB" attackRectType="2"  canEdit="false"/>
+			<item map="90equipFB" attackRectType="2"  canEdit="false"/>
+			<item map="100equipFB" attackRectType="2"  canEdit="false"/>
+		<!--龙宫宝藏地图-->	
+			<item map="longgongbaozang1" attackRectType="2"  canEdit="false"/>
+			<item map="longgongbaozang2" attackRectType="2"  canEdit="false"/>
+		    <item map="longgongbaozang3" attackRectType="2"  canEdit="false"/>
+		<!--斗战天庭副本地图-->	
+			<item map="douzhantianting1" attackRectType="2"  canEdit="false"/>
+		    <item map="douzhantianting2" attackRectType="2"  canEdit="false"/>
+		    <item map="douzhantianting3" attackRectType="2"  canEdit="false"/>
+		    <item map="douzhantianting4" attackRectType="2"  canEdit="false"/>
+		<!--竞技场，封神降魔地图-->	
+			<item map="jingjichang" attackRectType="2"  canEdit="false"/>
+			<item map="fengshenxiangmo" attackRectType="2"  canEdit="false"/>
+	    <!--宝物副本地图-->	
+			<item map="baowufuben1" attackRectType="2"  canEdit="false"/>
+			<item map="baowufuben2" attackRectType="2"  canEdit="false"/>
+            <item map="baowufuben3" attackRectType="2"  canEdit="false"/>	
+            <item map="baowufuben4" attackRectType="2"  canEdit="false"/>	
+            <item map="baowufuben5" attackRectType="2"  canEdit="false"/>	
+            <item map="baowufuben6" attackRectType="2"  canEdit="false"/>	
+            <item map="baowufuben7" attackRectType="2"  canEdit="false"/>	
+            <item map="baowufuben8" attackRectType="2"  canEdit="false"/>	
+            <item map="baowufuben9" attackRectType="2"  canEdit="false"/>	
+			<item map="baowufuben10" attackRectType="2"  canEdit="false"/>
+			<item map="baowufuben11" attackRectType="2"  canEdit="false"/>
+			<item map="baowufuben12" attackRectType="2"  canEdit="false"/>
+			<item map="baowufuben13" attackRectType="2"  canEdit="false"/>
+			<item map="baowufuben14" attackRectType="2"  canEdit="false"/>
+			<item map="baowufuben15" attackRectType="2"  canEdit="false"/>
+        <!--镇妖塔副本地图 -->		
+            <item map="zhenyaota" attackRectType="2"  canEdit="false"/>	
+            <item map="zhenyaota1" attackRectType="2"  canEdit="false"/>
+			 <item map="zhenyaota2" attackRectType="2"  canEdit="false"/>
+	    <!--VIP副本地图 -->	            		
+            <item map="vip3fuben" attackRectType="2"  canEdit="false"/>
+			<item map="vip6fuben" attackRectType="2"  canEdit="false"/>
+            <item map="vipfuben" attackRectType="2"  canEdit="false"/>	
+		<!--野外BOSS地图 -->	
+            <item map="longwang45" attackRectType="2"  canEdit="false"/>	
+            <item map="wenshen50" attackRectType="2"  canEdit="false"/>	
+            <item map="wenzhong60" attackRectType="2"  canEdit="false"/>	
+            <item map="randeng70" attackRectType="2"  canEdit="false"/>	
+            <item map="baojun75" attackRectType="2"  canEdit="false"/>
+            <item map="daji80" attackRectType="2"  canEdit="false"/>
+            <item map="nezha85" attackRectType="2"  canEdit="false"/>
+            <item map="yangjian90" attackRectType="2"  canEdit="false"/>
+			<item map="jingang95" attackRectType="2"  canEdit="false"/>				
+		<!--围剿通天教主 -->
+			<item map="wjttjz" attackRectType="1"/>			
+    	<!--练级谷地图-->		
+		   <item map="lianjigu40" attackRectType="1" canEdit="true"/>	
+		   <item map="lianjigu50" attackRectType="1" canEdit="true"/>	
+		   <item map="lianjigu60" attackRectType="1" canEdit="true"/>	
+		   <item map="lianjigu70" attackRectType="1" canEdit="true"/>	
+		   <item map="lianjigu80" attackRectType="1" canEdit="true"/>	
+		   <item map="lianjigu90" attackRectType="1" canEdit="true"/>	
+		   <item map="lianjigu100" attackRectType="1" canEdit="true"/>	
+		   <item map="lianyu1" attackRectType="1" canEdit="true"/>
+		   <item map="lianyu2" attackRectType="1" canEdit="true"/>
+		   <item map="lianyu3" attackRectType="1" canEdit="true"/>
+		   <item map="lianyu4" attackRectType="1" canEdit="true"/>
+		   <item map="lianyu5" attackRectType="1" canEdit="true"/>
+		   <item map="lianyu6" attackRectType="1" canEdit="true"/>
+		   
+		
+		</autoTypeMap>
+		<goHomeSit>
+			<map name="wangucheng" x="83" y="44" roleLevel="0,200"/>
+			<map name="yuehecun" x="83" y="44" roleLevel="0,200"/>
+			<map name="guanghangong" x="83" y="44" roleLevel="0,200"/>
+			<map name="donghailonggong" x="83" y="44" roleLevel="0,200"/>
+			<map name="chentangguan" x="83" y="44" roleLevel="0,200"/>
+			<map name="xiqishan" x="83" y="44" roleLevel="0,200"/>
+			<map name="juelongling" x="83" y="44" roleLevel="0,200"/>
+			<map name="penglaixianjing" x="83" y="44" roleLevel="0,200"/>
+			<map name="xumihuanjing" x="83" y="44" roleLevel="0,200"/>
+			<map name="xueyukunlun" x="83" y="44" roleLevel="0,200"/>
+			<map name="wanyaoku" x="83" y="44" roleLevel="0,200"/>
+			<map name="guanwai" x="83" y="44" roleLevel="0,200"/>		
+		</goHomeSit>
+		<!-- 地图 foreverPickUp:是否只要有物品在地图中 就会拾取 默认：false;-->
+		<autoPickMap>
+			<item map="yuehecun" foreverPickUp="true"/>
+			<item map="yuegongfuben" foreverPickUp="true"/>
+			<item map="longgongfuben" foreverPickUp="true"/>
+			<item map="chentangguanfuben" foreverPickUp="true"/>
+			<item map="xiqishanfuben" foreverPickUp="true"/>
+			<item map="wanguchengshilian" foreverPickUp="true"/>
+			<item map="juelonglingfuben" foreverPickUp="true"/>
+			<item map="longgong" foreverPickUp="true"/>
+			<item map="yuegong" foreverPickUp="true"/>
+			<item map="huanggong" foreverPickUp="true"/>
+			<item map="tiangong" foreverPickUp="true"/>
+			<item map="lianjigu40" foreverPickUp="true"/>
+			<item map="lianjigu50" foreverPickUp="true"/>
+			<item map="lianjigu60" foreverPickUp="true"/>
+			<item map="lianjigu70" foreverPickUp="true"/>
+			<item map="lianjigu80" foreverPickUp="true"/>
+			<item map="lianjigu90" foreverPickUp="true"/>
+			<item map="lianjigu100" foreverPickUp="true"/>
+		<!--多人副本地图-->		
+			<item map="duorenfuben1" foreverPickUp="true"/>
+			<item map="duorenfuben2" foreverPickUp="true"/>
+			<item map="duorenfuben3" foreverPickUp="true"/>
+			<item map="duorenfuben4" foreverPickUp="true"/>
+			<item map="duorenfuben5" foreverPickUp="true"/>
+			<item map="duorenfuben6" foreverPickUp="true"/>
+			<item map="duorenfuben7" foreverPickUp="true"/>
+		<!--艳遇副本地图-->
+			<item map="longgong" foreverPickUp="true"/>
+			<item map="yuegong" foreverPickUp="true"/>
+			<item map="huanggong" foreverPickUp="true"/>
+			<item map="tiangong" foreverPickUp="true"/>
+			<item map="yanyu80" foreverPickUp="true"/>
+			<item map="yanyu85" foreverPickUp="true"/>
+			<item map="yanyu90" foreverPickUp="true"/>
+			<item map="yanyu95" foreverPickUp="true"/>
+		<!--普通/装备副本地图-->
+            <item map="30equipFB" foreverPickUp="true"/>		
+			<item map="40equipFB" foreverPickUp="true"/>
+			<item map="50equipFB" foreverPickUp="true"/>
+			<item map="60equipFB" foreverPickUp="true"/>
+		    <item map="70equipFB" foreverPickUp="true"/>
+			<item map="80equipFB" foreverPickUp="true"/>
+			<item map="90equipFB" foreverPickUp="true"/>
+			<item map="100equipFB" foreverPickUp="true"/>
+    	<!--宝物副本地图-->	
+			<item map="baowufuben1" foreverPickUp="true"/>
+			<item map="baowufuben2" foreverPickUp="true"/>
+            <item map="baowufuben3" foreverPickUp="true"/>	
+            <item map="baowufuben4" foreverPickUp="true"/>	
+            <item map="baowufuben5" foreverPickUp="true"/>	
+            <item map="baowufuben6" foreverPickUp="true"/>	
+            <item map="baowufuben7" foreverPickUp="true"/>	
+            <item map="baowufuben8" foreverPickUp="true"/>	
+            <item map="baowufuben9" foreverPickUp="true"/>	
+			<item map="baowufuben10" foreverPickUp="true"/>	
+            <item map="baowufuben11" foreverPickUp="true"/>	
+			<item map="baowufuben12" foreverPickUp="true"/>	
+			<item map="baowufuben13" foreverPickUp="true"/>	
+			<item map="baowufuben14" foreverPickUp="true"/>	
+			<item map="baowufuben15" foreverPickUp="true"/>	
+		<!--镇妖塔副本地图 -->		
+            <item map="zhenyaota" foreverPickUp="true"/>
+            <item map="zhenyaota1" foreverPickUp="true"/>	
+            <item map="zhenyaota2" foreverPickUp="true"/>				
+        <!--VIP副本地图 -->	            		
+            <item map="vip3fuben" foreverPickUp="true"/>
+			<item map="vip6fuben" foreverPickUp="true"/>
+            <item map="vipfuben" foreverPickUp="true"/>				
+		</autoPickMap>
+		<!-- 地图 autoMouseMap:----showMouseTip是否自动双击 true =双击 falss = 不双击-->	
+        <autoMouseMap>
+		<!--多人副本地图-->		
+			<item map="duorenfuben1" showMouseTip="true"/>
+			<item map="duorenfuben2" showMouseTip="true"/>
+			<item map="duorenfuben3" showMouseTip="true"/>
+			<item map="duorenfuben4" showMouseTip="true"/>
+			<item map="duorenfuben5" showMouseTip="true"/>
+			<item map="duorenfuben6" showMouseTip="true"/>
+			<item map="duorenfuben7" showMouseTip="true"/>
+		<!--艳遇副本地图-->
+			<item map="longgong" showMouseTip="true"/>
+			<item map="yuegong" showMouseTip="true"/>
+			<item map="huanggong" showMouseTip="true"/>
+			<item map="tiangong" showMouseTip="true"/>
+			<item map="yanyu80" showMouseTip="true"/>
+			<item map="yanyu85" showMouseTip="true"/>
+			<item map="yanyu90" showMouseTip="true"/>
+			<item map="yanyu95" showMouseTip="true"/>
+		<!--普通/装备副本地图-->
+            <item map="30equipFB" showMouseTip="true"/>		
+			<item map="40equipFB" showMouseTip="true"/>
+			<item map="50equipFB" showMouseTip="true"/>
+			<item map="60equipFB" showMouseTip="true"/>
+		    <item map="70equipFB" showMouseTip="true"/>
+			<item map="80equipFB" showMouseTip="true"/>
+			<item map="90equipFB" showMouseTip="true"/>
+			<item map="100equipFB" showMouseTip="true"/>
+    	<!--宝物副本地图-->	
+			<item map="baowufuben1" showMouseTip="true"/>
+			<item map="baowufuben2" showMouseTip="true"/>
+            <item map="baowufuben3" showMouseTip="true"/>	
+            <item map="baowufuben4" showMouseTip="true"/>	
+            <item map="baowufuben5" fshowMouseTip="true"/>	
+            <item map="baowufuben6" showMouseTip="true"/>	
+            <item map="baowufuben7" showMouseTip="true"/>	
+            <item map="baowufuben8" showMouseTip="true"/>	
+            <item map="baowufuben9" showMouseTip="true"/>	
+			<item map="baowufuben10" showMouseTip="true"/>	
+            <item map="baowufuben11" showMouseTip="true"/>	
+			<item map="baowufuben12" showMouseTip="true"/>	
+			<item map="baowufuben13" showMouseTip="true"/>	
+			<item map="baowufuben14" showMouseTip="true"/>	
+			<item map="baowufuben15" showMouseTip="true"/>	
+		<!--镇妖塔副本地图 -->		
+            <item map="zhenyaota" showMouseTip="true"/>
+            <item map="zhenyaota1" showMouseTip="true"/>
+           <item map="zhenyaota2" showMouseTip="true"/>			
+        <!--VIP副本地图 -->	            		
+            <item map="vip3fuben" showMouseTip="true"/>
+			<item map="vip6fuben" showMouseTip="true"/>
+            <item map="vipfuben" showMouseTip="true"/>				
+        </autoMouseMap>
+	</autoConfig>
+	<!--战力跳字 属性跳字效果配置-->
+	<EffectCfg>
+		<!--人物状态2D效果配置：bgPlaySpeed:背景SWF的播放速度  textA:文字的抖动振幅 textSpeed:文字的抖动速度 textMaxScale:文字的初始缩放  textStepScale：文字的缩放速度 showPosX:居中对齐偏移量-->
+		<!--  delayTime:最后一帧停留时间毫秒 subSkillId:触发的子技能ID  bgSwfName：SWF动画底 textImageName:状态文字-->
+		<RoleStateEffect bgPlaySpeed="1" textA="8" textSpeed="1" textMaxScale="2" textStepScale="0.8" delayTime="1000" showPosX="100" showPosY="-200">
+			<effect subSkillId="6100" bgSwfName="state_bg.swf" textImageName="state_zhenshe.png"/>
+			<effect subSkillId="6101" bgSwfName="state_bg.swf" textImageName="state_zhongdu.png"/>
+			<effect subSkillId="6102" bgSwfName="state_bg.swf" textImageName="state_pojia.png"/>
+			<effect subSkillId="6103" bgSwfName="state_bg.swf" textImageName="state_fangzhu.png"/>
+			<effect subSkillId="6104" bgSwfName="state_bg.swf" textImageName="state_xuruo.png"/>
+			<effect subSkillId="6105" bgSwfName="state_bg.swf" textImageName="state_jiansu.png"/>
+			<effect subSkillId="6106" bgSwfName="state_bg.swf" textImageName="state_jinshi.png"/>
+			<effect subSkillId="6107" bgSwfName="state_bg.swf" textImageName="state_ruogong.png"/>
+			<effect subSkillId="6108" bgSwfName="state_bg.swf" textImageName="state_chihuan.png"/>
+			<effect subSkillId="6109" bgSwfName="state_bg.swf" textImageName="state_chenmo.png"/>
+			<effect subSkillId="6110" bgSwfName="state_bg.swf" textImageName="state_duanjin.png"/>
+			<effect subSkillId="6111" bgSwfName="state_bg.swf" textImageName="state_dingshen.png"/>
+			<effect subSkillId="6112" bgSwfName="state_bg.swf" textImageName="state_shiming.png"/>
+			<effect subSkillId="6113" bgSwfName="state_bg.swf" textImageName="state_zhongshang.png"/>
+			<effect subSkillId="6114" bgSwfName="state_bg.swf" textImageName="state_xuwu.png"/>
+			<effect subSkillId="6115" bgSwfName="state_bg.swf" textImageName="state_xuanyun.png"/>
+			<effect subSkillId="6116" bgSwfName="state_bg.swf" textImageName="state_shihua.png"/>
+			<effect subSkillId="6117" bgSwfName="state_bg.swf" textImageName="state_mabi.png"/>
+			<effect subSkillId="6118" bgSwfName="state_bg.swf" textImageName="state_hunluan.png"/>
+			<effect subSkillId="6119" bgSwfName="state_bg.swf" textImageName="state_hushi.png"/>
+		</RoleStateEffect>
+		<!--layout offsetX offsetY:布局位置 moveUpIn:战力移入后多少距离后滚动 moveUpPixel：向上移动的距离 scaleOffsetX:缩放时候的偏移 stayTime:停留的时间 moveDuration:移动的时间 startScale 第一次放大倍数 growScale 第二次放大倍数  stayScaleTime:缩放后停留时间-->
+		<FightUpEffect layout="2" offsetX="0" offsetY="250" moveUpPixel="600" startScale="8" growScale="1" moveDuration="0.5" stayScaleTime="650"/>
+		<PropertyUpEffect layout="2" offsetX="0" offsetY="0" moveUpPixel="100" scaleOffsetX="150" scaleOffsetY="-100" stayTime="600"/>
+		<!--连招技能CD效果 speed:速度时间 -->
+		<SerialSkillEffect speed="0.3" startScale="0.7" endScale="0.3"/>
+		<!--升级文字效果 -->
+		<LevelUpEffect  layout="13" offsetX="-150" offsetY="-55" moveUpPixel="-250" moveUpIn="80" textPosX="85" textPosY="18" moveDuration="0.6" stayTime="1000"/>
+		<!--受击闪光效果 color:闪光强度 time:闪光时间 -->
+		<EntitySparkEffect color="2" time="300"/>
+		<!--激战倒计时配置  countDownTime多少秒倒计时 bgAlpha:背景透明度 moveDuration:分开屏幕速度 秒 topTextOffsetY上面文字偏移量 numOffsetY数字偏移量-->
+		<FightCountDownEffect countDownTime="10" bgAlpha="0.5" moveDuration="1" topTextOffsetX="50" topTextOffsetY="-110" numOffsetY="0"/>
+		<!--加经验效果配置 duration:飞行时间 srcOffsetPointX:起始中心偏移坐标 enablePer:变化多少开启-->
+		<FlyExpEffect duration="2" srcOffsetPointX="0" srcOffsetPointY="-500" enablePer="0"/>
+		<!--界面关闭效果配置  duration 缩放时间 单位秒  startScale 初始倍数 moveOutDuration:渐渐隐藏关闭效果的时间 moveOutDist:关闭时候移动的Y距离 outClose:那些界面需要再渐渐隐藏关闭效果 winId 界面模块id-->
+		<OpenCloseUIScaleEffect duration="0.3" startScale="0.0" moveOutDist="30" moveOutDuration="0.2">
+			<outClose winType="0" winId="10"/><!--任务列表模块-->
+			<outClose winType="0" winId="19"/><!--复活-->
+			<outClose winType="0" winId="22"/><!--通用提示-->
+			<outClose winType="0" winId="34"/><!--选择阵营-->
+			<outClose winType="0" winId="44"/><!--运镖主界面-->
+			<outClose winType="0" winId="47"/><!--观察-->
+			<!--<outClose winType="0" winId="50"/>广告 不能用 需要功能负责人搞-->
+			<!--<outClose winType="0" winId="52"/>打坐-->
+			<outClose winType="0" winId="53"/><!--珍宝坊-->
+			<outClose winType="0" winId="56"/><!--求婚-->
+			<outClose winType="0" winId="58"/><!--结婚列表-->
+			<outClose winType="0" winId="60"/><!--称号设置-->
+			<outClose winType="0" winId="61"/><!--求婚响应-->
+			<outClose winType="0" winId="62"/><!--祝贺结婚-->
+			<outClose winType="0" winId="74"/><!--竞技场 每日奖励界面-->
+			<outClose winType="0" winId="88"/><!--包裹不足提醒-->
+			<outClose winType="0" winId="89"/><!--补血补气包 -->
+			<outClose winType="0" winId="90"/><!--多倍经验包 -->
+			<outClose winType="1" winId="1"/><!--道具拆分-->
+			<outClose winType="1" winId="4"/><!--背包扩展 -->
+			<outClose winType="1" winId="5"/><!--道具出售-->
+			<outClose winType="1" winId="7"/><!--快速购买-->
+			<outClose winType="1" winId="11"/><!--道具混合购买-->
+			<outClose winType="1" winId="20"/><!--商店购买-->
+			<outClose winType="1" winId="23"/><!--购买物品-->
+			<outClose winType="1" winId="25"/><!--加好友列表 -->
+			<outClose winType="1" winId="31"/><!--副本失败界面-->
+			<outClose winType="1" winId="36"/><!--获得物品引导提示-->
+			<outClose winType="1" winId="38"/><!--镖车运达-->
+			<outClose winType="1" winId="39"/><!--打爆别人镖车的奖励提示 -->
+			<outClose winType="1" winId="42"/><!--斗战天庭奖励结果-->
+			<outClose winType="1" winId="43"/><!--对酒当歌，邀请好友-->
+			<outClose winType="1" winId="45"/><!--对酒当歌，收到邀请-->
+			<outClose winType="1" winId="47"/><!--欢迎界面-->
+			<outClose winType="1" winId="55"/><!--阵营派发红包 -->
+			<outClose winType="1" winId="59"/><!--快速融合-->
+			<outClose winType="1" winId="61"/><!--封神榜 战报 -->
+			<outClose winType="1" winId="71"/><!--阵营红包-->
+			<!--<outClose winType="1" winId="72"/>仙道任务/阵营任务那些提示 不能用 需要功能负责人搞-->
+			<outClose winType="1" winId="77"/><!--好友提醒 -->
+			<outClose winType="1" winId="78"/><!--推荐好友-->
+			<outClose winType="1" winId="79"/><!--好友祝福-->
+			<outClose winType="1" winId="80"/><!--开启包裹提示-->
+			<outClose winType="1" winId="81"/><!--封妖塔收益提示-->
+			<outClose winType="1" winId="82"/><!--成就提示 -->
+			<outClose winType="1" winId="83"/><!--hp mp不足提示-->
+			<outClose winType="1" winId="86"/><!--带引导的快速购买 -->
+			<outClose winType="1" winId="88"/><!--确认提示-->
+		</OpenCloseUIScaleEffect>
+		<!--一个图片加一个文字的效果 类似斗争天庭层提示 -->
+		<MoveImageTextEffect  layout="5" offsetX="0" offsetY="0" stayTime="1000" moveYDist="-100" fadeOutDuration="0.9" moveDuration="1"/>
+		
+		<!--主界面战力显示配置 -->
+		<!-- layout offsetX offsetY:布局位置 bgSwfPath：背景路径 playSpeed：背景播放速度 -->
+		<UICombatPowerShow layout="14" offsetX="250" offsetY="200"  bgSwfPath="combatPower_bg.swf" playSpeed="1">
+			<!-- 元素布局 -->
+			<LayoutPoint  x="-105" y="-45"/><!--战的位置-->
+			<LayoutPoint  x="-80" y="0"/><!--力 的位置-->
+			<LayoutPoint x="-35" y="-10"/><!--数字的位置-->			
+		</UICombatPowerShow>
+		<!--任务目标飞行效果 flytime:飞行速度/帧速,36帧，跟动画帧数填一样 -->
+		<TaskTargetUpdateEffect flytime="19"/>
+		<!--任务文字提示效果 配置  stayTime:停留时间-->
+		<TaskRemindEffect  layout="9" offsetX="0" offsetY="-90" stayTime="2000" moveYDist="100"/>
+		<!--任务接受、完成效果 speed 动画播放速度（越小越快，极限值1） yoffset:距离顶边的偏移 xoffset 距离屏幕中心的偏移 staytime:动画播放完后暂停时间 fadetime:淡出的时间-->
+		<TaskStateUpdateEffect speed="2" yoffset="100" xoffset="0" staytime="1" fadetime="0.3"/>
+		<!--layout offsetX offsetY:布局位置   moveDuration:缩放的时间 startScale 第一次放大倍数 growScale 第二次放大倍数-->
+		<MythPlaceUpEffect layout="6" offsetX="0" offsetY="-373" startScale="8" growScale="1.3" moveDuration="0.5"/>
+		<!--领取奖励之后飞一堆ICON的效果 spaceTime间隔时间 speed0:第一段飞行速度 speed1：第二段飞行速度 tx:第一段飞行x距离 ty:第一段飞行y距离 scale:中途缩放大小-->
+		<FlyAwardEffect spaceTime="200" speed0="270"  speed1="700" tx="75" ty="75" scale="1.2"/>
+		<!--达到多少钱就飞效果;一次飞多少效果;特效缩放半径 ;产生效果的半径;终点X,Y坐标;飞行的时间-->
+		<FlyMoneyEffect FLYMONEY_MIN_NUM="10,5000,5000" FLYMONEY_EFFECT_NUM="12" FLYMONEY_EFFECT_SCALE="0.7" FLYMONEY_BUILD_RADIUS="300" DEST_POINTX="140,200,250" DEST_POINTY="87,87,87" FLY_TIME="2"/>
+		<!--人物红血时候的 闪一闪的红底效果 lowRedBloodPer血量百分比  lowRedBloodSpeed闪的速度-->
+		<LowRedBloodEffect lowRedBloodPer="0.2" lowRedBloodSpeed="0.1"/>
+	</EffectCfg>
+	<!--地图上掉落物品配置 showNameQuality:多少品阶以上的才显示名称-->
+	<mapProp showNameQuality="0"/>
+	<!--新手鼠标点击保护配置 roleLv：人物等级 clickTime：多少时间内双击-->
+	<freshman roleLv="45" clickTime="4000"/>
+	<!--自动进入练级谷配置：roleLvMin等级   operation：多少秒没有任何操作时候 mapName:那些地图开启这个功能 用;隔开 -->
+	<AutoLevelUp roleLvMin="45" roleLvMax="59" operation="300" mapName="xiqishan;juelongling;wangucheng"/>
+	<!--灵气上限值系数配置 num级以下使用 maxFactor-->
+	<reiki>
+		<level num="50" maxFactor="50000"/>
+		<level num="60" maxFactor="300000"/>
+		<level num="70" maxFactor="500000"/>
+		<level num="80" maxFactor="800000"/>
+		<level num="90" maxFactor="1000000"/>
+		<level num="100" maxFactor="1000000"/>
+		<level num="110" maxFactor="1000000"/>
+	</reiki>
+	<!--头像处特殊状态配置：hpBagDisableTip:血包未激活TIPS 
+	mpBagDisableTip:蓝包未激活TIPS 
+	miniClientDisableTip：微端未激活tips 
+	multiExpDisableTip:多倍经验未激活 
+	raceDisableTip：阵营官职未激活
+	RACE_NAME:阵营名称 转义
+	level:阵营等级
+	official id:官职 id
+	bagBuyPropId:多倍经验购买使用弹出界面里面的需要购买的道具ID
+	propIds:多倍经验丹 有哪些
+	-->
+	<headStateInfo hpBagDisableTip="243" hpBagEnableTip="244" mpBagDisableTip="245" mpBagEnableTip="246" miniClientDisableTip="247" miniClientEnableTip="248" multiExpDisableTip="249" raceOfficialDisableTip="500">
+		<multiExp bagBuyPropId="31001" propIds="31001,31002,31003,31004,31005">
+			<top><![CDATA[<e color='ff00ff00'>【多倍经验加成】</e><br><e color='ff00ff00'>(已激活)</e><br><e color='ff8ad19f'>使用经验加成道具可获得多倍经验状态</e>]]></top>
+			<bottom>
+				<des buffId="31001"><![CDATA[<br><e color='ff00ffff'>1.5倍经验加成剩余时间：</e>]]></des>
+				<des buffId="31002"><![CDATA[<br><e color='ffffff00'>2倍经验加成剩余时间：</e>]]></des>
+				<des buffId="31003"><![CDATA[<br><e color='ffff00ff'>3倍经验加成剩余时间：</e>]]></des>
+				<des buffId="31004"><![CDATA[<br><e color='ffff0088'>5倍经验加成剩余时间：</e>]]></des>
+				<des buffId="31005"><![CDATA[<br><e color='ffff0033'>10倍经验加成剩余时间：</e>]]></des>
+			</bottom>
+		</multiExp>
+		<raceOfficial>
+			<race level="1"><![CDATA[<e color='ff00ff00' font='宋体12粗'>【一级阵营】</e>
+			<br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>加入【$RACE_NAME】阵营获得以下属性加成</e>
+			<br><e color='ff00ffff'>生命：+75</e>
+			<br><e color='ff00ffff'>攻击：+10</e><br><e color='ff00ffff'>防御： +5</e><br>]]></race>
+			<race level="2"><![CDATA[<e color='ff00ff00' font='宋体12粗'>【二级阵营】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>加入【$RACE_NAME】阵营获得以下属性加成</e><br><e color='ff00ffff'>生命：+150</e><br><e color='ff00ffff'>攻击：+20</e><br><e color='ff00ffff'>防御： +10</e><br>]]></race>
+			<race level="3"><![CDATA[<e color='ff00ff00' font='宋体12粗'>【三级阵营】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>加入【$RACE_NAME】阵营获得以下属性加成</e><br><e color='ff00ffff'>生命：+300</e><br><e color='ff00ffff'>攻击：+40</e><br><e color='ff00ffff'>防御： +20</e><br>]]></race>
+			<race level="4"><![CDATA[<e color='ff00ff00' font='宋体12粗'>【四级阵营】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>加入【$RACE_NAME】阵营获得以下属性加成</e><br><e color='ff00ffff'>生命：+600</e><br><e color='ff00ffff'>攻击：+80</e><br><e color='ff00ffff'>防御： +40</e><br>]]></race>
+			<race level="5"><![CDATA[<e color='ff00ff00' font='宋体12粗'>【五级阵营】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>加入【$RACE_NAME】阵营获得以下属性加成</e><br><e color='ff00ffff'>生命：+900</e><br><e color='ff00ffff'>攻击：+120</e><br><e color='ff00ffff'>防御： +60</e><br>]]></race>
+			<race level="6"><![CDATA[<e color='ff00ff00' font='宋体12粗'>【六级阵营】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>加入【$RACE_NAME】阵营获得以下属性加成</e><br><e color='ff00ffff'>生命：+1800</e><br><e color='ff00ffff'>攻击：+240</e><br><e color='ff00ffff'>防御： +120</e><br>]]></race>
+			<race level="7"><![CDATA[<e color='ff00ff00' font='宋体12粗'>【七级阵营】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>加入【$RACE_NAME】阵营获得以下属性加成</e><br><e color='ff00ffff'>生命：+2700</e><br><e color='ff00ffff'>攻击：+360</e><br><e color='ff00ffff'>防御： +180</e><br>]]></race>
+			<race level="8"><![CDATA[<e color='ff00ff00' font='宋体12粗'>【八级阵营】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>加入【$RACE_NAME】阵营获得以下属性加成</e><br><e color='ff00ffff'>生命：+3600</e><br><e color='ff00ffff'>攻击：+480</e><br><e color='ff00ffff'>防御： +240</e><br>]]></race>
+			<race level="9"><![CDATA[<e color='ff00ff00' font='宋体12粗'>【九级阵营】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>加入【$RACE_NAME】阵营获得以下属性加成</e><br><e color='ff00ffff'>生命：+4500</e><br><e color='ff00ffff'>攻击：+600</e><br><e color='ff00ffff'>防御： +300</e><br>]]></race>
+			<race level="10"><![CDATA[<e color='ff00ff00' font='宋体12粗'>【十级阵营】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>加入【$RACE_NAME】阵营获得以下属性加成</e><br><e color='ff00ffff'>生命：+5400</e><br><e color='ff00ffff'>攻击：+720</e><br><e color='ff00ffff'>防御： +360</e><br>]]></race>
+			
+			<officialDisable><![CDATA[<br><e color='ffff0000' font='宋体12粗'>【官职加成】</e><br><e color='ffff0000' font='宋体12粗'>(未激活)</e><br><e color='ff8ad19f'>加入阵营后可争夺阵营官职并获得官职属性</e><br><e color='ff8ad19f'>（官职越高获得的属性加成越多）</e>]]></officialDisable>
+			
+			<official id="1"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【族尊】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【族尊】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+5%</e>]]></official>
+			<official id="2"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【族长】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【族长】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+4%</e>]]></official>
+			<official id="3"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【统领】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【统领】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+3%</e>]]></official>
+			<official id="4"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【统领】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【统领】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+3%</e>]]></official>
+			<official id="5"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【将军】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【将军】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+3%</e>]]></official>
+			<official id="6"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【将军】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【将军】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+3%</e>]]></official>
+			<official id="7"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【御林军】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【御林军】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+2%</e>]]></official>
+			<official id="8"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【御林军】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【御林军】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+2%</e>]]></official>
+			<official id="9"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="10"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="11"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="12"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="13"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="14"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="15"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="16"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="17"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="18"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="19"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="20"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="21"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="22"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="23"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="24"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="25"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="26"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="27"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="28"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="29"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>
+			<official id="30"><![CDATA[<br><e color='ff00ff00' font='宋体12粗'>【禁卫】</e><br><e color='ff00ff00' font='宋体12粗'>已激活</e><br><e color='ff8ad19f'>获得【禁卫】官职，激活以下属性加成</e><br><e color='ff00ffff'>生命、攻击、防御：+1%</e>]]></official>			
+		</raceOfficial>
+		<!--世界经验 配置：worldLevel:世界经验的激活等级 roleLevel:玩家的激活等级-->	
+		<worldExp worldLevel="65" roleLevel="50">
+			<item gap="1-5" add="100"/>
+			<item gap="6-10" add="150"/>
+			<item gap="11-15" add="200"/>
+			<item gap="16-20" add="200"/>
+			<item gap="21-9999" add="250"/>
+		</worldExp>
+	</headStateInfo>
+	<QuickSelectMap>
+		<!--弹快速选择目标指引界面 的地图 openLevel:多少级后不开启-->	
+		<item map="douzhantianting1" openLevel="70"/>
+		<item map="douzhantianting2" openLevel="70"/>
+		<item map="douzhantianting3" openLevel="70"/>
+		<item map="douzhantianting4" openLevel="70"/>
+		<item map="fengshenxiangmo" openLevel="70"/>
+	</QuickSelectMap>
+	<QuickSelectPeaceMap>
+		<!--和平地图指引界面 的地图 openLevel:多少级后不开启-->	
+		<item map="lianyu1" openLevel="70"/>
+	</QuickSelectPeaceMap>
+	<QuickSelectPKMap>
+		<!--PK地图指引界面 的地图 openLevel:多少级后不开启-->	
+		<item map="lianyu2" openLevel="70"/>
+		<item map="lianyu3" openLevel="70"/>
+		<item map="lianyu4" openLevel="70"/>
+		<item map="lianyu5" openLevel="70"/>
+	</QuickSelectPKMap>	
+	<ShortcutPickup radius="9"/>
+	<!--场景物体的半透明度 以前的BLK数据-->
+	<BLK alpha="0.5"/>
+	<!--配置那种类型的NPC可以有头顶名称,配了类型的就一直显示-->
+	<HeadBoardNpcTypes types="2;4;5;7;9;14"/>
+	<!-- 屏蔽功能配置 npcTypes:那些NPC 会被屏蔽掉 (单位毫秒) lowFps:最低帧数：低于这个值就会自动开启全屏蔽-->
+	<shield npcTypes="1,20" lowFps="3"/>
+	<!-- 特殊任务触发的引导 -->
+	<specialTaskGuideInfo>
+		<item moduleid="10000" guideid="1033" taskid="11055" name="商店购买引导"/>
+	</specialTaskGuideInfo>
+	<!-- 战力提示 -->
+	<!-- openid 功能模块是否开启，对应id，-1的用等级来判
+			public static const FT_CLEVER:int = 0,						// 器灵
+				FT_BODYIMMORTAL:int = 1,									// 肉身修为
+				FT_EQUIPIMMORTAL:int = 2,									// 魂甲修为
+				FT_STARIMMORTAL:int = 3,									// 星辰修为
+				FT_IMMORTAL:int = 4,										// 境界修为
+				FT_JITIAN:int = 5,											// 祭天
+				FT_UNION:int = 6,											// 帮派
+				FT_MEETGOD:int = 7,											// 请神
+				FT_EQUIPREBUILD = 8;										// 装备铸造
+	-->
+	<battleCapacityTips>
+		<item id="42" level="8" levelText="8级任务开启" name="修  为" imgid="5" openid="1"/>
+		<item id="20" level="12" levelText="12级任务开启" name="宠  物" imgid="4" special="1" openid="-1"/>
+		<item id="66" level="15" levelText="15级任务开启" name="翅  膀" imgid="3" openid="-1"/>
+		<item id="30" level="20" levelText="20级任务开启" name="器  灵" imgid="2" openid="0"/>
+		<item id="16" level="30" levelText="30级开启" name="装备强化" imgid="1" openid="8"/>
+	</battleCapacityTips>
+	<!-- 战力提升效果配置 -->
+	<!-- id 模块id，priority 优先级，数值大的优先显示 flyingTime 飞上去的时间 height 飞到离底边多少高度 targetname 子控件名称 scoreType 参考客户端ScoreEstimateTypeDict-->
+	<battleValueTips>
+		<item id="8" priority="3" name="人物属性" flyingTime="1" height="250" targetname="totalScore" scoreType="-1"/>
+		<item id="66" priority="3" name="翅膀" flyingTime="1" height="230" targetname="wingScoreGroup" scoreType="8"/>
+		<item id="20" priority="3" name="宠物" flyingTime="1" height="230" targetname="petScoreGroup" scoreType="1"/>
+		<item id="71" priority="3" name="请神" flyingTime="1" height="240" targetname="meetGodScoreGroup" scoreType="10"/>
+		<item id="9" priority="3" name="技能" flyingTime="1" height="230" targetname="skillScoreGroup" scoreType="4"/>
+		<item id="16" priority="3" name="铸造" flyingTime="1" height="230" targetname="equipScoreGroup" scoreType="0"/>
+		<item id="42" priority="3" name="修为" flyingTime="1" height="250" targetname="immScoreGroup" scoreType="5"/>
+		<item id="58" priority="3" name="器灵" flyingTime="1" height="230" targetname="cleverScoreGroup" scoreType="3"/>
+		<item id="158" priority="3" name="法器" flyingTime="1" height="230" targetname="trumpScoreGroup" scoreType="6"/>
+		<item id="183" priority="3" name="剑阵" flyingTime="1" height="230" targetname="swordScoreGroup" scoreType="17"/>
+	</battleValueTips>
+	<!-- 场景物品队列飞的累积时间 waittime 累积多长时间 interval 飞的间隔-->
+	<sceneitem waittime="500" interval="200"/>
+	<!-- 客户端提示 你现在要干什么 -->
+	<nextdo>
+		<desc id="1"><![CDATA[<font size="20" color="#efba2b">温馨提示</font><br></br><br><font size="12" color="#ff3131">您的红药不足，不能自动恢复，您可以：</font></br><br><font size="14" color="#00FF00"><a href="openHpBag">◆快速补充血包</a></font></br><br><font size="14" color="#00FF00"><a href="openNpcShop$300044">◆远程购药</a></font></br>]]></desc>
+	</nextdo>
+	<nextdo>
+		<desc id="2"><![CDATA[<font size="20" color="#efba2b">温馨提示</font><br><font size="12" color="#ff3131">您的包裹不堪重负，您可以：</font></br><br><font size="14" color="#00FF00"><a href="tidyBag">◆整理背包</a></font></br><br><font size="14" color="#00FF00"><a href="hunjia">◆进行魂甲修炼</a></font></br><br><font size="14" color="#00FF00"><a href="expentBag">◆扩充背包</a></font></br>]]></desc>
+	</nextdo>
+	<nextdo>
+		<desc id="3"><![CDATA[<font size="20" color="#efba2b">温馨提示</font><br></br><br><font size="12" color="#ff3131">您的蓝药不足，不能自动恢复，您可以：</font></br><br><font size="14" color="#00FF00"><a href="openMpBag">◆快速补充蓝包</a></font></br><br><font size="14" color="#00FF00"><a href="openNpcShop$300044">◆远程购药</a></font></br>]]></desc>
+	</nextdo>
+	<nextdo>
+		<desc id="4"><![CDATA[<font size="20" color="#efba2b">温馨提示</font><br><br></br><font size="12" color="#ff3131">您已经进入了副本，您可以：</font></br><br></br><br><font size="14" color="#00FF00"><a href="guaji">◆开始挂机</a></font></br>]]></desc>
+	</nextdo>
+	<nextdo>
+		<desc id="5"><![CDATA[<font size="20" color="#efba2b">温馨提示</font><br></br><br><font size="12" color="#ff3131">您已经通关了副本，您可以：</font></br><br></br><br><font size="14" color="#00FF00"><a href="likaifuben">◆离开副本</a></font></br>]]></desc>
+	</nextdo>
+	<nextdo>
+		<desc id="6"><![CDATA[<font size="20" color="#efba2b">温馨提示</font><br><font size="12" color="#ff3131">您的包裹已满，将不能获得物品，您可以：</font></br><br><font size="14" color="#00FF00"><a href="tidyBag">◆整理背包</a></font></br><br><font size="14" color="#00FF00"><a href="hunjia">◆进行魂甲修炼</a></font></br><br><font size="14" color="#00FF00"><a href="expentBag">◆扩充背包</a></font></br>]]></desc>
+	</nextdo>
+	<nextdo>
+		<desc id="7"><![CDATA[<font size="20" color="#efba2b">温馨提示</font><br/><br/><font size="12" color="#ff3131">您的【$0】耐久很低了，请您<br/><a href="fixEquip">进行修理</a></font>]]></desc>
+	</nextdo>
+	<nextdo>
+		<desc id="9"><![CDATA[<font size="20" color="#efba2b">温馨提示</font><br><font size="12" color="#ff3131">您的包裹内有较多未鉴定装备，建议您：<br/><font size="14" color="#00FF00"><a href="jianding">◆全部鉴定</a></font><br><font size="14" color="#00FF00"><a href="tidyBag">◆打开背包</a></font></br>]]></desc>
+	</nextdo>
+	<nextdo>
+		<desc id="8"><![CDATA[<font size="20" color="#efba2b">温馨提示</font><br/><br/><font size="12" color="#ff3131">您的【$0】耐久已经为0，已经不能为您增加属性了，请您<br/><a href="fixEquip">进行修理</a></font>]]></desc>
+	</nextdo>
+	<!-- NPC对话框关闭触发按钮事件限制等级 -->
+	<npcDialog level="20"/>
+	<!--天榜和任务相关配置 道具ID 需求数量 developtaskprice 阵营发展任务完成一次需要的金子-->
+	<taskConfig tabChangeLevel="30" developtaskprice="10">
+		<!-- 没有任务时推荐的升级方式，<= level 提示用task1 否则用task2 -->
+		<notask level="45">
+		    <!--
+			<task1><![CDATA[<e color="FFFFFF00"> 找</e><goto id="200040" mapid="200" action="1" parm="200040"/><e color="FFFFFF00">做地榜任务快速升级</e>]]></task1>
+			-->
+			<task1><![CDATA[<e color="FF00FF00"> 快速升级：</e><click action="6" param="33-0" label="日常副本" color="FFFFFF00"/><e color="FF00FF00">或</e><click action="9" param="1000" label="练级谷" color="FFFFFF00"/>]]></task1>
+			<task2><![CDATA[<e color="FF00FF00"> 快速升级：</e><click action="6" param="33-0" label="日常副本" color="FFFFFF00"/><e color="FF00FF00">或</e><click action="9" param="1000" label="练级谷" color="FFFFFF00"/>]]></task2>
+		</notask>
+		
+		   <tasklistloop>
+		       <newtip><![CDATA[<e color='ffff9c00'>您接受了任务</e>$YOURTASK<br><e color='ffff9c00'>点击自动寻路可寻路至当前任务目标处</e>]]></newtip>
+			   <counttime>180</counttime>
+			   <closetime>15</closetime>
+		   </tasklistloop>
+		   
+			<!--阵营任务配置-->
+		   <countrytask openLevel="46">
+			   <viptip0><![CDATA[<e color='ffFFE384'>一键完成消耗:</e><e color='ff00FF00'>10元宝/环</e>]]></viptip0>
+			   <viptip1><![CDATA[<e color='ffFFE384'>完成任务可获得</e><e color='ff00FF00'>阵营贡献</e><e color='FFFFE384'>和</e><e color='ff00FF00'>阵营资金</e>]]></viptip1>
+			   <nicetip><![CDATA[<e color='ffFFE384'>温馨提示：</e><br><e color='ffFFE384'>若24:00之前未完成所有任务，则次日将被重置为【第一环】，请及时完成，以免造成损失</e>]]></nicetip>
+			 
+		   </countrytask>
+		   <!--英雄/仙道任务配置-->
+		    <!--英雄/仙道任务配置-->
+		   <herotask>
+				<Common singleGold="10" openLevel="45"/>
+		        <award>
+					
+					<!--奖励系数-->	
+					<!--(（角色等级-45）*增长值+基础值）-->			
+					<single>
+						<para name="exp" add="3000" base="425000"/> 
+						<para name="money" add="600" base="10000"/> 
+						<para name="reiki" add="100" base="3500"/> 
+					</single>			
+					<extra>
+				<!--(（角色等级-45）*增长值+基础值）*reg-->
+			    <level end="49">
+					<item item="60101" num="2"/> 
+					<item item="1000029" num="10"/>
+					<item item="1000034" num="10"/> 
+					<para name="exp" add="3000" base="425000" reg="5"/> <!--reg=调节系数-->
+                    <para name="money" add="600" base="10000" reg="5"/> 
+                    <para name="reiki" add="100" base="3500" reg="5"/>
+				</level>
+				<level end="59">
+					<item item="60101" num="2"/> 
+					<item item="1000029" num="10"/>
+					<item item="1000034" num="10"/>
+					<para name="exp" add="3000" base="425000" reg="5"/> <!--reg=调节系数-->
+                    <para name="money" add="600" base="10000" reg="5"/> 
+                    <para name="reiki" add="100" base="3500" reg="5"/>
+				</level>
+				<level end="69">
+					<item item="60101" num="2"/> 
+					<item item="60108" num="3"/> 
+					<item item="1000029" num="20"/> 						  
+					<para name="exp" add="3000" base="425000" reg="5"/> <!--reg=调节系数-->
+                    <para name="money" add="600" base="10000" reg="5"/> 
+                    <para name="reiki" add="100" base="3500" reg="5"/>
+				</level>
+				<level end="79">
+					<item item="60101" num="3"/> 
+					<item item="60108" num="5"/> 
+					<item item="60007" num="10"/> 
+					<para name="exp" add="3000" base="425000" reg="5"/> <!--reg=调节系数-->
+                    <para name="money" add="600" base="10000" reg="5"/> 
+                    <para name="reiki" add="100" base="3500" reg="5"/>
+				</level>
+				<level end="89">
+					<item item="60101" num="3"/> 
+					<item item="60108" num="5"/> 
+					<item item="60007" num="10"/> 			
+					<para name="exp" add="3000" base="425000" reg="5"/> <!--reg=调节系数-->
+                    <para name="money" add="600" base="10000" reg="5"/> 
+                    <para name="reiki" add="100" base="3500" reg="5"/>                  
+				</level>
+				<level end="99">
+					<item item="60101" num="3"/> 
+					<item item="60108" num="5"/> 
+					<item item="60007" num="10"/> 			
+					<para name="exp" add="3000" base="425000" reg="5"/> <!--reg=调节系数-->
+                    <para name="money" add="600" base="10000" reg="5"/> 
+                    <para name="reiki" add="100" base="3500" reg="5"/>                  
+				</level>
+				<level end="109">
+					<item item="60101" num="3"/> 
+					<item item="60108" num="5"/> 
+					<item item="60007" num="10"/> 			
+					<para name="exp" add="3000" base="425000" reg="5"/> <!--reg=调节系数-->
+                    <para name="money" add="600" base="10000" reg="5"/> 
+                    <para name="reiki" add="100" base="3500" reg="5"/>                  
+				</level>
+				<level end="120">
+					<item item="60101" num="3"/> 
+					<item item="60108" num="5"/> 
+					<item item="60007" num="10"/> 			
+					<para name="exp" add="3000" base="425000" reg="5"/> <!--reg=调节系数-->
+                    <para name="money" add="600" base="10000" reg="5"/> 
+                    <para name="reiki" add="100" base="3500" reg="5"/>                  
+				</level>
+			</extra>			
+				</award>
+				
+				<!--base是*100之后的结果-->
+				<Color> 
+					<star id="1" percent="10" base="60"/>
+					<star id="2" percent="10" base="70"/>
+					<star id="3" percent="10" base="80"/>
+					<star id="4" percent="10" base="90"/>
+					<star id="5" percent="10" base="100"/>
+					<star id="6" percent="10" base="120"/>
+					<star id="7" percent="10" base="140"/>
+					<star id="8" percent="10" base="160"/>
+					<star id="9" percent="10" base="180"/>
+					<star id="10" percent="10" base="200"/>
+				</Color> 
+		
+				
+				 <viptip0><![CDATA[<e color='ffFFE384'>一键完成消耗:</e><e color='ff00FF00'>10元宝/环</e>]]></viptip0>		   
+			   <viptip1><![CDATA[<e color='ffFFE384'>一键完成剩余任务均为</e><e color='ff00FF00'>满星</e><e color='ffFFE384'>奖励</e>]]></viptip1>
+			   <nicetip><![CDATA[<e color='ffFFE384'>温馨提示：</e><br><e color='ffFFE384'>若24:00之前未完成所有任务，则次日将被重置为【第一环】，请及时完成，以免造成损失</e>]]></nicetip>
+		   </herotask>
+	</taskConfig>
+	<!--跳跃配置说明：
+	jumpHeight 跳跃高度 
+	jumpSpeed  跳跃速度
+	maxcount 最大允许多少个粒子
+	maxlife 单个粒子最大生命期
+    beginalpha 单个粒子从多少帧开始淡出
+	alphaMulti  影子淡化程度 越大表示淡化越少0.1-1
+    emitstep 发射器隔多少帧发射一个粒子
+	以上所有单位以帧为单位，不是以时间
+	速度分2段 jumpSpeed 代表第一段的 jumpSpeed2 代表第2段的  数字越小表示越慢
+	jumpCoeff 表示向左 向右偏移量0.5居中 小于向左偏 大于向右偏-->
+	<Jump jumpHeight="25"  maxcount="4"  maxlife="5"  beginalpha="1" alphaMulti="0.4" emitstep="1" jumpCoeff="0.5" jumpSpeed="0.4" jumpSpeed2="0.5"/>
+	
+	<!--DrinkWine 对酒当歌的配置
+		maxnum 每日最多喝几瓶酒
+		friendadd 酒友加成
+		mapName 活动地图名
+	-->
+	<DrinkWine maxnum="3" friendadd="20" mapName="duijiudangge">
+		<!--活动结束时间-->
+		<endTime>20:30:00</endTime>
+		<!--活动开启的天 0表示周日-->
+		<days>0,1,2,3,4,5,6</days>
+		<!--itemid 酒物品id addaward: 增加收益百分比-->
+		<item itemid="3000020" addaward="40"/>
+		<item itemid="3000021" addaward="60"/>
+		<item itemid="3000022" addaward="80"/>
+		<!--对酒当歌中，根据职业更换不同模型 job 职业 mesh AVT对应表.xls 里面的id-->
+		<model job="1" mesh="6810002"/>
+		<model job="2" mesh="6820002"/>
+		<model job="3" mesh="6830002"/>
+		<model job="4" mesh="6840002"/>
+		<!--对酒当歌中，离席提示的内容描述-->
+		<lefttips><![CDATA[<e color='ffFFE384'>一键完成剩余任务均为</e><e color='ff00FF00'>满星</e><e color='ffFFE384'>奖励</e>]]></lefttips>
+	</DrinkWine>
+	
+	<!--封神降魔活动配置
+		titleImg 界面标题文字图片对应路径E:\designer\res\img\uiimg\activity\ 
+		mapName 活动地图名
+	-->
+	<SkyDevil titleImg="nameicon6.png" mapName="fengshenxiangmo">
+		<!--npcid BOSS id tipid: tooltipconfig.xml中得编号-->
+		<item npcid="80000" tipid="30000372" race="1"/>
+		<item npcid="80001" tipid="30000373" race="3"/>
+		<item npcid="80002" tipid="30000374" race="2"/>
+		<item npcid="80003" tipid="30000375" race="4"/>
+	</SkyDevil>
+	<!-- 围剿通天教主 -->
+	<BesetBoss  titleImg="nameicon10.png" mapName="wjttjz" race="1">
+		<item npcid="800010" tipid="800010" race="1"/>神小
+		<item npcid="800011" tipid="800011" race="1"/>神大
+		<item npcid="800030" tipid="800010" race="3"/>魔小
+		<item npcid="800031" tipid="800011" race="3"/>魔大
+		<item npcid="800020" tipid="800010" race="2"/>灵小
+		<item npcid="800021" tipid="800011" race="2"/>灵大
+		<item npcid="800041" tipid="800041" race="4"/>终极
+	</BesetBoss >
+	<BesetBoss  titleImg="nameicon10.png" mapName="wjttjz" race="2">
+		<item npcid="800020" tipid="800010" race="2"/>灵小
+		<item npcid="800021" tipid="800011" race="2"/>灵大
+		<item npcid="800010" tipid="800010" race="1"/>神小
+		<item npcid="800011" tipid="800011" race="1"/>神大
+		<item npcid="800030" tipid="800010" race="3"/>魔小
+		<item npcid="800031" tipid="800011" race="3"/>魔大	
+		<item npcid="800041" tipid="800041" race="4"/>终极
+	</BesetBoss >
+	<BesetBoss  titleImg="nameicon10.png" mapName="wjttjz" race="3">
+		<item npcid="800030" tipid="800010" race="3"/>魔小
+		<item npcid="800031" tipid="800011" race="3"/>魔大
+		<item npcid="800020" tipid="800010" race="2"/>灵小
+		<item npcid="800021" tipid="800011" race="2"/>灵大
+		<item npcid="800010" tipid="800010" race="1"/>神小
+		<item npcid="800011" tipid="800011" race="1"/>神大
+		<item npcid="800041" tipid="800041" race="4"/>终极
+	</BesetBoss >
+	<!-- 经验区 小的优先与大的-->
+	<BesetBossExpPoint>
+		<curPoint id="5" name="10倍经验区" width="143" height="167" x="0" y="0" />
+		<curPoint id="4" name="20倍经验区" width="16" height="28" x="51" y="77" />	
+		<curPoint id="3" name="20倍经验区" width="21" height="12" x="63" y="66"/>	
+		<curPoint id="2" name="20倍经验区" width="36" height="22" x="66" y="77"/>	
+		<curPoint id="1" name="20倍经验区" width="12" height="6" x="81" y="98"/>	
+	</BesetBossExpPoint>
+
+	<!--活动地图-->
+	<activityMap>
+		<item name="luanzhan"/>
+		<item name="xianlingdao"/>
+		<item name="qunxianhui"/>
+		<item name="zuzhangzhengduozhan"/>
+		<item name="duodingzhan"/>
+		<item name="yuxizhengduozhan"/>
+		<item name="moshenhuangling"/>
+		<item name="tiaoyun1a"/>
+		<item name="tiaoyun1b"/>
+		<item name="tiaoyun1c"/>
+		<item name="tiaoyun1d"/>
+		<item name="tiaoyun1e"/>
+		<item name="tiaoyun2a"/>
+		<item name="tiaoyun2b"/>
+		<item name="tiaoyun2c"/>
+		<item name="tiaoyun2d"/>
+		<item name="tiaoyun2e"/>
+		<item name="tiaoyun3a"/>
+		<item name="tiaoyun3b"/>
+		<item name="tiaoyun3c"/>
+		<item name="tiaoyun3d"/>
+		<item name="tiaoyun3e"/>
+		<item name="tiaoyun4a"/>
+		<item name="tiaoyun4b"/>
+		<item name="tiaoyun4c"/>
+		<item name="tiaoyun4d"/>
+		<item name="tiaoyun4e"/>
+	</activityMap>
+	<!--商城获得标签配置,act1表示激活商城高级购买 act2无视（以后备用）-->
+	<mall act1="1" act2="1" tiancijinfuId="2200170">
+	</mall>
+	<!-- 快捷购买 tips 说明 -->
+	<!-- 本说明不能太长，否则【购买】按钮将会超出框 -->
+	<shortCutBuy color="0xff00ff">
+		<item id="1300065" text="每个减少30秒肉身修炼时间"/>
+	</shortCutBuy>
+	<!-- 出生地图名，出生点，这张地图的最大width,最大height-->
+	<preLoader map="yuehecun" x="30" y="50" maxx="100" maxy="100"/>
+	<!-- 时装配置 id 道具id fashi 法师职业对应avt表id, zhanshi 战士和弓手职业对应avt表id-->
+	<fashionSuit>
+		<!--夏日清凉-->
+		<item id="2210189" fashi="300001" zhanshi="300002"/>
+		<item id="2210190" fashi="300001" zhanshi="300002"/>
+		<!--婚礼时装-->
+		<item id="2210191" fashi="300003" zhanshi="300004"/>
+		<item id="2210192" fashi="300003" zhanshi="300004"/>
+		<!--黑西服（尚未使用）-->
+		<item id="2210193" fashi="300005" zhanshi="300006"/>
+		<!--钢铁侠、蓝裙子-->
+		<item id="2400041" fashi="300007" zhanshi="300008"/>
+		<item id="2400042" fashi="300007" zhanshi="300008"/>
+		<!--牛仔男、女仆-->
+		<item id="2210219" fashi="300009" zhanshi="300010"/>
+		<item id="2210220" fashi="300009" zhanshi="300010"/>
+		<!--蜘蛛人、护士-->
+		<item id="2210221" fashi="300011" zhanshi="300012"/>
+		<item id="2210222" fashi="300011" zhanshi="300012"/>
+		<!--玫瑰花装（女）-->
+		<item id="2210225" fashi="300013" zhanshi="300014"/>
+		<!--七夕时装-->
+		<item id="2210235" fashi="300017" zhanshi="300018"/>
+		<item id="2210236" fashi="300017" zhanshi="300018"/>
+		<!--鲜花装（女）、罗马时装-->
+		<item id="2210237" fashi="300015" zhanshi="300016"/>
+		<item id="2210241" fashi="300015" zhanshi="300016"/>
+		<!--黑礼服（女）、吸血鬼时装-->
+		<item id="2210238" fashi="300019" zhanshi="300020"/>
+		<item id="2210239" fashi="300019" zhanshi="300020"/>
+		<!--白礼服（女）、条纹西装-->
+		<item id="2210240" fashi="300021" zhanshi="300022"/>
+		<item id="2210246" fashi="300021" zhanshi="300022"/>
+		<!--嫦娥、后羿-->
+		<item id="2210244" fashi="300023" zhanshi="300024"/>
+		<item id="2210245" fashi="300023" zhanshi="300024"/>
+	</fashionSuit>
+	<!-- 打开界面的按钮模块关联配置 
+	winType:打开的窗口 类型0：模块（id查找路径 禅道-文档视图-客户端模块ID列表）  类型1：弹出窗口（id查找路径 禅道-文档视图-弹出界面ID）  
+	backScaleClose,backScaleOpen:0:使用默认值 1:没有 2：有  ((非按钮触发的)缩放回弹的效果 默认为1)
+	followClose:跟随窗口关闭的窗口配置
+	SPACE_REIKI_X:灵气特效球的中心点 
+	-->
+	<consoleUIMap SPACE_REIKI_X="60" SPACE_REIKI_Y="40">
+		<item name="Console/BtnCharInfo" windowId="3" winType="0"><!--C界面-->
+		     <followClose windowId="46" winType="0"/><!--仙丹界面-->
+		     <followClose windowId="89" winType="1"/><!--神兵宝甲界面-->
+		</item>
+		<item name="Console/BtnBag" windowId="2" winType="0"><!--背包界面-->
+		      <followClose windowId="5" winType="0"/><!--仓库界面-->
+			  <followClose windowId="27" winType="0"/><!--随身商店界面-->
+			  <followClose windowId="81" winType="0"/><!--熔炼界面-->
+		</item>
+		<item name="MiniMapRoot/IconBigmap" windowId="12"/><!--大地图-->
+		<item name="Console/BtnCharInfo" windowId="109" winType="0"/><!--神兵界面-->
+		<item name="Console/BtnSkill" windowId="14" winType="0"/>
+		<item name="Console/BtnTeam" windowId="37"/><!--组队-->
+		<item name="Console/BtnFriend" windowId="21" winType="0"/>
+		<item name="Console/BtnEquipForge" windowId="23" winType="0"/>
+		<item name="Console/MallBtn" windowId="24" winType="0"/>
+		<item name="Console/BtnSwing" windowId="32" winType="0"/>
+		<item name="Console/BtnTeam" windowId="37" winType="0"/>
+		<item name="MiniMapRoot/Mail" windowId="18" winType="0"/>
+		<item name="MiniMapRoot/AutoKill" windowId="16" winType="0"/>
+		<item name="MiniMapRoot/SortBar" windowId="31" winType="0"/>
+		<item name="MiniMapRoot/Sale" windowId="29" winType="0"/>
+		<item name="Console/BtnMarriage" windowId="56"/><!--求婚界面-->
+		<item name="Console/BtnMarriage" windowId="59"/><!--结婚操作-->
+		<item name="Console/BtnCountry" windowId="67"/><!--阵营-->
+		<item name="Console/BtnHorse" windowId="68"><!--坐骑主界面-->
+			<followClose windowId="70" winType="0"/><!--坐骑进阶-->
+		</item>
+		<item name="Console/BtnHorse" windowId="70" winType="0"/><!--坐骑进阶-->
+		<item name="MiniMapRoot/Achieve" windowId="69"/><!--成就系统-->
+		<item name="Console/BtnGirl" windowId="20"/><!--美人-->
+		<item name="head/VipBtn" windowId="85"/><!--VIP-->
+		<item name="MiniMapRoot/ActivityIcon" windowId="78"/><!--活跃度-->
+		<item name="selfHead/stateInfo/expBtn" windowId="90"/><!--主UI经验丹-->
+		<item name="selfHead/stateInfo/hpBtn" windowId="89"/><!--主UI药包 魔法包-->
+		<item name="Console/ethnicityButton" windowId="82" winType="0"/>
+		<item name="" windowId="74" winType="0" backScaleClose="1" backScaleOpen="1"/><!--竞技场每日领奖-->
+		<item name="" windowId="65" winType="0" backScaleClose="1" backScaleOpen="1"/><!--技能符灵-->
+		<item name="" windowId="15" winType="0" backScaleClose="1" backScaleOpen="1"/><!--GM列表界面-->
+		<item name="" windowId="10" winType="0" backScaleClose="1" backScaleOpen="1"/><!--任务列表界面-->
+		<item name="" windowId="46" winType="0" backScaleClose="1" backScaleOpen="1"/><!--丹药-->
+		<item name="" windowId="47" winType="1" backScaleClose="1" /><!--欢迎界面-->
+	</consoleUIMap>
+	<!--头顶飘字-->
+	<!--offsetx 人物脚底为出发点（x=0）向上的距离（y=70）：即从脚底向上数70个像素为飘雪出发点-->
+	<!--angle 角度（水平向右0度  水平向上90度  水平向左180度）  distance 距离 keeptime 时间 beginScale 飘字起始倍数 endScale 结束倍数 beginAlpha endAlpha 字体渐变（1代表完全不透明，0代表完全透明）-->
+	<!-- GM指令//testBlood type=1,2,3-->
+	 <bloodConfig>
+		<!--爆击-->
+	     <item type="bang" offsetx="0" offsety="120">
+		      <phase  angle="60" distance="50" keeptime="200" beginScale="0.2" endScale="4"/>
+			  <phase  angle="60" distance="1" keeptime="20" beginScale="4" endScale="4"/>
+			  <phase  angle="60" distance="5" keeptime="200" beginScale="4" endScale="1"/>
+			   <phase  angle="25" distance="200" keeptime="1600" beginScale="1" endScale="1" beginAlpha="1" endAlpha="0"/>
+		 </item>
+		 <!--闪避-->
+		 <item type="dodage" offsetx="0" offsety="60">
+		     <phase  angle="180" distance="180" keeptime="300" beginScale="1.2" endScale="1.2"/>
+			 <phase  angle="0" distance="60" keeptime="150" beginScale="1.2" endScale="1.2"/>
+			 <phase  angle="90" distance="110" keeptime="1000" beginScale="1.2" endScale="1.2"/>
+			 <phase  angle="90" distance="110" keeptime="1000" beginScale="1.2" endScale="1" beginAlpha="1" endAlpha="0"/>
+		 </item>
+		 <!--加血-->
+		 <item type="addblood" offsetx="0" offsety="80">
+		     <phase  angle="155" distance="60" keeptime="200" beginScale="0.8" endScale="0.8"/>
+			 <phase  angle="90" distance="100" keeptime="1000" beginScale="0.8" endScale="0.8" beginAlpha="1" endAlpha="0"/>
+		 </item>
+		 <!--加经验-->
+		 <item type="addexp" offsetx="0" offsety="100">
+		     <phase  angle="90" distance="40" keeptime="200" beginScale="0.2" endScale="2"/>
+			 <phase  angle="90" distance="5" keeptime="300" beginScale="2" endScale="1"/>
+			 <phase  angle="90" distance="1" keeptime="300" beginScale="1" endScale="1"/>
+			 <phase  angle="90" distance="110" keeptime="700" beginScale="1" endScale="1"/>
+			 <phase  angle="90" distance="1" keeptime="400" beginScale="1" endScale="1"/>
+			 <phase  angle="90" distance="20" keeptime="300" beginScale="1" endScale="0.8" beginAlpha="1" endAlpha="0"/>
+		 </item>
+		 <!--目标遭受伤害-->
+		 <item type="otherhurt" offsetx="0" offsety="80">
+		     <phase  angle="45" distance="130" keeptime="400" beginScale="0.7" endScale="1.3"/>
+			 <phase  angle="135" distance="20" keeptime="180" beginScale="1.3" endScale="1"/>
+			 <phase  angle="15" distance="80" keeptime="800" beginScale="1" endScale="1"/>
+			 <phase  angle="15" distance="80" keeptime="800" beginScale="1" endScale="1" beginAlpha="1" endAlpha="0"/>
+		 </item>
+		 <!--自己遭受伤害-->
+		 <item type="selfhurt" offsetx="0" offsety="40">
+		     <phase  angle="90" distance="50" keeptime="200" beginScale="0.8" endScale="0.8"/>
+			 <phase  angle="90" distance="40" keeptime="800" beginScale="0.8" endScale="0.8"/>
+			 <phase  angle="90" distance="20" keeptime="400" beginScale="0.8" endScale="0.8" beginAlpha="1" endAlpha="0"/>
+		 </item>
+		 <!--神圣一击-->
+	     <item type="ssyj" offsetx="0" offsety="180">
+		     <phase  angle="60" distance="50" keeptime="200" beginScale="0.2" endScale="4"/>
+			  <phase  angle="60" distance="1" keeptime="20" beginScale="4" endScale="4"/>
+			  <phase  angle="60" distance="5" keeptime="200" beginScale="4" endScale="1"/>
+			   <phase  angle="25" distance="200" keeptime="1600" beginScale="1" endScale="1" beginAlpha="1" endAlpha="0"/>
+		 </item>
+		 <!--抵抗-->
+	     <item type="resist" offsetx="0" offsety="100">
+		     <phase  angle="180" distance="180" keeptime="300" beginScale="1.2" endScale="1.2"/>
+			 <phase  angle="0" distance="60" keeptime="150" beginScale="1.2" endScale="1.2"/>
+			 <phase  angle="90" distance="110" keeptime="1000" beginScale="1.2" endScale="1.2"/>
+			 <phase  angle="90" distance="110" keeptime="1000" beginScale="1.2" endScale="1" beginAlpha="1" endAlpha="0"/>
+		 </item>
+		 <!--神圣护佑-->
+	     <item type="sshy" offsetx="0" offsety="100">
+		     <phase  angle="180" distance="180" keeptime="300" beginScale="1.2" endScale="1.2"/>
+			 <phase  angle="0" distance="60" keeptime="150" beginScale="1.2" endScale="1.2"/>
+			 <phase  angle="90" distance="110" keeptime="1000" beginScale="1.2" endScale="1.2"/>
+			 <phase  angle="90" distance="110" keeptime="1000" beginScale="1.2" endScale="1" beginAlpha="1" endAlpha="0"/>
+		 </item>
+		  <!--天庭积分-->
+	     <item type="ttjf" offsetx="0" offsety="100">
+			 <phase  angle="90" distance="40" keeptime="200" beginScale="0.2" endScale="2"/>
+			 <phase  angle="90" distance="5" keeptime="300" beginScale="2" endScale="1"/>
+			 <phase  angle="90" distance="1" keeptime="300" beginScale="1" endScale="1"/>
+			 <phase  angle="90" distance="110" keeptime="700" beginScale="1" endScale="1"/>
+			 <phase  angle="90" distance="1" keeptime="400" beginScale="1" endScale="1"/>
+			 <phase  angle="90" distance="20" keeptime="300" beginScale="1" endScale="0.8" beginAlpha="1" endAlpha="0"/>
+		 </item>
+		  <!--资源争夺 战绩-->
+	     <item type="campHegemony" offsetx="0" offsety="100">
+			 <phase  angle="90" distance="40" keeptime="200" beginScale="0.2" endScale="2"/>
+			 <phase  angle="90" distance="5" keeptime="300" beginScale="2" endScale="1"/>
+			 <phase  angle="90" distance="1" keeptime="300" beginScale="1" endScale="1"/>
+			 <phase  angle="90" distance="110" keeptime="700" beginScale="1" endScale="1"/>
+			 <phase  angle="90" distance="1" keeptime="400" beginScale="1" endScale="1"/>
+			 <phase  angle="90" distance="20" keeptime="300" beginScale="1" endScale="0.8" beginAlpha="1" endAlpha="0"/>
+		 </item>
+		 <!--亲密度-->
+		 <item type="intimacy" offsetx="0" offsety="100">
+		     <phase  angle="90" distance="40" keeptime="200" beginScale="0.2" endScale="2"/>
+			 <phase  angle="90" distance="5" keeptime="300" beginScale="2" endScale="1"/>
+			 <phase  angle="90" distance="1" keeptime="300" beginScale="1" endScale="1"/>
+			 <phase  angle="90" distance="110" keeptime="700" beginScale="1" endScale="1"/>
+			 <phase  angle="90" distance="1" keeptime="400" beginScale="1" endScale="1"/>
+			 <phase  angle="90" distance="20" keeptime="300" beginScale="1" endScale="0.8" beginAlpha="1" endAlpha="0"/>
+		 </item>
+		 <!--坐骑仙翼技能状态:人物头顶-->
+	     <item type="horseSwing" offsetx="0" offsety="100">
+			<phase  angle="90" distance="150" keeptime="150" beginScale="0.2" endScale="3"/>
+			<phase  angle="50" distance="0" keeptime="100" beginScale="3" endScale="1.5"/>
+			<phase  angle="50" distance="0" keeptime="100" beginScale="1.5" endScale="3"/>
+			<phase  angle="50" distance="0" keeptime="100" beginScale="3" endScale="1"/>
+			<phase  angle="50" distance="0" keeptime="1500" beginScale="1" endScale="1" />
+			<phase  angle="50" distance="0" keeptime="1000" beginScale="1" endScale="1" beginAlpha="1" endAlpha="0"/>
+		 </item>
+		 <!--坐骑仙翼技能状态:NPC头顶-->
+		 <item type="horseSwingNpc" offsetx="0" offsety="100">
+		       <phase  angle="90" distance="80" keeptime="150" beginScale="1" endScale="1"/>
+			 <phase  angle="0" distance="0" keeptime="1000" beginScale="1" endScale="1"/>
+			 <phase  angle="270" distance="110" keeptime="500" beginScale="1.2" endScale="1" beginAlpha="1" endAlpha="0"/>
+		 </item>
+	 </bloodConfig>
+	  <!--头顶帽字叠加处理 addexp表示灵气和经验-->
+	 <bloodExclude time="400">		
+		<duilei type="addexp"/>
+	 </bloodExclude>
+	  <!--怪物下一个受击动作间隔多少毫秒-->
+	 <hitInterval>500</hitInterval>
+	 <!-- 物品出售需要预先提示的类型 type 道具类型 quality 需要达到的道具品质(0-4) -->
+	 <itemSellTipConfig>
+		<item type="1" quality="2"/>
+		<item type="2" quality="2"/>
+		<item type="3" quality="2"/>
+		<item type="4" quality="2"/>
+		<item type="5" quality="2"/>
+		<item type="6" quality="2"/>
+		<item type="7" quality="2"/>
+		<item type="8" quality="2"/>
+		<item type="9" quality="2"/>
+		<item type="10" quality="2"/>
+		<item type="11" quality="2"/>
+		<item type="12" quality="2"/>
+		<item type="13" quality="2"/>
+		<item type="14" quality="2"/>
+		<item type="15" quality="2"/>
+		<item type="16" quality="2"/>
+		<item type="17" quality="2"/>
+		<item type="18" quality="2"/>
+		<item type="19" quality="2"/>
+		<item type="20" quality="2"/>
+		<item type="21" quality="2"/>
+		<item type="22" quality="2"/>
+		<item type="23" quality="2"/>
+		<item type="24" quality="2"/>
+		<item type="25" quality="2"/>
+		<item type="26" quality="2"/>
+		<item type="27" quality="2"/>
+		<item type="28" quality="2"/>
+		<item type="29" quality="2"/>
+		<item type="31" quality="2"/>
+		<item type="32" quality="2"/>
+		<item type="33" quality="2"/>
+		<item type="34" quality="2"/>
+		<item type="35" quality="2"/>
+		<item type="36" quality="2"/>
+		<item type="37" quality="2"/>
+		<item type="38" quality="2"/>
+		<item type="39" quality="2"/>	
+	</itemSellTipConfig>
+	<!-- 阵营选择描述文字配置 -->
+	<joinCountryTipConfig value="选择【推荐阵营】，进入最优阵营，立即获得2000元宝大礼包"/>
+	
+	<!--摆摊税率n%-->
+	<stallTaxRage>8</stallTaxRage>
+	<!--最低单价-->
+	<priceLowerLimit>2</priceLowerLimit>
+	
+	<!-- 呦喝等级 -->
+	<peddlelevel>55</peddlelevel>
+	
+	<!-- 每天呦喝次数 -->
+	<peddlenum>50</peddlenum>
+	
+	<!--摆摊要求等级-->
+	<stallNeedLevel>40</stallNeedLevel>
+	
+	
+	
+	
+	<faces>
+		<face index="1" text="爱心"/>
+		<face index="2" text="傲慢"/>
+		<face index="3" text="鄙视"/>
+		<face index="4" text="闭嘴"/>
+		<face index="5" text="便便"/>
+		<face index="6" text="吃饭"/>
+		<face index="7" text="大哭"/>
+		<face index="8" text="得意"/>
+		<face index="9" text="凋谢"/>
+		<face index="10" text="发怒"/>
+		<face index="11" text="惊恐"/>
+		<face index="12" text="惊讶"/>
+		<face index="13" text="可爱"/>
+		<face index="14" text="困了"/>
+		<face index="15" text="冷汗"/>
+		<face index="16" text="玫瑰"/>
+		<face index="17" text="呕吐"/>
+		<face index="18" text="撇嘴"/>
+		<face index="19" text="钱袋"/>
+		<face index="20" text="强"/>
+		<face index="21" text="糗大了"/>
+		<face index="22" text="鸡蛋"/>
+		<face index="23" text="弱"/>
+		<face index="24" text="色"/>
+		<face index="25" text="衰"/>
+		<face index="26" text="太阳"/>
+		<face index="27" text="微笑"/>
+		<face index="28" text="委屈"/>
+		<face index="29" text="吻"/>
+		<face index="30" text="星星"/>
+		<face index="31" text="疑问"/>
+		<face index="32" text="月亮"/>
+		<face index="33" text="晕"/>
+		<face index="34" text="再见"/>
+		<face index="35" text="龇牙"/>
+		<face index="36" text="鬼脸"/>
+	</faces>
+	
+	<!--最少受击时间 当怪物播完被击动作后到播下一个被击动作的时间-->
+	<hitInterval>1500</hitInterval>
+	
+	<!--击飞配置 horzCoffCtrl :控制点位置（比例0~1)  vertHeightCtrl：控制点绝对高度 hitDistance  击飞距离 hitTime 完成击飞(击飞+弹起)所需时间  bounceTime 弹起时间  bounceHeight 弹起高度  luckyHit 爆击  -->
+    <hitBack>
+	  <hit horzCoffCtrl="0.5"  vertHeightCtrl="350" hitDistance="5" hitTime="1.8" bounceTime="0.2" bounceHeight="100"/>
+	  <luckyHit horzCoffCtrl="0.5"  vertHeightCtrl="350" hitDistance="8" hitTime="1.8" bounceTime="0.2" bounceHeight="100"/>
+	</hitBack>
+	
+	<!-- 自动打坐的检查间隔 30秒-->
+	<autoSitTime time="60"/>
+	
+	<!--欢迎界面 firstTaskId:第一个任务id-->
+	<welcome firstTaskId="10000">
+		<!--访问NPC -->
+		<opt type="3" x="46" y="93" npcId="200001"/>
+	</welcome>
+	
+	<!--金钱类道具品质配置-->
+	<moneyitemquality>
+		<!--idx 道具id name 道具描述（给策划看的）parts 品质等于 <= 对应数值的索引-->
+		<item idx="10012" name="铜钱" parts="10-500000-1000000-10000000"/>
+		<item idx="10013" name="绑定铜钱" parts="10-500000-1000000-10000000"/>
+		<item idx="10014" name="经验" parts="10-500000-8000000-30000000"/>
+		<item idx="10015" name="灵气" parts="10-80000-200000-800000"/>
+		<item idx="10016" name="天庭积分" parts="10-200-800-3000"/>
+		<item idx="10017" name="亲密度" parts="10-10000-80000-500000"/>
+		<item idx="10018" name="战功" parts="10-200-800-3000"/>
+		<item idx="10019" name="战魂" parts="10-200-800-3000"/>
+		<item idx="10020" name="荣誉" parts="10-200-800-3000"/>
+	</moneyitemquality>
+	
+	<!--神龙祈福 subheight 结束位置等于起始位置（编辑器位置）减去这个高度-->
+	<dragonBless subheight="200">
+		<!--神龙祈福每次兑换的铜钱=money+moneyadd*玩家等级，点击花费元宝= (已点击次数/1)*moneycostadd+moneycost，moneynum 铜钱次数，exp:每次兑换的经验，expcost：每次花费的元宝，expnum:每天可以兑换次数，reiki和exp一样-->
+		<goldchange money="400000" moneyadd="5000" moneycost="5" moneycostadd="5" moneynum="5" exp="4900000" expadd="80000" expcost="10" expcostadd="10" expnum="3" reiki="120000" reiadd="1800" reikicost="10" reikicostadd="10" reikinum="3"/>
+		<!--龙身上的持续特效-->
+		<dragonEffect modid="3600090" meshScale="260" offsetx="0" offsety="100" rotationy="100" rotationx="10"/>
+		<!--获得金钱的特效-->
+		<moneyEffect modid="3600091" meshScale="225" offsetx="-5" offsety="60" rotationy="90" rotationx="0"/>
+		<!--获得经验的特效-->
+		<moneyEffect modid="3600114" meshScale="225" offsetx="-5" offsety="60" rotationy="90" rotationx="0"/>
+		<!--获得灵气的特效-->
+		<moneyEffect modid="3600113" meshScale="225" offsetx="-5" offsety="60" rotationy="90" rotationx="0"/>
+		
+		<!--VIP增加的铜钱次数 vip vip等级 nums 增加次数-->
+		<moneyadd vip="1" nums="0"/>
+		<moneyadd vip="2" nums="0"/>
+		<moneyadd vip="3" nums="1"/>
+		<moneyadd vip="4" nums="1"/>
+		<moneyadd vip="5" nums="2"/>
+		<moneyadd vip="6" nums="2"/>
+		<moneyadd vip="7" nums="3"/>
+		<moneyadd vip="8" nums="3"/>
+		<moneyadd vip="9" nums="4"/>
+		<moneyadd vip="10" nums="5"/>
+		<!--VIP增加的经验次数 vip vip等级 nums 增加次数-->
+		<expadd vip="1" nums="0"/>
+		<expadd vip="2" nums="0"/>
+		<expadd vip="3" nums="1"/>
+		<expadd vip="4" nums="1"/>
+		<expadd vip="5" nums="2"/>
+		<expadd vip="6" nums="2"/>
+		<expadd vip="7" nums="3"/>
+		<expadd vip="8" nums="3"/>
+		<expadd vip="9" nums="4"/>
+		<expadd vip="10" nums="5"/>
+		<!--VIP增加的灵气次数 vip vip等级 nums 增加次数-->
+		<reikiadd vip="1" nums="0"/>
+		<reikiadd vip="2" nums="0"/>
+		<reikiadd vip="3" nums="1"/>
+		<reikiadd vip="4" nums="1"/>
+		<reikiadd vip="5" nums="2"/>
+		<reikiadd vip="6" nums="2"/>
+		<reikiadd vip="7" nums="3"/>
+		<reikiadd vip="8" nums="3"/>
+		<reikiadd vip="9" nums="4"/>
+		<reikiadd vip="10" nums="5"/>
+	</dragonBless>
+
+	
+	<mouseWheelDeta>0.8</mouseWheelDeta>
+	
+	<!--幸运值规则，limit代表幸运值大于此值时触发下面规则，level代表小于等于这个值，percent代表幸运值增加速度-->
+	<luckyProgress limit="200">
+	   <phase level="10" percent="200" />
+	   <phase level="20" percent="150" />
+	   <phase level="30" percent="100" />
+	   <phase level="60" percent="50" />	   	   
+	   <phase level="100" percent="100" />
+	</luckyProgress>
+		<!--自动任务控制时间 秒   maxLevel：自动任务到的最大级别    autovisitnpc：进入自动任务后的与对话框时间 秒  visitnpcNotAuto:鼠标不移动6秒进入自动 -->		
+		<autogame autoTime='30' maxLevel='45' autovisitnpc="2" visitnpcNotAuto="5"/>
+		
+<!--创建角色界面 job:职业1战狂 2剑灵 3魅法 startX, startY:开始的坐标 endX:移动结束的坐标 playMoveTime:播放移动动画时间 playClipTime:播放裁剪动画时间-->
+	<roleCreateJob job="1" startX="0" startY="-10" endX="100" playMoveTime="0.3" playClipTime="1"/>
+	<roleCreateJob job="2" startX="3" startY="0" endX="100" playMoveTime="0.3" playClipTime="1"/>
+	<roleCreateJob job="3" startX="120" startY="120" endX="230" playMoveTime="0.3" playClipTime="1"/>
+	
+	<!-- 人物属性界面空格子的tips配置 type 装备类型 tipsid tooltipconfig的tips编号-->
+	<charTipConfig>
+		<item type="1" tipsid="1011"/>
+		<item type="2" tipsid="1012"/>
+		<item type="3" tipsid="1013"/>
+		<item type="4" tipsid="1014"/>
+		<item type="5" tipsid="1015"/>
+		<item type="6" tipsid="1016"/>
+		<item type="7" tipsid="1017"/>
+		<item type="8" tipsid="1018"/>
+		<item type="9" tipsid="1019"/>
+		<item type="10" tipsid="1020"/>
+		<item type="11" tipsid="1021"/>
+		<item type="12" tipsid="1022"/>
+	</charTipConfig>
+	<!--
+	<welcome str="欢迎#N$Q1[@[Name]]:来到37游戏平台重金打造，顶级仙侠游戏--$Q3[【混沌战域】]，封神之旅即将启程，仙友，你准备好了吗？去寻找一段属于你的封神榜！凌云壮志出我辈，刀光剑影战鼓擂，混沌战域封神路，更胜人生一场醉！"/>
+	-->
+	<welcome str="$Q6[欢迎您来到极致仙侠游戏--【混沌战域】，封神降魔，斗战天庭，谁敢争锋！来吧！让我们战个痛快，就在今天！]"/>
+	
+	<!--1：手机验证 2：平台礼包 3：超级会员 4：微端 5:头顶称号-->
+	<!--1 : 37wan 2 : jinshan -->
+	<!--举例: func id="1" closePlats="1;2"  代表功能1在平台1和2都关闭--> 
+	<funcPlatConfigs>
+	  <func id="1" closePlats="2"/>
+	  <func id="2" closePlats="2"/>		
+	  <func id="3" closePlats="2"/>
+	  <func id="5" closePlats="2"/>
+	</funcPlatConfigs>
+	
+	
+</root>

@@ -1,0 +1,35 @@
+<GUILayout>
+    <Window Name="LinkRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,210},{0,42}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{100,0}}" />
+        <Window Name="LinkRender/flyBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,188},{0,7},{0,208},{0,20}}" />
+            <Property Name="Image" Value="set:mainUI1 image:transfer" />
+        </Window>
+        <Window Name="LinkRender/line$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,210},{0,22}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="击杀王祖贤（0/12）" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="LinkRender/timeTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,24},{0,210},{0,42}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="击杀王祖贤（0/12）" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFF0000" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="LinkRender/effWin" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,-1},{0,192},{0,23}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

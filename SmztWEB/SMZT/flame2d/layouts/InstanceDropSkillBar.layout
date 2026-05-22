@@ -1,0 +1,41 @@
+<GUILayout>
+    <Window Name="InstanceDropSkillBar" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,243},{0,60}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="InstanceDropSkillBar/shadowBg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,243},{0,60}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:copyPublic image:shadowLeft" />
+            <Property Name="LeftOffset" Value="13" />
+            <Property Name="RightImage" Value="set:copyPublic image:shadowRight" />
+            <Property Name="CenterImage" Value="set:copyPublic image:shadowMiddle" />
+            <Property Name="RightOffset" Value="13" />
+            <Window Name="InstanceDropSkillBar/shadowBg/descTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,41},{0,243},{0,59}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="击杀副本怪物获得技能" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff00baff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="InstanceDropSkillBar/dragImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,1},{0,28},{0,58}}" />
+            <Property Name="Image" Value="set:skins image:danceDrag" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="InstanceDropSkillBar/skillSelect" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,36},{0,36}}" />
+            <Property Name="Image" Value="set:mainUI1 image:skillSelect" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

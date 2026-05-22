@@ -1,0 +1,101 @@
+<GUILayout>
+    <Window Name="BlueRenewalPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,829},{0,568}}" />
+        <Property Name="GlyphImage" Value="set:blueRenewal image:title" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="BlueRenewalPanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,811},{0,520}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="BlueRenewalPanel/bg/imgBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,810},{0,515}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="BlueRenewalPanel/bg/imgBg/instructionsTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,326},{0,163},{0,802},{0,276}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="BlueRenewalPanel/bg/imgBg/grid0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,451},{0,295},{0,501},{0,345}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="BlueRenewalPanel/bg/imgBg/grid1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,509},{0,295},{0,559},{0,345}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="BlueRenewalPanel/bg/imgBg/grid2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,566},{0,295},{0,616},{0,345}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="BlueRenewalPanel/bg/imgBg/grid3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,624},{0,295},{0,674},{0,345}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="BlueRenewalPanel/bg/imgBg/rewardBtn" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,155},{0,354},{0,255},{0,377}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="领取奖励" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="BlueRenewalPanel/bg/imgBg/openBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,160},{0,193},{0,355},{0,239}}" />
+                    <Property Name="Image" Value="set:blueRenewal image:openBlueBtn" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                </Window>
+                <Window Name="BlueRenewalPanel/bg/imgBg/openYearBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,454},{0,193},{0,649},{0,239}}" />
+                    <Property Name="Image" Value="set:blueRenewal image:openBlueYearBtn" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                </Window>
+                <Window Name="BlueRenewalPanel/bg/imgBg/noteTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,244},{0,486},{0,560},{0,510}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="BlueRenewalPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,521},{0,811},{0,522}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

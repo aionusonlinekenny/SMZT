@@ -1,0 +1,32 @@
+<GUILayout>
+    <Window Name="BossDamageRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,230},{0,34}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="BossDamageRender/paiming" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,86},{0,34}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="1" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="BossDamageRender/roleName" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,-6},{0,0},{0,114},{0,34}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="一定要六个字" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="BossDamageRender/damage" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,85},{0,34}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="HorizontalAlignment" Value="Right" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

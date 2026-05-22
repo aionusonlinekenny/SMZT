@@ -1,0 +1,76 @@
+<GUILayout>
+    <Window Name="HallActivationCode" Type="GuiLook/CommonBg3">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,645},{0,516}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="HallActivationCode/activation" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,644},{0,329}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="HallActivationCode/activation/RedButton" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,376},{0,213},{0,522},{0,253}}" />
+                <Window Name="HallActivationCode/activation/RedButton/exchange" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,146},{0,40}}" />
+                    <Property Name="Image" Value="set:hallReward image:exchange" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="HallActivationCode/activation/input" Type="GuiLook/Editbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,285},{0,145},{0,615},{0,176}}" />
+            </Window>
+        </Window>
+        <Window Name="HallActivationCode/activity" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,399},{0,510},{0,426}}" />
+            <Property Name="Image" Value="set:hallReward image:background" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="HallActivationCode/activity/activityTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,5},{0,74},{0,23}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="活动内容" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="HallActivationCode/activity2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,329},{0,510},{0,356}}" />
+            <Property Name="Image" Value="set:hallReward image:background" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="HallActivationCode/activity2/activityTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,5},{0,74},{0,23}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="活动时间" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="HallActivationCode/activityTxt3" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,368},{0,83},{0,386}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="永久活动" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="HallActivationCode/activationCodeTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,444},{0,435},{0,462}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="只要在此输入激活码，便可获得在激活码中封藏的礼物哦~" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

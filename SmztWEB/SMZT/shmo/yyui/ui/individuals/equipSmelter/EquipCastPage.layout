@@ -1,0 +1,439 @@
+<GUILayout>
+    <Window Name="EquipCastPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,587},{0,452}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="EquipCastPage/sp" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,587},{0,452}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="EquipCastPage/sp/imgBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,586},{0,375}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipCastPage/sp/imgBg/nameTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,80},{0,20},{0,229},{0,42}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="装备名称" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="RightAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/arrowMc" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,237},{0,15},{0,281},{0,45}}" />
+                    <Property Name="Image" Value="set:skins image:rightArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/qualityImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,290},{0,14},{0,345},{0,45}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/nextNameTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,352},{0,20},{0,501},{0,42}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="装备名称" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/attrBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,296},{0,179},{0,340}}" />
+                    <Property Name="Image" Value="set:equip image:purpleborder" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="EquipCastPage/sp/imgBg/attrBg/attrSp0" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,179},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="EquipCastPage/sp/imgBg/attrBg/attrSp0/propName0" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,0},{0,50},{0,16}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="暴击" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="EquipCastPage/sp/imgBg/attrBg/attrSp0/propValue0" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.5},{0,0},{0,45.5},{0,16}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="30" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorizontalAlignment" Value="Centre" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="EquipCastPage/sp/imgBg/attrBg/attrSp0/nextPropArrow0" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,125},{0,0},{0,139},{0,16}}" />
+                            <Property Name="Image" Value="set:skin image:upArrow" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="EquipCastPage/sp/imgBg/attrBg/attrSp0/nextPropValue0" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,140},{0,0},{0,179},{0,16}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="15" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="EquipCastPage/sp/imgBg/attrBg/attrSp1" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,23},{0,179},{0,39}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="EquipCastPage/sp/imgBg/attrBg/attrSp1/propName1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,0},{0,50},{0,16}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="暴击" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="EquipCastPage/sp/imgBg/attrBg/attrSp1/propValue1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.5},{0,0},{0,45.5},{0,16}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="30" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorizontalAlignment" Value="Centre" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="EquipCastPage/sp/imgBg/attrBg/attrSp1/nextPropArrow1" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,125},{0,0},{0,139},{0,16}}" />
+                            <Property Name="Image" Value="set:skin image:upArrow" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="EquipCastPage/sp/imgBg/attrBg/attrSp1/nextPropValue1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,140},{0,0},{0,179},{0,16}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="15" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/barBg" Type="GuiLook/TextBG">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,350},{0,340},{0,362}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="EquipCastPage/sp/imgBg/barBg/successRate$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,339},{0,11}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:skin image:PurpleProgressBarLeft" />
+                        <Property Name="LeftOffset" Value="48" />
+                        <Property Name="RightImage" Value="set:skin image:PurpleProgressBarRight" />
+                        <Property Name="CenterImage" Value="set:skin image:PurpleProgressBarCenter" />
+                        <Property Name="RightOffset" Value="48" />
+                    </Window>
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/successRateTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,348},{0,100},{0,364}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="成功率：100%" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/a7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,9},{0,57},{0,57}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/a8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,61},{0,57},{0,109}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/a10" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,165},{0,57},{0,213}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/a11" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,217},{0,57},{0,265}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/a12" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,269},{0,57},{0,317}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/a0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,321},{0,57},{0,369}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="true" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/a13" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,528},{0,321},{0,576},{0,369}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="EquipCastPage/sp/imgBg/a13/StaticImage" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                        <Property Name="Image" Value="set:skin image:NewImage_103" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/a6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,528},{0,269},{0,576},{0,317}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/a5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,528},{0,217},{0,576},{0,265}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/a4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,528},{0,165},{0,576},{0,213}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/a3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,528},{0,113},{0,576},{0,161}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/a2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,528},{0,61},{0,576},{0,109}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/a1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,528},{0,9},{0,576},{0,57}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/a9" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,113},{0,57},{0,161}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/selected" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,322},{0,56},{0,368}}" />
+                    <Property Name="Image" Value="set:skin image:selectedGridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/swfBox1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,249},{0,227},{0,331},{0,296}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/swfBox" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,249},{0,279},{0,331},{0,348}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="EquipCastPage/sp/imgBg/successEffect" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,158},{0,295},{0,437},{0,348}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="EquipCastPage/sp/diSp" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,374},{0,587},{0,452}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="EquipCastPage/sp/diSp/diBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,586},{0,77}}" />
+                    <Property Name="Image" Value="set:skin image:RenderBg2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="EquipCastPage/sp/diSp/diBg/depleteIGrid0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,0},{0,57},{0,48}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipCastPage/sp/diSp/diBg/depleteIGrid1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,61},{0,0},{0,109},{0,48}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipCastPage/sp/diSp/diBg/depleteIGrid2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,113},{0,0},{0,161},{0,48}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipCastPage/sp/diSp/diBg/castBtn" Type="GlossySerpent/RedButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,402},{0,10},{0,565},{0,50}}" />
+                        <Window Name="EquipCastPage/sp/diSp/diBg/castBtn/castImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                            <Property Name="Image" Value="set:equip image:beginZZ" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="true" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                    <Window Name="EquipCastPage/sp/diSp/diBg/linkBtn$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,462},{0,54},{0,541},{0,70}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="铸造规则" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="EquipCastPage/sp/diSp/diBg/depleteSp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,163},{0,0},{0,375},{0,76}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="EquipCastPage/sp/diSp/diBg/depleteSp/depleteSp0" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,7},{0,206},{0,23}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="EquipCastPage/sp/diSp/diBg/depleteSp/depleteSp0/depleteMc0" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,13},{0,12}}" />
+                                <Property Name="Image" Value="set:skin image:MarkImg" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                            <Window Name="EquipCastPage/sp/diSp/diBg/depleteSp/depleteSp0/depleteTxt0$RI" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,16},{0,0},{0,132},{0,16}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="Text" Value="噩梦金刀*2" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="EquipCastPage/sp/diSp/diBg/depleteSp/depleteSp1" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,0},{0,206},{0,16}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="VerticalAlignment" Value="Centre" />
+                            <Window Name="EquipCastPage/sp/diSp/diBg/depleteSp/depleteSp1/depleteMc1" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,13},{0,12}}" />
+                                <Property Name="Image" Value="set:skin image:MarkImg" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                            <Window Name="EquipCastPage/sp/diSp/diBg/depleteSp/depleteSp1/depleteTxt1$RI" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,16},{0,0},{0,132},{0,16}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="Text" Value="初级神装石*2" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="EquipCastPage/sp/diSp/diBg/depleteSp/depleteSp2" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,53},{0,206},{0,69}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="EquipCastPage/sp/diSp/diBg/depleteSp/depleteSp2/depleteMc2" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,13},{0,12}}" />
+                                <Property Name="Image" Value="set:skin image:MarkImg" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                            <Window Name="EquipCastPage/sp/diSp/diBg/depleteSp/depleteSp2/depleteTxt2$RI" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,16},{0,0},{0,132},{0,16}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="Text" Value="初级半神石*2" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="EquipCastPage/sp/diSp/diBg/depleteSp/materialTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,42},{0,71},{0,60}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="材料来源：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF00baff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="EquipCastPage/sp/diSp/diBg/depleteSp/material$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,44},{0,205},{0,62}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

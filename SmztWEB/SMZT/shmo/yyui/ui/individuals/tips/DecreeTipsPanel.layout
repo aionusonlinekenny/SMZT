@@ -1,0 +1,220 @@
+<GUILayout>
+    <Window Name="DecreeTipsPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,300},{0,685}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="DecreeTipsPanel/commonBg4" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,299},{0,684}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:skins image:tipTop7" />
+            <Property Name="LeftImage" Value="set:skins image:tipLeft7" />
+            <Property Name="TopOffset" Value="9" />
+            <Property Name="LeftOffset" Value="9" />
+            <Property Name="RightImage" Value="set:skins image:tipRight7" />
+            <Property Name="BottomImage" Value="set:skins image:tipBottom7" />
+            <Property Name="CenterImage" Value="set:skins image:tipCenter7" />
+            <Property Name="RightOffset" Value="9" />
+            <Property Name="BottomOffset" Value="9" />
+            <Property Name="TopLeftImage" Value="set:skins image:tipLeftTop7" />
+            <Property Name="TopRightImage" Value="set:skins image:tipRightTop7" />
+            <Property Name="BottomLeftImage" Value="set:skins image:tipLeftBottom7" />
+            <Property Name="BottomRightImage" Value="set:skins image:tipRightBottom7" />
+            <Window Name="DecreeTipsPanel/commonBg4/productBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,297},{0,176}}" />
+                <Property Name="Image" Value="set:skins image:quality7" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="DecreeTipsPanel/commonBg4/roleWindow" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,122},{0,340},{0,172},{0,390}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="DecreeTipsPanel/commonBg4/gridBgEffect" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,17},{0,92},{0,143}}" />
+                <Property Name="Image" Value="set:skins image:qualityItem7" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="DecreeTipsPanel/commonBg4/bindingStateTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,91},{0,72},{0,111}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="死亡掉落" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF0000" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="DecreeTipsPanel/commonBg4/partsTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,86},{0,92},{0,148},{0,112}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="部位需求：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="DecreeTipsPanel/commonBg4/demandTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,120},{0,182},{0,140}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="威望+1000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="DecreeTipsPanel/commonBg4/line1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,113},{0,298},{0,114}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine7" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="DecreeTipsPanel/commonBg4/gradeTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,86},{0,72},{0,148},{0,92}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="等级需求：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="DecreeTipsPanel/commonBg4/effectInstructionsTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,139},{0,117},{0,295},{0,137}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="(佩戴者拥有全服唯一效果)" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="DecreeTipsPanel/commonBg4/partsTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,148},{0,92},{0,217},{0,112}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="通用 玉玺" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="DecreeTipsPanel/commonBg4/line2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,35},{0,298},{0,36}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine7" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="DecreeTipsPanel/commonBg4/gradeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,148},{0,72},{0,210},{0,92}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="60级" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="DecreeTipsPanel/commonBg4/equipNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,1},{0,230},{0,35}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="真龙玉玺" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF0000" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="DecreeTipsPanel/commonBg4/gridBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,20},{0,43},{0,68},{0,91}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="DecreeTipsPanel/commonBg4/gridBg/itemQImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="DecreeTipsPanel/commonBg4/gridBg/itemImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="DecreeTipsPanel/commonBg4/qualityImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,242},{0,3},{0,296},{0,34}}" />
+                <Property Name="Image" Value="set:skins image:superGodProduct" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="DecreeTipsPanel/diSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,372},{0,299},{0,459}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="DecreeTipsPanel/diSp/line4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,298},{0,2}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine7" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="DecreeTipsPanel/diSp/DefaultWindow" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,41},{0,298},{0,86}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="DecreeTipsPanel/diSp/DefaultWindow/isSaleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,23},{0,82},{0,43}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="&lt;不可出售&gt;" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="DecreeTipsPanel/diSp/DefaultWindow/line3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,298},{0,1}}" />
+                    <Property Name="Image" Value="set:skins image:qualityLine7" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="DecreeTipsPanel/diSp/DefaultWindow/priceTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,114},{0,23},{0,292},{0,43}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="系统售价：500铜钱" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF7200" />
+                    <Property Name="HorzTextFormatting" Value="RightAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="DecreeTipsPanel/diSp/DefaultWindow/timeTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,4},{0,60},{0,19}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="倒计时：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="DecreeTipsPanel/diSp/DefaultWindow/timeTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,60},{0,4},{0,223},{0,19}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="23小时23分23秒" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="DecreeTipsPanel/diSp/instructionsTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,7},{0,292},{0,37}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="           物品说明" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFd0f8fe" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

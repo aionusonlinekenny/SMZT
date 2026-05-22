@@ -1,0 +1,154 @@
+<GUILayout>
+    <Window Name="OtherCopyPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,743},{0,453}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="OtherCopyPage/background" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,743},{0,396}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="OtherCopyPage/background/boxSP" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,24},{0,10},{0,717},{0,389}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="OtherCopyPage/background/choosrBtn0" Type="GuiLook/RadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,207},{0,-10},{0,257},{0,8}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="全部" />
+                <Property Name="HoverTextColour" Value="FF00baff" />
+                <Property Name="NormalTextColour" Value="FF00baff" />
+                <Property Name="PushedTextColour" Value="FF00baff" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+            </Window>
+            <Window Name="OtherCopyPage/background/choosrBtn2" Type="GuiLook/RadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,487},{0,-10},{0,537},{0,8}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="组队" />
+                <Property Name="HoverTextColour" Value="FF00baff" />
+                <Property Name="NormalTextColour" Value="FF00baff" />
+                <Property Name="PushedTextColour" Value="FF00baff" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+            </Window>
+            <Window Name="OtherCopyPage/background/choosrBtn1" Type="GuiLook/RadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,347},{0,-10},{0,397},{0,8}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="单人" />
+                <Property Name="HoverTextColour" Value="FF00baff" />
+                <Property Name="NormalTextColour" Value="FF00baff" />
+                <Property Name="PushedTextColour" Value="FF00baff" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+            </Window>
+            <Window Name="OtherCopyPage/background/leftBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,167},{0,25},{0,212}}" />
+                <Property Name="HoverImage" Value="set:skin image:turnLNormal" />
+                <Property Name="NormalImage" Value="set:skin image:turnLNormal" />
+            </Window>
+            <Window Name="OtherCopyPage/background/rightBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,167},{0,25},{0,212}}" />
+                <Property Name="HoverImage" Value="set:skin image:turnRNormal" />
+                <Property Name="NormalImage" Value="set:skin image:turnRNormal" />
+                <Property Name="HorizontalAlignment" Value="Right" />
+            </Window>
+        </Window>
+        <Window Name="OtherCopyPage/smallbackground1" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,396},{0,743},{0,453}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="OtherCopyPage/smallbackground1/BbgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,740},{0,51}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="OtherCopyPage/smallbackground1/items5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,354},{0,2},{0,402},{0,50}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="OtherCopyPage/smallbackground1/items3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,250},{0,2},{0,298},{0,50}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="OtherCopyPage/smallbackground1/enterBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,578},{0,13},{0,690},{0,44}}" />
+                <Property Name="HoverImage" Value="set:skins image:BlueBtnHover" />
+                <Property Name="NormalImage" Value="set:skins image:BlueBtnNormal" />
+                <Property Name="PushedImage" Value="set:skins image:BlueBtnPushed" />
+                <Window Name="OtherCopyPage/smallbackground1/enterBtn/goToCopyImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,112},{0,31}}" />
+                    <Property Name="Image" Value="set:copyGeneral image:goCopy" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="OtherCopyPage/smallbackground1/items0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,94},{0,2},{0,142},{0,50}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="OtherCopyPage/smallbackground1/items1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,146},{0,2},{0,194},{0,50}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="OtherCopyPage/smallbackground1/dropTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,86},{0,57}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="副本掉落：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff00baff" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OtherCopyPage/smallbackground1/items2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,198},{0,2},{0,246},{0,50}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="OtherCopyPage/smallbackground1/actionBtn2" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,697},{0,13},{0,728},{0,44}}" />
+                <Property Name="HoverImage" Value="set:copyGeneral image:rankingHover" />
+                <Property Name="NormalImage" Value="set:copyGeneral image:rankingNormal" />
+                <Property Name="PushedImage" Value="set:copyGeneral image:rankingPushed" />
+            </Window>
+            <Window Name="OtherCopyPage/smallbackground1/items4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,302},{0,2},{0,350},{0,50}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="OtherCopyPage/smallbackground1/actionBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,697},{0,13},{0,728},{0,44}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="HoverImage" Value="set:copyGeneral image:sweepingHover" />
+                <Property Name="NormalImage" Value="set:copyGeneral image:sweepingNormal" />
+                <Property Name="PushedImage" Value="set:copyGeneral image:sweepingPushed" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

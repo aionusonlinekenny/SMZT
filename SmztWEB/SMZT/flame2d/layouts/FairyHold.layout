@@ -1,0 +1,66 @@
+<GUILayout>
+    <Window Name="FairyHold" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,559},{0,435}}" />
+        <Property Name="Text" Value="可抱乘仙子" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="FairyHold/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,541},{0,384}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FairyHold/background/treeImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,541},{0,282}}" />
+                <Property Name="Image" Value="set:fairy2 image:greentree" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyHold/background/fairyList" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,281},{0,541},{0,380}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="FairyHold/background/fairyList/leftButton" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,25},{0,45}}" />
+                    <Property Name="HoverImage" Value="set:skin image:turnLHover" />
+                    <Property Name="NormalImage" Value="set:skin image:turnLNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:turnLPushed" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="FairyHold/background/fairyList/rightButton" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,514},{0,0},{0,539},{0,45}}" />
+                    <Property Name="HoverImage" Value="set:skin image:turnRHover" />
+                    <Property Name="NormalImage" Value="set:skin image:turnRNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:turnRPushed" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="FairyHold/background/fairyList/shapeWindow" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,481},{0,89}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="FairyHold/background/fairyList/shapeWindow/middleBackground" Type="GuiLook/CommonBg2">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,481},{0,89}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="FairyHold/background/fairyList/shapeWindow/middleBackground/boxSP" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,7},{0,0},{0,473},{0,88}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="FairyHold/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,392},{0,541},{0,393}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

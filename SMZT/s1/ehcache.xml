@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+CacheManager Configuration
+==========================
+一个ehcache.xml 相当于一个单个的CacheManager.
+名词解释：
+	堆Heap:	是内存中动态分配对象存储的地方。如果使用new一个对象，它就被分配在堆内存上。这是相对于Stack的，如果你有一个局部变量则它是位于Stack栈内存空间的;
+	offHeap:堆外内存,能将对象从堆中脱离出来序列化，然后存储在一大块内存中，这就像它存储到磁盘上上一样，但它仍然在RAM中。
+			对象在这种状态下不能直接使用，它们必须首先反序列化。也不受垃圾收集影响。序列化和反序列化会影响性能。使用堆外内存能够降低GC导致的暂停;
+	
+学习下面的说明或者ehcache构架（ehcache.xsd）怎样配置.
+
+系统资源标识在这个文件中能被具体制定，当配置被加载时，他们将会被替换。
+例如 multicastGroupPort=${multicastGroupPort}被环境变量的系统属性替换，或是使用如-DmulticastGroupPort=4446命令行开关指定一个系统属性.Another example, useful for Terracotta
+server based deployments is <terracottaConfig url="${serverAndPort}"/ and specify a command line
+switch of -Dserver36:9510
+
+<ehcache>的属性如下：
+* name - CacheManager的可选名称。这个名称起初主要是用于文档记录或辨别Terracotta集群状态。
+		对于Terracotta集群的缓存，一组CacheManager名称和cache名称唯一的鉴定了一个特定的存储于Terracotta集群存储器的缓存。
+
+
+* updateCheck - an optional boolean flag specifying whether this CacheManager should check
+for new versions of Ehcache over the Internet.  If not specified, updateCheck="true".
+
+* dynamicConfig - an optional setting that can be used to disable dynamic configuration of caches
+associated with this CacheManager.  By default this is set to true - i.e. dynamic configuration
+is enabled.  Dynamically configurable caches can have their TTI, TTL and maximum disk and
+in-memory capacity changed at runtime through the cache's configuration object.
+
+* monitoring - an optional setting that determines whether the CacheManager should automatically register the SampledCacheMBean with the system MBean server.	
+	当下，这个监测。只有当使用Terracotta集群和使用Terracotta Developer Console时才有用。使用"autodetect"值，Terracotta集群的出现将被检测和监视，
+	并通过Developer控制台激活。其他允许的值有："on" 和 "off"。默认为"autodetect"。当使用JMX监测时，这个设置不会产生任何作用。
+	(Currently, this monitoring is only useful when using Terracotta clustering and using the
+	Terracotta Developer Console. With the "autodetect" value, the presence of Terracotta clustering
+	will be detected and monitoring, via the Developer Console, will be enabled. Other allowed values
+	are "on" and "off".  The default is "autodetect". This setting does not perform any function when
+	used with JMX monitors.)
+
+* maxBytesLocalHeap - optional setting that constraints the memory usage of the Caches managed by the CacheManager
+to use at most the specified number of bytes of the local VM's heap.
+(在CacheManager级别指定能够使用的堆内存的最大容量)
+	
+* maxBytesLocalOffHeap - optional setting that constraints the offHeap usage of the Caches managed by the CacheManager
+to use at most the specified number of bytes of the local VM's offHeap memory.
+	(在CacheManager级别指定能够使用的非堆内存的最大容量。)
+
+* maxBytesLocalDisk - optional setting that constraints the disk usage of the Caches managed by the CacheManager
+to use at most the specified number of bytes of the local disk.(在CacheManager级别指定能够使用的本地磁盘的最大容量)
+
+These settings let you define "resource pools", caches will share. For instance setting maxBytesLocalHeap to 100M, will result in
+all caches sharing 100 MegaBytes of ram. The CacheManager will balance these 100 MB across all caches based on their respective usage
+patterns. You can allocate a precise amount of bytes to a particular cache by setting the appropriate maxBytes* attribute for that cache.
+That amount will be subtracted from the CacheManager pools, so that if a cache a specified 30M requirement, the other caches will share
+the remaining 70M.
+
+Also, specifying a maxBytesLocalOffHeap at the CacheManager level will result in overflowToOffHeap to be true by default. If you don't want
+a specific cache to overflow to off heap, you'll have to set overflowToOffHeap="false" explicitly
+当在CacheManager级别指定了该属性后会隐式的使所有Cache的overflowToDisk变为true，如需关闭则需在对应的Cache上设置overflowToOffHeap为false。该属性只对企业版Ehcache有用。
+
+Here is an example of CacheManager level resource tuning, which will use up to 400M of heap and 2G of offHeap:
+
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd"
+         updateCheck="true" monitoring="autodetect"
+         dynamicConfig="true" maxBytesLocalHeap="400M" maxBytesLocalOffHeap="2G">
+
+-->
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd"
+         updateCheck="false" monitoring="off" dynamicConfig="true" maxBytesLocalHeap="32M" maxBytesLocalDisk="512M">
+    
+    <!--
+    DiskStore configuration
+    =======================
+
+    The diskStore element is optional. To turn off disk store path creation, comment out the diskStore
+    element below(解释下面的磁盘存储器元素).
+
+    Configure it if you have disk persistence enabled for any cache or if you use
+    unclustered indexed search.
+
+    If it is not configured, and a cache is created which requires a disk store, a warning will be
+     issued and java.io.tmpdir will automatically be used.
+
+    diskStore has only one attribute - "path". It is the path to the directory where
+    any required disk files will be created.
+
+    If the path is one of the following Java System Property it is replaced by its value in the
+    running VM. For backward compatibility these should be specified without being enclosed in the ${token}
+    replacement syntax.
+
+    The following properties are translated:
+    * user.home - User's home directory
+    * user.dir - User's current working directory
+    * java.io.tmpdir - Default temp file path
+    * ehcache.disk.store.dir - A system property you would normally specify on the command line
+      e.g. java -Dehcache.disk.store.dir=/u01/myapp/diskdir ...
+
+    Subdirectories can be specified below the property e.g. java.io.tmpdir/one
+
+    -->
+    <diskStore path="user.dir/cache"/>
+
+    <!--
+    TransactionManagerLookup configuration
+    ======================================
+    This class is used by ehcache to lookup the JTA TransactionManager use in the application
+    using an XA enabled ehcache. If no class is specified then DefaultTransactionManagerLookup
+    will find the TransactionManager in the following order
+
+     *GenericJNDI (i.e. jboss, where the property jndiName controls the name of the
+                    TransactionManager object to look up)
+     *Bitronix
+     *Atomikos
+
+    You can provide you own lookup class that implements the
+    net.sf.ehcache.transaction.manager.TransactionManagerLookup interface.
+    -->
+
+    <transactionManagerLookup class="net.sf.ehcache.transaction.manager.DefaultTransactionManagerLookup"
+                              properties="jndiName=java:/TransactionManager" propertySeparator=";"/>
+
+
+    
+    <cacheManagerEventListenerFactory class="" properties=""/>
+
+
+    <!--
+    Cache configuration
+    ===================
+
+    The following attributes are required.
+
+    name:
+    Sets the name of the cache. This is used to identify the cache. It must be unique.
+
+    The following attributes and elements are optional.
+
+    maxEntriesLocalHeap:(堆内存中最大缓存对象数.0=无限制)
+    Sets the maximum number of objects that will be held on heap memory.  0 = no limit.
+
+    maxEntriesLocalDisk:
+    Sets the maximum number of objects that will be maintained in the DiskStore
+    The default value is zero, meaning unlimited.
+
+    eternal:
+    Sets whether elements are eternal. If eternal,  timeouts are ignored and the
+    element is never expired.
+
+    maxEntriesInCache:
+    This feature is applicable only to Terracotta distributed caches.
+    Sets the maximum number of entries that can be stored in the cluster. 0 = no limit.
+    Note that clustered cache will still perform eviction if resource usage requires it.
+    This property can be modified dynamically while the cache is operating.
+
+    overflowToOffHeap:
+    (boolean) This feature is available only in enterprise versions of Ehcache.
+    When set to true, enables the cache to utilize off-heap memory
+    storage to improve performance. Off-heap memory is not subject to Java
+    GC. The default value is false.
+
+    maxBytesLocalHeap:
+    Defines how many bytes the cache may use from the VM's heap. If a CacheManager
+    maxBytesLocalHeap has been defined, this Cache's specified amount will be
+    subtracted from the CacheManager. Other caches will share the remainder.
+    This attribute's values are given as <number>k|K|m|M|g|G for
+    kilobytes (k|K), megabytes (m|M), or gigabytes (g|G).
+    For example, maxBytesLocalHeap="2g" allots 2 gigabytes of heap memory.
+    If you specify a maxBytesLocalHeap, you can't use the maxEntriesLocalHeap attribute.
+    maxEntriesLocalHeap can't be used if a CacheManager maxBytesLocalHeap is set.
+
+    Elements put into the cache will be measured in size using net.sf.ehcache.pool.sizeof.SizeOf
+    If you wish to ignore some part of the object graph, see net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf
+
+    maxBytesLocalOffHeap:
+    This feature is available only in enterprise versions of Ehcache.
+    Sets the amount of off-heap memory this cache can use, and will reserve.
+
+    This setting will set overflowToOffHeap to true. Set explicitly to false to disable overflow behavior.
+
+    Note that it is recommended to set maxEntriesLocalHeap to at least 100 elements
+    when using an off-heap store, otherwise performance will be seriously degraded,
+    and a warning will be logged.
+
+    The minimum amount that can be allocated is 128MB. There is no maximum.
+
+    maxBytesLocalDisk:
+    As for maxBytesLocalHeap, but specifies the limit of disk storage this cache will ever use.
+
+    timeToIdleSeconds:
+    Sets the time to idle for an element before it expires.
+    i.e. The maximum amount of time between accesses before an element expires
+    Is only used if the element is not eternal.
+    Optional attribute. A value of 0 means that an Element can idle for infinity.
+    The default value is 0.(单位是秒，表示一个元素所允许闲置的最大时间，也就是说一个元素在不被请求的情况下允许在缓存中待的最大时间。默认是0，表示不限制)
+
+    timeToLiveSeconds:
+    Sets the time to live for an element before it expires.
+    i.e. The maximum time between creation time and when an element expires.
+    Is only used if the element is not eternal.
+    Optional attribute. A value of 0 means that and Element can live for infinity.
+    The default value is 0.
+
+    diskExpiryThreadIntervalSeconds:
+    The number of seconds between runs of the disk expiry thread. The default value
+    is 120 seconds.（单位是秒，表示多久检查元素是否过期的线程多久运行一次，默认是120秒。)
+
+    diskSpoolBufferSizeMB:
+    This is the size to allocate the DiskStore for a spool buffer. Writes are made
+    to this area and then asynchronously written to disk. The default size is 30MB.
+    Each spool buffer is used only by its cache. If you get OutOfMemory errors consider
+    lowering this value. To improve DiskStore performance consider increasing it. Trace level
+    logging in the DiskStore will show if put back ups are occurring.
+
+    clearOnFlush:
+    whether the MemoryStore should be cleared when flush() is called on the cache.
+    By default, this is true i.e. the MemoryStore is cleared.
+
+    memoryStoreEvictionPolicy:
+    Policy would be enforced upon reaching the maxEntriesLocalHeap limit. Default
+    policy is Least Recently Used (specified as LRU). Other policies available -
+    First In First Out (specified as FIFO) and Less Frequently Used
+    (specified as LFU)(当内存里面的元素数量或大小达到指定的限制后将采用的驱除策略。默认是LRU（最近最少使用），可选值还有LFU（最不常使用）和FIFO（先进先出）)
+
+    copyOnRead:
+    Whether an Element is copied when being read from a cache.
+    By default this is false.
+
+    copyOnWrite:
+    Whether an Element is copied when being added to the cache.
+    By default this is false.
+
+    Cache persistence is configured through the persistence sub-element.  The attributes of the
+    persistence element are:
+
+    strategy:
+    Configures the type of persistence provided by the configured cache.  This must be one of the
+    following values:
+
+    * localRestartable - Enables the RestartStore and copies all cache entries (on-heap and/or off-heap)
+    to disk. This option provides fast restartability with fault tolerant cache persistence on disk.
+    It is available for Enterprise Ehcache users only.
+
+    * localTempSwap - Swaps cache entries (on-heap and/or off-heap) to disk when the cache is full.
+    "localTempSwap" is not persistent.
+
+    * none - Does not persist cache entries.
+
+    * distributed - Defers to the <terracotta> configuration for persistence settings. This option
+    is not applicable for standalone.
+    
+    synchronousWrites:
+    When set to true write operations on the cache do not return until after the operations data has been
+    successfully flushed to the disk storage.  This option is only valid when used with the "localRestartable"
+    strategy, and defaults to false.
+
+    The following example configuration shows a cache configured for localTempSwap restartability.
+
+    <cache name="persistentCache" maxEntriesLocalHeap="1000">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+
+    Cache elements can also contain sub elements which take the same format of a factory class
+    and properties. Defined sub-elements are:
+
+    * cacheEventListenerFactory - Enables registration of listeners for cache events, such as
+      put, remove, update, and expire.
+
+    * bootstrapCacheLoaderFactory - Specifies a BootstrapCacheLoader, which is called by a
+      cache on initialisation to prepopulate itself.
+
+    * cacheExtensionFactory - Specifies a CacheExtension, a generic mechanism to tie a class
+      which holds a reference to a cache to the cache lifecycle.
+
+    * cacheExceptionHandlerFactory - Specifies a CacheExceptionHandler, which is called when
+      cache exceptions occur.
+
+    * cacheLoaderFactory - Specifies a CacheLoader, which can be used both asynchronously and
+      synchronously to load objects into a cache. More than one cacheLoaderFactory element
+      can be added, in which case the loaders form a chain which are executed in order. If a
+      loader returns null, the next in chain is called.
+
+    * copyStrategy - Specifies a fully qualified class which implements
+      net.sf.ehcache.store.compound.CopyStrategy. This strategy will be used for copyOnRead
+      and copyOnWrite in place of the default which is serialization.
+
+    Example of cache level resource tuning:
+    <cache name="memBound" maxBytesLocalHeap="100m" maxBytesLocalOffHeap="4g" maxBytesLocalDisk="200g" />
+
+   
+    SizeOf Policy
+    +++++++++++++
+
+    Control how deep the SizeOf engine can go when sizing on-heap elements.
+
+    This is configured as per the following example:
+
+    <sizeOfPolicy maxDepth="100" maxDepthExceededBehavior="abort"/>
+
+    maxDepth controls how many linked objects can be visited before the SizeOf engine takes any action.
+    maxDepthExceededBehavior specifies what happens when the max depth is exceeded while sizing an object graph.
+     "continue" makes the SizeOf engine log a warning and continue the sizing. This is the default.
+     "abort"    makes the SizeOf engine abort the sizing, log a warning and mark the cache as not correctly tracking
+                memory usage. This makes Ehcache.hasAbortedSizeOf() return true when this happens.
+
+    The SizeOf policy can be configured at the cache manager level (directly under <ehcache>) and at
+    the cache level (under <cache> or <defaultCache>). The cache policy always overrides the cache manager
+    one if both are set. This element has no effect on distributed caches.
+
+
+    CacheWriter
+    ++++++++++++
+
+    A CacheWriter can be set to write to an underlying resource. Only one CacheWriter can be
+    configured per cache.
+
+    The following is an example of how to configure CacheWriter for write-through:
+
+        <cacheWriter writeMode="write-through" notifyListenersOnException="true">
+            <cacheWriterFactory class="net.sf.ehcache.writer.TestCacheWriterFactory"
+                                properties="type=int,startCounter=10"/>
+        </cacheWriter>
+
+    The following is an example of how to configure CacheWriter for write-behind:
+
+        <cacheWriter writeMode="write-behind" minWriteDelay="1" maxWriteDelay="5"
+                     rateLimitPerSecond="5" writeCoalescing="true" writeBatching="true" writeBatchSize="1"
+                     retryAttempts="2" retryAttemptDelaySeconds="1">
+            <cacheWriterFactory class="net.sf.ehcache.writer.TestCacheWriterFactory"
+                                properties="type=int,startCounter=10"/>
+        </cacheWriter>
+
+    The cacheWriter element has the following attributes:
+    * writeMode: the write mode, write-through or write-behind
+
+    These attributes only apply to write-through mode:
+    * notifyListenersOnException: Sets whether to notify listeners when an exception occurs on a writer operation.
+
+    These attributes only apply to write-behind mode:
+    * minWriteDelay: Set the minimum number of seconds to wait before writing behind. If set to a value greater than 0,
+      it permits operations to build up in the queue. This is different from the maximum write delay in that by waiting
+      a minimum amount of time, work is always being built up. If the minimum write delay is set to zero and the
+      CacheWriter performs its work very quickly, the overhead of processing the write behind queue items becomes very
+      noticeable in a cluster since all the operations might be done for individual items instead of for a collection
+      of them.
+    * maxWriteDelay: Set the maximum number of seconds to wait before writing behind. If set to a value greater than 0,
+      it permits operations to build up in the queue to enable effective coalescing and batching optimisations.
+    * writeBatching: Sets whether to batch write operations. If set to true, writeAll and deleteAll will be called on
+      the CacheWriter rather than write and delete being called for each key. Resources such as databases can perform
+      more efficiently if updates are batched, thus reducing load.
+    * writeBatchSize: Sets the number of operations to include in each batch when writeBatching is enabled. If there are
+      less entries in the write-behind queue than the batch size, the queue length size is used.
+    * rateLimitPerSecond: Sets the maximum number of write operations to allow per second when writeBatching is enabled.
+    * writeCoalescing: Sets whether to use write coalescing. If set to true and multiple operations on the same key are
+      present in the write-behind queue, only the latest write is done, as the others are redundant.
+    * retryAttempts: Sets the number of times the operation is retried in the CacheWriter, this happens after the
+      original operation.
+    * retryAttemptDelaySeconds: Sets the number of seconds to wait before retrying an failed operation.
+
+    Pinning(元素的固定策略)
+    +++++++
+
+    Use this element when data should remain in the cache regardless of resource constraints.
+    Unexpired entries can never be flushed to a lower tier or be evicted.
+    	
+
+    This element has a required attribute (store) to specify which data tiers the cache should be pinned to:
+    * localMemory: Cache data is pinned to the local heap (or off-heap for BigMemory Go and BigMemory Max).(表示将元素固定在内存中)
+    * inCache: Cache data is pinned in the cache, which can be in any tier cache data is stored.(表示将元素固定在任何其正在保存的容器中)
+	(表示将缓存内的元素固定住，除非过期，否则不会对它进行删除和驱除到其它储存容器中。pinning元素只定义了一个属性store，表示将把元素固定在哪个位置。其可选值有localMemory和inCache)
+	
+    Example:
+        <pinning store="inCache"/>
+
+    Cache Extension
+    +++++++++++++++
+
+    CacheExtensions are a general purpose mechanism to allow generic extensions to a Cache.
+    CacheExtensions are tied into the Cache lifecycle.
+
+    CacheExtensions are created using the CacheExtensionFactory which has a
+    <code>createCacheCacheExtension()</code> method which takes as a parameter a
+    Cache and properties. It can thus call back into any public method on Cache, including, of
+    course, the load methods.
+
+    Extensions are added as per the following example:
+
+         <cacheExtensionFactory class="com.example.FileWatchingCacheRefresherExtensionFactory"
+                             properties="refreshIntervalMillis=18000, loaderTimeout=3000,
+                                         flushPeriod=whatever, someOtherProperty=someValue ..."/>
+
+    Cache Decorator Factory
+    +++++++++++++++++++++++
+
+    Cache decorators can be configured directly in ehcache.xml. The decorators will be created and added to the CacheManager.
+    It accepts the name of a concrete class that extends net.sf.ehcache.constructs.CacheDecoratorFactory
+    The properties will be parsed according to the delimiter (default is comma ',') and passed to the concrete factory's
+    <code>createDecoratedEhcache(Ehcache cache, Properties properties)</code> method along with the reference to the owning cache.
+
+    It is configured as per the following example:
+
+        <cacheDecoratorFactory
+      class="com.company.DecoratedCacheFactory"
+      properties="property1=true ..." />
+
+    -->
+
+    <!--
+    Default Cache configuration. These settings will be applied to caches
+    created programmatically using CacheManager.add(String cacheName).
+    This element is optional, and using CacheManager.add(String cacheName) when
+    its not present will throw CacheException
+
+    The defaultCache has an implicit name "default" which is a reserved cache name.
+    -->
+    <defaultCache
+            maxEntriesLocalHeap="1000"
+            eternal="false"
+            timeToIdleSeconds="10"
+            timeToLiveSeconds="20"
+            diskSpoolBufferSizeMB="0"
+            maxEntriesLocalDisk="0"
+            overflowToOffHeap = "false"
+            diskExpiryThreadIntervalSeconds="120"
+            memoryStoreEvictionPolicy="LRU">
+        <persistence strategy="localTempSwap"/>
+    </defaultCache>
+
+    <!--
+    Sample caches. Following are some example caches. Remove these before use.
+    -->
+
+    <!--
+    Sample cache named sampleCache1
+    This cache contains a maximum in memory of 10000 elements, and will expire
+    an element if it is idle for more than 5 minutes and lives for more than
+    10 minutes.
+
+    If there are more than 10000 elements it will overflow to the
+    disk cache, which in this configuration will go to wherever java.io.tmp is
+    defined on your system. On a standard Linux system this will be /tmp"
+    -->
+    <cache name="RegisteredRoleNameCache"
+           eternal="true"                     
+           memoryStoreEvictionPolicy="LFU"
+           overflowToOffHeap = "false"
+           transactionalMode="off">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+	<!--
+	maxEntriesLocalHeap="2000"
+    maxEntriesLocalDisk="2000"
+	diskSpoolBufferSizeMB="32M" 
+	-->
+	
+
+    <!--
+    Sample cache named sampleCache2
+    This cache has a maximum of 1000 elements in memory. There is no overflow to disk, so 1000
+    is also the maximum cache size. Note that when a cache is eternal, timeToLive and
+    timeToIdle are not used and do not need to be specified.
+    -->
+    <!-- 
+    <cache name="sampleCache2"
+           maxEntriesLocalHeap="1000"
+           eternal="true"
+           memoryStoreEvictionPolicy="FIFO"
+            />
+    -->
+    <!--
+    Sample cache named sampleCache3. This cache overflows to disk. The disk store is
+    persistent between cache and VM restarts. The disk expiry thread interval is set to 10
+    minutes, overriding the default of 2 minutes.
+    -->
+     <!-- 
+    <cache name="sampleCache3"
+           maxEntriesLocalHeap="500"
+           eternal="false"
+           overflowToDisk="true"
+           diskPersistent="true"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="600"
+           diskExpiryThreadIntervalSeconds="1"
+           memoryStoreEvictionPolicy="LFU">
+    </cache>
+    -->
+</ehcache>

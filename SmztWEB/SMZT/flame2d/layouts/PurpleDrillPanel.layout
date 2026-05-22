@@ -1,0 +1,208 @@
+<GUILayout>
+    <Window Name="PurpleDrillPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,867},{0,563}}" />
+        <Property Name="GlyphImage" Value="set:purpleDrill image:YYDrill" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="PurpleDrillPanel/radioButton0" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,79},{0,28}}" />
+            <Property Name="Text" Value="月费YY紫钻" />
+            <Property Name="CRFont" Value="songti_12" />
+        </Window>
+        <Window Name="PurpleDrillPanel/radioButton1" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,80},{0,4},{0,155},{0,28}}" />
+            <Property Name="Text" Value="年费YY紫钻" />
+            <Property Name="CRFont" Value="songti_12" />
+        </Window>
+        <Window Name="PurpleDrillPanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,28},{0,848},{0,514}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="PurpleDrillPanel/bg/imgBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,847},{0,485}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="PurpleDrillPanel/bg/imgBg/nobleClassImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,216},{0,15},{0,433},{0,83}}" />
+                    <Property Name="Image" Value="set:purpleDrill image:nobleClass" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/titleImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,91},{0,77},{0,302},{0,175}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/perCentImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,223},{0,173},{0,365},{0,243}}" />
+                    <Property Name="Image" Value="set:purpleDrill image:perCent5" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/btn0" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,26},{0,304},{0,152},{0,463}}" />
+                    <Property Name="Image" Value="set:purpleDrill image:img1" />
+                    <Property Name="UnifiedMaxSize" Value="{{0,222},{0,222}}" />
+                    <Property Name="HoverImageColour" Value="FFeeeeee" />
+                    <Property Name="NormalImageColour" Value="FFaaaaaa" />
+                    <Property Name="PushedImageColour" Value="FFeeeeee" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/btn1" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,183},{0,304},{0,309},{0,463}}" />
+                    <Property Name="Image" Value="set:purpleDrill image:img2" />
+                    <Property Name="UnifiedMaxSize" Value="{{0,222},{0,222}}" />
+                    <Property Name="HoverImageColour" Value="FFeeeeee" />
+                    <Property Name="NormalImageColour" Value="FFaaaaaa" />
+                    <Property Name="PushedImageColour" Value="FFeeeeee" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/btn2" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,335},{0,304},{0,461},{0,463}}" />
+                    <Property Name="Image" Value="set:purpleDrill image:img3" />
+                    <Property Name="UnifiedMaxSize" Value="{{0,222},{0,222}}" />
+                    <Property Name="HoverImageColour" Value="FFeeeeee" />
+                    <Property Name="NormalImageColour" Value="FFaaaaaa" />
+                    <Property Name="PushedImageColour" Value="FFeeeeee" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/btn3" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,486},{0,304},{0,612},{0,463}}" />
+                    <Property Name="Image" Value="set:purpleDrill image:img4" />
+                    <Property Name="UnifiedMaxSize" Value="{{0,222},{0,222}}" />
+                    <Property Name="HoverImageColour" Value="FFeeeeee" />
+                    <Property Name="NormalImageColour" Value="FFaaaaaa" />
+                    <Property Name="PushedImageColour" Value="FFeeeeee" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/openDrillBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,654},{0,363},{0,798},{0,408}}" />
+                    <Property Name="HoverImage" Value="set:purpleDrill image:openDrillHover" />
+                    <Property Name="NormalImage" Value="set:purpleDrill image:openDrillNormal" />
+                    <Property Name="PushedImage" Value="set:purpleDrill image:openDrillPushed" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/gridBg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,453},{0,95},{0,503},{0,145}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/gridBg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,524},{0,95},{0,574},{0,145}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/gridBg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,593},{0,81},{0,657},{0,145}}" />
+                    <Property Name="Image" Value="set:purpleDrill image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/gridBg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,676},{0,95},{0,726},{0,145}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/gridBg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,749},{0,95},{0,799},{0,145}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/prompTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,512},{0,206},{0,749},{0,227}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="成为年费紫钻  同时领取月费紫钻礼包" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/freeBtn" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,572},{0,177},{0,674},{0,200}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="免费领取" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/originalTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,640},{0,152},{0,741},{0,172}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="限购：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/originalTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,579},{0,152},{0,619},{0,172}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="原 价：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/yuanbao" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,619},{0,153},{0,640},{0,172}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/redLine" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,566},{0,162},{0,689},{0,163}}" />
+                    <Property Name="Image" Value="set:purpleDrill image:redLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PurpleDrillPanel/bg/imgBg/nobleClassImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,530},{0,8},{0,741},{0,63}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="PurpleDrillPanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,520},{0,848},{0,521}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,58 @@
+<GUILayout>
+    <Window Name="WorldBossPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,83},{0,12},{0,948},{0,587}}" />
+        <Property Name="GlyphImage" Value="set:WorldBoss image:BOSS" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="WorldBossPanel/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,847},{0,526}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="WorldBossPanel/chooseBtn1" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-63},{0,7},{0,0},{0,48}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="皇陵" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+        </Window>
+        <Window Name="WorldBossPanel/choooseBtn2" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-63},{0,49},{0,0},{0,90}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="精英" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+        </Window>
+        <Window Name="WorldBossPanel/chooseBtn3" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-63},{0,91},{0,0},{0,132}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="世界" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+        </Window>
+        <Window Name="WorldBossPanel/chooseBtn32" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-63},{0,133},{0,0},{0,174}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="玉玺" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+        </Window>
+    </Window>
+</GUILayout>

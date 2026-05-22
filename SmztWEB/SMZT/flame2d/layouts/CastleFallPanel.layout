@@ -1,0 +1,131 @@
+<GUILayout>
+    <Window Name="CastleFallPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{0,697},{0,339}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CastleFallPanel/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,51},{0,672},{0,312}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="CastleFallPanel/bgImg/roleBgEffect" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,261},{0,260}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="CastleFallPanel/bgImg/roleView" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,215},{0,211},{0,242}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="CastleFallPanel/sp1" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,261},{0,0},{0,695},{0,339}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CastleFallPanel/sp1/lostCloseBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,112},{0,279},{0,193},{0,302}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="稍后再来" />
+            </Window>
+            <Window Name="CastleFallPanel/sp1/strongBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,222},{0,279},{0,303},{0,302}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="我要变强" />
+            </Window>
+            <Window Name="CastleFallPanel/sp1/failureImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,56},{0,23},{0,276},{0,83}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleFallPanel/sp1/TextBG2" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,61},{0,242},{0,348},{0,254}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CastleFallPanel/sp1/TextBG2/progressCurrent$NormalBar" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,287},{0,11}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:hpBar" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="CastleFallPanel/sp1/TextBG2/remainingTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,287},{0,12}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="30%" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CastleFallPanel/sp1/changeNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,292},{0,102},{0,409},{0,154}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="【lala】" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleFallPanel/sp1/bossLifeTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,27},{0,221},{0,390},{0,239}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="此次BOSS剩余生命值" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleFallPanel/sp1/bossLifeTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,27},{0,172},{0,390},{0,190}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="上次BOSS剩余生命值" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleFallPanel/sp1/timeText" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,66},{0,254},{0,343},{0,276}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85F500" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleFallPanel/sp1/TextBG" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,61},{0,195},{0,348},{0,207}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CastleFallPanel/sp1/TextBG/progressLast$NormalBar" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,287},{0,11}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:hpBar" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="CastleFallPanel/sp1/TextBG/remainingTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,287},{0,12}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="30%" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CastleFallPanel/sp1/titleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,16},{0,101},{0,293},{0,153}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="真遗憾，您未能成功激活变身" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFaaaaaa" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

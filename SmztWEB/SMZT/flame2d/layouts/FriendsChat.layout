@@ -1,0 +1,92 @@
+<GUILayout>
+    <Window Name="FriendsChat" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,616},{0,568}}" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="FriendsChat/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,525},{0,598},{0,526}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="FriendsChat/titleTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,-38},{0,238},{0,-2}}" />
+            <Property Name="Font" Value="songti_18_strengh" />
+            <Property Name="Text" Value="安静的小程序" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFe1feff" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="FriendsChat/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,364},{0,405}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FriendsChat/bg/chatSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,360},{0,397}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="FriendsChat/rightBg" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,363},{0,4},{0,598},{0,520}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="FriendsChat/CommonBg3" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,433},{0,364},{0,489}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="FriendsChat/DefaultButton" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,408},{0,35},{0,431}}" />
+            <Property Name="HoverImage" Value="set:friends image:faceHover" />
+            <Property Name="NormalImage" Value="set:friends image:faceNormal" />
+            <Property Name="PushedImage" Value="set:friends image:facePushed" />
+        </Window>
+        <Window Name="FriendsChat/DefaultButton2" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,39},{0,408},{0,74},{0,431}}" />
+            <Property Name="HoverImage" Value="set:friends image:posHover" />
+            <Property Name="NormalImage" Value="set:friends image:posNormal" />
+            <Property Name="PushedImage" Value="set:friends image:posPushed" />
+        </Window>
+        <Window Name="FriendsChat/DefaultWindow" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,78},{0,408},{0,276},{0,431}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FriendsChat/DefaultWindow/BlueButton" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,118},{0,0},{0,198},{0,23}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="帮派元宝" />
+            </Window>
+            <Window Name="FriendsChat/DefaultWindow/DefaultButton" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,35},{0,23}}" />
+                <Property Name="HoverImage" Value="set:friends image:diceHover" />
+                <Property Name="NormalImage" Value="set:friends image:diceNormal" />
+                <Property Name="PushedImage" Value="set:friends image:dicePushed" />
+            </Window>
+        </Window>
+        <Window Name="FriendsChat/DefaultWindow2" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,112},{0,408},{0,276},{0,431}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FriendsChat/DefaultWindow2/BlueButton" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,80},{0,23}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="查看资料" />
+            </Window>
+            <Window Name="FriendsChat/DefaultWindow2/BlueButton2" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,84},{0,0},{0,164},{0,23}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="邀请组队" />
+            </Window>
+        </Window>
+        <Window Name="FriendsChat/BlueButton" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,279},{0,408},{0,359},{0,431}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="聊天资料" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,196 @@
+<GUILayout>
+    <Window Name="SkillTipsNoLearnPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,258},{0,299}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SkillTipsNoLearnPanel/commonBg4" Type="GuiLook/CommonBg4">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,258},{0,299}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{800,0}}" />
+            <Window Name="SkillTipsNoLearnPanel/commonBg4/skillNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,8},{0,151},{0,30}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="技能名称：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/commonBg4/skillTypeImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,226},{0,3},{0,255},{0,32}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/commonBg4/line" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,72},{0,258},{0,73}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/commonBg4/openSkillTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,50},{0,244},{0,70}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="需要角色等级40级" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF0000" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/commonBg4/nextGradeTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,79},{0,87.5},{0,99}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="下一等级：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/commonBg4/nextGradeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,90},{0,79},{0,229},{0,99}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/commonBg4/consumptionPowerTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,99.5},{0,88},{0,119.5}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="消耗元气：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/commonBg4/consumptionPowerTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,90},{0,99.5},{0,228},{0,119.5}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="250" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/commonBg4/consumptionGasTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,119.5},{0,87.5},{0,139.5}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="消耗铜币：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="TextColour" Value="FFFef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/commonBg4/consumptionGasTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,90},{0,120},{0,227},{0,140}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="3格" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/commonBg4/lvBarBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,37},{0,245},{0,49}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="SkillTipsNoLearnPanel/commonBg4/lvBarBg/lv$NormalBar" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,230},{0,11}}" />
+                    <Property Name="Image" Value="set:skins image:purpleBox" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillTipsNoLearnPanel/commonBg4/lvBarBg/lvBarTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,12}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="100/200" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/commonBg4/needText$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,99.5},{0,229},{0,136.5}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="250" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SkillTipsNoLearnPanel/skillInfoWin" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,141},{0,259},{0,298}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SkillTipsNoLearnPanel/skillInfoWin/descTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,98},{0,86},{0,118}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="技能描述：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/skillInfoWin/descTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,13},{0,123},{0,245},{0,141}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="小孟轲你自己配去吧，我只能帮你到这了" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFd0f8fe" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/skillInfoWin/attrShowWin" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,10},{0,226},{0,91}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/skillInfoWin/line2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,156},{0,258},{0,157}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SkillTipsNoLearnPanel/skillAttrWin" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,56},{0,81}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SkillTipsNoLearnPanel/skillAttrWin/showImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,56},{0,24}}" />
+                <Property Name="Image" Value="set:skins image:attriBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="SkillTipsNoLearnPanel/skillAttrWin/showImg1/showTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,24}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="攻击" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00baff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkillTipsNoLearnPanel/skillAttrWin/showImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,26},{0,56},{0,81}}" />
+                <Property Name="Image" Value="set:skins image:skillAttrBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="SkillTipsNoLearnPanel/skillAttrWin/showImg2/showTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,55}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="120%" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00baff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

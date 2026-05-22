@@ -1,0 +1,54 @@
+<GUILayout>
+    <Window Name="EquipSmelterPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,605},{0,529}}" />
+        <Property Name="GlyphImage" Value="set:equipSmelter image:equipSmelter" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="EquipSmelterPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,486},{0,587},{0,487}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="EquipSmelterPanel/radioBtn0" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,80},{0,27}}" />
+            <Property Name="Text" Value="魔兵阁" />
+            <Property Name="Visible" Value="false" />
+        </Window>
+        <Window Name="EquipSmelterPanel/radioBtn3" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,157},{0,4},{0,232},{0,27}}" />
+            <Property Name="Text" Value="锻造神装" />
+        </Window>
+        <Window Name="EquipSmelterPanel/radioBtn4" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,157},{0,4},{0,232},{0,27}}" />
+            <Property Name="Text" Value="合成" />
+        </Window>
+        <Window Name="EquipSmelterPanel/radioBtn5" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,233},{0,4},{0,308},{0,27}}" />
+            <Property Name="Text" Value="装备融合" />
+        </Window>
+        <Window Name="EquipSmelterPanel/radioBtn1" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,80},{0,27}}" />
+            <Property Name="Text" Value="鉴定" />
+        </Window>
+        <Window Name="EquipSmelterPanel/sp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,28},{0,587},{0,480}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="EquipSmelterPanel/radioBtn2" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,81},{0,4},{0,156},{0,27}}" />
+            <Property Name="Text" Value="装备吞噬" />
+        </Window>
+    </Window>
+</GUILayout>

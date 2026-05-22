@@ -1,0 +1,126 @@
+<GUILayout>
+    <Window Name="StockInvestmentSystemPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,251},{0,300}}" />
+        <Property Name="Font" Value="songti_18_strengh" />
+        <Property Name="Text" Value="您买入的股票价格有变化" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="StockInvestmentSystemPanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,257},{0,233},{0,258}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="StockInvestmentSystemPanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,233},{0,221}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="StockInvestmentSystemPanel/bg/headerList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,105},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="StockInvestmentSystemPanel/bg/headerList/headerListTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,105},{0,28}}" />
+                    <Property Name="Font" Value="songti_16_strengh" />
+                    <Property Name="Text" Value="股票名称" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00baff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="StockInvestmentSystemPanel/bg/headerList1" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,105},{0,0},{0,170},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="StockInvestmentSystemPanel/bg/headerList1/headerListTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,65},{0,28}}" />
+                    <Property Name="Font" Value="songti_16_strengh" />
+                    <Property Name="Text" Value="买入价" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00baff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="StockInvestmentSystemPanel/bg/headerList2" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,170},{0,0},{0,233},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="StockInvestmentSystemPanel/bg/headerList2/headerListTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,63},{0,28}}" />
+                    <Property Name="Font" Value="songti_16_strengh" />
+                    <Property Name="Text" Value="现价" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00baff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="StockInvestmentSystemPanel/bg/lastBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,70},{0,190},{0,90},{0,210}}" />
+                <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+                <Property Name="DisabledImage" Value="set:skin image:LastBtnDisable" />
+            </Window>
+            <Window Name="StockInvestmentSystemPanel/bg/pageBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,94},{0,192},{0,136},{0,210}}" />
+                <Property Name="Image" Value="set:skin image:pageBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="StockInvestmentSystemPanel/bg/pageBg/pageTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,18}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="10" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="StockInvestmentSystemPanel/bg/nextBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,140},{0,190},{0,160},{0,210}}" />
+                <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+                <Property Name="DisabledImage" Value="set:skin image:NextBtnDisable" />
+            </Window>
+            <Window Name="StockInvestmentSystemPanel/bg/list" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,29},{0,232},{0,186}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="StockInvestmentSystemPanel/nowSaleBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,14},{0,227},{0,100},{0,250}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="现在卖出" />
+        </Window>
+        <Window Name="StockInvestmentSystemPanel/keepBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,134},{0,227},{0,220},{0,250}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="坐等升值" />
+        </Window>
+    </Window>
+</GUILayout>

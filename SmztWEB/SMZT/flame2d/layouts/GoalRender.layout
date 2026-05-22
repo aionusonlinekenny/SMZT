@@ -1,0 +1,56 @@
+<GUILayout>
+    <Window Name="GoalRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,128},{0,95}}" />
+        <Property Name="UnifiedMaxSize" Value="{{0,522},{0,388}}" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="GoalRender/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,128},{0,95}}" />
+            <Property Name="UnifiedMaxSize" Value="{{0,522},{0,388}}" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="GoalRender/bg/img" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,127},{0,94}}" />
+                <Property Name="UnifiedMaxSize" Value="{{0,522},{0,388}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="GoalRender/bg/txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,128},{0,30}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="生命+10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="GoalRender/selected" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,128},{0,95}}" />
+            <Property Name="UnifiedMaxSize" Value="{{0,522},{0,388}}" />
+            <Property Name="TopImage" Value="set:againstSky image:north" />
+            <Property Name="LeftImage" Value="set:againstSky image:west" />
+            <Property Name="TopOffset" Value="22" />
+            <Property Name="LeftOffset" Value="24" />
+            <Property Name="RightImage" Value="set:againstSky image:east" />
+            <Property Name="BottomImage" Value="set:againstSky image:south" />
+            <Property Name="CenterImage" Value="set:againstSky image:center" />
+            <Property Name="RightOffset" Value="24" />
+            <Property Name="BottomOffset" Value="22" />
+            <Property Name="TopLeftImage" Value="set:againstSky image:northWest" />
+            <Property Name="TopRightImage" Value="set:againstSky image:northEadt" />
+            <Property Name="BottomLeftImage" Value="set:againstSky image:southWest" />
+            <Property Name="BottomRightImage" Value="set:againstSky image:southEast" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

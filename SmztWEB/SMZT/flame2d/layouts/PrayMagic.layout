@@ -1,0 +1,249 @@
+<GUILayout>
+    <Window Name="PrayMagic" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,785},{0,560}}" />
+        <Property Name="GlyphImage" Value="set:prayMagic image:pray" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="PrayMagic/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,6},{0,767},{0,513}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="PrayMagic/bg/bgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,766},{0,506}}" />
+                <Property Name="Image" Value="set:prayMagicBg image:bg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="PrayMagic/bg/bgImg/exp" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,14},{0,397},{0,242},{0,432}}" />
+                    <Property Name="Font" Value="songti_24_strengh" />
+                    <Property Name="Text" Value="经验：50000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/money" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,269},{0,397},{0,497},{0,432}}" />
+                    <Property Name="Font" Value="songti_24_strengh" />
+                    <Property Name="Text" Value="铜币：50000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffea00" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/yuan" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,522},{0,397},{0,750},{0,432}}" />
+                    <Property Name="Font" Value="songti_24_strengh" />
+                    <Property Name="Text" Value="元气：50000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffcc43ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/expBtn" Type="GlossySerpent/RedButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,53},{0,437},{0,203},{0,477}}" />
+                    <Window Name="PrayMagic/bg/bgImg/expBtn/StaticImage1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,40}}" />
+                        <Property Name="Image" Value="set:prayMagic image:experience" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/moneyBtn" Type="GlossySerpent/RedButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,307},{0,437},{0,457},{0,477}}" />
+                    <Window Name="PrayMagic/bg/bgImg/moneyBtn/StaticImage2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,40}}" />
+                        <Property Name="Image" Value="set:prayMagic image:gold" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/yuanBtn" Type="GlossySerpent/RedButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,560},{0,437},{0,710},{0,477}}" />
+                    <Window Name="PrayMagic/bg/bgImg/yuanBtn/StaticImage3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,40}}" />
+                        <Property Name="Image" Value="set:prayMagic image:gas" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/expText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,53},{0,480},{0,203},{0,498}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="VIP1可增加1次" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/moneyText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,308},{0,480},{0,458},{0,498}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="VIP2可增加1次" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/yuanText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,561},{0,480},{0,711},{0,498}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="剩余次数：2/3" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/desc$RI1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,14},{0,376},{0,242},{0,394}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/desc$RI2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,269},{0,376},{0,497},{0,394}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/desc$RI3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,522},{0,376},{0,750},{0,394}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/View3d" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,187},{0,261},{0,601},{0,324}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/shadowImg" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,95},{0,334},{0,650},{0,363}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:prayMagic image:grayLeft" />
+                    <Property Name="LeftOffset" Value="12" />
+                    <Property Name="RightImage" Value="set:prayMagic image:grayRight" />
+                    <Property Name="CenterImage" Value="set:prayMagic image:grayMiddle" />
+                    <Property Name="RightOffset" Value="12" />
+                    <Window Name="PrayMagic/bg/bgImg/shadowImg/processImg" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,97},{0,3},{0,544},{0,25}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:prayMagic image:redLeft" />
+                        <Property Name="LeftOffset" Value="13" />
+                        <Property Name="RightImage" Value="set:prayMagic image:redRight" />
+                        <Property Name="CenterImage" Value="set:prayMagic image:redMiddle" />
+                        <Property Name="RightOffset" Value="13" />
+                        <Window Name="PrayMagic/bg/bgImg/shadowImg/processImg/process$NormalBar" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,446},{0,21}}" />
+                            <Property Name="Image" Value="set:prayMagic image:yellowred" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                        <Window Name="PrayMagic/bg/bgImg/shadowImg/processImg/processTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,447},{0,22}}" />
+                            <Property Name="Font" Value="songti_12" />
+                            <Property Name="Text" Value="100/100" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                    <Window Name="PrayMagic/bg/bgImg/shadowImg/experienceImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,6},{0,87},{0,23}}" />
+                        <Property Name="Image" Value="set:prayMagic image:levelExperience" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/roleImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,273},{0,304},{0,489},{0,332}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/nameTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,322},{0,17},{0,367},{0,41}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="魔仙" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffff0000" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/levelTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,392},{0,17},{0,437},{0,41}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="Lv.1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffff7200" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/yuanText$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,591},{0,480},{0,741},{0,498}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="剩余次数：2/3" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/expText$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,83},{0,480},{0,233},{0,498}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="VIP1可增加1次" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PrayMagic/bg/bgImg/moneyText$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,338},{0,480},{0,488},{0,498}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="VIP2可增加1次" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff85f500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

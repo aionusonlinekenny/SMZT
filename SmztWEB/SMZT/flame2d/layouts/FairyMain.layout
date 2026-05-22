@@ -1,0 +1,844 @@
+<GUILayout>
+    <Window Name="FairyMain" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1000},{0,800}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="FairyMain/bg" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1920},{0,1080}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="FairyMain/bg/bg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,480},{0,360}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/bg/bg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,480},{0,0},{0,960},{0,360}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/bg/bg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,960},{0,0},{0,1440},{0,360}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/bg/bg4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1440},{0,0},{0,1920},{0,360}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/bg/bg5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,360},{0,480},{0,720}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/bg/bg7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,960},{0,360},{0,1440},{0,720}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/bg/bg6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,480},{0,360},{0,960},{0,720}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/bg/bg8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1440},{0,360},{0,1920},{0,720}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/bg/bg9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,720},{0,480},{0,1080}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/bg/bg11" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,960},{0,720},{0,1440},{0,1080}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/bg/bg12" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1440},{0,720},{0,1920},{0,1080}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/bg/bg10" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,480},{0,720},{0,960},{0,1080}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/bg/avatarView0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,148},{0,235},{0,348},{0,742}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FairyMain/bg/avatarView0/nameImage0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,88},{0,200},{0,125}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="FairyMain/bg/avatarView0/buleBtn0" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,68},{0,452},{0,131},{0,507}}" />
+                    <Property Name="Image" Value="set:fairy1 image:recruiting" />
+                </Window>
+                <Window Name="FairyMain/bg/avatarView0/buff0" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,507}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="FairyMain/bg/avatarView4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1056},{0,190},{0,1256},{0,697}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FairyMain/bg/avatarView4/nameImage4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,88},{0,200},{0,125}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="FairyMain/bg/avatarView4/buleBtn4" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,68},{0,452},{0,131},{0,507}}" />
+                    <Property Name="Image" Value="set:fairy1 image:recruiting" />
+                </Window>
+                <Window Name="FairyMain/bg/avatarView4/buff4" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,507}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="FairyMain/bg/avatarView6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1556},{0,257},{0,1756},{0,764}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FairyMain/bg/avatarView6/nameImage6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,88},{0,200},{0,125}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="FairyMain/bg/avatarView6/buleBtn6" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,68},{0,452},{0,131},{0,507}}" />
+                    <Property Name="Image" Value="set:fairy1 image:recruiting" />
+                </Window>
+                <Window Name="FairyMain/bg/avatarView6/buff6" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,507}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="FairyMain/bg/avatarView1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,381},{0,204},{0,581},{0,711}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FairyMain/bg/avatarView1/nameImage1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,88},{0,200},{0,125}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="FairyMain/bg/avatarView1/buleBtn1" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,68},{0,452},{0,131},{0,507}}" />
+                    <Property Name="Image" Value="set:fairy1 image:recruiting" />
+                </Window>
+                <Window Name="FairyMain/bg/avatarView1/buff1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,507}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="FairyMain/bg/avatarView2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,614},{0,188},{0,814},{0,695}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FairyMain/bg/avatarView2/nameImage2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,88},{0,200},{0,125}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="FairyMain/bg/avatarView2/buleBtn2" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,68},{0,452},{0,131},{0,507}}" />
+                    <Property Name="Image" Value="set:fairy1 image:recruiting" />
+                </Window>
+                <Window Name="FairyMain/bg/avatarView2/buff2" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,507}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="FairyMain/bg/avatarView3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,831},{0,167},{0,1031},{0,674}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FairyMain/bg/avatarView3/nameImage3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,88},{0,200},{0,125}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="FairyMain/bg/avatarView3/buleBtn3" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,68},{0,452},{0,131},{0,507}}" />
+                    <Property Name="Image" Value="set:fairy1 image:recruiting" />
+                </Window>
+                <Window Name="FairyMain/bg/avatarView3/buff3" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,507}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="FairyMain/bg/avatarView5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1304},{0,210},{0,1504},{0,717}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FairyMain/bg/avatarView5/nameImage5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,88},{0,200},{0,125}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="FairyMain/bg/avatarView5/buleBtn5" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,68},{0,452},{0,131},{0,507}}" />
+                    <Property Name="Image" Value="set:fairy1 image:recruiting" />
+                </Window>
+                <Window Name="FairyMain/bg/avatarView5/buff5" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,507}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="FairyMain/bg/shu" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1578},{0,240},{0,1921},{0,760}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="FairyMain/bg/shu1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,240},{0,343},{0,760}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="FairyMain/bg/shan1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,562},{0,784},{0,795},{0,939}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="FairyMain/bg/shan2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,918},{0,923},{0,1261},{0,1216}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="FairyMain/bg/shan3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,45},{0,900},{0,388},{0,1193}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="FairyMain/bg/yu" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,848},{0,867},{0,1081},{0,1022}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="BottomAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="FairyMain/spiritPool" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,102},{0,19},{0,248},{0,148}}" />
+            <Property Name="Selected" Value="true" />
+            <Property Name="HoverImage" Value="set:fairy1 image:spiritPool1" />
+            <Property Name="SelectedImage" Value="set:fairy1 image:spiritPool1" />
+            <Property Name="UnselectedImage" Value="set:fairy1 image:spiritPool2" />
+        </Window>
+        <Window Name="FairyMain/goldPool" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,250},{0,2},{0,396},{0,149}}" />
+            <Property Name="HoverImage" Value="set:fairy1 image:goldPool1" />
+            <Property Name="SelectedImage" Value="set:fairy1 image:goldPool1" />
+            <Property Name="UnselectedImage" Value="set:fairy1 image:goldPool2" />
+        </Window>
+        <Window Name="FairyMain/headBackground" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,397},{0,118}}" />
+            <Property Name="Image" Value="set:fairy1 image:background" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Name="FairyMain/headBackground/icon" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,79},{0,0},{0,158},{0,79}}" />
+                <Property Name="Image" Value="set:fairy1 image:yellow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/headBackground/levelImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,170},{0,14},{0,297},{0,42}}" />
+                <Property Name="Image" Value="set:fairy1 image:spiritPool" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/headBackground/TextBG" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,165},{0,31},{0,300},{0,43}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Window Name="FairyMain/headBackground/TextBG/blueBackground$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,134},{0,12}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:BlueProgressBarLeft" />
+                    <Property Name="RightImage" Value="set:skin image:BlueProgressBarRignt" />
+                    <Property Name="CenterImage" Value="set:skin image:BlueProgressBarCenter" />
+                </Window>
+                <Window Name="FairyMain/headBackground/TextBG/experienceTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-2},{0,135},{0,13}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="6522/10000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="FairyMain/headBackground/levelTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,178},{0,50},{0,236},{0,68}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="仙子等级" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/headBackground/levelNumberTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,255},{0,50},{0,291},{0,68}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="14级" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/headBackground/TextBG2" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,165},{0,67},{0,300},{0,79}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="FairyMain/headBackground/TextBG2/blueBackground2$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,134},{0,12}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:BlueProgressBarLeft" />
+                    <Property Name="RightImage" Value="set:skin image:BlueProgressBarRignt" />
+                    <Property Name="CenterImage" Value="set:skin image:BlueProgressBarCenter" />
+                </Window>
+                <Window Name="FairyMain/headBackground/TextBG2/experienceTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-2},{0,135},{0,13}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="6522/10000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="FairyMain/fairyBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,-96},{0,13},{0,-19},{0,90}}" />
+            <Property Name="Image" Value="set:fairy1 image:purpleFairy" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Right" />
+        </Window>
+        <Window Name="FairyMain/leftButton" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,14},{0,0},{0,55},{0,128}}" />
+            <Property Name="Image" Value="set:fairy1 image:bigArrowleft" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="VerticalAlignment" Value="Centre" />
+        </Window>
+        <Window Name="FairyMain/rightButton" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,-17},{0,0},{0,24},{0,128}}" />
+            <Property Name="Image" Value="set:fairy1 image:bigArrowringt" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="VerticalAlignment" Value="Centre" />
+            <Property Name="HorizontalAlignment" Value="Right" />
+        </Window>
+        <Window Name="FairyMain/outImgBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,-19},{0,12},{0,43},{0,89}}" />
+            <Property Name="Image" Value="set:skins image:exportImg" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="HorizontalAlignment" Value="Right" />
+        </Window>
+        <Window Name="FairyMain/fairyName" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,-3},{0,-3},{0,245},{0,95}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Right" />
+            <Window Name="FairyMain/fairyName/addTxt1$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,111},{0,27},{0,241},{0,45}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="近战" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fairyName/fairyNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,7},{0,185},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="萤火仙子" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fairyName/fightNumberTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,60},{0,26},{0,97},{0,44}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="3421" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fairyName/props1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,45},{0,62},{0,93}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fairyName/props2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,101},{0,45},{0,149},{0,93}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fairyName/props3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,188},{0,45},{0,236},{0,93}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fairyName/usingFairy" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,7},{0,118},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="当前出战仙子：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fairyName/wordTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,26},{0,59},{0,44}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="战斗力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="FairyMain/fight" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,-3},{0,-105},{0,245},{0,-7}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Right" />
+            <Window Name="FairyMain/fight/attribute1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,20},{0,31},{0,55},{0,49}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="攻击" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/attribute2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,133},{0,74},{0,168},{0,92}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="天命" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/attribute3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,133},{0,53},{0,168},{0,71}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="暴击" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/attribute4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,20},{0,53},{0,55},{0,71}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="防御" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/attribute5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,20},{0,74},{0,55},{0,92}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="坚韧" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/attribute6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,133},{0,31},{0,168},{0,49}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="生命" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/fightNumberTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,164},{0,7},{0,242},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="3421" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/number1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,56},{0,31},{0,119},{0,49}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="+9999" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/number2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,169},{0,74},{0,242},{0,92}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="+9999" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/number3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,169},{0,53},{0,242},{0,71}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="+9999" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/number4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,169},{0,31},{0,243},{0,49}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="+9999" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/number5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,56},{0,74},{0,118},{0,92}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="+9999" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/number6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,56},{0,53},{0,120},{0,71}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="+9999" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/point" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,34},{0,20},{0,44}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/point2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,122},{0,77},{0,132},{0,87}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/point3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,122},{0,56},{0,132},{0,66}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/point4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,122},{0,35},{0,132},{0,45}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/point5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,78},{0,20},{0,88}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/point6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,56},{0,20},{0,66}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fight/wordTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,7},{0,163},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="所有仙子附加战斗力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="FairyMain/fighting" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,50},{0,127},{0,75}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Name="FairyMain/fighting/fighting1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,89},{0,25}}" />
+                <Property Name="Image" Value="set:fairy1 image:fightImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fighting/fpoint0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,95},{0,0},{0,102},{0,8}}" />
+                <Property Name="Image" Value="set:fairy1 image:point" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fighting/fpoint1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,105},{0,0},{0,112},{0,8}}" />
+                <Property Name="Image" Value="set:fairy1 image:point" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="FairyMain/fighting/fpoint2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,0},{0,122},{0,8}}" />
+                <Property Name="Image" Value="set:fairy1 image:point" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="FairyMain/DefaultWindow" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,400},{0,158}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Name="FairyMain/DefaultWindow/RedButton2" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,213},{0,0},{0,385},{0,123}}" />
+                <Property Name="HoverImage" Value="set:fairy1 image:goOnPlayBig" />
+                <Property Name="NormalImage" Value="set:fairy1 image:goOnPlaySmall" />
+                <Property Name="PushedImage" Value="set:fairy1 image:goOnPlaySmall" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+            </Window>
+            <Window Name="FairyMain/DefaultWindow/bgshadow1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,92},{0,123},{0,187},{0,143}}" />
+                <Property Name="Image" Value="set:skins image:headTop" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FairyMain/DefaultWindow/bgshadow1/moneyImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,19},{0,20}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:goldCoin" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="FairyMain/DefaultWindow/bgshadow1/moneyTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,20},{0,0},{0,95},{0,20}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="50000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="FairyMain/DefaultWindow/bgshadow2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,207},{0,123},{0,302},{0,143}}" />
+                <Property Name="Image" Value="set:skins image:headTop" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FairyMain/DefaultWindow/bgshadow2/moneyImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,19},{0,20}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:goldCoinLock" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="FairyMain/DefaultWindow/bgshadow2/moneyTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,20},{0,0},{0,95},{0,20}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="150000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="FairyMain/DefaultWindow/textView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-23},{0,400},{0,127}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="FairyMain/DefaultWindow/RedButton" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,187},{0,123}}" />
+                <Property Name="HoverImage" Value="set:fairy1 image:playerBig" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="NormalImage" Value="set:fairy1 image:playerSmall" />
+                <Property Name="PushedImage" Value="set:fairy1 image:playerSmall" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

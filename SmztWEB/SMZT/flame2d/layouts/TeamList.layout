@@ -1,0 +1,113 @@
+<GUILayout>
+    <Window Name="TeamList" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,230},{0,224}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+        <Window Name="TeamList/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,230},{0,224}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="TeamList/bg/titleBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,230},{0,32}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="TeamList/bg/titleBg/titleBg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,230},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TeamList/bg/titleBg/zoomBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,7},{0,8.5},{0,23},{0,24.5}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:zoomLeftBtn" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                </Window>
+                <Window Name="TeamList/bg/titleBg/teamTextImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,27},{0,1},{0,89.5},{0,31}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:teamTextImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="AutoRenderingSurface" Value="true" />
+                </Window>
+                <Window Name="TeamList/bg/titleBg/buffWin" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,177},{0,3},{0,227},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="TeamList/bg/titleBg/outTeamBtn$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,115},{0,9},{0,176},{0,31}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="退出队伍" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="TeamList/bg/contentBox" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,32},{0,230},{0,224}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+            </Window>
+            <Window Name="TeamList/bg/taskLine" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,230},{0,32}}" />
+                <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="TeamList/zoomNBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,0.5},{0,0},{0,90.5},{0,32}}" />
+            <Property Name="HoverImage" Value="set:mainUI1 image:zoomRightBtnHover" />
+            <Property Name="NormalImage" Value="set:mainUI1 image:zoomRightBtnNormal" />
+            <Property Name="PushedImage" Value="set:mainUI1 image:zoomRightBtnPushed" />
+            <Window Name="TeamList/zoomNBtn/zoomBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,90},{0,32}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="TeamList/zoomNBtn/zoomLine" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,90},{0,32}}" />
+                <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="TeamList/zoomNBtn/nameImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,27},{0,1},{0,89.5},{0,31}}" />
+                <Property Name="Image" Value="set:mainUI1 image:teamTextImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+            </Window>
+            <Window Name="TeamList/zoomNBtn/zoomBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,8.5},{0,23},{0,24.5}}" />
+                <Property Name="Image" Value="set:mainUI1 image:zoomRightBtn" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,170 @@
+<GUILayout>
+    <Window Name="XianRankPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,786},{0,556}}" />
+        <Property Name="GlyphImage" Value="set:xianbang image:xianbang_xb_img" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="XianRankPanel/CommonBg3" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,766},{0,504}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="XianRankPanel/CommonBg3/bgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,765},{0,499}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="XianRankPanel/CommonBg3/bgImg/listSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,38},{0,188},{0,462}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/upButton" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,55},{0,5},{0,146},{0,31}}" />
+                    <Property Name="Image" Value="set:xianbang image:xianbang_upage_img" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/downButton" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,56},{0,469},{0,147},{0,495}}" />
+                    <Property Name="Image" Value="set:xianbang image:xianbang_dpage_img" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/activateBtn" Type="GlossySerpent/RedButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,313},{0,427},{0,459},{0,466}}" />
+                    <Window Name="XianRankPanel/CommonBg3/bgImg/activateBtn/activateImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,26},{0,8},{0,119},{0,30}}" />
+                        <Property Name="Image" Value="set:xianbang image:xianbang_ljjh_img" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/zhandouliImage" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,576},{0,64},{0,750},{0,93}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/infoTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,574},{0,164},{0,759},{0,184}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="防御：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="DropTextColour" Value="ffef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/infoTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,574},{0,190},{0,759},{0,210}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="命中：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="DropTextColour" Value="ffef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/infoTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,574},{0,218},{0,760},{0,238}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="暴击：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="DropTextColour" Value="ffef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/infoTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,574},{0,247},{0,759},{0,267}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="必杀：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="DropTextColour" Value="ffef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/infoTxt5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,574},{0,274},{0,759},{0,294}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="坚韧：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="DropTextColour" Value="ffef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/infoTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,574},{0,135},{0,759},{0,155}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="攻击：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="DropTextColour" Value="ffef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/conditionDesTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,574},{0,346},{0,759},{0,366}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="攻击：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="DropTextColour" Value="ffef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/conditionDesTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,574},{0,373},{0,759},{0,393}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="攻击：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="DropTextColour" Value="ffef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/conditionDesTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,574},{0,400},{0,759},{0,420}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="攻击：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="DropTextColour" Value="ffef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/conditionDesTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,574},{0,426},{0,759},{0,446}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="攻击：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="DropTextColour" Value="ffef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/conditionDesTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,574},{0,455},{0,759},{0,475}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="攻击：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="DropTextColour" Value="ffef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/d3DView" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,373},{0,397},{0,406},{0,420}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="XianRankPanel/CommonBg3/bgImg/titleBox" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,297},{0,64},{0,479},{0,105}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="XianRankPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,511},{0,749},{0,512}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

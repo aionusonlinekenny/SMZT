@@ -1,0 +1,758 @@
+<GUILayout>
+    <Window Name="SkillBar" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,565},{0,120}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="SkillBar/swtichTurnWin" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,120},{0,120}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="SkillBar/swtichTurnWin/turnBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,3},{0,17},{0,92},{0,106}}" />
+                <Property Name="Image" Value="set:mainUI1 image:headBgCircle" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="SkillBar/swtichTurnWin/turnHead0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,31},{0,2},{0,91},{0,62}}" />
+                <Property Name="Image" Value="set:mainUI1 image:faceBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="SkillBar/swtichTurnWin/turnHead0/headImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,57},{0,57}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:lockDark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/swtichTurnWin/turnHead0/headLight0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,57},{0,57}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:faceBgMark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/swtichTurnWin/turnHead0/headImgAdd0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,57},{0,57}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:addImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/swtichTurnWin/turnHead1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,60},{0,60}}" />
+                <Property Name="Image" Value="set:mainUI1 image:faceBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="SkillBar/swtichTurnWin/turnHead1/headImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,57},{0,57}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:lockDark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/swtichTurnWin/turnHead1/headLight1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,57},{0,57}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:faceBgMark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/swtichTurnWin/turnHead1/headImgAdd1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,57},{0,57}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:addImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/swtichTurnWin/turnHead2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,60},{0,60}}" />
+                <Property Name="Image" Value="set:mainUI1 image:faceBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="SkillBar/swtichTurnWin/turnHead2/headImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,57},{0,57}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:lockDark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/swtichTurnWin/turnHead2/headLight2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,57},{0,57}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:faceBgMark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/swtichTurnWin/turnHead2/headImgAdd2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,57},{0,57}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:addImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/swtichTurnWin/turnHead3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,60},{0,60}}" />
+                <Property Name="Image" Value="set:mainUI1 image:faceBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="SkillBar/swtichTurnWin/turnHead3/headImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,57},{0,57}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:lockDark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/swtichTurnWin/turnHead3/headLight3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,57},{0,57}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:faceBgMark" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/swtichTurnWin/turnHead3/headImgAdd3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,57},{0,57}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:addImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="SkillBar/shortcutWin" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,445},{0,87}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="HorizontalAlignment" Value="Right" />
+            <Window Name="SkillBar/shortcutWin/angerBarBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,235},{0,0},{0,423},{0,17}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="SkillBar/shortcutWin/angerBarBg/anger$NormalBar" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,30},{0,4},{0,185},{0,13}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:AngerBar" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/angerBarBg/angerBarTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,30},{0,1},{0,185},{0,15}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="100/100" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/angerBarBg/angerTitleBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,28},{0,16}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:AngerImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/shortcutWin/hpBarBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,230},{0,17}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="SkillBar/shortcutWin/hpBarBg/hp$NormalBar" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,31},{0,4},{0,212},{0,13}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:HPBar" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/hpBarBg/hpBarTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,31},{0,1},{0,212},{0,15}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="100/100" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/hpBarBg/hpTitleBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,28},{0,16}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:HPImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/hpBarBg/bloodBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,215},{0,-1},{0,230},{0,15}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:bloodBag" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/shortcutWin/skillSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,28},{0,41},{0,82}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillBar/shortcutWin/skillSp/skillBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/skillSp/quickBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,39},{0,34},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/shortcutWin/skillSp1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,49},{0,28},{0,89},{0,82}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillBar/shortcutWin/skillSp1/skillBg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/skillSp1/quickBg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,39},{0,34},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/shortcutWin/skillSp2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,97},{0,28},{0,137},{0,82}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillBar/shortcutWin/skillSp2/skillBg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/skillSp2/quickBg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,39},{0,34},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/shortcutWin/skillSp3" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,145},{0,28},{0,185},{0,82}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillBar/shortcutWin/skillSp3/skillBg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/skillSp3/quickBg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,39},{0,34},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/shortcutWin/skillSp4" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,193},{0,28},{0,233},{0,82}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillBar/shortcutWin/skillSp4/skillBg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/skillSp4/quickBg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,39},{0,34},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/shortcutWin/skillSp5" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,241},{0,28},{0,281},{0,84}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillBar/shortcutWin/skillSp5/skillBg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/skillSp5/quickBg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,39},{0,41},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/shortcutWin/skillSp6" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,289},{0,28},{0,329},{0,84}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillBar/shortcutWin/skillSp6/skillBg6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/skillSp6/quickBg6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,39},{0,42},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/shortcutWin/skillSp7" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,337},{0,28},{0,377},{0,84}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillBar/shortcutWin/skillSp7/skillBg7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/skillSp7/quickBg7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,39},{0,43},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/shortcutWin/skillSp8" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,391},{0,28},{0,433},{0,84}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillBar/shortcutWin/skillSp8/skillBg8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/skillSp8/skillBigImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-3},{0,-3},{0,43},{0,43}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:selectedUse" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/shortcutWin/skillSp8/quickBg8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-7},{0,39},{0,53},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/shortcutWin/skillSelect" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,36},{0,36}}" />
+                <Property Name="Image" Value="set:mainUI1 image:skillSelect" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SkillBar/effectSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,565},{0,120}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="SkillBar/effectSp/hpBarEffect" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,151},{0,37},{0,332},{0,46}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SkillBar/effectSp/angerBarEffect" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,366},{0,23},{0,564},{0,36}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="SkillBar/textSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,565},{0,120}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="RestoreOldCapture" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="SkillBar/textSp/skillNameSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,97},{0,564},{0,115}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="RestoreOldCapture" Value="true" />
+                <Window Name="SkillBar/textSp/skillNameSp/quickTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,39},{0,17}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="自动" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFEDEDED" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillNameSp/quickTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,49},{0,1},{0,87},{0,17}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="自动" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFEDEDED" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillNameSp/quickTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,97},{0,1},{0,135},{0,17}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="自动" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFEDEDED" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillNameSp/quickTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,193},{0,1},{0,231},{0,17}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="阵法" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFEDEDED" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillNameSp/quickTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,145},{0,1},{0,183},{0,17}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="自动" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFEDEDED" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillNameSp/quickTxt5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,237},{0,1},{0,266},{0,17}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="群伤" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFEDEDED" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillNameSp/quickTxt52" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,265},{0,1},{0,281},{0,17}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="[Q]" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFEDEDED" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillNameSp/quickTxt6" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,286},{0,1},{0,315},{0,17}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="近攻" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFEDEDED" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillNameSp/quickTxt62" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,314},{0,1},{0,330},{0,17}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="[W]" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFEDEDED" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillNameSp/quickTxt7" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,334},{0,1},{0,363},{0,17}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="远攻" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFEDEDED" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillNameSp/quickTxt72" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,362},{0,1},{0,378},{0,17}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="[E]" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFEDEDED" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillNameSp/quickTxt8" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,383},{0,1},{0,412},{0,17}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="空格" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFEDEDED" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillNameSp/quickTxt82" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,411},{0,1},{0,443},{0,17}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="[空格]" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFEDEDED" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkillBar/textSp/skillTimeGroup" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,116},{0,57},{0,539},{0,101}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="RestoreOldCapture" Value="true" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="SkillBar/textSp/skillTimeGroup/skill0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,7},{0,16},{0,37},{0,32}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillTimeGroup/skill1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,55},{0,16},{0,85},{0,32}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillTimeGroup/skill2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,103},{0,16},{0,133},{0,32}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillTimeGroup/skill3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,151},{0,16},{0,181},{0,32}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillTimeGroup/skill4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,199},{0,16},{0,229},{0,32}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="3" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillTimeGroup/skill5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,247},{0,16},{0,277},{0,32}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillTimeGroup/skill6" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,296},{0,16},{0,326},{0,32}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillTimeGroup/skill7" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,343},{0,16},{0,373},{0,32}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SkillBar/textSp/skillTimeGroup/skill8" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,398},{0,16},{0,428},{0,32}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffffff" />
+                    <Property Name="RestoreOldCapture" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="SkillBar/autoApplyHp" Type="GuiLook/Slider">
+            <Property Name="UnifiedAreaRect" Value="{{0,150},{0,34},{0,332},{0,49}}" />
+            <Property Name="VerticalSlider" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+            <AutoWindow NameSuffix="__auto_thumb__">
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+            </AutoWindow>
+        </Window>
+        <Window Name="SkillBar/stateTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-100},{0,565},{0,-80}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="状态文本显示中" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="VertFormatting" Value="TopAligned" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

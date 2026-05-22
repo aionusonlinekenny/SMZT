@@ -1,0 +1,197 @@
+<GUILayout>
+    <Window Name="DoubledBallPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,839},{0,568}}" />
+        <Property Name="GlyphImage" Value="set:doubleBall image:title" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="DoubledBallPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,525},{0,811},{0,526}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="DoubledBallPanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,821},{0,520}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="DoubledBallPanel/bg/CommonBg2" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,285},{0,0},{0,821},{0,516}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,535},{0,515}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/winRewardNumTxt$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,191},{0,54},{0,411},{0,72}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFFEA00" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/rwdGrade" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,410},{0,54},{0,485},{0,72}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="（未中奖）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFF0000" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/openRewardTitle" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,139},{0,493},{0,214},{0,511}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="开奖计时：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFFEA00" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/openRewardTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,217},{0,493},{0,366},{0,511}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/ballNum5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,367},{0,14},{0,400},{0,47}}" />
+                        <Property Name="Image" Value="set:doubleBall image:red" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/ballNum5/ballNumTxt5" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,32},{0,33}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/ballNum6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,419},{0,14},{0,452},{0,47}}" />
+                        <Property Name="Image" Value="set:doubleBall image:blue" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/ballNum6/ballNumTxt6" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,32},{0,33}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/ballNum2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,261},{0,14},{0,294},{0,47}}" />
+                        <Property Name="Image" Value="set:doubleBall image:red" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/ballNum2/ballNumTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,32},{0,33}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/ballNum0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,193},{0,14},{0,226},{0,47}}" />
+                        <Property Name="Image" Value="set:doubleBall image:red" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/ballNum0/ballNumTxt0" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,32},{0,33}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/ballNum3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,297},{0,14},{0,330},{0,47}}" />
+                        <Property Name="Image" Value="set:doubleBall image:red" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/ballNum3/ballNumTxt3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,32},{0,33}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/ballNum1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,227},{0,14},{0,260},{0,47}}" />
+                        <Property Name="Image" Value="set:doubleBall image:red" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/ballNum1/ballNumTxt1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,32},{0,33}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/ballNum4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,332},{0,14},{0,365},{0,47}}" />
+                        <Property Name="Image" Value="set:doubleBall image:red" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/ballNum4/ballNumTxt4" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,32},{0,33}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="DoubledBallPanel/bg/CommonBg2/bgImg/list2" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,84},{0,526},{0,487}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="DoubledBallPanel/bg/list" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,29},{0,285},{0,514}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="DoubledBallPanel/bg/headerList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,286},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="DoubledBallPanel/bg/headerList/headerTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,285},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

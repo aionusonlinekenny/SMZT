@@ -1,0 +1,239 @@
+<GUILayout>
+    <Window Name="PromptPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,102}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="PromptPanel/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,102}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="PromptPanel/bg/guessBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,182},{0,56},{0,220},{0,74}}" />
+                <Property Name="Image" Value="set:mainUI1 image:guessNormal" />
+            </Window>
+            <Window Name="PromptPanel/bg/findBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,182},{0,56},{0,220},{0,74}}" />
+                <Property Name="Image" Value="set:mainUI1 image:checkNormal" />
+            </Window>
+            <Window Name="PromptPanel/bg/gridBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,3},{0,41},{0,53},{0,91}}" />
+                <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="PromptPanel/bg/gridBg/item" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="PromptPanel/bg/diceBox" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,74},{0,41},{0,191},{0,91}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="PromptPanel/bg/diceBox/diceBox1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,116},{0,25}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="还差   级" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFb7b7b7" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Window Name="PromptPanel/bg/diceBox/diceBox1/gradeDiceNClip" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,26},{0,2},{0,48},{0,22}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFF0000" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="PromptPanel/bg/diceBox/diceBox2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,25},{0,117},{0,50}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="还差      战力" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFb7b7b7" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Window Name="PromptPanel/bg/diceBox/diceBox2/numDiceNClip" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,25},{0,2},{0,76},{0,22}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFF0000" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="PromptPanel/bg/magicBox" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,74},{0,41},{0,191},{0,91}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="PromptPanel/bg/magicBox/magicBox1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,116},{0,25}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="还差      战力" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFb7b7b7" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Window Name="PromptPanel/bg/magicBox/magicBox1/gradeMagicNClip" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,25},{0,2},{0,76},{0,22}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFF0000" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="PromptPanel/bg/magicBox/magicBox2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,25},{0,117},{0,50}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="还剩    件" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFb7b7b7" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Window Name="PromptPanel/bg/magicBox/magicBox2/numMagicNClip" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,27},{0,2},{0,55},{0,22}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFF0000" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="PromptPanel/bg/VSBox" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,35},{0,225},{0,95}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+                <Window Name="PromptPanel/bg/VSBox/vsbox" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,116},{0,19}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="先达   级胜" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFb7b7b7" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Window Name="PromptPanel/bg/VSBox/vsbox/gradeVSNClip" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,26},{0,-3},{0,48},{0,17}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="PromptPanel/bg/VSBox/resultTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,21},{0,116},{0,37}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="落后13212311经验" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFff0000" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="PromptPanel/bg/VSBox/describeTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,40},{0,170},{0,56}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="对方正在做30级大战四方任务" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFb7b7b7" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="PromptPanel/bg/lineBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,32}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="PromptPanel/bg/lineBg/zoomBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,216},{0,0},{0,229},{0,13}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:zoomRightBtn" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                </Window>
+            </Window>
+            <Window Name="PromptPanel/bg/line" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,231},{0,32}}" />
+                <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="PromptPanel/bg/titleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,7},{0,137},{0,27}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="幸运骰子" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PromptPanel/bg/stateImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,143},{0,9},{0,194},{0,24}}" />
+                <Property Name="Image" Value="set:gradeRacing image:backward" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="PromptPanel/bg/3DView" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,-134},{0,-14},{0,86},{0,102}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="PromptPanel/bg/3DView/niuTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,106},{0,17},{0,218},{0,44}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFFea00" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="PromptPanel/tzoomNBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,141},{0,0},{0,229},{0,32}}" />
+            <Window Name="PromptPanel/tzoomNBtn/tzoomNBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,89},{0,32}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="PromptPanel/tzoomNBtn/tzoomNImgBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,75},{0,0},{0,88.25},{0,12.75}}" />
+                <Property Name="Image" Value="set:mainUI1 image:zoomLeftBtn" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+            </Window>
+            <Window Name="PromptPanel/tzoomNBtn/tzoomLine" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,31},{0,89},{0,32}}" />
+                <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="PromptPanel/tzoomNBtn/tzoomTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,0},{0,64},{0,16}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="登记竞速" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,127 @@
+<GUILayout>
+    <Window Name="BagSafeFindPasWordPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,474},{0,325}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="BagSafeFindPasWordPage/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,474},{0,325}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="BagSafeFindPasWordPage/bg/line" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,56},{0,474},{0,57}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="BagSafeFindPasWordPage/bg/titleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,44},{0,17},{0,432},{0,54}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00e4FF" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BagSafeFindPasWordPage/bg/sureBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,283},{0,96},{0,306}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="确认" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="BagSafeFindPasWordPage/bg/sp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,474},{0,264}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="BagSafeFindPasWordPage/bg/sp/spBg2" Type="GuiLook/CommonBg2">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,158},{0,453},{0,264}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="BagSafeFindPasWordPage/bg/sp/spBg2/instructionsTxt$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,453},{0,106}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="BagSafeFindPasWordPage/bg/sp/setSafeSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,70},{0,474},{0,145}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="BagSafeFindPasWordPage/bg/sp/setSafeSp/encryptedAnswermBg" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,160},{0,46},{0,305},{0,68}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="BagSafeFindPasWordPage/bg/sp/setSafeSp/encryptedAnswermBg/encryptedAnswermTxt" Type="GuiLook/Editbox">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,144},{0,21}}" />
+                        </Window>
+                    </Window>
+                    <Window Name="BagSafeFindPasWordPage/bg/sp/setSafeSp/encryptedProblemBg" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,160},{0,7},{0,305},{0,29}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="BagSafeFindPasWordPage/bg/sp/setSafeSp/encryptedProblemBg/encryptedProblemTxt" Type="GuiLook/Editbox">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,144},{0,21}}" />
+                        </Window>
+                    </Window>
+                    <Window Name="BagSafeFindPasWordPage/bg/sp/setSafeSp/encryptedProblemNumTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,309},{0,7},{0,403},{0,29}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="（6-12个数字）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="BagSafeFindPasWordPage/bg/sp/setSafeSp/encryptedAnswerNumTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,309},{0,46},{0,404},{0,68}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="（6-12个数字）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="BagSafeFindPasWordPage/bg/sp/setSafeSp/encryptedAnswerTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,93},{0,46},{0,156},{0,68}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="密保答案：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="BagSafeFindPasWordPage/bg/sp/setSafeSp/encryptedProblemTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,93},{0,7},{0,156},{0,29}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="密保问题：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="BagSafeFindPasWordPage/bg/sp1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,474},{0,264}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="BagSafeFindPasWordPage/bg/sp1/sp1Bg2" Type="GuiLook/CommonBg2">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,453},{0,264}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="BagSafeFindPasWordPage/bg/sp1/sp1Bg2/encryptedProblemTitleSpTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,78},{0,69},{0,141},{0,91}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="密保问题：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="BagSafeFindPasWordPage/bg/sp1/sp1Bg2/encryptedAnswermSpBg" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,144},{0,109},{0,334},{0,131}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="BagSafeFindPasWordPage/bg/sp1/sp1Bg2/encryptedAnswermSpBg/encryptedAnswermSpTxt" Type="GuiLook/Editbox">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,189},{0,21}}" />
+                        </Window>
+                    </Window>
+                    <Window Name="BagSafeFindPasWordPage/bg/sp1/sp1Bg2/encryptedAnswerTitleSpTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,77},{0,109},{0,140},{0,131}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="密保答案：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="BagSafeFindPasWordPage/bg/sp1/sp1Bg2/encryptedProblemSpTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,148},{0,70},{0,334},{0,92}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="请输入安全锁密码启用" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

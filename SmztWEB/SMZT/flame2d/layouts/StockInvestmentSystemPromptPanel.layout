@@ -1,0 +1,413 @@
+<GUILayout>
+    <Window Name="StockInvestmentSystemPromptPanel" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,365},{0,187}}" />
+        <Property Name="Font" Value="songti_18_strengh" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="StockInvestmentSystemPromptPanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,111},{0,346},{0,112}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="StockInvestmentSystemPromptPanel/buySp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,346},{0,110}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="StockInvestmentSystemPromptPanel/buySp/buyReductionBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,70},{0,68},{0,91},{0,89}}" />
+                <Property Name="Image" Value="set:skin image:reductionBtn" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/buySp/buyNameTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,19},{0,70},{0,39}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="股票名称" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/buySp/buyHoldNumTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,173},{0,17},{0,238},{0,37}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="持有股数" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/buySp/buyPriceTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,44},{0,70},{0,64}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="成交价格" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/buySp/buyAmplitudeTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,173},{0,44},{0,238},{0,64}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="盈利元宝" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/buySp/buyNumTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,69},{0,70},{0,89}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="买入数量" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/buySp/buyMoneyTxtTitle" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,173},{0,69},{0,238},{0,89}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="可用现金" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/buySp/buyNameTxtBg" Type="GuiLook/inputBg">
+                <Property Name="UnifiedAreaRect" Value="{{0,70},{0,19},{0,168},{0,39}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="StockInvestmentSystemPromptPanel/buySp/buyNameTxtBg/buyNameTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,103},{0,20}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="天上人间" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/buySp/buyHoldNumTxtTxt" Type="GuiLook/inputBg">
+                <Property Name="UnifiedAreaRect" Value="{{0,240},{0,19},{0,338},{0,39}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="StockInvestmentSystemPromptPanel/buySp/buyHoldNumTxtTxt/buyHoldNumTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,98},{0,20}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="天上人间" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/buySp/buyPriceTxtBg" Type="GuiLook/inputBg">
+                <Property Name="UnifiedAreaRect" Value="{{0,70},{0,44},{0,168},{0,64}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="StockInvestmentSystemPromptPanel/buySp/buyPriceTxtBg/buyPriceTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,98},{0,20}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="天上人间" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/buySp/buyAmplitudeTxtBg" Type="GuiLook/inputBg">
+                <Property Name="UnifiedAreaRect" Value="{{0,240},{0,44},{0,338},{0,64}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="StockInvestmentSystemPromptPanel/buySp/buyAmplitudeTxtBg/buyAmplitudeTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,98},{0,20}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="天上人间" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/buySp/buyNumTxtBg" Type="GuiLook/inputBg">
+                <Property Name="UnifiedAreaRect" Value="{{0,91},{0,69},{0,147},{0,89}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="StockInvestmentSystemPromptPanel/buySp/buyNumTxtBg/NumTxt" Type="GuiLook/Editbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,56},{0,20}}" />
+                </Window>
+                <Window Name="StockInvestmentSystemPromptPanel/buySp/buyNumTxtBg/SailTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,56},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/buySp/buyMoneyTxtBg" Type="GuiLook/inputBg">
+                <Property Name="UnifiedAreaRect" Value="{{0,239},{0,69},{0,337},{0,89}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="StockInvestmentSystemPromptPanel/buySp/buyMoneyTxtBg/buyMoneyTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,99},{0,21}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="天上人间" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/buySp/buyAddBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,147},{0,68},{0,168},{0,89}}" />
+                <Property Name="Image" Value="set:skin image:addBtn" />
+            </Window>
+        </Window>
+        <Window Name="StockInvestmentSystemPromptPanel/btnSp1" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,112},{0,346},{0,140}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="StockInvestmentSystemPromptPanel/btnSp1/buyBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,63},{0,4},{0,144},{0,27}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="卖出" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/btnSp1/cancelBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,205},{0,4},{0,286},{0,27}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="取消" />
+            </Window>
+        </Window>
+        <Window Name="StockInvestmentSystemPromptPanel/additionalSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,346},{0,110}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="StockInvestmentSystemPromptPanel/additionalSp/additionalTitleTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,35},{0,16},{0,335},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFfef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/additionalSp/gridSp" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,148},{0,52},{0,196},{0,100}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="StockInvestmentSystemPromptPanel/btnSp2" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,112},{0,346},{0,140}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="StockInvestmentSystemPromptPanel/btnSp2/sureBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,135},{0,4},{0,216},{0,27}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="确定" />
+            </Window>
+        </Window>
+        <Window Name="StockInvestmentSystemPromptPanel/isBuySp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,346},{0,110}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="StockInvestmentSystemPromptPanel/isBuySp/isBuyNameTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,56},{0,35},{0,121},{0,55}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="是否买入" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/isBuySp/isBuyNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,123},{0,35},{0,303},{0,55}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="就老虎也100股" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/isBuySp/isBuyPriceTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,56},{0,61},{0,126},{0,81}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="需要花费：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/isBuySp/isBuyPriceTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,123},{0,61},{0,273},{0,81}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="500元宝" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/isBuySp/isBuyPromptTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,83},{0,346},{0,105}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="温馨提示：股票收益存在风险，请谨慎操作" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF0000" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="StockInvestmentSystemPromptPanel/btnSp3" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,112},{0,346},{0,140}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="StockInvestmentSystemPromptPanel/btnSp3/nowSaleBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,63},{0,4},{0,144},{0,27}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="确认" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/btnSp3/keepBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,205},{0,4},{0,286},{0,27}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="取消" />
+            </Window>
+        </Window>
+        <Window Name="StockInvestmentSystemPromptPanel/isSaleSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,346},{0,110}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="StockInvestmentSystemPromptPanel/isSaleSp/isSaleNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,16},{0,294},{0,36}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="就老虎也100股" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/isSaleSp/isSaleNameTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,56},{0,15},{0,121},{0,35}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="是否卖出" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/isSaleSp/isSaleBuyTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,104},{0,46},{0,169},{0,66}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="买入价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/isSaleSp/isSaleBuyTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,169},{0,46},{0,234},{0,66}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="500" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/isSaleSp/isSaleTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,104},{0,74},{0,169},{0,94}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="卖出价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/isSaleSp/isSaleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,169},{0,74},{0,234},{0,94}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="500" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="StockInvestmentSystemPromptPanel/changeSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,346},{0,110}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="StockInvestmentSystemPromptPanel/changeSp/curPriceTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,169},{0,74},{0,234},{0,94}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="500" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/changeSp/changeBuyTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,104},{0,46},{0,169},{0,66}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="买入价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/changeSp/curPriceTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,104},{0,74},{0,169},{0,94}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="现  价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/changeSp/changeNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,144},{0,19},{0,206},{0,39}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="胡老就业" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/changeSp/changeBuyTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,169},{0,46},{0,234},{0,66}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="500" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="StockInvestmentSystemPromptPanel/topUpSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,346},{0,110}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="StockInvestmentSystemPromptPanel/topUpSp/topUpTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,42},{0,179},{0,62}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="元宝不足！无法参与" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/topUpSp/topUpTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,42},{0,255},{0,62}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="【天天返利】" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/topUpSp/topUpFooterTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,255},{0,42},{0,284},{0,62}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="投资" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="StockInvestmentSystemPromptPanel/topUpSp/isTopUpTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,124},{0,64},{0,220},{0,84}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="是否前往充值？" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="StockInvestmentSystemPromptPanel/buyTitleTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-34},{0,215},{0,-1}}" />
+            <Property Name="Font" Value="songti_16_strengh" />
+            <Property Name="Text" Value="提示" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFc6dee6" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="StockInvestmentSystemPromptPanel/isVipPromptTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,113},{0,215},{0,135}}" />
+            <Property Name="Font" Value="songti_14" />
+            <Property Name="Text" Value="您不是黄金VIP不能买入" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFFEA00" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="StockInvestmentSystemPromptPanel/openVipPromptTxt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,230},{0,118},{0,330},{0,140}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="立即购买" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFFEA00" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

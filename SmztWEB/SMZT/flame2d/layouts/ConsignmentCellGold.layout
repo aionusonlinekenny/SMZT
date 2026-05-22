@@ -1,0 +1,175 @@
+<GUILayout>
+    <Window Name="ConsignmentCellGold" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,256},{0,320}}" />
+        <Property Name="Text" Value="出售铜钱" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="ConsignmentCellGold/bg" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,238},{0,243}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ConsignmentCellGold/bg/titleImg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,238},{0,29}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:ListTitleBgLeft" />
+                <Property Name="LeftOffset" Value="19" />
+                <Property Name="RightImage" Value="set:skin image:ListTitleBgRight" />
+                <Property Name="CenterImage" Value="set:skin image:ListTitleBgCenter" />
+                <Property Name="RightOffset" Value="19" />
+                <Window Name="ConsignmentCellGold/bg/titleImg/nameTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,238},{0,29}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="铜钱" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ffffea00" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/Line" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,96},{0,238},{0,97}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/Line2" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,201},{0,238},{0,202}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/props" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,95},{0,38},{0,143},{0,86}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="ConsignmentCellGold/bg/props/item" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/priceTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,16},{0,172},{0,52},{0,190}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="总价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/TextBG" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,59},{0,169},{0,213},{0,190}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ConsignmentCellGold/bg/TextBG/yuanbaoImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,20},{0,20}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ConsignmentCellGold/bg/TextBG/yuanbaoTxt" Type="GuiLook/Editbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,25},{0,0},{0,148},{0,21}}" />
+                </Window>
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/descTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,213},{0,137},{0,231}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="建议参考最近成交单价 " />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="Ff85f500" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/RadioButton1" Type="GuiLook/RadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,23},{0,111},{0,38},{0,126}}" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/RadioButton2" Type="GuiLook/RadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,83},{0,111},{0,98},{0,126}}" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/descTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,135},{0,213},{0,275},{0,231}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="10000000元宝" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffffea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/RadioButton3" Type="GuiLook/RadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,143},{0,111},{0,158},{0,126}}" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/RadioButton4" Type="GuiLook/RadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,23},{0,138},{0,38},{0,153}}" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/RadioButton5" Type="GuiLook/RadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,83},{0,138},{0,98},{0,153}}" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/RadioButton6" Type="GuiLook/RadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,143},{0,138},{0,158},{0,153}}" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/yuanbaoTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,39},{0,109},{0,83},{0,127}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10万" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/yuanbaoTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,99},{0,109},{0,143},{0,127}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="20万" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/yuanbaoTxt3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,159},{0,109},{0,203},{0,127}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="50万" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/yuanbaoTxt4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,39},{0,136},{0,83},{0,154}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="100万" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/yuanbaoTxt5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,99},{0,136},{0,143},{0,154}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="500万" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ConsignmentCellGold/bg/yuanbaoTxt6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,159},{0,136},{0,203},{0,154}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="1000万" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="ConsignmentCellGold/sureBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,76},{0,249},{0,162},{0,272}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="出售" />
+        </Window>
+    </Window>
+</GUILayout>

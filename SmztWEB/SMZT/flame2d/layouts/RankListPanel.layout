@@ -1,0 +1,1688 @@
+<GUILayout>
+    <Window Name="RankListPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1042},{0,595}}" />
+        <Property Name="GlyphImage" Value="set:rank image:rank" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <Window Name="RankListPanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,552},{0,1024},{0,553}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="RankListPanel/tab" Type="GuiLook/TabControl">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,3},{0,1024},{0,548}}" />
+            <Property Name="buttonFont" Value="songti_14_strengh" />
+            <Window Name="RankListPanel/tab/curService" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,6},{0,1024},{0,519}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="本服排行" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="RankListPanel/tab/curService/curServiceBg" Type="GuiLook/CommonBg3">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1024},{0,513}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/radioTab0" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,134},{0,42}}" />
+                        <Property Name="GlyphImage" Value="set:rank image:first" />
+                        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/radioTab1" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,44},{0,134},{0,82}}" />
+                        <Property Name="GlyphImage" Value="set:rank image:grade" />
+                        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/radioTab2" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,83},{0,134},{0,121}}" />
+                        <Property Name="GlyphImage" Value="set:rank image:fight" />
+                        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/radioTab9" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,123},{0,134},{0,161}}" />
+                        <Property Name="Visible" Value="false" />
+                        <Property Name="GlyphImage" Value="set:rank image:fairy" />
+                        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/radioTab5" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,123},{0,134},{0,161}}" />
+                        <Property Name="GlyphImage" Value="set:rank image:change" />
+                        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/radioTab6" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,163},{0,134},{0,201}}" />
+                        <Property Name="GlyphImage" Value="set:rank image:mount" />
+                        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/radioTab7" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,203},{0,134},{0,241}}" />
+                        <Property Name="GlyphImage" Value="set:rank image:wings" />
+                        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/radioTab8" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,243},{0,134},{0,281}}" />
+                        <Property Name="GlyphImage" Value="set:rank image:castle" />
+                        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/radioTab10" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,283},{0,134},{0,321}}" />
+                        <Property Name="GlyphImage" Value="set:rank image:magic" />
+                        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/radioTab11" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,323},{0,134},{0,361}}" />
+                        <Property Name="GlyphImage" Value="set:rank image:prestige" />
+                        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/radioTab4" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,363},{0,134},{0,401}}" />
+                        <Property Name="GlyphImage" Value="set:rank image:artifact" />
+                        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/radioTab12" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,403},{0,134},{0,441}}" />
+                        <Property Name="GlyphImage" Value="set:rank image:everyPrestige" />
+                        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,138},{0,0},{0,1023},{0,513}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg" Type="GuiLook/CommonBg3">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,522},{0,513}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/headerList" Type="GlossySerpent/ThreeStretchImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,28}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                                <Property Name="LeftOffset" Value="10" />
+                                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                                <Property Name="RightOffset" Value="10" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/headerList/headerTxt" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,28}}" />
+                                    <Property Name="Font" Value="songti_14_strengh" />
+                                    <Property Name="Text" Value="排名" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="FF65b3e9" />
+                                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/headerList2" Type="GlossySerpent/ThreeStretchImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,193},{0,28}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                                <Property Name="LeftOffset" Value="10" />
+                                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                                <Property Name="RightOffset" Value="10" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/headerList2/headerTxt2" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,129},{0,28}}" />
+                                    <Property Name="Font" Value="songti_14_strengh" />
+                                    <Property Name="Text" Value="玩家名称" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="FF65b3e9" />
+                                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/camp" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,193},{0,0},{0,315},{0,28}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/camp/sortBtn" Type="GlossySerpent/SortButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,122},{0,28}}" />
+                                    <Property Name="Font" Value="songti_14_strengh" />
+                                    <Property Name="Text" Value="阵营" />
+                                    <Property Name="NormalTextColour" Value="FF65b3e9" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/camp/sortBtn/sortImg" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,99},{0,9},{0,112},{0,20}}" />
+                                        <Property Name="Image" Value="set:skin image:arrow" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/headerList3" Type="GlossySerpent/ThreeStretchImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,193},{0,0},{0,315},{0,28}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                                <Property Name="LeftOffset" Value="10" />
+                                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                                <Property Name="RightOffset" Value="10" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/headerList3/headerTxt3" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,122},{0,28}}" />
+                                    <Property Name="Font" Value="songti_14_strengh" />
+                                    <Property Name="Text" Value="最强变身" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="FF65b3e9" />
+                                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/headerList4" Type="GlossySerpent/ThreeStretchImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,315},{0,0},{0,439},{0,28}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                                <Property Name="LeftOffset" Value="10" />
+                                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                                <Property Name="RightOffset" Value="10" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/headerList4/headerTxt4" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,124},{0,28}}" />
+                                    <Property Name="Font" Value="songti_14_strengh" />
+                                    <Property Name="Text" Value="变身总战力" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="FF65b3e9" />
+                                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/headerList5" Type="GlossySerpent/ThreeStretchImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,439},{0,0},{0,522},{0,28}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                                <Property Name="LeftOffset" Value="10" />
+                                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                                <Property Name="RightOffset" Value="10" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/headerList5/headerTxt5" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,28}}" />
+                                    <Property Name="Font" Value="songti_14_strengh" />
+                                    <Property Name="Text" Value="排名升降" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="FF65b3e9" />
+                                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/list" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,28},{0,521},{0,338}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/myRankSp" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,338},{0,522},{0,411}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankImg" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,210},{0,10},{0,308},{0,37}}" />
+                                    <Property Name="Image" Value="set:rank image:myRank" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBarSp" Type="GlossySerpent/ThreeStretchImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,42},{0,521},{0,73}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="LeftImage" Value="set:skin image:RenderNormalBgLeft" />
+                                    <Property Name="LeftOffset" Value="46" />
+                                    <Property Name="RightImage" Value="set:skin image:RenderNormalBgRight" />
+                                    <Property Name="CenterImage" Value="set:skin image:RenderNormalBgCenter" />
+                                    <Property Name="RightOffset" Value="46" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/myRankSp/noRankTxt" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,43},{0,522},{0,73}}" />
+                                    <Property Name="Font" Value="" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg" Type="DefaultWindow">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,43},{0,520},{0,74}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/nameTxt$RI" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,81},{0,7},{0,201},{0,38}}" />
+                                        <Property Name="Font" Value="" />
+                                        <Property Name="Text" Value="玩家名称六字" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/numImg" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,27}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/numTxt" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,21},{0,0},{0,65},{0,31}}" />
+                                        <Property Name="Font" Value="" />
+                                        <Property Name="Text" Value="250" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/thingsTxt$RI" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,198},{0,8},{0,316},{0,39}}" />
+                                        <Property Name="Font" Value="" />
+                                        <Property Name="Text" Value="十阶·齐天大使" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/totleTxt$RI" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,317},{0,8},{0,438},{0,39}}" />
+                                        <Property Name="Font" Value="" />
+                                        <Property Name="Text" Value="321837111" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="TextColour" Value="FFFFea00" />
+                                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/trendImg" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,490},{0,6},{0,501},{0,25}}" />
+                                        <Property Name="Image" Value="set:skins image:arrowUp" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/myRankSp/myRankBg/trendTxt" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,439},{0,0},{0,488},{0,31}}" />
+                                        <Property Name="Font" Value="" />
+                                        <Property Name="Text" Value="250" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/pageSp" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,411},{0,522},{0,458}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/pageSp/mLastBtn" Type="GuiLook/DefaultButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,190},{0,13},{0,210},{0,33}}" />
+                                    <Property Name="HoverImage" Value="set:skin image:MlastBtnHover" />
+                                    <Property Name="NormalImage" Value="set:skin image:MlastBtnNormal" />
+                                    <Property Name="PushedImage" Value="set:skin image:MlastBtnPushed" />
+                                    <Property Name="DisabledImage" Value="set:skin image:MlastBtnDisable" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/pageSp/pageLastBtn" Type="GuiLook/DefaultButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,216},{0,13},{0,236},{0,33}}" />
+                                    <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                                    <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                                    <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+                                    <Property Name="DisabledImage" Value="set:skin image:LastBtnDisable" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/pageSp/laPageBg" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,240},{0,14},{0,282},{0,32}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/pageSp/laPageBg/pageTxt" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,18}}" />
+                                        <Property Name="Font" Value="songti_14_strengh" />
+                                        <Property Name="Text" Value="250" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="TextColour" Value="FF64d4d8" />
+                                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/pageSp/pageNextBtn" Type="GuiLook/DefaultButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,286},{0,13},{0,306},{0,33}}" />
+                                    <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                                    <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                                    <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+                                    <Property Name="DisabledImage" Value="set:skin image:NextBtnDisable" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/pageSp/mNextBtn" Type="GuiLook/DefaultButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,311},{0,13},{0,331},{0,33}}" />
+                                    <Property Name="HoverImage" Value="set:skin image:MnextBtnHover" />
+                                    <Property Name="NormalImage" Value="set:skin image:MnextBtnNormal" />
+                                    <Property Name="PushedImage" Value="set:skin image:MnextBtnPushed" />
+                                    <Property Name="DisabledImage" Value="set:skin image:MnextBtnDisable" />
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/searchSp" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,458},{0,522},{0,513}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/searchSp/searchBg" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,521},{0,54}}" />
+                                    <Property Name="Image" Value="set:skin image:RenderBg" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/searchSp/searchBg/textBG" Type="GuiLook/TextBG">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,155},{0,17},{0,299},{0,38}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/searchSp/searchBg/textBG/editbox" Type="GuiLook/Editbox">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,144},{0,23}}" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/pageBg/searchSp/searchBg/searchBtn" Type="GlossySerpent/BlueButton">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,306},{0,16},{0,360},{0,39}}" />
+                                        <Property Name="Font" Value="songti_14_strengh" />
+                                        <Property Name="Text" Value="搜索" />
+                                    </Window>
+                                </Window>
+                            </Window>
+                        </Window>
+                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg" Type="GuiLook/CommonBg3">
+                            <Property Name="UnifiedAreaRect" Value="{{0,521},{0,0},{0,886},{0,513}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,365},{0,514}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="Visible" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,364},{0,456}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Property Name="MousePassThroughEnabled" Value="true" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/changeNameImg" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,87},{0,0},{0,261},{0,40}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/change3DView" Type="DefaultWindow">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,-5},{0,401},{0,0},{0,495}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp" Type="DefaultWindow">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,45},{0,400},{0,310},{0,454}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp1" Type="DefaultWindow">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,54}}" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp1/skillBg1" Type="GuiLook/StaticImage">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="FrameEnabled" Value="false" />
+                                                <Property Name="BackgroundEnabled" Value="false" />
+                                                <Property Name="RiseOnClick" Value="false" />
+                                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp1/skillBg1/skillImg1" Type="GuiLook/StaticImage">
+                                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                    <Property Name="FrameEnabled" Value="false" />
+                                                    <Property Name="BackgroundEnabled" Value="false" />
+                                                    <Property Name="RiseOnClick" Value="false" />
+                                                </Window>
+                                            </Window>
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp1/quickBg1" Type="GuiLook/StaticImage">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,38},{0,39},{0,54}}" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="FrameEnabled" Value="false" />
+                                                <Property Name="BackgroundEnabled" Value="false" />
+                                                <Property Name="RiseOnClick" Value="false" />
+                                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp1/quickBg1/quickTxt1" Type="GuiLook/StaticText">
+                                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,38},{0,16}}" />
+                                                    <Property Name="Font" Value="" />
+                                                    <Property Name="Text" Value="Q" />
+                                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                                </Window>
+                                            </Window>
+                                        </Window>
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp2" Type="DefaultWindow">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,75},{0,0},{0,115},{0,48}}" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp2/skillBg2" Type="GuiLook/StaticImage">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="FrameEnabled" Value="false" />
+                                                <Property Name="BackgroundEnabled" Value="false" />
+                                                <Property Name="RiseOnClick" Value="false" />
+                                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp2/skillBg2/skillImg2" Type="GuiLook/StaticImage">
+                                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                    <Property Name="FrameEnabled" Value="false" />
+                                                    <Property Name="BackgroundEnabled" Value="false" />
+                                                    <Property Name="RiseOnClick" Value="false" />
+                                                </Window>
+                                            </Window>
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp2/quickBg2" Type="GuiLook/StaticImage">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,38},{0,39},{0,54}}" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="FrameEnabled" Value="false" />
+                                                <Property Name="BackgroundEnabled" Value="false" />
+                                                <Property Name="RiseOnClick" Value="false" />
+                                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp2/quickBg2/quickTxt2" Type="GuiLook/StaticText">
+                                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,38},{0,16}}" />
+                                                    <Property Name="Font" Value="" />
+                                                    <Property Name="Text" Value="W" />
+                                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                                </Window>
+                                            </Window>
+                                        </Window>
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp3" Type="DefaultWindow">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,150},{0,0},{0,190},{0,48}}" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp3/skillBg3" Type="GuiLook/StaticImage">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="FrameEnabled" Value="false" />
+                                                <Property Name="BackgroundEnabled" Value="false" />
+                                                <Property Name="RiseOnClick" Value="false" />
+                                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp3/skillBg3/skillImg3" Type="GuiLook/StaticImage">
+                                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                    <Property Name="FrameEnabled" Value="false" />
+                                                    <Property Name="BackgroundEnabled" Value="false" />
+                                                    <Property Name="RiseOnClick" Value="false" />
+                                                </Window>
+                                            </Window>
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp3/quickBg3" Type="GuiLook/StaticImage">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,38},{0,39},{0,54}}" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="FrameEnabled" Value="false" />
+                                                <Property Name="BackgroundEnabled" Value="false" />
+                                                <Property Name="RiseOnClick" Value="false" />
+                                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp3/quickBg3/quickTxt3" Type="GuiLook/StaticText">
+                                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,38},{0,16}}" />
+                                                    <Property Name="Font" Value="" />
+                                                    <Property Name="Text" Value="E" />
+                                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                                </Window>
+                                            </Window>
+                                        </Window>
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp4" Type="DefaultWindow">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,225},{0,0},{0,265},{0,48}}" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp4/skillBg4" Type="GuiLook/StaticImage">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="FrameEnabled" Value="false" />
+                                                <Property Name="BackgroundEnabled" Value="false" />
+                                                <Property Name="RiseOnClick" Value="false" />
+                                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp4/skillBg4/skillImg4" Type="GuiLook/StaticImage">
+                                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                    <Property Name="FrameEnabled" Value="false" />
+                                                    <Property Name="BackgroundEnabled" Value="false" />
+                                                    <Property Name="RiseOnClick" Value="false" />
+                                                </Window>
+                                            </Window>
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp4/quickBg4" Type="GuiLook/StaticImage">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,38},{0,39},{0,54}}" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="FrameEnabled" Value="false" />
+                                                <Property Name="BackgroundEnabled" Value="false" />
+                                                <Property Name="RiseOnClick" Value="false" />
+                                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSp/skillSp4/quickBg4/quickTxt4" Type="GuiLook/StaticText">
+                                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,38},{0,16}}" />
+                                                    <Property Name="Font" Value="" />
+                                                    <Property Name="Text" Value="空格" />
+                                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                                </Window>
+                                            </Window>
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSpOne2" Type="DefaultWindow">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,45},{0,401},{0,310},{0,448}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSpOne2/skillBgOne2" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                            <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSpOne2/skillBgOne2/changeSkillImg2" Type="GuiLook/StaticImage">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="FrameEnabled" Value="false" />
+                                                <Property Name="BackgroundEnabled" Value="false" />
+                                                <Property Name="RiseOnClick" Value="false" />
+                                            </Window>
+                                        </Window>
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSpOne2/skillQuickBg2" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,37},{0,31},{0,47}}" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSpOne2/skillQuickBg2/changeQuickTxt2" Type="GuiLook/StaticText">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,22},{0,16}}" />
+                                                <Property Name="Font" Value="" />
+                                                <Property Name="Text" Value="Q" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                                <Property Name="WantsMultiClickEvents" Value="false" />
+                                            </Window>
+                                        </Window>
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSpOne2/skillNameTxt" Type="GuiLook/StaticText">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,41},{0,0},{0,148},{0,18}}" />
+                                            <Property Name="Font" Value="" />
+                                            <Property Name="Text" Value="技能名称 Lv.1" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="TextColour" Value="FFcc43ff" />
+                                            <Property Name="WantsMultiClickEvents" Value="false" />
+                                        </Window>
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/changeView/change3DViewSp/skillSpOne2/skillIntroduceTxt" Type="GuiLook/StaticText">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,41},{0,18},{0,264},{0,47}}" />
+                                            <Property Name="Font" Value="" />
+                                            <Property Name="Text" Value="技能说明" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="VertFormatting" Value="LeftAligned" />
+                                            <Property Name="WantsMultiClickEvents" Value="false" />
+                                        </Window>
+                                    </Window>
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,365},{0,514}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="Visible" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,364},{0,456}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Property Name="MousePassThroughEnabled" Value="true" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/grade3DView" Type="DefaultWindow">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,258},{0,367},{0,268},{0,377}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/campImg" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,19},{0,14},{0,40},{0,35}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/roleName" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,49},{0,9},{0,148},{0,39}}" />
+                                        <Property Name="Font" Value="songti_14_strengh" />
+                                        <Property Name="Text" Value="玩家名称六字" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a7" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,55},{0,57},{0,103}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a7/a77" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                            <Property Name="Image" Value="set:skin image:necklace" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Property Name="MousePassThroughEnabled" Value="true" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a8" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,113},{0,57},{0,161}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a8/a88" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                            <Property Name="Image" Value="set:skin image:stateMind" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Property Name="MousePassThroughEnabled" Value="true" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a9" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,171},{0,57},{0,219}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a9/a99" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                            <Property Name="Image" Value="set:skin image:roller" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Property Name="MousePassThroughEnabled" Value="true" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a10" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,229},{0,57},{0,277}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a10/a100" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                            <Property Name="Image" Value="set:skin image:ring" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Property Name="MousePassThroughEnabled" Value="true" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a11" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,287},{0,57},{0,335}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a11/a111" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                            <Property Name="Image" Value="set:skin image:print" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Property Name="MousePassThroughEnabled" Value="true" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a12" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,345},{0,57},{0,393}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a12/a122" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                            <Property Name="Image" Value="set:skin image:wekJin" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Property Name="MousePassThroughEnabled" Value="true" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a13" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,254},{0,345},{0,302},{0,393}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a13/a133" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                            <Property Name="Image" Value="set:skin image:wedding" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Property Name="MousePassThroughEnabled" Value="true" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a6" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,309},{0,345},{0,357},{0,393}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a6/a66" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                            <Property Name="Image" Value="set:skin image:combatBoots" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Property Name="MousePassThroughEnabled" Value="true" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a1" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,309},{0,55},{0,357},{0,103}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a1/a110" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                            <Property Name="Image" Value="set:skin image:helmet" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Property Name="MousePassThroughEnabled" Value="true" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a3" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,309},{0,113},{0,357},{0,161}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a3/a33" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                            <Property Name="Image" Value="set:skin image:armor" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Property Name="MousePassThroughEnabled" Value="true" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a2" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,309},{0,171},{0,357},{0,219}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a2/a22" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                            <Property Name="Image" Value="set:skin image:scapula" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Property Name="MousePassThroughEnabled" Value="true" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a4" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,309},{0,229},{0,357},{0,277}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a4/a44" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                            <Property Name="Image" Value="set:skin image:dragon" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Property Name="MousePassThroughEnabled" Value="true" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a5" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,309},{0,287},{0,357},{0,335}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a5/a55" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                            <Property Name="Image" Value="set:skin image:legArmor" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Property Name="MousePassThroughEnabled" Value="true" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a15" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,403},{0,57},{0,451}}" />
+                                        <Property Name="Image" Value="set:role2 image:yin" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a16" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,84},{0,403},{0,132},{0,451}}" />
+                                        <Property Name="Image" Value="set:role2 image:yin" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a14" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,159},{0,403},{0,207},{0,451}}" />
+                                        <Property Name="Image" Value="set:role2 image:normal" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a17" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,234},{0,403},{0,282},{0,451}}" />
+                                        <Property Name="Image" Value="set:role2 image:yang" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a18" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,309},{0,403},{0,357},{0,451}}" />
+                                        <Property Name="Image" Value="set:role2 image:yang" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/gangTitleTxt" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,167},{0,9},{0,213},{0,39}}" />
+                                        <Property Name="Font" Value="songti_14_strengh" />
+                                        <Property Name="Text" Value="帮派：" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="TextColour" Value="FF00baff" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/gangTxt" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,213},{0,9},{0,312},{0,39}}" />
+                                        <Property Name="Font" Value="songti_14_strengh" />
+                                        <Property Name="Text" Value="帮派名称六字" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="TextColour" Value="FF00baff" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/otherTitleSp" Type="DefaultWindow">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,41},{0,34},{0,292},{0,99}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/otherTitleSp/otherTitle0" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-0.5},{0,61},{0,52.5}}" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="VerticalAlignment" Value="Centre" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                        </Window>
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/otherTitleSp/otherTitle1" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,-1},{0,280},{0,64}}" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                        </Window>
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/otherTitleSp/otherTitleSing" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,19},{0,1},{0,268},{0,66}}" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                        </Window>
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/otherVipImg" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,314},{0,14},{0,351},{0,34}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Property Name="MousePassThroughEnabled" Value="true" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/otherVipNumImg" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,338},{0,14},{0,351},{0,34}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Property Name="MousePassThroughEnabled" Value="true" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/otherVip" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,314},{0,14},{0,338},{0,34}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Property Name="MousePassThroughEnabled" Value="true" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a0" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,345},{0,112},{0,393}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/gradeView/grade3DViewSp/a0/a00" Type="GuiLook/StaticImage">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                                            <Property Name="Image" Value="set:skin image:weapons" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Property Name="FrameEnabled" Value="false" />
+                                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                                            <Property Name="VertFormatting" Value="CentreAligned" />
+                                            <Property Name="BackgroundEnabled" Value="false" />
+                                            <Property Name="RiseOnClick" Value="false" />
+                                            <Property Name="MousePassThroughEnabled" Value="true" />
+                                        </Window>
+                                    </Window>
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,365},{0,514}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,364},{0,456}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactNameImg" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,87},{0,0},{0,261},{0,40}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifact3DView" Type="DefaultWindow">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,249},{0,409},{0,259},{0,419}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp" Type="DefaultWindow">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,41},{0,401},{0,323},{0,449}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp1" Type="DefaultWindow">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,48}}" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp1/artifactSkillBg1" Type="GuiLook/StaticImage">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="FrameEnabled" Value="false" />
+                                                <Property Name="BackgroundEnabled" Value="false" />
+                                                <Property Name="RiseOnClick" Value="false" />
+                                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp1/artifactSkillBg1/artifactSkillImg1" Type="GuiLook/StaticImage">
+                                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                    <Property Name="FrameEnabled" Value="false" />
+                                                    <Property Name="BackgroundEnabled" Value="false" />
+                                                    <Property Name="RiseOnClick" Value="false" />
+                                                </Window>
+                                            </Window>
+                                        </Window>
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp2" Type="DefaultWindow">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,0},{0,100},{0,48}}" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp2/artifactSkillBg2" Type="GuiLook/StaticImage">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="FrameEnabled" Value="false" />
+                                                <Property Name="BackgroundEnabled" Value="false" />
+                                                <Property Name="RiseOnClick" Value="false" />
+                                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp2/artifactSkillBg2/artifactSkillImg2" Type="GuiLook/StaticImage">
+                                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                    <Property Name="FrameEnabled" Value="false" />
+                                                    <Property Name="BackgroundEnabled" Value="false" />
+                                                    <Property Name="RiseOnClick" Value="false" />
+                                                </Window>
+                                            </Window>
+                                        </Window>
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp3" Type="DefaultWindow">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,120},{0,0},{0,160},{0,48}}" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp3/artifactSkillBg3" Type="GuiLook/StaticImage">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="FrameEnabled" Value="false" />
+                                                <Property Name="BackgroundEnabled" Value="false" />
+                                                <Property Name="RiseOnClick" Value="false" />
+                                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp3/artifactSkillBg3/artifactSkillImg3" Type="GuiLook/StaticImage">
+                                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                    <Property Name="FrameEnabled" Value="false" />
+                                                    <Property Name="BackgroundEnabled" Value="false" />
+                                                    <Property Name="RiseOnClick" Value="false" />
+                                                </Window>
+                                            </Window>
+                                        </Window>
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp4" Type="DefaultWindow">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,180},{0,0},{0,220},{0,48}}" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp4/artifactSkillBg4" Type="GuiLook/StaticImage">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="FrameEnabled" Value="false" />
+                                                <Property Name="BackgroundEnabled" Value="false" />
+                                                <Property Name="RiseOnClick" Value="false" />
+                                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp4/artifactSkillBg4/artifactSkillImg4" Type="GuiLook/StaticImage">
+                                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                    <Property Name="FrameEnabled" Value="false" />
+                                                    <Property Name="BackgroundEnabled" Value="false" />
+                                                    <Property Name="RiseOnClick" Value="false" />
+                                                </Window>
+                                            </Window>
+                                        </Window>
+                                        <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp5" Type="DefaultWindow">
+                                            <Property Name="UnifiedAreaRect" Value="{{0,240},{0,0},{0,280},{0,48}}" />
+                                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp5/artifactSkillBg5" Type="GuiLook/StaticImage">
+                                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                <Property Name="FrameEnabled" Value="false" />
+                                                <Property Name="BackgroundEnabled" Value="false" />
+                                                <Property Name="RiseOnClick" Value="false" />
+                                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/artifactView/artifact3DViewSp/artifactSkillSp/artifactSkillSp5/artifactSkillBg5/artifactSkillImg5" Type="GuiLook/StaticImage">
+                                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,40}}" />
+                                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                                    <Property Name="FrameEnabled" Value="false" />
+                                                    <Property Name="BackgroundEnabled" Value="false" />
+                                                    <Property Name="RiseOnClick" Value="false" />
+                                                </Window>
+                                            </Window>
+                                        </Window>
+                                    </Window>
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/wingsView" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,365},{0,514}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/wingsView/wings3DViewSp" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,364},{0,456}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/wingsView/wings3DViewSp/wings3DView" Type="DefaultWindow">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,258},{0,367},{0,268},{0,377}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/wingsView/wings3DViewSp/as7" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,251},{0,406},{0,299},{0,454}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/wingsView/wings3DViewSp/as8" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,312},{0,354},{0,360},{0,402}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/wingsView/wings3DViewSp/as9" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,312},{0,406},{0,360},{0,454}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/wingsView/wings3DViewSp/as0" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,354},{0,54},{0,402}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/wingsView/wings3DViewSp/as6" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,251},{0,354},{0,299},{0,402}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/wingsView/wings3DViewSp/as1" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,406},{0,54},{0,454}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/wingsView/wings3DViewSp/as3" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,67},{0,406},{0,115},{0,454}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/wingsView/wings3DViewSp/as2" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,67},{0,354},{0,115},{0,402}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/wingsView/wings3DViewSp/as4" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,128},{0,406},{0,176},{0,454}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/wingsView/wings3DViewSp/as5" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,190},{0,406},{0,238},{0,454}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/wingsView/wings3DViewSp/wingsNameImg" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,362},{0,42}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/change3DViewDiSp" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,456},{0,364},{0,512}}" />
+                                <Property Name="Image" Value="set:rank image:titleBg" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/change3DViewDiSp/curAdmireTitleTxt" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,16},{0,20},{0,104},{0,40}}" />
+                                    <Property Name="Font" Value="songti_12_strengh" />
+                                    <Property Name="Text" Value="当前景仰数：" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="FFFef9d0" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/change3DViewDiSp/curAdmireTxt" Type="GuiLook/StaticText">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,104},{0,20},{0,192},{0,40}}" />
+                                    <Property Name="Font" Value="songti_12_strengh" />
+                                    <Property Name="Text" Value="1111111111" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="TextColour" Value="FFFfea00" />
+                                    <Property Name="WantsMultiClickEvents" Value="false" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/change3DViewDiSp/admireBtn" Type="GlossySerpent/OrangeButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,206},{0,19},{0,308},{0,42}}" />
+                                    <Property Name="Font" Value="songti_14_strengh" />
+                                    <Property Name="Text" Value="景仰" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/change3DViewDiSp/changeFindBtn" Type="GuiLook/DefaultImageButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,313},{0,19},{0,347},{0,42}}" />
+                                    <Property Name="Image" Value="set:rank image:findBtn" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/change3DViewDiSp/lineChangeDi" Type="GuiLook/Line">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,364},{0,1}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/fairyView" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,365},{0,514}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="Visible" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/fairyView/fairy3DViewSp" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,364},{0,456}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/fairyView/fairy3DViewSp/fairy3DView" Type="DefaultWindow">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,258},{0,367},{0,268},{0,377}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/fairyView/fairy3DViewSp/fairyas0" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,63},{0,400},{0,111},{0,448}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/fairyView/fairy3DViewSp/fairyas1" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,158},{0,400},{0,206},{0,448}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/fairyView/fairy3DViewSp/fairyas2" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,255},{0,400},{0,303},{0,448}}" />
+                                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/fairyView/fairy3DViewSp/fairyNameImg" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,87},{0,0},{0,261},{0,40}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/mountView" Type="DefaultWindow">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,365},{0,514}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="Visible" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/mountView/mount3DViewSp" Type="GuiLook/StaticImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,364},{0,456}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="FrameEnabled" Value="false" />
+                                    <Property Name="BackgroundEnabled" Value="false" />
+                                    <Property Name="RiseOnClick" Value="false" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/mountView/mount3DViewSp/mount3DView" Type="DefaultWindow">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,258},{0,367},{0,268},{0,377}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/mountView/mount3DViewSp/mountNameImg" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,87},{0,0},{0,261},{0,40}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                </Window>
+                            </Window>
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/otherSp/viewBg/tipsImg" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,60},{0,87},{0,308},{0,344}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                        </Window>
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,139},{0,0},{0,1024},{0,513}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage" Type="GuiLook/CommonBg3">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,885},{0,513}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,884},{0,512}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/d3DView" Type="DefaultWindow">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,196},{0,365},{0,206},{0,375}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/d3DView1" Type="DefaultWindow">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,484},{0,365},{0,494},{0,375}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/d3DView2" Type="DefaultWindow">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,778},{0,366},{0,788},{0,376}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/jingYangSp1" Type="GlossySerpent/ThreeStretchImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,66},{0,483},{0,257},{0,512}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="LeftImage" Value="set:rank image:leftBg" />
+                                    <Property Name="LeftOffset" Value="15" />
+                                    <Property Name="RightImage" Value="set:rank image:rightBg" />
+                                    <Property Name="CenterImage" Value="set:rank image:middleBg" />
+                                    <Property Name="RightOffset" Value="17" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/jingYangSp1/jingyangTitleTxt1" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,95},{0,29}}" />
+                                        <Property Name="Font" Value="songti_12_strengh" />
+                                        <Property Name="Text" Value="当前景仰数：" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/jingYangSp1/jingYang1Txt" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,96},{0,0},{0,191},{0,29}}" />
+                                        <Property Name="Font" Value="songti_12_strengh" />
+                                        <Property Name="Text" Value="353535353" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="TextColour" Value="FFFFea00" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/jingYangSp2" Type="GlossySerpent/ThreeStretchImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,350},{0,483},{0,541},{0,512}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="LeftImage" Value="set:rank image:leftBg" />
+                                    <Property Name="LeftOffset" Value="16" />
+                                    <Property Name="RightImage" Value="set:rank image:rightBg" />
+                                    <Property Name="CenterImage" Value="set:rank image:middleBg" />
+                                    <Property Name="RightOffset" Value="17" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/jingYangSp2/jingyangTitleTxt2" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,95},{0,29}}" />
+                                        <Property Name="Font" Value="songti_12_strengh" />
+                                        <Property Name="Text" Value="当前景仰数：" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/jingYangSp2/jingYang2Txt" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,96},{0,0},{0,191},{0,29}}" />
+                                        <Property Name="Font" Value="songti_12_strengh" />
+                                        <Property Name="Text" Value="353535353" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="TextColour" Value="FFFFea00" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/jingYangSp3" Type="GlossySerpent/ThreeStretchImage">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,635},{0,483},{0,826},{0,512}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="LeftImage" Value="set:rank image:leftBg" />
+                                    <Property Name="LeftOffset" Value="15" />
+                                    <Property Name="RightImage" Value="set:rank image:rightBg" />
+                                    <Property Name="CenterImage" Value="set:rank image:middleBg" />
+                                    <Property Name="RightOffset" Value="17" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/jingYangSp3/jingyangTitleTxt3" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,95},{0,29}}" />
+                                        <Property Name="Font" Value="songti_12_strengh" />
+                                        <Property Name="Text" Value="当前景仰数：" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/jingYangSp3/jingYang3Txt" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,96},{0,0},{0,191},{0,29}}" />
+                                        <Property Name="Font" Value="songti_12_strengh" />
+                                        <Property Name="Text" Value="353535353" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="TextColour" Value="FFFFea00" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/lastBtn" Type="GuiLook/DefaultImageButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,164},{0,31},{0,316}}" />
+                                    <Property Name="Image" Value="set:rank image:nextBtn" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/nextBtn" Type="GuiLook/DefaultImageButton">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,854},{0,164},{0,885},{0,316}}" />
+                                    <Property Name="Image" Value="set:rank image:lastBtn" />
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/topTitleSp" Type="DefaultWindow">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,4},{0,1},{0,884},{0,66}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/topTitleSp/topTitle0" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,49},{0,0},{0,269},{0,65}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/topTitleSp/topTitle1" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,338},{0,0},{0,558},{0,65}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/topTitleSp/topTitle2" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,626},{0,0},{0,846},{0,65}}" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp1" Type="DefaultWindow">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,85},{0,51},{0,222},{0,81}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp1/sexImg1" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,7},{0,25},{0,23}}" />
+                                        <Property Name="Image" Value="set:mainUI1 image:SexGril" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp1/vipImg1" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,25},{0,7},{0,49},{0,23}}" />
+                                        <Property Name="Image" Value="set:mainUI1 image:silverVip4" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp1/campTxt1" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,52},{0,6},{0,72},{0,26}}" />
+                                        <Property Name="Font" Value="" />
+                                        <Property Name="Text" Value="魏·" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="Visible" Value="false" />
+                                        <Property Name="TextColour" Value="FF00baff" />
+                                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp1/nameTxt1" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,52},{0,6},{0,132},{0,26}}" />
+                                        <Property Name="Font" Value="" />
+                                        <Property Name="Text" Value="玩家名称六字" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="TextColour" Value="FFffffff" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp2" Type="DefaultWindow">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,372},{0,51},{0,512},{0,81}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp2/sexImg2" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,7},{0,25},{0,23}}" />
+                                        <Property Name="Image" Value="set:mainUI1 image:SexGril" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp2/vipImg2" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,25},{0,7},{0,49},{0,23}}" />
+                                        <Property Name="Image" Value="set:mainUI1 image:silverVip4" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp2/campTxt2" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,52},{0,6},{0,72},{0,26}}" />
+                                        <Property Name="Font" Value="" />
+                                        <Property Name="Text" Value="魏·" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="Visible" Value="false" />
+                                        <Property Name="TextColour" Value="FF00baff" />
+                                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp2/nameTxt2" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,52},{0,6},{0,132},{0,26}}" />
+                                        <Property Name="Font" Value="" />
+                                        <Property Name="Text" Value="玩家名称六字" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="TextColour" Value="FFffffff" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                </Window>
+                                <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp3" Type="DefaultWindow">
+                                    <Property Name="UnifiedAreaRect" Value="{{0,666},{0,51},{0,806},{0,81}}" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp3/sexImg3" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,7},{0,25},{0,23}}" />
+                                        <Property Name="Image" Value="set:mainUI1 image:SexGril" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp3/vipImg3" Type="GuiLook/StaticImage">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,25},{0,7},{0,49},{0,23}}" />
+                                        <Property Name="Image" Value="set:mainUI1 image:silverVip4" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="FrameEnabled" Value="false" />
+                                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                                        <Property Name="VertFormatting" Value="CentreAligned" />
+                                        <Property Name="BackgroundEnabled" Value="false" />
+                                        <Property Name="RiseOnClick" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp3/campTxt3" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,52},{0,6},{0,72},{0,26}}" />
+                                        <Property Name="Font" Value="" />
+                                        <Property Name="Text" Value="魏·" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="Visible" Value="false" />
+                                        <Property Name="TextColour" Value="FF00baff" />
+                                        <Property Name="HorzTextFormatting" Value="RightAligned" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                    <Window Name="RankListPanel/tab/curService/curServiceBg/topSp/rankListTopPage/bg/titleSp3/nameTxt3" Type="GuiLook/StaticText">
+                                        <Property Name="UnifiedAreaRect" Value="{{0,52},{0,6},{0,132},{0,26}}" />
+                                        <Property Name="Font" Value="" />
+                                        <Property Name="Text" Value="玩家名称六字" />
+                                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                        <Property Name="TextColour" Value="FFffffff" />
+                                        <Property Name="WantsMultiClickEvents" Value="false" />
+                                    </Window>
+                                </Window>
+                            </Window>
+                        </Window>
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/radioTab16" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,443},{0,134},{0,481}}" />
+                        <Property Name="GlyphImage" Value="set:rank image:equip" />
+                        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                    </Window>
+                    <Window Name="RankListPanel/tab/curService/curServiceBg/radioTab15" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,483},{0,134},{0,521}}" />
+                        <Property Name="GlyphImage" Value="set:rank image:fairy" />
+                        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="RankListPanel/tab/acrossService" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,6},{0,1024},{0,522}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="跨服排行" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

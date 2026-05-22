@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="GuiLook/TooltipPanel" Name="ItemTooltips" >
+        <Property Name="UnifiedAreaRect" Value="{{0,318},{0,79},{0,618},{0,321}}" />
+        <Property Name="MousePassThroughEnabled" Value="True" />
+        <Window Type="GuiLook/StaticTextBox" Name="ItemTooltips/titletext" >
+            <Property Name="Font" Value="宋体3" />
+            <Property Name="Text" Value="追风项链" />
+            <Property Name="TextColours" Value="FF00FF00" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,17},{0,4},{0,282},{0,29}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="GuiLook/StaticText" Name="ItemTooltips/postitle" >
+            <Property Name="Font" Value="宋体" />
+            <Property Name="Text" Value="道具类型：" />
+            <Property Name="TextColour" Value="ffffd800" />
+            <Property Name="UnifiedAreaRect" Value="{{0,145},{0,51},{0,210},{0,70}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="GuiLook/StaticText" Name="ItemTooltips/typetext" >
+            <Property Name="Font" Value="宋体" />
+            <Property Name="Text" Value="增值道具" />
+            <Property Name="TextColour" Value="ffc1eeec" />
+            <Property Name="UnifiedAreaRect" Value="{{0,209},{0,51},{0,302},{0,70}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="GuiLook/StaticText" Name="ItemTooltips/postitle1" >
+            <Property Name="Font" Value="宋体" />
+            <Property Name="Text" Value="使用等级：" />
+            <Property Name="TextColour" Value="ffffd800" />
+            <Property Name="UnifiedAreaRect" Value="{{0,145},{0,71},{0,210},{0,90}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="GuiLook/StaticText" Name="ItemTooltips/leveltext" >
+            <Property Name="Font" Value="宋体" />
+            <Property Name="Text" Value="40级" />
+            <Property Name="TextColour" Value="ffc1eeec" />
+            <Property Name="UnifiedAreaRect" Value="{{0,209},{0,71},{0,274},{0,90}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="GuiLook/StaticText" Name="ItemTooltips/postitle11" >
+            <Property Name="Font" Value="宋体" />
+            <Property Name="Text" Value="叠加上限：" />
+            <Property Name="TextColour" Value="ffffd800" />
+            <Property Name="UnifiedAreaRect" Value="{{0,145},{0,91},{0,210},{0,110}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="GuiLook/StaticText" Name="ItemTooltips/careertext" >
+            <Property Name="Font" Value="宋体" />
+            <Property Name="Text" Value="999" />
+            <Property Name="TextColour" Value="ffb6e1d7" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,91},{0,273},{0,110}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="GuiLook/RichTextBox" Name="ItemTooltips/desttext" >
+            <Property Name="Font" Value="宋体" />
+            <Property Name="LineSpace" Value="6" />
+            <Property Name="VertFormatting" Value="TopAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,23},{0,133},{0,287},{0,185}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="GuiLook/StaticImage" Name="ItemTooltips/imgbg" >
+            <Property Name="Image" Value="set:tj2common image:BigGridBg" />
+            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,47},{0,95},{0,117}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+            <Window Type="GuiLook/StaticImage" Name="ItemTooltips/imgbg/itemimg" >
+                <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,67},{0,67}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ItemTooltips/bottomgroup" >
+            <Property Name="UnifiedAreaRect" Value="{{0,12},{0,194},{0,295},{0,236}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+            <Window Type="GuiLook/Line" Name="ItemTooltips/line11" >
+                <Property Name="ClippedByParent" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-5},{0,-3},{0,283},{0,-2}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+            <Window Type="DefaultWindow" Name="ItemTooltips/bottomgroup/0" >
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,20},{0,283},{0,42}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+                <Window Type="GuiLook/StaticText" Name="ItemTooltips/bottomgroup/qhtitle1" >
+                    <Property Name="Font" Value="宋体" />
+                    <Property Name="Text" Value="出售价格：" />
+                    <Property Name="TextColour" Value="ffffd800" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,11},{0,3},{0,74},{0,19}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticText" Name="ItemTooltips/bottomgroup/sellprice" >
+                    <Property Name="Font" Value="宋体" />
+                    <Property Name="Text" Value="999绑定铜钱" />
+                    <Property Name="TextColour" Value="ffc1eeec" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,75},{0,3},{0,202},{0,19}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="GuiLook/StaticText" Name="ItemTooltips/bottomgroup/bind" >
+                    <Property Name="Font" Value="宋体" />
+                    <Property Name="Text" Value="未绑定" />
+                    <Property Name="TextColour" Value="ff00ff00" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,232},{0,3},{0,271},{0,19}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+            </Window>
+            <Window Type="GuiLook/StaticText" Name="ItemTooltips/bottomgroup/1limitTime" >
+                <Property Name="Font" Value="宋体" />
+                <Property Name="Text" Value="物品获得后，48小时过期" />
+                <Property Name="TextColour" Value="ff00ffff" />
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,0},{0,269},{0,18}}" />
+				<Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+        </Window>
+        <Window Type="GuiLook/Line" Name="ItemTooltips/line1" >
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,124},{0,293},{0,125}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+    </Window>
+</GUILayout>

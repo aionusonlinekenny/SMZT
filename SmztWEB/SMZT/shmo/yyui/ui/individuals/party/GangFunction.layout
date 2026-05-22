@@ -1,0 +1,122 @@
+<GUILayout>
+    <Window Name="GangFunction" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,753},{0,463}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GangFunction/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,753},{0,463}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangFunction/background/rightbackground" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,140},{0,0},{0,753},{0,463}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangFunction/background/rightbackground/boxsp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,613},{0,463}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+            <Window Name="GangFunction/background/gangskillBtn" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,44},{0,135},{0,82}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Window Name="GangFunction/background/gangskillBtn/gangskillImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:gangSkill" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangFunction/background/gangdeedsBtn" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,200},{0,135},{0,238}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Window Name="GangFunction/background/gangdeedsBtn/gangdeedsImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:gangDeeds" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangFunction/background/gangrankBtn" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,161},{0,135},{0,199}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Window Name="GangFunction/background/gangrankBtn/gangrankImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:gangRank" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangFunction/background/gangLocalTyrangtsBtn" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,122},{0,135},{0,160}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Window Name="GangFunction/background/gangLocalTyrangtsBtn/gangLocalTyrangtsImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:gangLocalTyrants" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangFunction/background/gangwarehousebtn" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,135},{0,43}}" />
+                <Property Name="Selected" Value="true" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Window Name="GangFunction/background/gangwarehousebtn/gangwarehouseImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:gangWarehouse" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangFunction/background/gangActivityBtn" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,83},{0,135},{0,121}}" />
+                <Property Name="HoverImage" Value="set:skins image:tabHover" />
+                <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+                <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+                <Window Name="GangFunction/background/gangActivityBtn/gangActivityImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:gangActivity" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

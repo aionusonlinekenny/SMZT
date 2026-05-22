@@ -1,0 +1,341 @@
+<GUILayout>
+    <Window Name="MapWorldPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,780},{0,432}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="MapWorldPage/bgImage" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,781},{0,432}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:mapGeneral image:north" />
+            <Property Name="LeftImage" Value="set:mapGeneral image:east" />
+            <Property Name="TopOffset" Value="20" />
+            <Property Name="LeftOffset" Value="19" />
+            <Property Name="RightImage" Value="set:mapGeneral image:west" />
+            <Property Name="BottomImage" Value="set:mapGeneral image:south" />
+            <Property Name="CenterImage" Value="set:mapGeneral image:centre" />
+            <Property Name="RightOffset" Value="19" />
+            <Property Name="BottomOffset" Value="20" />
+            <Property Name="TopLeftImage" Value="set:mapGeneral image:northWest" />
+            <Property Name="TopRightImage" Value="set:mapGeneral image:northEast" />
+            <Property Name="BottomLeftImage" Value="set:mapGeneral image:southWest" />
+            <Property Name="BottomRightImage" Value="set:mapGeneral image:southEast" />
+            <Window Name="MapWorldPage/bgImage/worldMapBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,5},{0,774},{0,426}}" />
+                <Property Name="Image" Value="set:mapWorld image:mapbg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapBtn6" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,578},{0,286},{0,702},{0,394}}" />
+                    <Property Name="HoverImage" Value="set:mapIcon image:map1" />
+                    <Property Name="SelectedImage" Value="set:mapIcon image:map1" />
+                    <Property Name="UnselectedImage" Value="set:mapIcon image:map11" />
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapBtn0" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,82},{0,0},{0,182},{0,110}}" />
+                    <Property Name="HoverImage" Value="set:mapIcon image:map9" />
+                    <Property Name="SelectedImage" Value="set:mapIcon image:map9" />
+                    <Property Name="UnselectedImage" Value="set:mapIcon image:map99" />
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapBtn1" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,264},{0,24},{0,362},{0,99}}" />
+                    <Property Name="HoverImage" Value="set:mapIcon image:map7" />
+                    <Property Name="SelectedImage" Value="set:mapIcon image:map7" />
+                    <Property Name="UnselectedImage" Value="set:mapIcon image:map77" />
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapBtn2" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,254},{0,111},{0,388},{0,220}}" />
+                    <Property Name="HoverImage" Value="set:mapIcon image:map0" />
+                    <Property Name="SelectedImage" Value="set:mapIcon image:map0" />
+                    <Property Name="UnselectedImage" Value="set:mapIcon image:map00" />
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapBtn3" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,458},{0,12},{0,525},{0,89}}" />
+                    <Property Name="HoverImage" Value="set:mapIcon image:map6" />
+                    <Property Name="SelectedImage" Value="set:mapIcon image:map6" />
+                    <Property Name="UnselectedImage" Value="set:mapIcon image:map66" />
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapBtn4" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,664},{0,95},{0,753},{0,184}}" />
+                    <Property Name="HoverImage" Value="set:mapIcon image:map5" />
+                    <Property Name="SelectedImage" Value="set:mapIcon image:map5" />
+                    <Property Name="UnselectedImage" Value="set:mapIcon image:map55" />
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapBtn8" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,33},{0,300},{0,139},{0,389}}" />
+                    <Property Name="HoverImage" Value="set:mapIcon image:map8" />
+                    <Property Name="SelectedImage" Value="set:mapIcon image:map8" />
+                    <Property Name="UnselectedImage" Value="set:mapIcon image:map88" />
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapBtn9" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,150},{0,187},{0,229},{0,291}}" />
+                    <Property Name="HoverImage" Value="set:mapIcon image:map4" />
+                    <Property Name="SelectedImage" Value="set:mapIcon image:map4" />
+                    <Property Name="UnselectedImage" Value="set:mapIcon image:map44" />
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapBtn7" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,292},{0,247},{0,429},{0,356}}" />
+                    <Property Name="HoverImage" Value="set:mapIcon image:map3" />
+                    <Property Name="SelectedImage" Value="set:mapIcon image:map3" />
+                    <Property Name="UnselectedImage" Value="set:mapIcon image:map33" />
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapBtn5" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,545},{0,77},{0,632},{0,168}}" />
+                    <Property Name="HoverImage" Value="set:mapIcon image:map2" />
+                    <Property Name="SelectedImage" Value="set:mapIcon image:map2" />
+                    <Property Name="UnselectedImage" Value="set:mapIcon image:map22" />
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,57},{0,93},{0,200},{0,118}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg0/nameTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,143},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="天庭（0-100级）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,245},{0,88},{0,388},{0,113}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg1/nameTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,143},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="潼关（0-100级）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,250},{0,208},{0,393},{0,233}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg2/nameTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,143},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="两仪城（0-100级）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,14},{0,377},{0,157},{0,402}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg8/nameTxt8" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,143},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="南蛮（0-100级）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,290},{0,328},{0,433},{0,353}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg7/nameTxt7" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,143},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="魔界（0-100级）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg9" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,126},{0,278},{0,269},{0,303}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg9/nameTxt9" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,143},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="夷陵（0-100级）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,409},{0,78},{0,552},{0,103}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg3/nameTxt3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,143},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="官渡（0-100级）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,516},{0,138},{0,659},{0,163}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg5/nameTxt5" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,143},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="长坂坡（0-100级）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,569},{0,371},{0,712},{0,396}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg6/nameTxt6" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,143},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="东海龙宫（0-100级）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,624},{0,167},{0,767},{0,192}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg4/nameTxt4" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,143},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="恶魔岛（0-100级）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapBtn10" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,91},{0,109},{0,178},{0,201}}" />
+                    <Property Name="HoverImage" Value="set:mapIcon image:map13" />
+                    <Property Name="SelectedImage" Value="set:mapIcon image:map13" />
+                    <Property Name="UnselectedImage" Value="set:mapIcon image:map1313" />
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapBtn11" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,425},{0,133},{0,520},{0,205}}" />
+                    <Property Name="HoverImage" Value="set:mapIcon image:map10" />
+                    <Property Name="SelectedImage" Value="set:mapIcon image:map10" />
+                    <Property Name="UnselectedImage" Value="set:mapIcon image:map1010" />
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapBtn12" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,506},{0,192},{0,590},{0,290}}" />
+                    <Property Name="HoverImage" Value="set:mapIcon image:map12" />
+                    <Property Name="SelectedImage" Value="set:mapIcon image:map12" />
+                    <Property Name="UnselectedImage" Value="set:mapIcon image:map1212" />
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg10" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,61},{0,184},{0,204},{0,209}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg10/nameTxt10" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,143},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="虎牢关（0-100级）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg11" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,398},{0,193},{0,541},{0,218}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg11/nameTxt11" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,143},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="赤壁（0-100级）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg12" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,475},{0,278},{0,618},{0,303}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg12/nameTxt12" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,143},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="阪泉（0-100级）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapBtn13" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,658},{0,193},{0,742},{0,291}}" />
+                    <Property Name="HoverImage" Value="set:mapIcon image:map14" />
+                    <Property Name="SelectedImage" Value="set:mapIcon image:map14" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="UnselectedImage" Value="set:mapIcon image:map1414" />
+                </Window>
+                <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg13" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,627},{0,279},{0,770},{0,304}}" />
+                    <Property Name="Image" Value="set:mapGeneral image:shadow1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="MapWorldPage/bgImage/worldMapBg/mapbgImg13/nameTxt13" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,143},{0,25}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="皇陵秘境（60-200级）" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

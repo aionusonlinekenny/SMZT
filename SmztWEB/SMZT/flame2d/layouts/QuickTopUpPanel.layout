@@ -1,0 +1,138 @@
+<GUILayout>
+    <Window Name="QuickTopUpPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,197},{0,119},{0,1202},{0,642}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="QuickTopUpPanel/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1005},{0,523}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="QuickTopUpPanel/bg/progressBar$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,282},{0,141},{0,893},{0,185}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:quickTopUp image:left" />
+                <Property Name="LeftOffset" Value="58" />
+                <Property Name="RightImage" Value="set:quickTopUp image:right" />
+                <Property Name="CenterImage" Value="set:quickTopUp image:center" />
+                <Property Name="RightOffset" Value="57" />
+            </Window>
+            <Window Name="QuickTopUpPanel/bg/vipNum" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,656},{0,84},{0,706},{0,117}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="QuickTopUpPanel/bg/btn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,521},{0,448},{0,676},{0,494}}" />
+                <Property Name="Image" Value="set:quickTopUp image:btn" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+            </Window>
+            <Window Name="QuickTopUpPanel/bg/progressTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,281},{0,158},{0,893},{0,186}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="QuickTopUpPanel/bg/txt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,283},{0,124},{0,783},{0,149}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="QuickTopUpPanel/bg/niu" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,-68},{0,-34},{0,332},{0,508}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="QuickTopUpPanel/bg/closeBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,878},{0,56},{0,935},{0,113}}" />
+                <Property Name="Image" Value="set:quickTopUp image:closeBtn" />
+            </Window>
+            <Window Name="QuickTopUpPanel/bg/yuanBaoImg0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,251},{0,295},{0,359},{0,432}}" />
+                <Property Name="Image" Value="set:quickTopUp image:yuanbao0" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="QuickTopUpPanel/bg/yuanBaoImg0/buyBtn0" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,104},{0,91},{0,127}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="购买" />
+                </Window>
+            </Window>
+            <Window Name="QuickTopUpPanel/bg/yuanBaoImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,364},{0,295},{0,472},{0,432}}" />
+                <Property Name="Image" Value="set:quickTopUp image:yuanbao1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="QuickTopUpPanel/bg/yuanBaoImg1/buyBtn1" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,104},{0,91},{0,127}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="购买" />
+                </Window>
+            </Window>
+            <Window Name="QuickTopUpPanel/bg/yuanBaoImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,477},{0,295},{0,585},{0,432}}" />
+                <Property Name="Image" Value="set:quickTopUp image:yuanbao2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="QuickTopUpPanel/bg/yuanBaoImg2/buyBtn2" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,104},{0,91},{0,127}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="购买" />
+                </Window>
+            </Window>
+            <Window Name="QuickTopUpPanel/bg/yuanBaoImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,589},{0,295},{0,697},{0,432}}" />
+                <Property Name="Image" Value="set:quickTopUp image:yuanbao3" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="QuickTopUpPanel/bg/yuanBaoImg3/buyBtn3" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,104},{0,91},{0,127}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="购买" />
+                </Window>
+            </Window>
+            <Window Name="QuickTopUpPanel/bg/yuanBaoImg4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,701},{0,295},{0,809},{0,432}}" />
+                <Property Name="Image" Value="set:quickTopUp image:yuanbao4" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="QuickTopUpPanel/bg/yuanBaoImg4/buyBtn4" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,104},{0,91},{0,127}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="购买" />
+                </Window>
+            </Window>
+            <Window Name="QuickTopUpPanel/bg/yuanBaoImg5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,813},{0,295},{0,921},{0,432}}" />
+                <Property Name="Image" Value="set:quickTopUp image:yuanbao5" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="QuickTopUpPanel/bg/yuanBaoImg5/buyBtn5" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,104},{0,91},{0,127}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="购买" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

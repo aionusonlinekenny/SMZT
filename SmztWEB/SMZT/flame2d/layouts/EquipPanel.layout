@@ -1,0 +1,55 @@
+<GUILayout>
+    <Window Name="EquipPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,605},{0,529}}" />
+        <Property Name="GlyphImage" Value="set:equip image:equipmentRefining" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="EquipPanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,30},{0,587},{0,482}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="EquipPanel/equiprefiningBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,80},{0,29}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="装备精炼" />
+        </Window>
+        <Window Name="EquipPanel/equipstrongBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,81},{0,5},{0,156},{0,29}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="装备强化" />
+        </Window>
+        <Window Name="EquipPanel/stoneBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,157},{0,5},{0,232},{0,29}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="装备镶嵌" />
+        </Window>
+        <Window Name="EquipPanel/equipwashBtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,233},{0,5},{0,308},{0,29}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="装备洗练" />
+        </Window>
+        <Window Name="EquipPanel/equipupgradebtn" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,233},{0,5},{0,308},{0,29}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="装备升级" />
+            <Property Name="Visible" Value="false" />
+        </Window>
+        <Window Name="EquipPanel/radioBtn3" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,309},{0,5},{0,384},{0,29}}" />
+            <Property Name="Text" Value="锻造神装" />
+        </Window>
+    </Window>
+</GUILayout>

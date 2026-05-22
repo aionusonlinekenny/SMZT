@@ -1,0 +1,207 @@
+<GUILayout>
+    <Window Name="SkyAndEarthCrossingBullet" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-1},{0,695},{0,338}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SkyAndEarthCrossingBullet/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,51},{0,672},{0,312}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="SkyAndEarthCrossingBullet/bgImg/successBox" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,261},{0,-52},{0,624},{0,258}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/successBox/boxList" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,106},{0,203},{0,273},{0,262}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/successBox/successImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,62},{0,22},{0,275},{0,85}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/successBox/foreverImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,122},{0,181},{0,228},{0,198}}" />
+                    <Property Name="Image" Value="set:skyAndEarthWord image:forever" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/successBox/closeBtn" Type="GlossySerpent/BlueButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,195},{0,274},{0,276},{0,297}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="稍后再来" />
+                </Window>
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/successBox/goOnBtn" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,85},{0,274},{0,166},{0,297}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="再度一劫" />
+                </Window>
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/successBox/successEffect" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,28},{0,47},{0,218},{0,98}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="SkyAndEarthCrossingBullet/bgImg/lostBox" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,261},{0,-52},{0,624},{0,258}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/lostBox/TextBG2" Type="GuiLook/TextBG">
+                    <Property Name="UnifiedAreaRect" Value="{{0,34},{0,243},{0,321},{0,255}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="SkyAndEarthCrossingBullet/bgImg/lostBox/TextBG2/progressCurrent$NormalBar" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,287},{0,11}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:hpBar" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="SkyAndEarthCrossingBullet/bgImg/lostBox/TextBG2/remainingTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-2},{0,287},{0,14}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="30%" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/lostBox/failureImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,62},{0,23},{0,282},{0,83}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/lostBox/lostCloseBtn" Type="GlossySerpent/BlueButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,84},{0,275},{0,165},{0,298}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="稍后再来" />
+                </Window>
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/lostBox/strongBtn" Type="GlossySerpent/OrangeButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,194},{0,275},{0,275},{0,298}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="帮派求助" />
+                </Window>
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/lostBox/nameText$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,12},{0,106},{0,357},{0,126}}" />
+                    <Property Name="Font" Value="songti_16_strengh" />
+                    <Property Name="Text" Value="立即去进阶" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85F500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/lostBox/iconImageBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,139},{0,129},{0,227},{0,219}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/lostBox/goUpText$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,146},{0,220},{0,237},{0,238}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="立即去进阶" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85F500" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/lostBox/iconImage" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,139},{0,129},{0,227},{0,219}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkyAndEarthCrossingBullet/bgImg/skybox1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,257},{0,55},{0,421},{0,108}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/skybox1/leftFloorText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,164},{0,53}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF7200" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/skybox1/leftFloorImage" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-13},{0,11},{0,171},{0,53}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkyAndEarthCrossingBullet/bgImg/skybox2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,459},{0,55},{0,623},{0,107}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/skybox2/RightFloorText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,164},{0,52}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF7200" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SkyAndEarthCrossingBullet/bgImg/skybox2/rightFloorImage" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,10},{0,184},{0,53}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SkyAndEarthCrossingBullet/bgImg/timeText" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,545},{0,222},{0,724},{0,244}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85F500" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkyAndEarthCrossingBullet/bgImg/roleBgEffect" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,261},{0,260}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SkyAndEarthCrossingBullet/bgImg/roleView" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,54},{0,172},{0,210},{0,199}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyAndEarthCrossingBullet/bgImg/StaticImage" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,423},{0,69},{0,456},{0,99}}" />
+                <Property Name="Image" Value="set:skyAndEarthWord image:arrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,106 @@
+<GUILayout>
+    <Window Name="IndividualFightResultPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,43},{0,723},{0,350}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="IndividualFightResultPanel/bg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,723},{0,183}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:worldFirst image:leftSmall" />
+            <Property Name="LeftOffset" Value="174" />
+            <Property Name="RightImage" Value="set:worldFirst image:rightSmall" />
+            <Property Name="CenterImage" Value="set:worldFirst image:middleSmall" />
+            <Property Name="RightOffset" Value="174" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Window Name="IndividualFightResultPanel/bg/Line" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,60},{0,723},{0,61}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="IndividualFightResultPanel/bg/DefaultWindow" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,60},{0,160},{0,92}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Window Name="IndividualFightResultPanel/bg/DefaultWindow/markImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,12},{0,0},{0,22},{0,9}}" />
+                    <Property Name="Image" Value="set:skin image:MarkImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="IndividualFightResultPanel/bg/DefaultWindow/expTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,26},{0,0},{0,160},{0,32}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+66262626262" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="IndividualFightResultPanel/bg/DefaultWindow2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,95},{0,160},{0,127}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Window Name="IndividualFightResultPanel/bg/DefaultWindow2/markImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,12},{0,0},{0,22},{0,9}}" />
+                    <Property Name="Image" Value="set:skin image:MarkImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="IndividualFightResultPanel/bg/DefaultWindow2/repTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,26},{0,0},{0,160},{0,32}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+66262626262" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="IndividualFightResultPanel/bg/closeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,157},{0,160},{0,183}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="5秒后自动关闭···" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="IndividualFightResultPanel/bg/DefaultWindow3" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,125},{0,160},{0,157}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Window Name="IndividualFightResultPanel/bg/DefaultWindow3/markImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,12},{0,0},{0,22},{0,9}}" />
+                    <Property Name="Image" Value="set:skin image:MarkImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="IndividualFightResultPanel/bg/DefaultWindow3/numTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,26},{0,0},{0,160},{0,32}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="+66262626262" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="IndividualFightResultPanel/img" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,307},{0,182}}" />
+            <Property Name="Image" Value="set:worldFirst image:failure" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+    </Window>
+</GUILayout>

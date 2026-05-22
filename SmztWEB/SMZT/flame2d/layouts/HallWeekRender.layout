@@ -1,0 +1,92 @@
+<GUILayout>
+    <Window Name="HallWeekRender" Type="GuiLook/CommonBg4">
+        <Property Name="UnifiedAreaRect" Value="{{0,96},{0,114},{0,188},{0,313}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="HallWeekRender/bluebackground" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,92},{0,199}}" />
+            <Property Name="Image" Value="set:hallReward image:checkBox2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="HallWeekRender/bluebackground/background" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,92},{0,199}}" />
+                <Property Name="Image" Value="set:hallReward image:checkBox1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="HallWeekRender/bluebackground/items" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,22},{0,65},{0,70},{0,113}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="HallWeekRender/bluebackground/wordTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,17},{0,8},{0,74},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="星期一" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF7EACC2" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallWeekRender/bluebackground/addSignBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,17},{0,176},{0,78},{0,199}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="补签" />
+                <Property Name="AlwaysOnTop" Value="true" />
+            </Window>
+            <Window Name="HallWeekRender/bluebackground/wordTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,149},{0,91},{0,166}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="道具名称" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="HallWeekRender/bluebackground/fivestar" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,32},{0,89},{0,61}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="HallWeekRender/bluebackground/fivestar/star" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,4},{0,2},{0,29},{0,26}}" />
+                    <Property Name="Image" Value="set:hallReward image:bluestar" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="HallWeekRender/bluebackground/fivestar/star2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,30},{0,2},{0,55},{0,26}}" />
+                    <Property Name="Image" Value="set:hallReward image:bluestar" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="HallWeekRender/bluebackground/fivestar/star3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,56},{0,2},{0,81},{0,26}}" />
+                    <Property Name="Image" Value="set:hallReward image:bluestar" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="HallWeekRender/right" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,26},{0,68},{0,66},{0,108}}" />
+            <Property Name="Image" Value="set:hallReward image:right" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

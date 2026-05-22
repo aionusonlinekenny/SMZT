@@ -1,0 +1,191 @@
+<GUILayout>
+    <Window Name="MountAdvancedView" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,327},{0,568}}" />
+        <Property Name="Font" Value="songti_18_strengh" />
+        <Property Name="Text" Value="坐骑进阶" />
+        <Property Name="CaptionColour" Value="ffc6dee6" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="MountAdvancedView/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,525},{0,309},{0,526}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="MountAdvancedView/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,309},{0,522}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="MountAdvancedView/bg/nameImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,17},{0,229},{0,56}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="MountAdvancedView/bg/d3DView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,107},{0,306},{0,260},{0,379}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="MountAdvancedView/bg/orderEtc" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,272},{0,10},{0,300},{0,62}}" />
+                <Property Name="Image" Value="set:skins image:order1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MountAdvancedView/bg/tView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,377},{0,192},{0,400}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="MountAdvancedView/bg/progressBarBg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,382},{0,303},{0,394}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:ProgressBarBgLeft" />
+                <Property Name="LeftOffset" Value="3" />
+                <Property Name="RightImage" Value="set:skin image:ProgressBarBgRight" />
+                <Property Name="CenterImage" Value="set:skin image:ProgressBarBgCenter" />
+                <Property Name="RightOffset" Value="3" />
+                <Window Name="MountAdvancedView/bg/progressBarBg/progressBar$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,297},{0,12}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:BlueProgressBarLeft" />
+                    <Property Name="LeftOffset" Value="48" />
+                    <Property Name="RightImage" Value="set:skin image:BlueProgressBarRight" />
+                    <Property Name="CenterImage" Value="set:skin image:BlueProgressBarCenter" />
+                    <Property Name="RightOffset" Value="48" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="MountAdvancedView/bg/progressBarTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,54},{0,378},{0,246},{0,398}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="当前摧毁度：1000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFe1FeFF" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="MountAdvancedView/bg1" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,403},{0,309},{0,523}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="MountAdvancedView/bg1/gridBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,69},{0,2},{0,117},{0,50}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="MountAdvancedView/bg1/gridBg/item" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="MountAdvancedView/bg1/selfAdvancedBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,176},{0,86},{0,284},{0,109}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="自动进阶" />
+            </Window>
+            <Window Name="MountAdvancedView/bg1/sp1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,124},{0,2},{0,257},{0,22}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="MountAdvancedView/bg1/sp1/txt1$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,2},{0,133},{0,22}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="坐骑进阶丹*200" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="MountAdvancedView/bg1/sp1/markImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,15},{0,14}}" />
+                    <Property Name="Image" Value="set:skin image:MarkImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="MountAdvancedView/bg1/checkbox" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,70},{0,57},{0,237},{0,73}}" />
+                <Property Name="Text" Value="道具不足时自动商城购买" />
+            </Window>
+            <Window Name="MountAdvancedView/bg1/starAdvancedBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,24},{0,86},{0,132},{0,109}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="开始进阶" />
+            </Window>
+            <Window Name="MountAdvancedView/bg1/sp2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,124},{0,30},{0,257},{0,50}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="MountAdvancedView/bg1/sp2/txt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,0},{0,133},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="铜币*5000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF7200" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="MountAdvancedView/bg1/sp2/markImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,15},{0,14}}" />
+                    <Property Name="Image" Value="set:skin image:MarkImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="MountAdvancedView/bg2" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,403},{0,309},{0,523}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Window Name="MountAdvancedView/bg2/img1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,86},{0,188},{0,109}}" />
+                <Property Name="Image" Value="set:skins image:subsequentImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="MountAdvancedView/bg2/link$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,93},{0,54},{0,249},{0,69}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="点击查看其它变更方式" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MountAdvancedView/bg2/img0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,15},{0,264},{0,41}}" />
+                <Property Name="Image" Value="set:skins image:congratulationsImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

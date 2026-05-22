@@ -1,0 +1,107 @@
+<GUILayout>
+    <Window Name="DamageRankWorldBossInfoView" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,265},{0,259}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+        <Window Name="DamageRankWorldBossInfoView/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,265},{0,258}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="DamageRankWorldBossInfoView/bg/di" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-2},{0,264},{0,42}}" />
+                <Property Name="Image" Value="set:damageWorldBossRank image:shadow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="DamageRankWorldBossInfoView/bg/di/myRankTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,60},{0,22}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="我的排名：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="DamageRankWorldBossInfoView/bg/di/myRankTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,63},{0,5},{0,111},{0,23}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="DamageRankWorldBossInfoView/bg/di/damageTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,112},{0,6},{0,148},{0,22}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="伤害：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="DamageRankWorldBossInfoView/bg/di/damageTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,148},{0,6},{0,260},{0,22}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="DamageRankWorldBossInfoView/bg/di/linkTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,61},{0,25},{0,198},{0,43}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="DamageRankWorldBossInfoView/bg/contentBox" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,32},{0,265},{0,211}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{0,800}}" />
+            </Window>
+            <Window Name="DamageRankWorldBossInfoView/bg/bottomImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,265},{0,32}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="DamageRankWorldBossInfoView/bg/bottomImg/StaticImage" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,265},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="DamageRankWorldBossInfoView/bg/bottomImg/chapterImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,265},{0,32}}" />
+                    <Property Name="Image" Value="set:damageWorldBossRank image:boss" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="DamageRankWorldBossInfoView/bg/bottomImg/StaticImage2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,265},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="DamageRankWorldBossInfoView/bg/bottomImg/zoomBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,11},{0,12},{0,23},{0,23}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:zoomLeftBtn" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="DamageRankWorldBossInfoView/zoomNBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,22},{0,91}}" />
+            <Property Name="Visible" Value="false" />
+            <Property Name="HoverImage" Value="set:damageWorldBossRank image:rankingHover" />
+            <Property Name="NormalImage" Value="set:damageWorldBossRank image:rankingNormal" />
+            <Property Name="PushedImage" Value="set:damageWorldBossRank image:rankingPushed" />
+        </Window>
+    </Window>
+</GUILayout>

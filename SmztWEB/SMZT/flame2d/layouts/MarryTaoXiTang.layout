@@ -1,0 +1,51 @@
+<GUILayout>
+    <Window Name="MarryTaoXiTang" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,709},{0,376}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="MarryTaoXiTang/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,708},{0,375}}" />
+            <Property Name="Image" Value="set:marryTaoXiTang image:xitieBG" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="MarryTaoXiTang/xinglangTxT" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,470},{0,66},{0,613},{0,87}}" />
+            <Property Name="Font" Value="songti_16_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="MarryTaoXiTang/xingniangTxT" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,470},{0,93},{0,615},{0,114}}" />
+            <Property Name="Font" Value="songti_16_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="MarryTaoXiTang/ruleTxt1$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,399},{0,146},{0,644},{0,271}}" />
+            <Property Name="Font" Value="songti_16_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="MarryTaoXiTang/refreshBtn" Type="GlossySerpent/RedButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,464},{0,293},{0,576},{0,330}}" />
+            <Window Name="MarryTaoXiTang/refreshBtn/refreshImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,24},{0,7},{0,90},{0,30}}" />
+                <Property Name="Image" Value="set:marryTaoXiTang image:taoxitang" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="MarryTaoXiTang/closeBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,664},{0,3},{0,703},{0,42}}" />
+            <Property Name="Image" Value="set:marryTaoXiTang image:close" />
+        </Window>
+    </Window>
+</GUILayout>

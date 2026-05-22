@@ -1,0 +1,49 @@
+<GUILayout>
+    <Window Name="SkyWeaponDecreePage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,318},{0,111}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SkyWeaponDecreePage/attributeTxt1" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,133},{0,6},{0,167},{0,24}}" />
+            <Property Name="Font" Value="songti_14" />
+            <Property Name="Text" Value="天命" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ffffea00" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SkyWeaponDecreePage/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,59},{0,29},{0,309},{0,30}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="SkyWeaponDecreePage/addNumberTxt1" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,6},{0,215},{0,24}}" />
+            <Property Name="Font" Value="songti_14" />
+            <Property Name="Text" Value="+1999" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ff85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SkyWeaponDecreePage/boxImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,38},{0,111}}" />
+            <Property Name="Image" Value="set:skyWeapon image:box" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="SkyWeaponDecreePage/boxImg/decreeImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,8},{0,18},{0,31},{0,95}}" />
+                <Property Name="Image" Value="set:skyWeapon image:myDecree" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SkyWeaponDecreePage/desc$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,51},{0,35},{0,312},{0,105}}" />
+            <Property Name="Font" Value="songti_14" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ff85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

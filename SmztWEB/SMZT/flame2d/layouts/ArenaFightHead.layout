@@ -1,0 +1,141 @@
+<GUILayout>
+    <Window Name="ArenaFightHead" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1154},{0,135}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="ArenaFightHead/myHead" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,394},{0,135}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ArenaFightHead/myHead/myFaceImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,158},{0,94}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ArenaFightHead/myHead/myNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,208},{0,69},{0,387},{0,94}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffffff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ArenaFightHead/myHead/myBuffWin" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,294},{0,22}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+                <Property Name="HorizontalAlignment" Value="Right" />
+            </Window>
+            <Window Name="ArenaFightHead/myHead/myLvTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,137},{0,69},{0,209},{0,94}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ArenaFightHead/myHead/myHpBarBg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,94},{0,394},{0,115}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                <Property Name="LeftOffset" Value="9" />
+                <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                <Property Name="RightOffset" Value="9" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+                <Window Name="ArenaFightHead/myHead/myHpBarBg/myHp$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,393},{0,20}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                    <Property Name="LeftOffset" Value="8" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                    <Property Name="RightOffset" Value="8" />
+                </Window>
+            </Window>
+            <Window Name="ArenaFightHead/myHead/myHpNumTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,94},{0,394},{0,115}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffffff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="ArenaFightHead/fightTimeBg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,500},{0,20},{0,657},{0,84}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:worldFirst image:leftBig" />
+            <Property Name="LeftOffset" Value="76" />
+            <Property Name="RightImage" Value="set:worldFirst image:rightBig" />
+            <Property Name="CenterImage" Value="set:worldFirst image:middleBig" />
+            <Property Name="RightOffset" Value="76" />
+            <Window Name="ArenaFightHead/fightTimeBg/fightTimeImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,12},{0,157},{0,54}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="ArenaFightHead/targetHead" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,760},{0,0},{0,1154},{0,135}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ArenaFightHead/targetHead/targetFaceImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,235},{0,1},{0,393},{0,95}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ArenaFightHead/targetHead/targetBuffWin" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,294},{0,22}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+                <Property Name="HorizontalAlignment" Value="Right" />
+            </Window>
+            <Window Name="ArenaFightHead/targetHead/targetLvTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,50},{0,69},{0,122},{0,94}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ArenaFightHead/targetHead/targetHpBarBg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,94},{0,394},{0,115}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                <Property Name="LeftOffset" Value="9" />
+                <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                <Property Name="RightOffset" Value="9" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+                <Property Name="AutoRenderingSurface" Value="true" />
+                <Window Name="ArenaFightHead/targetHead/targetHpBarBg/targetHp$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,393},{0,20}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                    <Property Name="LeftOffset" Value="8" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                    <Property Name="RightOffset" Value="8" />
+                </Window>
+            </Window>
+            <Window Name="ArenaFightHead/targetHead/targetHpNumTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,94},{0,394},{0,115}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffffff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ArenaFightHead/targetHead/targetNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,69},{0,260},{0,94}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffffff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

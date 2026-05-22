@@ -1,0 +1,53 @@
+<GUILayout>
+    <Window Name="MultiKillMonsterPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,229},{0,137}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="MultiKillMonsterPanel/bg1" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,40},{0,230},{0,74}}" />
+            <Property Name="Image" Value="set:multiKillMonster image:bg2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="MultiKillMonsterPanel/bg2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,40},{0,229},{0,74}}" />
+            <Property Name="Image" Value="set:multiKillMonster image:bg1" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="MultiKillMonsterPanel/qianjing" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,110},{0,10},{0,217},{0,107}}" />
+            <Property Name="Image" Value="set:multiKillMonster image:s1" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="LeftAligned" />
+            <Property Name="VertFormatting" Value="TopAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="MultiKillMonsterPanel/lianzhan" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,30},{0,128},{0,70}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="MultiKillMonsterPanel/desc" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,39},{0,75},{0,184},{0,96}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="123456789" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFFFF00" />
+            <Property Name="HorzTextFormatting" Value="RightAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

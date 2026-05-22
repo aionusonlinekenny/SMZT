@@ -1,0 +1,679 @@
+<GUILayout>
+    <Window Name="EquipWashPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,587},{0,452}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="EquipWashPage/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,586},{0,373}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="EquipWashPage/bgImg/TextBG" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,117},{0,348},{0,469},{0,360}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Window Name="EquipWashPage/bgImg/TextBG/successRate$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,352},{0,12}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:PurpleProgressBarLeft" />
+                    <Property Name="LeftOffset" Value="48" />
+                    <Property Name="RightImage" Value="set:skin image:PurpleProgressBarRight" />
+                    <Property Name="CenterImage" Value="set:skin image:PurpleProgressBarCenter" />
+                    <Property Name="RightOffset" Value="48" />
+                </Window>
+                <Window Name="EquipWashPage/bgImg/TextBG/successTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,352},{0,12}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="暂未开启，敬请期待" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/autoBuyStone" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,171},{0,340},{0,284},{0,356}}" />
+                <Property Name="Text" Value="自动购买洗练石" />
+                <Property Name="HoverTextColour" Value="FF64d4d8" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/nameTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,205},{0,29},{0,377},{0,53}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="装备名称" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/t7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,9},{0,116},{0,57}}" />
+                <Property Name="Image" Value="set:equip image:wash" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/t8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,59},{0,116},{0,107}}" />
+                <Property Name="Image" Value="set:equip image:wash" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/t12" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,259},{0,116},{0,307}}" />
+                <Property Name="Image" Value="set:equip image:wash" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/t10" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,159},{0,116},{0,207}}" />
+                <Property Name="Image" Value="set:equip image:wash" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/t11" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,209},{0,116},{0,257}}" />
+                <Property Name="Image" Value="set:equip image:wash" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/t0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,309},{0,116},{0,357}}" />
+                <Property Name="Image" Value="set:equip image:wash" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/t9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,68},{0,109},{0,116},{0,157}}" />
+                <Property Name="Image" Value="set:equip image:wash" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/t4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,470},{0,159},{0,518},{0,207}}" />
+                <Property Name="Image" Value="set:equip image:wash" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/t1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,470},{0,9},{0,518},{0,57}}" />
+                <Property Name="Image" Value="set:equip image:wash" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/t2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,470},{0,59},{0,518},{0,107}}" />
+                <Property Name="Image" Value="set:equip image:wash" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/t3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,470},{0,109},{0,518},{0,157}}" />
+                <Property Name="Image" Value="set:equip image:wash" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/t6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,470},{0,259},{0,518},{0,307}}" />
+                <Property Name="Image" Value="set:equip image:wash" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/t5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,470},{0,209},{0,518},{0,257}}" />
+                <Property Name="Image" Value="set:equip image:wash" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/autoBuyLock" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,327},{0,340},{0,440},{0,356}}" />
+                <Property Name="Text" Value="自动购买属性锁" />
+                <Property Name="HoverTextColour" Value="FF64d4d8" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/selectGrid" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,269},{0,81},{0,317},{0,129}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/selectGrid/allLv" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,0},{0,46},{0,48}}" />
+                    <Property Name="Font" Value="songti_24_strengh" />
+                    <Property Name="Text" Value="we" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFFEA00" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/equip9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,530},{0,59},{0,578},{0,107}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/equip9/a33" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/equip6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,259},{0,57},{0,307}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/equip6/a122" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/equip13" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,530},{0,259},{0,578},{0,307}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/equip13/a66" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,49},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/equip5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,209},{0,57},{0,257}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/equip5/a111" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/equip12" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,530},{0,209},{0,578},{0,257}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/equip12/a55" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/equip4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,159},{0,57},{0,207}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/equip4/a100" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/equip" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,9},{0,57},{0,57}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/equip/a77" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/equip11" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,530},{0,159},{0,578},{0,207}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/equip11/a44" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/equip3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,109},{0,57},{0,157}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/equip3/a99" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/equip14" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,530},{0,309},{0,578},{0,357}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/equip14/a133" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="EquipWashPage/bgImg/equip14/lockImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="Image" Value="set:skin image:NewImage_103" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/equip8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,530},{0,9},{0,578},{0,57}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/equip8/a110" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/equip2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,59},{0,57},{0,107}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/equip2/a88" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/equip10" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,530},{0,109},{0,578},{0,157}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/equip10/a22" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/equip7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,309},{0,57},{0,357}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipWashPage/bgImg/equip7/a00" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bgImg/p1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,520},{0,26},{0,529},{0,44}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/p0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,326},{0,67},{0,344}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/p2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,520},{0,76},{0,529},{0,94}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/p12" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,276},{0,67},{0,294}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/p4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,520},{0,176},{0,529},{0,194}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/p7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,26},{0,67},{0,44}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/p3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,520},{0,126},{0,529},{0,144}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/p9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,126},{0,67},{0,144}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/p8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,76},{0,67},{0,94}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/p10" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,176},{0,67},{0,194}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/p5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,520},{0,226},{0,529},{0,244}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/p11" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,58},{0,226},{0,67},{0,244}}" />
+                <Property Name="Image" Value="set:equip image:left" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/p6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,520},{0,276},{0,529},{0,294}}" />
+                <Property Name="Image" Value="set:equip image:right" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bgImg/listCon" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,122},{0,185},{0,469},{0,327}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="EquipWashPage/bottomBg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,373},{0,587},{0,452}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="EquipWashPage/bottomBg/BbgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,586},{0,78}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bottomBg/batchBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,329},{0,20},{0,492},{0,60}}" />
+                <Window Name="EquipWashPage/bottomBg/batchBtn/strongmanyImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                    <Property Name="Image" Value="set:equip image:washmany" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bottomBg/depleteIGrid" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,6},{0,57},{0,54}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bottomBg/purityBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,130},{0,20},{0,293},{0,60}}" />
+                <Window Name="EquipWashPage/bottomBg/purityBtn/strongImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                    <Property Name="Image" Value="set:equip image:equipmentWash" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashPage/bottomBg/depleteTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,30},{0,57},{0,54}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="S" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFEA00" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/bottomBg/changeBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,55},{0,59},{0,78}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="切换" />
+            </Window>
+        </Window>
+        <Window Name="EquipWashPage/tipsSp" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,277},{0,254},{0,377}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:skin image:NewTitlebarBorder_TC" />
+            <Property Name="LeftImage" Value="set:skin image:WindowLeftEdge" />
+            <Property Name="TopOffset" Value="38" />
+            <Property Name="LeftOffset" Value="9" />
+            <Property Name="RightImage" Value="set:skin image:WindowRightEdge" />
+            <Property Name="BottomImage" Value="set:skin image:WindowBottomEdge" />
+            <Property Name="CenterImage" Value="set:skin image:WindowMid" />
+            <Property Name="RightOffset" Value="9" />
+            <Property Name="BottomOffset" Value="8" />
+            <Property Name="TopLeftImage" Value="set:skin image:NewTitlebarBorder_TL" />
+            <Property Name="TopRightImage" Value="set:skin image:NewTitlebarBorder_TR" />
+            <Property Name="BottomLeftImage" Value="set:skin image:WindowBottomLeft" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BottomRightImage" Value="set:skin image:WindowBottomRight" />
+            <Window Name="EquipWashPage/tipsSp/winLine" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,95},{0,241},{0,96}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="EquipWashPage/tipsSp/titleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,7},{0,135},{0,32}}" />
+                <Property Name="Font" Value="songti_18" />
+                <Property Name="Text" Value="请选择洗练石" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFc6dee6" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/tipsSp/closeBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,216},{0,1},{0,245},{0,30}}" />
+                <Property Name="HoverImage" Value="set:skin image:CloseButtonHover" />
+                <Property Name="NormalImage" Value="set:skin image:CloseButtonNormal" />
+                <Property Name="PushedImage" Value="set:skin image:CloseButtonPushed" />
+            </Window>
+            <Window Name="EquipWashPage/tipsSp/itemsWare2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,132},{0,43},{0,180},{0,91}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/tipsSp/itemsWare0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,43},{0,63},{0,91}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/tipsSp/itemsWare3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,190},{0,43},{0,238},{0,91}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashPage/tipsSp/itemsWare1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,74},{0,43},{0,122},{0,91}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

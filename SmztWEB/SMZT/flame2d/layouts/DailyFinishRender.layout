@@ -1,0 +1,113 @@
+<GUILayout>
+    <Window Name="DailyFinishRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,455},{0,63}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="DailyFinishRender/openCopyBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,347},{0,22},{0,436},{0,45}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="打开副本" />
+            <Property Name="Visible" Value="false" />
+        </Window>
+        <Window Name="DailyFinishRender/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,455},{0,63}}" />
+            <Property Name="Image" Value="set:skin image:RenderBg2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="DailyFinishRender/chooseImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,455},{0,63}}" />
+            <Property Name="Image" Value="set:dailyFinishGeneral image:shadow" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="DailyFinishRender/nameTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,61},{0,0},{0,170},{0,62}}" />
+            <Property Name="Font" Value="songti_18" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ff00baff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="DailyFinishRender/desc1Txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,202},{0,14},{0,267},{0,32}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="参与次数：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ff00baff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Property Name="MouseInputPropagationEnabled" Value="true" />
+        </Window>
+        <Window Name="DailyFinishRender/desc2Txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,202},{0,34},{0,267},{0,52}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="最低等级：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ff00baff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Property Name="MouseInputPropagationEnabled" Value="true" />
+        </Window>
+        <Window Name="DailyFinishRender/number1Txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,268},{0,14},{0,333},{0,32}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ff85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="DailyFinishRender/number2Txt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,268},{0,34},{0,301},{0,52}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ff85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="DailyFinishRender/props" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,56},{0,56}}" />
+            <Property Name="Image" Value="set:skin image:GridBG2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Property Name="MouseInputPropagationEnabled" Value="true" />
+            <Window Name="DailyFinishRender/props/itemImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="DailyFinishRender/redImg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,347},{0,22},{0,430},{0,47}}" />
+            <Property Name="UnifiedMaxSize" Value="{{0,83},{0,25}}" />
+            <Property Name="LeftImage" Value="set:skin image:RedBoxLeft" />
+            <Property Name="LeftOffset" Value="10" />
+            <Property Name="RightImage" Value="set:skin image:RedBoxRight" />
+            <Property Name="CenterImage" Value="set:skin image:RedBoxMiddle" />
+            <Property Name="RightOffset" Value="10" />
+            <Window Name="DailyFinishRender/redImg/gradeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,25}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="等级不足" />
+                <Property Name="UnifiedMaxSize" Value="{{0,83},{0,25}}" />
+                <Property Name="TextColour" Value="FFFF0000" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

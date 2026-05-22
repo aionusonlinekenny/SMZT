@@ -1,0 +1,94 @@
+<GUILayout>
+    <Window Name="GangConstruction" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,753},{0,463}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GangConstruction/topBackground" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,753},{0,123}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangConstruction/topBackground/announcementImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,752},{0,122}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="GangConstruction/topBackground/announcementImg/input" Type="GuiLook/MultiLineEditbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,69},{0,20},{0,728},{0,85}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="Text">asd
+</Property>
+                    <Property Name="SelectedTextColour" Value="FFFFFFFF" />
+                    <AutoWindow NameSuffix="__auto_vscrollbar__">
+                        <Property Name="VerticalScrollbar" Value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window Name="GangConstruction/topBackground/announcementImg/inputTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,564},{0,86},{0,729},{0,108}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="Text" Value="最后修改时间：2014.06.01 23：12：00" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="DropTextColour" Value="" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="GangConstruction/contributionBtn" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,127},{0,134},{0,165}}" />
+            <Property Name="HoverImage" Value="set:skins image:tabHover" />
+            <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+            <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+            <Window Name="GangConstruction/contributionBtn/contributionImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                <Property Name="Image" Value="set:gangGeneral image:gangContribution" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="GangConstruction/storiesBtn" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,205},{0,134},{0,243}}" />
+            <Property Name="HoverImage" Value="set:skins image:tabHover" />
+            <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+            <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+            <Window Name="GangConstruction/storiesBtn/storiesImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                <Property Name="Image" Value="set:gangGeneral image:gangStories" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="GangConstruction/upBtn" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,166},{0,134},{0,204}}" />
+            <Property Name="HoverImage" Value="set:skins image:tabHover" />
+            <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+            <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+            <Window Name="GangConstruction/upBtn/upImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+                <Property Name="Image" Value="set:gangGeneral image:gangUpgrade" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="GangConstruction/bottomBackground" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,139},{0,122},{0,753},{0,463}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangConstruction/bottomBackground/boxSP" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,614},{0,341}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

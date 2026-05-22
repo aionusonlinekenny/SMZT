@@ -1,0 +1,146 @@
+<GUILayout>
+    <Window Name="VIPBuyitems" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,304},{0,252}}" />
+        <Property Name="Font" Value="songti_14_strengh" />
+        <Property Name="Text" Value="物品购买" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="VIPBuyitems/background" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,4},{0,286},{0,169}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="VIPBuyitems/background/number" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,144},{0,32},{0,245},{0,50}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="20" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="VIPBuyitems/background/items" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,17},{0,17},{0,65},{0,65}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="VIPBuyitems/background/wordTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,32},{0,121},{0,50}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="单价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="VIPBuyitems/background/wordTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,15},{0,265},{0,33}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="坐骑进阶丹" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="VIPBuyitems/background/wordTxt3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,49},{0,245},{0,67}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="最大叠加数：1000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="VIPBuyitems/background/Line" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,87},{0,285},{0,88}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="VIPBuyitems/background/wordTxt4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,22},{0,100},{0,87},{0,118}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="购买数量：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="VIPBuyitems/background/wordTxt5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,22},{0,126},{0,87},{0,144}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="购买总价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="VIPBuyitems/background/smallbackground" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,87},{0,126},{0,237},{0,144}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="VIPBuyitems/background/smallbackground/yuanbao2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,2},{0,-1},{0,21},{0,18}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPBuyitems/background/smallbackground/number2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,27},{0,0},{0,61},{0,18}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="20" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="VIPBuyitems/background/smallbackground2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,109},{0,100},{0,179},{0,118}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="VIPBuyitems/background/smallbackground2/number3" Type="GuiLook/Editbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-3},{0,-1},{0,69},{0,20}}" />
+                </Window>
+            </Window>
+            <Window Name="VIPBuyitems/background/yuanbao" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,123},{0,32},{0,142},{0,51}}" />
+                <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="VIPBuyitems/background/reduction" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,87},{0,99},{0,108},{0,120}}" />
+                <Property Name="Image" Value="set:skin image:reductionBtn" />
+            </Window>
+            <Window Name="VIPBuyitems/background/add" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,180},{0,99},{0,201},{0,120}}" />
+                <Property Name="Image" Value="set:skin image:addBtn" />
+            </Window>
+            <Window Name="VIPBuyitems/background/max" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,202},{0,99},{0,243},{0,120}}" />
+                <Property Name="Image" Value="set:skin image:maxBtn" />
+            </Window>
+        </Window>
+        <Window Name="VIPBuyitems/OrangeButton" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,46},{0,178},{0,127},{0,201}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="购买" />
+        </Window>
+        <Window Name="VIPBuyitems/OrangeButton2" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,162},{0,178},{0,243},{0,201}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="充值" />
+        </Window>
+    </Window>
+</GUILayout>

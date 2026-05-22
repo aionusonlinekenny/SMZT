@@ -1,0 +1,411 @@
+<GUILayout>
+    <Window Name="WardrobePanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,834},{0,569}}" />
+        <Property Name="GlyphImage" Value="set:wardrobe image:title" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="WardrobePanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,816},{0,521}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="WardrobePanel/bg/imgBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,815},{0,516}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="WardrobePanel/bg/imgBg/list" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,5},{0,133},{0,511}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/nameImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,135},{0,5},{0,185},{0,162}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/activityImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,404},{0,363},{0,477},{0,392}}" />
+                    <Property Name="Image" Value="set:wardrobe image:activated" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/fightImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,311},{0,401},{0,477},{0,429}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/list1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,491},{0,7},{0,808},{0,435}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/diSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,148},{0,435},{0,472},{0,511}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="WardrobePanel/bg/imgBg/diSp/attSp0" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,16}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp0/point0" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,12},{0,12}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp0/addTitleTxt0" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,46},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp0/addTxt0" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,0},{0,96},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="WardrobePanel/bg/imgBg/diSp/attSp1" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,156},{0,0},{0,306},{0,16}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp1/point1" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,12},{0,12}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp1/addTitleTxt1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,46},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp1/addTxt1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,0},{0,96},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="WardrobePanel/bg/imgBg/diSp/attSp2" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,18},{0,150},{0,34}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp2/point2" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,12},{0,12}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp2/addTitleTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,46},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp2/addTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,0},{0,96},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="WardrobePanel/bg/imgBg/diSp/attSp3" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,156},{0,18},{0,306},{0,34}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp3/point3" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,12},{0,12}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp3/addTitleTxt3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,46},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp3/addTxt3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,0},{0,96},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="WardrobePanel/bg/imgBg/diSp/attSp4" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,36},{0,150},{0,52}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp4/point4" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,12},{0,12}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp4/addTitleTxt4" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,46},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp4/addTxt4" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,0},{0,96},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="WardrobePanel/bg/imgBg/diSp/attSp5" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,156},{0,36},{0,306},{0,52}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp5/point5" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,12},{0,12}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp5/addTitleTxt5" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,46},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp5/addTxt5" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,0},{0,96},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="WardrobePanel/bg/imgBg/diSp/attSp6" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,54},{0,150},{0,70}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp6/point6" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,12},{0,12}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp6/addTitleTxt6" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,46},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp6/addTxt6" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,0},{0,96},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="WardrobePanel/bg/imgBg/diSp/attSp7" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,156},{0,54},{0,306},{0,70}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp7/point7" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,12},{0,12}}" />
+                            <Property Name="Image" Value="set:skin image:MarkImg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp7/addTitleTxt7" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,0},{0,46},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFef9d0" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WardrobePanel/bg/imgBg/diSp/attSp7/addTxt7" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,0},{0,96},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="VertFormatting" Value="TopAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/laPageBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,635},{0,448},{0,677},{0,466}}" />
+                    <Property Name="Image" Value="set:skin image:RenderBg2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="WardrobePanel/bg/imgBg/laPageBg/pageTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,18}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="250" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF64d4d8" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/mLastBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,585},{0,447},{0,605},{0,467}}" />
+                    <Property Name="HoverImage" Value="set:skin image:MlastBtnHover" />
+                    <Property Name="NormalImage" Value="set:skin image:MlastBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:MlastBtnPushed" />
+                    <Property Name="DisabledImage" Value="set:skin image:MlastBtnDisable" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/mNextBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,706},{0,447},{0,726},{0,467}}" />
+                    <Property Name="HoverImage" Value="set:skin image:MnextBtnHover" />
+                    <Property Name="NormalImage" Value="set:skin image:MnextBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:MnextBtnPushed" />
+                    <Property Name="DisabledImage" Value="set:skin image:MnextBtnDisable" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/pageLastBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,611},{0,447},{0,631},{0,467}}" />
+                    <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                    <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+                    <Property Name="DisabledImage" Value="set:skin image:LastBtnDisable" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/pageNextBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,681},{0,447},{0,701},{0,467}}" />
+                    <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                    <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+                    <Property Name="DisabledImage" Value="set:skin image:NextBtnDisable" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/radioButton0" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,498},{0,488},{0,512},{0,503}}" />
+                    <Property Name="HoverImage" Value="set:skin image:radioSelected" />
+                    <Property Name="SelectedImage" Value="set:skin image:radioSelected" />
+                    <Property Name="HoverTextColour" Value="FF00baff" />
+                    <Property Name="UnselectedImage" Value="set:skin image:radioNormal" />
+                    <Property Name="NormalTextColour" Value="FF00baff" />
+                    <Property Name="PushedTextColour" Value="FF00baff" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/radioButton1" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,581},{0,488},{0,595},{0,503}}" />
+                    <Property Name="HoverImage" Value="set:skin image:radioSelected" />
+                    <Property Name="SelectedImage" Value="set:skin image:radioSelected" />
+                    <Property Name="HoverTextColour" Value="FF00baff" />
+                    <Property Name="UnselectedImage" Value="set:skin image:radioNormal" />
+                    <Property Name="NormalTextColour" Value="FF00baff" />
+                    <Property Name="PushedTextColour" Value="FF00baff" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/radioButton2" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,663},{0,488},{0,677},{0,503}}" />
+                    <Property Name="HoverImage" Value="set:skin image:radioSelected" />
+                    <Property Name="SelectedImage" Value="set:skin image:radioSelected" />
+                    <Property Name="HoverTextColour" Value="FF00baff" />
+                    <Property Name="UnselectedImage" Value="set:skin image:radioNormal" />
+                    <Property Name="NormalTextColour" Value="FF00baff" />
+                    <Property Name="PushedTextColour" Value="FF00baff" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/radioButton3" Type="GuiLook/RadioTab">
+                    <Property Name="UnifiedAreaRect" Value="{{0,739},{0,488},{0,753},{0,503}}" />
+                    <Property Name="HoverImage" Value="set:skin image:radioSelected" />
+                    <Property Name="SelectedImage" Value="set:skin image:radioSelected" />
+                    <Property Name="HoverTextColour" Value="FF00baff" />
+                    <Property Name="UnselectedImage" Value="set:skin image:radioNormal" />
+                    <Property Name="NormalTextColour" Value="FF00baff" />
+                    <Property Name="PushedTextColour" Value="FF00baff" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/radioButton0Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,514},{0,486},{0,545},{0,504}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="全部" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00baff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/radioButton1Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,596},{0,486},{0,627},{0,504}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="永久" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00baff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/radioButton2Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,678},{0,486},{0,709},{0,504}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="时效" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00baff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/radioButton3Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,755},{0,486},{0,795},{0,504}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="已激活" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00baff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WardrobePanel/bg/imgBg/rolePos" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,300},{0,380},{0,310},{0,390}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="WardrobePanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,527},{0,816},{0,528}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

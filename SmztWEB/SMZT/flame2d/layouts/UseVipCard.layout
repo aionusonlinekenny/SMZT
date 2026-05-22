@@ -1,0 +1,129 @@
+<GUILayout>
+    <Window Name="UseVipCard" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,320},{0,169}}" />
+        <Property Name="Text" Value="提示" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="UseVipCard/OrangeButton" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,-4},{0,101},{0,83},{0,124}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="朕知道了" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Name="UseVipCard/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,-4},{0,94},{0,316},{0,95}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Name="UseVipCard/desc1Txt2$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,11},{0,7},{0,292},{0,30}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="黄金VIP(30分钟)" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFFEA00" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="UseVipCard/t0" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,13},{0,40},{0,138},{0,61}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="UseVipCard/t0/StaticImage0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,4},{0,17},{0,13}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="UseVipCard/t0/chengzhang" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,84},{0,0},{0,124},{0,21}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="+50" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85F500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="UseVipCard/t0/StaticText0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,19},{0,0},{0,129},{0,21}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="VIP成长值" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="UseVipCard/t1" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,144},{0,40},{0,308},{0,61}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="UseVipCard/t1/StaticImage1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,4},{0,17},{0,13}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="UseVipCard/t1/StaticText1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,19},{0,0},{0,160},{0,21}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="VIP每日成长值" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="UseVipCard/t1/mchengzhang" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,111},{0,0},{0,151},{0,21}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="+50" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85F500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="UseVipCard/t2" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,13},{0,67},{0,157},{0,88}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="UseVipCard/t2/StaticImage2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,4},{0,17},{0,13}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="UseVipCard/t2/StaticText2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,19},{0,0},{0,136},{0,21}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="特殊尊贵标示" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="UseVipCard/t3" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,144},{0,67},{0,302},{0,88}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="UseVipCard/t3/StaticImage3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,4},{0,17},{0,13}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="UseVipCard/t3/StaticText3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,19},{0,0},{0,159},{0,21}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="双倍领取VIP每日礼包" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

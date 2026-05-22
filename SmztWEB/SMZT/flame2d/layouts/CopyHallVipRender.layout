@@ -1,0 +1,108 @@
+<GUILayout>
+    <Window Name="CopyHallVipRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,283},{0,493}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CopyHallVipRender/bg" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,283},{0,493}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:copyHall image:blackNorth" />
+            <Property Name="LeftImage" Value="set:copyHall image:blackWest" />
+            <Property Name="TopOffset" Value="21" />
+            <Property Name="LeftOffset" Value="20" />
+            <Property Name="RightImage" Value="set:copyHall image:blackEast" />
+            <Property Name="BottomImage" Value="set:copyHall image:blackSouth" />
+            <Property Name="RightOffset" Value="20" />
+            <Property Name="BottomOffset" Value="21" />
+            <Property Name="TopLeftImage" Value="set:copyHall image:blackNorthwest" />
+            <Property Name="TopRightImage" Value="set:copyHall image:blackNortheast" />
+            <Property Name="BottomLeftImage" Value="set:copyHall image:blackSouthwest" />
+            <Property Name="BottomRightImage" Value="set:copyHall image:blackSoutheast" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="CopyHallVipRender/bg/copyImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,277},{0,487}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="CopyHallVipRender/bg/copyImg/vipCopy" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,20},{0,26},{0,248},{0,66}}" />
+                    <Property Name="Image" Value="set:copyHall image:vipCopy" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="CopyHallVipRender/bg/copyImg/vipCopy/vipImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,80},{0,6},{0,106},{0,34}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CopyHallVipRender/bg/copyImg/item0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,34},{0,78},{0,100},{0,144}}" />
+                    <Property Name="Image" Value="set:copyHall image:yellowBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="CopyHallVipRender/bg/copyImg/item1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,103},{0,78},{0,169},{0,144}}" />
+                    <Property Name="Image" Value="set:copyHall image:yellowBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="CopyHallVipRender/bg/copyImg/item2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,171},{0,78},{0,237},{0,144}}" />
+                    <Property Name="Image" Value="set:copyHall image:yellowBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="CopyHallVipRender/bg/copyImg/enterBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,365},{0,273},{0,406}}" />
+                    <Property Name="Image" Value="set:copyHall image:enter" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="CopyHallVipRender/bg/copyImg/enterBg/challengeTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,197},{0,8},{0,222},{0,32}}" />
+                        <Property Name="Font" Value="songti_16" />
+                        <Property Name="Text" Value="1" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="CopyHallVipRender/bg/copyImg/throughImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-3},{0,422},{0,149},{0,454}}" />
+                    <Property Name="Image" Value="set:copyHall image:todayClearance" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="CopyHallVipRender/bg/copyImg/challengeBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,74},{0,420},{0,194},{0,458}}" />
+                    <Property Name="HoverImage" Value="set:copyHall image:openChallengeHover" />
+                    <Property Name="NormalImage" Value="set:copyHall image:openChallengeNormal" />
+                    <Property Name="PushedImage" Value="set:copyHall image:openChallengePushed" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

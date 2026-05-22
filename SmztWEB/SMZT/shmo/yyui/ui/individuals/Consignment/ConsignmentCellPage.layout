@@ -1,0 +1,286 @@
+<GUILayout>
+    <Window Name="ConsignmentCellPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,792},{0,452}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="ConsignmentCellPage/rightBg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,156},{0,0},{0,792},{0,411}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ConsignmentCellPage/rightBg/numberBtn" Type="GlossySerpent/SortButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,159},{0,1},{0,221},{0,29}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="数量" />
+                <Property Name="HoverTextColour" Value="FF65b3e9" />
+                <Property Name="NormalTextColour" Value="FF65b3e9" />
+                <Property Name="PushedTextColour" Value="FF65b3e9" />
+                <Window Name="ConsignmentCellPage/rightBg/numberBtn/img0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,22},{0,0},{0,35},{0,11}}" />
+                    <Property Name="Image" Value="set:skin image:arrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ConsignmentCellPage/rightBg/nameList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,159},{0,29}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="ConsignmentCellPage/rightBg/nameList/nameTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,159},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="物品名称" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ConsignmentCellPage/rightBg/priceBtn" Type="GlossySerpent/SortButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,221},{0,1},{0,302},{0,29}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="单价" />
+                <Property Name="HoverTextColour" Value="FF65b3e9" />
+                <Property Name="NormalTextColour" Value="FF65b3e9" />
+                <Property Name="PushedTextColour" Value="FF65b3e9" />
+                <Window Name="ConsignmentCellPage/rightBg/priceBtn/img1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,30},{0,0},{0,43},{0,11}}" />
+                    <Property Name="Image" Value="set:skin image:arrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ConsignmentCellPage/rightBg/allPriceBtn" Type="GlossySerpent/SortButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,302},{0,1},{0,395},{0,29}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="总价" />
+                <Property Name="HoverTextColour" Value="FF65b3e9" />
+                <Property Name="NormalTextColour" Value="FF65b3e9" />
+                <Property Name="PushedTextColour" Value="FF65b3e9" />
+                <Window Name="ConsignmentCellPage/rightBg/allPriceBtn/img3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,35},{0,0},{0,48},{0,11}}" />
+                    <Property Name="Image" Value="set:skin image:arrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ConsignmentCellPage/rightBg/sellList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,395},{0,1},{0,517},{0,29}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="ConsignmentCellPage/rightBg/sellList/sellTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,122},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="卖主" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ConsignmentCellPage/rightBg/operationList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,517},{0,1},{0,636},{0,29}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="ConsignmentCellPage/rightBg/operationList/operationTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,119},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="操作" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ConsignmentCellPage/rightBg/pageNextBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,342},{0,370},{0,362},{0,390}}" />
+                <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+                <Property Name="DisabledImage" Value="set:skin image:NextBtnDisable" />
+            </Window>
+            <Window Name="ConsignmentCellPage/rightBg/laPageBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,296},{0,371},{0,338},{0,389}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="ConsignmentCellPage/rightBg/laPageBg/pageTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,18}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="250" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF64d4d8" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="ConsignmentCellPage/rightBg/mNextBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,367},{0,370},{0,387},{0,390}}" />
+                <Property Name="HoverImage" Value="set:skin image:MnextBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:MnextBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:MnextBtnPushed" />
+                <Property Name="DisabledImage" Value="set:skin image:MnextBtnDisable" />
+            </Window>
+            <Window Name="ConsignmentCellPage/rightBg/pageLastBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,272},{0,370},{0,292},{0,390}}" />
+                <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+                <Property Name="DisabledImage" Value="set:skin image:LastBtnDisable" />
+            </Window>
+            <Window Name="ConsignmentCellPage/rightBg/TextBG4" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,506},{0,370},{0,551},{0,391}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ConsignmentCellPage/rightBg/TextBG4/input2" Type="GuiLook/Editbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-1},{0,46},{0,21}}" />
+                    <Property Name="NormalTextColour" Value="ff85f500" />
+                    <Property Name="SelectedTextColour" Value="ff85f500" />
+                </Window>
+            </Window>
+            <Window Name="ConsignmentCellPage/rightBg/sureBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,559},{0,367},{0,613},{0,390}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="确定" />
+            </Window>
+            <Window Name="ConsignmentCellPage/rightBg/goTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,453},{0,371},{0,509},{0,389}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="跳转到 " />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00Baff" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ConsignmentCellPage/rightBg/boxList" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,29},{0,636},{0,353}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="ConsignmentCellPage/rightBg/mLastBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,247},{0,370},{0,267},{0,390}}" />
+                <Property Name="HoverImage" Value="set:skin image:MlastBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:MlastBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:MlastBtnPushed" />
+                <Property Name="DisabledImage" Value="set:skin image:MlastBtnDisable" />
+            </Window>
+        </Window>
+        <Window Name="ConsignmentCellPage/list" Type="GuiLook/ScrollablePane">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,153},{0,408}}" />
+            <AutoWindow NameSuffix="__auto_container__">
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+            </AutoWindow>
+            <AutoWindow NameSuffix="__auto_hscrollbar__">
+                <Property Name="NonClient" Value="true" />
+                <Property Name="AlwaysOnTop" Value="true" />
+            </AutoWindow>
+            <AutoWindow NameSuffix="__auto_vscrollbar__">
+                <Property Name="NonClient" Value="true" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="VerticalScrollbar" Value="true" />
+            </AutoWindow>
+        </Window>
+        <Window Name="ConsignmentCellPage/bottomBg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,410},{0,792},{0,452}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ConsignmentCellPage/bottomBg/bgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,791},{0,41}}" />
+                <Property Name="Image" Value="set:consignment image:purple" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="ConsignmentCellPage/bottomBg/bgImg/hadImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,17},{0,12},{0,108},{0,29}}" />
+                    <Property Name="Image" Value="set:consignment image:had" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ConsignmentCellPage/bottomBg/bgImg/TextBG" Type="GuiLook/TextBG">
+                    <Property Name="UnifiedAreaRect" Value="{{0,122},{0,10},{0,225},{0,31}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="ConsignmentCellPage/bottomBg/bgImg/TextBG/yuanbaoImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,19},{0,20}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ConsignmentCellPage/bottomBg/bgImg/TextBG/yuanbaoTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,20},{0,0},{0,103},{0,21}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="123" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ConsignmentCellPage/bottomBg/bgImg/TextBG2" Type="GuiLook/TextBG">
+                    <Property Name="UnifiedAreaRect" Value="{{0,229},{0,10},{0,332},{0,31}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="ConsignmentCellPage/bottomBg/bgImg/TextBG2/jinbiTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,20},{0,0},{0,103},{0,21}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="1250万1000" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ConsignmentCellPage/bottomBg/bgImg/TextBG2/jinbiImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,19},{0,20}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:goldCoin" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ConsignmentCellPage/bottomBg/bgImg/TextBG3" Type="GuiLook/TextBG">
+                    <Property Name="UnifiedAreaRect" Value="{{0,564},{0,9},{0,707},{0,30}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="ConsignmentCellPage/bottomBg/bgImg/TextBG3/input1" Type="GuiLook/Editbox">
+                        <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,-1},{0,143},{0,21}}" />
+                    </Window>
+                </Window>
+                <Window Name="ConsignmentCellPage/bottomBg/bgImg/searchBtn" Type="GlossySerpent/BlueButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,715},{0,8},{0,769},{0,31}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="搜索" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

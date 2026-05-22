@@ -1,0 +1,314 @@
+<GUILayout>
+    <Window Name="ChatPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,310},{0,205}}" />
+        <Property Name="UnifiedMaxSize" Value="{{0,1024},{0,1024}}" />
+        <Window Name="ChatPanel/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,310},{0,160}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{0,1024},{0,1024}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="ChatPanel/bg/dragBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,13},{0,13}}" />
+                <Property Name="Image" Value="set:mainUI1 image:arrowNormal" />
+                <Property Name="HorizontalAlignment" Value="Right" />
+            </Window>
+            <Window Name="ChatPanel/bg/list" Type="GuiLook/Listbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,299},{0,117}}" />
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="VerticalScrollbar" Value="true" />
+                </AutoWindow>
+            </Window>
+            <Window Name="ChatPanel/bg/inputBg" Type="GuiLook/inputBg">
+                <Property Name="UnifiedAreaRect" Value="{{0,44},{0,0},{0,265},{0,23}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+            </Window>
+            <Window Name="ChatPanel/bg/otherThing" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,310},{0,160}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="ChatPanel/bg/otherThing/faceBox" Type="GuiLook/CommonBg3">
+                    <Property Name="UnifiedAreaRect" Value="{{0,133},{0,10},{0,305},{0,110}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{0,333},{0,333}}" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                </Window>
+                <Window Name="ChatPanel/bg/otherThing/zoomBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,117},{0,19},{0,136}}" />
+                    <Property Name="HoverImage" Value="set:mainUI1 image:lastBtnHover" />
+                    <Property Name="NormalImage" Value="set:mainUI1 image:lastBtnNormal" />
+                    <Property Name="PushedImage" Value="set:mainUI1 image:lastBtnPushed" />
+                </Window>
+                <Window Name="ChatPanel/bg/otherThing/bugleBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,251},{0,117},{0,280},{0,136}}" />
+                    <Property Name="HoverImage" Value="set:mainUI1 image:hornHover" />
+                    <Property Name="NormalImage" Value="set:mainUI1 image:hornNormal" />
+                    <Property Name="PushedImage" Value="set:mainUI1 image:hornPushed" />
+                    <Property Name="Tooltip" Value="喇叭" />
+                </Window>
+                <Window Name="ChatPanel/bg/otherThing/pointBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,281},{0,117},{0,310},{0,136}}" />
+                    <Property Name="HoverImage" Value="set:mainUI1 image:positioningHover" />
+                    <Property Name="NormalImage" Value="set:mainUI1 image:positioningNormal" />
+                    <Property Name="PushedImage" Value="set:mainUI1 image:positioningPushed" />
+                    <Property Name="Tooltip" Value="发坐标" />
+                </Window>
+                <Window Name="ChatPanel/bg/otherThing/faceBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,244},{0,139},{0,264},{0,158}}" />
+                    <Property Name="HoverImage" Value="set:mainUI1 image:faceBtnHover" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="NormalImage" Value="set:mainUI1 image:faceBtnNormal" />
+                    <Property Name="PushedImage" Value="set:mainUI1 image:faceBtnPushed" />
+                </Window>
+                <Window Name="ChatPanel/bg/otherThing/inputTxt" Type="GuiLook/Editbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,44},{0,137},{0,244},{0,160}}" />
+                </Window>
+                <Window Name="ChatPanel/bg/otherThing/channelTab" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-44},{0,44},{0,104}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Bottom" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ChatPanel/bg/otherThing/channelTab/campBtn1" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,88},{0,38},{0,107}}" />
+                        <Property Name="Text" Value="阵营" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="SelTextColour" Value="FFfef9d0" />
+                        <Property Name="SelectedImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="HoverTextColour" Value="FFfef9d0" />
+                        <Property Name="UnselectedImage" Value="set:mainUI1 image:scenarioBtnNormal" />
+                        <Property Name="NormalTextColour" Value="FF666666" />
+                        <Property Name="PushedTextColour" Value="FF353429" />
+                    </Window>
+                    <Window Name="ChatPanel/bg/otherThing/channelTab/comprehensiveBtn1" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,128},{0,38},{0,147}}" />
+                        <Property Name="Text" Value="综合" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="SelTextColour" Value="FFfef9d0" />
+                        <Property Name="SelectedImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="HoverTextColour" Value="FFfef9d0" />
+                        <Property Name="UnselectedImage" Value="set:mainUI1 image:scenarioBtnNormal" />
+                        <Property Name="NormalTextColour" Value="FF666666" />
+                        <Property Name="PushedTextColour" Value="FF353429" />
+                    </Window>
+                    <Window Name="ChatPanel/bg/otherThing/channelTab/gangBtn1" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,68},{0,38},{0,87}}" />
+                        <Property Name="Text" Value="帮派" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="SelTextColour" Value="FFfef9d0" />
+                        <Property Name="SelectedImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="HoverTextColour" Value="FFfef9d0" />
+                        <Property Name="UnselectedImage" Value="set:mainUI1 image:scenarioBtnNormal" />
+                        <Property Name="NormalTextColour" Value="FF666666" />
+                        <Property Name="PushedTextColour" Value="FF353429" />
+                    </Window>
+                    <Window Name="ChatPanel/bg/otherThing/channelTab/scenarioBtn1" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,28},{0,38},{0,47}}" />
+                        <Property Name="Text" Value="场景" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="SelTextColour" Value="FFfef9d0" />
+                        <Property Name="SelectedImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="HoverTextColour" Value="FFfef9d0" />
+                        <Property Name="UnselectedImage" Value="set:mainUI1 image:scenarioBtnNormal" />
+                        <Property Name="NormalTextColour" Value="FF666666" />
+                        <Property Name="PushedTextColour" Value="FF353429" />
+                    </Window>
+                    <Window Name="ChatPanel/bg/otherThing/channelTab/teamBtn1" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,48},{0,38},{0,67}}" />
+                        <Property Name="Text" Value="队伍" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="SelTextColour" Value="FFfef9d0" />
+                        <Property Name="SelectedImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="HoverTextColour" Value="FFfef9d0" />
+                        <Property Name="UnselectedImage" Value="set:mainUI1 image:scenarioBtnNormal" />
+                        <Property Name="NormalTextColour" Value="FF666666" />
+                        <Property Name="PushedTextColour" Value="FF353429" />
+                    </Window>
+                    <Window Name="ChatPanel/bg/otherThing/channelTab/tradingBtn1" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,8},{0,38},{0,27}}" />
+                        <Property Name="Text" Value="交易" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="SelTextColour" Value="FFfef9d0" />
+                        <Property Name="SelectedImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="HoverTextColour" Value="FFfef9d0" />
+                        <Property Name="UnselectedImage" Value="set:mainUI1 image:scenarioBtnNormal" />
+                        <Property Name="NormalTextColour" Value="FF666666" />
+                        <Property Name="PushedTextColour" Value="FF353429" />
+                    </Window>
+                    <Window Name="ChatPanel/bg/otherThing/channelTab/worldBtn1" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,108},{0,38},{0,127}}" />
+                        <Property Name="Text" Value="世界" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="SelTextColour" Value="FFfef9d0" />
+                        <Property Name="SelectedImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="HoverTextColour" Value="FFfef9d0" />
+                        <Property Name="UnselectedImage" Value="set:mainUI1 image:scenarioBtnNormal" />
+                        <Property Name="NormalTextColour" Value="FF666666" />
+                        <Property Name="PushedTextColour" Value="FF353429" />
+                    </Window>
+                </Window>
+                <Window Name="ChatPanel/bg/otherThing/moveTab" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,20},{0,117},{0,250},{0,136}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="ChatPanel/bg/otherThing/moveTab/scenarioBtn" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,165},{0,0},{0,197},{0,19}}" />
+                        <Property Name="Text" Value="场景" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="SelTextColour" Value="FFfef9d0" />
+                        <Property Name="SelectedImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="HoverTextColour" Value="FFfef9d0" />
+                        <Property Name="UnselectedImage" Value="set:mainUI1 image:scenarioBtnNormal" />
+                        <Property Name="NormalTextColour" Value="FF666666" />
+                        <Property Name="PushedTextColour" Value="FF353429" />
+                    </Window>
+                    <Window Name="ChatPanel/bg/otherThing/moveTab/tradingBtn" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,198},{0,0},{0,230},{0,19}}" />
+                        <Property Name="Text" Value="交易" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="SelTextColour" Value="FFfef9d0" />
+                        <Property Name="SelectedImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="HoverTextColour" Value="FFfef9d0" />
+                        <Property Name="UnselectedImage" Value="set:mainUI1 image:scenarioBtnNormal" />
+                        <Property Name="NormalTextColour" Value="FF666666" />
+                        <Property Name="PushedTextColour" Value="FF353429" />
+                    </Window>
+                    <Window Name="ChatPanel/bg/otherThing/moveTab/worldBtn" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,33},{0,0},{0,65},{0,19}}" />
+                        <Property Name="Text" Value="世界" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="SelTextColour" Value="FFfef9d0" />
+                        <Property Name="SelectedImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="HoverTextColour" Value="FFfef9d0" />
+                        <Property Name="UnselectedImage" Value="set:mainUI1 image:scenarioBtnNormal" />
+                        <Property Name="NormalTextColour" Value="FF666666" />
+                        <Property Name="PushedTextColour" Value="FF353429" />
+                    </Window>
+                    <Window Name="ChatPanel/bg/otherThing/moveTab/gangBtn" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,99},{0,0},{0,131},{0,19}}" />
+                        <Property Name="Text" Value="帮派" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="SelTextColour" Value="FFfef9d0" />
+                        <Property Name="SelectedImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="HoverTextColour" Value="FFfef9d0" />
+                        <Property Name="UnselectedImage" Value="set:mainUI1 image:scenarioBtnNormal" />
+                        <Property Name="NormalTextColour" Value="FF666666" />
+                        <Property Name="PushedTextColour" Value="FF353429" />
+                    </Window>
+                    <Window Name="ChatPanel/bg/otherThing/moveTab/campBtn" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,66},{0,0},{0,98},{0,19}}" />
+                        <Property Name="Text" Value="阵营" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="SelTextColour" Value="FFfef9d0" />
+                        <Property Name="SelectedImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="HoverTextColour" Value="FFfef9d0" />
+                        <Property Name="UnselectedImage" Value="set:mainUI1 image:scenarioBtnNormal" />
+                        <Property Name="NormalTextColour" Value="FF666666" />
+                        <Property Name="PushedTextColour" Value="FF353429" />
+                    </Window>
+                    <Window Name="ChatPanel/bg/otherThing/moveTab/teamBtn" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,132},{0,0},{0,164},{0,19}}" />
+                        <Property Name="Text" Value="队伍" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="SelTextColour" Value="FFfef9d0" />
+                        <Property Name="SelectedImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="HoverTextColour" Value="FFfef9d0" />
+                        <Property Name="UnselectedImage" Value="set:mainUI1 image:scenarioBtnNormal" />
+                        <Property Name="NormalTextColour" Value="FF666666" />
+                        <Property Name="PushedTextColour" Value="FF353429" />
+                    </Window>
+                    <Window Name="ChatPanel/bg/otherThing/moveTab/comprehensiveBtn" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,32},{0,19}}" />
+                        <Property Name="Text" Value="综合" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="SelTextColour" Value="FFfef9d0" />
+                        <Property Name="SelectedImage" Value="set:mainUI1 image:scenarioBtnHover" />
+                        <Property Name="HoverTextColour" Value="FFfef9d0" />
+                        <Property Name="UnselectedImage" Value="set:mainUI1 image:scenarioBtnNormal" />
+                        <Property Name="NormalTextColour" Value="FF666666" />
+                        <Property Name="PushedTextColour" Value="FF353429" />
+                    </Window>
+                </Window>
+                <Window Name="ChatPanel/bg/otherThing/curChannelBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,137},{0,44},{0,160}}" />
+                    <Property Name="Text" Value="世界" />
+                    <Property Name="HoverImage" Value="set:mainUI1 image:modelHover" />
+                    <Property Name="NormalImage" Value="set:mainUI1 image:modelNormal" />
+                    <Property Name="PushedImage" Value="set:mainUI1 image:modelNPushed" />
+                    <Property Name="HoverTextColour" Value="FFb7b7b7" />
+                    <Property Name="NormalTextColour" Value="FFfef9d0" />
+                    <Property Name="PushedTextColour" Value="FF666666" />
+                </Window>
+                <Window Name="ChatPanel/bg/otherThing/enterBtnBox" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,266},{0,137},{0,310},{0,160}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="ChatPanel/bg/otherThing/enterBtnBox/enterBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,44},{0,23}}" />
+                        <Property Name="Text" Value="发送" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:modelHover" />
+                        <Property Name="NormalImage" Value="set:mainUI1 image:modelNormal" />
+                        <Property Name="PushedImage" Value="set:mainUI1 image:modelPushed" />
+                        <Property Name="HoverTextColour" Value="FFb7b7b7" />
+                        <Property Name="NormalTextColour" Value="FFfef9d0" />
+                        <Property Name="PushedTextColour" Value="FF666666" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="ChatPanel/bugluBox" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-150},{0,310},{0,183}}" />
+            <Property Name="UnifiedMaxSize" Value="{{0,333},{0,333}}" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="ChatPanel/redBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-160},{0,310},{0,-115}}" />
+            <Property Name="Image" Value="set:mainUI1 image:redBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="VerticalAlignment" Value="Bottom" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="ChatPanel/redBg/warmPromptTitleImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,3},{0,6},{0,307},{0,40}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="ChatPanel/redBg/qqBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,205},{0,5},{0,225},{0,25}}" />
+                <Property Name="Image" Value="set:mainUI1 image:huDie" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+            </Window>
+            <Window Name="ChatPanel/redBg/officialBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,102},{0,5},{0,118},{0,21}}" />
+                <Property Name="Image" Value="set:mainUI1 image:official" />
+            </Window>
+            <Window Name="ChatPanel/redBg/qqTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,228},{0,6},{0,308},{0,26}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="144212592" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ChatPanel/redBg/officialTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,6},{0,201},{0,26}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="点击进入官网" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

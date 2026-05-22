@@ -1,0 +1,1347 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--界面互斥配置-->
+<room>
+
+	<!--
+	
+	界面说明:
+	win	里配置的是 互斥 的界面
+	interactionWin 里配得是 关联 的界面（关闭某个界面时，同时关闭和它关联的界面，如子界面）
+	-->
+	
+	<!--name:界面名称 openBack:界面关闭后是否恢复被记录下需要恢复的界面-->
+	<win name="rolePanel" openBack="0"><!-- 人物c界面 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+	</win>
+
+	<win name="DailyFinishPanel" openBack="0"><!-- 每日必做 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="RelivePanel" recover="0"/><!-- 复活变强推荐 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+	</win>
+
+
+	<win name="Bag" openBack="0"><!-- 背包界面 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="BagGiftPanel" recover="0"/><!-- 逆天礼包界面 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+	</win>
+
+	<win name="SkillPanel" openBack="0"><!-- 技能 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="rolePanel" recover="0"/><!-- 人物 -->
+		<obj name="Bag" recover="0"/><!-- 背包 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+		<obj name="crossserverArenaMain" recover="0"/><!-- 跨服争霸 -->
+		<obj name="RoleDiePanel" recover="0"/><!-- 死亡复活 -->
+	</win>
+	
+	<win name="EquipPanel" openBack="0"><!-- 装备 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+
+	<win name="ChangeAvatar" openBack="0"><!-- 变身 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	<win name="GangPanel" openBack="0"><!-- 帮派 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="rolePanel" recover="0"/><!-- 人物 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+	
+	<win name="SocialPanel" openBack="0"><!-- 社交 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+	<win name="BagGiftPanel" openBack="0"><!-- 背包礼包 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="Bag" recover="0"/><!-- 背包 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+	</win>
+	<win name="EquipSmelterPanel" openBack="0"><!-- 熔炉 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+		<obj name="Bag" recover="0"/><!-- 背包 -->
+	</win>
+
+	
+	
+	<win name="VIPMain" openBack="0"><!-- 商城 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+	</win>
+
+
+	
+	<win name="TeamPanel" openBack="0"><!-- 组队 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="Bag" recover="0"/><!-- 背包 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+		<obj name="CopyRecruitingPanel" recover="1"/><!-- 组队招募 -->
+	</win>
+
+	
+	<win name="RankListPanel" openBack="0"><!-- 排行榜 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="Bag" recover="0"/><!-- 背包 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	
+	<win name="ConsignmentPanel" openBack="0"><!-- 寄售 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	
+	<win name="MapPanel" openBack="0"><!-- 地图 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="rolePanel" recover="0"/><!-- 人物 -->
+		<obj name="Bag" recover="0"/><!-- 背包 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	
+	<win name="EmailPanel" openBack="0"><!-- 邮件 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="rolePanel" recover="0"/><!-- 人物 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	
+	<win name="WorldBossPanel" openBack="0"><!-- 世界boss -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="rolePanel" recover="0"/><!-- 人物 -->
+		<obj name="Bag" recover="0"/><!-- 背包 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	
+	<win name="SevenDayPanel" openBack="0"><!-- 七日目标 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	
+	<win name="OpenServerActivityPanel" openBack="0"><!-- 开服活动 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	
+	<win name="WagerShopPanel" openBack="0"><!-- 赌坊 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	
+	<win name="SkyWeaponPanel" openBack="0"><!-- 天下神兵 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="CampPanel" recover="0"/><!-- 战场大厅 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+	</win>
+
+	
+	<win name="DailyFinishPanelPanel" openBack="0"><!-- 每日必做 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+	</win>
+
+
+	
+	<win name="CastlePanel" openBack="0"><!-- 神魔诛天 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="Bag" recover="0"/><!-- 背包 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CampPanel" recover="0"/><!-- 战场大厅 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+
+	<win name="CampPanel" openBack="0"><!-- 战场大厅 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="CrossServerPanel" recover="0"/><!-- 跨服争霸 -->
+	</win>
+
+	
+	<win name="ExclusiveMagicPanel" openBack="0"><!-- 专属法宝 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="Bag" recover="0"/><!-- 背包 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="CampPanel" recover="0"/><!-- 战场大厅 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	
+	<win name="CloseBetaPanel" openBack="0"><!-- 封测活动 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="rolePanel" recover="0"/><!-- 人物 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="CampPanel" recover="0"/><!-- 战场大厅 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+	
+	<win name="VipLevel" openBack="0"><!-- VIP -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="CampPanel" recover="0"/><!-- 战场大厅 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	
+	<win name="FirstTopUpPanel" openBack="0"><!-- 首充 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+		<obj name="TopUpactivityPanel" recover="0"/><!-- 今日巨礼 -->
+	</win>
+
+	
+	<win name="StockInvestmentPanel" openBack="0"><!-- 股票 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="Bag" recover="0"/><!-- 背包 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="CampPanel" recover="0"/><!-- 战场大厅 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	
+	<win name="HallMainInterface" openBack="0"><!-- 奖励大厅 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	
+	<win name="TreasureHuntPanel" openBack="0"><!-- 寻宝 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+	</win>
+
+	
+	<win name="MicroGiftPanel" openBack="0"><!-- 微端礼包 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="rolePanel" recover="0"/><!-- 人物 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	
+	<win name="EveryDayTopUpPanel" openBack="0"><!-- 天天首充 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="Bag" recover="0"/><!-- 背包 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+		<obj name="TopUpactivityPanel" recover="0"/><!--  -->
+	</win>
+
+
+
+	<win name="TopUpactivityPanel" openBack="0"><!--  -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+	</win>
+
+
+	
+	<win name="TopUpGiftPanel" openBack="0"><!-- 充值赠礼 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="rolePanel" recover="0"/><!-- 人物 -->
+		<obj name="Bag" recover="0"/><!-- 背包 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+	</win>
+
+	
+	<win name="AllPeopleRob" openBack="0"><!-- 全民疯抢 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="rolePanel" recover="0"/><!-- 人物 -->
+		<obj name="Bag" recover="0"/><!-- 背包 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+	</win>
+
+	
+	<win name="CrossServerPanel" openBack="0"><!-- 跨服争霸 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="rolePanel" recover="0"/><!-- 人物 -->
+		<obj name="Bag" recover="0"/><!-- 背包 -->
+		<obj name="SkillPanel" recover="0"/><!-- 技能 -->
+		<obj name="EquipPanel" recover="0"/><!-- 装备 -->
+		<obj name="ChangeAvatar" recover="0"/><!-- 变身 -->
+		<obj name="GangPanel" recover="0"/><!-- 帮派 -->
+		<obj name="SocialPanel" recover="0"/><!-- 社交 -->
+		<obj name="EquipSmelterPanel" recover="0"/><!-- 熔炉 -->
+		<obj name="VIPMain" recover="0"/><!-- 商城 -->
+		<obj name="TeamPanel" recover="0"/><!-- 组队 -->
+		<obj name="RankListPanel" recover="0"/><!-- 排行榜 -->
+		<obj name="ConsignmentPanel" recover="0"/><!-- 寄售 -->
+		<obj name="MapPanel" recover="0"/><!-- 地图 -->
+		<obj name="EmailPanel" recover="0"/><!-- 邮件 -->
+		<obj name="WorldBossPanel" recover="0"/><!-- 世界boss -->
+		<obj name="SevenDayPanel" recover="0"/><!-- 七日目标 -->
+		<obj name="OpenServerActivityPanel" recover="0"/><!-- 开服活动 -->
+		<obj name="WagerShopPanel" recover="0"/><!-- 赌坊 -->
+		<obj name="SkyWeaponPanel" recover="0"/><!-- 天下神兵 -->
+		<obj name="DailyFinishPanelPanel" recover="0"/><!-- 每日必做 -->
+		<obj name="ArenaMain" recover="0"/><!-- 天下第一 -->
+		<obj name="CastlePanel" recover="0"/><!-- 神魔诛天 -->
+		<obj name="ExclusiveMagicPanel" recover="0"/><!-- 专属法宝 -->
+		<obj name="CloseBetaPanel" recover="0"/><!-- 封测活动 -->
+		<obj name="VipLevel" recover="0"/><!-- VIP -->
+		<obj name="FirstTopUpPanel" recover="0"/><!-- 首充 -->
+		<obj name="StockInvestmentPanel" recover="0"/><!-- 股票 -->
+		<obj name="HallMainInterface" recover="0"/><!-- 奖励大厅 -->
+		<obj name="TreasureHuntPanel" recover="0"/><!-- 寻宝 -->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包 -->
+		<obj name="EveryDayTopUpPanel" recover="0"/><!-- 天天首充 -->
+		<obj name="TopUpGiftPanel" recover="0"/><!-- 充值赠礼 -->
+		<obj name="AllPeopleRob" recover="0"/><!-- 全民疯抢 -->
+		<obj name="CampPanel" recover="0"/><!-- 战场大厅 -->
+	</win>
+
+	
+	<win name="MicroGiftView" openBack="0"><!-- 微端下载提示 -->
+		<!--name:需要被互斥的界面 recover:是否需要恢复-->
+		<obj name="MicroGiftPanel" recover="0"/><!-- 微端礼包界面 -->
+	</win>
+
+
+		
+
+	<!--
+	界面说明  :  同时关闭界面
+	-->		
+	<!--界面关联 name:被关闭的界面-->
+	<interactionWin name="ArenaMain"><!-- 竞技场 -->
+		<!--name:需要被关闭的子界面-->
+		<obj name="ArenaRankPanel"/><!-- 竞技场-xxx -->	
+		<obj name="ArenaRankRewardPanel"/><!-- 竞技场-xxx -->	
+		<obj name="ArenaResultPanel"/><!-- 竞技场-xxx -->	
+		<obj name="ArenaFightHead"/><!-- 竞技场-xxx-->	
+	</interactionWin>	
+	
+	<interactionWin name="rolePanel"><!-- 角色面板 -->
+		<!--name:需要被关闭的子界面-->
+		<obj name="MinuteProperty"/><!-- 详细信息 -->
+		<obj name="OpenServerActivityMountChildPage"/><!-- 开服坐骑 -->
+		<obj name="Bag"/><!-- 背包 -->
+		<obj name="DanYaoPanel"/><!-- 丹药 -->
+		<obj name="PrestigePanel"/><!-- 声望 -->
+		<obj name="MountGetAdvice"/><!-- 快捷购买 -->
+	</interactionWin>
+	<interactionWin name="CopyEnterPanel"><!-- 副本进入 -->
+		<!--name:需要被关闭的子界面-->
+		<obj name="CopyRankingTips"/><!-- 副本排行 -->
+	</interactionWin>
+
+	<interactionWin name="Bag"><!-- 背包 -->
+		<!--name:需要被关闭的子界面-->
+		<obj name="NPCStorePanel"/><!-- NPC商店 -->
+		<obj name="Warehouse"/><!-- NPC商店 -->
+		<obj name="melting"/>
+	</interactionWin>
+
+
+	<interactionWin name="LockDemonTowerPanel"><!-- 锁妖塔进入界面 -->
+		<!--name:需要被关闭的子界面-->
+		<obj name="LockDTRankingAlert"/><!-- 锁妖塔排行 -->
+	</interactionWin>
+
+	<interactionWin name="DoubledBallPanel"><!-- 双色球 -->
+		<!--name:需要被关闭的子界面-->
+		<obj name="HallWinningInformation"/><!-- 双色球中奖信息-->
+	</interactionWin>
+
+	<interactionWin name="EquipPanel"><!-- 装备界面 -->
+		<obj name="EquipStrongProcess"/><!-- 装备强化进度界面 -->
+		<obj name="EquipStrongProcess2"/><!-- 装备强化进度界面 -->
+		<obj name="EquipGetAdvice"/><!-- 装备快捷购买提示 -->
+	</interactionWin>
+
+	<interactionWin name="TreasureHuntPanel"><!-- 寻宝 -->
+		<obj name="TreasureHuntWagerShopPanel"/><!-- 寻宝仓库 -->
+	</interactionWin>
+
+	<interactionWin name="ConsignmentPanel"><!-- 寄售 -->
+		<obj name="ConsignmentLook"/><!-- 摊位 -->
+		<obj name="ConsignmentBuy"/><!-- 寄售物品上架 -->
+		<obj name="ConsignmentAcquisition"/><!-- 寄售物品求购 -->
+		<obj name="ConsignmentSell"/><!-- 寄售物品出售 -->
+		<obj name="ConsignmentCellGold"/><!-- 寄售物品铜钱 -->
+	</interactionWin>
+
+	<interactionWin name="ConsignmentBuy"><!-- 寄售物品上架 -->
+		<obj name="Bag" recover="0"/><!-- 背包界面 -->
+		<obj name="ConsignmentAcquisition"/><!-- 寄售物品求购 -->
+		<obj name="ConsignmentSell"/><!-- 寄售物品出售 -->
+		<obj name="ConsignmentCellGold"/><!-- 寄售物品铜钱 -->
+	</interactionWin>
+
+	<interactionWin name="ConsignmentAcquisition"><!-- 寄售物品求购 -->
+		<obj name="Bag" recover="0"/><!-- 背包界面 -->
+		<obj name="ConsignmentBuy"/><!-- 寄售物品上架 -->
+		<obj name="ConsignmentSell"/><!-- 寄售物品出售 -->
+		<obj name="ConsignmentCellGold"/><!-- 寄售物品铜钱 -->
+	</interactionWin>
+
+	<interactionWin name="ConsignmentSell"><!-- 寄售物品出售 -->
+		<obj name="Bag" recover="0"/><!-- 背包界面 -->
+		<obj name="ConsignmentAcquisition"/><!-- 寄售物品求购 -->
+		<obj name="ConsignmentBuy"/><!-- 寄售物品上架 -->
+		<obj name="ConsignmentCellGold"/><!-- 寄售物品铜钱 -->
+	</interactionWin>
+
+	<interactionWin name="ConsignmentCellGold"><!-- 寄售物品铜钱 -->
+		<obj name="Bag" recover="0"/><!-- 背包界面 -->
+		<obj name="ConsignmentAcquisition"/><!-- 寄售物品求购 -->
+		<obj name="ConsignmentSell"/><!-- 寄售物品出售 -->
+		<obj name="ConsignmentBuy"/><!-- 寄售物品上架 -->
+	</interactionWin>
+
+	<interactionWin name="EquipSmelterPanel"><!-- 熔炉 -->
+		<obj name="EquipDevourWarehousePanel" recover="0"/><!-- 智能屏闭 -->
+	</interactionWin>
+
+
+	<interactionWin name="GangPanel"><!-- 帮派 -->
+		<obj name="GangWarehouseChangeMessge" recover="0"/><!-- 帮派仓库消息 -->
+	</interactionWin>
+
+
+
+	<!-- 界面打开的动画效果 如同C界面与包裹的样子 -->
+	<group>	
+		<obj name="EquipSmelterPanel"/><!-- 熔炉 -->
+		<obj name="EquipFuseBagPanel"/><!-- 熔炉背包 -->
+		<obj name="EquipMeltChangePanel"/><!-- 熔炉兑换 -->
+		<obj name="EquipWarehousePanel"/><!-- 熔炉仓库 -->
+		<obj name="EquipDevourWarehousePanel"/><!-- 智能屏闭 -->
+	</group>
+	<group>
+		<obj name="rolePanel"/><!-- 角色属性 -->
+		<obj name="MinuteProperty"/><!-- 详细属性 -->
+		<obj name="DanYaoPanel"/><!-- 丹药 -->
+		<obj name="PrestigePanel"/><!-- 声望 -->
+		<obj name="Bag"/><!-- 背包 -->
+		<obj name="MountGetAdvice"/><!-- 背包 -->
+	</group>
+	<group>
+		<obj name="EquipPanel"/><!-- 装备界面 -->
+		<obj name="EquipStrongProcess"/><!-- 装备强化进度界面 -->
+		<obj name="EquipStrongProcess2"/><!-- 装备宝石进度界面 -->
+		<obj name="EquipGetAdvice"/><!-- 装备洗练右侧弹出界面 -->
+	</group>
+
+	<group>
+		<obj name="DoubledBallPanel"/><!-- 双色球 -->
+		<obj name="HallWinningInformation"/><!-- 双色球中奖信息 -->
+	</group>
+	<group>
+		<obj name="LockDemonTowerPanel"/><!-- 锁妖塔进入界面 -->
+		<obj name="LockDTRankingAlert"/><!-- 锁妖塔排行 -->
+	</group>
+	<group>
+		<obj name="MailFrame"/><!-- 邮件 -->
+		<obj name="Bag"/><!-- 背包 -->
+		<obj name="ConsignmentPanel"/><!-- 寄售 -->
+		<obj name="ConsignmentLook"/><!-- 摊位 -->
+	</group>
+	<group>
+		<obj name="Bag"/><!-- 背包 -->
+		<obj name="Warehouse"/><!-- 仓库 -->
+		<obj name="NPCStorePanel"/><!-- 随身商店 -->
+	</group>
+	<group>
+		<obj name="TreasureHuntPanel"/><!-- 寻宝 -->
+		<obj name="TreasureHuntWagerShopPanel"/><!-- 寻宝仓库 -->
+	</group>
+	<group>
+		<obj name="CopyEnterPanel"/><!-- 副本进入 -->
+		<obj name="CopyRankingTips"/><!-- 副本排行 -->
+	</group>
+	<group>
+		<obj name="GangPanel"/><!-- 帮派-->
+		<obj name="GangWarehouseChangeMessge"/><!-- 帮派仓库消息 -->
+	</group>
+	<group>
+		<obj name="SocialPanelPanel"/><!-- 社交 -->
+		<obj name="SocialPanelFriendsChat"/><!-- 聊天 -->
+	</group>
+	<group>
+		<obj name="BagGiftPanel"/><!-- 背包礼包 -->
+		<obj name="BagEveryDayGiftPanel"/><!-- 背包每日礼包 -->
+	</group>
+
+	<group>	
+		<obj name="EthnicityChat"/><!--阵营聊天？？？？？-->
+		<obj name="FriendChat"/><!--好友界面-->
+	</group>
+	<group>	
+		<obj name="findtreasures"/><!-- 聚宝盆 -->	
+		<obj name="findtreasurestempBag"/><!-- 聚宝盆临时仓库 -->
+	</group>	
+	<group>
+		<obj name="CampPanel"/><!-- 战场大厅 -->
+		<obj name="CampPanelPastKing"/><!-- 历届阵营之主 -->
+	</group>
+	<group>
+		<obj name="CampPanel"/><!-- 战场大厅 -->
+		<obj name="ArenaRankPanel"/><!-- 天下第一排行 -->
+	</group>
+	<group>
+		<obj name="CampPanel"/><!-- 战场大厅 -->
+		<obj name="ArenaRankRewardPanel"/><!-- 天下第一排行奖励 -->
+	</group>
+	<group>
+		<obj name="WorshipDukePanel"/><!-- 膜拜城主 -->
+		<obj name="WorshipDukePowerPanel"/><!-- 至尊权力 -->
+	</group>
+	<group>
+		<obj name="SocialPanel"/><!-- 社交 -->
+		<obj name="SocialFriendsChat"/><!-- 私聊和群聊界面 -->
+	</group>
+	<group>
+		<obj name="CampPanel"/><!-- 战场大厅 -->
+		<obj name="CityRankPanel"/><!-- 斗战神本周积分奖励 -->
+	</group>
+
+	
+</room>

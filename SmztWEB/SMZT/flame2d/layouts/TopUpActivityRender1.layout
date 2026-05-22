@@ -1,0 +1,142 @@
+<GUILayout>
+    <Window Name="TopUpActivityRender1" Type="GuiLook/StaticImage">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,271},{0,325}}" />
+        <Property Name="Image" Value="set:topUpActivity image:policeBg" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="FrameEnabled" Value="false" />
+        <Property Name="BackgroundEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Window Name="TopUpActivityRender1/gridBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,100},{0,66},{0,166},{0,132}}" />
+            <Property Name="Image" Value="set:topUpActivity image:yellowBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="TopUpActivityRender1/itemName" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,134},{0,271},{0,154}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="TopUpActivityRender1/TextBG" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,156},{0,186},{0,177}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+            <Property Name="LeftOffset" Value="10" />
+            <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+            <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+            <Property Name="RightOffset" Value="10" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Name="TopUpActivityRender1/TextBG/nameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,185},{0,20}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TopUpActivityRender1/TextBG/name$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,186},{0,20}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                <Property Name="LeftOffset" Value="9" />
+                <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                <Property Name="RightOffset" Value="9" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="TopUpActivityRender1/seckillTitleTxt0" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,95},{0,235},{0,135},{0,255}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="秒杀价：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="TopUpActivityRender1/yuanbaoO0" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,140},{0,217},{0,161},{0,236}}" />
+            <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="TopUpActivityRender1/seckillBtn0" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,263},{0,163},{0,305}}" />
+            <Property Name="HoverImage" Value="set:topUpActivity image:immediatelyHover" />
+            <Property Name="NormalImage" Value="set:topUpActivity image:immediatelyNormal" />
+            <Property Name="PushedImage" Value="set:topUpActivity image:immediatelyPushed" />
+            <Property Name="DisabledImage" Value="set:topUpActivity image:immediatelyDisabled" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="HorzImageFormatting" Value="CentreAligned" />
+            <Property Name="VertImageFormatting" Value="CentreAligned" />
+        </Window>
+        <Window Name="TopUpActivityRender1/originalTitleTxt0" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,95},{0,217},{0,135},{0,237}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="原 价：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="TopUpActivityRender1/yuanbao0" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,140},{0,235},{0,161},{0,254}}" />
+            <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="TopUpActivityRender1/purchasTitleTxt0" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,95},{0,199},{0,135},{0,219}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="限 购：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="TopUpActivityRender1/redLine0" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,86},{0,227},{0,209},{0,228}}" />
+            <Property Name="Image" Value="set:topUpActivity image:line" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="TopUpActivityRender1/discountImg0" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,176},{0,47},{0,264},{0,138}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="TopUpActivityRender1/originalTxt0" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,166},{0,217},{0,227},{0,237}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="限购：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="TopUpActivityRender1/seckillTxt0" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,166},{0,235},{0,227},{0,255}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="限购：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="TopUpActivityRender1/purchasTxt0" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,138},{0,199},{0,196},{0,219}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="限购：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

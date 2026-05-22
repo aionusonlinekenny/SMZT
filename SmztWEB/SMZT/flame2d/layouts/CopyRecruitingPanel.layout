@@ -1,0 +1,251 @@
+<GUILayout>
+    <Window Name="CopyRecruitingPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,961},{0,573}}" />
+        <Property Name="GlyphImage" Value="set:copyrecruiting image:recruiting" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="CopyRecruitingPanel/bigBackround" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,943},{0,527}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CopyRecruitingPanel/bigBackround/teamBackground" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,28},{0,717},{0,379}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CopyRecruitingPanel/bigBackround/teamBackground/boxSP" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,715},{0,351}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+            <Window Name="CopyRecruitingPanel/bigBackround/smallBackground" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,381},{0,942},{0,521}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/CommonBg3" Type="GuiLook/CommonBg3">
+                    <Property Name="UnifiedAreaRect" Value="{{0,622},{0,0},{0,942},{0,142}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/CommonBg3/StaticImage" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,319},{0,141}}" />
+                        <Property Name="Image" Value="set:skin image:RenderBg2" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/word$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,650},{0,25},{0,910},{0,65}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/readlyWin" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,621},{0,3},{0,941},{0,143}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/readlyWin/refuseBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,35},{0,88},{0,147},{0,119}}" />
+                        <Property Name="HoverImage" Value="set:skins image:BlueBtnHover" />
+                        <Property Name="NormalImage" Value="set:skins image:BlueBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skins image:BlueBtnPushed" />
+                        <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/readlyWin/refuseBtn/refuse" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,112},{0,31}}" />
+                            <Property Name="Image" Value="set:copyrecruiting image:refuseBtn" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                    <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/readlyWin/sureBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,167},{0,88},{0,279},{0,119}}" />
+                        <Property Name="HoverImage" Value="set:skins image:BlueBtnHover" />
+                        <Property Name="NormalImage" Value="set:skins image:BlueBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skins image:BlueBtnPushed" />
+                        <Property Name="Tooltip" Value="12506" />
+                        <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/readlyWin/sureBtn/sure" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,112},{0,31}}" />
+                            <Property Name="Image" Value="set:copyrecruiting image:sureBtn" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="Tooltip" Value="12506" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/enterBtn" Type="GlossySerpent/RedButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,699},{0,78},{0,862},{0,118}}" />
+                    <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/enterBtn/enterImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                        <Property Name="Image" Value="set:copyrecruiting image:enterCopy" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/chatBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,2},{0,620},{0,140}}" />
+                    <Property Name="Image" Value="set:skin image:RenderBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/chatBg/inputBg" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,115},{0,576},{0,138}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:skin image:EditBox_L" />
+                        <Property Name="LeftOffset" Value="4" />
+                        <Property Name="RightImage" Value="set:skin image:EditBox_R" />
+                        <Property Name="CenterImage" Value="set:skin image:EditBox_M" />
+                        <Property Name="RightOffset" Value="4" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/chatBg/inputBg/inputTxt" Type="GuiLook/Editbox">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,553},{0,23}}" />
+                        </Window>
+                    </Window>
+                    <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/chatBg/sendBtn" Type="GlossySerpent/BlueButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,576},{0,115},{0,620},{0,138}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="发送" />
+                    </Window>
+                    <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/chatBg/list" Type="GuiLook/Listbox">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{0,618},{0,113}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <AutoWindow NameSuffix="__auto_vscrollbar__">
+                            <Property Name="VerticalScrollbar" Value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/chatBg/faceBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,555},{0,117},{0,575},{0,137}}" />
+                        <Property Name="HoverImage" Value="set:mainUI1 image:faceBtnHover" />
+                        <Property Name="NormalImage" Value="set:mainUI1 image:faceBtnNormal" />
+                        <Property Name="PushedImage" Value="set:mainUI1 image:faceBtnPushed" />
+                    </Window>
+                    <Window Name="CopyRecruitingPanel/bigBackround/smallBackground/chatBg/faceBox" Type="GuiLook/CommonBg3">
+                        <Property Name="UnifiedAreaRect" Value="{{0,440},{0,7},{0,612},{0,107}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{0,500},{0,500}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="ClippedByParent" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="CopyRecruitingPanel/bigBackround/myTeamBtn" Type="GuiLook/CommonRadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,80},{0,28}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="我的队伍" />
+            </Window>
+            <Window Name="CopyRecruitingPanel/bigBackround/nearPlayerBtn" Type="GuiLook/CommonRadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,81},{0,4},{0,156},{0,28}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="附近玩家" />
+            </Window>
+            <Window Name="CopyRecruitingPanel/bigBackround/nearTeamListSp" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,716},{0,28},{0,943},{0,379}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Window Name="CopyRecruitingPanel/bigBackround/nearTeamListSp/pageSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,45},{0,325},{0,187},{0,345}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="CopyRecruitingPanel/bigBackround/nearTeamListSp/pageSp/rightBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,97},{0,0},{0,117},{0,20}}" />
+                        <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                        <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+                        <Property Name="DisabledImage" Value="set:skin image:NextBtnDisable" />
+                    </Window>
+                    <Window Name="CopyRecruitingPanel/bigBackround/nearTeamListSp/pageSp/leftBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,25},{0,0},{0,45},{0,20}}" />
+                        <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                        <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+                        <Property Name="DisabledImage" Value="set:skin image:LastBtnDisable" />
+                    </Window>
+                    <Window Name="CopyRecruitingPanel/bigBackround/nearTeamListSp/pageSp/backEndBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,122},{0,0},{0,142},{0,20}}" />
+                        <Property Name="HoverImage" Value="set:skin image:MnextBtnHover" />
+                        <Property Name="NormalImage" Value="set:skin image:MnextBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skin image:MnextBtnPushed" />
+                        <Property Name="DisabledImage" Value="set:skin image:MnextBtnDisable" />
+                    </Window>
+                    <Window Name="CopyRecruitingPanel/bigBackround/nearTeamListSp/pageSp/backBeginBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,20},{0,20}}" />
+                        <Property Name="HoverImage" Value="set:skin image:MlastBtnHover" />
+                        <Property Name="NormalImage" Value="set:skin image:MlastBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skin image:MlastBtnPushed" />
+                        <Property Name="DisabledImage" Value="set:skin image:MlastBtnDisable" />
+                    </Window>
+                    <Window Name="CopyRecruitingPanel/bigBackround/nearTeamListSp/pageSp/laPageBg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,50},{0,0},{0,92},{0,18}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="CopyRecruitingPanel/bigBackround/nearTeamListSp/pageSp/laPageBg/pageTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,2},{0,42},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="250" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF64d4d8" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="CopyRecruitingPanel/bigBackround/copyWin" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,716},{0,2},{0,941},{0,379}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CopyRecruitingPanel/bigBackround/copyWin/copyImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,222},{0,373}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="CopyRecruitingPanel/bigBackround/copyWin/copyImg/attackImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,33},{0,264},{0,108},{0,295}}" />
+                        <Property Name="Image" Value="set:copyrecruiting image:attack" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="CopyRecruitingPanel/bigBackround/copyWin/copyImg/defenseImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,110},{0,264},{0,185},{0,295}}" />
+                        <Property Name="Image" Value="set:copyrecruiting image:defense" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,158 @@
+<GUILayout>
+    <Window Name="SkyBarOrderAlert" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,681},{0,400}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SkyBarOrderAlert/BGImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,681},{0,400}}" />
+            <Property Name="Image" Value="set:barcomBG image:barcomBG" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="SkyBarOrderAlert/BGImg/yuanbaoImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,139},{0,293},{0,158},{0,312}}" />
+                <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/buyBtn1" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,126},{0,317},{0,207},{0,340}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="购买" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/buyBtn3" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,537},{0,317},{0,618},{0,340}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="购买" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/buyBtn2" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,334},{0,317},{0,415},{0,340}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="购买" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/yuanbaoImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,546},{0,293},{0,565},{0,312}}" />
+                <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/yuanbaoImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,343},{0,293},{0,362},{0,312}}" />
+                <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/desc1Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,107},{0,345},{0,212},{0,363}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="剩余购买次数：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/number1txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,294},{0,204},{0,312}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="10" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/buyLastNum1Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,214},{0,345},{0,238},{0,363}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/buyLastNum2Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,419},{0,345},{0,443},{0,363}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/desc2Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,312},{0,345},{0,417},{0,363}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="剩余购买次数：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/number2Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,365},{0,294},{0,409},{0,312}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="10" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/buyLastNum3Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,622},{0,345},{0,646},{0,363}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/desc3Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,515},{0,345},{0,620},{0,363}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="剩余购买次数：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/number3Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,568},{0,294},{0,612},{0,312}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="10" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/drinkImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,133},{0,167},{0,220},{0,283}}" />
+                <Property Name="Image" Value="set:barcom image:drink" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/danceImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,493},{0,167},{0,661},{0,283}}" />
+                <Property Name="Image" Value="set:barcom image:dance" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/chatImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,322},{0,167},{0,430},{0,283}}" />
+                <Property Name="Image" Value="set:barcom image:chat" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SkyBarOrderAlert/BGImg/closeBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,657},{0,78},{0,674},{0,95}}" />
+                <Property Name="Image" Value="set:mainUI1 image:closeBtn" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

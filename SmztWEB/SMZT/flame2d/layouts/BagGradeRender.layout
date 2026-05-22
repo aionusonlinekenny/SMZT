@@ -1,0 +1,63 @@
+<GUILayout>
+    <Window Name="BagGradeRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,507},{0,61}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="BagGradeRender/staticImage" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,504},{0,58}}" />
+            <Property Name="Image" Value="set:skin image:RenderBg2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="DragDropTarget" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="BagGradeRender/gradeTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,21},{0,100},{0,41}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="20级成长礼包" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="BagGradeRender/receiveBtn" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,413},{0,20},{0,494},{0,43}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="已领取" />
+        </Window>
+        <Window Name="BagGradeRender/lowLevelImg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,412},{0,19},{0,495},{0,44}}" />
+            <Property Name="Text" Value="等级味道" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:RedBoxLeft" />
+            <Property Name="LeftOffset" Value="10" />
+            <Property Name="RightImage" Value="set:skin image:RedBoxRight" />
+            <Property Name="CenterImage" Value="set:skin image:RedBoxMiddle" />
+            <Property Name="RightOffset" Value="10" />
+            <Window Name="BagGradeRender/lowLevelImg/txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,25}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="等级没到" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF0000" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="BagGradeRender/selected" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,504},{0,59}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skins image:selectedLeft" />
+            <Property Name="LeftOffset" Value="127" />
+            <Property Name="RightImage" Value="set:skins image:selectedRight" />
+            <Property Name="CenterImage" Value="set:skins image:selectedCenter" />
+            <Property Name="RightOffset" Value="127" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="BagGradeRender/dataGridWin" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,106},{0,6},{0,404},{0,54}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

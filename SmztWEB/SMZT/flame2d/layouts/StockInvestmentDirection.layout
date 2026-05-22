@@ -1,0 +1,39 @@
+<GUILayout>
+    <Window Name="StockInvestmentDirestion" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,692},{0,395}}" />
+        <Property Name="Text" Value="股票走势" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="StockInvestmentDirestion/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,6},{0,674},{0,349}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Window Name="StockInvestmentDirestion/bg/box" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,79},{0,3},{0,674},{0,338}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="AutoRenderingSurface" Value="true" />
+            </Window>
+            <Window Name="StockInvestmentDirestion/bg/namelist" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,7},{0,79},{0,350}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="ClippedByParent" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="StockInvestmentDirestion/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,352},{0,674},{0,353}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

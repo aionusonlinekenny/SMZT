@@ -1,0 +1,329 @@
+<GUILayout>
+    <Window Name="TreasureCollectPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,713},{0,490}}" />
+        <Property Name="GlyphImage" Value="set:treasureCollect image:text1" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="TreasureCollectPanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,447},{0,695},{0,448}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="TreasureCollectPanel/radicBtn0" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,84},{0,28}}" />
+            <Property Name="Text" Value="竞技点兑换" />
+            <Property Name="Visible" Value="false" />
+        </Window>
+        <Window Name="TreasureCollectPanel/radicBtn1" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,409},{0,4},{0,489},{0,28}}" />
+            <Property Name="Text" Value="头颅兑换" />
+            <Property Name="Visible" Value="false" />
+        </Window>
+        <Window Name="TreasureCollectPanel/radicBtn2" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,491},{0,4},{0,571},{0,28}}" />
+            <Property Name="Text" Value="机缘兑换" />
+            <Property Name="Visible" Value="false" />
+        </Window>
+        <Window Name="TreasureCollectPanel/radicBtn3" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,84},{0,28}}" />
+            <Property Name="Text" Value="声望兑换" />
+        </Window>
+        <Window Name="TreasureCollectPanel/bg" Type="GuiLook/CommonBG">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,29},{0,695},{0,407}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="TreasureCollectPanel/bg/list0" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,5},{0,694},{0,373}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="TreasureCollectPanel/CommonBg2" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,412},{0,695},{0,443}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="TreasureCollectPanel/CommonBg2/StaticText" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,12},{0,0},{0,99},{0,16}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="当前可用点数：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00e4FF" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TreasureCollectPanel/CommonBg2/bg0" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,110},{0,0},{0,694},{0,27}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Window Name="TreasureCollectPanel/CommonBg2/bg0/TextBG0" Type="GuiLook/TextBG">
+                    <Property Name="UnifiedAreaRect" Value="{{0,27},{0,0},{0,120},{0,21}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Window Name="TreasureCollectPanel/CommonBg2/bg0/TextBG0/jingJIDianTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,93},{0,21}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="3000" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFe1feff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="TreasureCollectPanel/CommonBg2/bg0/img0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,27},{0,27}}" />
+                    <Property Name="Image" Value="set:treasureCollect image:icon_arenaPoint" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Tooltip" Value="10351" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TreasureCollectPanel/CommonBg2/bg0/jingJIDianTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,124},{0,3},{0,579},{0,24}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="TreasureCollectPanel/CommonBg2/bg1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,110},{0,0},{0,694},{0,27}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Window Name="TreasureCollectPanel/CommonBg2/bg1/TextBG1" Type="GuiLook/TextBG">
+                    <Property Name="UnifiedAreaRect" Value="{{0,27},{0,0},{0,120},{0,21}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Window Name="TreasureCollectPanel/CommonBg2/bg1/TextBG1/touLuTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,93},{0,21}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFe1feff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="TreasureCollectPanel/CommonBg2/bg1/img1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,27},{0,27}}" />
+                    <Property Name="Image" Value="set:treasureCollect image:icon_head" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Tooltip" Value="10356" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TreasureCollectPanel/CommonBg2/bg1/touLuTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,124},{0,3},{0,578},{0,24}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="TreasureCollectPanel/CommonBg2/bg2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,110},{0,0},{0,231},{0,27}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Window Name="TreasureCollectPanel/CommonBg2/bg2/TextBG2" Type="GuiLook/TextBG">
+                    <Property Name="UnifiedAreaRect" Value="{{0,27},{0,0},{0,120},{0,21}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Window Name="TreasureCollectPanel/CommonBg2/bg2/TextBG2/jiYuanTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,93},{0,21}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFe1feff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="TreasureCollectPanel/CommonBg2/bg2/img2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,27},{0,27}}" />
+                    <Property Name="Image" Value="set:treasureCollect image:icon_goodLuck" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Tooltip" Value="10353" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TreasureCollectPanel/CommonBg2/bg2/jiYuanTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,124},{0,3},{0,580},{0,24}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="TreasureCollectPanel/CommonBg2/bg3" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,110},{0,0},{0,694},{0,27}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Window Name="TreasureCollectPanel/CommonBg2/bg3/TextBG3" Type="GuiLook/TextBG">
+                    <Property Name="UnifiedAreaRect" Value="{{0,27},{0,0},{0,120},{0,21}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Window Name="TreasureCollectPanel/CommonBg2/bg3/TextBG3/rongYuTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,93},{0,21}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFe1feff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="TreasureCollectPanel/CommonBg2/bg3/img3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,27},{0,27}}" />
+                    <Property Name="Image" Value="set:treasureCollect image:icon_rep" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Tooltip" Value="10354 " />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TreasureCollectPanel/CommonBg2/bg3/rongYuTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,124},{0,3},{0,580},{0,24}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="TreasureCollectPanel/CommonBg2/bg4" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,110},{0,0},{0,694},{0,27}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Window Name="TreasureCollectPanel/CommonBg2/bg4/TextBG4" Type="GuiLook/TextBG">
+                    <Property Name="UnifiedAreaRect" Value="{{0,27},{0,0},{0,120},{0,21}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Window Name="TreasureCollectPanel/CommonBg2/bg4/TextBG4/bangGongTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,93},{0,21}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="3000" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFe1feff" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="TreasureCollectPanel/CommonBg2/bg4/img4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,27},{0,27}}" />
+                    <Property Name="Image" Value="set:skin image:bangGong" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Tooltip" Value="10351" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TreasureCollectPanel/CommonBg2/bg4/bangGongTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,124},{0,3},{0,579},{0,24}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="TreasureCollectPanel/radicBtn6" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,247},{0,4},{0,327},{0,28}}" />
+            <Property Name="Text" Value="法宝兑换" />
+            <Property Name="Visible" Value="false" />
+        </Window>
+        <Window Name="TreasureCollectPanel/radicBtn5" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,166},{0,4},{0,246},{0,28}}" />
+            <Property Name="Text" Value="魔兵兑换" />
+            <Property Name="Visible" Value="false" />
+        </Window>
+        <Window Name="TreasureCollectPanel/bg10" Type="GuiLook/CommonBG">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,29},{0,695},{0,407}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Window Name="TreasureCollectPanel/bg10/leftBg" Type="GuiLook/CommonBg2">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,225},{0,373}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="TreasureCollectPanel/bg10/leftBg/titleBg" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,220},{0,29}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:ListTitleBgLeft" />
+                    <Property Name="LeftOffset" Value="19" />
+                    <Property Name="RightImage" Value="set:skin image:ListTitleBgRight" />
+                    <Property Name="CenterImage" Value="set:skin image:ListTitleBgCenter" />
+                    <Property Name="RightOffset" Value="19" />
+                    <Window Name="TreasureCollectPanel/bg10/leftBg/titleBg/titleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,220},{0,29}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="极品展示" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFef9d0" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="TreasureCollectPanel/bg10/leftBg/gridBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,29},{0,199},{0,226}}" />
+                    <Property Name="Image" Value="set:equipSmelter image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="TreasureCollectPanel/bg10/leftBg/gridBg/nameTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,22},{0,199},{0,47}}" />
+                        <Property Name="Font" Value="songti_18_strengh" />
+                        <Property Name="Text" Value="超神腰带" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFFea00" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="TreasureCollectPanel/bg10/leftBg/gridBg/giftBg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,75},{0,76},{0,125},{0,126}}" />
+                        <Property Name="Image" Value="set:skin image:YellowGrid" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TreasureCollectPanel/bg10/leftBg/gridBg/stateImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,90},{0,73},{0,129},{0,111}}" />
+                        <Property Name="Image" Value="set:skin image:bestMark" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Property Name="MouseInputPropagationEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="TreasureCollectPanel/bg10/leftBg/listProp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,200},{0,220},{0,349}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+            <Window Name="TreasureCollectPanel/bg10/list" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,227},{0,6},{0,693},{0,374}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="TreasureCollectPanel/radicBtn4" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,85},{0,4},{0,165},{0,28}}" />
+            <Property Name="Text" Value="帮贡兑换" />
+        </Window>
+        <Window Name="TreasureCollectPanel/radicBtn7" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,166},{0,4},{0,246},{0,28}}" />
+            <Property Name="Text" Value="荣誉兑换" />
+        </Window>
+    </Window>
+</GUILayout>

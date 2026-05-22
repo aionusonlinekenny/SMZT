@@ -1,0 +1,101 @@
+<GUILayout>
+    <Window Name="StrongRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,435},{0,49}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="StrongRender/background" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,435},{0,49}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="StrongRender/background/blackBgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,4},{0,48},{0,45}}" />
+                <Property Name="Image" Value="set:dailyFinishGeneral image:bigblackpoint" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+                <Window Name="StrongRender/background/blackBgImg/nullImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,39},{0,39}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="StrongRender/background/BlueButton" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,353},{0,13},{0,426},{0,36}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="装备镶嵌" />
+            </Window>
+            <Window Name="StrongRender/background/TextBG" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,110},{0,20},{0,344},{0,32}}" />
+                <Property Name="UnifiedMaxSize" Value="{{0,234},{0,12}}" />
+                <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+                <Window Name="StrongRender/background/TextBG/progressG" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,234},{0,12}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{0,234},{0,12}}" />
+                    <Property Name="LeftImage" Value="set:dailyFinishGeneral image:greenLeft" />
+                    <Property Name="LeftOffset" Value="1" />
+                    <Property Name="RightImage" Value="set:dailyFinishGeneral image:greenRight" />
+                    <Property Name="CenterImage" Value="set:dailyFinishGeneral image:greenMiddle" />
+                    <Property Name="RightOffset" Value="1" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+                <Window Name="StrongRender/background/TextBG/progressO" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,234},{0,12}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{0,234},{0,12}}" />
+                    <Property Name="LeftImage" Value="set:dailyFinishGeneral image:orangeLeft" />
+                    <Property Name="LeftOffset" Value="1" />
+                    <Property Name="RightImage" Value="set:dailyFinishGeneral image:orangeRight" />
+                    <Property Name="CenterImage" Value="set:dailyFinishGeneral image:orangeMiddle" />
+                    <Property Name="RightOffset" Value="1" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+                <Window Name="StrongRender/background/TextBG/progressR" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,234},{0,12}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{0,234},{0,12}}" />
+                    <Property Name="LeftImage" Value="set:dailyFinishGeneral image:redLeft" />
+                    <Property Name="LeftOffset" Value="1" />
+                    <Property Name="RightImage" Value="set:dailyFinishGeneral image:redRight" />
+                    <Property Name="CenterImage" Value="set:dailyFinishGeneral image:redMiddle" />
+                    <Property Name="RightOffset" Value="1" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+                <Window Name="StrongRender/background/TextBG/progressTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-1},{0,234},{0,14}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="60/100" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="StrongRender/background/descTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,50},{0,17},{0,104},{0,35}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="装备镶嵌" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Property Name="MouseInputPropagationEnabled" Value="true" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

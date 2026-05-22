@@ -1,0 +1,123 @@
+<GUILayout>
+    <Window Name="IntelligenceBegin" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,612},{0,230}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="IntelligenceBegin/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,612},{0,230}}" />
+            <Property Name="Image" Value="set:intelligence image:answerBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="IntelligenceBegin/bgImg/remainingTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,462},{0,28},{0,536},{0,48}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="剩余题目：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="IntelligenceBegin/bgImg/numberTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,534},{0,28},{0,586},{0,48}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="30/30" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="IntelligenceBegin/bgImg/timeBgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,449},{0,60},{0,556},{0,167}}" />
+                <Property Name="Image" Value="set:intelligence image:numberBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="IntelligenceBegin/bgImg/timeBgImg/numImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-16},{0,29},{0,107},{0,71}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="IntelligenceBegin/answerSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,612},{0,230}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="IntelligenceBegin/answerSp/qidTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,82},{0,28},{0,135},{0,46}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="第  题" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="IntelligenceBegin/answerSp/questionTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,72},{0,444},{0,138}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="最牛逼的人是谁？" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="IntelligenceBegin/answerSp/questionImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,80},{0,72},{0,107},{0,98}}" />
+                <Property Name="Image" Value="set:intelligence image:question" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="IntelligenceBegin/answerSp/numberTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,98},{0,28},{0,117},{0,46}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="七" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="IntelligenceBegin/answerSp/answerTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,378},{0,158},{0,489},{0,182}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="满地私生子" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="IntelligenceBegin/answerSp/answerTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,161},{0,158},{0,272},{0,182}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="满街丈母娘" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="IntelligenceBegin/answerSp/RadioTab1" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,315},{0,140},{0,372},{0,197}}" />
+                <Property Name="HoverImage" Value="set:intelligence image:B" />
+                <Property Name="SelectedImage" Value="set:intelligence image:B" />
+                <Property Name="UnselectedImage" Value="set:intelligence image:Bdark" />
+            </Window>
+            <Window Name="IntelligenceBegin/answerSp/RadioTab0" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,98},{0,140},{0,155},{0,197}}" />
+                <Property Name="HoverImage" Value="set:intelligence image:A" />
+                <Property Name="SelectedImage" Value="set:intelligence image:A" />
+                <Property Name="UnselectedImage" Value="set:intelligence image:Adark" />
+            </Window>
+        </Window>
+        <Window Name="IntelligenceBegin/prepareSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,612},{0,230}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="IntelligenceBegin/prepareSp/readyTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,82},{0,27},{0,149},{0,47}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="准备答题" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="IntelligenceBegin/prepareSp/desc$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,82},{0,71},{0,429},{0,191}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

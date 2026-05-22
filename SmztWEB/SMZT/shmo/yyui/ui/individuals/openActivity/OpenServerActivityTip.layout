@@ -1,0 +1,129 @@
+<GUILayout>
+    <Window Name="OpenServerActivityTip" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,207},{0,155}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="OpenServerActivityTip/bg" Type="GuiLook/CommonBg4">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,207},{0,155}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{0,500}}" />
+            <Window Name="OpenServerActivityTip/bg/titleTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,28},{0,15},{0,178},{0,35}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="充值排名第2-3名" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityTip/bg/line1" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,39},{0,207},{0,40}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:Line1Left" />
+                <Property Name="LeftOffset" Value="100" />
+                <Property Name="RightImage" Value="set:skin image:Line1Right" />
+                <Property Name="CenterImage" Value="set:skin image:Line1Center" />
+                <Property Name="RightOffset" Value="100" />
+            </Window>
+            <Window Name="OpenServerActivityTip/bg/rankTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,59},{0,37},{0,79}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityTip/bg/line2" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,81},{0,207},{0,82}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:Line1Left" />
+                <Property Name="LeftOffset" Value="100" />
+                <Property Name="RightImage" Value="set:skin image:Line1Right" />
+                <Property Name="CenterImage" Value="set:skin image:Line1Center" />
+                <Property Name="RightOffset" Value="100" />
+            </Window>
+            <Window Name="OpenServerActivityTip/bg/line3" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,109},{0,207},{0,110}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:Line1Left" />
+                <Property Name="LeftOffset" Value="100" />
+                <Property Name="RightImage" Value="set:skin image:Line1Right" />
+                <Property Name="CenterImage" Value="set:skin image:Line1Center" />
+                <Property Name="RightOffset" Value="100" />
+            </Window>
+            <Window Name="OpenServerActivityTip/bg/rankTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,87},{0,37},{0,107}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="3" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityTip/bg/sexImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,44},{0,61},{0,60},{0,77}}" />
+                <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityTip/bg/sexImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,44},{0,89},{0,60},{0,105}}" />
+                <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityTip/bg/nameTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,66},{0,58},{0,166},{0,78}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="玩家名称六字" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityTip/bg/nameTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,66},{0,86},{0,165},{0,106}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="玩家名称六字" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityTip/bg/myRankTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,122},{0,114},{0,142}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="活动截止时排名" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityTip/bg/myRankTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,122},{0,182},{0,142}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="58" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityTip/bg/wenHaoTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,140},{0,87},{0,200},{0,107}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="?" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFff0000" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="OpenServerActivityTip/bg/wenHaoTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,140},{0,58},{0,200},{0,78}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="?" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFff0000" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

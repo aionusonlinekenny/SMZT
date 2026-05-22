@@ -1,0 +1,76 @@
+<GUILayout>
+    <Window Name="NPTodayGoal" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,261},{0,355}}" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="NPTodayGoal/goalBgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,45},{0,4},{0,200},{0,159}}" />
+            <Property Name="Image" Value="set:newPeriod3 image:purpleRound2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="NPTodayGoal/goalBgImg/goalIcon" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,54},{0,105},{0,106}}" />
+                <Property Name="Image" Value="set:mainUI2 image:enter_2100" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="NPTodayGoal/desc$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,180},{0,236},{0,198}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="NPTodayGoal/desc$RT2" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,208},{0,233},{0,226}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ffe1feff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="NPTodayGoal/point" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,184},{0,23},{0,192}}" />
+            <Property Name="Image" Value="set:skin image:MarkImg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="NPTodayGoal/point2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,213},{0,23},{0,221}}" />
+            <Property Name="Image" Value="set:skin image:MarkImg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="NPTodayGoal/knowBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,78},{0,277},{0,161},{0,300}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="朕知道了" />
+        </Window>
+        <Window Name="NPTodayGoal/todayGoalImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,-32},{0,170},{0,-5}}" />
+            <Property Name="Image" Value="set:newPeriod3 image:goa;" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,27 @@
+<GUILayout>
+    <Window Name="CloseBetaPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,535},{0,449}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CloseBetaPage/imageBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,534},{0,131}}" />
+            <Property Name="Image" Value="set:closeBetaBg image:mountAscensionBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="CloseBetaPage/threeStretchImage1" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,131},{0,534},{0,132}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:Line2Left" />
+            <Property Name="LeftOffset" Value="93" />
+            <Property Name="RightImage" Value="set:skin image:Line2Right" />
+            <Property Name="CenterImage" Value="set:skin image:Line1Center2" />
+            <Property Name="RightOffset" Value="93" />
+        </Window>
+        <Window Name="CloseBetaPage/listbox" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,133},{0,536},{0,448}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

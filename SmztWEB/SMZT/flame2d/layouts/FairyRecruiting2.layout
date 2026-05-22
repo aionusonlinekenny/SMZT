@@ -1,0 +1,40 @@
+<GUILayout>
+    <Window Name="FairyRecruiting2" Type="GuiLook/CommonBg2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,443},{0,142}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="FairyRecruiting2/recruitingImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,2},{0,64},{0,140}}" />
+            <Property Name="Image" Value="set:fairy1 image:bigRecruiting" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="FairyRecruiting2/yijihuo" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,443},{0,142}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FairyRecruiting2/yijihuo/RedButton" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,68},{0,306},{0,108}}" />
+                <Window Name="FairyRecruiting2/yijihuo/RedButton/fightImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,146},{0,40}}" />
+                    <Property Name="Image" Value="set:fairy1 image:fight2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="FairyRecruiting2/yijihuo/fairyHave" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,136},{0,29},{0,349},{0,50}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="您已成功招募佳酿仙子" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,382 @@
+<GUILayout>
+    <Window Name="MysteryShopPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1016},{0,638}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="MysteryShopPanel/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,1015},{0,638}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="MysteryShopPanel/bg/niuImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,-83},{0,132},{0,326},{0,623}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/closeBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,945},{0,156},{0,984},{0,195}}" />
+                <Property Name="Image" Value="set:mysteryShop image:close" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/box0Btn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,209},{0,129},{0,318},{0,234}}" />
+                <Property Name="Image" Value="set:mysteryShop image:box0" />
+                <Property Name="Tooltip" Value="40003" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+                <Window Name="MysteryShopPanel/bg/box0Btn/boxTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,66},{0,109},{0,85}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="已领取" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFFea00" />
+                    <Property Name="Tooltip" Value="40003" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="MysteryShopPanel/bg/box1Btn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,364},{0,125},{0,473},{0,230}}" />
+                <Property Name="Image" Value="set:mysteryShop image:box1" />
+                <Property Name="Tooltip" Value="40004" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+                <Window Name="MysteryShopPanel/bg/box1Btn/boxTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,71},{0,109},{0,90}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="已领取" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFFea00" />
+                    <Property Name="Tooltip" Value="40004" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="MysteryShopPanel/bg/box2Btn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,562},{0,122},{0,671},{0,227}}" />
+                <Property Name="Image" Value="set:mysteryShop image:box2" />
+                <Property Name="Tooltip" Value="40005" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+                <Window Name="MysteryShopPanel/bg/box2Btn/boxTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,74},{0,109},{0,93}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="已领取" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFFea00" />
+                    <Property Name="Tooltip" Value="40005" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="MysteryShopPanel/bg/box3Btn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,762},{0,109},{0,871},{0,214}}" />
+                <Property Name="Image" Value="set:mysteryShop image:box3" />
+                <Property Name="Tooltip" Value="40006" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+                <Window Name="MysteryShopPanel/bg/box3Btn/boxTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,86},{0,109},{0,105}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="已领取" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFFea00" />
+                    <Property Name="Tooltip" Value="40006" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="MysteryShopPanel/bg/list" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,200},{0,237},{0,884},{0,542}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/refreshBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,337},{0,558},{0,500},{0,598}}" />
+                <Window Name="MysteryShopPanel/bg/refreshBtn/refreshYuanBaoTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,4},{0,12},{0,36},{0,28}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFfea00" />
+                    <Property Name="HorzTextFormatting" Value="RightAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="MysteryShopPanel/bg/refreshBtn/refreshYuanBaoImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,36},{0,13},{0,57},{0,28}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="MysteryShopPanel/bg/refreshBtn/refreshImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,83},{0,8},{0,129},{0,31}}" />
+                    <Property Name="Image" Value="set:mysteryShop image:refresh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="MysteryShopPanel/bg/senioRefreshBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,552},{0,558},{0,715},{0,598}}" />
+                <Window Name="MysteryShopPanel/bg/senioRefreshBtn/senioRefreshYuanBaoTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,4},{0,12},{0,36},{0,28}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFfea00" />
+                    <Property Name="HorzTextFormatting" Value="RightAligned" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="MysteryShopPanel/bg/senioRefreshBtn/senioRefreshYuanBaoImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,36},{0,13},{0,57},{0,28}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="MysteryShopPanel/bg/senioRefreshBtn/senioRefreshImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,62},{0,9},{0,155},{0,32}}" />
+                    <Property Name="Image" Value="set:mysteryShop image:senioRefresh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="MysteryShopPanel/bg/timeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,233},{0,602},{0,280},{0,622}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF0000" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/refreshTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,339},{0,601},{0,519},{0,621}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="每日0点后清空进度值" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/refresh1Txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,583},{0,602},{0,836},{0,622}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="进度满时刷出的1折商品只能购买一个" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/progressBar$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,201},{0,216},{0,876},{0,224}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="LeftImage" Value="set:mysteryShop image:left" />
+                <Property Name="LeftOffset" Value="11" />
+                <Property Name="RightImage" Value="set:mysteryShop image:right" />
+                <Property Name="CenterImage" Value="set:mysteryShop image:center" />
+                <Property Name="RightOffset" Value="8" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/line0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,268},{0,216},{0,270},{0,224}}" />
+                <Property Name="Image" Value="set:mysteryShop image:line" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/line1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,335},{0,216},{0,337},{0,224}}" />
+                <Property Name="Image" Value="set:mysteryShop image:line" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/line2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,403},{0,216},{0,405},{0,224}}" />
+                <Property Name="Image" Value="set:mysteryShop image:line" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/line3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,470},{0,216},{0,472},{0,224}}" />
+                <Property Name="Image" Value="set:mysteryShop image:line" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/line4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,606},{0,216},{0,608},{0,224}}" />
+                <Property Name="Image" Value="set:mysteryShop image:line" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/line5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,673},{0,216},{0,675},{0,224}}" />
+                <Property Name="Image" Value="set:mysteryShop image:line" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/line6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,741},{0,216},{0,743},{0,224}}" />
+                <Property Name="Image" Value="set:mysteryShop image:line" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/line7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,808},{0,216},{0,810},{0,224}}" />
+                <Property Name="Image" Value="set:mysteryShop image:line" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/progressBarTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,203},{0,212},{0,877},{0,228}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/titleImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,534},{0,44},{0,640},{0,104}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/yizheimg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,210},{0,178},{0,406},{0,210}}" />
+                <Property Name="Image" Value="set:mysteryShop image:bcyizhe" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MysteryShopPanel/bg/listStar" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,420},{0,170},{0,893},{0,217}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="MysteryShopPanel/bg/listStar/star0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,2},{0,38},{0,39}}" />
+                    <Property Name="Image" Value="set:mysteryShop image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MysteryShopPanel/bg/listStar/star1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,39},{0,1},{0,76},{0,38}}" />
+                    <Property Name="Image" Value="set:mysteryShop image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MysteryShopPanel/bg/listStar/star2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,77},{0,1},{0,114},{0,38}}" />
+                    <Property Name="Image" Value="set:mysteryShop image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MysteryShopPanel/bg/listStar/star3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,114},{0,0},{0,151},{0,37}}" />
+                    <Property Name="Image" Value="set:mysteryShop image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MysteryShopPanel/bg/listStar/star4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,151},{0,1},{0,188},{0,38}}" />
+                    <Property Name="Image" Value="set:mysteryShop image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MysteryShopPanel/bg/listStar/star5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,188},{0,0},{0,225},{0,37}}" />
+                    <Property Name="Image" Value="set:mysteryShop image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MysteryShopPanel/bg/listStar/star6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,225},{0,0},{0,262},{0,37}}" />
+                    <Property Name="Image" Value="set:mysteryShop image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MysteryShopPanel/bg/listStar/star7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,262},{0,0},{0,299},{0,37}}" />
+                    <Property Name="Image" Value="set:mysteryShop image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MysteryShopPanel/bg/listStar/star8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,299},{0,0},{0,336},{0,37}}" />
+                    <Property Name="Image" Value="set:mysteryShop image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MysteryShopPanel/bg/listStar/star9" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,336},{0,1},{0,373},{0,38}}" />
+                    <Property Name="Image" Value="set:mysteryShop image:star" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

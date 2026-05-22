@@ -1,0 +1,783 @@
+<GUILayout>
+    <Window Name="CastleLandPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1013},{0,534}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CastleLandPage/sp" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1013},{0,534}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CastleLandPage/sp/bg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,1013},{0,533}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/timeBgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,8},{0,509},{0,249},{0,529}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Window Name="CastleLandPage/sp/timeBgImg/desc2Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,40},{0,0},{0,128},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="挑战冷却时间：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CastleLandPage/sp/timeBgImg/challengeCoolingTime" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,128},{0,0},{0,163},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="09:00" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CastleLandPage/sp/timeBgImg/challengeCoolingTimeBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,167},{0,-1},{0,189},{0,21}}" />
+                    <Property Name="HoverImage" Value="set:mainUI1 image:moreHover" />
+                    <Property Name="NormalImage" Value="set:mainUI1 image:moreNormal" />
+                    <Property Name="PushedImage" Value="set:mainUI1 image:morePushed" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                </Window>
+            </Window>
+            <Window Name="CastleLandPage/sp/d3view" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,460},{0,219},{0,469}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="CastleLandPage/sp/challengeBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,465},{0,146},{0,505}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Window Name="CastleLandPage/sp/challengeBtn/challengeImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,146},{0,40}}" />
+                    <Property Name="Image" Value="set:castle image:challenge" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="CastleLandPage/sp/linkBtn$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,500},{0,185},{0,520}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/txt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,19},{0,402},{0,237},{0,494}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/fightNumSp" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,36},{0,125},{0,208},{0,166}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/line0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,99},{0,32},{0,163},{0,38}}" />
+                <Property Name="Image" Value="set:castle image:blueLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/line1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,210},{0,32},{0,274},{0,38}}" />
+                <Property Name="Image" Value="set:castle image:blueLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/line2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,318},{0,32},{0,382},{0,38}}" />
+                <Property Name="Image" Value="set:castle image:blueLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/line3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,426},{0,32},{0,490},{0,38}}" />
+                <Property Name="Image" Value="set:castle image:blueLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/line4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,535},{0,32},{0,599},{0,38}}" />
+                <Property Name="Image" Value="set:castle image:blueLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/line5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,645},{0,32},{0,709},{0,38}}" />
+                <Property Name="Image" Value="set:castle image:blueLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/line6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,756},{0,32},{0,820},{0,38}}" />
+                <Property Name="Image" Value="set:castle image:blueLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/line7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,866},{0,32},{0,930},{0,38}}" />
+                <Property Name="Image" Value="set:castle image:blueLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/datTxt0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,53},{0,26},{0,97},{0,42}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="一重天" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/datTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,165},{0,27},{0,209},{0,43}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="二重天" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/datTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,277},{0,27},{0,321},{0,43}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="三重天" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="HorzTextFormatting" Value="LeftAlignedCentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/datTxt3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,383},{0,26},{0,427},{0,42}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="四重天" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/datTxt4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,492},{0,26},{0,536},{0,42}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="五重天" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/datTxt5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,600},{0,26},{0,644},{0,42}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="六重天" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/datTxt6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,710},{0,26},{0,754},{0,42}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="七重天" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/datTxt7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,821},{0,26},{0,865},{0,42}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="八重天" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/datTxt8" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,933},{0,26},{0,977},{0,42}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="九重天" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/addPro6$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,36},{0,305},{0,141},{0,324}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="sdsdsd" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/curAddProWin5" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,284},{0,229},{0,305}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CastleLandPage/sp/curAddProWin5/curAddPro5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,16},{0,1},{0,87},{0,22}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CastleLandPage/sp/curAddProWin5/arrowImg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,1},{0,14},{0,20}}" />
+                    <Property Name="Image" Value="set:skins image:arrowUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CastleLandPage/sp/addPro4$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,37},{0,264},{0,142},{0,283}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="sdsdsd" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/curAddProWin6" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,305},{0,229},{0,326}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CastleLandPage/sp/curAddProWin6/curAddPro6" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,16},{0,1},{0,87},{0,22}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CastleLandPage/sp/curAddProWin6/arrowImg6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,1},{0,14},{0,20}}" />
+                    <Property Name="Image" Value="set:skins image:arrowUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CastleLandPage/sp/curAddProWin12" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,221},{0,229},{0,242}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CastleLandPage/sp/curAddProWin12/curAddPro12" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,16},{0,1},{0,87},{0,22}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CastleLandPage/sp/curAddProWin12/arrowImg12" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,1},{0,14},{0,20}}" />
+                    <Property Name="Image" Value="set:skins image:arrowUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CastleLandPage/sp/addPro7$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,36},{0,325},{0,141},{0,344}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="sdsdsd" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/curAddProWin7" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,325},{0,229},{0,346}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CastleLandPage/sp/curAddProWin7/curAddPro7" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,16},{0,1},{0,87},{0,22}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CastleLandPage/sp/curAddProWin7/arrowImg7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,1},{0,14},{0,20}}" />
+                    <Property Name="Image" Value="set:skins image:arrowUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CastleLandPage/sp/addPro5$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,37},{0,284},{0,142},{0,303}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="sdsdsd" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/curAddProWin3" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,242},{0,229},{0,263}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CastleLandPage/sp/curAddProWin3/curAddPro3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,16},{0,1},{0,87},{0,22}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CastleLandPage/sp/curAddProWin3/arrowImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,1},{0,14},{0,20}}" />
+                    <Property Name="Image" Value="set:skins image:arrowUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CastleLandPage/sp/addPro3$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,36},{0,243},{0,141},{0,262}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="sdsdsd" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/addPro12$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,36},{0,222},{0,141},{0,241}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="sdsdsd" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/curAddProWin4" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,263},{0,229},{0,284}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CastleLandPage/sp/curAddProWin4/curAddPro4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,16},{0,1},{0,87},{0,22}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CastleLandPage/sp/curAddProWin4/arrowImg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,1},{0,14},{0,20}}" />
+                    <Property Name="Image" Value="set:skins image:arrowUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CastleLandPage/sp/point5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,24},{0,309},{0,32},{0,317}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/point3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,24},{0,267},{0,32},{0,275}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/point4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,24},{0,289},{0,32},{0,297}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/point2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,24},{0,246},{0,32},{0,254}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/point" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,24},{0,226},{0,32},{0,234}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/point6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,24},{0,330},{0,32},{0,338}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/titleImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,358},{0,61},{0,613},{0,114}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleLandPage/sp/effectSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,780},{0,65},{0,985},{0,511}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CastleLandPage/sp/effectSp/effectImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CastleLandPage/sp/lineSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,779},{0,66},{0,984},{0,512}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="CastleLandPage/sp/circleSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,779},{0,66},{0,984},{0,512}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CastleLandPage/sp/circleSp/cSp0" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="CastleLandPage/sp/circleSp/cSp0/circleImg0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                        <Property Name="Image" Value="set:castle image:circleTop" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="CastleLandPage/sp/circleSp/cSp0/numImg0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-3},{0,29},{0,27}}" />
+                        <Property Name="Image" Value="set:castle image:gift" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="CastleLandPage/sp/circleSp/cSp6" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="CastleLandPage/sp/circleSp/cSp6/circleImg6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                        <Property Name="Image" Value="set:castle image:circleTop" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="CastleLandPage/sp/circleSp/cSp6/numImg6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-3},{0,29},{0,27}}" />
+                        <Property Name="Image" Value="set:castle image:gift" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="CastleLandPage/sp/circleSp/cSp3" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="CastleLandPage/sp/circleSp/cSp3/numImg3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-3},{0,29},{0,27}}" />
+                        <Property Name="Image" Value="set:castle image:gift" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="CastleLandPage/sp/circleSp/cSp3/circleImg3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                        <Property Name="Image" Value="set:castle image:circleTop" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CastleLandPage/sp/circleSp/cSp7" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="CastleLandPage/sp/circleSp/cSp7/numImg7" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-3},{0,29},{0,27}}" />
+                        <Property Name="Image" Value="set:castle image:gift" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="CastleLandPage/sp/circleSp/cSp7/circleImg7" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                        <Property Name="Image" Value="set:castle image:circleTop" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CastleLandPage/sp/circleSp/cSp1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="CastleLandPage/sp/circleSp/cSp1/circleImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                        <Property Name="Image" Value="set:castle image:circleTop" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="CastleLandPage/sp/circleSp/cSp1/numImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-3},{0,29},{0,27}}" />
+                        <Property Name="Image" Value="set:castle image:gift" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="CastleLandPage/sp/circleSp/cSp5" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="CastleLandPage/sp/circleSp/cSp5/numImg5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-3},{0,29},{0,27}}" />
+                        <Property Name="Image" Value="set:castle image:gift" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="CastleLandPage/sp/circleSp/cSp5/circleImg5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                        <Property Name="Image" Value="set:castle image:circleTop" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CastleLandPage/sp/circleSp/cSp8" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="CastleLandPage/sp/circleSp/cSp8/numImg8" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-3},{0,29},{0,27}}" />
+                        <Property Name="Image" Value="set:castle image:gift" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="CastleLandPage/sp/circleSp/cSp8/circleImg8" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                        <Property Name="Image" Value="set:castle image:circleTop" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CastleLandPage/sp/circleSp/cSp4" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="CastleLandPage/sp/circleSp/cSp4/numImg4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-3},{0,29},{0,27}}" />
+                        <Property Name="Image" Value="set:castle image:gift" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="CastleLandPage/sp/circleSp/cSp4/circleImg4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                        <Property Name="Image" Value="set:castle image:circleTop" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CastleLandPage/sp/circleSp/cSp2" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="CastleLandPage/sp/circleSp/cSp2/numImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-3},{0,29},{0,27}}" />
+                        <Property Name="Image" Value="set:castle image:gift" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="CastleLandPage/sp/circleSp/cSp2/circleImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,61},{0,61}}" />
+                        <Property Name="Image" Value="set:castle image:circleTop" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="CastleLandPage/sp/rewardSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,743},{0,329},{0,862},{0,394}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="CastleLandPage/sp/rewardSp/biasLine" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,47},{0,23},{0,120},{0,39}}" />
+                    <Property Name="Image" Value="set:castle image:line" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="CastleLandPage/sp/rewardSp/gridBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="CastleLandPage/sp/rewardSp/acrossRewardTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,102},{0,21}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="通关奖励" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="CastleLandPage/sp/rewardSp/rewardTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,50},{0,31},{0,117},{0,65}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="CastleLandPage/sp/curRewardSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,743},{0,329},{0,862},{0,394}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="CastleLandPage/sp/curRewardSp/biasLine1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,47},{0,23},{0,120},{0,39}}" />
+                    <Property Name="Image" Value="set:castle image:line" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="CastleLandPage/sp/curRewardSp/gridBg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="CastleLandPage/sp/curRewardSp/acrossRewardTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,102},{0,21}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="通关奖励" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFcc43ff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="CastleLandPage/sp/curRewardSp/rewardTxt1$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,50},{0,31},{0,117},{0,65}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,61 @@
+<GUILayout>
+    <Window Name="AlertWindow" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,360},{0,183}}" />
+        <Property Name="TitlebarFont" Value="songti_18_strengh" />
+        <Property Name="CaptionColour" Value="FFFFFFFF" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="Font" Value="songti_18_strengh" />
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="AlertWindow/Image" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,100},{0,100}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Type="GuiLook/RichTextBox" Name="AlertWindow/RichContent" >
+            <Property Name="Font" Value="songti_12" />
+            <Property Name="LineSpace" Value="8" />
+            <Property Name="HorzFormatting" Value="WordWrapCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,8},{0,254},{0,107}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+         <Window Type="GuiLook/StaticTextBox" Name="AlertWindow/Content" >
+            <Property Name="LineSpace" Value="8" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,-18},{0,303},{0,81}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="VerticalAlignment" Value="Centre" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Name="AlertWindow/CancelBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,202},{0,114},{0,289},{0,137}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="取消" />
+        </Window>
+        <Window Name="AlertWindow/ConfirmBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,70},{0,114},{0,157},{0,137}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="确定" />
+        </Window>
+        <Window Name="AlertWindow/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,110},{0,346},{0,111}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

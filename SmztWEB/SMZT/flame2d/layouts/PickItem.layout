@@ -1,0 +1,41 @@
+<GUILayout>
+    <Window Name="PickItem" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,219},{0,289}}" />
+        <Property Name="Text" Value="物品" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="PickItem/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,7},{0,200},{0,205}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="PickItem/bg/list" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,199},{0,196}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="PickItem/sureBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,45},{0,214},{0,159},{0,237}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="确定" />
+        </Window>
+        <Window Name="PickItem/line" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,246},{0,201},{0,247}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:Line2Left" />
+            <Property Name="LeftOffset" Value="93" />
+            <Property Name="RightImage" Value="set:skin image:Line2Right" />
+            <Property Name="CenterImage" Value="set:skin image:Line1Center2" />
+            <Property Name="RightOffset" Value="93" />
+            <Property Name="ClippedByParent" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

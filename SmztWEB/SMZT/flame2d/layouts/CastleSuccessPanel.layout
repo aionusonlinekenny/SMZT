@@ -1,0 +1,126 @@
+<GUILayout>
+    <Window Name="CastleSuccessPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{0,697},{0,339}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CastleSuccessPanel/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,51},{0,672},{0,312}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="CastleSuccessPanel/bgImg/roleBgEffect" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,261},{0,260}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="CastleSuccessPanel/bgImg/roleView" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,215},{0,211},{0,242}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="CastleSuccessPanel/sp2" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,261},{0,0},{0,695},{0,339}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CastleSuccessPanel/sp2/successTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,54},{0,240},{0,92}}" />
+                <Property Name="Font" Value="songti_24_strengh" />
+                <Property Name="Text" Value="恭喜您成功突破" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleSuccessPanel/sp2/successTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,244},{0,54},{0,388},{0,92}}" />
+                <Property Name="Font" Value="songti_24_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleSuccessPanel/sp2/fightBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,46},{0,101},{0,362},{0,187}}" />
+                <Property Name="Image" Value="set:CastleFall image:fight" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CastleSuccessPanel/sp2/fightBg/fightValue" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,98},{0,31},{0,198},{0,56}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="CastleSuccessPanel/sp2/fightBg/upFightTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,215},{0,36},{0,281},{0,56}}" />
+                    <Property Name="Font" Value="songti_16_strengh" />
+                    <Property Name="Text" Value="00000" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CastleSuccessPanel/sp2/fightBg/upFightImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,200},{0,38},{0,214},{0,54}}" />
+                    <Property Name="Image" Value="set:skin image:upArrow" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CastleSuccessPanel/sp2/StaticImage2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,29},{0,207},{0,269},{0,225}}" />
+                <Property Name="Image" Value="set:CastleFall image:activation" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CastleSuccessPanel/sp2/knowBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,164},{0,278},{0,247},{0,302}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="朕知道了" />
+            </Window>
+            <Window Name="CastleSuccessPanel/sp2/countdownTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,280},{0,278},{0,404},{0,303}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CastleSuccessPanel/sp2/faceBg0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,119},{0,188},{0,177},{0,246}}" />
+                <Property Name="Image" Value="set:mainUI1 image:faceBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CastleSuccessPanel/sp2/faceBg0/face0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,57},{0,57}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CastleSuccessPanel/sp2/faceBg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,290},{0,187},{0,348},{0,245}}" />
+                <Property Name="Image" Value="set:mainUI1 image:faceBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CastleSuccessPanel/sp2/faceBg1/face1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,57},{0,57}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

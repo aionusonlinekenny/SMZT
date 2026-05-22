@@ -1,0 +1,499 @@
+<GUILayout>
+    <Window Name="SkillResistancePage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,569},{0,414}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SkillResistancePage/unOpenSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,569},{0,415}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Window Name="SkillResistancePage/unOpenSp/kUpOpenBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,569},{0,415}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillResistancePage/unOpenSp/kUpOpenBg/openImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,568},{0,413}}" />
+                    <Property Name="Image" Value="set:skillBg image:bg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillResistancePage/unOpenSp/kUpOpenBg/openTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,359},{0,331},{0,551},{0,374}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="开启条件:70级" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="SkillResistancePage/openSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,569},{0,415}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SkillResistancePage/openSp/kOpenBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,385},{0,415}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillResistancePage/openSp/kOpenBg/list" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,28},{0,20},{0,347},{0,393}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+            <Window Name="SkillResistancePage/openSp/totalSp" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,384},{0,0},{0,569},{0,415}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SkillResistancePage/openSp/totalSp/totalTitleImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,184},{0,30}}" />
+                    <Property Name="Image" Value="set:skill image:sumIntoTitleBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/attrSp0" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,37},{0,167},{0,58}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp0/attrTitleTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,21}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="昏迷抗性：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp0/attrBg0" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,167},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp0/attrBg0/attrTxt0" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,60},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="16%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFe1feff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp0/attrBg0/attrAddTxt0" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,102},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+265" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/attrSp1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,62},{0,167},{0,83}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp1/attrTitleTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,21}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="定身抗性：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp1/attrBg1" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,167},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp1/attrBg1/attrTxt1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,60},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="16%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFe1feff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp1/attrBg1/attrAddTxt1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,102},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+265" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/attrSp2" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,87},{0,167},{0,108}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp2/attrTitleTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,21}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="击晕抗性：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp2/attrBg2" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,167},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp2/attrBg2/attrTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,60},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="16%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFe1feff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp2/attrBg2/attrAddTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,102},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+265" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/attrSp3" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,112},{0,167},{0,133}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp3/attrTitleTxt3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,21}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="封技抗性：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp3/attrBg3" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,167},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp3/attrBg3/attrTxt3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,60},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="16%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFe1feff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp3/attrBg3/attrAddTxt3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,102},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+265" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/attrSp4" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,137},{0,167},{0,158}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp4/attrTitleTxt4" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,21}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="消怒抗性：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp4/attrBg4" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,167},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp4/attrBg4/attrTxt4" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,60},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="16%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFe1feff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp4/attrBg4/attrAddTxt4" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,102},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+265" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/attrSp5" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,162},{0,167},{0,183}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp5/attrTitleTxt5" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,21}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="禁跳抗性：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp5/attrBg5" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,167},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp5/attrBg5/attrTxt5" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,60},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="16%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFe1feff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp5/attrBg5/attrAddTxt5" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,102},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+265" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/attrSp6" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,187},{0,167},{0,208}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp6/attrTitleTxt6" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,21}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="禁药抗性：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp6/attrBg6" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,167},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp6/attrBg6/attrTxt6" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,60},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="16%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFe1feff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp6/attrBg6/attrAddTxt6" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,102},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+265" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/attrSp7" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,212},{0,167},{0,233}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp7/attrTitleTxt7" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,21}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="昏迷抗性：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp7/attrBg7" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,167},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp7/attrBg7/attrTxt7" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,60},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="16%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFe1feff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp7/attrBg7/attrAddTxt7" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,102},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+265" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/attrSp8" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,237},{0,167},{0,258}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp8/attrTitleTxt8" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,21}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="昏迷抗性：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp8/attrBg8" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,167},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp8/attrBg8/attrTxt8" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,60},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="16%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFe1feff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp8/attrBg8/attrAddTxt8" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,102},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+265" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/attrSp9" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,262},{0,167},{0,283}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp9/attrTitleTxt9" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,21}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="昏迷抗性：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp9/attrBg9" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,167},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp9/attrBg9/attrTxt9" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,60},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="16%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFe1feff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp9/attrBg9/attrAddTxt9" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,102},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+265" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/attrSp10" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,287},{0,167},{0,308}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp10/attrTitleTxt10" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,21}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="昏迷抗性：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp10/attrBg10" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,167},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp10/attrBg10/attrTxt10" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,60},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="16%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFe1feff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp10/attrBg10/attrAddTxt10" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,102},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+265" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/attrSp11" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,312},{0,167},{0,333}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp11/attrTitleTxt11" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,21}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="昏迷抗性：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp11/attrBg11" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,167},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp11/attrBg11/attrTxt11" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,60},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="16%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFe1feff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp11/attrBg11/attrAddTxt11" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,102},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+265" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/attrSp12" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,337},{0,167},{0,358}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp12/attrTitleTxt12" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,64},{0,21}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="昏迷抗性：" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFfef9d0" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="SkillResistancePage/openSp/totalSp/attrSp12/attrBg12" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,0},{0,167},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp12/attrBg12/attrTxt12" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,60},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="16%" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFe1feff" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="SkillResistancePage/openSp/totalSp/attrSp12/attrBg12/attrAddTxt12" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,102},{0,20}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="+265" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/fightTitleImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,12},{0,374},{0,76},{0,396}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:fightText" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="SkillResistancePage/openSp/totalSp/fightImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,76},{0,374},{0,175},{0,396}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

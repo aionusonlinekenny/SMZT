@@ -1,0 +1,119 @@
+<GUILayout>
+    <Window Name="RoleDiePanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,479},{0,371}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="RoleDiePanel/grayBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,479},{0,371}}" />
+            <Property Name="Alpha" Value="0.65" />
+            <Property Name="Image" Value="set:skins image:black" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="RoleDiePanel/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,479},{0,371}}" />
+            <Property Name="Image" Value="set:relive image:reliveBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="RoleDiePanel/bg/timeImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0,208},{0,108},{0,248}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="RoleDiePanel/bg/grid" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,283},{0,205},{0,333},{0,255}}" />
+                <Property Name="Image" Value="set:skin image:RedGrid" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="RoleDiePanel/bg/demandTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,352},{0,204},{0,422},{0,230}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="2/19" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFad00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="RoleDiePanel/bg/checkbox" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,350},{0,242},{0,423},{0,258}}" />
+                <Property Name="Text" Value="自动购买" />
+            </Window>
+            <Window Name="RoleDiePanel/bg/resurgencePointBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,44},{0,-56},{0,232},{0,-16}}" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+                <Window Name="RoleDiePanel/bg/resurgencePointBtn/resurgencePointImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,133},{0,40}}" />
+                    <Property Name="Image" Value="set:relive image:relivePoint" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="RoleDiePanel/bg/resurgencePointBtn/resurgencePointTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,134},{0,0},{0,179},{0,40}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="(10)" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFaaaaaa" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="RoleDiePanel/bg/autochthonousResurgenceBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,262},{0,-56},{0,450},{0,-16}}" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+                <Window Name="RoleDiePanel/bg/autochthonousResurgenceBtn/autochthonousResurgenceImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,124},{0,40}}" />
+                    <Property Name="Image" Value="set:relive image:reliveSitu" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="RoleDiePanel/bg/autochthonousResurgenceBtn/autochthonousTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,134},{0,0},{0,179},{0,40}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="(10)" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFaaaaaa" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="RoleDiePanel/bg/playerTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,40},{0,344},{0,442},{0,362}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="RoleDiePanel/bg/timeImgTitle" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,116},{0,207},{0,242},{0,248}}" />
+                <Property Name="Image" Value="set:relive image:hcTitle" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="RoleDiePanel/bg/checkbox2" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,74},{0,253},{0,240},{0,269}}" />
+                <Property Name="Text" Value="回城后继续前往野外挂机" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

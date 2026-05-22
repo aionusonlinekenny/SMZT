@@ -1,0 +1,543 @@
+<GUILayout>
+    <Window Name="MountGetAdvice" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,304},{0,568}}" />
+        <Property Name="Text" Value="物品获得建议" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="MountGetAdvice/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,525},{0,285},{0,526}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="MountGetAdvice/line4" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,-3},{0,391},{0,289},{0,395}}" />
+            <Property Name="Image" Value="set:lackProps image:line" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="MountGetAdvice/CommonBg2" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,-3},{0,-1},{0,289},{0,391}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="MountGetAdvice/fromBg2" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-3},{0,177},{0,289},{0,206}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Selected" Value="true" />
+            <Property Name="HoverImage" Value="set:lackProps image:radioHover" />
+            <Property Name="SelectedImage" Value="set:lackProps image:radioHover" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="UnselectedImage" Value="set:lackProps image:radioNormal" />
+            <Window Name="MountGetAdvice/fromBg2/titleImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,0},{0,199},{0,29}}" />
+                <Property Name="Image" Value="set:lackProps image:name2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="MountGetAdvice/fromBg2/downImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,258},{0,0},{0,287},{0,29}}" />
+                <Property Name="Image" Value="set:lackProps image:rightArrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="MountGetAdvice/fromBg3" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-3},{0,361},{0,289},{0,390}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HoverImage" Value="set:lackProps image:radioHover" />
+            <Property Name="SelectedImage" Value="set:lackProps image:radioHover" />
+            <Property Name="UnselectedImage" Value="set:lackProps image:radioNormal" />
+            <Window Name="MountGetAdvice/fromBg3/titleImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,0},{0,199},{0,29}}" />
+                <Property Name="Image" Value="set:lackProps image:name3" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="MountGetAdvice/fromBg3/downImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,258},{0,0},{0,287},{0,29}}" />
+                <Property Name="Image" Value="set:lackProps image:leftArrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="MountGetAdvice/bg1" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,-3},{0,28},{0,289},{0,177}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Window Name="MountGetAdvice/bg1/gridBg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,50},{0,52},{0,98},{0,100}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MountGetAdvice/bg1/nameTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,12},{0,200},{0,32}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="坐骑进阶丹" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MountGetAdvice/bg1/line2" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,35},{0,285},{0,36}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="MountGetAdvice/bg1/radioBtn11" Type="GuiLook/RadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,57},{0,130},{0,71}}" />
+                <Property Name="Selected" Value="true" />
+            </Window>
+            <Window Name="MountGetAdvice/bg1/radioBtn12" Type="GuiLook/RadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,81},{0,130},{0,95}}" />
+            </Window>
+            <Window Name="MountGetAdvice/bg1/yuanBaoImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,224},{0,54},{0,243},{0,73}}" />
+                <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MountGetAdvice/bg1/bangdingYuanbao1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,224},{0,79},{0,243},{0,98}}" />
+                <Property Name="Image" Value="set:mainUI1 image:yuanbaoLock" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="MountGetAdvice/bg1/yuanbaoTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,136},{0,53},{0,182},{0,73}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="售价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffFFFF" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MountGetAdvice/bg1/bangdingyuanbaoTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,136},{0,78},{0,189},{0,98}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="售价：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffFFFF" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MountGetAdvice/bg1/buyBtn1" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,192},{0,112},{0,245},{0,135}}" />
+                <Property Name="Text" Value="购买" />
+            </Window>
+            <Window Name="MountGetAdvice/bg1/yuanbaoPriceTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,175},{0,53},{0,221},{0,73}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="售价" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MountGetAdvice/bg1/bangDingYuanbaoPriceTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,175},{0,78},{0,221},{0,98}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="售价" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MountGetAdvice/bg1/addBtn1" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,113},{0,141},{0,134}}" />
+                <Property Name="Image" Value="set:skin image:addBtn" />
+            </Window>
+            <Window Name="MountGetAdvice/bg1/reductionBtn1" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,41},{0,113},{0,62},{0,134}}" />
+                <Property Name="Image" Value="set:skin image:reductionBtn" />
+            </Window>
+            <Window Name="MountGetAdvice/bg1/inputNumPeoBg1" Type="GuiLook/inputBg">
+                <Property Name="UnifiedAreaRect" Value="{{0,63},{0,114},{0,119},{0,134}}" />
+                <Property Name="Text" Value="50" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="MountGetAdvice/bg1/inputNumPeoBg1/inputNumPeoTxt1" Type="GuiLook/Editbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,56},{0,20}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="MountGetAdvice/bg1/maxBtn1" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,143},{0,113},{0,184},{0,134}}" />
+                <Property Name="Image" Value="set:skin image:maxBtn" />
+            </Window>
+        </Window>
+        <Window Name="MountGetAdvice/bg3" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,398},{0,286},{0,521}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Window Name="MountGetAdvice/bg3/curMoneyTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,11},{0,79},{0,31}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="您当前拥有:" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffFFFF" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="MountGetAdvice/bg3/inputNumPeoBg3" Type="GuiLook/inputBg">
+                <Property Name="UnifiedAreaRect" Value="{{0,82},{0,11},{0,179},{0,31}}" />
+                <Property Name="Text" Value="50" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="MountGetAdvice/bg3/inputNumPeoBg3/yuanBaoImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,19},{0,19}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MountGetAdvice/bg3/inputNumPeoBg3/yuanbaoTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,20},{0,1},{0,95},{0,19}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="售价" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFffFFFF" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="MountGetAdvice/bg3/inputNumPeoBg4" Type="GuiLook/inputBg">
+                <Property Name="UnifiedAreaRect" Value="{{0,181},{0,11},{0,278},{0,31}}" />
+                <Property Name="Text" Value="50" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="MountGetAdvice/bg3/inputNumPeoBg4/bangdingYuanbao3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,19},{0,19}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbaoLock" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MountGetAdvice/bg3/inputNumPeoBg4/bangdingYuanbaoTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,20},{0,1},{0,95},{0,19}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="售价" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFffFFFF" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="MountGetAdvice/bg3/topUpBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,73},{0,46},{0,215},{0,86}}" />
+                <Window Name="MountGetAdvice/bg3/topUpBtn/topUpImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,142},{0,40}}" />
+                    <Property Name="Image" Value="set:lackProps image:topUp" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="MountGetAdvice/bg3/psTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,96},{0,240},{0,114}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="Ps.现充值活动也进行中，让你惊喜连连" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="MountGetAdvice/fromBg1" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,-3},{0,-1},{0,289},{0,28}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HoverImage" Value="set:lackProps image:radioHover" />
+            <Property Name="NormalImage" Value="set:lackProps image:radioNormal" />
+            <Property Name="PushedImage" Value="set:lackProps image:radioNormal" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Window Name="MountGetAdvice/fromBg1/titleImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,0},{0,199},{0,29}}" />
+                <Property Name="Image" Value="set:lackProps image:name1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="MountGetAdvice/fromBg1/downImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,258},{0,0},{0,287},{0,29}}" />
+                <Property Name="Image" Value="set:lackProps image:leftArrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="MountGetAdvice/bsSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,-3},{0,207},{0,289},{0,362}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="MountGetAdvice/bsSp/bg2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,292},{0,155}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="MountGetAdvice/bsSp/bg2/wu" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,292},{0,155}}" />
+                    <Property Name="Image" Value="set:lackProps image:kuangkuang" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="MountGetAdvice/bsSp/bg2/bg21" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,292},{0,155}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="ClippedByParent" Value="false" />
+                    <Window Name="MountGetAdvice/bsSp/bg2/bg21/line3" Type="GuiLook/Line">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,35},{0,285},{0,36}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    </Window>
+                    <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,293},{0,155}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="Visible" Value="false" />
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/bangdingyuanbaoTxt3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,117},{0,94},{0,157},{0,114}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="限购：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFffFFFF" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/reductionBtn2" Type="GuiLook/DefaultImageButton">
+                            <Property Name="UnifiedAreaRect" Value="{{0,40},{0,124},{0,61},{0,145}}" />
+                            <Property Name="Image" Value="set:skin image:reductionBtn" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/yuanbaoTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,117},{0,44},{0,160},{0,64}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="售价：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFffFFFF" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/buyBtn2" Type="GlossySerpent/OrangeButton">
+                            <Property Name="UnifiedAreaRect" Value="{{0,191},{0,123},{0,244},{0,146}}" />
+                            <Property Name="Text" Value="购买" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/yuanBaoImg2" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,190},{0,44},{0,209},{0,63}}" />
+                            <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/maxBtn2" Type="GuiLook/DefaultImageButton">
+                            <Property Name="UnifiedAreaRect" Value="{{0,142},{0,124},{0,183},{0,145}}" />
+                            <Property Name="Image" Value="set:skin image:maxBtn" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/bangDingYuanbaoPriceTxt3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,155},{0,94},{0,201},{0,114}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="售价" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/inputNumPeoBg2" Type="GuiLook/inputBg">
+                            <Property Name="UnifiedAreaRect" Value="{{0,62},{0,125},{0,118},{0,145}}" />
+                            <Property Name="Text" Value="50" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/inputNumPeoBg2/inputNumPeoTxt2" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,56},{0,20}}" />
+                                <Property Name="Font" Value="" />
+                                <Property Name="Text" Value="1" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="HorizontalAlignment" Value="Centre" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/discountImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,203},{0,2},{0,291},{0,93}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/bangDingYuanbaoPriceTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,155},{0,69},{0,201},{0,89}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="售价" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/addBtn2" Type="GuiLook/DefaultImageButton">
+                            <Property Name="UnifiedAreaRect" Value="{{0,119},{0,124},{0,140},{0,145}}" />
+                            <Property Name="Image" Value="set:skin image:addBtn" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/yuanbaoPriceTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,155},{0,44},{0,201},{0,64}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="售价" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/bangdingyuanbaoTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,117},{0,69},{0,157},{0,89}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="剩余：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFffFFFF" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/buySp/gridBg2" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,40},{0,45},{0,106},{0,111}}" />
+                            <Property Name="Image" Value="set:lackProps image:yellowBg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="MountGetAdvice/bsSp/bg2/bg21/nameTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,12},{0,200},{0,32}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="坐骑进阶丹" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="MountGetAdvice/bsSp/bg2/bg21/openSp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,293},{0,155}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="Visible" Value="false" />
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/openSp/openBtn" Type="GlossySerpent/OrangeButton">
+                            <Property Name="UnifiedAreaRect" Value="{{0,120},{0,123},{0,173},{0,146}}" />
+                            <Property Name="Text" Value="开启" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/openSp/openTitleTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,48},{0,49},{0,204},{0,69}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="是否开启背包中的礼包" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorizontalAlignment" Value="Centre" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/openSp/openTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,48},{0,74},{0,204},{0,94}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="神奇秒杀礼盒*3" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFF7200" />
+                            <Property Name="HorizontalAlignment" Value="Centre" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/openSp/gridSmallBg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,54},{0,97},{0,102}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="MountGetAdvice/bsSp/bg2/bg21/firstTopUpSp" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,292},{0,155}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/firstTopUpSp/firstNameTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,8},{0,200},{0,32}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="超值首冲" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFffea00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="HorizontalAlignment" Value="Centre" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/firstTopUpSp/shuangBtn" Type="GlossySerpent/OrangeButton">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,123},{0,119},{0,146}}" />
+                            <Property Name="Text" Value="充点小钱爽一把" />
+                            <Property Name="HorizontalAlignment" Value="Centre" />
+                        </Window>
+                        <Window Name="MountGetAdvice/bsSp/bg2/bg21/firstTopUpSp/topUpIm" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,247},{0,91}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="VerticalAlignment" Value="Centre" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="HorizontalAlignment" Value="Centre" />
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="MountGetAdvice/bsSp/bg4" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,30},{0,292},{0,185}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Window Name="MountGetAdvice/bsSp/bg4/list" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,18},{0,292},{0,155}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="ClippedByParent" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

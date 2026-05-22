@@ -1,0 +1,41 @@
+<GUILayout>
+    <Window Name="CopyHallSweepPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,368},{0,355}}" />
+        <Property Name="Text" Value="扫荡成功" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="CopyHallSweepPanel/di" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,260},{0,350},{0,307}}" />
+            <Property Name="Image" Value="set:skin image:RenderBg2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="CopyHallSweepPanel/di/OrangeButton" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,83},{0,24}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="朕知道了" />
+                <Property Name="VerticalAlignment" Value="Centre" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+        </Window>
+        <Window Name="CopyHallSweepPanel/list" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,350},{0,258}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CopyHallSweepPanel/list/sList" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,350},{0,254}}" />
+                <Property Name="UnifiedMaxSize" Value="{{0,350},{0,254}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

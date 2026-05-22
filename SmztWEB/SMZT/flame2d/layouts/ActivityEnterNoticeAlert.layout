@@ -1,0 +1,50 @@
+<GUILayout>
+    <Window Name="ActivityEnterNoticeAlert" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,451},{0,214}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="ActivityEnterNoticeAlert/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,451},{0,214}}" />
+            <Property Name="Image" Value="set:activities image:bg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="ActivityEnterNoticeAlert/bg/titleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,233},{0,72},{0,344},{0,90}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="星空酒吧" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffe1feff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ActivityEnterNoticeAlert/bg/desc$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,233},{0,106},{0,436},{0,124}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="活动奖励：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ActivityEnterNoticeAlert/bg/goBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,262},{0,174},{0,374},{0,205}}" />
+                <Property Name="HoverImage" Value="set:skins image:BlueBtnHover" />
+                <Property Name="NormalImage" Value="set:skins image:BlueBtnNormal" />
+                <Property Name="PushedImage" Value="set:skins image:BlueBtnPushed" />
+                <Window Name="ActivityEnterNoticeAlert/bg/goBtn/goImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,112},{0,31}}" />
+                    <Property Name="Image" Value="set:activities image:go" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ActivityEnterNoticeAlert/bg/closeBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,350},{0,73},{0,365},{0,86}}" />
+                <Property Name="Image" Value="set:mainUI1 image:closeBtn" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

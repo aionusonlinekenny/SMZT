@@ -1,0 +1,38 @@
+<GUILayout>
+    <Window Name="BagSafeLockPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,492},{0,402}}" />
+        <Property Name="Text" Value="安全锁" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="BagSafeLockPanel/radioButton0" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,80},{0,28}}" />
+            <Property Name="Text" Value="启用" />
+        </Window>
+        <Window Name="BagSafeLockPanel/sine" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,359},{0,474},{0,360}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="BagSafeLockPanel/radioButton1" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,81},{0,4},{0,156},{0,28}}" />
+            <Property Name="Text" Value="修改密码" />
+        </Window>
+        <Window Name="BagSafeLockPanel/radioButton2" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,157},{0,4},{0,232},{0,28}}" />
+            <Property Name="Text" Value="找回密码" />
+        </Window>
+        <Window Name="BagSafeLockPanel/CommonBg3" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,29},{0,474},{0,354}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

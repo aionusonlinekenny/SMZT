@@ -1,0 +1,131 @@
+<GUILayout>
+    <Window Name="CrossServerBossPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,984},{0,571}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CrossServerBossPage/openSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,984},{0,571}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CrossServerBossPage/openSp/openImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,983},{0,570}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CrossServerBossPage/openSp/openImg/openBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,374},{0,495},{0,605},{0,547}}" />
+                    <Property Name="HoverImage" Value="set:crossServerBoss image:hover" />
+                    <Property Name="NormalImage" Value="set:crossServerBoss image:normal" />
+                    <Property Name="PushedImage" Value="set:crossServerBoss image:pushed" />
+                    <Window Name="CrossServerBossPage/openSp/openImg/openBtn/openBtnImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,52}}" />
+                        <Property Name="Image" Value="set:crossServerBoss image:open" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="CrossServerBossPage/openSp/openImg/ruleTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,295},{0,466},{0,685},{0,486}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CrossServerBossPage/openSp/openImg/rankBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,813},{0,11},{0,976},{0,95}}" />
+                    <Property Name="Image" Value="set:crossServerBoss image:rankRewardBtn" />
+                </Window>
+                <Window Name="CrossServerBossPage/openSp/openImg/d3dView0" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,464},{0,426},{0,514},{0,476}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="CrossServerBossPage/cancelSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,984},{0,571}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="Visible" Value="false" />
+            <Window Name="CrossServerBossPage/cancelSp/cancelImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,983},{0,570}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CrossServerBossPage/cancelSp/cancelImg/ruleTxt2$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,497},{0,546},{0,927},{0,566}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CrossServerBossPage/cancelSp/cancelImg/cancelBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,598},{0,483},{0,829},{0,535}}" />
+                    <Property Name="HoverImage" Value="set:crossServerBoss image:hover" />
+                    <Property Name="NormalImage" Value="set:crossServerBoss image:normal" />
+                    <Property Name="PushedImage" Value="set:crossServerBoss image:pushed" />
+                    <Window Name="CrossServerBossPage/cancelSp/cancelImg/cancelBtn/cancelBtnImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,52}}" />
+                        <Property Name="Image" Value="set:crossServerBoss image:cancel" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="CrossServerBossPage/cancelSp/cancelImg/ruleTxt1$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,524},{0,32},{0,914},{0,52}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CrossServerBossPage/cancelSp/cancelImg/list" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,29},{0,72},{0,437},{0,542}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="CrossServerBossPage/cancelSp/cancelImg/d3dView1" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,687},{0,395},{0,737},{0,445}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="CrossServerBossPage/cancelSp/cancelImg/stateImgBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,570},{0,392},{0,858},{0,487}}" />
+                    <Property Name="Image" Value="set:crossServerBoss image:fightDi" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="CrossServerBossPage/cancelSp/cancelImg/stateImgBg/timeImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,201},{0,24},{0,236},{0,66}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="CrossServerBossPage/cancelSp/cancelImg/stateImgBg/beganImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,70},{0,20},{0,199},{0,69}}" />
+                        <Property Name="Image" Value="set:crossServerBoss image:beganImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="CrossServerBossPage/cancelSp/cancelImg/stateImgBg/beganStartImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,42},{0,27},{0,192},{0,68}}" />
+                        <Property Name="Image" Value="set:crossServerBoss image:began" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

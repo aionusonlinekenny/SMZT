@@ -1,0 +1,128 @@
+<GUILayout>
+    <Window Name="SmartShieldPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,261},{0,355}}" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="SmartShieldPanel/titleImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,70},{0,-32},{0,171},{0,-5}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="SmartShieldPanel/CommonBg3" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,243},{0,310}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="SmartShieldPanel/CommonBg4" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,27},{0,198},{0,247}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:skins image:tipTop3" />
+            <Property Name="LeftImage" Value="set:skins image:tipLeft3" />
+            <Property Name="TopOffset" Value="9" />
+            <Property Name="LeftOffset" Value="9" />
+            <Property Name="RightImage" Value="set:skins image:tipRight3" />
+            <Property Name="BottomImage" Value="set:skins image:tipBottom3" />
+            <Property Name="CenterImage" Value="set:skins image:tipCenter3" />
+            <Property Name="RightOffset" Value="9" />
+            <Property Name="BottomOffset" Value="9" />
+            <Property Name="TopLeftImage" Value="set:skins image:tipLeftTop3" />
+            <Property Name="TopRightImage" Value="set:skins image:tipRightTop3" />
+            <Property Name="BottomLeftImage" Value="set:skins image:tipLeftBottom3" />
+            <Property Name="BottomRightImage" Value="set:skins image:tipRightBottom3" />
+            <Window Name="SmartShieldPanel/CommonBg4/Checkbox9" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,13},{0,12},{0,138},{0,28}}" />
+                <Property Name="Text" Value="根据帧数智能屏蔽" />
+                <Property Name="NormalTextColour" Value="FFffea00" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="SmartShieldPanel/CommonBg4/Checkbox8" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,32},{0,191},{0,137},{0,207}}" />
+                <Property Name="Text" Value="屏蔽其他称号" />
+            </Window>
+            <Window Name="SmartShieldPanel/CommonBg4/Checkbox7" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,32},{0,171},{0,137},{0,187}}" />
+                <Property Name="Text" Value="屏蔽其他翅膀" />
+            </Window>
+            <Window Name="SmartShieldPanel/CommonBg4/Checkbox6" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,32},{0,151},{0,137},{0,167}}" />
+                <Property Name="Text" Value="屏蔽其他神器" />
+            </Window>
+            <Window Name="SmartShieldPanel/CommonBg4/Checkbox5" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,32},{0,131},{0,137},{0,147}}" />
+                <Property Name="Text" Value="屏蔽所有战宠" />
+            </Window>
+            <Window Name="SmartShieldPanel/CommonBg4/Checkbox4" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,32},{0,111},{0,137},{0,127}}" />
+                <Property Name="Text" Value="屏蔽普通怪物" />
+            </Window>
+            <Window Name="SmartShieldPanel/CommonBg4/Checkbox3" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,32},{0,91},{0,137},{0,107}}" />
+                <Property Name="Text" Value="屏蔽本帮玩家" />
+            </Window>
+            <Window Name="SmartShieldPanel/CommonBg4/Checkbox2" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,32},{0,71},{0,137},{0,87}}" />
+                <Property Name="Text" Value="屏蔽全部特效" />
+            </Window>
+            <Window Name="SmartShieldPanel/CommonBg4/Checkbox1" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,32},{0,51},{0,137},{0,67}}" />
+                <Property Name="Text" Value="屏蔽其他玩家" />
+            </Window>
+            <Window Name="SmartShieldPanel/CommonBg4/Checkbox0" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,13},{0,31},{0,118},{0,47}}" />
+                <Property Name="Text" Value="屏蔽下列所有" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SmartShieldPanel/knowBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,78},{0,277},{0,161},{0,300}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="朕知道了" />
+        </Window>
+        <Window Name="SmartShieldPanel/StaticText" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,42},{0,-5},{0,142},{0,33}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="下列勾选项已被" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF65B3e9" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SmartShieldPanel/StaticText2" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,142},{0,-5},{0,198},{0,33}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="智能屏蔽" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFffea00" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SmartShieldPanel/StaticText22" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,193},{0,-5},{0,209},{0,33}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF65B3e9" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SmartShieldPanel/StaticText3" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,30},{0,243},{0,230},{0,281}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="可通过本界面或屏蔽功能手动调整" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFaaaaaa" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

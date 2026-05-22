@@ -1,0 +1,81 @@
+<GUILayout>
+    <Window Name="GuajiBoxPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,679},{0,656}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GuajiBoxPanel/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,679},{0,656}}" />
+            <Property Name="Image" Value="set:guajiBox image:bg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="GuajiBoxPanel/bg/vListBg" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,197},{0,121},{0,497},{0,226}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="GuajiBoxPanel/bg/leftButton" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,170},{0,152},{0,195},{0,197}}" />
+                <Property Name="HoverImage" Value="set:skin image:turnLHover" />
+                <Property Name="NormalImage" Value="set:skin image:turnLNormal" />
+                <Property Name="PushedImage" Value="set:skin image:turnLPushed" />
+            </Window>
+            <Window Name="GuajiBoxPanel/bg/rightButton" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,499},{0,152},{0,524},{0,197}}" />
+                <Property Name="HoverImage" Value="set:skin image:turnRHover" />
+                <Property Name="NormalImage" Value="set:skin image:turnRNormal" />
+                <Property Name="PushedImage" Value="set:skin image:turnRPushed" />
+            </Window>
+            <Window Name="GuajiBoxPanel/bg/openOneBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,257},{0,256},{0,338},{0,279}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="开启一个" />
+            </Window>
+            <Window Name="GuajiBoxPanel/bg/openTenBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,353},{0,256},{0,434},{0,279}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="开启十个" />
+            </Window>
+            <Window Name="GuajiBoxPanel/bg/radioBtn0" Type="GuiLook/CommonRadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,176},{0,317},{0,245},{0,340}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="掉落记录" />
+            </Window>
+            <Window Name="GuajiBoxPanel/bg/radioBtn1" Type="GuiLook/CommonRadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,246},{0,317},{0,315},{0,340}}" />
+                <Property Name="Text" Value="开启记录" />
+            </Window>
+            <Window Name="GuajiBoxPanel/bg/selectNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,233},{0,231},{0,460},{0,251}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GuajiBoxPanel/bg/txtList" Type="GuiLook/Listbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,175},{0,346},{0,520},{0,581}}" />
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="VerticalScrollbar" Value="true" />
+                </AutoWindow>
+            </Window>
+            <Window Name="GuajiBoxPanel/bg/boxNumTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,356},{0,93},{0,409},{0,113}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="Text" Value="9999" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFEA00" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GuajiBoxPanel/dragRect" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,171},{0,16},{0,523},{0,91}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="GuajiBoxPanel/closeBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,489},{0,22},{0,524},{0,57}}" />
+            <Property Name="HoverImage" Value="set:guajiBox image:closeHover" />
+            <Property Name="NormalImage" Value="set:guajiBox image:closeNormal" />
+            <Property Name="PushedImage" Value="set:guajiBox image:closePushed" />
+        </Window>
+    </Window>
+</GUILayout>

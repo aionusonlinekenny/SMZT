@@ -1,0 +1,46 @@
+<GUILayout>
+    <Window Name="CastlePanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1071},{0,681}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CastlePanel/sp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,121},{0,1040},{0,653}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="CastlePanel/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,534},{0,681}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="CastlePanel/bg1" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,534},{0,0},{0,1070},{0,681}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="CastlePanel/closeBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,1018},{0,121},{0,1041},{0,144}}" />
+            <Property Name="HoverImage" Value="set:castle image:closeHover" />
+            <Property Name="NormalImage" Value="set:castle image:closeNormal" />
+            <Property Name="PushedImage" Value="set:castle image:closePushed" />
+        </Window>
+        <Window Name="CastlePanel/radioBtn0" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-23},{0,160},{0,13},{0,310}}" />
+            <Property Name="HoverImage" Value="set:castle image:radioTab1Hover" />
+            <Property Name="SelectedImage" Value="set:castle image:radioTab1Hover" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="UnselectedImage" Value="set:castle image:radioTab1Normal" />
+        </Window>
+        <Window Name="CastlePanel/radioBtn1" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-23},{0,312},{0,13},{0,462}}" />
+            <Property Name="HoverImage" Value="set:castle image:radioTab0Hover" />
+            <Property Name="SelectedImage" Value="set:castle image:radioTab0Hover" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="UnselectedImage" Value="set:castle image:radioTab0Normal" />
+        </Window>
+    </Window>
+</GUILayout>

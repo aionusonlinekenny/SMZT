@@ -1,0 +1,205 @@
+<GUILayout>
+    <Window Name="SocialFriendsSetTransfer" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,312},{0,276}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SocialFriendsSetTransfer/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,312},{0,249}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SocialFriendsSetTransfer/bg/combobox" Type="GuiLook/Combobox">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,131},{0,54}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="好友" />
+                <Property Name="UnifiedMaxSize" Value="{{0,127},{0,400}}" />
+                <Property Name="NormalEditTextColour" Value="ffffffff" />
+                <AutoWindow NameSuffix="__auto_editbox__">
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="好友" />
+                    <Property Name="NormalTextColour" Value="ffffffff" />
+                    <Property Name="SelectedTextColour" Value="FFFFFFDD" />
+                    <Property Name="ActiveSelectionColour" Value="FFFFB080" />
+                    <Property Name="InactiveSelectionColour" Value="FFB18A50" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_droplist__">
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <AutoWindow NameSuffix="__auto_hscrollbar__">
+                        <AutoWindow NameSuffix="__auto_incbtn__">
+                            <Property Name="RestoreOldCapture" Value="true" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_decbtn__">
+                            <Property Name="RestoreOldCapture" Value="true" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_thumb__">
+                            <Property Name="RestoreOldCapture" Value="true" />
+                        </AutoWindow>
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_vscrollbar__">
+                        <Property Name="VerticalScrollbar" Value="true" />
+                        <AutoWindow NameSuffix="__auto_incbtn__">
+                            <Property Name="RestoreOldCapture" Value="true" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_decbtn__">
+                            <Property Name="RestoreOldCapture" Value="true" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_thumb__">
+                            <Property Name="RestoreOldCapture" Value="true" />
+                        </AutoWindow>
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_button__">
+                    <Property Name="AlwaysOnTop" Value="true" />
+                </AutoWindow>
+            </Window>
+            <Window Name="SocialFriendsSetTransfer/bg/combobox1" Type="GuiLook/Combobox">
+                <Property Name="UnifiedAreaRect" Value="{{0,181},{0,4},{0,308},{0,54}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="基友" />
+                <Property Name="NormalEditTextColour" Value="ffffffff" />
+                <AutoWindow NameSuffix="__auto_editbox__">
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="基友" />
+                    <Property Name="NormalTextColour" Value="ffffffff" />
+                    <Property Name="SelectedTextColour" Value="FFFFFFDD" />
+                    <Property Name="ActiveSelectionColour" Value="FFFFB080" />
+                    <Property Name="InactiveSelectionColour" Value="FFB18A50" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_droplist__">
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <AutoWindow NameSuffix="__auto_hscrollbar__">
+                        <AutoWindow NameSuffix="__auto_incbtn__">
+                            <Property Name="RestoreOldCapture" Value="true" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_decbtn__">
+                            <Property Name="RestoreOldCapture" Value="true" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_thumb__">
+                            <Property Name="RestoreOldCapture" Value="true" />
+                        </AutoWindow>
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_vscrollbar__">
+                        <Property Name="VerticalScrollbar" Value="true" />
+                        <AutoWindow NameSuffix="__auto_incbtn__">
+                            <Property Name="RestoreOldCapture" Value="true" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_decbtn__">
+                            <Property Name="RestoreOldCapture" Value="true" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_thumb__">
+                            <Property Name="RestoreOldCapture" Value="true" />
+                        </AutoWindow>
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_button__">
+                    <Property Name="AlwaysOnTop" Value="true" />
+                </AutoWindow>
+            </Window>
+            <Window Name="SocialFriendsSetTransfer/bg/transferTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,10},{0,30},{0,28}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="转至" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SocialFriendsSetTransfer/bg/headListSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,32},{0,312},{0,60}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SocialFriendsSetTransfer/bg/headListSp/headListBg" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="SocialFriendsSetTransfer/bg/headListSp/headListBg/headListTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="玩家名称" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SocialFriendsSetTransfer/bg/headListSp/headListBg1" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,163},{0,0},{0,237},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="SocialFriendsSetTransfer/bg/headListSp/headListBg1/headListTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,74},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="性别" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SocialFriendsSetTransfer/bg/headListSp/headListBg2" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,237},{0,0},{0,312},{0,28}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="SocialFriendsSetTransfer/bg/headListSp/headListBg2/headListTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,75},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="阵营" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="SocialFriendsSetTransfer/bg/list" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,60},{0,311},{0,216}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="SocialFriendsSetTransfer/bg/nextBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,181},{0,222},{0,201},{0,242}}" />
+                <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+            </Window>
+            <Window Name="SocialFriendsSetTransfer/bg/pageBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,224},{0,42},{0,242}}" />
+                <Property Name="Image" Value="set:skin image:pageBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Window Name="SocialFriendsSetTransfer/bg/pageBg/pageTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,18}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="Text" Value="1/10" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF58eafe" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SocialFriendsSetTransfer/bg/backBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,111},{0,222},{0,131},{0,242}}" />
+                <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+            </Window>
+        </Window>
+        <Window Name="SocialFriendsSetTransfer/sureBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,251},{0,80},{0,274}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="转移" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+    </Window>
+</GUILayout>

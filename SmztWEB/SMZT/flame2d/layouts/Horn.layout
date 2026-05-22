@@ -1,0 +1,104 @@
+<GUILayout>
+    <Window Name="Horn" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,390},{0,286}}" />
+        <Property Name="Text" Value="喇叭喊话" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="Horn/titleBg" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,372},{0,72}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="Horn/titleBg/faceBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,30},{0,10},{0,78},{0,58}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="Horn/titleBg/buyBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,260},{0,37},{0,340},{0,60}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="购买" />
+            </Window>
+            <Window Name="Horn/titleBg/remainTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,10},{0,237.5},{0,30}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="小喇叭剩余数量:" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="Horn/titleBg/remainTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,238.5},{0,10},{0,273.5},{0,30}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="100" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="Horn/titleBg/reductionBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,38},{0,136},{0,59}}" />
+                <Property Name="Image" Value="set:skin image:reductionBtn" />
+            </Window>
+            <Window Name="Horn/titleBg/addBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,216},{0,38},{0,237},{0,59}}" />
+                <Property Name="Image" Value="set:skin image:addBtn" />
+            </Window>
+            <Window Name="Horn/titleBg/textBg1" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,138},{0,38},{0,214},{0,59}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="Horn/titleBg/textBg1/numTxt" Type="GuiLook/Editbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,30},{0,0},{0,70},{0,20}}" />
+                    <Property Name="Font" Value="songti_12" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="Horn/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,243},{0,372},{0,244}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="Horn/sendBtn" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,292},{0,218},{0,372},{0,241}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="发送" />
+        </Window>
+        <Window Name="Horn/faceBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,266.5},{0,220.5},{0,286.5},{0,239.5}}" />
+            <Property Name="HoverImage" Value="set:mainUI1 image:faceBtnHover" />
+            <Property Name="NormalImage" Value="set:mainUI1 image:faceBtnNormal" />
+            <Property Name="PushedImage" Value="set:mainUI1 image:faceBtnPushed" />
+        </Window>
+        <Window Name="Horn/checkbox0" Type="GuiLook/Checkbox">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,221},{0,88.5},{0,237}}" />
+            <Property Name="Text" Value="不关闭界面" />
+        </Window>
+        <Window Name="Horn/checkbox1" Type="GuiLook/Checkbox">
+            <Property Name="UnifiedAreaRect" Value="{{0,93},{0,221},{0,225.25},{0,237}}" />
+            <Property Name="Text" Value="不足自动购买喇叭" />
+        </Window>
+        <Window Name="Horn/inputTxt" Type="GuiLook/MultiLineEditbox">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,76},{0,372},{0,216}}" />
+            <Property Name="Text">
+</Property>
+            <Property Name="MaxTextLength" Value="999999" />
+            <AutoWindow NameSuffix="__auto_vscrollbar__">
+                <Property Name="VerticalScrollbar" Value="true" />
+            </AutoWindow>
+        </Window>
+        <Window Name="Horn/faceBox" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,193},{0,83},{0,365},{0,183}}" />
+            <Property Name="UnifiedMaxSize" Value="{{0,333},{0,333}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

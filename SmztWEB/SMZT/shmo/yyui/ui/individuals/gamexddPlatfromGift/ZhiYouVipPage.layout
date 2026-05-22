@@ -1,0 +1,35 @@
+<GUILayout>
+    <Window Name="ZhiYouVipPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,694},{0,480}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="ZhiYouVipPage/imgBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,693},{0,154}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="ZhiYouVipPage/imgBg/promptTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,136},{0,124},{0,496},{0,147}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ZhiYouVipPage/imgBg/upDateBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,538},{0,114},{0,687},{0,148}}" />
+                <Property Name="Image" Value="set:zhiYou image:vipRule" />
+            </Window>
+        </Window>
+        <Window Name="ZhiYouVipPage/list" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,156},{0,694},{0,476}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="ZhiYouVipPage/line" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,154},{0,694},{0,156}}" />
+            <Property Name="Image" Value="set:skin image:horizontalLine" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

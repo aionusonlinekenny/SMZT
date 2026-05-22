@@ -1,0 +1,49 @@
+<GUILayout>
+    <Window Name="EquipChangeItem" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,241},{0,26}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="EquipChangeItem/ThreeStretchImage" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,241},{0,26}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:equipSmelter image:left" />
+            <Property Name="LeftOffset" Value="105" />
+            <Property Name="RightImage" Value="set:equipSmelter image:right" />
+            <Property Name="CenterImage" Value="set:equipSmelter image:middle" />
+            <Property Name="RightOffset" Value="105" />
+        </Window>
+        <Window Name="EquipChangeItem/openTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,0},{0,205},{0,26}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="不可获得，金色魔兵开启" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFffea00" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="EquipChangeItem/starTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,158},{0,0},{0,192},{0,26}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="asdf" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="RightAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="EquipChangeItem/starMc" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,193},{0,1},{0,218},{0,26}}" />
+            <Property Name="Image" Value="set:skins image:star" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="EquipChangeItem/prop$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,7},{0,175},{0,25}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="100" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

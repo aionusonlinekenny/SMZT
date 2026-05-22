@@ -1,0 +1,208 @@
+<GUILayout>
+    <Window Name="LuckDice" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,599},{0,452}}" />
+        <Property Name="GlyphImage" Value="set:gradeRacing image:luckyShare" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="LuckDice/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,409},{0,581},{0,410}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="LuckDice/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,581},{0,406}}" />
+            <Property Name="Image" Value="set:gradeRacingBg image:bg1" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="LuckDice/bg/diceImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,323},{0,163},{0,387},{0,237}}" />
+                <Property Name="Image" Value="set:gradeRacing image:wenhao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="LuckDice/bg/diceImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,257},{0,163},{0,321},{0,237}}" />
+                <Property Name="Image" Value="set:gradeRacing image:wenhao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="LuckDice/bg/diceImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,191},{0,163},{0,255},{0,237}}" />
+                <Property Name="Image" Value="set:gradeRacing image:wenhao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="LuckDice/bg/bowlImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,125},{0,63},{0,474},{0,280}}" />
+                <Property Name="Image" Value="set:gradeRacing image:bowl" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="LuckDice/bg/instructionsImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,69},{0,18},{0,527},{0,45}}" />
+                <Property Name="Image" Value="set:gradeRacing image:instructions" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="LuckDice/bg/rollDiceSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,29},{0,292},{0,547},{0,372}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="LuckDice/bg/rollDiceSp/rollDiceBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,127},{0,1},{0,387},{0,59}}" />
+                    <Property Name="HoverImage" Value="set:gradeRacing image:redHover" />
+                    <Property Name="NormalImage" Value="set:gradeRacing image:redNormal" />
+                    <Property Name="PushedImage" Value="set:gradeRacing image:redPushed" />
+                    <Window Name="LuckDice/bg/rollDiceSp/rollDiceBtn/rollDiceImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,260},{0,58}}" />
+                        <Property Name="Image" Value="set:gradeRacing image:shakeson" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Property Name="MouseInputPropagationEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="LuckDice/bg/rollDiceSp/rollConditions" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,76},{0,60},{0,153},{0,80}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="摇骰子条件：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFef9d0" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="LuckDice/bg/rollDiceSp/gradeSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,154},{0,60},{0,257},{0,80}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="LuckDice/bg/rollDiceSp/gradeSp/gardeImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,15},{0,14}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="LuckDice/bg/rollDiceSp/gradeSp/gardeTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,18},{0,0},{0,103},{0,20}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="等级：45" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF8ef500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="LuckDice/bg/rollDiceSp/fightSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,288},{0,60},{0,391},{0,80}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="LuckDice/bg/rollDiceSp/fightSp/fightImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,15},{0,14}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="LuckDice/bg/rollDiceSp/fightSp/fightTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,18},{0,0},{0,103},{0,20}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="战斗力：99999" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF8ef500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="LuckDice/bg/guessSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,29},{0,264},{0,547},{0,372}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="LuckDice/bg/guessSp/duiziBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,63},{0,55},{0,213},{0,106}}" />
+                    <Property Name="HoverImage" Value="set:gradeRacing image:duiziHover" />
+                    <Property Name="NormalImage" Value="set:gradeRacing image:duiziNormal" />
+                    <Property Name="PushedImage" Value="set:gradeRacing image:duiziPushed" />
+                </Window>
+                <Window Name="LuckDice/bg/guessSp/baoziBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,298},{0,55},{0,448},{0,106}}" />
+                    <Property Name="HoverImage" Value="set:gradeRacing image:baoziHover" />
+                    <Property Name="NormalImage" Value="set:gradeRacing image:baoziNormal" />
+                    <Property Name="PushedImage" Value="set:gradeRacing image:baoziPushed" />
+                </Window>
+                <Window Name="LuckDice/bg/guessSp/redGridBg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,118},{0,0},{0,168},{0,50}}" />
+                    <Property Name="Image" Value="set:skin image:RedGrid" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="LuckDice/bg/guessSp/redGridBg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,342},{0,0},{0,392},{0,50}}" />
+                    <Property Name="Image" Value="set:skin image:RedGrid" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="LuckDice/bg/resultSp" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,29},{0,260},{0,547},{0,372}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="LuckDice/bg/resultSp/receiveBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,127},{0,46},{0,387},{0,104}}" />
+                    <Property Name="HoverImage" Value="set:gradeRacing image:redHover" />
+                    <Property Name="NormalImage" Value="set:gradeRacing image:redNormal" />
+                    <Property Name="PushedImage" Value="set:gradeRacing image:redPushed" />
+                    <Window Name="LuckDice/bg/resultSp/receiveBtn/receiveImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,260},{0,58}}" />
+                        <Property Name="Image" Value="set:gradeRacing image:reward" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Property Name="MouseInputPropagationEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="LuckDice/bg/resultSp/redGridBg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,233},{0,0},{0,283},{0,50}}" />
+                    <Property Name="Image" Value="set:skin image:RedGrid" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="LuckDice/bg/resultSp/resultImg" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-197},{0,517},{0,-85}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

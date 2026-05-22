@@ -1,0 +1,55 @@
+<GUILayout>
+    <Window Name="SocialPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,112},{0,32},{0,1023},{0,600}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="GlyphImage" Value="set:friends image:socialTxt" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="SocialPanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,525},{1,0},{0.00191571,525}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="SocialPanel/RadioTab0" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-61},{0,11},{0,2},{0,52}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="好友" />
+            <Property Name="Selected" Value="true" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="DropTextColour" Value="FFc6dee6" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="HoverTextColour" Value="FFc6dee6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            <Property Name="NormalTextColour" Value="FF65b3e9" />
+            <Property Name="PushedTextColour" Value="FFc6dee6" />
+            <Property Name="DisabledTextColour" Value="FFc6dee6" />
+        </Window>
+        <Window Name="SocialPanel/RadioTab1" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,-61},{0,52},{0,2},{0,93}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="江湖" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="HoverTextColour" Value="FFc6dee6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            <Property Name="NormalTextColour" Value="FF65b3e9" />
+            <Property Name="PushedTextColour" Value="FFc6dee6" />
+            <Property Name="DisabledTextColour" Value="FFffffff" />
+        </Window>
+        <Window Name="SocialPanel/DefaultWindow" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,893},{0,522}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

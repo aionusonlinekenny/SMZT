@@ -1,0 +1,826 @@
+<GUILayout>
+    <Window Name="WorldBossInforView" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,368}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="WorldBossInforView/shadowBGImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,367}}" />
+            <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="WorldBossInforView/shadowBGImg/bottomImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,32}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="WorldBossInforView/shadowBGImg/bottomImg/StaticImage" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bottomImg/line3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,231},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="WorldBossInforView/shadowBGImg/line1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,111},{0,226},{0,112}}" />
+                <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WorldBossInforView/shadowBGImg/curBossTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,113},{0,232},{0,131}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="当前场景BOSS" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="fffef9d0" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="WorldBossInforView/shadowBGImg/box2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,32},{0,231},{0,111}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="WorldBossInforView/shadowBGImg/box2/titleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,112},{0,19}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="黄陵三层掉落：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="fffef9d0" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/box2/linkBtn$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,167},{0,3},{0,230},{0,21}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="Text" Value="查看规则" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="fffef9d0" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/box2/props4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,169},{0,24},{0,217},{0,72}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/box2/props2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,67},{0,24},{0,115},{0,72}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/box2/props1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,16},{0,24},{0,64},{0,72}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/box2/props3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,118},{0,24},{0,166},{0,72}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="WorldBossInforView/shadowBGImg/line2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,133},{0,226},{0,134}}" />
+                <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WorldBossInforView/shadowBGImg/bossSp0" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,138},{0,59},{0,235}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp0/bossHeadBg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,3},{0,49},{0,51}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp0/bossHeadBg0/bossHeadImg0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp0/bossHpBg0" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp0/bossHpBg0/hp$NormalBar0" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp0/bossHpBg0/hpTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp0/bossTimeBg0" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp0/bossTimeBg0/time$NormalBar0" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg4Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg4Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg4Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp0/bossTimeBg0/timeTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp0/linkBtn0$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,80},{0,50},{0,94}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="前往击杀" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp0/levelTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,4},{0,48},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="999" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="WorldBossInforView/shadowBGImg/bossSp1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,63},{0,138},{0,113},{0,235}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp1/bossHeadBg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,3},{0,49},{0,51}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp1/bossHeadBg1/bossHeadImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp1/bossHpBg1" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp1/bossHpBg1/hp$NormalBar1" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp1/bossHpBg1/hpTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp1/bossTimeBg1" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp1/bossTimeBg1/time$NormalBar1" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg4Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg4Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg4Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp1/bossTimeBg1/timeTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp1/linkBtn1$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,80},{0,50},{0,94}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="前往击杀" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp1/levelTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,4},{0,48},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="999" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="WorldBossInforView/shadowBGImg/bossSp2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,117},{0,138},{0,167},{0,235}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp2/bossHeadBg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,3},{0,49},{0,51}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp2/bossHeadBg2/bossHeadImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp2/bossHpBg2" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp2/bossHpBg2/hp$NormalBar2" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp2/bossHpBg2/hpTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp2/bossTimeBg2" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp2/bossTimeBg2/time$NormalBar2" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg4Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg4Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg4Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp2/bossTimeBg2/timeTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp2/linkBtn2$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,80},{0,50},{0,94}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="前往击杀" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp2/levelTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,4},{0,48},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="999" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="WorldBossInforView/shadowBGImg/bossSp3" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,171},{0,138},{0,221},{0,235}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp3/bossHeadBg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,3},{0,49},{0,51}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp3/bossHeadBg3/bossHeadImg3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp3/bossHpBg3" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp3/bossHpBg3/hp$NormalBar3" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp3/bossHpBg3/hpTxt3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp3/bossTimeBg3" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp3/bossTimeBg3/time$NormalBar3" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg4Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg4Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg4Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp3/bossTimeBg3/timeTxt3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp3/linkBtn3$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,80},{0,50},{0,94}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="前往击杀" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp3/levelTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,4},{0,48},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="999" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="WorldBossInforView/shadowBGImg/bossSp5" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,63},{0,239},{0,113},{0,336}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp5/bossHeadBg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,3},{0,49},{0,51}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp5/bossHeadBg5/bossHeadImg5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp5/bossHpBg5" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp5/bossHpBg5/hp$NormalBar5" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp5/bossHpBg5/hpTxt5" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp5/bossTimeBg5" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp5/bossTimeBg5/time$NormalBar5" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg4Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg4Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg4Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp5/bossTimeBg5/timeTxt5" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp5/linkBtn5$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,80},{0,50},{0,94}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="前往击杀" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp5/levelTxt5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,4},{0,48},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="999" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="WorldBossInforView/shadowBGImg/bossSp6" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,117},{0,239},{0,167},{0,336}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp6/bossHeadBg6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,3},{0,49},{0,51}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp6/bossHeadBg6/bossHeadImg6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp6/bossHpBg6" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp6/bossHpBg6/hp$NormalBar6" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp6/bossHpBg6/hpTxt6" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp6/bossTimeBg6" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp6/bossTimeBg6/time$NormalBar6" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg4Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg4Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg4Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp6/bossTimeBg6/timeTxt6" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp6/linkBtn6$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,80},{0,50},{0,94}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="前往击杀" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp6/levelTxt6" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,4},{0,48},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="999" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="WorldBossInforView/shadowBGImg/bossSp7" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,171},{0,239},{0,221},{0,336}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp7/bossHeadBg7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,3},{0,49},{0,51}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp7/bossHeadBg7/bossHeadImg7" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp7/bossHpBg7" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp7/bossHpBg7/hp$NormalBar7" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp7/bossHpBg7/hpTxt7" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp7/bossTimeBg7" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp7/bossTimeBg7/time$NormalBar7" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg4Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg4Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg4Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp7/bossTimeBg7/timeTxt7" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp7/linkBtn7$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,80},{0,50},{0,94}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="前往击杀" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp7/levelTxt7" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,4},{0,48},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="999" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="WorldBossInforView/shadowBGImg/bossSp4" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,239},{0,59},{0,336}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp4/bossHeadBg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,3},{0,49},{0,51}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp4/bossHeadBg4/bossHeadImg4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp4/bossHpBg4" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp4/bossHpBg4/hp$NormalBar4" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp4/bossHpBg4/hpTxt4" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp4/bossTimeBg4" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,58},{0,50},{0,79}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp4/bossTimeBg4/time$NormalBar4" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg4Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg4Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg4Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="WorldBossInforView/shadowBGImg/bossSp4/bossTimeBg4/timeTxt4" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,20}}" />
+                        <Property Name="Font" Value="songti_12" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFffffff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp4/linkBtn4$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,80},{0,50},{0,94}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="前往击杀" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="WorldBossInforView/shadowBGImg/bossSp4/levelTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,4},{0,48},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="999" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="WorldBossInforView/shadowBGImg/ptitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,6},{0,231},{0,24}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="BOSS剩余血量" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="WorldBossInforView/shadowBGImg/sxBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,338},{0,79},{0,365}}" />
+                <Property Name="Text" Value="刷新信息" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

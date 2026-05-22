@@ -1,0 +1,235 @@
+<GUILayout>
+    <Window Name="EquipMergePage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,587},{0,452}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="EquipMergePage/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,587},{0,452}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="EquipMergePage/bg/rightBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,155},{0,0},{0,587},{0,452}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="EquipMergePage/bg/rightBg/imgBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,431},{0,451}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/gridBg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,114},{0,1},{0,313},{0,198}}" />
+                        <Property Name="Image" Value="set:equipSmelter image:gridBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="EquipMergePage/bg/rightBg/imgBg/gridBg/StaticText" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,11},{0,197},{0,41}}" />
+                            <Property Name="Font" Value="songti_18_strengh" />
+                            <Property Name="Text" Value="装备名称" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFFea00" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="EquipMergePage/bg/rightBg/imgBg/gridBg/item" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,77},{0,77},{0,125},{0,125}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/lineH" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,135},{0,223},{0,295},{0,232}}" />
+                        <Property Name="Image" Value="set:equipSmelter image:lineV" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/lineV" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,210},{0,134},{0,220},{0,224}}" />
+                        <Property Name="Image" Value="set:equipSmelter image:lineH" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/rateTitle" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,136},{0,295},{0,214},{0,323}}" />
+                        <Property Name="Image" Value="set:equipSmelter image:success" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/rateClip" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,215},{0,298},{0,272},{0,320}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/StaticImage7" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,83},{0,340},{0,161},{0,359}}" />
+                        <Property Name="Image" Value="set:equipSmelter image:remain" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/decBtn" Type="GuiLook/DefaultImageButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,183},{0,339},{0,204},{0,360}}" />
+                        <Property Name="Image" Value="set:skin image:reductionBtn" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/addBtn" Type="GuiLook/DefaultImageButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,284},{0,339},{0,305},{0,360}}" />
+                        <Property Name="Image" Value="set:skin image:addBtn" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/maxBtn" Type="GuiLook/DefaultImageButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,307},{0,339},{0,348},{0,360}}" />
+                        <Property Name="Image" Value="set:skin image:maxBtn" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/TextBG" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,205},{0,339},{0,283},{0,360}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="EquipMergePage/bg/rightBg/imgBg/TextBG/numTxt" Type="GuiLook/Editbox">
+                            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,1},{0,76},{0,20}}" />
+                            <Property Name="HorizontalAlignment" Value="Centre" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/linkBtn$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,357},{0,424},{0,425},{0,446}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="合成规则" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/mergeBtn" Type="GlossySerpent/RedButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,378},{0,163},{0,418}}" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Window Name="EquipMergePage/bg/rightBg/imgBg/mergeBtn/mergeImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                            <Property Name="Image" Value="set:equipSmelter image:beginHC" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="true" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/depleteIGrid0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,92},{0,204},{0,140},{0,252}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/depleteIGrid1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,191},{0,204},{0,239},{0,252}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/depleteIGrid2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,289},{0,204},{0,337},{0,252}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG2" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/rateClip2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,273},{0,298},{0,298},{0,320}}" />
+                        <Property Name="Image" Value="set:equipSmelter image:percent" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/depleteTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,73},{0,258},{0,159},{0,284}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/depleteTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,173},{0,258},{0,259},{0,284}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/depleteTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,272},{0,258},{0,358},{0,284}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="EquipMergePage/bg/rightBg/imgBg/redImg" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,118},{0,385},{0,319},{0,410}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:skin image:RedBoxLeft" />
+                        <Property Name="LeftOffset" Value="10" />
+                        <Property Name="RightImage" Value="set:skin image:RedBoxRight" />
+                        <Property Name="CenterImage" Value="set:skin image:RedBoxMiddle" />
+                        <Property Name="RightOffset" Value="10" />
+                        <Window Name="EquipMergePage/bg/rightBg/imgBg/redImg/redTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,201},{0,25}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFF0000" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="EquipMergePage/bg/list2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,153},{0,504}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="EquipMergePage/bg/list1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,153},{0,504}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="EquipMergePage/bg/list" Type="GuiLook/ScrollablePane">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,153},{0,418}}" />
+                <AutoWindow NameSuffix="__auto_container__">
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_hscrollbar__">
+                    <Property Name="NonClient" Value="true" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="NonClient" Value="true" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="VerticalScrollbar" Value="true" />
+                </AutoWindow>
+            </Window>
+            <Window Name="EquipMergePage/bg/bottomDi2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,419},{0,154},{0,451}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="EquipMergePage/bg/bottomDi2/selfAppraise" Type="GuiLook/Checkbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,7.5},{0,8},{0,145.5},{0,24}}" />
+                    <Property Name="Text" Value="仅显示可合成的道具" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

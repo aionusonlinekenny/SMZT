@@ -1,0 +1,71 @@
+<GUILayout>
+    <Window Name="RelivePanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,430},{0,249}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="VerticalAlignment" Value="Centre" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Name="RelivePanel/bg" Type="GlossySerpent/ThreeVStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,430},{0,249}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:relive image:strongTop" />
+            <Property Name="TopOffset" Value="46" />
+            <Property Name="BottomImage" Value="set:relive image:strongBottom" />
+            <Property Name="CenterImage" Value="set:relive image:strongMiddle" />
+            <Property Name="BottomOffset" Value="7" />
+            <Window Name="RelivePanel/bg/closeBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,406},{0,8},{0,423},{0,25}}" />
+                <Property Name="HoverImage" Value="set:mainUI1 image:closeHover" />
+                <Property Name="NormalImage" Value="set:mainUI1 image:closeNormal" />
+                <Property Name="PushedImage" Value="set:mainUI1 image:closePushed" />
+            </Window>
+            <Window Name="RelivePanel/bg/link$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,316},{0,20},{0,375},{0,36}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="战力对比" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="RelivePanel/bg/playerTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,79},{0,21},{0,316},{0,39}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="您刚被XXX杀死了" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF6969" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="RelivePanel/bg/CommonBg2" Type="GuiLook/CommonBg2">
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,52},{0,422},{0,192}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="RelivePanel/bg/CommonBg2/StaticImage" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,404},{0,27}}" />
+                    <Property Name="Image" Value="set:relive image:strongTxt" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="RelivePanel/bg/CommonBg2/list" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,30},{0,412},{0,135}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+            <Window Name="RelivePanel/bg/RedButton" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,198},{0,146},{0,238}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Window Name="RelivePanel/bg/RedButton/strongImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,146},{0,40}}" />
+                    <Property Name="Image" Value="set:relive image:meStrong" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

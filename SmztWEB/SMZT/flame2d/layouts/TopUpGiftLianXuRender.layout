@@ -1,0 +1,103 @@
+<GUILayout>
+    <Window Name="TopUpGiftLianXuRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,724},{0,64}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="TopUpGiftLianXuRender/bg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,724},{0,64}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:TopUPGift image:BlankBarBg" />
+            <Property Name="LeftOffset" Value="233" />
+            <Property Name="RightImage" Value="set:TopUPGift image:right" />
+            <Property Name="CenterImage" Value="set:TopUPGift image:middle" />
+            <Property Name="RightOffset" Value="15" />
+            <Window Name="TopUpGiftLianXuRender/bg/topUpValueTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,18},{0,9},{0,199},{0,32}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="单笔充值9999999" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TopUpGiftLianXuRender/bg/rewardBtn" Type="GlossySerpent/OrangeButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,611},{0,22},{0,692},{0,45}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="领取奖励" />
+            </Window>
+            <Window Name="TopUpGiftLianXuRender/bg/numTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,35},{0,177},{0,58}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="今日可领取10/15" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffea00" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TopUpGiftLianXuRender/bg/grid0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,240},{0,7},{0,290},{0,57}}" />
+                <Property Name="Image" Value="set:skin image:RedGrid" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="TopUpGiftLianXuRender/bg/grid1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,300},{0,7},{0,350},{0,57}}" />
+                <Property Name="Image" Value="set:skin image:RedGrid" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="TopUpGiftLianXuRender/bg/grid2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,360},{0,7},{0,410},{0,57}}" />
+                <Property Name="Image" Value="set:skin image:RedGrid" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="TopUpGiftLianXuRender/bg/grid3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,420},{0,7},{0,470},{0,57}}" />
+                <Property Name="Image" Value="set:skin image:RedGrid" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="TopUpGiftLianXuRender/bg/grid4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,480},{0,7},{0,530},{0,57}}" />
+                <Property Name="Image" Value="set:skin image:RedGrid" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="TopUpGiftLianXuRender/bg/rewardEffect" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,611},{0,22},{0,692},{0,45}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="TopUpGiftLianXuRender/bg/redImg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,610},{0,21},{0,693},{0,46}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:RedBoxLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:RedBoxRight" />
+                <Property Name="CenterImage" Value="set:skin image:RedBoxMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="TopUpGiftLianXuRender/bg/redImg/redTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,82},{0,25}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF0000" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

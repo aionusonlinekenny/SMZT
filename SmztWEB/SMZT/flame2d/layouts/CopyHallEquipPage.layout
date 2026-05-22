@@ -1,0 +1,159 @@
+<GUILayout>
+    <Window Name="CopyHallEquipPage" Type="GuiLook/CommonBg3">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,873},{0,508}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CopyHallEquipPage/imgbg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,872},{0,441}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="CopyHallEquipPage/imgbg/titleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,378},{0,22},{0,481},{0,42}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFCC43FF" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="CopyHallEquipPage/imgbg/downBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,478},{0,26},{0,496},{0,43}}" />
+                <Property Name="Image" Value="set:copyHall image:downBtn" />
+            </Window>
+        </Window>
+        <Window Name="CopyHallEquipPage/smallbackground" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,441},{0,873},{0,508}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CopyHallEquipPage/smallbackground/BbgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,872},{0,66}}" />
+                <Property Name="Image" Value="set:skin image:RenderBg2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CopyHallEquipPage/smallbackground/BbgImg/rewardImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,13},{0,25},{0,89},{0,42}}" />
+                    <Property Name="Image" Value="set:copyHall image:sweepingReward" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="CopyHallEquipPage/smallbackground/BbgImg/mopUpBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,737},{0,15},{0,849},{0,46}}" />
+                    <Property Name="HoverImage" Value="set:skins image:BlueBtnHover" />
+                    <Property Name="NormalImage" Value="set:skins image:BlueBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skins image:BlueBtnPushed" />
+                    <Property Name="Tooltip" Value="一键扫荡所有已通关的副本，扫荡后获得全部副本通关奖励" />
+                    <Window Name="CopyHallEquipPage/smallbackground/BbgImg/mopUpBtn/mopUpBtnImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,112},{0,31}}" />
+                        <Property Name="Image" Value="set:copyHall image:sweeping" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="Tooltip" Value="一键扫荡所有已通关的副本，扫荡后获得全部副本通关奖励" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="CopyHallEquipPage/smallbackground/BbgImg/instructionsTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,216},{0,23},{0,499},{0,43}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CopyHallEquipPage/smallbackground/BbgImg/currentTitleTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,538},{0,21},{0,653},{0,41}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="Text" Value="当前已通关boss:" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="CopyHallEquipPage/smallbackground/BbgImg/currentTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,653},{0,21},{0,701},{0,41}}" />
+                    <Property Name="Font" Value="songti_14" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFfea00" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="CopyHallEquipPage/sp0" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,872},{0,441}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CopyHallEquipPage/sp0/rightBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,213},{0,35},{0,250}}" />
+                <Property Name="Image" Value="set:copyHall image:rightBtn" />
+                <Property Name="HorizontalAlignment" Value="Right" />
+            </Window>
+            <Window Name="CopyHallEquipPage/sp0/challengeBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,380},{0,386},{0,500},{0,424}}" />
+                <Property Name="HoverImage" Value="set:copyHall image:openChallengeHover" />
+                <Property Name="NormalImage" Value="set:copyHall image:openChallengeNormal" />
+                <Property Name="PushedImage" Value="set:copyHall image:openChallengePushed" />
+            </Window>
+            <Window Name="CopyHallEquipPage/sp0/list" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,17},{0,94},{0,851},{0,386}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="CopyHallEquipPage/sp0/promptTxt$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,219},{0,69},{0,658},{0,89}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CopyHallEquipPage/sp0/leftBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,215},{0,35},{0,252}}" />
+                <Property Name="Image" Value="set:copyHall image:leftBtn" />
+            </Window>
+        </Window>
+        <Window Name="CopyHallEquipPage/sp1" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,872},{0,441}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CopyHallEquipPage/sp1/returnBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,778},{0,116},{0,842},{0,306}}" />
+                <Property Name="Image" Value="set:copyHall image:returnBtn" />
+            </Window>
+            <Window Name="CopyHallEquipPage/sp1/rotaryBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,54},{0,340},{0,441}}" />
+                <Property Name="Image" Value="set:copyHall image:returnBtn" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Window Name="CopyHallEquipPage/sp1/rotaryBtn/nextLevel" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-3},{0,112},{0,180},{0,154}}" />
+                    <Property Name="Image" Value="set:copyHall image:goDown" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="CopyHallEquipPage/sp1/rotaryBtn/openBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,164},{0,85},{0,184}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Window Name="CopyHallEquipPage/sp1/rotaryBtn/openBg/openTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,85},{0,20}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

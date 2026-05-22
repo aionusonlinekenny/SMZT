@@ -1,0 +1,103 @@
+<GUILayout>
+    <Window Name="GoalPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,711},{0,496}}" />
+        <Property Name="GlyphImage" Value="set:againstSky image:titleName" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="GoalPanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,693},{0,450}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GoalPanel/bg/rightBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,169},{0,0},{0,693},{0,446}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GoalPanel/bg/rightBg/CommonBg3" Type="GuiLook/CommonBg3">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,391},{0,524},{0,445}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="GoalPanel/bg/rightBg/CommonBg3/StaticImage" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,523},{0,53}}" />
+                        <Property Name="Image" Value="set:skin image:RenderBg2" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="GoalPanel/bg/rightBg/CommonBg3/StaticImage/StaticText" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,0},{0,65},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="全部开启：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="VerticalAlignment" Value="Centre" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="GoalPanel/bg/rightBg/CommonBg3/StaticImage/allOpenAddInfoTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,66},{0,0},{0,173},{0,16}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="闪避+100" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="VerticalAlignment" Value="Centre" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="GoalPanel/bg/rightBg/CommonBg3/StaticImage/injectBtn" Type="GuiLook/DefaultButton">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,112},{0,31}}" />
+                            <Property Name="HoverImage" Value="set:skins image:BlueBtnHover" />
+                            <Property Name="NormalImage" Value="set:skins image:BlueBtnNormal" />
+                            <Property Name="PushedImage" Value="set:skins image:BlueBtnPushed" />
+                            <Property Name="VerticalAlignment" Value="Centre" />
+                            <Property Name="HorizontalAlignment" Value="Centre" />
+                            <Window Name="GoalPanel/bg/rightBg/CommonBg3/StaticImage/injectBtn/injectImg" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,112},{0,31}}" />
+                                <Property Name="Image" Value="set:againstSky image:inject" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="GoalPanel/bg/rightBg/CommonBg3/StaticImage/StaticText3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,355},{0,1},{0,416},{0,17}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="注入条件：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="VerticalAlignment" Value="Centre" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="GoalPanel/bg/rightBg/CommonBg3/StaticImage/injectNeedTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,417},{0,1},{0,510},{0,17}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="Text" Value="200级" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="VerticalAlignment" Value="Centre" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="GoalPanel/bg/rightBg/list" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,524},{0,390}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+            <Window Name="GoalPanel/bg/titleList" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,168},{0,445}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="GoalPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,453},{0,693},{0,454}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

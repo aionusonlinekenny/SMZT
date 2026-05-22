@@ -1,0 +1,188 @@
+<GUILayout>
+    <Window Name="GangMall" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,753},{0,463}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GangMall/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,752},{0,117}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="GangMall/bgImg/text1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,453},{0,44},{0,567},{0,63}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="商城已累积消费" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangMall/bgImg/processImg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,338},{0,101},{0,742},{0,112}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:gangGeneral image:greenLeft" />
+                <Property Name="LeftOffset" Value="14" />
+                <Property Name="RightImage" Value="set:gangGeneral image:greenRight" />
+                <Property Name="CenterImage" Value="set:gangGeneral image:greenCentre" />
+                <Property Name="RightOffset" Value="14" />
+            </Window>
+            <Window Name="GangMall/bgImg/alreadyText" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,568},{0,44},{0,688},{0,63}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="10000元宝" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangMall/bgImg/needText$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,424},{0,72},{0,682},{0,99}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="再消费" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangMall/bgImg/banggong" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,450},{0,41},{0,703},{0,96}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangMall/bgImg/banggong/my" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,2},{0,5},{0,81},{0,24}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="我的帮贡：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangMall/bgImg/banggong/contribute2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,77},{0,7},{0,99},{0,28}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:contributionIcon" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="GangMall/bgImg/banggong/gxText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,104},{0,5},{0,249},{0,24}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="10000元宝" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFFea00" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="GangMall/bgImg/banggong/getGX$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,51},{0,28},{0,130},{0,54}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="10000元宝" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFFea00" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="GangMall/bgImg/rank$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,672},{0,47},{0,751},{0,74}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="再消费" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangMall/bgImg/dText" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,162},{0,20},{0,248},{0,81}}" />
+                <Property Name="Font" Value="songti_24_strengh" />
+                <Property Name="Text" Value="10" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="DropTextColour" Value="" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GangMall/bottomBg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,118},{0,753},{0,463}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangMall/bottomBg/rightBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,128},{0,0},{0,752},{0,345}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="GangMall/bottomBg/rightBg/boxSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,624},{0,308}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="GangMall/bottomBg/rightBg/mNextBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,362},{0,316},{0,382},{0,336}}" />
+                    <Property Name="HoverImage" Value="set:skin image:MnextBtnHover" />
+                    <Property Name="NormalImage" Value="set:skin image:MnextBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:MnextBtnPushed" />
+                    <Property Name="DisabledImage" Value="set:skin image:MnextBtnDisable" />
+                </Window>
+                <Window Name="GangMall/bottomBg/rightBg/pageNextBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,337},{0,316},{0,357},{0,336}}" />
+                    <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                    <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+                    <Property Name="DisabledImage" Value="set:skin image:NextBtnDisable" />
+                </Window>
+                <Window Name="GangMall/bottomBg/rightBg/pageLastBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,267},{0,316},{0,287},{0,336}}" />
+                    <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                    <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+                    <Property Name="DisabledImage" Value="set:skin image:LastBtnDisable" />
+                </Window>
+                <Window Name="GangMall/bottomBg/rightBg/mLastBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,241},{0,316},{0,261},{0,336}}" />
+                    <Property Name="HoverImage" Value="set:skin image:MlastBtnHover" />
+                    <Property Name="NormalImage" Value="set:skin image:MlastBtnNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:MlastBtnPushed" />
+                    <Property Name="DisabledImage" Value="set:skin image:MlastBtnDisable" />
+                </Window>
+                <Window Name="GangMall/bottomBg/rightBg/laPageBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,291},{0,317},{0,333},{0,335}}" />
+                    <Property Name="Image" Value="set:skin image:RenderBg2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="GangMall/bottomBg/rightBg/laPageBg/pageTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,18}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="250" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF64d4d8" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="GangMall/bottomBg/btn_1" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,124},{0,44}}" />
+                <Property Name="Selected" Value="true" />
+                <Property Name="HoverImage" Value="set:skin image:tabBBtnHover3" />
+                <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover3" />
+                <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal3" />
+                <Window Name="GangMall/bottomBg/btn_1/yuanbaoImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,120},{0,40}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="GangMall/bottomBg/btn_2" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,45},{0,124},{0,85}}" />
+                <Property Name="HoverImage" Value="set:skin image:tabBBtnHover3" />
+                <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover3" />
+                <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal3" />
+                <Window Name="GangMall/bottomBg/btn_2/yuanbaoImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,121},{0,41}}" />
+                    <Property Name="Image" Value="set:gangGeneral image:clubContribution" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

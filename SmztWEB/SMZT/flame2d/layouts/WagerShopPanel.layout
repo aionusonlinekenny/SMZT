@@ -1,0 +1,339 @@
+<GUILayout>
+    <Window Name="WagerShopPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1000},{0,668}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="WagerShopPanel/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1000},{0,668}}" />
+            <Property Name="Image" Value="set:wagerShopBg image:bg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="WagerShopPanel/bg/list" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,136},{0,155},{0,657},{0,204}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/continueVictoryBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,173},{0,204},{0,538},{0,238}}" />
+                <Property Name="Image" Value="set:wagerShop image:continueVictory" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="WagerShopPanel/bg/continueVictoryBg/winnClip" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,103},{0,8},{0,147},{0,34}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="WagerShopPanel/bg/continueVictoryBg/winTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,147},{0,0},{0,365},{0,34}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="下次获得机缘（+100%）" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="WagerShopPanel/bg/linkBtn$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,571},{0,213},{0,628},{0,234}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="规则说明" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="Tooltip" Value="上单" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/spTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,671},{0,167},{0,743},{0,188}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="体 力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="fffef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/jiYuanTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,671},{0,204},{0,744},{0,225}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="宝石精华：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="fffef9d0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/spTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,744},{0,166},{0,808},{0,187}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="100/100" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffff7200" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/jiYuanTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,744},{0,203},{0,808},{0,224}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="1254021" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/spImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,808},{0,165},{0,826},{0,191}}" />
+                <Property Name="Image" Value="set:wagerShop image:chicken" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/goodLuckImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,808},{0,205},{0,834},{0,232}}" />
+                <Property Name="Image" Value="set:wagerShop image:honor" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/closeBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,827},{0,148},{0,881},{0,210}}" />
+                <Property Name="HoverImage" Value="set:wagerShop image:closeHover" />
+                <Property Name="NormalImage" Value="set:wagerShop image:closeNormal" />
+                <Property Name="PushedImage" Value="set:wagerShop image:closePushed" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/diceImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,389},{0,385},{0,453},{0,459}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/diceImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,457},{0,385},{0,521},{0,459}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/diceImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,525},{0,385},{0,589},{0,459}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/exchangeBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,692},{0,203},{0,813},{0,243}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="藏宝阁兑换" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="HoverImage" Value="set:skins image:arrowHover" />
+                <Property Name="NormalImage" Value="set:skins image:arrowNormal" />
+                <Property Name="PushedImage" Value="set:skins image:arrowPushed" />
+                <Property Name="HoverTextColour" Value="FFfef9d0" />
+                <Property Name="NormalTextColour" Value="FFfef9d0" />
+                <Property Name="PushedTextColour" Value="FFfef9d0" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/GambleGuess" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,153},{0,507},{0,827},{0,589}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="WagerShopPanel/bg/GambleGuess/imgBox" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,674},{0,82}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Window Name="WagerShopPanel/bg/GambleGuess/imgBox/smallImg" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,11},{0,0},{0,173},{0,51}}" />
+                        <Property Name="HoverImage" Value="set:wagerShop image:smallHover" />
+                        <Property Name="SelectedImage" Value="set:wagerShop image:smallHover" />
+                        <Property Name="UnselectedImage" Value="set:wagerShop image:smallNormal" />
+                    </Window>
+                    <Window Name="WagerShopPanel/bg/GambleGuess/imgBox/bigImg" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,176},{0,0},{0,327},{0,51}}" />
+                        <Property Name="HoverImage" Value="set:wagerShop image:bigHover" />
+                        <Property Name="SelectedImage" Value="set:wagerShop image:bigHover" />
+                        <Property Name="UnselectedImage" Value="set:wagerShop image:bigNormal" />
+                    </Window>
+                    <Window Name="WagerShopPanel/bg/GambleGuess/imgBox/doubleImg" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,341},{0,0},{0,493},{0,51}}" />
+                        <Property Name="HoverImage" Value="set:wagerShop image:pairsHover" />
+                        <Property Name="SelectedImage" Value="set:wagerShop image:pairsHover" />
+                        <Property Name="UnselectedImage" Value="set:wagerShop image:pairsNormal" />
+                    </Window>
+                    <Window Name="WagerShopPanel/bg/GambleGuess/imgBox/threeImg" Type="GuiLook/RadioTab">
+                        <Property Name="UnifiedAreaRect" Value="{{0,498},{0,0},{0,660},{0,51}}" />
+                        <Property Name="HoverImage" Value="set:wagerShop image:leopardHover" />
+                        <Property Name="SelectedImage" Value="set:wagerShop image:leopardHover" />
+                        <Property Name="UnselectedImage" Value="set:wagerShop image:leopardNormal" />
+                    </Window>
+                    <Window Name="WagerShopPanel/bg/GambleGuess/imgBox/imgBg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,56},{0,674},{0,79}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="WagerShopPanel/bg/GambleGuess/imgBox/imgBg/bignClip" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,36},{0,0},{0,101},{0,23}}" />
+                            <Property Name="Font" Value="songti_18_strengh" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WagerShopPanel/bg/GambleGuess/imgBox/imgBg/smallnClip" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,204},{0,0},{0,269},{0,23}}" />
+                            <Property Name="Font" Value="songti_18_strengh" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WagerShopPanel/bg/GambleGuess/imgBox/imgBg/doublenClip" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,378},{0,0},{0,443},{0,23}}" />
+                            <Property Name="Font" Value="songti_18_strengh" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WagerShopPanel/bg/GambleGuess/imgBox/imgBg/threenClip" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,551},{0,0},{0,616},{0,23}}" />
+                            <Property Name="Font" Value="songti_18_strengh" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FF85f500" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="WagerShopPanel/bg/GambleGuess/imgBox/imgBg/StaticText" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,674},{0,23}}" />
+                            <Property Name="Font" Value="songti_14" />
+                            <Property Name="Text" Value=" 赢：       宝石精华  赢：        宝石精华  赢：        宝石精华  赢：       宝石精华" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFb26b44" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="WagerShopPanel/bg/GambleGuess/btnBox" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,33},{0,0},{0,638},{0,75}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="WagerShopPanel/bg/GambleGuess/btnBox/guessBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,255},{0,56}}" />
+                        <Property Name="HoverImage" Value="set:wagerShop image:ordinaryHover" />
+                        <Property Name="NormalImage" Value="set:wagerShop image:ordinaryNormal" />
+                        <Property Name="PushedImage" Value="set:wagerShop image:ordinaryPushed" />
+                    </Window>
+                    <Window Name="WagerShopPanel/bg/GambleGuess/btnBox/yanbaoGuessBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,348},{0,0},{0,603},{0,56}}" />
+                        <Property Name="HoverImage" Value="set:wagerShop image:cheatHover" />
+                        <Property Name="NormalImage" Value="set:wagerShop image:cheatNormal" />
+                        <Property Name="PushedImage" Value="set:wagerShop image:cheatPushed" />
+                    </Window>
+                    <Window Name="WagerShopPanel/bg/GambleGuess/btnBox/guessPriceTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,51},{0,172},{0,75}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="Text" Value="花费30000体力" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="WagerShopPanel/bg/GambleGuess/btnBox/yaobaoGressPriceTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,403},{0,51},{0,566},{0,75}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="Text" Value="花费10元宝+30000体力" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="WagerShopPanel/bg/GamBleResult" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,220},{0,324},{0,757},{0,616}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="WagerShopPanel/bg/GamBleResult/threeStretchImage" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,134},{0,537},{0,226}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:wagerShop image:resultLeft" />
+                    <Property Name="LeftOffset" Value="207" />
+                    <Property Name="RightImage" Value="set:wagerShop image:resultRight" />
+                    <Property Name="CenterImage" Value="set:wagerShop image:resultCenter" />
+                    <Property Name="RightOffset" Value="15" />
+                    <Window Name="WagerShopPanel/bg/GamBleResult/threeStretchImage/typeTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,140},{0,5},{0,508},{0,46}}" />
+                        <Property Name="Font" Value="songti_24_strengh" />
+                        <Property Name="Text" Value="六六二(大、对子)" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFFea00" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="WagerShopPanel/bg/GamBleResult/threeStretchImage/overTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,140},{0,48},{0,508},{0,89}}" />
+                        <Property Name="Font" Value="songti_24_strengh" />
+                        <Property Name="Text" Value="失败(机缘+100)" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFF0000" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="WagerShopPanel/bg/GamBleResult/reBeginBtn" Type="GlossySerpent/RedButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,187},{0,238},{0,350},{0,278}}" />
+                    <Window Name="WagerShopPanel/bg/GamBleResult/reBeginBtn/againImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,163},{0,40}}" />
+                        <Property Name="Image" Value="set:wagerShop image:again" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="WagerShopPanel/bg/effectImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,320},{0,277},{0,675},{0,498}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/wanImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,321},{0,277},{0,676},{0,498}}" />
+                <Property Name="Image" Value="set:wagerShop image:bowl" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/resultEffect" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,268},{0,255},{0,737},{0,330}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/resultEffect2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,268},{0,255},{0,737},{0,330}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="WagerShopPanel/bg/checkbox" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,129},{0,254},{0,203},{0,271}}" />
+                <Property Name="Text" Value="跳过动画" />
+            </Window>
+        </Window>
+        <Window Name="WagerShopPanel/dragRect" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,1001},{0,148}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

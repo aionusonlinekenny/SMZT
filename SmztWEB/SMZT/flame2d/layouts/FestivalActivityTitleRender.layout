@@ -1,0 +1,30 @@
+<GUILayout>
+    <Window Name="FestivalActivityTitleRender" Type="GuiLook/RadioTab">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,156},{0,40}}" />
+        <Property Name="Font" Value="songti_14" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="HoverImage" Value="set:festivalActivityNormal image:tabBBtnHover" />
+        <Property Name="SelTextColour" Value="FFfff799" />
+        <Property Name="SelectedImage" Value="set:festivalActivityNormal image:tabBBtnHover" />
+        <Property Name="HoverTextColour" Value="FFfff799" />
+        <Property Name="UnselectedImage" Value="set:festivalActivityNormal image:tabBBtnNormal" />
+        <Property Name="NormalTextColour" Value="FF74aacf" />
+        <Property Name="PushedTextColour" Value="FFfff799" />
+        <Window Name="FestivalActivityTitleRender/numFlag" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,8},{0,20},{0,26}}" />
+            <Property Name="Image" Value="set:skin image:promptBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="FestivalActivityTitleRender/numFlag/numTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,18},{0,18}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="奖" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,39 @@
+<GUILayout>
+    <Window Name="BagEveryDayGiftRender" Type="GlossySerpent/ThreeStretchImage">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,358},{0,78}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="LeftImage" Value="set:bagGift image:RenderLeft" />
+        <Property Name="LeftOffset" Value="17" />
+        <Property Name="RightImage" Value="set:bagGift image:RenderRight" />
+        <Property Name="CenterImage" Value="set:bagGift image:RenderMiddleCross" />
+        <Property Name="RightOffset" Value="14" />
+        <Property Name="VertImageFormatting" Value="TopAligned" />
+        <Window Name="BagEveryDayGiftRender/titleTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,32},{0,2},{0,328},{0,22}}" />
+            <Property Name="Font" Value="songti_14" />
+            <Property Name="Text" Value="开启一阶·逆天礼包,每天免费领取" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00baff" />
+            <Property Name="VertFormatting" Value="TopAligned" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="BagEveryDayGiftRender/staticImage2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,263},{0,18},{0,264},{0,74}}" />
+            <Property Name="Image" Value="set:skin image:VerticalLine" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="BagEveryDayGiftRender/receiveBtn" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,270},{0,35},{0,351},{0,58}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="每日领取" />
+        </Window>
+        <Window Name="BagEveryDayGiftRender/dataGridWin" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,7},{0,22},{0,257},{0,70}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

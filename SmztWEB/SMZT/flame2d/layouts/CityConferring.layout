@@ -1,0 +1,239 @@
+<GUILayout>
+    <Window Name="CityConferring" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,656},{0,432}}" />
+        <Property Name="GlyphImage" Value="set:cityGeneral image:Conferring" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="CityConferring/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,638},{0,386}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CityConferring/bg/rightbg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,235},{0,0},{0,638},{0,382}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CityConferring/bg/rightbg/conferringList" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,403},{0,29}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                    <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="CityConferring/bg/rightbg/conferringList/conferringTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,402},{0,28}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="册封王族" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF65b3e9" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CityConferring/bg/rightbg/comferringBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,30},{0,402},{0,381}}" />
+                    <Property Name="Image" Value="set:cityconferring image:cityconferringBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="CityConferring/bg/rightbg/comferringBg/nullImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,25},{0,92},{0,182},{0,141}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="CityConferring/bg/rightbg/comferringBg/nullImg2/selectTitle2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,43},{0,9},{0,105},{0,38}}" />
+                            <Property Name="Font" Value="songti_24_strengh" />
+                            <Property Name="Text" Value="选择" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="CityConferring/bg/rightbg/comferringBg/nullImg3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,25},{0,163},{0,182},{0,212}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="CityConferring/bg/rightbg/comferringBg/nullImg3/selectTitle3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,43},{0,9},{0,105},{0,38}}" />
+                            <Property Name="Font" Value="songti_24_strengh" />
+                            <Property Name="Text" Value="选择" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="CityConferring/bg/rightbg/comferringBg/nullImg4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,25},{0,231},{0,182},{0,280}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="CityConferring/bg/rightbg/comferringBg/nullImg4/selectTitle4" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,43},{0,9},{0,105},{0,38}}" />
+                            <Property Name="Font" Value="songti_24_strengh" />
+                            <Property Name="Text" Value="选择" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="CityConferring/bg/rightbg/comferringBg/TextBG1" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,226},{0,36},{0,353},{0,57}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="CityConferring/bg/rightbg/comferringBg/TextBG1/nameTxt1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,82},{0,21}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="玩家名称六字" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="CityConferring/bg/rightbg/comferringBg/TextBG1/timeTxt1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,78},{0,0},{0,127},{0,21}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="59:00 " />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFF0000" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="CityConferring/bg/rightbg/comferringBg/sureBtn" Type="GlossySerpent/RedButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,103},{0,297},{0,290},{0,337}}" />
+                        <Window Name="CityConferring/bg/rightbg/comferringBg/sureBtn/sureImg" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,187},{0,40}}" />
+                            <Property Name="Image" Value="set:cityGeneral image:sure" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                    <Window Name="CityConferring/bg/rightbg/comferringBg/TextBG2" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,226},{0,106},{0,353},{0,127}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="CityConferring/bg/rightbg/comferringBg/TextBG2/nameTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,82},{0,21}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="玩家名称六字" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="CityConferring/bg/rightbg/comferringBg/TextBG2/timeTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,78},{0,0},{0,127},{0,21}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="59:00 " />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFF0000" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="CityConferring/bg/rightbg/comferringBg/TextBG3" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,226},{0,176},{0,353},{0,197}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="CityConferring/bg/rightbg/comferringBg/TextBG3/nameTxt3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,82},{0,21}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="玩家名称六字" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="CityConferring/bg/rightbg/comferringBg/TextBG3/timeTxt3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,78},{0,0},{0,127},{0,21}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="59:00 " />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFF0000" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="CityConferring/bg/rightbg/comferringBg/TextBG4" Type="GuiLook/TextBG">
+                        <Property Name="UnifiedAreaRect" Value="{{0,226},{0,246},{0,353},{0,267}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="CityConferring/bg/rightbg/comferringBg/TextBG4/nameTxt4" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,82},{0,21}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="玩家名称六字" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="CityConferring/bg/rightbg/comferringBg/TextBG4/timeTxt4" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,78},{0,0},{0,127},{0,21}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="59:00 " />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFFF0000" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="CityConferring/bg/rightbg/comferringBg/nullImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,25},{0,23},{0,182},{0,72}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="CityConferring/bg/rightbg/comferringBg/nullImg1/selectTitle1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,43},{0,9},{0,105},{0,38}}" />
+                            <Property Name="Font" Value="songti_24_strengh" />
+                            <Property Name="Text" Value="选择" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="CityConferring/bg/gangPlayerList" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,235},{0,29}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:HeadLeft" />
+                <Property Name="LeftOffset" Value="10" />
+                <Property Name="RightImage" Value="set:skin image:HeadRight" />
+                <Property Name="CenterImage" Value="set:skin image:HeadMiddle" />
+                <Property Name="RightOffset" Value="10" />
+                <Window Name="CityConferring/bg/gangPlayerList/gangPlayerTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,234},{0,28}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="帮派成员" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CityConferring/bg/boxList" Type="GuiLook/ScrollablePane">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,30},{0,235},{0,378}}" />
+                <AutoWindow NameSuffix="__auto_container__">
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_hscrollbar__">
+                    <Property Name="NonClient" Value="true" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="NonClient" Value="true" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="VerticalScrollbar" Value="true" />
+                </AutoWindow>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

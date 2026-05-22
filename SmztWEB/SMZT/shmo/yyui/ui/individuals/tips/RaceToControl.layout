@@ -1,0 +1,102 @@
+<GUILayout>
+    <Window Name="RaceToControl" Type="GuiLook/CommonBg4">
+        <Property Name="UnifiedAreaRect" Value="{{0,86},{0,28},{0,347},{0,360}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="RaceToControl/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,39},{0,261},{0,40}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="RaceToControl/Line2" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,151},{0,261},{0,152}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="RaceToControl/Line3" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,302},{0,261},{0,303}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="RaceToControl/controlRace" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,30},{0,45},{0,222},{0,139}}" />
+            <Property Name="Image" Value="set:changeAvatar image:controlRace" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="RaceToControl/point" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0,162},{0,24},{0,170}}" />
+            <Property Name="Image" Value="set:skin image:MarkImg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="RaceToControl/point1" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0,196},{0,24},{0,204}}" />
+            <Property Name="Image" Value="set:skin image:MarkImg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="RaceToControl/point2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0,230},{0,24},{0,238}}" />
+            <Property Name="Image" Value="set:skin image:MarkImg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="RaceToControl/point3" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0,264},{0,24},{0,272}}" />
+            <Property Name="Image" Value="set:skin image:MarkImg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="RaceToControl/s1$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,26},{0,189},{0,248},{0,223}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="$RT" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="RaceToControl/s0$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,26},{0,153},{0,248},{0,187}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="$RT" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="RaceToControl/s3$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,26},{0,260},{0,248},{0,294}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="$RT" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="RaceToControl/s2$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,26},{0,223},{0,248},{0,257}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="$RT" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="RaceToControl/instruction4" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,307},{0,261},{0,327}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="注：非变身状态属于无种族，不受到种族克制" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="RaceToControl/relationship" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,13},{0,9},{0,133},{0,34}}" />
+            <Property Name="Font" Value="songti_16_strengh" />
+            <Property Name="Text" Value="种族克制关系" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

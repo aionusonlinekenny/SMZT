@@ -1,0 +1,96 @@
+<GUILayout>
+    <Window Name="BagGridNoEnoughAlert" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,451},{0,214}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="BagGridNoEnoughAlert/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,451},{0,214}}" />
+            <Property Name="Image" Value="set:activities image:bg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="BagGridNoEnoughAlert/bg/closeBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,427},{0,62},{0,444},{0,79}}" />
+                <Property Name="Image" Value="set:mainUI1 image:closeBtn" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="CentreAligned" />
+            </Window>
+            <Window Name="BagGridNoEnoughAlert/bg/descTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,221},{0,103},{0,381},{0,121}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="通过以下途径可解决：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ff00baff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="BagGridNoEnoughAlert/bg/promptImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,221},{0,72},{0,376},{0,91}}" />
+                <Property Name="Image" Value="set:bagNoEnough image:enough" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="BagGridNoEnoughAlert/bg/check" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,220},{0,193},{0,344},{0,209}}" />
+                <Property Name="Text" Value="本次登录不再提示" />
+                <Property Name="HoverTextColour" Value="FF64d4d8" />
+            </Window>
+            <Window Name="BagGridNoEnoughAlert/bg/wayImgBtn1" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,221},{0,128},{0,275},{0,182}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Image" Value="set:bagNoEnough image:lock" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="TopAligned" />
+                <Property Name="VertLabelFormatting" Value="BottomAligned" />
+                <Window Name="BagGridNoEnoughAlert/bg/wayImgBtn1/StaticText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,36},{0,54},{0,54}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="开格子" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFfcd78a" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="BagGridNoEnoughAlert/bg/wayImgBtn2" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,301},{0,128},{0,355},{0,182}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Image" Value="set:bagNoEnough image:sell" />
+                <Property Name="RenderLabelOffsetY" Value="" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="TopAligned" />
+                <Property Name="VertLabelFormatting" Value="BottomAligned" />
+                <Window Name="BagGridNoEnoughAlert/bg/wayImgBtn2/StaticText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,36},{0,54},{0,54}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="出售" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFfcd78a" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="BagGridNoEnoughAlert/bg/wayImgBtn3" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,381},{0,128},{0,435},{0,182}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Image" Value="set:bagNoEnough image:clean" />
+                <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                <Property Name="VertImageFormatting" Value="TopAligned" />
+                <Property Name="VertLabelFormatting" Value="BottomAligned" />
+                <Window Name="BagGridNoEnoughAlert/bg/wayImgBtn3/StaticText" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,36},{0,54},{0,54}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="整理" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFfcd78a" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

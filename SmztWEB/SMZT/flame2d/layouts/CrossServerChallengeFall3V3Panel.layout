@@ -1,0 +1,194 @@
+<GUILayout>
+    <Window Name="CrossServerChallengeFall3V3Panel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{0,697},{0,339}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CrossServerChallengeFall3V3Panel/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,51},{0,672},{0,312}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="CrossServerChallengeFall3V3Panel/bgImg/roleBgEffect" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,261},{0,260}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/bgImg/roleView" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,125},{0,215},{0,141},{0,242}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="CrossServerChallengeFall3V3Panel/sp1" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,261},{0,0},{0,695},{0,339}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/lostCloseBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,126},{0,283},{0,207},{0,306}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="确定" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/failureImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,56},{0,23},{0,276},{0,83}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/selfImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,18},{0,121},{0,93},{0,138}}" />
+                <Property Name="Image" Value="set:crossServerSettlement image:selfOrder" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/progressBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,99},{0,115},{0,258},{0,145}}" />
+                <Property Name="Image" Value="set:crossServerSettlement image:progressBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="CrossServerChallengeFall3V3Panel/sp1/progressBg/progress$NormalBar" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,159},{0,30}}" />
+                    <Property Name="Image" Value="set:crossServerSettlement image:progress" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/orderImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,269},{0,115},{0,376},{0,146}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/progressTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,103},{0,220},{0,123}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/scoreTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,119},{0,182},{0,165},{0,202}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="积分" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF7200" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/scoreTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,167},{0,182},{0,250},{0,202}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF7200" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/scoreUpTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,260},{0,181},{0,307},{0,201}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/arrowImg0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,316},{0,182},{0,327},{0,201}}" />
+                <Property Name="Image" Value="set:skins image:arrowUp" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/point0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,105},{0,188},{0,113},{0,196}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/honorTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,167},{0,210},{0,250},{0,230}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF7200" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/point1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,105},{0,216},{0,113},{0,224}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/arrowImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,316},{0,210},{0,327},{0,229}}" />
+                <Property Name="Image" Value="set:skins image:arrowUp" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/honorUpTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,260},{0,209},{0,307},{0,229}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/honorTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,119},{0,210},{0,165},{0,230}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="荣誉" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF7200" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/militaryTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,167},{0,239},{0,250},{0,259}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF7200" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/point2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,105},{0,245},{0,113},{0,253}}" />
+                <Property Name="Image" Value="set:skin image:MarkImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/arrowImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,316},{0,239},{0,327},{0,258}}" />
+                <Property Name="Image" Value="set:skins image:arrowUp" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/militaryUpTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,260},{0,238},{0,307},{0,258}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CrossServerChallengeFall3V3Panel/sp1/militaryTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,119},{0,239},{0,165},{0,259}}" />
+                <Property Name="Font" Value="songti_14" />
+                <Property Name="Text" Value="军功" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF7200" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

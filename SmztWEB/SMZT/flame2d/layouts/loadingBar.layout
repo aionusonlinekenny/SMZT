@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="loadingBar" >
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,258},{0,43}}" />
+        <Window Type="GlossySerpent/ThreeStretchImage" Name="loadingBar/barbg" >
+            <Property Name="LeftImage" Value="set:tj2common image:GatherBgLeft" />
+            <Property Name="LeftOffset" Value="26" />
+            <Property Name="RightImage" Value="set:tj2common image:GatherBgRight" />
+            <Property Name="CenterImage" Value="set:tj2common image:GatherBgCentre" />
+            <Property Name="RightOffset" Value="26" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,16},{0,258},{0,36}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="GlossySerpent/ThreeStretchImage" Name="loadingBar/bar" >
+            <Property Name="LeftImage" Value="set:tj2common image:GatherBarLeft" />
+            <Property Name="LeftOffset" Value="24" />
+            <Property Name="RightImage" Value="set:tj2common image:GatherBarRight" />
+            <Property Name="CenterImage" Value="set:tj2common image:GatherBarCentre" />
+            <Property Name="RightOffset" Value="24" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,20},{0,238},{0,32}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="GuiLook/StaticText" Name="loadingBar/t" >
+            <Property Name="Font" Value="宋体" />
+            <Property Name="Text" Value="采集中" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,2},{0,258},{0,20}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+        </Window>
+    </Window>
+</GUILayout>

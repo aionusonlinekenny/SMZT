@@ -1,0 +1,136 @@
+<GUILayout>
+    <Window Name="EquipWashMany" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,590},{0,489}}" />
+        <Property Name="Font" Value="songti_18_strengh" />
+        <Property Name="Text" Value="批量洗练" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="EquipWashMany/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,93},{0,572},{0,405}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="EquipWashMany/bg/boxList" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,571},{0,312}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Name="EquipWashMany/topBg" Type="GuiLook/CommonBg2">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,572},{0,89}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="EquipWashMany/topBg/backgroundImg" Type="GlossySerpent/ThreeStretchImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,572},{0,29}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="LeftImage" Value="set:skin image:ListTitleBgLeft" />
+                <Property Name="LeftOffset" Value="19" />
+                <Property Name="RightImage" Value="set:skin image:ListTitleBgRight" />
+                <Property Name="CenterImage" Value="set:skin image:ListTitleBgCenter" />
+                <Property Name="RightOffset" Value="19" />
+                <Window Name="EquipWashMany/topBg/backgroundImg/attributeHadTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,572},{0,29}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="现有属性" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFfef9d0" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashMany/topBg/selectGrid" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,33},{0,52},{0,81}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="EquipWashMany/topBg/lock0" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,56},{0,60},{0,154},{0,76}}" />
+                <Property Name="Text" Value="锁定" />
+                <Property Name="HoverTextColour" Value="FF64d4d8" />
+            </Window>
+            <Window Name="EquipWashMany/topBg/lock1" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,60},{0,258},{0,76}}" />
+                <Property Name="Text" Value="锁定" />
+                <Property Name="HoverTextColour" Value="FF64d4d8" />
+            </Window>
+            <Window Name="EquipWashMany/topBg/lock2" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,264},{0,60},{0,362},{0,76}}" />
+                <Property Name="Text" Value="锁定" />
+                <Property Name="HoverTextColour" Value="FF64d4d8" />
+            </Window>
+            <Window Name="EquipWashMany/topBg/prop1$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,40},{0,254},{0,58}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipWashMany/topBg/prop0$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,56},{0,40},{0,151},{0,58}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="[满]" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFF0000" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipWashMany/topBg/prop2$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,264},{0,40},{0,359},{0,58}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="EquipWashMany/topBg/box1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,368},{0,29},{0,468},{0,85}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="EquipWashMany/topBg/box1/prop3$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,11},{0,96},{0,29}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipWashMany/topBg/box1/lock3" Type="GuiLook/Checkbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,98},{0,47}}" />
+                    <Property Name="Text" Value="锁定" />
+                    <Property Name="HoverTextColour" Value="FF64d4d8" />
+                </Window>
+            </Window>
+            <Window Name="EquipWashMany/topBg/box4" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,472},{0,29},{0,572},{0,85}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="EquipWashMany/topBg/box4/prop4$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,11},{0,96},{0,29}}" />
+                    <Property Name="Font" Value="songti_12" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="EquipWashMany/topBg/box4/lock4" Type="GuiLook/Checkbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,98},{0,47}}" />
+                    <Property Name="Text" Value="锁定" />
+                    <Property Name="HoverTextColour" Value="FF64d4d8" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="EquipWashMany/saveBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,163},{0,414},{0,255},{0,437}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="保存" />
+        </Window>
+        <Window Name="EquipWashMany/batchBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,303},{0,414},{0,395},{0,437}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="批量洗练" />
+        </Window>
+    </Window>
+</GUILayout>

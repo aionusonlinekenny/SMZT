@@ -1,0 +1,89 @@
+<GUILayout>
+    <Window Name="DancePrompt" Type="GuiLook/CommonBg4">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,300},{0,150}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="DancePrompt/titleImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,298},{0,33}}" />
+            <Property Name="Image" Value="set:dance image:title" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="DancePrompt/titleImg/point0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,170},{0,14},{0,174},{0,18}}" />
+                <Property Name="Image" Value="set:dance image:point" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="DancePrompt/titleImg/point1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,183},{0,14},{0,187},{0,18}}" />
+                <Property Name="Image" Value="set:dance image:point" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="DancePrompt/titleImg/point2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,196},{0,14},{0,200},{0,18}}" />
+                <Property Name="Image" Value="set:dance image:point" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="DancePrompt/descTxt1" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,11},{0,45},{0,287},{0,67}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="参与每日广场舞活动可获得大量经验奖励" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ffe1feff" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="DancePrompt/txt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,108},{0,80},{0,271},{0,102}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="12:45-12:55/18:45-18:55" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ff43f850" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="DancePrompt/descTxt2" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,113},{0,286},{0,135}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="不要只因快乐而跳舞，您还也可以因跳舞而快乐" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ff64d4d8" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="DancePrompt/timeTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,44},{0,80},{0,108},{0,102}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="活动时间：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="ffe1feff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="DancePrompt/dragImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,-63},{0,-50},{0,92},{0,81}}" />
+            <Property Name="Image" Value="set:skins image:blueDrag" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

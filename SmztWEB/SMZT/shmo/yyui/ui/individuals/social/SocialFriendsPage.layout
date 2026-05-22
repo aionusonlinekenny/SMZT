@@ -1,0 +1,101 @@
+<GUILayout>
+    <Window Name="SocialFriendsPage" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,279},{0,516}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SocialFriendsPage/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,278},{0,488}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SocialFriendsPage/bg/bgImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,276},{0,486}}" />
+                <Property Name="Image" Value="set:friendsBg2 image:bg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="SocialFriendsPage/bg/bgImg/gridBg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,9},{0,7},{0,57},{0,55}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="SocialFriendsPage/bg/bgImg/gridBg/item" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="SocialFriendsPage/bg/bgImg/nameTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,88},{0,8},{0,188},{0,30}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="玩家名称六字" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFe1feff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SocialFriendsPage/bg/bgImg/fightTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,66},{0,35},{0,212},{0,57}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="战斗力：1234567" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFe1feff" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="SocialFriendsPage/bg/bgImg/energyBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,222},{0,3},{0,265},{0,54}}" />
+                    <Property Name="HoverImage" Value="set:friends image:energyHover" />
+                    <Property Name="NormalImage" Value="set:friends image:energyNormal" />
+                    <Property Name="PushedImage" Value="set:friends image:energyPushed" />
+                </Window>
+                <Window Name="SocialFriendsPage/bg/bgImg/list" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,87},{0,274},{0,484}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{0,273},{0,397}}" />
+                </Window>
+                <Window Name="SocialFriendsPage/bg/bgImg/sayTxt" Type="GuiLook/Editbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,6},{0,59},{0,269},{0,84}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                </Window>
+                <Window Name="SocialFriendsPage/bg/bgImg/drillImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,66},{0,1},{0,87},{0,39}}" />
+                    <Property Name="Image" Value="set:skins image:Idrill" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SocialFriendsPage/bg/bgImg/yearImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,87},{0,11},{0,103},{0,27}}" />
+                    <Property Name="Image" Value="set:skins image:Idrill" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="SocialFriendsPage/addFriendBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,175},{0,493},{0,277},{0,516}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="添加好友" />
+        </Window>
+        <Window Name="SocialFriendsPage/gangBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,70},{0,493},{0,172},{0,516}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="帮派聊天" />
+        </Window>
+        <Window Name="SocialFriendsPage/setBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,493},{0,67},{0,516}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="设置" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,226 @@
+<GUILayout>
+    <Window Name="PlayerHead" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,360},{0,201}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="PlayerHead/selfSp" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,27},{0,360},{0,116}}" />
+            <Property Name="Image" Value="set:skins image:headBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="PlayerHead/selfSp/closeBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,332},{0,7},{0,349},{0,24}}" />
+                <Property Name="HoverImage" Value="set:mainUI1 image:closeHover" />
+                <Property Name="NormalImage" Value="set:mainUI1 image:closeNormal" />
+                <Property Name="PushedImage" Value="set:mainUI1 image:closePushed" />
+            </Window>
+            <Window Name="PlayerHead/selfSp/renderBG" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,116},{0,35},{0,299},{0,47}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="PlayerHead/selfSp/renderBG/hp$StretchBar" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,182},{0,11}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:hpBar" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="PlayerHead/selfSp/vipImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,279},{0,5},{0,317},{0,23}}" />
+                <Property Name="Image" Value="set:mainUI1 image:goldVipBtnNormal" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="PlayerHead/selfSp/vipImg/vipNumImg" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,25},{0,5},{0,45},{0,25}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="PlayerHead/selfSp/vipImg/StaticImage" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,0},{0,24},{0,18}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:goldVipImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="PlayerHead/selfSp/menuBtnWin" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,116},{0,54},{0,344},{0,78}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="PlayerHead/selfSp/menuBtnWin/chatBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,78},{0,0},{0,100},{0,22}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="Tooltip" Value="14704" />
+                    <Window Name="PlayerHead/selfSp/menuBtnWin/chatBtn/chatImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,21},{0,21}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:chatImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="Tooltip" Value="14704" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Property Name="MouseInputPropagationEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PlayerHead/selfSp/menuBtnWin/checkBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,26},{0,0},{0,48},{0,22}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="Tooltip" Value="14702" />
+                    <Window Name="PlayerHead/selfSp/menuBtnWin/checkBtn/checkImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,21},{0,21}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:checkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="Tooltip" Value="14702" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Property Name="MouseInputPropagationEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PlayerHead/selfSp/menuBtnWin/friendBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,52},{0,0},{0,74},{0,22}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="Tooltip" Value="14703" />
+                    <Window Name="PlayerHead/selfSp/menuBtnWin/friendBtn/friendImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,21},{0,21}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:friendsImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="Tooltip" Value="14703" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Property Name="MouseInputPropagationEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PlayerHead/selfSp/menuBtnWin/menuBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,161},{0,1},{0,183},{0,23}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                </Window>
+                <Window Name="PlayerHead/selfSp/menuBtnWin/teamBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,104},{0,0},{0,126},{0,22}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="Tooltip" Value="14705" />
+                    <Window Name="PlayerHead/selfSp/menuBtnWin/teamBtn/teamImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,21},{0,21}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:teamImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="Tooltip" Value="14705" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Property Name="MouseInputPropagationEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PlayerHead/selfSp/menuBtnWin/copyNameBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,22},{0,22}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="Tooltip" Value="14701" />
+                    <Window Name="PlayerHead/selfSp/menuBtnWin/copyNameBtn/copyNameImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,21},{0,21}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:mailImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="Tooltip" Value="14701" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Property Name="MouseInputPropagationEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="PlayerHead/selfSp/menuBtnWin/followBtn" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,130},{0,0},{0,152},{0,22}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="Tooltip" Value="14706" />
+                    <Window Name="PlayerHead/selfSp/menuBtnWin/followBtn/followImg" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,21},{0,21}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:boothImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="Tooltip" Value="14706" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                        <Property Name="MouseInputPropagationEnabled" Value="true" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="PlayerHead/selfSp/roleNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,136},{0,6},{0,218},{0,26}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="玩家名称六字" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PlayerHead/selfSp/levelTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,218},{0,5},{0,276},{0,25}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="Lv. 100" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PlayerHead/selfSp/hpTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,116},{0,32},{0,298},{0,48}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="100000/500000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="PlayerHead/selfSp/campImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,6},{0,136},{0,27}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="PlayerHead/d3DWin" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,35},{0,342},{0,45},{0,352}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="PlayerHead/headImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,105},{0,109}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

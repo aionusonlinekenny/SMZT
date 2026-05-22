@@ -1,0 +1,48 @@
+<GUILayout>
+    <Window Name="CrossServerZhengbaPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,984},{0,571}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CrossServerZhengbaPanel/bgImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,1},{0,982},{0,570}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="CrossServerZhengbaPanel/bgImg/rankBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,813},{0,4},{0,976},{0,88}}" />
+                <Property Name="Image" Value="set:crossServerBoss image:rankRewardBtn" />
+            </Window>
+            <Window Name="CrossServerZhengbaPanel/bgImg/openBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,374},{0,495},{0,605},{0,547}}" />
+                <Property Name="HoverImage" Value="set:crossServerBoss image:hover" />
+                <Property Name="NormalImage" Value="set:crossServerBoss image:normal" />
+                <Property Name="PushedImage" Value="set:crossServerBoss image:pushed" />
+                <Window Name="CrossServerZhengbaPanel/bgImg/openBtn/openBtnImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,52}}" />
+                    <Property Name="Image" Value="set:crossServer image:kill" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="CrossServerZhengbaPanel/bgImg/ruleTxt1$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,275},{0,380},{0,705},{0,480}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="CrossServerZhengbaPanel/bgImg/list" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,132},{0,89},{0,301},{0,563}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="CrossServerZhengbaPanel/bgImg/list1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,689},{0,88},{0,858},{0,562}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

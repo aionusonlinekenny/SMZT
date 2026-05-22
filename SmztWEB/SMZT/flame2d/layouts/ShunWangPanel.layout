@@ -1,0 +1,80 @@
+<GUILayout>
+    <Window Name="ShunWangPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,777},{0,532}}" />
+        <Property Name="GlyphImage" Value="set:shunWang image:titleTxt" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="ShunWangPanel/RadioTab0" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,163},{0,44}}" />
+            <Property Name="HoverImage" Value="set:shunWang image:selectHover" />
+            <Property Name="SelectedImage" Value="set:shunWang image:selectHover" />
+            <Property Name="UnselectedImage" Value="set:shunWang image:selectNormal" />
+            <Window Name="ShunWangPanel/RadioTab0/radioImg0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,37},{0,0},{0,163},{0,40}}" />
+                <Property Name="Image" Value="set:shunWang image:shunWang" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="ShunWangPanel/RadioTab1" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,45},{0,163},{0,85}}" />
+            <Property Name="HoverImage" Value="set:shunWang image:selectHover" />
+            <Property Name="SelectedImage" Value="set:shunWang image:selectHover" />
+            <Property Name="UnselectedImage" Value="set:shunWang image:selectNormal" />
+            <Window Name="ShunWangPanel/RadioTab1/radioImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,37},{0,0},{0,163},{0,40}}" />
+                <Property Name="Image" Value="set:shunWang image:super" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="ShunWangPanel/RadioTab2" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,86},{0,163},{0,126}}" />
+            <Property Name="HoverImage" Value="set:shunWang image:selectHover" />
+            <Property Name="SelectedImage" Value="set:shunWang image:selectHover" />
+            <Property Name="UnselectedImage" Value="set:shunWang image:selectNormal" />
+            <Window Name="ShunWangPanel/RadioTab2/radioImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,37},{0,0},{0,163},{0,40}}" />
+                <Property Name="Image" Value="set:shunWang image:phoneGift" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="ShunWangPanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,164},{0,4},{0,759},{0,484}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="ShunWangPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,489},{0,759},{0,490}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

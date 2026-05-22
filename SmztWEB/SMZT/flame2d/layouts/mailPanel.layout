@@ -1,0 +1,166 @@
+<GUILayout>
+    <Window Name="mail" Type="GuiLook/BigWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,38},{0,-5},{0,738},{0,589}}" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+       
+        <Window Name="mail/checkbox" Type="GuiLook/Checkbox">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,516},{0,20},{0,536}}" />
+        </Window>
+        <Window Name="mail/ckText" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,22},{0,514},{1,-620},{1,-2}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="全选" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="mail/tab" Type="GuiLook/TabControl">
+            <Property Name="UnifiedAreaRect" Value="{{0,-6},{0,9},{0,319},{0,509}}" />
+          
+            <Window Name="mail/tab/tab1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,327},{0,476}}" />
+                <Property Name="Text" Value="收信箱" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="mail/tab/tab1/revBtn" Type="GuiLook/Button">
+                    <Property Name="UnifiedAreaRect" Value="{{0,90},{0,171},{0,197},{0,221}}" />
+                    <Property Name="Text" Value="收信箱" />
+                </Window>
+            </Window>
+            <Window Name="mail/tab/tab2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,327},{0,476}}" />
+                <Property Name="Text" Value="系统" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Window Name="mail/tab/tab2/sysBtn" Type="GuiLook/Button">
+                    <Property Name="UnifiedAreaRect" Value="{{0,89},{0,222},{0,198},{0,272}}" />
+                    <Property Name="Text" Value="系统" />
+                </Window>
+            </Window>
+            <Window Name="mail/tab/tab3" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,327},{0,476}}" />
+                <Property Name="Text" Value="阵营" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+            </Window>
+            <Window Name="mail/tab/tab4" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,327},{0,476}}" />
+                <Property Name="Text" Value="帮派" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+            </Window>
+            <Window Name="mail/tab/tab5" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,327},{0,476}}" />
+                <Property Name="Text" Value="私人" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+            </Window>
+            <Window Name="mail/tab/tab6" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,2},{0,328},{0,478}}" />
+                <Property Name="Text" Value="未读" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Window Name="mail/tab/tab6/weidu" Type="GuiLook/Button">
+                    <Property Name="UnifiedAreaRect" Value="{{0,88},{0,279},{0,202},{0,329}}" />
+                    <Property Name="Text" Value="未读" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="mail/tipText" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,321},{0,9},{1,3},{1,-504}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="注:邮件保存15天,逾期系统自动删除,包括附件." />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="mail/shoujian" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,327},{0,22},{0,427},{0,47}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="收件箱:" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="mail/title" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,327},{0,50},{0,427},{0,75}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="标题:" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="mail/neirong" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,331},{0,92},{0,431},{0,117}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="内容:" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="mail/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,331},{0,378},{1,7},{1,-146}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="mail/fujian" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,337},{0,398},{0,387},{0,448}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="附件:" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="mail/send" Type="GuiLook/Button">
+            <Property Name="UnifiedAreaRect" Value="{{0,606},{0,497},{0,678},{0,528}}" />
+            <Property Name="Text" Value="发 送" />
+        </Window>
+        <Window Name="mail/ThreeStretchImageButton" Type="GuiLook/ThreeStretchImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,519},{0,309},{0,665},{0,359}}" />
+            <Property Name="Text" Value="查看游戏商城" />
+            <Property Name="LeftImage" Value="set:tj2common1 image:RedBtnL" />
+            <Property Name="LeftOffset" Value="43" />
+            <Property Name="RightImage" Value="set:tj2common1 image:RedBtnR" />
+            <Property Name="CenterImage" Value="set:tj2common1 image:RedBtnC" />
+            <Property Name="RightOffset" Value="43" />
+        </Window>
+        <Window Name="mail/delBut" Type="GuiLook/Button">
+            <Property Name="UnifiedAreaRect" Value="{{0,82},{0,510},{0,141},{0,539}}" />
+            <Property Name="Text" Value="删 除" />
+        </Window>
+        <Window Name="mail/writeMail" Type="GuiLook/Button">
+            <Property Name="UnifiedAreaRect" Value="{{0,174},{0,511},{0,252},{0,540}}" />
+            <Property Name="Text" Value="写 信" />
+        </Window>
+        <Window Name="mail/DefaultWindow" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,-109},{0,-8},{0,-9},{0,392}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="mail/DefaultWindow/Button" Type="GuiLook/Button">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,-1},{0,99},{0,49}}" />
+                <Property Name="ClippedByParent" Value="false" />
+            </Window>
+            <Window Name="mail/DefaultWindow/Button2" Type="GuiLook/Button">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,52},{0,98},{0,102}}" />
+            </Window>
+        </Window>
+        <Window Name="mail/img" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,449},{0,84},{0,470},{0,106}}" />
+            <Property Name="Image" Value="set:skin image:Num0" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="mail/StaticImage" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,460},{0,141},{0,668},{0,308}}" />
+            <Property Name="Image" Value="set:skins image:redNormal" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="mail/StaticImage/sp" Type="GuiLook/ScrollablePane">
+                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,14},{0,192},{0,149}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

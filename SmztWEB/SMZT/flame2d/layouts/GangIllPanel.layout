@@ -1,0 +1,70 @@
+<GUILayout>
+    <Window Name="GangIllPanel" Type="GuiLook/StaticImage">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,372},{0,189}}" />
+        <Property Name="Image" Value="set:gangIll image:bg" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="FrameEnabled" Value="false" />
+        <Property Name="BackgroundEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Window Name="GangIllPanel/grid" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,58},{0,76},{0,104},{0,122}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="GangIllPanel/itemNameTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,127},{0,72},{0,234},{0,92}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFFea00" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangIllPanel/timeTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,39},{0,152},{0,79},{0,172}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="倒计时" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00e4FF" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangIllPanel/time$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,81},{0,156},{0,253},{0,166}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:activitiesGeneral image:redLeft" />
+            <Property Name="LeftOffset" Value="28" />
+            <Property Name="RightImage" Value="set:activitiesGeneral image:redRight" />
+            <Property Name="CenterImage" Value="set:activitiesGeneral image:redMiddle" />
+            <Property Name="RightOffset" Value="28" />
+        </Window>
+        <Window Name="GangIllPanel/closeBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,336},{0,12},{0,361},{0,34}}" />
+            <Property Name="HoverImage" Value="set:gangIll image:closeHover" />
+            <Property Name="NormalImage" Value="set:gangIll image:closeNormal" />
+            <Property Name="PushedImage" Value="set:gangIll image:closePushed" />
+        </Window>
+        <Window Name="GangIllPanel/illBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,269},{0,35},{0,333},{0,106}}" />
+            <Property Name="HoverImage" Value="set:gangIll image:throwHover" />
+            <Property Name="NormalImage" Value="set:gangIll image:throwNormal" />
+            <Property Name="PushedImage" Value="set:gangIll image:throwNormal" />
+            <Property Name="HorzImageFormatting" Value="CentreAligned" />
+            <Property Name="VertImageFormatting" Value="CentreAligned" />
+        </Window>
+        <Window Name="GangIllPanel/abandonBtn" Type="GuiLook/DefaultButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,269},{0,107},{0,333},{0,178}}" />
+            <Property Name="HoverImage" Value="set:gangIll image:abandonHover" />
+            <Property Name="NormalImage" Value="set:gangIll image:abandonNormal" />
+            <Property Name="PushedImage" Value="set:gangIll image:abandonNormal" />
+            <Property Name="HorzImageFormatting" Value="CentreAligned" />
+            <Property Name="VertImageFormatting" Value="CentreAligned" />
+        </Window>
+        <Window Name="GangIllPanel/playerNameTxt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,117},{0,106},{0,268},{0,126}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,738 @@
+<GUILayout>
+    <Window Name="ChangeAvater" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,18},{0,19},{0,1048},{0,649}}" />
+        <Property Name="GlyphImage" Value="set:changeAvatar image:change" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="DragMovingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+            <Property Name="DraggingEnabled" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="ChangeAvater/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,586},{0,1012},{0,587}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="ChangeAvater/interFace" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,191},{0,4},{0,1012},{0,582}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="ChangeAvater/interFace/generalBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,820},{0,476}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="ChangeAvater/interFace/generalBg/shangeSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,150},{0,429},{0,374},{0,439}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/fightingTxt" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,580},{0,63},{0,810},{0,170}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ChangeAvater/interFace/generalBg/fightingTxt/number" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,121},{0,54},{0,343},{0,97}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/activationAtt" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,580},{0,182},{0,810},{0,209}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ChangeAvater/interFace/generalBg/activationAtt/theCumulativeProperties" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,158},{0,24}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:rectangular" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/notActivationAtt" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,580},{0,182},{0,810},{0,209}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ChangeAvater/interFace/generalBg/notActivationAtt/theCumulativeProperties1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,158},{0,24}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:activateTheProperties" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/props" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,584},{0,2},{0,761},{0,157}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ChangeAvater/interFace/generalBg/props/props2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,46},{0,113},{0,94}}" />
+                        <Property Name="Image" Value="set:skin image:GridBG" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/props/addBtn" Type="GuiLook/DefaultImageButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,96},{0,47},{0,112},{0,63}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:addNormal" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/level" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,8},{0,34},{0,61}}" />
+                    <Property Name="Image" Value="set:skins image:order8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/desc1$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,532},{0,120},{0,826},{0,138}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/attribute" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,2},{0,65},{0,35},{0,92}}" />
+                    <Property Name="Image" Value="set:changeAvatar image:icon_0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/fight" Type="GuiLook/DefaultImageButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,419},{0,34},{0,481},{0,96}}" />
+                    <Property Name="Image" Value="set:changeAvatar image:fight" />
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/shadowRectangular2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,580},{0,358},{0,810},{0,385}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ChangeAvater/interFace/generalBg/shadowRectangular2/transformationSkill" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,-2},{0,120},{0,18}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:transformationSkills" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/oneSkill" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,580},{0,385},{0,810},{0,469}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ChangeAvater/interFace/generalBg/oneSkill/skillName4" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,7},{0,59},{0,22}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="神王灭世" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/oneSkill/skillInstruction$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,62},{0,6},{0,225},{0,79}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="$RT" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/oneSkill/shadow4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,66},{0,47},{0,79}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="ChangeAvater/interFace/generalBg/oneSkill/shadow4/space4" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,30},{0,13}}" />
+                            <Property Name="Font" Value="songti_12" />
+                            <Property Name="Text" Value="q" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="ffffffff" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/oneSkill/skill4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,12},{0,22},{0,52},{0,62}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/raceTxt" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,406},{0,0},{0,494},{0,25}}" />
+                    <Property Name="Image" Value="set:changeAvatar image:raceText" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/desc2$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,756},{0,82},{0,816},{0,100}}" />
+                    <Property Name="Font" Value="songti_12_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/someSkill" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,580},{0,385},{0,810},{0,469}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ChangeAvater/interFace/generalBg/someSkill/skillName0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,7},{0,59},{0,22}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="神王灭世" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/someSkill/skill3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,177},{0,22},{0,217},{0,62}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/someSkill/skill2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,123},{0,22},{0,163},{0,62}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/someSkill/skill1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,67},{0,22},{0,107},{0,62}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/someSkill/skillName3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,171},{0,7},{0,224},{0,22}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="神王灭世" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/someSkill/skillName2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,116},{0,7},{0,169},{0,22}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="神王灭世" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/someSkill/skillName1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,61},{0,7},{0,114},{0,22}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="神王灭世" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFcc43ff" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/someSkill/skill0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,12},{0,22},{0,52},{0,62}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:SkillBg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/someSkill/shadowbg0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,66},{0,47},{0,79}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="ChangeAvater/interFace/generalBg/someSkill/shadowbg0/space0" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,30},{0,13}}" />
+                            <Property Name="Font" Value="songti_12" />
+                            <Property Name="Text" Value="Q" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="ffffffff" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/someSkill/shadowbg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,72},{0,66},{0,102},{0,79}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="ChangeAvater/interFace/generalBg/someSkill/shadowbg1/space1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,30},{0,13}}" />
+                            <Property Name="Font" Value="songti_12" />
+                            <Property Name="Text" Value="W" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="ffffffff" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/someSkill/shadowbg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,128},{0,66},{0,158},{0,79}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="ChangeAvater/interFace/generalBg/someSkill/shadowbg2/space2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,30},{0,13}}" />
+                            <Property Name="Font" Value="songti_12" />
+                            <Property Name="Text" Value="W" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="ffffffff" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/someSkill/shadowbg3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,181},{0,66},{0,211},{0,79}}" />
+                        <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="ChangeAvater/interFace/generalBg/someSkill/shadowbg3/space3" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,30},{0,13}}" />
+                            <Property Name="Font" Value="songti_12" />
+                            <Property Name="Text" Value="R" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="ffffffff" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/desc3$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,529},{0,14},{0,823},{0,34}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/propertyList" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,580},{0,209},{0,810},{0,358}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/point0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,15},{0,20},{0,25}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/point4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,78},{0,20},{0,88}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/point3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,36},{0,20},{0,46}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/point2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,99},{0,20},{0,109}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/point1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,56},{0,20},{0,66}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/point5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,119},{0,20},{0,129}}" />
+                        <Property Name="Image" Value="set:skin image:MarkImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/attribute0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,20},{0,12},{0,56},{0,27}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="攻击" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/attribute1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,20},{0,54},{0,56},{0,69}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="防御" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/attribute2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,20},{0,96},{0,56},{0,111}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="暴击" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/attribute3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,20},{0,33},{0,56},{0,48}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="生命" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/attribute4" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,20},{0,75},{0,56},{0,90}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="闪避" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/attribute5" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,20},{0,117},{0,56},{0,132}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="命中" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/attributeNumber0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,12},{0,128},{0,27}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="+9999" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/attributeNumber5" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,117},{0,128},{0,132}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="+999999" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/attributeNumber2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,96},{0,128},{0,111}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="+99999" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/attributeNumber4" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,75},{0,128},{0,90}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="+999999" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/attributeNumber3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,33},{0,128},{0,48}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="+99999" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="ChangeAvater/interFace/generalBg/propertyList/attributeNumber1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,54},{0,128},{0,69}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="+9999" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/nameImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-147},{0,20},{0,105},{0,59}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/notActivation" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,405},{0,513},{0,475}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Window Name="ChangeAvater/interFace/generalBg/notActivation/shadow1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,511},{0,70}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:line" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="ChangeAvater/interFace/generalBg/notActivation/shadow1/orangeButton1" Type="GlossySerpent/OrangeButton">
+                            <Property Name="UnifiedAreaRect" Value="{{0,340},{0,25},{0,443},{0,48}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="激活变身" />
+                            <Window Name="ChangeAvater/interFace/generalBg/notActivation/shadow1/orangeButton1/butEffect" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,4},{0,104},{0,27}}" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="ClippedByParent" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                                <Property Name="MousePassThroughEnabled" Value="true" />
+                            </Window>
+                        </Window>
+                        <Window Name="ChangeAvater/interFace/generalBg/notActivation/shadow1/inactivetransformation" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,0},{0,158},{0,30}}" />
+                            <Property Name="Image" Value="set:changeAvatar image:inactiveTransformation" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="ChangeAvater/interFace/generalBg/notActivation/shadow1/boxsp2" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,47},{0,295},{0,67}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="ChangeAvater/interFace/generalBg/notActivation/shadow1/boxsp2/instruction$RI" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,22},{0,3},{0,282},{0,22}}" />
+                                <Property Name="Font" Value="" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF45f500" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                            <Window Name="ChangeAvater/interFace/generalBg/notActivation/shadow1/boxsp2/darkPoint" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,5},{0,17},{0,15}}" />
+                                <Property Name="Image" Value="set:skin image:MarkImg" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="ChangeAvater/interFace/generalBg/notActivation/shadow1/boxsp1" Type="DefaultWindow">
+                            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,27},{0,295},{0,47}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Window Name="ChangeAvater/interFace/generalBg/notActivation/shadow1/boxsp1/point" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,5},{0,17},{0,15}}" />
+                                <Property Name="Image" Value="set:skin image:MarkImg" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                            <Window Name="ChangeAvater/interFace/generalBg/notActivation/shadow1/boxsp1/instruction1$RI" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,22},{0,3},{0,284},{0,22}}" />
+                                <Property Name="Font" Value="" />
+                                <Property Name="Text" Value="声望达到3阶官爵" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="TextColour" Value="FF45f500" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="ChangeAvater/interFace/generalBg/notActivation/shadow1/blueButton" Type="GlossySerpent/BlueButton">
+                            <Property Name="UnifiedAreaRect" Value="{{0,340},{0,7},{0,443},{0,30}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="切磋试玩" />
+                            <Property Name="Visible" Value="false" />
+                        </Window>
+                        <Window Name="ChangeAvater/interFace/generalBg/notActivation/shadow1/timeTxt" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,4},{0,252},{0,28}}" />
+                            <Property Name="Font" Value="songti_18_strengh" />
+                            <Property Name="Text" Value="拥有倒计时：24小时59分" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="ffff0000" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvater/interFace/generalBg/activation" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,414},{0,513},{0,474}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="AlwaysOnTop" Value="true" />
+                    <Window Name="ChangeAvater/interFace/generalBg/activation/shadow" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,511},{0,60}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:line" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="ChangeAvater/interFace/generalBg/activation/shadow/fivestar0" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,84},{0,11},{0,116},{0,40}}" />
+                            <Property Name="Image" Value="set:changeAvatar image:fiveStar" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="ChangeAvater/interFace/generalBg/activation/shadow/orangeButton" Type="GlossySerpent/OrangeButton">
+                            <Property Name="UnifiedAreaRect" Value="{{0,338},{0,16},{0,440},{0,41}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="变身进阶" />
+                        </Window>
+                        <Window Name="ChangeAvater/interFace/generalBg/activation/shadow/fivestar3" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,218},{0,6},{0,252},{0,43}}" />
+                            <Property Name="Image" Value="set:changeAvatar image:polygon2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="ChangeAvater/interFace/generalBg/activation/shadow/fivestar2" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,6},{0,203},{0,43}}" />
+                            <Property Name="Image" Value="set:changeAvatar image:polygon2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="ChangeAvater/interFace/generalBg/activation/shadow/fivestar1" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,123},{0,11},{0,155},{0,40}}" />
+                            <Property Name="Image" Value="set:changeAvatar image:fiveStar" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="ChangeAvater/interFace/generalBg/activation/shadow/fivestar4" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,264},{0,6},{0,312},{0,49}}" />
+                            <Property Name="Image" Value="set:changeAvatar image:polygon1" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="ChangeAvater/interFace/transformationList" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,476},{0,821},{0,578}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ChangeAvater/interFace/transformationList/leftButton" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,33},{0,25},{0,78}}" />
+                    <Property Name="HoverImage" Value="set:skin image:turnLHover" />
+                    <Property Name="NormalImage" Value="set:skin image:turnLNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:turnLPushed" />
+                </Window>
+                <Window Name="ChangeAvater/interFace/transformationList/rightButton2" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,796},{0,33},{0,821},{0,78}}" />
+                    <Property Name="HoverImage" Value="set:skin image:turnRHover" />
+                    <Property Name="NormalImage" Value="set:skin image:turnRNormal" />
+                    <Property Name="PushedImage" Value="set:skin image:turnRPushed" />
+                </Window>
+                <Window Name="ChangeAvater/interFace/transformationList/bg" Type="GuiLook/CommonBg2">
+                    <Property Name="UnifiedAreaRect" Value="{{0,27},{0,5},{0,794},{0,98}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="ChangeAvater/interFace/transformationList/shapeWindow" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,760},{0,93}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="ChangeAvater/general" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,4},{0,190},{0,116}}" />
+            <Property Name="HoverImage" Value="set:changeAvatarLogo image:generalLogo2" />
+            <Property Name="SelectedImage" Value="set:changeAvatarLogo image:generalLogo2" />
+            <Property Name="UnselectedImage" Value="set:changeAvatarLogo image:generalLogo1" />
+        </Window>
+        <Window Name="ChangeAvater/magic" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,120},{0,190},{0,232}}" />
+            <Property Name="HoverImage" Value="set:changeAvatarLogo image:magicLogo2" />
+            <Property Name="SelectedImage" Value="set:changeAvatarLogo image:magicLogo2" />
+            <Property Name="UnselectedImage" Value="set:changeAvatarLogo image:magicLogo1" />
+        </Window>
+        <Window Name="ChangeAvater/god" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,353},{0,190},{0,465}}" />
+            <Property Name="HoverImage" Value="set:changeAvatarLogo image:gadLogo2" />
+            <Property Name="SelectedImage" Value="set:changeAvatarLogo image:gadLogo2" />
+            <Property Name="UnselectedImage" Value="set:changeAvatarLogo image:gadLogo1" />
+        </Window>
+        <Window Name="ChangeAvater/fairy" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,237},{0,190},{0,349}}" />
+            <Property Name="HoverImage" Value="set:changeAvatarLogo image:fairyLogo2" />
+            <Property Name="SelectedImage" Value="set:changeAvatarLogo image:fairyLogo2" />
+            <Property Name="UnselectedImage" Value="set:changeAvatarLogo image:fairyLogo1" />
+        </Window>
+        <Window Name="ChangeAvater/feature1" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,470},{0,190},{0,582}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HoverImage" Value="set:changeAvatarLogo image:exclusive2" />
+            <Property Name="SelectedImage" Value="set:changeAvatarLogo image:exclusive2" />
+            <Property Name="UnselectedImage" Value="set:changeAvatarLogo image:exclusive1" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="ChangeAvater/interFace1" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,191},{0,4},{0,1012},{0,582}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

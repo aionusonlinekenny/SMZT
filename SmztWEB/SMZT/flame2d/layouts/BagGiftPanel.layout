@@ -1,0 +1,126 @@
+<GUILayout>
+    <Window Name="BagGiftPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,666},{0,438}}" />
+        <Property Name="Font" Value="songti_18_strengh" />
+        <Property Name="Text" Value="玩神魔有好礼" />
+        <Property Name="TitlebarFont" Value="songti_18_strengh" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="Font" Value="songti_18_strengh" />
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="BagGiftPanel/line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,394},{0,648},{0,395}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="BagGiftPanel/nitianTab" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,9},{0,117},{0,50}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="逆天礼包" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnLongHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnLongHover" />
+            <Property Name="HoverTextColour" Value="FFc6dee6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnLongNormal" />
+            <Property Name="NormalTextColour" Value="FF65b3e9" />
+            <Property Name="PushedTextColour" Value="FFc6dee6" />
+            <Window Name="BagGiftPanel/nitianTab/nitianLing" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,40},{0,37}}" />
+                <Property Name="Image" Value="set:skin image:LingImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="TopAligned" />
+                <Property Name="VertFormatting" Value="LeftAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="BagGiftPanel/levelTab" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,51},{0,117},{0,92}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="等级礼包" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnLongHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnLongHover" />
+            <Property Name="HoverTextColour" Value="FFc6dee6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnLongNormal" />
+            <Property Name="NormalTextColour" Value="FF65b3e9" />
+            <Property Name="PushedTextColour" Value="FFc6dee6" />
+            <Window Name="BagGiftPanel/levelTab/levelLing" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,26},{0,26}}" />
+                <Property Name="Image" Value="set:skin image:LingImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="BagGiftPanel/everyDayFightTab" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,93},{0,117},{0,134}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="每日战力礼包" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnLongHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnLongHover" />
+            <Property Name="HoverTextColour" Value="FFc6dee6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnLongNormal" />
+            <Property Name="NormalTextColour" Value="FF65b3e9" />
+            <Property Name="PushedTextColour" Value="FFc6dee6" />
+            <Window Name="BagGiftPanel/everyDayFightTab/everyDayFightLing" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,26},{0,26}}" />
+                <Property Name="Image" Value="set:skin image:LingImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="BagGiftPanel/totalFightTab" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,135},{0,117},{0,176}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="总战力礼包" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnLongHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnLongHover" />
+            <Property Name="HoverTextColour" Value="FFc6dee6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnLongNormal" />
+            <Property Name="NormalTextColour" Value="FF65b3e9" />
+            <Property Name="PushedTextColour" Value="FFc6dee6" />
+            <Window Name="BagGiftPanel/totalFightTab/totalFightLing" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,26},{0,26}}" />
+                <Property Name="Image" Value="set:skin image:LingImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="BagGiftPanel/everyDayVipTab" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,177},{0,117},{0,218}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="每日VIP福利" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnLongHover" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnLongHover" />
+            <Property Name="HoverTextColour" Value="FFc6dee6" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnLongNormal" />
+            <Property Name="NormalTextColour" Value="FF65b3e9" />
+            <Property Name="PushedTextColour" Value="FFc6dee6" />
+            <Window Name="BagGiftPanel/everyDayVipTab/everyDayVipLing" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,26},{0,26}}" />
+                <Property Name="Image" Value="set:skin image:LingImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="BagGiftPanel/commonBG" Type="GuiLook/CommonBG">
+            <Property Name="UnifiedAreaRect" Value="{{0,117},{0,5},{0,649},{0,389}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

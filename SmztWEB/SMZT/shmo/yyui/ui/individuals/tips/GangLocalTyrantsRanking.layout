@@ -1,0 +1,934 @@
+<GUILayout>
+    <Window Name="GangLocalTyrantsRanking" Type="GuiLook/CommonBg4">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,330},{0,526}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GangLocalTyrantsRanking/descTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,210},{0,505},{0,326},{0,523}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="每日凌晨3点更新" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="GangLocalTyrantsRanking/view0" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,335},{0,50}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangLocalTyrantsRanking/view0/gangTxt0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,4},{0,95},{0,22}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="帮派：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view0/playerTxt0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,24},{0,95},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="玩家：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view0/rankingImg0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,53},{0,44}}" />
+                <Property Name="Image" Value="set:gangGeneral image:firstImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view0/comp0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,4},{0,120},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view0/sexImg0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,26},{0,137},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view0/vipImg0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,26},{0,120},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view0/nameTxt0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,138},{0,24},{0,227},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="临江仙·逍遥" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view0/aa0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,225},{0,24},{0,265},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="战力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view0/fight0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,265},{0,24},{0,333},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="55555" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view0/Line0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,48},{0,335},{0,49}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view0/partyName0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,4},{0,312},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GangLocalTyrantsRanking/view1" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,50},{0,335},{0,99}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangLocalTyrantsRanking/view1/gangTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,4},{0,95},{0,22}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="帮派：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view1/playerTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,24},{0,95},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="玩家：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view1/rankingImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,53},{0,44}}" />
+                <Property Name="Image" Value="set:gangGeneral image:secondImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view1/comp1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,4},{0,120},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view1/sexImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,26},{0,137},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view1/vipImg1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,26},{0,120},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view1/nameTxt1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,138},{0,24},{0,227},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="临江仙·逍遥" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view1/aa1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,225},{0,24},{0,265},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="战力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view1/fight1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,265},{0,24},{0,333},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="55555" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view1/Line1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,48},{0,335},{0,49}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view1/partyName1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,4},{0,312},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GangLocalTyrantsRanking/view2" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,100},{0,335},{0,149}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangLocalTyrantsRanking/view2/gangTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,4},{0,95},{0,22}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="帮派：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view2/playerTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,24},{0,95},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="玩家：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view2/rankingImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,53},{0,44}}" />
+                <Property Name="Image" Value="set:gangGeneral image:thirdImg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view2/comp2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,4},{0,120},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view2/sexImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,26},{0,137},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view2/vipImg2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,26},{0,120},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view2/nameTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,138},{0,24},{0,227},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="临江仙·逍遥" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view2/aa2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,225},{0,24},{0,265},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="战力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view2/fight2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,265},{0,24},{0,333},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="55555" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view2/Line2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,48},{0,335},{0,49}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view2/partyName2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,4},{0,312},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GangLocalTyrantsRanking/view6" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,150},{0,335},{0,199}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangLocalTyrantsRanking/view6/gangTxt6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,4},{0,95},{0,22}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="帮派：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view6/playerTxt6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,24},{0,95},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="玩家：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view6/rankingImg6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,53},{0,44}}" />
+                <Property Name="Image" Value="set:mainUI1 image:fightNum4" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view6/comp6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,4},{0,120},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view6/sexImg6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,26},{0,137},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view6/vipImg6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,26},{0,120},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view6/nameTxt6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,138},{0,24},{0,227},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="临江仙·逍遥" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view6/aa6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,225},{0,24},{0,265},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="战力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view6/fight6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,265},{0,24},{0,333},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="55555" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view6/Line6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,48},{0,335},{0,49}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view6/partyName6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,4},{0,312},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GangLocalTyrantsRanking/view3" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,200},{0,335},{0,249}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangLocalTyrantsRanking/view3/gangTxt3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,4},{0,95},{0,22}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="帮派：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view3/playerTxt3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,24},{0,95},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="玩家：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view3/rankingImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,53},{0,44}}" />
+                <Property Name="Image" Value="set:mainUI1 image:fightNum5" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view3/comp3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,4},{0,120},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view3/sexImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,26},{0,137},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view3/vipImg3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,26},{0,120},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view3/nameTxt3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,138},{0,24},{0,227},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="临江仙·逍遥" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view3/aa3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,225},{0,24},{0,265},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="战力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view3/fight3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,265},{0,24},{0,333},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="55555" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view3/Line3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,48},{0,335},{0,49}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view3/partyName3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,4},{0,312},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GangLocalTyrantsRanking/view7" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,250},{0,335},{0,299}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangLocalTyrantsRanking/view7/gangTxt7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,4},{0,95},{0,22}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="帮派：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view7/playerTxt7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,24},{0,95},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="玩家：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view7/rankingImg7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,53},{0,44}}" />
+                <Property Name="Image" Value="set:mainUI1 image:fightNum6" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view7/comp7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,4},{0,120},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view7/sexImg7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,26},{0,137},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view7/vipImg7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,26},{0,120},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view7/nameTxt7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,138},{0,24},{0,227},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="临江仙·逍遥" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view7/aa7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,225},{0,24},{0,265},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="战力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view7/fight7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,265},{0,24},{0,333},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="55555" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view7/Line7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,48},{0,335},{0,49}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view7/partyName7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,4},{0,312},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GangLocalTyrantsRanking/view4" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,300},{0,335},{0,349}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangLocalTyrantsRanking/view4/gangTxt4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,4},{0,95},{0,22}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="帮派：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view4/playerTxt4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,24},{0,95},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="玩家：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view4/rankingImg4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,53},{0,44}}" />
+                <Property Name="Image" Value="set:mainUI1 image:fightNum7" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view4/comp4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,4},{0,120},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view4/sexImg4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,26},{0,137},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view4/vipImg4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,26},{0,120},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view4/nameTxt4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,138},{0,24},{0,227},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="临江仙·逍遥" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view4/aa4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,225},{0,24},{0,265},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="战力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view4/fight4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,265},{0,24},{0,333},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="55555" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view4/Line4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,48},{0,335},{0,49}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view4/partyName4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,4},{0,312},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GangLocalTyrantsRanking/view8" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,350},{0,335},{0,399}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangLocalTyrantsRanking/view8/gangTxt8" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,4},{0,95},{0,22}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="帮派：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view8/playerTxt8" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,24},{0,95},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="玩家：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view8/rankingImg8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,53},{0,44}}" />
+                <Property Name="Image" Value="set:mainUI1 image:fightNum8" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view8/comp8" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,4},{0,120},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view8/sexImg8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,26},{0,137},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view8/vipImg8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,26},{0,120},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view8/nameTxt8" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,138},{0,24},{0,227},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="临江仙·逍遥" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view8/aa8" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,225},{0,24},{0,265},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="战力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view8/fight8" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,265},{0,24},{0,333},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="55555" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view8/Line8" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,48},{0,335},{0,49}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view8/partyName8" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,4},{0,312},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GangLocalTyrantsRanking/view5" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,400},{0,335},{0,449}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangLocalTyrantsRanking/view5/gangTxt5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,4},{0,95},{0,22}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="帮派：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view5/playerTxt5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,24},{0,95},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="玩家：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view5/rankingImg5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,53},{0,44}}" />
+                <Property Name="Image" Value="set:mainUI1 image:fightNum9" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view5/comp5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,4},{0,120},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view5/sexImg5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,26},{0,137},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view5/vipImg5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,26},{0,120},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view5/nameTxt5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,138},{0,24},{0,227},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="临江仙·逍遥" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view5/aa5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,225},{0,24},{0,265},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="战力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view5/fight5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,265},{0,24},{0,333},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="55555" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view5/Line5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,48},{0,335},{0,49}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view5/partyName5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,4},{0,312},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="GangLocalTyrantsRanking/view9" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,450},{0,335},{0,499}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="GangLocalTyrantsRanking/view9/gangTxt9" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,4},{0,95},{0,22}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="帮派：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view9/playerTxt9" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,55},{0,24},{0,95},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="玩家：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view9/rankingImg9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,6},{0,35},{0,44}}" />
+                <Property Name="Image" Value="set:mainUI1 image:fightNum1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view9/comp9" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,4},{0,120},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view9/sexImg9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,121},{0,26},{0,137},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:SexBoy" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view9/vipImg9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,26},{0,120},{0,42}}" />
+                <Property Name="Image" Value="set:mainUI1 image:GoldVip2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view9/nameTxt9" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,138},{0,24},{0,227},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="临江仙·逍遥" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view9/aa9" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,225},{0,24},{0,265},{0,42}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="战力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view9/fight9" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,265},{0,24},{0,333},{0,42}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="55555" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFFea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view9/Line9" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,48},{0,335},{0,49}}" />
+                <Property Name="Image" Value="set:skins image:qualityLine1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view9/partyName9" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,4},{0,312},{0,22}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="魏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="GangLocalTyrantsRanking/view9/rankingImg02" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,28},{0,6},{0,47},{0,44}}" />
+                <Property Name="Image" Value="set:mainUI1 image:fightNum0" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

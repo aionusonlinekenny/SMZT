@@ -1,0 +1,22 @@
+<GUILayout>
+    <Window Name="GoldTreeCDFace" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,320},{0,28}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="GoldTreeCDFace/bg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,320},{0,28}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:mainUI1 image:edgeLeft" />
+            <Property Name="LeftOffset" Value="174" />
+            <Property Name="RightImage" Value="set:mainUI1 image:edgeRight" />
+            <Property Name="CenterImage" Value="set:mainUI1 image:edgeMiddle" />
+            <Property Name="RightOffset" Value="174" />
+            <Window Name="GoldTreeCDFace/bg/txt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,320},{0,28}}" />
+                <Property Name="Font" Value="songti_18_strengh" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

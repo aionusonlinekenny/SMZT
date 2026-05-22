@@ -1,0 +1,42 @@
+<GUILayout>
+    <Window Name="EquipMergeTreeFirstItem" Type="GuiLook/RadioTab">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+        <Property Name="HoverImage" Value="set:skins image:tabHover" />
+        <Property Name="SelectedImage" Value="set:skins image:tabHover" />
+        <Property Name="HorzFormatting" Value="CentreAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnselectedImage" Value="set:skins image:tabNormal" />
+        <Window Name="EquipMergeTreeFirstItem/treeBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,103},{0,12},{0,122},{0,26}}" />
+            <Property Name="Image" Value="set:skins image:down" />
+            <Property Name="VertImageFormatting" Value="CentreAligned" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="EquipMergeTreeFirstItem/btnImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,130},{0,38}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="EquipMergeTreeFirstItem/numFlag" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,8},{0,20},{0,26}}" />
+            <Property Name="Image" Value="set:skin image:promptBg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="EquipMergeTreeFirstItem/numFlag/numTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,18},{0,18}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="!" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

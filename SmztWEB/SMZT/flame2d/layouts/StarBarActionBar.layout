@@ -1,0 +1,29 @@
+<GUILayout>
+    <Window Name="StarBarActionBar" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,342},{0,60}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="StarBarActionBar/bg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,342},{0,60}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:activitiesGeneral image:grayLeft" />
+            <Property Name="LeftOffset" Value="13" />
+            <Property Name="RightImage" Value="set:activitiesGeneral image:grayRight" />
+            <Property Name="CenterImage" Value="set:activitiesGeneral image:grayMiddle" />
+            <Property Name="RightOffset" Value="13" />
+            <Window Name="StarBarActionBar/bg/pointBox" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,33},{0,6},{0,83},{0,56}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="StarBarActionBar/dragImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,1},{0,28},{0,58}}" />
+            <Property Name="Image" Value="set:skins image:danceDrag" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

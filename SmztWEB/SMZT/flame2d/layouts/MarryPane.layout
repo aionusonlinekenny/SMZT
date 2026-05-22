@@ -1,0 +1,84 @@
+<GUILayout>
+    <Window Name="MarryPane" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,513},{0,513}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="MarryPane/bg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,513},{0,513}}" />
+            <Property Name="Image" Value="set:marry image:marry01" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="MarryPane/closeBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,409},{0,55},{0,448},{0,94}}" />
+            <Property Name="Image" Value="set:marry image:close" />
+        </Window>
+        <Window Name="MarryPane/refreshBtn" Type="GlossySerpent/RedButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,197},{0,312},{0,309},{0,349}}" />
+            <Window Name="MarryPane/refreshBtn/refreshImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,33},{0,7},{0,79},{0,30}}" />
+                <Property Name="Image" Value="set:marry image:qiuhun" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="MarryPane/ruleTxt1$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,132},{0,133},{0,373},{0,211}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="MarryPane/ruleTxt3" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,130},{0,215},{0,375},{0,236}}" />
+            <Property Name="Font" Value="songti_16_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="MarryPane/chooseBox" Type="GuiLook/Combobox">
+            <Property Name="UnifiedAreaRect" Value="{{0,189},{0,242},{0,318},{0,366}}" />
+            <Property Name="ReadOnly" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <AutoWindow NameSuffix="__auto_editbox__">
+                <Property Name="ReadOnly" Value="true" />
+                <Property Name="SelectedTextColour" Value="FFFFFFDD" />
+                <Property Name="ActiveSelectionColour" Value="FFFFB080" />
+                <Property Name="InactiveSelectionColour" Value="FFB18A50" />
+            </AutoWindow>
+            <AutoWindow NameSuffix="__auto_droplist__">
+                <AutoWindow NameSuffix="__auto_hscrollbar__">
+                    <AutoWindow NameSuffix="__auto_incbtn__">
+                        <Property Name="RestoreOldCapture" Value="true" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_decbtn__">
+                        <Property Name="RestoreOldCapture" Value="true" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_thumb__">
+                        <Property Name="RestoreOldCapture" Value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="VerticalScrollbar" Value="true" />
+                    <AutoWindow NameSuffix="__auto_incbtn__">
+                        <Property Name="RestoreOldCapture" Value="true" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_decbtn__">
+                        <Property Name="RestoreOldCapture" Value="true" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_thumb__">
+                        <Property Name="RestoreOldCapture" Value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </AutoWindow>
+            <AutoWindow NameSuffix="__auto_button__">
+                <Property Name="AlwaysOnTop" Value="true" />
+            </AutoWindow>
+        </Window>
+    </Window>
+</GUILayout>

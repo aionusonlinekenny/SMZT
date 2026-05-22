@@ -1,0 +1,213 @@
+<GUILayout>
+    <Window Name="HallDailyCheck" Type="GuiLook/CommonBg3">
+        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{0,647},{0,516}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="HallDailyCheck/background1" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,510},{0,28}}" />
+            <Property Name="Image" Value="set:hallReward image:background" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="HallDailyCheck/background1/signTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,5},{0,79},{0,23}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="每日签到" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffe1feff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="HallDailyCheck/background2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,392},{0,509},{0,419}}" />
+            <Property Name="Image" Value="set:hallReward image:background" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="HallDailyCheck/background2/receiveTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,5},{0,80},{0,23}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="累签获奖" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="ffe1feff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="HallDailyCheck/radioBT0" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,422},{0,81},{0,446}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="签到2次" />
+        </Window>
+        <Window Name="HallDailyCheck/radioBT3" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,234},{0,422},{0,309},{0,446}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="签到7次" />
+        </Window>
+        <Window Name="HallDailyCheck/radioBT2" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,159},{0,422},{0,234},{0,446}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="签到5次" />
+        </Window>
+        <Window Name="HallDailyCheck/radioBT1" Type="GuiLook/CommonRadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,82},{0,422},{0,157},{0,446}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="签到3次" />
+        </Window>
+        <Window Name="HallDailyCheck/signNumTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,530},{0,3},{0,644},{0,28}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="HallDailyCheck/nullImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,229},{0,643},{0,390}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="HallDailyCheck/signGetBtn" Type="GlossySerpent/RedButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,465},{0,298},{0,611},{0,338}}" />
+            <Window Name="HallDailyCheck/signGetBtn/sign1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,146},{0,40}}" />
+                <Property Name="Image" Value="set:hallReward image:signReceive" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="HallDailyCheck/tongQianTxt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,35},{0,280},{0,327},{0,299}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="铜钱：1000*6" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFff7200" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="HallDailyCheck/point3" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0,310},{0,26},{0,320}}" />
+            <Property Name="Image" Value="set:skin image:MarkImg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="HallDailyCheck/point2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0,336},{0,26},{0,346}}" />
+            <Property Name="Image" Value="set:skin image:MarkImg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="HallDailyCheck/expTxt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,35},{0,307},{0,328},{0,326}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="经验：1000*6" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="HallDailyCheck/point1" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0,283},{0,26},{0,293}}" />
+            <Property Name="Image" Value="set:skin image:MarkImg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="HallDailyCheck/signDataTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,33},{0,332},{0,432},{0,349}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="周六、周日签到奖励3倍" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="HallDailyCheck/boxSP" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,30},{0,643},{0,270}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </Window>
+        <Window Name="HallDailyCheck/inventory" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,448},{0,645},{0,515}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="HallDailyCheck/inventory/items3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,188},{0,10},{0,236},{0,58}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="HallDailyCheck/inventory/items1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,70},{0,11},{0,118},{0,59}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="HallDailyCheck/inventory/getBtn" Type="GlossySerpent/RedButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,465},{0,14},{0,611},{0,54}}" />
+                <Window Name="HallDailyCheck/inventory/getBtn/receiveTxt1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,146},{0,40}}" />
+                    <Property Name="Image" Value="set:skins image:receiveRewardTxt" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="HallDailyCheck/inventory/items2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,129},{0,10},{0,177},{0,58}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="HallDailyCheck/inventory/items4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,247},{0,10},{0,295},{0,58}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="HallDailyCheck/inventory/items6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,365},{0,10},{0,413},{0,58}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="HallDailyCheck/inventory/items0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,10},{0,59},{0,58}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="HallDailyCheck/inventory/items5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,306},{0,10},{0,354},{0,58}}" />
+                <Property Name="Image" Value="set:skin image:GridBG2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

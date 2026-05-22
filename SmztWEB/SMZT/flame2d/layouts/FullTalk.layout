@@ -1,0 +1,113 @@
+<GUILayout>
+    <Window Name="FullTalk" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1280},{0,177}}" />
+        <Property Name="UnifiedMaxSize" Value="{{0,2000},{1,0}}" />
+        <Window Name="FullTalk/blackBg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1280},{0,177}}" />
+            <Property Name="Image" Value="set:plot image:blackBg" />
+            <Property Name="UnifiedMaxSize" Value="{{0,2000},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="FullTalk/leftEdge" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,3},{0,270},{0,177}}" />
+            <Property Name="Image" Value="set:plot image:leftEdge" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="FullTalk/rightEdge" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,3},{0,270},{0,177}}" />
+            <Property Name="Image" Value="set:plot image:rightEdge" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Right" />
+        </Window>
+        <Window Name="FullTalk/centerEdge" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,446},{0,25}}" />
+            <Property Name="Image" Value="set:plot image:centerLine" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Name="FullTalk/line" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,1280},{0,3}}" />
+            <Property Name="Image" Value="set:plot image:leftLine" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="FullTalk/leftTalkSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,270},{0,3},{0,1145},{0,177}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="FullTalk/leftTalkSp/leftd3dView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,73},{0,262},{0,123},{0,312}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="FullTalk/leftTalkSp/leftNameBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,225},{0,5},{0,451},{0,44}}" />
+                <Property Name="Image" Value="set:plot image:nameBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FullTalk/leftTalkSp/leftNameBg/leftNameTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,60},{0,9},{0,165},{0,29}}" />
+                    <Property Name="Font" Value="songti_18" />
+                    <Property Name="Text" Value="伏羲" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF7200" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="FullTalk/leftTalkSp/leftTalk$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,287},{0,60},{0,597},{0,167}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFbbbbbb" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="FullTalk/rightTalkSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,-270},{0,3},{0,605},{0,177}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorizontalAlignment" Value="Right" />
+            <Window Name="FullTalk/rightTalkSp/rightd3dView" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,752},{0,262},{0,802},{0,312}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="FullTalk/rightTalkSp/rightNameBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,424},{0,5},{0,650},{0,44}}" />
+                <Property Name="Image" Value="set:plot image:nameBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="FullTalk/rightTalkSp/rightNameBg/rightNameTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,60},{0,9},{0,165},{0,29}}" />
+                    <Property Name="Font" Value="songti_18" />
+                    <Property Name="Text" Value="伏羲" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFFF7200" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="FullTalk/rightTalkSp/rightTalk$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,278},{0,60},{0,588},{0,167}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFbbbbbb" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

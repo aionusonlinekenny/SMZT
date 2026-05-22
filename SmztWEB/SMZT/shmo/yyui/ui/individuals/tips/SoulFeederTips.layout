@@ -1,0 +1,397 @@
+<GUILayout>
+    <Window Name="SoulFeederTips" Type="GuiLook/CommonBg4">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,261},{0,339}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SoulFeederTips/Line" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,72},{0,261},{0,73}}" />
+            <Property Name="Image" Value="set:skins image:qualityLine1" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="SoulFeederTips/Line2" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,145},{0,260},{0,146}}" />
+            <Property Name="Image" Value="set:skins image:qualityLine1" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="SoulFeederTips/logoImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,5},{0,68},{0,67}}" />
+            <Property Name="Image" Value="set:wings image:logo" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="SoulFeederTips/nameTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,78},{0,22},{0,146},{0,54}}" />
+            <Property Name="Font" Value="songti_16_strengh" />
+            <Property Name="Text" Value="吸魂" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFcc43ff" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SoulFeederTips/instructionsTxt$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,80},{0,252},{0,120}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="VertFormatting" Value="LeftAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SoulFeederTips/attentionTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,126},{0,252},{0,143}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="注：吸魂等级上限受翅膀等阶约束" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SoulFeederTips/attributeTitleTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,148},{0,123},{0,172}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="技能累积属性：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FFFef9d0" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SoulFeederTips/view0" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,174},{0,254},{0,194}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SoulFeederTips/view0/attackTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,37},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="生命" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view0/att0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,1},{0,95},{0,21}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view0/attn0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,0},{0,236},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view0/aText0" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,0},{0,179},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="生命" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view0/img0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,1},{0,141},{0,19}}" />
+                <Property Name="Image" Value="set:wings image:arrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SoulFeederTips/view1" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,195},{0,254},{0,215}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SoulFeederTips/view1/defenseTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,37},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="命中" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view1/att1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,0},{0,95},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view1/attn1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,0},{0,236},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view1/aText1" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,0},{0,179},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="命中" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view1/img1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,1},{0,141},{0,19}}" />
+                <Property Name="Image" Value="set:wings image:arrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SoulFeederTips/view2" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,215},{0,254},{0,235}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SoulFeederTips/view2/critTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,37},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="防御" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view2/att2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,0},{0,95},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view2/attn2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,0},{0,236},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view2/aText2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,0},{0,179},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="防御" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view2/img2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,1},{0,141},{0,19}}" />
+                <Property Name="Image" Value="set:wings image:arrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SoulFeederTips/view3" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,235},{0,254},{0,255}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SoulFeederTips/view3/killTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,37},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="必杀" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view3/att3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,0},{0,95},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view3/attn3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,0},{0,236},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view3/aText3" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,0},{0,179},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="必杀" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view3/img3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,1},{0,141},{0,19}}" />
+                <Property Name="Image" Value="set:wings image:arrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SoulFeederTips/view4" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,255},{0,254},{0,275}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SoulFeederTips/view4/HPTitleTxt65" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,37},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="攻击" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view4/att4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,0},{0,95},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view4/attn4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,0},{0,236},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view4/aText4" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,0},{0,179},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="攻击" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view4/img4" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,1},{0,141},{0,19}}" />
+                <Property Name="Image" Value="set:wings image:arrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SoulFeederTips/view5" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,275},{0,254},{0,295}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SoulFeederTips/view5/HPTitleTxt11111" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,37},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="坚韧" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view5/att5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,0},{0,95},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view5/attn5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,0},{0,236},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view5/aText5" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,0},{0,179},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="坚韧" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view5/img5" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,1},{0,141},{0,19}}" />
+                <Property Name="Image" Value="set:wings image:arrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SoulFeederTips/view6" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,295},{0,254},{0,315}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SoulFeederTips/view6/HPTitleTxt6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,37},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="暴击" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view6/att6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,0},{0,95},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view6/attn6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,0},{0,236},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view6/aText6" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,0},{0,179},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="暴击" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view6/img6" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,1},{0,141},{0,19}}" />
+                <Property Name="Image" Value="set:wings image:arrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SoulFeederTips/view7" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,315},{0,254},{0,335}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SoulFeederTips/view7/HPTitleTxt7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,37},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="闪避" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view7/att7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,0},{0,95},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view7/attn7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,0},{0,236},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="10000" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view7/aText7" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,0},{0,179},{0,20}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="闪避" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SoulFeederTips/view7/img7" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0,1},{0,141},{0,19}}" />
+                <Property Name="Image" Value="set:wings image:arrow" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

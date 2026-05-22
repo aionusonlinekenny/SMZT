@@ -1,0 +1,189 @@
+<GUILayout>
+    <Window Name="SitPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,298},{0,185}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="SitPanel/bg" Type="GlossySerpent/ThreeVStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,298},{0,185}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:sit image:top" />
+            <Property Name="TopOffset" Value="40" />
+            <Property Name="BottomImage" Value="set:sit image:bottom" />
+            <Property Name="CenterImage" Value="set:sit image:middle" />
+            <Property Name="BottomOffset" Value="5" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="SitPanel/bg/restImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,10},{0,174},{0,26}}" />
+                <Property Name="Image" Value="set:sit image:sing" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SitPanel/bg/pointSp" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,174},{0,14},{0,206},{0,26}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+                <Window Name="SitPanel/bg/pointSp/point0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,4},{0,3},{0,8},{0,7}}" />
+                    <Property Name="Image" Value="set:sit image:point" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SitPanel/bg/pointSp/point1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,14},{0,3},{0,18},{0,7}}" />
+                    <Property Name="Image" Value="set:sit image:point" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="SitPanel/bg/pointSp/point2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,24},{0,3},{0,28},{0,7}}" />
+                    <Property Name="Image" Value="set:sit image:point" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="SitPanel/bg/shuangxiuBtn" Type="GlossySerpent/BlueButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,14},{0,-14},{0,89},{0,9}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="我要双修" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+            </Window>
+            <Window Name="SitPanel/bg/selfAcceptCheckBox" Type="GuiLook/Checkbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,103},{0,159},{0,225},{0,175}}" />
+                <Property Name="Text" Value="自动接受双修邀请" />
+            </Window>
+            <Window Name="SitPanel/bg/getExpTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,100},{0,49},{0,161},{0,65}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="获得经验：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SitPanel/bg/getEnergyTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,100},{0,73},{0,161},{0,89}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="获得元气：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SitPanel/bg/Line" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,70},{0,116},{0,300},{0,117}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SitPanel/bg/timeTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,100},{0,96},{0,161},{0,112}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="打坐时间：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SitPanel/bg/fairTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,99},{0,121},{0,160},{0,137}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="仙子加成：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SitPanel/bg/shuangxiuTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,99},{0,140},{0,160},{0,156}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="双修加成：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SitPanel/bg/getExpTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,166},{0,47},{0,279},{0,65}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="获得经验：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SitPanel/bg/getEnergyTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,166},{0,71},{0,279},{0,89}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="获得经验：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFcc43ff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SitPanel/bg/timeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,166},{0,94},{0,279},{0,112}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="获得经验：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SitPanel/bg/fair$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,164},{0,123},{0,275},{0,138}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="获得经验：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SitPanel/bg/shuangxiuTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,165},{0,140},{0,291},{0,156}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="获得经验：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SitPanel/bg/linkBtn$RI" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,269},{0,123},{0,296},{0,136}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="提升" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF85f500" />
+                <Property Name="Tooltip" Value="6507" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SitPanel/bg/shuangxiuTxt2" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,231},{0,140},{0,287},{0,156}}" />
+                <Property Name="Font" Value="songti_12" />
+                <Property Name="Text" Value="(已激活)" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFffea00" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="SitPanel/bg/sitTypeImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,50},{0,85},{0,120}}" />
+                <Property Name="Image" Value="set:sit image:icon1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

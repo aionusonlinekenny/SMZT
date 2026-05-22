@@ -1,0 +1,374 @@
+<GUILayout>
+    <Window Name="TroubledBeautyInfoView" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,230},{0,366}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="RiseOnClick" Value="false" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="TroubledBeautyInfoView/view" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,230},{0,366}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="TroubledBeautyInfoView/view/bg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,366}}" />
+                <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="TroubledBeautyInfoView/view/bg/timeBarBg" Type="GuiLook/TextBG">
+                    <Property Name="UnifiedAreaRect" Value="{{0,4},{0,346},{0,224},{0,358}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="TroubledBeautyInfoView/view/bg/timeBarBg/time$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,220},{0,12}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:activitiesGeneral image:redLeft" />
+                        <Property Name="LeftOffset" Value="28" />
+                        <Property Name="RightImage" Value="set:activitiesGeneral image:redRight" />
+                        <Property Name="CenterImage" Value="set:activitiesGeneral image:redMiddle" />
+                        <Property Name="RightOffset" Value="28" />
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/timeBarBg/timeBarTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-2},{0,220},{0,14}}" />
+                        <Property Name="Font" Value="songti_12_strengh" />
+                        <Property Name="Text" Value="倒计时  01:35" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/reWardTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,90},{0,187},{0,226},{0,228}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/rankBg" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,3},{0,40},{0,230},{0,115}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="TroubledBeautyInfoView/view/bg/rankBg/rankDeadTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,180},{0,3},{0,219},{0,24}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/rankBg/rankKillTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,119},{0,3},{0,179},{0,24}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/rankBg/rankNameTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,32},{0,3},{0,117},{0,24}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/rankBg/StaticImage3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,50},{0,28},{0,73}}" />
+                        <Property Name="Image" Value="set:beauty image:3point" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/rankBg/StaticImage2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,26},{0,28},{0,49}}" />
+                        <Property Name="Image" Value="set:beauty image:2point" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/rankBg/StaticImage" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,2},{0,28},{0,25}}" />
+                        <Property Name="Image" Value="set:beauty image:1point" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/rankBg/rankNameTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,32},{0,27},{0,117},{0,48}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/rankBg/rankKillTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,119},{0,27},{0,179},{0,48}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/rankBg/rankDeadTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,180},{0,27},{0,219},{0,48}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/rankBg/rankNameTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,32},{0,52},{0,117},{0,73}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/rankBg/rankKillTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,119},{0,52},{0,179},{0,73}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/rankBg/rankDeadTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,180},{0,52},{0,219},{0,73}}" />
+                        <Property Name="Font" Value="songti_14" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/line2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,339},{0,220},{0,340}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/line" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,179},{0,220},{0,180}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/instructionsTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,6},{0,152},{0,224},{0,174}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="Text" Value="杀光殿内所有玩家可获得最终胜利！" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/gridBg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,172},{0,287},{0,220},{0,335}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/gridBg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,116},{0,287},{0,164},{0,335}}" />
+                    <Property Name="Image" Value="set:skin image:GridBG" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/getTxt$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,98},{0,240},{0,220},{0,281}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/floorSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,48},{0,231},{0,69}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="TroubledBeautyInfoView/view/bg/floorSp/floorBg" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,0},{0,226},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Window Name="TroubledBeautyInfoView/view/bg/floorSp/floorBg/floorBar$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,219},{0,20}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="LeftImage" Value="set:mainUI1 image:hpBg3Left" />
+                            <Property Name="LeftOffset" Value="8" />
+                            <Property Name="RightImage" Value="set:mainUI1 image:hpBg3Right" />
+                            <Property Name="CenterImage" Value="set:mainUI1 image:hpBg3Center" />
+                            <Property Name="RightOffset" Value="8" />
+                        </Window>
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/floorSp/floorBarTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,0},{0,226},{0,20}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="12/100" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/d3DViewTip" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,186},{0,90},{0,336}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/d3DView" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,323},{0,90},{0,337}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/curPeopleSp" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,6},{0,121},{0,226},{0,146}}" />
+                    <Property Name="Image" Value="set:beauty image:background" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="TroubledBeautyInfoView/view/bg/curPeopleSp/curPeopleTxt$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,2},{0,219},{0,24}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="123" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FF85f500" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/bloodSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,85},{0,231},{0,107}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="TroubledBeautyInfoView/view/bg/bloodSp/bloodBg" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,0},{0,226},{0,21}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Window Name="TroubledBeautyInfoView/view/bg/bloodSp/bloodBg/bloodBar$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,219},{0,20}}" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                            <Property Name="LeftOffset" Value="8" />
+                            <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                            <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                            <Property Name="RightOffset" Value="8" />
+                        </Window>
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/bloodSp/bloodBarTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,0},{0,226},{0,20}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="12/100" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/goSp" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,7},{0,49},{0,227},{0,69}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="TroubledBeautyInfoView/view/bg/goSp/goTxt$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,157},{0,4},{0,205},{0,24}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="Text" Value="提升" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Property Name="VerticalAlignment" Value="Centre" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="TroubledBeautyInfoView/view/bg/goSp/goTitleTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{0,148},{0,20}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="击杀塔顶守卫" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TextColour" Value="FFFef9d0" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/timesImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,131},{0,285},{0,166},{0,319}}" />
+                    <Property Name="Image" Value="set:beauty image:4" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bg/timesImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,187},{0,285},{0,222},{0,319}}" />
+                    <Property Name="Image" Value="set:beauty image:4" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="TroubledBeautyInfoView/view/bottomImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,32}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="TroubledBeautyInfoView/view/bottomImg/StaticImage" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:nameLeft" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bottomImg/chapterImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,231},{0,32}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bottomImg/tzoomBtn" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,197},{0,8},{0,213},{0,24}}" />
+                    <Property Name="HoverImage" Value="set:mainUI1 image:rightBuffHover" />
+                    <Property Name="NormalImage" Value="set:mainUI1 image:rightBuffNormal" />
+                    <Property Name="PushedImage" Value="set:mainUI1 image:rightBuffPushed" />
+                </Window>
+                <Window Name="TroubledBeautyInfoView/view/bottomImg/StaticImage2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,31},{0,231},{0,32}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:mapCrossLine" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="TroubledBeautyInfoView/rightSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,1},{0,229},{0,93}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="TroubledBeautyInfoView/rightSp/szoomNBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,21},{0,92}}" />
+                <Property Name="Visible" Value="false" />
+                <Property Name="HoverImage" Value="set:mainUI1 image:zoomLeftBtnHover" />
+                <Property Name="NormalImage" Value="set:mainUI1 image:zoomLeftBtnNormal" />
+                <Property Name="PushedImage" Value="set:mainUI1 image:zoomLeftBtnPushed" />
+                <Window Name="TroubledBeautyInfoView/rightSp/szoomNBtn/snameImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,2},{0,31},{0,19},{0,67}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:strongerTextImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

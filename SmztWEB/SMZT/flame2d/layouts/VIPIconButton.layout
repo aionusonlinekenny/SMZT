@@ -1,0 +1,47 @@
+<GUILayout>
+    <Window Name="VIPIconButton" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,107},{0,18}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="MousePassThroughEnabled" Value="true" />
+        <Window Name="VIPIconButton/line" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,15},{0,-8},{0,28},{0,8}}" />
+            <Property Name="Image" Value="set:skin image:PointImg" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Property Name="MouseInputPropagationEnabled" Value="true" />
+        </Window>
+        <Window Name="VIPIconButton/bg1" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,0},{0,105},{0,16}}" />
+            <Property Name="Image" Value="set:skin image:SubTypeBtn" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="VIPIconButton/bg2" Type="GuiLook/ThreeStretchImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,29},{0,1},{0,104},{0,15}}" />
+            <Property Name="LeftImage" Value="skin/selectedImgLeft" />
+            <Property Name="LeftOffset" Value="13" />
+            <Property Name="RightImage" Value="skin/selectedImgRight" />
+            <Property Name="CenterImage" Value="skin/selectedImgCenter" />
+            <Property Name="RightOffset" Value="13" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+        <Window Name="VIPIconButton/nameTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,0},{0,105},{0,16}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="翅膀" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF00baff" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+        </Window>
+    </Window>
+</GUILayout>

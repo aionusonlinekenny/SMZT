@@ -1,0 +1,43 @@
+<GUILayout>
+    <Window Name="RoleFightTips" Type="GuiLook/CommonBg4">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,245}}" />
+        <Property Name="UnifiedMaxSize" Value="{{0,400},{0,600}}" />
+        <Window Name="RoleFightTips/line" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,28},{0,190},{0,29}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:skin image:Line2Left" />
+            <Property Name="LeftOffset" Value="" />
+            <Property Name="RightImage" Value="set:skin image:Line2Right" />
+            <Property Name="CenterImage" Value="set:skin image:Line1Center2" />
+            <Property Name="RightOffset" Value="" />
+        </Window>
+        <Window Name="RoleFightTips/title1" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,5},{0,96},{0,25}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="玩家" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="RoleFightTips/playerName$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,32},{0,96},{0,213}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="RoleFightTips/title2" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,105},{0,5},{0,195},{0,25}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="战斗力" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="RoleFightTips/fight$RI" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,105},{0,32},{0,195},{0,213}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

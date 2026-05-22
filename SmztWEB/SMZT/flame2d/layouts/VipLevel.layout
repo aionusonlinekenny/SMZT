@@ -1,0 +1,462 @@
+<GUILayout>
+    <Window Name="VipLevel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,811},{0,555}}" />
+        <Property Name="GlyphImage" Value="set:VIP1 image:VIP" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="VipLevel/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,793},{0,508}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="VipLevel/background/topBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,793},{0,122}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="VipLevel/background/topBg/bgImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,792},{0,121}}" />
+                    <Property Name="Image" Value="set:vipBg image:vipbg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Window Name="VipLevel/background/topBg/bgImg/process$NormalBar" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,161},{0,35},{0,635},{0,79}}" />
+                        <Property Name="Image" Value="set:VIP1 image:strongRedLine" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                    <Window Name="VipLevel/background/topBg/bgImg/desc1$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,160},{0,26},{0,533},{0,44}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="VipLevel/background/topBg/bgImg/desc2$RI" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,160},{0,87},{0,307},{0,105}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="VipLevel/background/topBg/bgImg/moneyBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,536},{0,24},{0,597},{0,47}}" />
+                        <Property Name="HoverImage" Value="set:VIP1 image:top_upHover" />
+                        <Property Name="NormalImage" Value="set:VIP1 image:top_upNormal" />
+                        <Property Name="PushedImage" Value="set:VIP1 image:top_upPushed" />
+                    </Window>
+                    <Window Name="VipLevel/background/topBg/bgImg/buyBtn" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,551},{0,84},{0,612},{0,107}}" />
+                        <Property Name="HoverImage" Value="set:VIP1 image:buyHover" />
+                        <Property Name="NormalImage" Value="set:VIP1 image:buyNormal" />
+                        <Property Name="PushedImage" Value="set:VIP1 image:buyPushed" />
+                    </Window>
+                    <Window Name="VipLevel/background/topBg/bgImg/processTxt" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,161},{0,51},{0,635},{0,79}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="400/500" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="VipLevel/background/topBg/bgImg/goldVIPView" Type="DefaultWindow">
+                        <Property Name="UnifiedAreaRect" Value="{{0,314},{0,87},{0,546},{0,116}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="VipLevel/background/topBg/bgImg/goldVIPView/text123456" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,38},{0,2},{0,229},{0,20}}" />
+                            <Property Name="Font" Value="songti_12" />
+                            <Property Name="Text" Value="(直升VIP2，每日VIP成长值+100)" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="VertFormatting" Value="RightAligned" />
+                            <Property Name="HorzTextFormatting" Value="RightAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                        <Window Name="VipLevel/background/topBg/bgImg/goldVIPView/desc3$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,-20},{0,0},{0,162},{0,18}}" />
+                            <Property Name="Font" Value="" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Name="VipLevel/background/bottomBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,155},{0,793},{0,503}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="VipLevel/background/bottomBg/rightBg" Type="GuiLook/CommonBg3">
+                    <Property Name="UnifiedAreaRect" Value="{{0,356},{0,0},{0,793},{0,348}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="VipLevel/background/bottomBg/rightBg/smallBg1" Type="GuiLook/CommonBg3">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,3},{0,205},{0,114}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallBg1/flyImg" Type="GuiLook/DefaultImageButton">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,200},{0,110}}" />
+                        </Window>
+                    </Window>
+                    <Window Name="VipLevel/background/bottomBg/rightBg/smallBg2" Type="GuiLook/CommonBg3">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,117},{0,205},{0,228}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallBg2/experienceImg" Type="GuiLook/DefaultImageButton">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,200},{0,110}}" />
+                        </Window>
+                    </Window>
+                    <Window Name="VipLevel/background/bottomBg/rightBg/smallBg3" Type="GuiLook/CommonBg3">
+                        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,232},{0,205},{0,343}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallBg3/forceBtn" Type="GuiLook/DefaultButton">
+                            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,200},{0,110}}" />
+                            <Property Name="HoverImage" Value="set:VIP1 image:privilegeHover" />
+                            <Property Name="NormalImage" Value="set:VIP1 image:privilegeNormal" />
+                            <Property Name="PushedImage" Value="set:VIP1 image:privilegePushed" />
+                        </Window>
+                    </Window>
+                    <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,211},{0,8},{0,433},{0,200}}" />
+                        <Property Name="Image" Value="set:skin image:RenderBg2" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground/getRewardBtn" Type="GlossySerpent/OrangeButton">
+                            <Property Name="UnifiedAreaRect" Value="{{0,61},{0,154},{0,163},{0,178}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="VIP1可领" />
+                        </Window>
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground/props1" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,12},{0,42},{0,60},{0,90}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground/props2" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,62},{0,42},{0,110},{0,90}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground/props3" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,112},{0,42},{0,160},{0,90}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground/props4" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,162},{0,42},{0,210},{0,90}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground/props5" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,12},{0,93},{0,60},{0,141}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground/props6" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,62},{0,93},{0,110},{0,141}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground/props7" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,112},{0,93},{0,160},{0,141}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground/props8" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,162},{0,93},{0,210},{0,141}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="VipLevel/background/bottomBg/rightBg/backgroundImg" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,211},{0,4},{0,433},{0,33}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:skin image:ListTitleBgLeft" />
+                        <Property Name="LeftOffset" Value="19" />
+                        <Property Name="RightImage" Value="set:skin image:ListTitleBgRight" />
+                        <Property Name="CenterImage" Value="set:skin image:ListTitleBgCenter" />
+                        <Property Name="RightOffset" Value="19" />
+                        <Window Name="VipLevel/background/bottomBg/rightBg/backgroundImg/rewordTxt1" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,222},{0,29}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="升级VIP1就送大礼" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFfef9d0" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,211},{0,208},{0,433},{0,344}}" />
+                        <Property Name="Image" Value="set:skin image:RenderBg2" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground2/props11" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,112},{0,40},{0,160},{0,88}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground2/props12" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,162},{0,40},{0,210},{0,88}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground2/props10" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,62},{0,40},{0,110},{0,88}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground2/props9" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,12},{0,40},{0,60},{0,88}}" />
+                            <Property Name="Image" Value="set:skin image:GridBG2" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                        </Window>
+                        <Window Name="VipLevel/background/bottomBg/rightBg/smallbackground2/linkBtn$RI" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,88},{0,103},{0,170},{0,123}}" />
+                            <Property Name="Font" Value="songti_12_strengh" />
+                            <Property Name="Text" Value="累计属性：" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFfef9d0" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                    <Window Name="VipLevel/background/bottomBg/rightBg/backgroundImg2" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,211},{0,204},{0,433},{0,233}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:skin image:ListTitleBgLeft" />
+                        <Property Name="LeftOffset" Value="19" />
+                        <Property Name="RightImage" Value="set:skin image:ListTitleBgRight" />
+                        <Property Name="CenterImage" Value="set:skin image:ListTitleBgCenter" />
+                        <Property Name="RightOffset" Value="19" />
+                        <Window Name="VipLevel/background/bottomBg/rightBg/backgroundImg2/rewordTxt2" Type="GuiLook/StaticText">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,222},{0,29}}" />
+                            <Property Name="Font" Value="songti_14_strengh" />
+                            <Property Name="Text" Value="每日VIP福利" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="TextColour" Value="FFfef9d0" />
+                            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                            <Property Name="WantsMultiClickEvents" Value="false" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Name="VipLevel/background/bottomBg/fairyImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,355},{0,347}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VipLevel/background/bottomBg/imgName" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,53},{0,196}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="VipLevel/background/RadioTab0" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,123},{0,81},{0,154}}" />
+                <Property Name="HoverImage" Value="set:VIP1 image:red" />
+                <Property Name="SelectedImage" Value="set:VIP1 image:red" />
+                <Property Name="UnselectedImage" Value="set:VIP1 image:gray2" />
+                <Window Name="VipLevel/background/RadioTab0/vip1Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,80},{0,31}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="VIP 1" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff7eacc2" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="VipLevel/background/RadioTab1" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,80},{0,123},{0,160},{0,154}}" />
+                <Property Name="HoverImage" Value="set:VIP1 image:red" />
+                <Property Name="SelectedImage" Value="set:VIP1 image:red" />
+                <Property Name="UnselectedImage" Value="set:VIP1 image:gray2" />
+                <Window Name="VipLevel/background/RadioTab1/vip2Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,80},{0,31}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="VIP 2" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff7eacc2" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="VipLevel/background/RadioTab2" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,159},{0,123},{0,239},{0,154}}" />
+                <Property Name="HoverImage" Value="set:VIP1 image:red" />
+                <Property Name="SelectedImage" Value="set:VIP1 image:red" />
+                <Property Name="UnselectedImage" Value="set:VIP1 image:gray2" />
+                <Window Name="VipLevel/background/RadioTab2/vip3Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,80},{0,31}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="VIP 3" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff7eacc2" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="VipLevel/background/RadioTab3" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,238},{0,123},{0,318},{0,154}}" />
+                <Property Name="HoverImage" Value="set:VIP1 image:red" />
+                <Property Name="SelectedImage" Value="set:VIP1 image:red" />
+                <Property Name="UnselectedImage" Value="set:VIP1 image:gray2" />
+                <Window Name="VipLevel/background/RadioTab3/vip4Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,80},{0,31}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="VIP 4" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff7eacc2" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="VipLevel/background/RadioTab4" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,317},{0,123},{0,397},{0,154}}" />
+                <Property Name="HoverImage" Value="set:VIP1 image:red" />
+                <Property Name="SelectedImage" Value="set:VIP1 image:red" />
+                <Property Name="UnselectedImage" Value="set:VIP1 image:gray2" />
+                <Window Name="VipLevel/background/RadioTab4/vip5Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,80},{0,31}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="VIP 5" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff7eacc2" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="VipLevel/background/RadioTab5" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,396},{0,123},{0,476},{0,154}}" />
+                <Property Name="HoverImage" Value="set:VIP1 image:red" />
+                <Property Name="SelectedImage" Value="set:VIP1 image:red" />
+                <Property Name="UnselectedImage" Value="set:VIP1 image:gray2" />
+                <Window Name="VipLevel/background/RadioTab5/vip6Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,80},{0,31}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="VIP 6" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff7eacc2" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="VipLevel/background/RadioTab6" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,475},{0,123},{0,555},{0,154}}" />
+                <Property Name="HoverImage" Value="set:VIP1 image:red" />
+                <Property Name="SelectedImage" Value="set:VIP1 image:red" />
+                <Property Name="UnselectedImage" Value="set:VIP1 image:gray2" />
+                <Window Name="VipLevel/background/RadioTab6/vip7Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,80},{0,31}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="VIP 7" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff7eacc2" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="VipLevel/background/RadioTab7" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,554},{0,123},{0,634},{0,154}}" />
+                <Property Name="HoverImage" Value="set:VIP1 image:red" />
+                <Property Name="SelectedImage" Value="set:VIP1 image:red" />
+                <Property Name="UnselectedImage" Value="set:VIP1 image:gray2" />
+                <Window Name="VipLevel/background/RadioTab7/vip8Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,80},{0,31}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="VIP 8" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff7eacc2" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="VipLevel/background/RadioTab8" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,633},{0,123},{0,713},{0,154}}" />
+                <Property Name="HoverImage" Value="set:VIP1 image:red" />
+                <Property Name="SelectedImage" Value="set:VIP1 image:red" />
+                <Property Name="UnselectedImage" Value="set:VIP1 image:gray2" />
+                <Window Name="VipLevel/background/RadioTab8/vip9Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,80},{0,31}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="VIP 9" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff7eacc2" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="VipLevel/background/RadioTab9" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,712},{0,123},{0,792},{0,154}}" />
+                <Property Name="HoverImage" Value="set:VIP1 image:red" />
+                <Property Name="SelectedImage" Value="set:VIP1 image:red" />
+                <Property Name="UnselectedImage" Value="set:VIP1 image:gray2" />
+                <Window Name="VipLevel/background/RadioTab9/vip10Txt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,80},{0,31}}" />
+                    <Property Name="Font" Value="songti_18_strengh" />
+                    <Property Name="Text" Value="VIP 10" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="ff7eacc2" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

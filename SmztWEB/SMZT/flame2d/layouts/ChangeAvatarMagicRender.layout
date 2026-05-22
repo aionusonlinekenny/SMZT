@@ -1,0 +1,1127 @@
+<GUILayout>
+    <Window Name="ChangeAvatarMagicRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,245},{0,420}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="ChangeAvatarMagicRender/bg" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,245},{0,420}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:changeAvatar image:up" />
+            <Property Name="LeftImage" Value="set:changeAvatar image:leftBg" />
+            <Property Name="TopOffset" Value="11" />
+            <Property Name="LeftOffset" Value="11" />
+            <Property Name="RightImage" Value="set:changeAvatar image:rightBg" />
+            <Property Name="BottomImage" Value="set:changeAvatar image:down" />
+            <Property Name="CenterImage" Value="set:changeAvatar image:center" />
+            <Property Name="RightOffset" Value="11" />
+            <Property Name="BottomOffset" Value="11" />
+            <Property Name="TopLeftImage" Value="set:changeAvatar image:leftTop" />
+            <Property Name="TopRightImage" Value="set:changeAvatar image:rightTop" />
+            <Property Name="BottomLeftImage" Value="set:changeAvatar image:leftDown" />
+            <Property Name="BottomRightImage" Value="set:changeAvatar image:rightDown" />
+            <Window Name="ChangeAvatarMagicRender/bg/raceImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,245},{0,420}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/bg/gridSp0" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,59},{0,19},{0,109},{0,69}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp0/name0$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-15},{0,0},{0,0},{0,65}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="VertFormatting" Value="LeftAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp0/gridBg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,51},{0,51}}" />
+                    <Property Name="Alpha" Value="0.99" />
+                    <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="VertFormatting" Value="BottomAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp0/dragCon0" Type="DragContainer">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,51},{0,51}}" />
+                    <Property Name="StickyMode" Value="false" />
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp0/dragCon0/itemBg0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,48},{0,48}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp0/dragCon0/grid0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,52}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp0/dragCon0/lock0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,10},{0,7}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp0/dragCon0/dragGrid0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp0/dragCon0/order0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,42},{0,19}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp0/dragCon0/ex0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-2},{0,54},{0,34}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:exImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp0/effectImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/bg/gridSp1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,32},{0,84},{0,82},{0,134}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp1/name1$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-15},{0,0},{0,0},{0,65}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="VertFormatting" Value="LeftAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp1/gridBg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,51},{0,51}}" />
+                    <Property Name="Alpha" Value="0.99" />
+                    <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="VertFormatting" Value="BottomAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp1/dragCon1" Type="DragContainer">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,51},{0,51}}" />
+                    <Property Name="StickyMode" Value="false" />
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp1/dragCon1/grid1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,52}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp1/dragCon1/dragGrid1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp1/dragCon1/lock1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,10},{0,7}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp1/dragCon1/order1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,42},{0,19}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp1/dragCon1/ex1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-2},{0,54},{0,34}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:exImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp1/effectImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/bg/gridSp2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,8},{0,154},{0,58},{0,204}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp2/name2$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,56},{0,-2},{0,71},{0,63}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="VertFormatting" Value="LeftAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp2/gridBg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,51},{0,51}}" />
+                    <Property Name="Alpha" Value="0.99" />
+                    <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="VertFormatting" Value="BottomAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp2/dragCon2" Type="DragContainer">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,51},{0,51}}" />
+                    <Property Name="StickyMode" Value="false" />
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp2/dragCon2/grid2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,52}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp2/dragCon2/dragGrid2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp2/dragCon2/lock2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,10},{0,7}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp2/dragCon2/order2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,42},{0,19}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp2/dragCon2/ex2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-2},{0,54},{0,34}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:exImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp2/effectImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/bg/gridSp3" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,8},{0,220},{0,58},{0,270}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp3/name3$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,55},{0,-1},{0,70},{0,64}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="VertFormatting" Value="LeftAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp3/gridBg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,51},{0,51}}" />
+                    <Property Name="Alpha" Value="0.99" />
+                    <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="VertFormatting" Value="BottomAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp3/dragCon3" Type="DragContainer">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,51},{0,51}}" />
+                    <Property Name="StickyMode" Value="false" />
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp3/dragCon3/grid3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,52}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp3/dragCon3/dragGrid3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp3/dragCon3/lock3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,10},{0,7}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp3/dragCon3/order3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,42},{0,19}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp3/dragCon3/ex3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-2},{0,54},{0,34}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:exImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp3/effectImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/bg/gridSp4" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,32},{0,288},{0,82},{0,338}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp4/name4$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-15},{0,0},{0,0},{0,65}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="VertFormatting" Value="LeftAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp4/gridBg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,51},{0,51}}" />
+                    <Property Name="Alpha" Value="0.99" />
+                    <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="VertFormatting" Value="BottomAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp4/dragCon4" Type="DragContainer">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,51},{0,51}}" />
+                    <Property Name="StickyMode" Value="false" />
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp4/dragCon4/grid4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,52}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp4/dragCon4/dragGrid4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp4/dragCon4/lock4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,10},{0,7}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp4/dragCon4/order4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,42},{0,19}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp4/dragCon4/ex4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-2},{0,54},{0,34}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:exImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp4/effectImg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/bg/gridSp5" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,59},{0,356},{0,109},{0,406}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp5/name5$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-15},{0,0},{0,0},{0,65}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="VertFormatting" Value="LeftAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp5/gridBg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,51},{0,51}}" />
+                    <Property Name="Alpha" Value="0.99" />
+                    <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="VertFormatting" Value="BottomAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp5/dragCon5" Type="DragContainer">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,51},{0,51}}" />
+                    <Property Name="StickyMode" Value="false" />
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp5/dragCon5/grid5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,52}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp5/dragCon5/dragGrid5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp5/dragCon5/lock5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,10},{0,7}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp5/dragCon5/order5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,42},{0,19}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp5/dragCon5/ex5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-2},{0,54},{0,34}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:exImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp5/effectImg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/bg/gridSp6" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,139},{0,19},{0,189},{0,69}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp6/name6$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-15},{0,0},{0,0},{0,65}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="VertFormatting" Value="LeftAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp6/gridBg6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,51},{0,51}}" />
+                    <Property Name="Alpha" Value="0.99" />
+                    <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="VertFormatting" Value="BottomAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp6/dragCon6" Type="DragContainer">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,51},{0,51}}" />
+                    <Property Name="StickyMode" Value="false" />
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp6/dragCon6/grid6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,52}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp6/dragCon6/dragGrid6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp6/dragCon6/lock6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,10},{0,7}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp6/dragCon6/order6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,42},{0,19}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp6/dragCon6/ex6" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-2},{0,54},{0,34}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:exImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp6/effectImg6" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/bg/gridSp7" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,164},{0,84},{0,214},{0,134}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp7/name7$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-15},{0,0},{0,0},{0,65}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="VertFormatting" Value="LeftAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp7/gridBg7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,51},{0,51}}" />
+                    <Property Name="Alpha" Value="0.99" />
+                    <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="VertFormatting" Value="BottomAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp7/dragCon7" Type="DragContainer">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,51},{0,51}}" />
+                    <Property Name="StickyMode" Value="false" />
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp7/dragCon7/grid7" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,52}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp7/dragCon7/dragGrid7" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp7/dragCon7/lock7" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,10},{0,7}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp7/dragCon7/order7" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,42},{0,19}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp7/dragCon7/ex7" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-2},{0,54},{0,34}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:exImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp7/effectImg7" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/bg/gridSp8" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,184},{0,154},{0,234},{0,204}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp8/name8$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-15},{0,0},{0,0},{0,65}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="VertFormatting" Value="LeftAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp8/gridBg8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,51},{0,51}}" />
+                    <Property Name="Alpha" Value="0.99" />
+                    <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="VertFormatting" Value="BottomAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp8/dragCon8" Type="DragContainer">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,51},{0,51}}" />
+                    <Property Name="StickyMode" Value="false" />
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp8/dragCon8/grid8" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,52}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp8/dragCon8/dragGrid8" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp8/dragCon8/lock8" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,10},{0,7}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp8/dragCon8/order8" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,42},{0,19}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp8/dragCon8/ex8" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-2},{0,54},{0,34}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:exImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp8/effectImg8" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/bg/gridSp9" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,184},{0,220},{0,234},{0,270}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp9/name9$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-15},{0,0},{0,0},{0,65}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="VertFormatting" Value="LeftAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp9/gridBg9" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,51},{0,51}}" />
+                    <Property Name="Alpha" Value="0.99" />
+                    <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="VertFormatting" Value="BottomAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp9/dragCon9" Type="DragContainer">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,51},{0,51}}" />
+                    <Property Name="StickyMode" Value="false" />
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp9/dragCon9/grid9" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,52}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp9/dragCon9/dragGrid9" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp9/dragCon9/lock9" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,10},{0,7}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp9/dragCon9/order9" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,42},{0,19}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp9/dragCon9/ex9" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-2},{0,54},{0,34}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:exImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp9/effectImg9" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/bg/gridSp10" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,165},{0,288},{0,215},{0,338}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp10/name10$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-15},{0,0},{0,0},{0,65}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="VertFormatting" Value="LeftAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp10/gridBg10" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,51},{0,51}}" />
+                    <Property Name="Alpha" Value="0.99" />
+                    <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="VertFormatting" Value="BottomAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp10/dragCon10" Type="DragContainer">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,51},{0,51}}" />
+                    <Property Name="StickyMode" Value="false" />
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp10/dragCon10/grid10" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,52}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp10/dragCon10/dragGrid10" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp10/dragCon10/lock10" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,10},{0,7}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp10/dragCon10/order10" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,42},{0,19}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp10/dragCon10/ex10" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-2},{0,54},{0,34}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:exImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp10/effectImg10" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/bg/gridSp11" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,139},{0,356},{0,189},{0,406}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp11/name11$RI" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-15},{0,0},{0,0},{0,65}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="Visible" Value="false" />
+                    <Property Name="VertFormatting" Value="LeftAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp11/gridBg11" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,51},{0,51}}" />
+                    <Property Name="Alpha" Value="0.99" />
+                    <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="VertFormatting" Value="BottomAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp11/dragCon11" Type="DragContainer">
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-1},{0,51},{0,51}}" />
+                    <Property Name="StickyMode" Value="false" />
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp11/dragCon11/grid11" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,52},{0,52}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp11/dragCon11/dragGrid11" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+                        <Property Name="Alpha" Value="0.99" />
+                        <Property Name="Image" Value="set:changeAvatar image:gridBg0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp11/dragCon11/lock11" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-4},{0,10},{0,7}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:lock" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp11/dragCon11/order11" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,42},{0,19}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                    <Window Name="ChangeAvatarMagicRender/bg/gridSp11/dragCon11/ex11" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-2},{0,54},{0,34}}" />
+                        <Property Name="Image" Value="set:changeAvatar image:exImg" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="AlwaysOnTop" Value="true" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Property Name="MousePassThroughEnabled" Value="true" />
+                    </Window>
+                </Window>
+                <Window Name="ChangeAvatarMagicRender/bg/gridSp11/effectImg11" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="ChangeAvatarMagicRender/tipsSp" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,48},{0,255},{0,243},{0,355}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:skin image:NewTitlebarBorder_TC" />
+            <Property Name="LeftImage" Value="set:skin image:WindowLeftEdge" />
+            <Property Name="TopOffset" Value="38" />
+            <Property Name="LeftOffset" Value="9" />
+            <Property Name="RightImage" Value="set:skin image:WindowRightEdge" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="BottomImage" Value="set:skin image:WindowBottomEdge" />
+            <Property Name="CenterImage" Value="set:skin image:WindowMid" />
+            <Property Name="RightOffset" Value="9" />
+            <Property Name="BottomOffset" Value="8" />
+            <Property Name="TopLeftImage" Value="set:skin image:NewTitlebarBorder_TL" />
+            <Property Name="TopRightImage" Value="set:skin image:NewTitlebarBorder_TR" />
+            <Property Name="BottomLeftImage" Value="set:skin image:WindowBottomLeft" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="BottomRightImage" Value="set:skin image:WindowBottomRight" />
+            <Window Name="ChangeAvatarMagicRender/tipsSp/winLine" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,9},{0,97},{0,184},{0,96}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/tipsSp/titleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,7},{0,119},{0,32}}" />
+                <Property Name="Font" Value="songti_18" />
+                <Property Name="Text" Value="请选择法宝" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFc6dee6" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/tipsSp/itemsWare2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,132},{0,43},{0,180},{0,91}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/tipsSp/itemsWare0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,15},{0,43},{0,63},{0,91}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/tipsSp/itemsWare1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,74},{0,43},{0,122},{0,91}}" />
+                <Property Name="Image" Value="set:skin image:GridBG" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="ClippedByParent" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="ChangeAvatarMagicRender/tipsSp/closeBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,162},{0,1},{0,191},{0,30}}" />
+                <Property Name="HoverImage" Value="set:skin image:CloseButtonHover" />
+                <Property Name="AlwaysOnTop" Value="true" />
+                <Property Name="NormalImage" Value="set:skin image:CloseButtonNormal" />
+                <Property Name="PushedImage" Value="set:skin image:CloseButtonPushed" />
+                <Property Name="ClippedByParent" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

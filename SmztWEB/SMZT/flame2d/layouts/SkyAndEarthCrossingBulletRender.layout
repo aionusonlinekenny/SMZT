@@ -1,0 +1,31 @@
+<GUILayout>
+    <Window Name="SkyAndEarthCrossingBulletRender" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,160},{0,25}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="SkyAndEarthCrossingBulletRender/upImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,100},{0,1},{0,113},{0,24}}" />
+            <Property Name="Image" Value="set:skyAndEarthWord image:up" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="SkyAndEarthCrossingBulletRender/attributeTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,115},{0,1},{0,158},{0,26}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="100" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85F500" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="SkyAndEarthCrossingBulletRender/addTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,91},{0,25}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="生命+10000" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+    </Window>
+</GUILayout>

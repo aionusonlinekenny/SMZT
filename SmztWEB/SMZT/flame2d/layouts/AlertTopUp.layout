@@ -1,0 +1,33 @@
+<GUILayout>
+    <Window Name="AlertTopUp" Type="GuiLook/Panel2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,319},{0,162}}" />
+        <Property Name="Text" Value="提示" />
+        <Property Name="AutoRenderingSurface" Value="False" />
+        <Window Name="AlertTopUp/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,87},{0,305},{0,88}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="AlertTopUp/touUpBtn" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,94},{0,80},{0,117}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="充值" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Name="AlertTopUp/promptTxt" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,20},{0,269},{0,42}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="抱歉，您的元宝不足，是否前往充值？" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Name="AlertTopUp/promptTxt2" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,62},{0,225},{0,84}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="（5）秒后自动打开充值界面" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF85f500" />
+            <Property Name="HorzTextFormatting" Value="CentreAligned" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+    </Window>
+</GUILayout>

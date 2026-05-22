@@ -1,0 +1,383 @@
+<GUILayout>
+    <Window Name="CrossServerPulbicPanel" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,908},{0,98}}" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Window Name="CrossServerPulbicPanel/CommonBG" Type="GuiLook/CommonBG">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,908},{0,98}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="CrossServerPulbicPanel/CommonBG/jianImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,311},{0,94}}" />
+                <Property Name="Image" Value="set:crossServerPublic image:di" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Name="CrossServerPulbicPanel/CommonBG/selfWinNum" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,351},{0,13},{0,392},{0,54}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CrossServerPulbicPanel/CommonBG/yourWinNum" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,515},{0,13},{0,556},{0,54}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="CrossServerPulbicPanel/CommonBG/faceSp0" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,12},{0,6},{0,95},{0,96}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp0/faceBg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,50},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="CrossServerPulbicPanel/CommonBG/faceSp0/faceBg0/faceImg0" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,49}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp0/markImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,3},{0,46},{0,49}}" />
+                    <Property Name="Image" Value="set:crossServerPublic image:blueKuang" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp0/progressBg0" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,50},{0,82},{0,71}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="CrossServerPulbicPanel/CommonBG/faceSp0/progressBg0/progressBar0$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,80},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                    </Window>
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp0/nameTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,71},{0,83},{0,89}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00e4ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CrossServerPulbicPanel/CommonBG/faceSp1" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,114},{0,6},{0,197},{0,96}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp1/faceBg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,50},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="CrossServerPulbicPanel/CommonBG/faceSp1/faceBg1/faceImg1" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,49}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp1/markImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,3},{0,46},{0,49}}" />
+                    <Property Name="Image" Value="set:crossServerPublic image:blueKuang" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp1/progressBg1" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,50},{0,82},{0,71}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="CrossServerPulbicPanel/CommonBG/faceSp1/progressBg1/progressBar1$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,80},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                    </Window>
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp1/nameTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,71},{0,83},{0,89}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00e4ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CrossServerPulbicPanel/CommonBG/faceSp2" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,217},{0,6},{0,300},{0,96}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp2/faceBg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,50},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="CrossServerPulbicPanel/CommonBG/faceSp2/faceBg2/faceImg2" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,49}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp2/markImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,3},{0,46},{0,49}}" />
+                    <Property Name="Image" Value="set:crossServerPublic image:blueKuang" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp2/progressBg2" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,50},{0,82},{0,71}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="CrossServerPulbicPanel/CommonBG/faceSp2/progressBg2/progressBar2$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,80},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                    </Window>
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp2/nameTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,71},{0,83},{0,89}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00e4ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CrossServerPulbicPanel/CommonBG/faceSp3" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,610},{0,6},{0,693},{0,96}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp3/faceBg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,50},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="CrossServerPulbicPanel/CommonBG/faceSp3/faceBg3/faceImg3" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,49}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp3/markImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,3},{0,46},{0,49}}" />
+                    <Property Name="Image" Value="set:crossServerPublic image:redKuang" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp3/progressBg3" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,50},{0,82},{0,71}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="CrossServerPulbicPanel/CommonBG/faceSp3/progressBg3/progressBar3$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,80},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                    </Window>
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp3/nameTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,71},{0,83},{0,89}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00e4ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CrossServerPulbicPanel/CommonBG/faceSp4" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,710},{0,6},{0,793},{0,96}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp4/faceBg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,50},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="CrossServerPulbicPanel/CommonBG/faceSp4/faceBg4/faceImg4" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,49}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp4/markImg4" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,3},{0,46},{0,49}}" />
+                    <Property Name="Image" Value="set:crossServerPublic image:redKuang" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp4/progressBg4" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,50},{0,82},{0,71}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="CrossServerPulbicPanel/CommonBG/faceSp4/progressBg4/progressBar4$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,80},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                    </Window>
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp4/nameTxt4" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,71},{0,83},{0,89}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00e4ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="CrossServerPulbicPanel/CommonBG/faceSp5" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,814},{0,6},{0,897},{0,96}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp5/faceBg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,50},{0,51}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:gridBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="CrossServerPulbicPanel/CommonBG/faceSp5/faceBg5/faceImg5" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,49},{0,49}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp5/markImg5" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,3},{0,46},{0,49}}" />
+                    <Property Name="Image" Value="set:crossServerPublic image:redKuang" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp5/progressBg5" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,50},{0,82},{0,71}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="CrossServerPulbicPanel/CommonBG/faceSp5/progressBg5/progressBar5$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,80},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                    </Window>
+                </Window>
+                <Window Name="CrossServerPulbicPanel/CommonBG/faceSp5/nameTxt5" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,71},{0,83},{0,89}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00e4ff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="CrossServerPulbicPanel/fightTimeBg" Type="GlossySerpent/ThreeStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,157},{0,65}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="LeftImage" Value="set:worldFirst image:leftBig" />
+            <Property Name="LeftOffset" Value="76" />
+            <Property Name="RightImage" Value="set:worldFirst image:rightBig" />
+            <Property Name="CenterImage" Value="set:worldFirst image:middleBig" />
+            <Property Name="RightOffset" Value="76" />
+            <Property Name="ClippedByParent" Value="false" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="MousePassThroughEnabled" Value="true" />
+            <Window Name="CrossServerPulbicPanel/fightTimeBg/fightTimeImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,12},{0,157},{0,54}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

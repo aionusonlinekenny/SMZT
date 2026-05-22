@@ -1,0 +1,166 @@
+<GUILayout>
+    <Window Name="SocialAddFriendsPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,483},{0,335}}" />
+        <Property Name="Text" Value="添加好友" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="SocialAddFriendsPanel/leftSp" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,200},{0,260}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SocialAddFriendsPanel/leftSp/titleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,30},{0,109},{0,48}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="输入玩家名称查找" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF65b3e9" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SocialAddFriendsPanel/leftSp/textBG" Type="GuiLook/TextBG">
+                <Property Name="UnifiedAreaRect" Value="{{0,20},{0,53},{0,160},{0,74}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="SocialAddFriendsPanel/leftSp/textBG/inputTxt" Type="GuiLook/Editbox">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-5},{0,140},{0,25}}" />
+                </Window>
+            </Window>
+            <Window Name="SocialAddFriendsPanel/leftSp/findBtn" Type="GuiLook/DefaultButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,163},{0,53},{0,183},{0,72}}" />
+                <Property Name="HoverImage" Value="set:mainUI1 image:boxHover" />
+                <Property Name="NormalImage" Value="set:mainUI1 image:boxNormal" />
+                <Property Name="PushedImage" Value="set:mainUI1 image:boxPushed" />
+                <Window Name="SocialAddFriendsPanel/leftSp/findBtn/findImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,20},{0,20}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:checkImg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="MouseButtonDownAutoRepeat" Value="true" />
+                    <Property Name="MousePassThroughEnabled" Value="true" />
+                    <Property Name="MouseInputPropagationEnabled" Value="true" />
+                </Window>
+            </Window>
+            <Window Name="SocialAddFriendsPanel/leftSp/faceBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,74},{0,86},{0,122},{0,134}}" />
+                <Property Name="Image" Value="set:mainUI1 image:roleFaceBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="SocialAddFriendsPanel/leftSp/faceBg/faceImg" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="SocialAddFriendsPanel/leftSp/playerNameTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,45},{0,145},{0,145},{0,167}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="玩家名称六字" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFe1feff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SocialAddFriendsPanel/leftSp/gradeTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,45},{0,173},{0,84},{0,191}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="等级：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFe1feff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SocialAddFriendsPanel/leftSp/gangTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,45},{0,198},{0,84},{0,216}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="帮派：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFe1feff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SocialAddFriendsPanel/leftSp/fightTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,45},{0,224},{0,97},{0,242}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="战斗力：" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFe1feff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SocialAddFriendsPanel/leftSp/fightTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,97},{0,224},{0,183},{0,242}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="1234567" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFe1feff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SocialAddFriendsPanel/leftSp/gangTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,84},{0,198},{0,146},{0,216}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="啦啦啦" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFe1feff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="SocialAddFriendsPanel/leftSp/gradeTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,84},{0,173},{0,145},{0,191}}" />
+                <Property Name="Font" Value="songti_12_strengh" />
+                <Property Name="Text" Value="85" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFe1feff" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="SocialAddFriendsPanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,292},{0,465},{0,293}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="SocialAddFriendsPanel/rightSp" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,199},{0,4},{0,464},{0,260}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SocialAddFriendsPanel/rightSp/rightBg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,265},{0,256}}" />
+                <Property Name="Image" Value="set:friendsBg2 image:shake" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="SocialAddFriendsPanel/rightSp/rightBg/list" Type="DefaultWindow">
+                    <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,262},{0,252}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="SocialAddFriendsPanel/addBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,49},{0,265},{0,161},{0,288}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="加为好友" />
+        </Window>
+        <Window Name="SocialAddFriendsPanel/shakeBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,222},{0,265},{0,334},{0,288}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="摇一摇" />
+        </Window>
+        <Window Name="SocialAddFriendsPanel/allAddBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,338},{0,265},{0,450},{0,288}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="全部添加" />
+        </Window>
+    </Window>
+</GUILayout>

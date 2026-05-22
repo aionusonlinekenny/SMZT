@@ -1,0 +1,42 @@
+<GUILayout>
+    <Window Name="EquipWarehousePanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,348},{0,529}}" />
+        <Property Name="Text" Value="熔炉仓库" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="EquipWarehousePanel/Line" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,486},{0,330},{0,487}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="EquipWarehousePanel/bg" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,330},{0,419}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="EquipWarehousePanel/checkbox" Type="GuiLook/Checkbox">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,427},{0,165},{0,443}}" />
+            <Property Name="Text" Value="隐藏紫色以下品质的装备" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Name="EquipWarehousePanel/takeOutBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,18},{0,453},{0,143},{0,476}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="一键取出" />
+        </Window>
+        <Window Name="EquipWarehousePanel/sellBtn" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,190},{0,453},{0,315},{0,476}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="一键出售" />
+            <Property Name="Tooltip" Value="90089" />
+        </Window>
+    </Window>
+</GUILayout>

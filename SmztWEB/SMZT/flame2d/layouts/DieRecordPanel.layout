@@ -1,0 +1,68 @@
+<GUILayout>
+    <Window Name="DieRecordPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,296},{0,338}}" />
+        <Property Name="Text" Value="阵亡记录" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="DieRecordPanel/commonBg3" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{1,0},{1,0}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="DieRecordPanel/commonBg3/headerList" Type="GlossySerpent/HeaderList">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,46},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="DieRecordPanel/commonBg3/headerList/headerTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="时间" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="DieRecordPanel/commonBg3/headerList2" Type="GlossySerpent/HeaderList">
+                <Property Name="UnifiedAreaRect" Value="{{0,46},{0,0},{0,124},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="DieRecordPanel/commonBg3/headerList2/headerTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="地点" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="DieRecordPanel/commonBg3/headerList3" Type="GlossySerpent/HeaderList">
+                <Property Name="UnifiedAreaRect" Value="{{0,124},{0,0},{0,278},{0,28}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="DieRecordPanel/commonBg3/headerList3/headerTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="仇人或掉落" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF65b3e9" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="DieRecordPanel/commonBg3/list" Type="GuiLook/Listbox">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,28},{0,278},{0,287}}" />
+                <Property Name="ForceVertScrollbar" Value="true" />
+                <AutoWindow NameSuffix="__auto_vscrollbar__">
+                    <Property Name="VerticalScrollbar" Value="true" />
+                </AutoWindow>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

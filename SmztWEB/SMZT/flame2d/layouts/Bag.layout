@@ -1,0 +1,402 @@
+<GUILayout>
+    <Window Name="Bag" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,348},{0,568}}" />
+        <Property Name="GlyphImage" Value="set:bag image:BackPackTxt" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="Bag/commonBG" Type="GuiLook/CommonBG">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,29},{0,330},{0,342}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="Bag/capacity" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,217},{0,343},{0,278},{0,364}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="背包容量：" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TextColour" Value="FF64d4d8" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="Bag/capacityvalue" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,279},{0,343},{0,330},{0,364}}" />
+            <Property Name="Font" Value="songti_12_strengh" />
+            <Property Name="Text" Value="200/200" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="Bag/imgtitlegold" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,444},{0,26},{0,465}}" />
+            <Property Name="Text" Value="金子" />
+            <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="Tooltip" Value="20001" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="Bag/imgtitlegold1" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,468},{0,26},{0,489}}" />
+            <Property Name="Text" Value="金票" />
+            <Property Name="Image" Value="set:mainUI1 image:yuanbaoLock" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="Tooltip" Value="20002" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="Bag/imgtitlemoney" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,166},{0,444},{0,187},{0,465}}" />
+            <Property Name="Text" Value="银子" />
+            <Property Name="Image" Value="set:mainUI1 image:goldCoin" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="Tooltip" Value="20003" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="Bag/imgtitlemoney1" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,166},{0,468},{0,187},{0,489}}" />
+            <Property Name="Text" Value="银票" />
+            <Property Name="Image" Value="set:mainUI1 image:goldCoinLock" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="Tooltip" Value="20004" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="Bag/sell" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,134},{0,497},{0,198},{0,520}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="寄 售" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="Tooltip" Value="可点击选择出售的物品" />
+        </Window>
+        <Window Name="Bag/backbag" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,68},{0,497},{0,132},{0,520}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="仓 库" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="Tooltip" Value="可直接打开仓库界面" />
+        </Window>
+        <Window Name="Bag/tidy" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,266},{0,497},{0,330},{0,520}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="整 理" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="Tooltip" Value="整理包裹里所有道具" />
+        </Window>
+        <Window Name="Bag/mall" Type="GlossySerpent/OrangeButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,497},{0,66},{0,520}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="商 店" />
+            <Property Name="AlwaysOnTop" Value="true" />
+            <Property Name="Tooltip" Value="可直接打开商城界面" />
+        </Window>
+        <Window Name="Bag/sine" Type="GuiLook/Line">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,523},{0,335},{0,524}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="Bag/synthetic" Type="GlossySerpent/BlueButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,200},{0,497},{0,264},{0,520}}" />
+            <Property Name="Font" Value="songti_14_strengh" />
+            <Property Name="Text" Value="吞 噬" />
+        </Window>
+        <Window Name="Bag/commonBG2" Type="GuiLook/CommonBG">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,362},{0,330},{0,494}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="Bag/commonBG2/staticImage3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,19},{0,55},{0,77},{0,75}}" />
+                <Property Name="Image" Value="set:bag image:GradeGiftTxt" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="Bag/commonBG2/staticImage32" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,142},{0,55},{0,200},{0,75}}" />
+                <Property Name="Image" Value="set:bag image:FightGiftTxt" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="Bag/commonBG2/staticImage3222" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,257},{0,55},{0,315},{0,75}}" />
+                <Property Name="Image" Value="set:bag image:VIPGiftTxt" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="Bag/commonBG2/levelGiftBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,23},{0,4},{0,73},{0,54}}" />
+                <Property Name="Image" Value="set:bag image:icon" />
+            </Window>
+            <Window Name="Bag/commonBG2/fightGiftBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,146},{0,4},{0,196},{0,54}}" />
+                <Property Name="Image" Value="set:bag image:icon" />
+            </Window>
+            <Window Name="Bag/commonBG2/vipGiftBtn" Type="GuiLook/DefaultImageButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,261},{0,4},{0,311},{0,54}}" />
+                <Property Name="Image" Value="set:bag image:icon" />
+            </Window>
+        </Window>
+        <Window Name="Bag/nineStretchImage" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,444},{0,164},{0,465}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:skin image:StaticTop" />
+            <Property Name="LeftImage" Value="set:skin image:StaticLeft" />
+            <Property Name="TopOffset" Value="3" />
+            <Property Name="LeftOffset" Value="3" />
+            <Property Name="RightImage" Value="set:skin image:StaticRight" />
+            <Property Name="BottomImage" Value="set:skin image:StaticBottom" />
+            <Property Name="CenterImage" Value="set:skin image:StaticCenter" />
+            <Property Name="RightOffset" Value="3" />
+            <Property Name="BottomOffset" Value="3" />
+            <Property Name="TopLeftImage" Value="set:skin image:StaticTopLeft" />
+            <Property Name="TopRightImage" Value="set:skin image:StaticTopRight" />
+            <Property Name="BottomLeftImage" Value="set:skin image:StaticBottomLeft" />
+            <Property Name="BottomRightImage" Value="set:skin image:StaticBottomRight" />
+        </Window>
+        <Window Name="Bag/nineStretchImage2" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,189},{0,444},{0,325},{0,465}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:skin image:StaticTop" />
+            <Property Name="LeftImage" Value="set:skin image:StaticLeft" />
+            <Property Name="TopOffset" Value="3" />
+            <Property Name="LeftOffset" Value="3" />
+            <Property Name="RightImage" Value="set:skin image:StaticRight" />
+            <Property Name="BottomImage" Value="set:skin image:StaticBottom" />
+            <Property Name="CenterImage" Value="set:skin image:StaticCenter" />
+            <Property Name="RightOffset" Value="3" />
+            <Property Name="BottomOffset" Value="3" />
+            <Property Name="TopLeftImage" Value="set:skin image:StaticTopLeft" />
+            <Property Name="TopRightImage" Value="set:skin image:StaticTopRight" />
+            <Property Name="BottomLeftImage" Value="set:skin image:StaticBottomLeft" />
+            <Property Name="BottomRightImage" Value="set:skin image:StaticBottomRight" />
+        </Window>
+        <Window Name="Bag/nineStretchImage3" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,468},{0,164},{0,489}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:skin image:StaticTop" />
+            <Property Name="LeftImage" Value="set:skin image:StaticLeft" />
+            <Property Name="TopOffset" Value="3" />
+            <Property Name="LeftOffset" Value="3" />
+            <Property Name="RightImage" Value="set:skin image:StaticRight" />
+            <Property Name="BottomImage" Value="set:skin image:StaticBottom" />
+            <Property Name="CenterImage" Value="set:skin image:StaticCenter" />
+            <Property Name="RightOffset" Value="3" />
+            <Property Name="BottomOffset" Value="3" />
+            <Property Name="TopLeftImage" Value="set:skin image:StaticTopLeft" />
+            <Property Name="TopRightImage" Value="set:skin image:StaticTopRight" />
+            <Property Name="BottomLeftImage" Value="set:skin image:StaticBottomLeft" />
+            <Property Name="BottomRightImage" Value="set:skin image:StaticBottomRight" />
+        </Window>
+        <Window Name="Bag/nineStretchImage4" Type="GlossySerpent/NineStretchImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,189},{0,468},{0,325},{0,489}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TopImage" Value="set:skin image:StaticTop" />
+            <Property Name="LeftImage" Value="set:skin image:StaticLeft" />
+            <Property Name="TopOffset" Value="3" />
+            <Property Name="LeftOffset" Value="3" />
+            <Property Name="RightImage" Value="set:skin image:StaticRight" />
+            <Property Name="BottomImage" Value="set:skin image:StaticBottom" />
+            <Property Name="CenterImage" Value="set:skin image:StaticCenter" />
+            <Property Name="RightOffset" Value="3" />
+            <Property Name="BottomOffset" Value="3" />
+            <Property Name="TopLeftImage" Value="set:skin image:StaticTopLeft" />
+            <Property Name="TopRightImage" Value="set:skin image:StaticTopRight" />
+            <Property Name="BottomLeftImage" Value="set:skin image:StaticBottomLeft" />
+            <Property Name="BottomRightImage" Value="set:skin image:StaticBottomRight" />
+        </Window>
+        <Window Name="Bag/titlegold" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,444},{0,164},{0,465}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="Text" Value="孟轲呀" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="Bag/titlegold1" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,468},{0,164},{0,489}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="Bag/titlemoney" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,189},{0,444},{0,325},{0,465}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="Bag/titlemoney1" Type="GuiLook/StaticText">
+            <Property Name="UnifiedAreaRect" Value="{{0,189},{0,468},{0,325},{0,489}}" />
+            <Property Name="Font" Value="" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="false" />
+        </Window>
+        <Window Name="Bag/tabBg" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,32},{0,327},{0,339}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        </Window>
+        <Window Name="Bag/scrollBar" Type="GuiLook/VerticalScrollbar">
+            <Property Name="UnifiedAreaRect" Value="{{0,313},{0,33},{0,327},{0,337}}" />
+            <Property Name="VerticalScrollbar" Value="true" />
+        </Window>
+        <Window Name="Bag/typeTabBox" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,330},{0,28}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="Bag/typeTabBox/radioTab0" Type="GuiLook/CommonRadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,8},{0,4},{0,66},{0,28}}" />
+                <Property Name="Text" Value="全部" />
+            </Window>
+            <Window Name="Bag/typeTabBox/radioTab1" Type="GuiLook/CommonRadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,64},{0,4},{0,122},{0,28}}" />
+                <Property Name="Text" Value="装备" />
+            </Window>
+            <Window Name="Bag/typeTabBox/radioTab2" Type="GuiLook/CommonRadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,122},{0,4},{0,180},{0,28}}" />
+                <Property Name="Text" Value="丹药" />
+            </Window>
+            <Window Name="Bag/typeTabBox/radioTab3" Type="GuiLook/CommonRadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,180},{0,4},{0,238},{0,28}}" />
+                <Property Name="Text" Value="道具" />
+            </Window>
+            <Window Name="Bag/typeTabBox/radioTab4" Type="GuiLook/CommonRadioButton">
+                <Property Name="UnifiedAreaRect" Value="{{0,238},{0,4},{0,296},{0,28}}" />
+                <Property Name="Text" Value="其他" />
+            </Window>
+        </Window>
+        <Window Name="Bag/pageTabBox" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,342},{0,128},{0,362}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="Bag/pageTabBox/tabBtn0" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,26},{0,16}}" />
+                <Property Name="Text" Value="1" />
+                <Property Name="HoverImage" Value="set:skin image:TabSBtnHover" />
+                <Property Name="SelectedImage" Value="set:skin image:TabSBtnHover" />
+                <Property Name="UnselectedImage" Value="set:skin image:TabSBtnNormal" />
+            </Window>
+            <Window Name="Bag/pageTabBox/tabBtn1" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,28},{0,0},{0,49},{0,16}}" />
+                <Property Name="Text" Value="2" />
+                <Property Name="HoverImage" Value="set:skin image:TabSBtnHover" />
+                <Property Name="SelectedImage" Value="set:skin image:TabSBtnHover" />
+                <Property Name="UnselectedImage" Value="set:skin image:TabSBtnNormal" />
+            </Window>
+            <Window Name="Bag/pageTabBox/tabBtn2" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,51},{0,0},{0,72},{0,16}}" />
+                <Property Name="Text" Value="3" />
+                <Property Name="HoverImage" Value="set:skin image:TabSBtnHover" />
+                <Property Name="SelectedImage" Value="set:skin image:TabSBtnHover" />
+                <Property Name="UnselectedImage" Value="set:skin image:TabSBtnNormal" />
+            </Window>
+            <Window Name="Bag/pageTabBox/tabBtn3" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,74},{0,0},{0,95},{0,16}}" />
+                <Property Name="Text" Value="4" />
+                <Property Name="HoverImage" Value="set:skin image:TabSBtnHover" />
+                <Property Name="SelectedImage" Value="set:skin image:TabSBtnHover" />
+                <Property Name="UnselectedImage" Value="set:skin image:TabSBtnNormal" />
+            </Window>
+            <Window Name="Bag/pageTabBox/tabBtn4" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,97},{0,0},{0,118},{0,16}}" />
+                <Property Name="Text" Value="5" />
+                <Property Name="HoverImage" Value="set:skin image:TabSBtnHover" />
+                <Property Name="SelectedImage" Value="set:skin image:TabSBtnHover" />
+                <Property Name="UnselectedImage" Value="set:skin image:TabSBtnNormal" />
+            </Window>
+        </Window>
+        <Window Name="Bag/salfLock" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,149},{0,345},{0,215},{0,362}}" />
+            <Property Name="Image" Value="set:bag image:lock" />
+            <Window Name="Bag/salfLock/StaticText" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,62},{0,17}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="安全锁" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HorzTextFormatting" Value="RightAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="Bag/promptImg" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,64},{0,164},{0,243},{0,239}}" />
+            <Property Name="Image" Value="set:skins image:bagPrompt" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+            <Window Name="Bag/promptImg/bagItemTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,72},{0,30}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="背包格子" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="Bag/promptImg/bagGoldTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,30},{0,72},{0,60}}" />
+                <Property Name="Font" Value="" />
+                <Property Name="Text" Value="绑定铜钱" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FF00baff" />
+                <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="Bag/promptImg/bagItemAdd" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,73},{0,6},{0,90},{0,24}}" />
+                <Property Name="Image" Value="set:skin image:add" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="Bag/promptImg/bagGoldAdd" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,73},{0,36},{0,90},{0,54}}" />
+                <Property Name="Image" Value="set:skin image:add" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="Bag/promptImg/bagItemImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,91},{0,5},{0,178},{0,24}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="Bag/promptImg/bagGoldImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,91},{0,35},{0,178},{0,54}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

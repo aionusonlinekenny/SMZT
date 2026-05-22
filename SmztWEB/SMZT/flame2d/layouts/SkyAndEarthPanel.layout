@@ -1,0 +1,50 @@
+<GUILayout>
+    <Window Name="SkyAndEarthPanel" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,961},{0,573}}" />
+        <Property Name="GlyphImage" Value="set:skyAndEarth image:skyAndEarth" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <Window Name="SkyAndEarthPanel/background" Type="GuiLook/CommonBg3">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,943},{0,527}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="SkyAndEarthPanel/background/rightBg" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,67},{0,0},{0,943},{0,523}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="SkyAndEarthPanel/background/btn_1" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,5},{0,67},{0,46}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="天地劫" />
+                <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+                <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+                <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            </Window>
+            <Window Name="SkyAndEarthPanel/background/btn_3" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,89},{0,67},{0,130}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="入地劫" />
+                <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+                <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+                <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            </Window>
+            <Window Name="SkyAndEarthPanel/background/btn_2" Type="GuiLook/RadioTab">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,47},{0,67},{0,88}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="飞天劫" />
+                <Property Name="HoverImage" Value="set:skin image:tabBBtnHover" />
+                <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover" />
+                <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

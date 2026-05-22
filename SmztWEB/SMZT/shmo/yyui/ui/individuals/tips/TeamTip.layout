@@ -1,0 +1,68 @@
+<GUILayout>
+    <Window Name="TeamTip" Type="DefaultWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,299},{0,69}}" />
+        <Property Name="UnifiedMaxSize" Value="{{0,300},{0,500}}" />
+        <Window Name="TeamTip/bg" Type="GuiLook/CommonBg4">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,299},{0,69}}" />
+            <Property Name="UnifiedMaxSize" Value="{{0,300},{0,500}}" />
+            <Window Name="TeamTip/bg/teamerTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,16},{0,6},{0,92},{0,27}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="队员名称" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFEF9D0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TeamTip/bg/line" Type="GuiLook/Line">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,35},{0,299},{0,36}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            </Window>
+            <Window Name="TeamTip/bg/levelTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,130},{0,6},{0,173},{0,27}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="等级" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFEF9D0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TeamTip/bg/fightTitleTxt" Type="GuiLook/StaticText">
+                <Property Name="UnifiedAreaRect" Value="{{0,218},{0,6},{0,271},{0,27}}" />
+                <Property Name="Font" Value="songti_14_strengh" />
+                <Property Name="Text" Value="战斗力" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TextColour" Value="FFFEF9D0" />
+                <Property Name="WantsMultiClickEvents" Value="false" />
+            </Window>
+            <Window Name="TeamTip/bg/render" Type="DefaultWindow">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,43},{0,299},{0,63}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="TeamTip/bg/render/levelTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,109},{0,0},{0,194},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="100" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF00eaff" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="TeamTip/bg/render/teamerTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,0},{0,96},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="玩家名称六字" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="TeamTip/bg/render/fightTxt" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,201},{0,0},{0,283},{0,20}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="2323232" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FFffea00" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

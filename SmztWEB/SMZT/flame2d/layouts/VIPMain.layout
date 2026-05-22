@@ -1,0 +1,819 @@
+<GUILayout>
+    <Window Name="VIPMain" Type="GuiLook/NewWindow">
+        <Property Name="UnifiedAreaRect" Value="{{0,224},{0,10},{0,1035},{0,565}}" />
+        <Property Name="GlyphImage" Value="set:mallgeneral image:mall" />
+        <Property Name="RollUpEnabled" Value="false" />
+        <Property Name="SizingEnabled" Value="false" />
+        <Property Name="RiseOnClick" Value="true" />
+        <Property Name="AutoRenderingSurface" Value="false" />
+        <AutoWindow NameSuffix="__auto_titlebar__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="false" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_closebutton__">
+            <Property Name="NonClient" Value="true" />
+            <Property Name="AlwaysOnTop" Value="true" />
+        </AutoWindow>
+        <AutoWindow NameSuffix="__auto_clickPos__">
+            <Property Name="ClippedByParent" Value="false" />
+        </AutoWindow>
+        <Window Name="VIPMain/StaticImage" Type="GuiLook/StaticImage">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,147},{0,182},{0,507}}" />
+            <Property Name="Image" Value="set:mallgeneral image:head" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="FrameEnabled" Value="false" />
+            <Property Name="BackgroundEnabled" Value="false" />
+            <Property Name="RiseOnClick" Value="false" />
+        </Window>
+        <Window Name="VIPMain/boxSP" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,120},{0,4},{0,792},{0,507}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="VIPMain/boxSP/VIPFirstMoney" Type="GuiLook/CommonBg3">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,672},{0,503}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Window Name="VIPMain/boxSP/VIPFirstMoney/background" Type="GuiLook/CommonBg3">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,121},{0,672},{0,503}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Window Name="VIPMain/boxSP/VIPFirstMoney/background/have" Type="GuiLook/StaticImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,339},{0,485},{0,379}}" />
+                        <Property Name="Image" Value="set:mallgeneral image:money" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="FrameEnabled" Value="false" />
+                        <Property Name="BackgroundEnabled" Value="false" />
+                        <Property Name="RiseOnClick" Value="false" />
+                        <Window Name="VIPMain/boxSP/VIPFirstMoney/background/have/smallbackground" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,122},{0,12},{0,225},{0,33}}" />
+                            <Property Name="Image" Value="set:skin image:RenderBg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="VIPMain/boxSP/VIPFirstMoney/background/have/smallbackground/yuanbao" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,20},{0,20}}" />
+                                <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                            <Window Name="VIPMain/boxSP/VIPFirstMoney/background/have/smallbackground/yuanBao" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,22},{0,1},{0,99},{0,20}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="Text" Value="125" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                        </Window>
+                        <Window Name="VIPMain/boxSP/VIPFirstMoney/background/have/smallbackground2" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,229},{0,12},{0,332},{0,33}}" />
+                            <Property Name="Image" Value="set:skin image:RenderBg" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Window Name="VIPMain/boxSP/VIPFirstMoney/background/have/smallbackground2/yuanBaoBD" Type="GuiLook/StaticText">
+                                <Property Name="UnifiedAreaRect" Value="{{0,22},{0,1},{0,99},{0,20}}" />
+                                <Property Name="Font" Value="songti_12_strengh" />
+                                <Property Name="Text" Value="125" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="WantsMultiClickEvents" Value="false" />
+                            </Window>
+                            <Window Name="VIPMain/boxSP/VIPFirstMoney/background/have/smallbackground2/yuanbaoBD" Type="GuiLook/StaticImage">
+                                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,20},{0,20}}" />
+                                <Property Name="Image" Value="set:mainUI1 image:yuanbaoLock" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="FrameEnabled" Value="false" />
+                                <Property Name="HorzFormatting" Value="CentreAligned" />
+                                <Property Name="VertFormatting" Value="CentreAligned" />
+                                <Property Name="BackgroundEnabled" Value="false" />
+                                <Property Name="RiseOnClick" Value="false" />
+                            </Window>
+                        </Window>
+                    </Window>
+                    <Window Name="VIPMain/boxSP/VIPFirstMoney/background/RedButton" Type="GlossySerpent/RedButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,485},{0,339},{0,665},{0,379}}" />
+                        <Window Name="VIPMain/boxSP/VIPFirstMoney/background/RedButton/immediately" Type="GuiLook/StaticImage">
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,180},{0,40}}" />
+                            <Property Name="Image" Value="set:mallgeneral image:immediately" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="FrameEnabled" Value="false" />
+                            <Property Name="HorzFormatting" Value="CentreAligned" />
+                            <Property Name="VertFormatting" Value="CentreAligned" />
+                            <Property Name="BackgroundEnabled" Value="false" />
+                            <Property Name="RiseOnClick" Value="false" />
+                            <Property Name="MousePassThroughEnabled" Value="true" />
+                        </Window>
+                    </Window>
+                    <Window Name="VIPMain/boxSP/VIPFirstMoney/background/button3" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,387},{0,316},{0,407},{0,336}}" />
+                        <Property Name="HoverImage" Value="set:skin image:MnextBtnHover" />
+                        <Property Name="NormalImage" Value="set:skin image:MnextBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skin image:MnextBtnPushed" />
+                    </Window>
+                    <Window Name="VIPMain/boxSP/VIPFirstMoney/background/button1" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,362},{0,316},{0,382},{0,336}}" />
+                        <Property Name="HoverImage" Value="set:skin image:NextBtnHover" />
+                        <Property Name="NormalImage" Value="set:skin image:NextBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skin image:NextBtnPushed" />
+                    </Window>
+                    <Window Name="VIPMain/boxSP/VIPFirstMoney/background/pageNumber" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,316},{0,316},{0,358},{0,336}}" />
+                        <Property Name="Font" Value="songti_14_strengh" />
+                        <Property Name="Text" Value="1/10" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                    <Window Name="VIPMain/boxSP/VIPFirstMoney/background/button2" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,268},{0,316},{0,288},{0,336}}" />
+                        <Property Name="HoverImage" Value="set:skin image:MlastBtnHover" />
+                        <Property Name="NormalImage" Value="set:skin image:MlastBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skin image:MlastBtnPushed" />
+                    </Window>
+                    <Window Name="VIPMain/boxSP/VIPFirstMoney/background/button" Type="GuiLook/DefaultButton">
+                        <Property Name="UnifiedAreaRect" Value="{{0,292},{0,316},{0,312},{0,336}}" />
+                        <Property Name="HoverImage" Value="set:skin image:LastBtnHover" />
+                        <Property Name="NormalImage" Value="set:skin image:LastBtnNormal" />
+                        <Property Name="PushedImage" Value="set:skin image:LastBtnPushed" />
+                    </Window>
+                </Window>
+                <Window Name="VIPMain/boxSP/VIPFirstMoney/money" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,671},{0,121}}" />
+                    <Property Name="Image" Value="set:mall image:firstFlush" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="VIPMain/strongBtn" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,85},{0,120},{0,125}}" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover3" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover3" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal3" />
+            <Window Name="VIPMain/strongBtn/strongImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,120},{0,40}}" />
+                <Property Name="Image" Value="set:mallgeneral image:strong" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="VIPMain/usuallyBtn" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,45},{0,120},{0,85}}" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover3" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover3" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal3" />
+            <Window Name="VIPMain/usuallyBtn/usuallyImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,120},{0,40}}" />
+                <Property Name="Image" Value="set:mallgeneral image:usuallyUsed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="VIPMain/yuanbaoBtn" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,126},{0,120},{0,166}}" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover3" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover3" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal3" />
+            <Window Name="VIPMain/yuanbaoBtn/yuanbaoImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,120},{0,40}}" />
+                <Property Name="Image" Value="set:mallgeneral image:tieyuanbao" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="VIPMain/limitBtn" Type="GuiLook/RadioTab">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,120},{0,44}}" />
+            <Property Name="Selected" Value="true" />
+            <Property Name="HoverImage" Value="set:skin image:tabBBtnHover3" />
+            <Property Name="SelectedImage" Value="set:skin image:tabBBtnHover3" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnselectedImage" Value="set:skin image:tabBBtnNormal3" />
+            <Window Name="VIPMain/limitBtn/limitImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,120},{0,40}}" />
+                <Property Name="Image" Value="set:mallgeneral image:limitTime" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="HorzFormatting" Value="CentreAligned" />
+                <Property Name="VertFormatting" Value="CentreAligned" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Property Name="MousePassThroughEnabled" Value="true" />
+            </Window>
+        </Window>
+        <Window Name="VIPMain/RadioButton3a" Type="GuiLook/RadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,745},{0,110},{0,759},{0,124}}" />
+        </Window>
+        <Window Name="VIPMain/RadioButton1a" Type="GuiLook/RadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,713},{0,110},{0,727},{0,124}}" />
+        </Window>
+        <Window Name="VIPMain/RadioButton2a" Type="GuiLook/RadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,729},{0,110},{0,743},{0,124}}" />
+        </Window>
+        <Window Name="VIPMain/RadioButton4a" Type="GuiLook/RadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,761},{0,110},{0,775},{0,124}}" />
+        </Window>
+        <Window Name="VIPMain/RadioButton4a2" Type="GuiLook/RadioButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,777},{0,110},{0,790},{0,124}}" />
+        </Window>
+        <Window Name="VIPMain/actorView" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,-194},{0,461},{0,1},{0,573}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="ClippedByParent" Value="false" />
+        </Window>
+        <Window Name="VIPMain/secondsKillSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,120},{0,126},{0,792},{0,464}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="VIPMain/secondsKillSp/renderSp0" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,394},{0,6},{0,665},{0,331}}" />
+                <Property Name="Image" Value="set:mallgeneral1 image:policeBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="VIPMain/secondsKillSp/renderSp0/itemBg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,72},{0,66},{0,138}}" />
+                    <Property Name="Image" Value="set:mallgeneral1 image:yellowBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp0/itemTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,33},{0,144},{0,242},{0,164}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp0/discountImg0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,176},{0,47},{0,264},{0,138}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp0/progressBarBg0" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,168},{0,186},{0,189}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Window Name="VIPMain/secondsKillSp/renderSp0/progressBarBg0/progressBar0$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,184},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                    </Window>
+                    <Window Name="VIPMain/secondsKillSp/renderSp0/progressBarBg0/progressTxt0" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,184},{0,20}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="HorzTextFormatting" Value="CentreAligned" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp0/purchasTitleTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,95},{0,199},{0,135},{0,219}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="限 购：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp0/purchasTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,138},{0,199},{0,196},{0,219}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="限购：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="TextColour" Value="FF85f500" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp0/originalTitleTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,95},{0,217},{0,135},{0,237}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="原 价：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp0/originalTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,166},{0,217},{0,227},{0,237}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="限购：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp0/yuanbaoO0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,140},{0,217},{0,161},{0,236}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp0/redLine0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,86},{0,227},{0,209},{0,228}}" />
+                    <Property Name="Image" Value="set:mallgeneral image:line" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp0/seckillTitleTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,95},{0,235},{0,135},{0,255}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="秒杀价：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp0/yuanbao0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,140},{0,235},{0,161},{0,254}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp0/seckillTxt0" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,166},{0,235},{0,227},{0,255}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="限购：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp0/seckillBtn0" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,263},{0,163},{0,305}}" />
+                    <Property Name="HoverImage" Value="set:mallgeneral1 image:immediatelyHover" />
+                    <Property Name="NormalImage" Value="set:mallgeneral1 image:immediatelyNormal" />
+                    <Property Name="PushedImage" Value="set:mallgeneral1 image:immediatelyPushed" />
+                    <Property Name="DisabledImage" Value="set:mallgeneral1 image:immediatelyDisabled" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp0/maiwanle0" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,263},{0,163},{0,305}}" />
+                    <Property Name="Image" Value="set:mallgeneral1 image:immediatelyDisabled" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+            </Window>
+            <Window Name="VIPMain/secondsKillSp/renderSp1" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,6},{0,386},{0,109}}" />
+                <Property Name="Image" Value="set:mallgeneral1 image:rectBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="VIPMain/secondsKillSp/renderSp1/itemTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,93},{0,10},{0,240},{0,30}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp1/itemBg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,11},{0,0},{0,77},{0,66}}" />
+                    <Property Name="Image" Value="set:mallgeneral1 image:yellowBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp1/originalTitleTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,93},{0,34},{0,133},{0,54}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="原 价：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp1/yuanbaoO1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,138},{0,34},{0,159},{0,53}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp1/originalTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,164},{0,34},{0,225},{0,54}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="限购：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp1/redLine1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,84},{0,44},{0,207},{0,45}}" />
+                    <Property Name="Image" Value="set:mallgeneral image:line" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp1/yuanbao1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,138},{0,52},{0,159},{0,71}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp1/seckillTitleTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,93},{0,52},{0,133},{0,72}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="秒杀价：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp1/seckillTxt1" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,164},{0,52},{0,225},{0,72}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="限购：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp1/progressBarBg1" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,92},{0,73},{0,278},{0,94}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="VIPMain/secondsKillSp/renderSp1/progressBarBg1/progressBar1$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,184},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                    </Window>
+                    <Window Name="VIPMain/secondsKillSp/renderSp1/progressBarBg1/progressTxt1" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,2},{0,184},{0,21}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp1/discountImg1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,209},{0,30},{0,278},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp1/seckillBtn1" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,291},{0,15},{0,366},{0,90}}" />
+                    <Property Name="HoverImage" Value="set:mallgeneral1 image:immediatelysHover" />
+                    <Property Name="NormalImage" Value="set:mallgeneral1 image:immediatelysNormal" />
+                    <Property Name="PushedImage" Value="set:mallgeneral1 image:immediatelysPushed" />
+                    <Property Name="DisabledImage" Value="set:mallgeneral1 image:immediatelysDisabled" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp1/maiwanle1" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,291},{0,15},{0,366},{0,90}}" />
+                    <Property Name="Image" Value="set:mallgeneral1 image:immediatelysDisabled" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="VIPMain/secondsKillSp/renderSp2" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,117},{0,386},{0,220}}" />
+                <Property Name="Image" Value="set:mallgeneral1 image:rectBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="VIPMain/secondsKillSp/renderSp2/itemTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,93},{0,10},{0,245},{0,30}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp2/itemBg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,11},{0,0},{0,77},{0,66}}" />
+                    <Property Name="Image" Value="set:mallgeneral1 image:yellowBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp2/originalTitleTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,93},{0,34},{0,133},{0,54}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="原 价：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp2/yuanbaoO2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,138},{0,34},{0,159},{0,53}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp2/originalTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,164},{0,34},{0,225},{0,54}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="限购：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp2/redLine2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,84},{0,44},{0,207},{0,45}}" />
+                    <Property Name="Image" Value="set:mallgeneral image:line" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp2/yuanbao2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,138},{0,52},{0,159},{0,71}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp2/seckillTitleTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,93},{0,52},{0,133},{0,72}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="秒杀价：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp2/seckillTxt2" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,164},{0,52},{0,225},{0,72}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="限购：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp2/progressBarBg2" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,92},{0,73},{0,278},{0,94}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="VIPMain/secondsKillSp/renderSp2/progressBarBg2/progressBar2$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,184},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                    </Window>
+                    <Window Name="VIPMain/secondsKillSp/renderSp2/progressBarBg2/progressTxt2" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,2},{0,184},{0,21}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp2/discountImg2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,209},{0,30},{0,278},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp2/seckillBtn2" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,291},{0,15},{0,366},{0,90}}" />
+                    <Property Name="HoverImage" Value="set:mallgeneral1 image:immediatelysHover" />
+                    <Property Name="NormalImage" Value="set:mallgeneral1 image:immediatelysNormal" />
+                    <Property Name="PushedImage" Value="set:mallgeneral1 image:immediatelysPushed" />
+                    <Property Name="DisabledImage" Value="set:mallgeneral1 image:immediatelysDisabled" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp2/maiwanle2" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,291},{0,15},{0,366},{0,90}}" />
+                    <Property Name="Image" Value="set:mallgeneral1 image:immediatelysDisabled" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+            <Window Name="VIPMain/secondsKillSp/renderSp3" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,228},{0,386},{0,331}}" />
+                <Property Name="Image" Value="set:mallgeneral1 image:rectBg" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+                <Window Name="VIPMain/secondsKillSp/renderSp3/itemTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,93},{0,10},{0,241},{0,30}}" />
+                    <Property Name="Font" Value="songti_14_strengh" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp3/itemBg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,11},{0,0},{0,77},{0,66}}" />
+                    <Property Name="Image" Value="set:mallgeneral1 image:yellowBg" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="VerticalAlignment" Value="Centre" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp3/originalTitleTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,93},{0,34},{0,133},{0,54}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="原 价：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp3/yuanbaoO3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,138},{0,34},{0,159},{0,53}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp3/originalTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,164},{0,34},{0,225},{0,54}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="限购：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp3/redLine3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,84},{0,44},{0,207},{0,45}}" />
+                    <Property Name="Image" Value="set:mallgeneral image:line" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp3/yuanbao3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,138},{0,52},{0,159},{0,71}}" />
+                    <Property Name="Image" Value="set:mainUI1 image:yuanbao" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                    <Property Name="VertFormatting" Value="CentreAligned" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp3/seckillTitleTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,93},{0,52},{0,133},{0,72}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="秒杀价：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp3/seckillTxt3" Type="GuiLook/StaticText">
+                    <Property Name="UnifiedAreaRect" Value="{{0,164},{0,52},{0,225},{0,72}}" />
+                    <Property Name="Font" Value="" />
+                    <Property Name="Text" Value="限购：" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="WantsMultiClickEvents" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp3/progressBarBg3" Type="GlossySerpent/ThreeStretchImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,92},{0,73},{0,278},{0,94}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="LeftImage" Value="set:mainUI1 image:bossHpBgLeft" />
+                    <Property Name="LeftOffset" Value="10" />
+                    <Property Name="RightImage" Value="set:mainUI1 image:bossHpBgRight" />
+                    <Property Name="CenterImage" Value="set:mainUI1 image:bossHpBgCenter" />
+                    <Property Name="RightOffset" Value="10" />
+                    <Window Name="VIPMain/secondsKillSp/renderSp3/progressBarBg3/progressBar3$NormalBar" Type="GlossySerpent/ThreeStretchImage">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,184},{0,20}}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="LeftImage" Value="set:mainUI1 image:hpBg0Left" />
+                        <Property Name="LeftOffset" Value="9" />
+                        <Property Name="RightImage" Value="set:mainUI1 image:hpBg0Right" />
+                        <Property Name="CenterImage" Value="set:mainUI1 image:hpBg0Center" />
+                        <Property Name="RightOffset" Value="9" />
+                        <Property Name="HorizontalAlignment" Value="Centre" />
+                    </Window>
+                    <Window Name="VIPMain/secondsKillSp/renderSp3/progressBarBg3/progressTxt3" Type="GuiLook/StaticText">
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,2},{0,184},{0,21}}" />
+                        <Property Name="Font" Value="" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="WantsMultiClickEvents" Value="false" />
+                    </Window>
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp3/discountImg3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,209},{0,30},{0,278},{0,61}}" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp3/seckillBtn3" Type="GuiLook/DefaultButton">
+                    <Property Name="UnifiedAreaRect" Value="{{0,291},{0,15},{0,366},{0,90}}" />
+                    <Property Name="HoverImage" Value="set:mallgeneral1 image:immediatelysHover" />
+                    <Property Name="NormalImage" Value="set:mallgeneral1 image:immediatelysNormal" />
+                    <Property Name="PushedImage" Value="set:mallgeneral1 image:immediatelysPushed" />
+                    <Property Name="DisabledImage" Value="set:mallgeneral1 image:immediatelysDisabled" />
+                    <Property Name="HorzImageFormatting" Value="CentreAligned" />
+                    <Property Name="VertImageFormatting" Value="CentreAligned" />
+                </Window>
+                <Window Name="VIPMain/secondsKillSp/renderSp3/maiwanle3" Type="GuiLook/StaticImage">
+                    <Property Name="UnifiedAreaRect" Value="{{0,291},{0,15},{0,366},{0,90}}" />
+                    <Property Name="Image" Value="set:mallgeneral1 image:immediatelysDisabled" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="FrameEnabled" Value="false" />
+                    <Property Name="BackgroundEnabled" Value="false" />
+                    <Property Name="RiseOnClick" Value="false" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Name="VIPMain/secondsKillTitleSp" Type="DefaultWindow">
+            <Property Name="UnifiedAreaRect" Value="{{0,122},{0,5},{0,792},{0,125}}" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Name="VIPMain/secondsKillTitleSp/titleImg" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,670},{0,120}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="VIPMain/secondsKillTitleSp/hTime" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,432},{0,93},{0,492},{0,132}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+            <Window Name="VIPMain/secondsKillTitleSp/sTime" Type="GuiLook/StaticImage">
+                <Property Name="UnifiedAreaRect" Value="{{0,515},{0,93},{0,575},{0,132}}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="FrameEnabled" Value="false" />
+                <Property Name="BackgroundEnabled" Value="false" />
+                <Property Name="RiseOnClick" Value="false" />
+            </Window>
+        </Window>
+        <Window Name="VIPMain/openBtn" Type="GuiLook/DefaultImageButton">
+            <Property Name="UnifiedAreaRect" Value="{{0,630},{0,-150},{0,785},{0,-118}}" />
+            <Property Name="Image" Value="set:mallgeneral image:openBlueBtn" />
+            <Property Name="VerticalAlignment" Value="Centre" />
+            <Property Name="HorzImageFormatting" Value="CentreAligned" />
+            <Property Name="VertImageFormatting" Value="CentreAligned" />
+        </Window>
+    </Window>
+</GUILayout>
